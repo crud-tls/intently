@@ -89,9 +89,11 @@ const features = [
 					<h2 class="section-title">Core Features</h2>
 					<div class="features-grid">
 						{features.map(feature => (
-							<Card variant="elevated">
+							<Card variant="elevated" hover={true}>
 								<div class="feature-header">
-									<span class="feature-icon">{feature.icon}</span>
+								<div class={`feature-icon-wrapper ${feature.color}`}>
+								<span class="feature-icon">{feature.icon}</span>
+							</div>
 									<h3>{feature.title}</h3>
 								</div>
 								<p class="feature-description">{feature.description}</p>
@@ -109,46 +111,47 @@ const features = [
 				<div class="container">
 					<h2 class="section-title">How Intently Works</h2>
 					<div class="steps-timeline">
-						<div class="timeline-step">
-							<div class="step-marker">
-								<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-									<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-								</svg>
+					<div class="timeline-step">
+						<div class="step-number-wrapper">
+							<div class="step-marker step-1">
+								<span class="step-number">1</span>
 							</div>
-							<div class="step-content">
-								<h3>Track</h3>
-								<p>Intently runs in the background, tracking which apps you use and for how long.</p>
+							<div class="timeline-connector"></div>
+						</div>
+						<div class="step-content">
+							<h3>Track Your Usage</h3>
+							<p>Intently runs quietly in the background, automatically tracking which apps you use and for how long. Get detailed insights without lifting a finger.</p>
+						</div>
+					</div>
+					<div class="timeline-step">
+						<div class="step-number-wrapper">
+							<div class="step-marker step-2">
+								<span class="step-number">2</span>
+							</div>
+							<div class="timeline-connector"></div>
+						</div>
+						<div class="step-content">
+							<h3>Receive Gentle Reminders</h3>
+							<p>When you approach your limit or open a tracked app, gentle full-screen reminders prompt mindful reflection. Take a breath and make a conscious choice.</p>
+						</div>
+					</div>
+					<div class="timeline-step">
+						<div class="step-number-wrapper">
+							<div class="step-marker step-3">
+								<span class="step-number">3</span>
 							</div>
 						</div>
-						<div class="timeline-step">
-							<div class="step-marker">
-								<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-									<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-								</svg>
-							</div>
-							<div class="step-content">
-								<h3>Intervene</h3>
-								<p>When you approach your limit or open a tracked app, gentle reminders prompt mindful reflection.</p>
-							</div>
-						</div>
-						<div class="timeline-step">
-							<div class="step-marker">
-								<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-									<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-								</svg>
-							</div>
-							<div class="step-content">
-								<h3>Transform</h3>
-								<p>Over time, these mindful moments add up to lasting habit change and healthier digital behavior.</p>
-							</div>
+						<div class="step-content">
+							<h3>Transform Your Habits</h3>
+							<p>Over time, these mindful moments add up to lasting habit change. Build a healthier relationship with technology, one choice at a time.</p>
 						</div>
 					</div>
 				</div>
-			</section>
+		</section>
 
-			<!-- CTA Section -->
-			<section class="cta-section">
-				<div class="container">
+		<!-- CTA Section -->
+		<section class="cta-section">
+			<div class="container">
 					<div class="cta-content">
 						<h2>Ready to Build Healthier Habits?</h2>
 						<p>Join thousands of users who have transformed their relationship with technology using Intently.</p>
@@ -166,24 +169,29 @@ const features = [
 </html>
 
 <style>
+	main {
+		width: 100%;
+	}
+
 	.features-hero {
 		padding: var(--intently-space-4xl) 0;
 		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
-		color: white;
 		text-align: center;
 	}
 
 	.features-hero h1 {
-		font-size: 3rem;
+		font-size: 3.5rem;
 		font-weight: 800;
 		margin: 0 0 var(--intently-space-md);
 		color: white;
+		letter-spacing: -0.02em;
 	}
 
 	.hero-subtitle {
 		font-size: 1.25rem;
 		max-width: 700px;
 		margin: 0 auto;
+		color: white;
 		opacity: 0.95;
 		line-height: 1.6;
 	}
@@ -194,42 +202,70 @@ const features = [
 	}
 
 	.section-title {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		font-weight: 700;
 		text-align: center;
-		margin: 0 0 var(--intently-space-3xl);
+		margin: 0 0 var(--intently-space-2xl);
 		color: var(--intently-text-primary);
 	}
 
 	.features-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-columns: repeat(3, 1fr);
 		gap: var(--intently-space-xl);
 	}
 
 	.feature-header {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: var(--intently-space-md);
-		margin-bottom: var(--intently-space-md);
+		margin-bottom: var(--intently-space-lg);
+	}
+
+	.feature-icon-wrapper {
+		width: 48px;
+		height: 48px;
+		border-radius: var(--intently-radius-md);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	.feature-icon-wrapper.blue {
+		background: rgba(33, 150, 243, 0.08);
+	}
+
+	.feature-icon-wrapper.green {
+		background: rgba(76, 175, 80, 0.08);
+	}
+
+	.feature-icon-wrapper.purple {
+		background: rgba(156, 39, 176, 0.08);
+	}
+
+	.feature-icon-wrapper.orange {
+		background: rgba(255, 152, 0, 0.08);
 	}
 
 	.feature-icon {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		line-height: 1;
 	}
 
 	.feature-header h3 {
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 		font-weight: 700;
-		margin: 0;
+		margin: 0.125rem 0 0;
 		color: var(--intently-text-primary);
+		line-height: 1.4;
 	}
 
 	.feature-description {
 		color: var(--intently-text-secondary);
 		line-height: 1.6;
 		margin: 0 0 var(--intently-space-md);
+		font-size: 0.9375rem;
 	}
 
 	.feature-details {
@@ -239,10 +275,11 @@ const features = [
 	}
 
 	.feature-details li {
-		padding: 0.25rem 0 0.25rem 1.5rem;
+		padding: 0.25rem 0 0.25rem 1.25rem;
 		position: relative;
-		font-size: 0.9375rem;
+		font-size: 0.875rem;
 		color: var(--intently-text-secondary);
+		line-height: 1.5;
 	}
 
 	.feature-details li::before {
@@ -255,35 +292,81 @@ const features = [
 
 	/* How It Works */
 	.how-it-works {
-		padding: var(--intently-space-4xl) 0;
+		padding: var(--intently-space-2xl) 0 var(--intently-space-4xl);
 		background: var(--intently-bg-secondary);
 	}
 
 	.steps-timeline {
-		max-width: 800px;
+		max-width: 1000px;
 		margin: 0 auto;
 	}
 
 	.timeline-step {
 		display: flex;
-		gap: var(--intently-space-xl);
-		margin-bottom: var(--intently-space-2xl);
+		gap: var(--intently-space-lg);
+		margin-bottom: var(--intently-space-xl);
+		align-items: flex-start;
+	}
+
+	.timeline-step:last-child {
+		margin-bottom: 0;
+	}
+
+	.step-number-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		flex-shrink: 0;
 	}
 
 	.step-marker {
 		width: 48px;
 		height: 48px;
 		flex-shrink: 0;
-		background: var(--intently-green);
-		color: white;
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	.step-marker.step-1 {
+		background: var(--intently-blue);
+	}
+
+	.step-marker.step-2 {
+		background: var(--intently-purple);
+	}
+
+	.step-marker.step-3 {
+		background: var(--intently-green);
+	}
+
+	.step-number {
+		color: white;
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+
+	.timeline-connector {
+		width: 2px;
+		height: calc(100% + var(--intently-space-xl) - 48px);
+		background: var(--intently-gray-300);
+		position: absolute;
+		top: 48px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+
+	.step-content {
+		flex: 1;
 	}
 
 	.step-content h3 {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-weight: 700;
 		margin: 0 0 var(--intently-space-sm);
 		color: var(--intently-text-primary);
@@ -293,6 +376,7 @@ const features = [
 		color: var(--intently-text-secondary);
 		line-height: 1.6;
 		margin: 0;
+		font-size: 0.9375rem;
 	}
 
 	/* CTA Section */
@@ -324,23 +408,63 @@ const features = [
 	}
 
 	.container {
-		max-width: 1200px;
+		max-width: 1400px;
 		margin: 0 auto;
-		padding: 0 var(--intently-space-lg);
+		padding: 0 var(--intently-space-xl);
 	}
 
 	/* Responsive */
+	@media (max-width: 1024px) {
+		.features-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
 	@media (max-width: 768px) {
+		.features-hero {
+			padding: var(--intently-space-3xl) 0;
+		}
+
 		.features-hero h1 {
-			font-size: 2rem;
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.125rem;
 		}
 
 		.section-title {
-			font-size: 2rem;
+			font-size: 1.75rem;
 		}
 
 		.features-grid {
 			grid-template-columns: 1fr;
+		}
+
+		.timeline-step {
+			gap: var(--intently-space-md);
+		}
+
+		.step-marker {
+			width: 40px;
+			height: 40px;
+		}
+
+		.step-number {
+			font-size: 1.125rem;
+		}
+
+		.timeline-connector {
+			height: calc(100% + var(--intently-space-xl) - 40px);
+			top: 40px;
+		}
+
+		.step-content h3 {
+			font-size: 1.125rem;
+		}
+
+		.step-content p {
+			font-size: 0.875rem;
 		}
 
 		.cta-content h2 {
@@ -350,5 +474,21 @@ const features = [
 		.cta-buttons {
 			flex-direction: column;
 		}
+	}
+
+	@media (max-width: 640px) {
+		.features-hero h1 {
+			font-size: 2rem;
+		}
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
 	}
 </style>

@@ -96,6 +96,10 @@ import { SITE_TITLE } from '../consts';
 </html>
 
 <style>
+	main {
+		width: 100%;
+	}
+
 	.about-hero {
 		padding: var(--intently-space-4xl) 0;
 		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
@@ -239,12 +243,18 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.container {
-		max-width: 1200px;
+		max-width: 1400px;
 		margin: 0 auto;
-		padding: 0 var(--intently-space-lg);
+		padding: 0 var(--intently-space-xl);
 	}
 
 	/* Responsive */
+	@media (max-width: 960px) {
+		.values-grid {
+			grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		}
+	}
+
 	@media (max-width: 768px) {
 		.about-hero h1 {
 			font-size: 2rem;
@@ -264,5 +274,15 @@ import { SITE_TITLE } from '../consts';
 		.cta-buttons {
 			flex-direction: column;
 		}
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
 	}
 </style>

@@ -15,116 +15,117 @@ import { SITE_TITLE } from '../consts';
 		<Header />
 
 		<main>
-			<!-- Download Hero -->
-			<section class="download-hero">
+			<!-- Hero Section -->
+			<section class="hero">
 				<div class="container">
 					<h1>Get Intently</h1>
-					<p class="hero-subtitle">Start building healthier digital habits today. Available on all your devices.</p>
+					<p class="subtitle">Build healthier digital habits across all your devices</p>
+				</div>
+			</section>
 
-					<!-- Store Buttons -->
-					<div class="store-buttons">
-						<StoreButton store="playstore" href="https://play.google.com/store/apps/details?id=intently.app" />
-						<StoreButton store="appstore" href="https://apps.apple.com/app/intently" />
-						<StoreButton store="chromestore" href="https://chrome.google.com/webstore/detail/intently" />
-					</div>
-
-					<!-- QR Codes for Mobile -->
-					<div class="qr-codes">
-						<div class="qr-code-card">
-							<div class="qr-placeholder">
-								<svg viewBox="0 0 100 100" fill="currentColor" width="80" height="80">
-									<rect x="10" y="10" width="20" height="20"/>
-									<rect x="70" y="10" width="20" height="20"/>
-									<rect x="10" y="70" width="20" height="20"/>
-									<rect x="40" y="10" width="10" height="10"/>
-									<rect x="40" y="30" width="30" height="30"/>
-									<rect x="80" y="40" width="10" height="40"/>
+			<!-- Download Section -->
+			<section class="download-section">
+				<div class="container">
+					<div class="download-grid">
+						<!-- Android -->
+						<div class="download-card">
+							<div class="platform-badge android">
+								<svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+									<path d="M17.523 15.3414c-.5511 0-.9996-.4485-.9996-.9996s.4485-.9996.9996-.9996c.5511 0 .9996.4485.9996.9996s-.4485.9996-.9996.9996m-11.046 0c-.5511 0-.9996-.4485-.9996-.9996s.4485-.9996.9996-.9996c.5511 0 .9996.4485.9996.9996s-.4485.9996-.9996.9996m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1529-.5679.4173.4173 0 00-.5681.1528l-2.0211 3.5014a12.763 12.763 0 00-3.1914-.3998c-1.0965 0-2.1581.1361-3.176.3998L8.3421 5.4469a.4185.4185 0 00-.569-.1528.4167.4167 0 00-.1529.5679l1.9973 3.4592a6.607 6.607 0 00-3.4947 2.9511 12.376 12.376 0 00-1.3975 5.8195c0 4.0284 3.1431 7.2932 7.0214 7.2932 3.8782 0 7.0214-3.2648 7.0214-7.2932 0-2.1113-.7462-4.0563-1.9775-5.5754a6.637 6.637 0 00-3.5141-2.9952z"/>
 								</svg>
 							</div>
-							<span>Android</span>
+							<h3>Android</h3>
+							<p>Full-featured app with usage tracking, interventions, and analytics</p>
+							<StoreButton store="playstore" href="https://play.google.com/store/apps/details?id=intently.app" />
+							<ul class="feature-list">
+								<li>Complete app usage tracking</li>
+								<li>Mindful intervention overlays</li>
+								<li>Detailed analytics dashboard</li>
+								<li>Home screen widgets</li>
+							</ul>
 						</div>
-						<div class="qr-code-card">
-							<div class="qr-placeholder">
-								<svg viewBox="0 0 100 100" fill="currentColor" width="80" height="80">
-									<rect x="10" y="10" width="20" height="20"/>
-									<rect x="70" y="10" width="20" height="20"/>
-									<rect x="10" y="70" width="20" height="20"/>
-									<rect x="40" y="40" width="20" height="20"/>
+
+						<!-- iOS -->
+						<div class="download-card">
+					<div class="coming-soon-badge">Coming Soon</div>
+							<div class="platform-badge ios">
+								<svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+									<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
 								</svg>
 							</div>
-							<span>iOS</span>
+							<h3>iOS</h3>
+							<p>Native iOS experience with Screen Time integration (Coming Soon)</p>
+							<button class="store-button-disabled" disabled>
+	<span class="button-text">Coming Soon</span>
+</button>
+							<ul class="feature-list">
+								<li>Screen Time API integration</li>
+								<li>Beautiful native design</li>
+								<li>iCloud sync across devices</li>
+								<li>Lock screen widgets</li>
+							</ul>
+						</div>
+
+					<div class="coming-soon-badge">Coming Soon</div>
+						<!-- Chrome -->
+						<div class="download-card">
+							<div class="platform-badge chrome">
+								<svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+									<path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 3.6c1.7 0 3.27.5 4.6 1.35l-1.45 2.5c-.85-.5-1.85-.8-2.9-.8-1.05 0-2.05.3-2.9.8L7.9 4.95C9.23 4.1 10.8 3.6 12 3.6zM3.6 12c0-1.7.5-3.27 1.35-4.6l2.5 1.45c-.5.85-.8 1.85-.8 2.9 0 1.05.3 2.05.8 2.9l-2.5 1.45C4.1 15.27 3.6 13.7 3.6 12zm8.4 8.4c-1.7 0-3.27-.5-4.6-1.35l1.45-2.5c.85.5 1.85.8 2.9.8 1.05 0 2.05-.3 2.9-.8l1.45 2.5c-1.33.85-2.9 1.35-4.6 1.35z"/>
+								</svg>
+							</div>
+							<h3>Chrome Extension</h3>
+							<p>Stay mindful while browsing with web-based interventions (Coming Soon)</p>
+							<button class="store-button-disabled" disabled>
+	<span class="button-text">Coming Soon</span>
+</button>
+							<ul class="feature-list">
+								<li>Website time tracking</li>
+								<li>Focus mode for deep work</li>
+								<li>Usage insights and reports</li>
+								<li>Quick settings access</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- Quick Start Guide -->
-			<section class="quick-start">
+			<!-- Privacy Badge -->
+			<section class="privacy-section">
 				<div class="container">
-					<h2>Quick Start Guide</h2>
-					<p class="section-subtitle">Get started with Intently in 3 simple steps</p>
-
-					<div class="steps">
-						<div class="step">
-							<div class="step-number">1</div>
-							<h3>Download & Install</h3>
-							<p>Get Intently from your preferred app store. It's free to download and use.</p>
-						</div>
-						<div class="step">
-							<div class="step-number">2</div>
-							<h3>Set Your Goals</h3>
-							<p>Choose which apps to track and set daily time limits that work for you.</p>
-						</div>
-						<div class="step">
-							<div class="step-number">3</div>
-							<h3>Build Habits</h3>
-							<p>Let mindful interventions guide you toward healthier digital habits.</p>
+					<div class="privacy-badge">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+							<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+						</svg>
+						<div class="privacy-text">
+							<strong>100% Private</strong> — Your data never leaves your device. No account required.
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- Platform Details -->
-			<section class="platform-details">
+			<!-- Quick Links -->
+			<section class="links-section">
 				<div class="container">
-					<div class="platform-detail-card">
-						<h3>🤖 Android</h3>
-						<p>Full access to app usage tracking with complete intervention system. Includes widgets and detailed analytics.</p>
-						<ul>
-							<li>Android 8.0 or later</li>
-							<li>Usage Statistics permission</li>
-							li>Overlay permission for interventions</li>
-						</ul>
-					</div>
-					<div class="platform-detail-card">
-						<h3>🍎 iOS</h3>
-						<p>Native integration with Screen Time API for accurate usage tracking. Beautiful iOS-optimized design.</p>
-						<ul>
-							<li>iOS 16.0 or later</li>
-							<li>Screen Time permission</li>
-							<li>Notifications enabled</li>
-						</ul>
-					</div>
-					<div class="platform-detail-card">
-						<h3>🌐 Chrome</h3>
-						<p>Browser extension for staying mindful while you work or browse. Site tracking and focus mode included.</p>
-						<ul>
-							<li>Chrome 88 or later</li>
-							<li>Reading history permission</li>
-							<li>Works on Chrome OS too</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<!-- Need Help -->
-			<section class="need-help">
-				<div class="container">
-					<h2>Need Help?</h2>
-					<p>Check out our FAQ or reach out to our support team.</p>
-					<div class="help-links">
-						<a href="/about" class="help-link">Contact Support</a>
-						<a href="/blog" class="help-link">Read the Blog</a>
+					<div class="links-grid">
+						<a href="/features" class="link-card">
+							<span>Explore Features</span>
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+								<path d="M5 12h14M12 5l7 7-7 7"/>
+							</svg>
+						</a>
+						<a href="/privacy" class="link-card">
+							<span>Privacy Policy</span>
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+								<path d="M5 12h14M12 5l7 7-7 7"/>
+							</svg>
+						</a>
+						<a href="/about" class="link-card">
+							<span>About Intently</span>
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+								<path d="M5 12h14M12 5l7 7-7 7"/>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -135,237 +136,286 @@ import { SITE_TITLE } from '../consts';
 </html>
 
 <style>
-	.download-hero {
-		padding: var(--intently-space-4xl) 0;
-		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
-		color: white;
+	main {
+		width: 100%;
+	}
+
+	/* Hero */
+	.hero {
+		padding: var(--intently-space-4xl) 0 var(--intently-space-3xl);
+		background: var(--intently-bg-primary);
 		text-align: center;
 	}
 
-	.download-hero h1 {
-		font-size: 3rem;
+	.hero h1 {
+		font-size: 3.5rem;
 		font-weight: 800;
 		margin: 0 0 var(--intently-space-md);
-		color: white;
+		color: var(--intently-text-primary);
+		letter-spacing: -0.02em;
 	}
 
-	.hero-subtitle {
+	.subtitle {
 		font-size: 1.25rem;
-		margin: 0 0 var(--intently-space-2xl);
-		opacity: 0.95;
+		color: var(--intently-text-secondary);
+		margin: 0;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.store-buttons {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: var(--intently-space-md);
-		margin-bottom: var(--intently-space-3xl);
+	/* Download Section */
+	.download-section {
+		padding: 0 0 var(--intently-space-4xl);
+		background: var(--intently-bg-primary);
 	}
 
-	.qr-codes {
-		display: flex;
-		justify-content: center;
+	.download-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 		gap: var(--intently-space-xl);
-		flex-wrap: wrap;
+		max-width: 1100px;
+		margin: 0 auto;
 	}
 
-	.qr-code-card {
-		background: white;
-		padding: var(--intently-space-xl);
-		border-radius: var(--intently-radius-lg);
+	.download-card {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: var(--intently-space-md);
-		color: var(--intently-text-primary);
-	}
-
-	.qr-placeholder {
-		width: 120px;
-		height: 120px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: var(--intently-gray-100);
-		border-radius: var(--intently-radius-md);
-	}
-
-	.qr-placeholder svg {
-		color: var(--intently-gray-800);
-	}
-
-	/* Quick Start */
-	.quick-start {
-		padding: var(--intently-space-4xl) 0;
-		background: var(--intently-bg-primary);
-	}
-
-	.quick-start h2 {
-		font-size: 2.5rem;
-		font-weight: 700;
-		text-align: center;
-		margin: 0 0 var(--intently-space-md);
-		color: var(--intently-text-primary);
-	}
-
-	.section-subtitle {
-		font-size: 1.125rem;
-		text-align: center;
-		max-width: 600px;
-		margin: 0 auto var(--intently-space-3xl);
-		color: var(--intently-text-secondary);
-	}
-
-	.steps {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: var(--intently-space-xl);
-		max-width: 900px;
-		margin: 0 auto;
-	}
-
-	.step {
-		text-align: center;
-		padding: var(--intently-space-xl);
-	}
-
-	.step-number {
-		width: 60px;
-		height: 60px;
-		background: var(--intently-blue);
-		color: white;
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 1.5rem;
-		font-weight: 700;
-		margin: 0 auto var(--intently-space-md);
-	}
-
-	.step h3 {
-		font-size: 1.25rem;
-		font-weight: 700;
-		margin: 0 0 var(--intently-space-sm);
-		color: var(--intently-text-primary);
-	}
-
-	.step p {
-		color: var(--intently-text-secondary);
-		line-height: 1.6;
-		margin: 0;
-	}
-
-	/* Platform Details */
-	.platform-details {
-		padding: var(--intently-space-4xl) 0;
-		background: var(--intently-bg-secondary);
-	}
-
-	.platform-detail-card {
+		padding: var(--intently-space-2xl);
 		background: white;
-		padding: var(--intently-space-xl);
-		border-radius: var(--intently-radius-lg);
-		margin-bottom: var(--intently-space-md);
-	}
-
-	.platform-detail-card h3 {
-		font-size: 1.5rem;
-		font-weight: 700;
-		margin: 0 0 var(--intently-space-md);
-		color: var(--intently-text-primary);
-	}
-
-	.platform-detail-card p {
-		color: var(--intently-text-secondary);
-		margin: 0 0 var(--intently-space-md);
-		line-height: 1.6;
-	}
-
-	.platform-detail-card ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.platform-detail-card ul li {
-		padding: 0.25rem 0 0.25rem 1.5rem;
-		position: relative;
-		color: var(--intently-text-secondary);
-	}
-
-	.platform-detail-card ul li::before {
-		content: "✓";
-		position: absolute;
-		left: 0;
-		color: var(--intently-green);
-		font-weight: 700;
-	}
-
-	/* Need Help */
-	.need-help {
-		padding: var(--intently-space-4xl) 0;
-		background: var(--intently-bg-primary);
-		text-align: center;
-	}
-
-	.need-help h2 {
-		font-size: 2rem;
-		font-weight: 700;
-		margin: 0 0 var(--intently-space-sm);
-		color: var(--intently-text-primary);
-	}
-
-	.need-help p {
-		color: var(--intently-text-secondary);
-		margin: 0 0 var(--intently-space-xl);
-	}
-
-	.help-links {
-		display: flex;
-		gap: var(--intently-space-md);
-		justify-content: center;
-	}
-
-	.help-link {
-		padding: 0.75rem 1.5rem;
-		background: var(--intently-blue);
-		color: white;
-		text-decoration: none;
-		border-radius: var(--intently-radius-full);
-		font-weight: 600;
+		border-radius: 20px;
+		border: 1px solid var(--intently-gray-200);
 		transition: all var(--intently-transition-normal);
 	}
 
-	.help-link:hover {
-		background: var(--intently-blue-dark);
-		transform: translateY(-2px);
+	.download-card:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--intently-shadow-lg);
+		border-color: var(--intently-blue);
+	}
+
+	.platform-badge {
+		width: 64px;
+		height: 64px;
+		border-radius: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+	}
+
+	.platform-badge.android {
+		background: #3DDC84;
+	}
+
+	.platform-badge.ios {
+		background: var(--intently-gray-900);
+	}
+
+	.platform-badge.chrome {
+		background: var(--intently-red);
+	}
+
+	.coming-soon-badge {
+		position: absolute;
+		top: var(--intently-space-md);
+		right: var(--intently-space-md);
+		background: var(--intently-orange);
+		color: white;
+		padding: 0.25rem 0.75rem;
+		border-radius: var(--intently-radius-full);
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	.store-button-disabled {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.75rem 1.5rem;
+		background: var(--intently-gray-200);
+		color: var(--intently-text-hint);
+		border: none;
+		border-radius: var(--intently-radius-md);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		cursor: not-allowed;
+		min-height: 48px;
+	}
+
+	.download-card h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0;
+		color: var(--intently-text-primary);
+	}
+
+	.download-card > p {
+		font-size: 0.9375rem;
+		color: var(--intently-text-secondary);
+		text-align: center;
+		margin: 0;
+		line-height: 1.5;
+	}
+
+	.feature-list {
+		list-style: none;
+		padding: 0;
+		margin: var(--intently-space-md) 0 0;
+		width: 100%;
+	}
+
+	.feature-list li {
+		font-size: 0.875rem;
+		color: var(--intently-text-secondary);
+		padding: 0.375rem 0 0.375rem 1.25rem;
+		position: relative;
+		line-height: 1.4;
+	}
+
+	.feature-list li::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 6px;
+		height: 6px;
+		background: var(--intently-blue);
+		border-radius: 50%;
+	}
+
+	/* Privacy Section */
+	.privacy-section {
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.privacy-badge {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--intently-space-md);
+		padding: var(--intently-space-lg) var(--intently-space-xl);
+		background: white;
+		border-radius: var(--intently-radius-full);
+		max-width: fit-content;
+		margin: 0 auto;
+		border: 1px solid var(--intently-gray-200);
+	}
+
+	.privacy-badge svg {
+		color: var(--intently-green);
+		flex-shrink: 0;
+	}
+
+	.privacy-text {
+		font-size: 0.9375rem;
+		color: var(--intently-text-secondary);
+	}
+
+	.privacy-text strong {
+		color: var(--intently-text-primary);
+		font-weight: 600;
+	}
+
+	/* Links Section */
+	.links-section {
+		padding: var(--intently-space-2xl) 0 var(--intently-space-4xl);
+		background: var(--intently-bg-secondary);
+	}
+
+	.links-grid {
+		display: flex;
+		justify-content: center;
+		gap: var(--intently-space-md);
+		flex-wrap: wrap;
+	}
+
+	.link-card {
+		display: flex;
+		align-items: center;
+		gap: var(--intently-space-sm);
+		padding: var(--intently-space-md) var(--intently-space-lg);
+		background: white;
+		border-radius: var(--intently-radius-lg);
+		color: var(--intently-text-primary);
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.9375rem;
+		border: 1px solid var(--intently-gray-200);
+		transition: all var(--intently-transition-normal);
+	}
+
+	.link-card:hover {
+		border-color: var(--intently-blue);
+		color: var(--intently-blue);
+		transform: translateY(-1px);
+	}
+
+	.link-card svg {
+		flex-shrink: 0;
 	}
 
 	.container {
-		max-width: 1200px;
+		max-width: 1400px;
 		margin: 0 auto;
-		padding: 0 var(--intently-space-lg);
+		padding: 0 var(--intently-space-xl);
 	}
 
 	/* Responsive */
-	@media (max-width: 768px) {
-		.download-hero h1 {
+	@media (max-width: 1024px) {
+		.download-grid {
+			grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+			max-width: 900px;
+		}
+
+		.hero h1 {
+			font-size: 2.5rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.download-grid {
+			grid-template-columns: 1fr;
+			max-width: 400px;
+		}
+
+		.hero h1 {
 			font-size: 2rem;
 		}
 
-		.steps {
-			grid-template-columns: 1fr;
+		.subtitle {
+			font-size: 1rem;
 		}
 
-		.store-buttons {
-			flex-direction: column;
-			align-items: center;
+		.download-card {
+			padding: var(--intently-space-xl);
 		}
 
-		.help-links {
+		.links-grid {
 			flex-direction: column;
+			align-items: stretch;
 		}
+
+		.link-card {
+			justify-content: space-between;
+		}
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
 	}
 </style>
