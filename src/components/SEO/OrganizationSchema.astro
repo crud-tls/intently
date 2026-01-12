@@ -1,0 +1,23 @@
+---
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Intently",
+  "url": "https://intently.app",
+  "logo": "https://intently.app/favicon.svg",
+  "description": "Build healthier digital habits through mindful interventions. Privacy-first, 100% offline.",
+  "sameAs": [
+    "https://twitter.com/intently_app",
+    "https://github.com/intently"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "support@intently.app"
+  },
+  "foundingDate": "2024",
+  "areaServed": "Worldwide"
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />

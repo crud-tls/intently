@@ -1,0 +1,43 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  publishedAt: Date;
+  modifiedAt?: Date;
+  author?: string;
+  image?: string;
+}
+
+const {
+  title,
+  description,
+  publishedAt,
+  modifiedAt,
+  author = "Intently Team",
+  image
+} = Astro.props;
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "image": image || "https://intently.app/blog-placeholder-1.jpg",
+  "datePublished": publishedAt.toISOString(),
+  "dateModified": (modifiedAt || publishedAt).toISOString(),
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Intently",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://intently.app/favicon.svg"
+    }
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(blogSchema)} />

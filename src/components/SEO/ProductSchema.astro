@@ -1,0 +1,51 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  platform: 'android' | 'ios' | 'chrome';
+  downloadUrl: string;
+  ratingValue?: number;
+  ratingCount?: number;
+}
+
+const {
+  name,
+  description,
+  platform,
+  downloadUrl,
+  ratingValue = 4.8,
+  ratingCount = 1200
+} = Astro.props;
+
+const platformNames = {
+  android: "Android App",
+  ios: "iOS App",
+  chrome: "Chrome Extension"
+};
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": `Intently - ${platformNames[platform]}`,
+  "description": description,
+  "applicationCategory": "HealthApplication",
+  "url": downloadUrl,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": ratingValue,
+    "ratingCount": ratingCount
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Intently"
+  },
+  "operatingSystem": platform === 'chrome' ? 'Windows, macOS, Linux' : platform.toUpperCase()
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(productSchema)} />

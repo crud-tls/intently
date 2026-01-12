@@ -3,6 +3,7 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 import '../styles/design-system.css';
+import OrganizationSchema from './SEO/OrganizationSchema.astro';
 
 interface Props {
 	title: string;
@@ -28,10 +29,18 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="Intently Blog" href="/rss.xml" />
+
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+
+<!-- Extended Meta Tags -->
+<meta name="theme-color" content="#2196F3" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="keywords" content="screen time app, digital wellbeing, app usage tracking, mindful tech, privacy-first" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -39,6 +48,8 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:site_name" content="Intently" />
+<meta property="og:locale" content="en_US" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -46,3 +57,13 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta name="twitter:creator" content="@intently_app" />
+<meta name="twitter:site" content="@intently_app" />
+<meta property="twitter:domain" content="intently.app" />
+
+<!-- Mobile App Meta Tags -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Intently" />
+
+<!-- Organization Schema -->
+<OrganizationSchema />

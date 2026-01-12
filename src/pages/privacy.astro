@@ -3,13 +3,42 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Card from '../components/ui/Card.astro';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
 import { SITE_TITLE } from '../consts';
+
+const privacyFAQs = [
+	{
+		question: "Does Intently collect any personal information?",
+		answer: "No. Intently does not collect, store, or transmit any personal information. Your usage data stays on your device."
+	},
+	{
+		question: "Can I export my data?",
+		answer: "Yes, you can export your usage data at any time from within the app. This data is saved locally and never transmitted."
+	},
+	{
+		question: "What happens if I lose my device?",
+		answer: "Since data is stored locally only, you would lose your usage history if you lose your device. We recommend periodic exports if you want to keep long-term records."
+	},
+	{
+		question: "Will Intently ever add cloud sync?",
+		answer: "If we ever add sync features, they will be opt-in only and use end-to-end encryption so we cannot read your data. The offline-first experience will always remain available."
+	},
+	{
+		question: "Does Intently use third-party services?",
+		answer: "No. Intently has no third-party analytics, advertising, or tracking services. The only network requests are for app updates and crash reporting (which can be disabled)."
+	},
+	{
+		question: "Is Intently open source?",
+		answer: "We believe in transparency. Contact us if you're interested in reviewing our code or contributing to the project."
+	}
+];
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={`Privacy - ${SITE_TITLE}`} description="Intently is privacy-first. Your data never leaves your device. 100% offline, no tracking, no account required." />
+		<FAQSchema faqs={privacyFAQs} />
 	</head>
 	<body>
 		<Header />
@@ -25,6 +54,9 @@ import { SITE_TITLE } from '../consts';
 					</div>
 					<h1>Your Privacy is Our Foundation</h1>
 					<p class="hero-subtitle">Intently is built on the belief that personal wellbeing data should stay personal. Your data never leaves your device. Ever.</p>
+					<p class="hero-links">
+						Explore our <a href="/features">privacy-first features</a> or <a href="/download">download Intently</a> to experience true digital privacy.
+					</p>
 				</div>
 			</section>
 
@@ -149,7 +181,7 @@ import { SITE_TITLE } from '../consts';
 
 	.privacy-hero {
 		padding: var(--intently-space-4xl) 0;
-		background: linear-gradient(135deg, var(--intently-green) 0%, var(--intently-blue) 100%);
+		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
 		color: white;
 		text-align: center;
 	}
@@ -179,6 +211,25 @@ import { SITE_TITLE } from '../consts';
 		margin: 0 auto;
 		opacity: 0.95;
 		line-height: 1.6;
+	}
+
+	.hero-links {
+		font-size: 1.125rem;
+		max-width: 700px;
+		margin: var(--intently-space-lg) auto 0;
+		opacity: 0.95;
+	}
+
+	.hero-links a {
+		color: white;
+		font-weight: 600;
+		text-decoration: none;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+		transition: var(--intently-transition-normal);
+	}
+
+	.hero-links a:hover {
+		border-bottom-color: white;
 	}
 
 	.commitments {
@@ -368,6 +419,14 @@ import { SITE_TITLE } from '../consts';
 	@media (max-width: 768px) {
 		.privacy-hero h1 {
 			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.hero-links {
+			font-size: 1rem;
 		}
 
 		.section-title {
