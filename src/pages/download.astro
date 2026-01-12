@@ -1,0 +1,371 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import StoreButton from '../components/ui/StoreButton.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Download - ${SITE_TITLE}`} description="Download Intently for Android, iOS, and Chrome. Start building healthier digital habits today." />
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Download Hero -->
+			<section class="download-hero">
+				<div class="container">
+					<h1>Get Intently</h1>
+					<p class="hero-subtitle">Start building healthier digital habits today. Available on all your devices.</p>
+
+					<!-- Store Buttons -->
+					<div class="store-buttons">
+						<StoreButton store="playstore" href="https://play.google.com/store/apps/details?id=intently.app" />
+						<StoreButton store="appstore" href="https://apps.apple.com/app/intently" />
+						<StoreButton store="chromestore" href="https://chrome.google.com/webstore/detail/intently" />
+					</div>
+
+					<!-- QR Codes for Mobile -->
+					<div class="qr-codes">
+						<div class="qr-code-card">
+							<div class="qr-placeholder">
+								<svg viewBox="0 0 100 100" fill="currentColor" width="80" height="80">
+									<rect x="10" y="10" width="20" height="20"/>
+									<rect x="70" y="10" width="20" height="20"/>
+									<rect x="10" y="70" width="20" height="20"/>
+									<rect x="40" y="10" width="10" height="10"/>
+									<rect x="40" y="30" width="30" height="30"/>
+									<rect x="80" y="40" width="10" height="40"/>
+								</svg>
+							</div>
+							<span>Android</span>
+						</div>
+						<div class="qr-code-card">
+							<div class="qr-placeholder">
+								<svg viewBox="0 0 100 100" fill="currentColor" width="80" height="80">
+									<rect x="10" y="10" width="20" height="20"/>
+									<rect x="70" y="10" width="20" height="20"/>
+									<rect x="10" y="70" width="20" height="20"/>
+									<rect x="40" y="40" width="20" height="20"/>
+								</svg>
+							</div>
+							<span>iOS</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Quick Start Guide -->
+			<section class="quick-start">
+				<div class="container">
+					<h2>Quick Start Guide</h2>
+					<p class="section-subtitle">Get started with Intently in 3 simple steps</p>
+
+					<div class="steps">
+						<div class="step">
+							<div class="step-number">1</div>
+							<h3>Download & Install</h3>
+							<p>Get Intently from your preferred app store. It's free to download and use.</p>
+						</div>
+						<div class="step">
+							<div class="step-number">2</div>
+							<h3>Set Your Goals</h3>
+							<p>Choose which apps to track and set daily time limits that work for you.</p>
+						</div>
+						<div class="step">
+							<div class="step-number">3</div>
+							<h3>Build Habits</h3>
+							<p>Let mindful interventions guide you toward healthier digital habits.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Platform Details -->
+			<section class="platform-details">
+				<div class="container">
+					<div class="platform-detail-card">
+						<h3>🤖 Android</h3>
+						<p>Full access to app usage tracking with complete intervention system. Includes widgets and detailed analytics.</p>
+						<ul>
+							<li>Android 8.0 or later</li>
+							<li>Usage Statistics permission</li>
+							li>Overlay permission for interventions</li>
+						</ul>
+					</div>
+					<div class="platform-detail-card">
+						<h3>🍎 iOS</h3>
+						<p>Native integration with Screen Time API for accurate usage tracking. Beautiful iOS-optimized design.</p>
+						<ul>
+							<li>iOS 16.0 or later</li>
+							<li>Screen Time permission</li>
+							<li>Notifications enabled</li>
+						</ul>
+					</div>
+					<div class="platform-detail-card">
+						<h3>🌐 Chrome</h3>
+						<p>Browser extension for staying mindful while you work or browse. Site tracking and focus mode included.</p>
+						<ul>
+							<li>Chrome 88 or later</li>
+							<li>Reading history permission</li>
+							<li>Works on Chrome OS too</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Need Help -->
+			<section class="need-help">
+				<div class="container">
+					<h2>Need Help?</h2>
+					<p>Check out our FAQ or reach out to our support team.</p>
+					<div class="help-links">
+						<a href="/about" class="help-link">Contact Support</a>
+						<a href="/blog" class="help-link">Read the Blog</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.download-hero {
+		padding: var(--intently-space-4xl) 0;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.download-hero h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		color: white;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		margin: 0 0 var(--intently-space-2xl);
+		opacity: 0.95;
+	}
+
+	.store-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--intently-space-md);
+		margin-bottom: var(--intently-space-3xl);
+	}
+
+	.qr-codes {
+		display: flex;
+		justify-content: center;
+		gap: var(--intently-space-xl);
+		flex-wrap: wrap;
+	}
+
+	.qr-code-card {
+		background: white;
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.qr-placeholder {
+		width: 120px;
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--intently-gray-100);
+		border-radius: var(--intently-radius-md);
+	}
+
+	.qr-placeholder svg {
+		color: var(--intently-gray-800);
+	}
+
+	/* Quick Start */
+	.quick-start {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-primary);
+	}
+
+	.quick-start h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-align: center;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.section-subtitle {
+		font-size: 1.125rem;
+		text-align: center;
+		max-width: 600px;
+		margin: 0 auto var(--intently-space-3xl);
+		color: var(--intently-text-secondary);
+	}
+
+	.steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: var(--intently-space-xl);
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.step {
+		text-align: center;
+		padding: var(--intently-space-xl);
+	}
+
+	.step-number {
+		width: 60px;
+		height: 60px;
+		background: var(--intently-blue);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 auto var(--intently-space-md);
+	}
+
+	.step h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		color: var(--intently-text-primary);
+	}
+
+	.step p {
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* Platform Details */
+	.platform-details {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.platform-detail-card {
+		background: white;
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		margin-bottom: var(--intently-space-md);
+	}
+
+	.platform-detail-card h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.platform-detail-card p {
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-md);
+		line-height: 1.6;
+	}
+
+	.platform-detail-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.platform-detail-card ul li {
+		padding: 0.25rem 0 0.25rem 1.5rem;
+		position: relative;
+		color: var(--intently-text-secondary);
+	}
+
+	.platform-detail-card ul li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--intently-green);
+		font-weight: 700;
+	}
+
+	/* Need Help */
+	.need-help {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-primary);
+		text-align: center;
+	}
+
+	.need-help h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		color: var(--intently-text-primary);
+	}
+
+	.need-help p {
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-xl);
+	}
+
+	.help-links {
+		display: flex;
+		gap: var(--intently-space-md);
+		justify-content: center;
+	}
+
+	.help-link {
+		padding: 0.75rem 1.5rem;
+		background: var(--intently-blue);
+		color: white;
+		text-decoration: none;
+		border-radius: var(--intently-radius-full);
+		font-weight: 600;
+		transition: all var(--intently-transition-normal);
+	}
+
+	.help-link:hover {
+		background: var(--intently-blue-dark);
+		transform: translateY(-2px);
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 var(--intently-space-lg);
+	}
+
+	/* Responsive */
+	@media (max-width: 768px) {
+		.download-hero h1 {
+			font-size: 2rem;
+		}
+
+		.steps {
+			grid-template-columns: 1fr;
+		}
+
+		.store-buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.help-links {
+			flex-direction: column;
+		}
+	}
+</style>

@@ -1,0 +1,115 @@
+---
+/**
+ * Button Component
+ * Variants: primary, secondary, ghost
+ * Sizes: sm, md, lg
+ */
+interface Props {
+	variant?: 'primary' | 'secondary' | 'ghost';
+	size?: 'sm' | 'md' | 'lg';
+	href?: string;
+	type?: 'button' | 'submit' | 'reset';
+	class?: string;
+	[attr: string]: any;
+}
+
+const {
+	variant = 'primary',
+	size = 'md',
+	href,
+	type = 'button',
+	class: className = '',
+	...attrs
+} = Astro.props;
+
+const classes = Astro.slots.has('default')
+	? `btn btn-${variant} btn-${size} ${className}`.trim()
+	: `btn btn-${variant} btn-${size} ${className}`.trim();
+---
+
+{href ? (
+	<a href={href} class={classes} {...attrs}>
+		<slot />
+	</a>
+) : (
+	<button type={type} class={classes} {...attrs}>
+		<slot />
+	</button>
+)}
+
+<style>
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		font-weight: 600;
+		text-decoration: none;
+		border-radius: 9999px;
+		transition: all var(--intently-transition-normal);
+		cursor: pointer;
+		border: 2px solid transparent;
+		font-family: inherit;
+	}
+
+	.btn:hover {
+		transform: translateY(-1px);
+	}
+
+	.btn:active {
+		transform: translateY(0);
+	}
+
+	/* Primary variant */
+	.btn-primary {
+		background-color: var(--intently-blue);
+		color: white;
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.btn-primary:hover {
+		background-color: var(--intently-blue-dark);
+		box-shadow: var(--intently-shadow-lg);
+	}
+
+	.btn-primary:active {
+		background-color: var(--intently-blue-dark);
+	}
+
+	/* Secondary variant */
+	.btn-secondary {
+		background-color: transparent;
+		color: var(--intently-blue);
+		border-color: var(--intently-blue);
+	}
+
+	.btn-secondary:hover {
+		background-color: var(--intently-blue-light);
+	}
+
+	/* Ghost variant */
+	.btn-ghost {
+		background-color: transparent;
+		color: var(--intently-text-primary);
+	}
+
+	.btn-ghost:hover {
+		background-color: var(--intently-gray-100);
+	}
+
+	/* Sizes */
+	.btn-sm {
+		padding: 0.5rem 1rem;
+		font-size: 0.875rem;
+	}
+
+	.btn-md {
+		padding: 0.75rem 1.5rem;
+		font-size: 1rem;
+	}
+
+	.btn-lg {
+		padding: 1rem 2rem;
+		font-size: 1.125rem;
+	}
+</style>

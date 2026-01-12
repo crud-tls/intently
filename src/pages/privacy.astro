@@ -1,0 +1,383 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/ui/Card.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Privacy - ${SITE_TITLE}`} description="Intently is privacy-first. Your data never leaves your device. 100% offline, no tracking, no account required." />
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Privacy Hero -->
+			<section class="privacy-hero">
+				<div class="container">
+					<div class="privacy-badge-large">
+						<svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+							<path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+						</svg>
+					</div>
+					<h1>Your Privacy is Our Foundation</h1>
+					<p class="hero-subtitle">Intently is built on the belief that personal wellbeing data should stay personal. Your data never leaves your device. Ever.</p>
+				</div>
+			</section>
+
+			<!-- Privacy Commitments -->
+			<section class="commitments">
+				<div class="container">
+					<h2 class="section-title">Our Privacy Commitments</h2>
+					<div class="commitments-grid">
+						<Card variant="elevated">
+							<div class="commitment-icon">📱</div>
+							<h3>100% Offline</h3>
+							<p>Intently works completely offline. No internet connection required for any core functionality.</p>
+						</Card>
+						<Card variant="elevated">
+							<div class="commitment-icon">💾</div>
+							<h3>Local Data Only</h3>
+							<p>All your usage data is stored locally on your device. Nothing is transmitted to any server.</p>
+						</Card>
+						<Card variant="elevated">
+							<div class="commitment-icon">🔐</div>
+							<h3>No Account Required</h3>
+							<p>Use Intently without creating an account. No email, no password, no personal information needed.</p>
+						</Card>
+						<Card variant="elevated">
+							<div class="commitment-icon">🚫</div>
+							<h3>No Analytics</h3>
+							<p>We don't track how you use the app. No behavioral analytics, no usage statistics, no telemetry.</p>
+						</Card>
+						<Card variant="elevated">
+							<div class="commitment-icon">📊</div>
+							<h3>No Advertising</h3>
+							<p>No ads, no tracking pixels, no third-party SDKs. Just you and your habit-building journey.</p>
+						</Card>
+						<Card variant="elevated">
+							<div class="commitment-icon">🔓</div>
+							<h3>No Data Selling</h3>
+							<p>We have no data to sell. Your personal information remains yours alone.</p>
+						</Card>
+					</div>
+				</div>
+			</section>
+
+			<!-- How Data Works -->
+			<section class="data-flow">
+				<div class="container">
+					<h2 class="section-title">How Your Data Works</h2>
+					<div class="data-flow-content">
+						<div class="flow-diagram">
+							<div class="flow-step">
+								<div class="flow-icon">📱</div>
+								<div class="flow-label">Your Device</div>
+							</div>
+							<div class="flow-arrow">→</div>
+							<div class="flow-step">
+								<div class="flow-icon">📊</div>
+								<div class="flow-label">Intently App</div>
+							</div>
+							<div class="flow-arrow blocked">✗</div>
+							<div class="flow-step blocked">
+								<div class="flow-icon">☁️</div>
+								<div class="flow-label">The Internet</div>
+							</div>
+						</div>
+						<p class="flow-explanation">Your usage data flows from your system directly to the Intently app on your device. It never leaves your device, period.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="faq">
+				<div class="container">
+					<h2 class="section-title">Privacy FAQ</h2>
+					<div class="faq-list">
+						<div class="faq-item">
+							<h3>Does Intently collect any personal information?</h3>
+							<p>No. Intently does not collect, store, or transmit any personal information. Your usage data stays on your device.</p>
+						</div>
+						<div class="faq-item">
+							<h3>Can I export my data?</h3>
+							<p>Yes, you can export your usage data at any time from within the app. This data is saved locally and never transmitted.</p>
+						</div>
+						<div class="faq-item">
+							<h3>What happens if I lose my device?</h3>
+							<p>Since data is stored locally only, you would lose your usage history if you lose your device. We recommend periodic exports if you want to keep long-term records.</p>
+						</div>
+						<div class="faq-item">
+							<h3>Will Intently ever add cloud sync?</h3>
+							<p>If we ever add sync features, they will be opt-in only and use end-to-end encryption so we cannot read your data. The offline-first experience will always remain available.</p>
+						</div>
+						<div class="faq-item">
+							<h3>Does Intently use third-party services?</h3>
+							<p>No. Intently has no third-party analytics, advertising, or tracking services. The only network requests are for app updates and crash reporting (which can be disabled).</p>
+						</div>
+						<div class="faq-item">
+							<h3>Is Intently open source?</h3>
+							<p>We believe in transparency. Contact us if you're interested in reviewing our code or contributing to the project.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="cta-section">
+				<div class="container">
+					<div class="cta-content">
+						<h2>Privacy Shouldn't Be a Premium Feature</h2>
+						<p>Experience digital wellbeing without compromising your privacy. Download Intently today.</p>
+						<a href="/download" class="cta-button">Download Intently</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.privacy-hero {
+		padding: var(--intently-space-4xl) 0;
+		background: linear-gradient(135deg, var(--intently-green) 0%, var(--intently-blue) 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.privacy-badge-large {
+		width: 80px;
+		height: 80px;
+		background: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto var(--intently-space-xl);
+		color: var(--intently-green);
+	}
+
+	.privacy-hero h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		color: white;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.95;
+		line-height: 1.6;
+	}
+
+	.commitments {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-primary);
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-align: center;
+		margin: 0 0 var(--intently-space-3xl);
+		color: var(--intently-text-primary);
+	}
+
+	.commitments-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: var(--intently-space-xl);
+	}
+
+	.commitment-icon {
+		font-size: 2.5rem;
+		margin-bottom: var(--intently-space-md);
+	}
+
+	.commitments-grid h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		color: var(--intently-text-primary);
+	}
+
+	.commitments-grid p {
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* Data Flow */
+	.data-flow {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.flow-diagram {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--intently-space-lg);
+		margin: var(--intently-space-3xl) 0;
+		flex-wrap: wrap;
+	}
+
+	.flow-step {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--intently-space-sm);
+	}
+
+	.flow-icon {
+		width: 80px;
+		height: 80px;
+		background: white;
+		border-radius: var(--intently-radius-lg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.flow-step.blocked .flow-icon {
+		background: var(--intently-gray-200);
+		opacity: 0.5;
+	}
+
+	.flow-label {
+		font-weight: 600;
+		color: var(--intently-text-primary);
+	}
+
+	.flow-arrow {
+		font-size: 2rem;
+		color: var(--intently-green);
+		font-weight: 700;
+	}
+
+	.flow-arrow.blocked {
+		color: var(--intently-red);
+	}
+
+	.flow-explanation {
+		text-align: center;
+		color: var(--intently-text-secondary);
+		max-width: 600px;
+		margin: 0 auto;
+		font-size: 1.125rem;
+	}
+
+	/* FAQ */
+	.faq {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-primary);
+	}
+
+	.faq-list {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.faq-item {
+		padding: var(--intently-space-xl) 0;
+		border-bottom: 1px solid var(--intently-gray-200);
+	}
+
+	.faq-item:last-child {
+		border-bottom: none;
+	}
+
+	.faq-item h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		color: var(--intently-text-primary);
+	}
+
+	.faq-item p {
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* CTA */
+	.cta-section {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-secondary);
+		text-align: center;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.cta-content p {
+		font-size: 1.125rem;
+		color: var(--intently-text-secondary);
+		max-width: 600px;
+		margin: 0 auto var(--intently-space-xl);
+	}
+
+	.cta-button {
+		display: inline-block;
+		padding: 1rem 2rem;
+		background: var(--intently-green);
+		color: white;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1.125rem;
+		border-radius: var(--intently-radius-full);
+		transition: all var(--intently-transition-normal);
+	}
+
+	.cta-button:hover {
+		background: var(--intently-green-dark);
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-lg);
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 var(--intently-space-lg);
+	}
+
+	/* Responsive */
+	@media (max-width: 768px) {
+		.privacy-hero h1 {
+			font-size: 2rem;
+		}
+
+		.section-title {
+			font-size: 2rem;
+		}
+
+		.commitments-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.flow-diagram {
+			flex-direction: column;
+		}
+
+		.flow-arrow {
+			transform: rotate(90deg);
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+</style>

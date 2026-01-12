@@ -1,0 +1,354 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/ui/Card.astro';
+import Button from '../components/ui/Button.astro';
+import { SITE_TITLE } from '../consts';
+
+const features = [
+	{
+		icon: "📊",
+		title: "Smart Usage Tracking",
+		description: "Automatically track how much time you spend in different apps. See detailed breakdowns of your daily, weekly, and monthly usage patterns.",
+		details: ["Daily time summaries", "Per-app usage breakdown", "Weekly and monthly trends", "Category-based grouping"],
+		color: "blue"
+	},
+	{
+		icon: "🎯",
+		title: "Daily Goals & Limits",
+		description: "Set personalized daily time limits for your most distracting apps. Visual progress indicators show how you're doing throughout the day.",
+		details: ["Custom time limits per app", "Visual progress rings", "Goal achievement celebrations", "Flexible limit adjustments"],
+		color: "green"
+	},
+	{
+		icon: "🔔",
+		title: "Mindful Interventions",
+		description: "Gentle, full-screen reminders when you open tracked apps. Take a breath and decide if you really want to scroll or do something more meaningful.",
+		details: ["Customizable reminder messages", "Timer-based interventions", "Multiple intervention types", "Reflection prompts"],
+		color: "purple"
+	},
+	{
+		icon: "🏆",
+		title: "Gamification & Streaks",
+		description: "Build momentum with streak tracking and achievements. Celebrate milestones as you develop healthier digital habits.",
+		details: ["Daily streak tracking", "Milestone celebrations", "Achievement badges", "Streak recovery options"],
+		color: "orange"
+	},
+	{
+		icon: "📈",
+		title: "Analytics Dashboard",
+		description: "Understand your digital habits with beautiful charts and insights. See patterns, improvements, and areas for growth.",
+		details: ["Usage trend charts", "Baseline comparisons", "Improvement metrics", "Exportable reports"],
+		color: "blue"
+	},
+	{
+		icon: "🧘",
+		title: "Reflection Mode",
+		description: "Take mindful pauses before accessing apps. Custom prompts help you reflect on your intentions and make conscious choices.",
+		details: ["Custom reflection prompts", "Breathing exercises", "Intention setting", "Usage journaling"],
+		color: "green"
+	},
+	{
+		icon: "📱",
+		title: "Widgets & Quick Access",
+		description: "Check your progress at a glance with beautiful home screen widgets. Quick access to settings and stats.",
+		details: ["Home screen widgets", "Quick settings toggle", "One-tap stats view", "Notification center integration"],
+		color: "purple"
+	},
+	{
+		icon: "🔒",
+		title: "Privacy-First Design",
+		description: "Your data never leaves your device. No cloud sync, no analytics, no account required. Complete privacy guaranteed.",
+		details: ["100% offline functionality", "Local data storage only", "No account required", "No tracking or analytics"],
+		color: "green"
+	}
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Features - ${SITE_TITLE}`} description="Explore Intently's features: smart usage tracking, mindful interventions, gamification, and privacy-first design." />
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Features Hero -->
+			<section class="features-hero">
+				<div class="container">
+					<h1>Features That Build Better Habits</h1>
+					<p class="hero-subtitle">Intently combines psychology and design to help you develop a healthier relationship with technology.</p>
+				</div>
+			</section>
+
+			<!-- Core Features Grid -->
+			<section class="features-grid-section">
+				<div class="container">
+					<h2 class="section-title">Core Features</h2>
+					<div class="features-grid">
+						{features.map(feature => (
+							<Card variant="elevated">
+								<div class="feature-header">
+									<span class="feature-icon">{feature.icon}</span>
+									<h3>{feature.title}</h3>
+								</div>
+								<p class="feature-description">{feature.description}</p>
+								<ul class="feature-details">
+									{feature.details.map(detail => <li>{detail}</li>)}
+								</ul>
+							</Card>
+						))}
+					</div>
+				</div>
+			</section>
+
+			<!-- How It Works -->
+			<section class="how-it-works">
+				<div class="container">
+					<h2 class="section-title">How Intently Works</h2>
+					<div class="steps-timeline">
+						<div class="timeline-step">
+							<div class="step-marker">
+								<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+									<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+								</svg>
+							</div>
+							<div class="step-content">
+								<h3>Track</h3>
+								<p>Intently runs in the background, tracking which apps you use and for how long.</p>
+							</div>
+						</div>
+						<div class="timeline-step">
+							<div class="step-marker">
+								<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+									<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+								</svg>
+							</div>
+							<div class="step-content">
+								<h3>Intervene</h3>
+								<p>When you approach your limit or open a tracked app, gentle reminders prompt mindful reflection.</p>
+							</div>
+						</div>
+						<div class="timeline-step">
+							<div class="step-marker">
+								<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+									<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+								</svg>
+							</div>
+							<div class="step-content">
+								<h3>Transform</h3>
+								<p>Over time, these mindful moments add up to lasting habit change and healthier digital behavior.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="cta-section">
+				<div class="container">
+					<div class="cta-content">
+						<h2>Ready to Build Healthier Habits?</h2>
+						<p>Join thousands of users who have transformed their relationship with technology using Intently.</p>
+						<div class="cta-buttons">
+							<Button href="/download" variant="primary" size="lg">Download Now</Button>
+							<Button href="/privacy" variant="secondary" size="lg">Learn About Privacy</Button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.features-hero {
+		padding: var(--intently-space-4xl) 0;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.features-hero h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		color: white;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.95;
+		line-height: 1.6;
+	}
+
+	.features-grid-section {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-primary);
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-align: center;
+		margin: 0 0 var(--intently-space-3xl);
+		color: var(--intently-text-primary);
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: var(--intently-space-xl);
+	}
+
+	.feature-header {
+		display: flex;
+		align-items: center;
+		gap: var(--intently-space-md);
+		margin-bottom: var(--intently-space-md);
+	}
+
+	.feature-icon {
+		font-size: 2rem;
+		line-height: 1;
+	}
+
+	.feature-header h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0;
+		color: var(--intently-text-primary);
+	}
+
+	.feature-description {
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+		margin: 0 0 var(--intently-space-md);
+	}
+
+	.feature-details {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.feature-details li {
+		padding: 0.25rem 0 0.25rem 1.5rem;
+		position: relative;
+		font-size: 0.9375rem;
+		color: var(--intently-text-secondary);
+	}
+
+	.feature-details li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--intently-blue);
+		font-weight: 700;
+	}
+
+	/* How It Works */
+	.how-it-works {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.steps-timeline {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.timeline-step {
+		display: flex;
+		gap: var(--intently-space-xl);
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	.step-marker {
+		width: 48px;
+		height: 48px;
+		flex-shrink: 0;
+		background: var(--intently-green);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.step-content h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		color: var(--intently-text-primary);
+	}
+
+	.step-content p {
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-primary);
+		text-align: center;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.cta-content p {
+		font-size: 1.125rem;
+		color: var(--intently-text-secondary);
+		max-width: 600px;
+		margin: 0 auto var(--intently-space-xl);
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: var(--intently-space-md);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 var(--intently-space-lg);
+	}
+
+	/* Responsive */
+	@media (max-width: 768px) {
+		.features-hero h1 {
+			font-size: 2rem;
+		}
+
+		.section-title {
+			font-size: 2rem;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+	}
+</style>

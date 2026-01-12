@@ -1,0 +1,178 @@
+---
+/**
+ * Platform Card Component
+ * For showcasing the different platforms (Android, iOS, Chrome)
+ */
+import StoreButton from '../ui/StoreButton.astro';
+
+interface Props {
+	platform: 'android' | 'ios' | 'chrome';
+	title: string;
+	description: string;
+	features: string[];
+	downloadUrl: string;
+	storeType: 'playstore' | 'appstore' | 'chromestore';
+	available?: boolean;
+}
+
+const { platform, title, description, features, downloadUrl, storeType, available = true } = Astro.props;
+---
+
+<div class={"platform-card " + (!available ? "platform-card-soon" : "")}>
+	<div class="platform-header">
+		<div class="platform-icon">
+			{platform === 'android' && (
+				<svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+					<path d="M17.523 15.3414c-.5511 0-.9996-.4485-.9996-.9996s.4485-.9996.9996-.9996c.5511 0 .9996.4485.9996.9996s-.4485.9996-.9996.9996m-11.046 0c-.5511 0-.9996-.4485-.9996-.9996s.4485-.9996.9996-.9996c.5511 0 .9996.4485.9996.9996s-.4485.9996-.9996.9996m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1529-.5679.4173.4173 0 00-.5681.1528l-2.0211 3.5014a12.763 12.763 0 00-3.1914-.3998c-1.0965 0-2.1581.1361-3.176.3998L8.3421 5.4469a.4185.4185 0 00-.569-.1528.4167.4167 0 00-.1529.5679l1.9973 3.4592a6.607 6.607 0 00-3.4947 2.9511 12.376 12.376 0 00-1.3975 5.8195c0 4.0284 3.1431 7.2932 7.0214 7.2932 3.8782 0 7.0214-3.2648 7.0214-7.2932 0-2.1113-.7462-4.0563-1.9775-5.5754a6.637 6.637 0 00-3.5141-2.9952z"/>
+				</svg>
+			)}
+			{platform === 'ios' && (
+				<svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+					<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+				</svg>
+			)}
+			{platform === 'chrome' && (
+				<svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+					<path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 3.6c1.7 0 3.27.5 4.6 1.35l-1.45 2.5c-.85-.5-1.85-.8-2.9-.8-1.05 0-2.05.3-2.9.8L7.9 4.95C9.23 4.1 10.8 3.6 12 3.6zM3.6 12c0-1.7.5-3.27 1.35-4.6l2.5 1.45c-.5.85-.8 1.85-.8 2.9 0 1.05.3 2.05.8 2.9l-2.5 1.45C4.1 15.27 3.6 13.7 3.6 12zm8.4 8.4c-1.7 0-3.27-.5-4.6-1.35l1.45-2.5c.85.5 1.85.8 2.9.8 1.05 0 2.05-.3 2.9-.8l1.45 2.5c-1.33.85-2.9 1.35-4.6 1.35z"/>
+				</svg>
+			)}
+		</div>
+		<div class="platform-info">
+			<h3 class="platform-title">{title}</h3>
+			{!available && <span class="coming-soon">Coming Soon</span>}
+		</div>
+	</div>
+	<p class="platform-description">{description}</p>
+	<ul class="platform-features">
+		{features.map(feature => <li>{feature}</li>)}
+	</ul>
+	<div class="platform-cta">
+		{available ? (
+			<StoreButton store={storeType} href={downloadUrl} />
+		) : (
+			<button class="notify-btn" disabled>Join Waitlist</button>
+		)}
+	</div>
+</div>
+
+<style>
+	.platform-card {
+		display: flex;
+		flex-direction: column;
+		gap: var(--intently-space-md);
+		padding: var(--intently-space-xl);
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-lg);
+		box-shadow: var(--intently-shadow-md);
+		transition: all var(--intently-transition-normal);
+		border: 2px solid transparent;
+	}
+
+	.platform-card:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--intently-shadow-lg);
+		border-color: var(--intently-blue-light);
+	}
+
+	.platform-card-soon {
+		opacity: 0.8;
+	}
+
+	.platform-card-soon:hover {
+		transform: none;
+	}
+
+	.platform-header {
+		display: flex;
+		align-items: center;
+		gap: var(--intently-space-md);
+	}
+
+	.platform-icon {
+		width: 48px;
+		height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--intently-bg-secondary);
+		border-radius: var(--intently-radius-md);
+		color: var(--intently-gray-800);
+		flex-shrink: 0;
+	}
+
+	.platform-icon svg {
+		width: 32px;
+		height: 32px;
+	}
+
+	.platform-info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.platform-title {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0;
+		color: var(--intently-text-primary);
+	}
+
+	.coming-soon {
+		font-size: 0.75rem;
+		font-weight: 600;
+		color: var(--intently-orange);
+		background: var(--intently-orange-light);
+		padding: 0.125rem 0.5rem;
+		border-radius: var(--intently-radius-full);
+		display: inline-block;
+	}
+
+	.platform-description {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: 0;
+	}
+
+	.platform-features {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.platform-features li {
+		font-size: 0.9375rem;
+		color: var(--intently-text-secondary);
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.platform-features li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--intently-green);
+		font-weight: 700;
+	}
+
+	.platform-cta {
+		margin-top: auto;
+		padding-top: var(--intently-space-md);
+	}
+
+	.notify-btn {
+		width: 100%;
+		padding: 0.75rem 1.5rem;
+		background: var(--intently-gray-200);
+		color: var(--intently-text-hint);
+		border: none;
+		border-radius: var(--intently-radius-md);
+		font-weight: 600;
+		cursor: not-allowed;
+		font-size: 1rem;
+	}
+</style>

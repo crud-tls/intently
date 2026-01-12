@@ -1,0 +1,81 @@
+/**
+ * Intently Design System
+ * Based on Material 3 design language
+ */
+
+:root {
+	/* === Brand Colors === */
+	/* Primary - Blue for brand identity and CTAs */
+	--intently-blue: #2196F3;
+	--intently-blue-dark: #1976D2;
+	--intently-blue-light: #BBDEFB;
+
+	/* Success - Green for goals achieved, positive trends */
+	--intently-green: #4CAF50;
+	--intently-green-dark: #388E3C;
+	--intently-green-light: #C8E6C9;
+
+	/* Warning - Orange for approaching limits */
+	--intently-orange: #FF9800;
+	--intently-orange-dark: #F57C00;
+	--intently-orange-light: #FFE0B2;
+
+	/* Urgent - Red for limits exceeded */
+	--intently-red: #F44336;
+	--intently-red-dark: #D32F2F;
+	--intently-red-light: #FFCDD2;
+
+	/* Milestone - Purple for achievements */
+	--intently-purple: #9C27B0;
+	--intently-purple-dark: #7B1FA2;
+	--intently-purple-light: #E1BEE7;
+
+	/* === Neutral Colors === */
+	--intently-gray-50: #FAFAFA;
+	--intently-gray-100: #F5F5F5;
+	--intently-gray-200: #EEEEEE;
+	--intently-gray-300: #E0E0E0;
+	--intently-gray-400: #BDBDBD;
+	--intently-gray-500: #9E9E9E;
+	--intently-gray-600: #757575;
+	--intently-gray-700: #616161;
+	--intently-gray-800: #424242;
+	--intently-gray-900: #212121;
+
+	/* === Semantic Colors === */
+	--intently-bg-primary: #FFFFFF;
+	--intently-bg-secondary: #F5F7FA;
+	--intently-bg-accent: #E3F2FD;
+
+	--intently-text-primary: #212121;
+	--intently-text-secondary: #757575;
+	--intently-text-hint: #9E9E9E;
+
+	/* === Shadows - Material 3 elevation === */
+	--intently-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+	--intently-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+	--intently-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+	--intently-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+
+	/* === Border Radius - Material 3 === */
+	--intently-radius-sm: 8px;
+	--intently-radius-md: 12px;
+	--intently-radius-lg: 16px;
+	--intently-radius-xl: 24px;
+	--intently-radius-full: 9999px;
+
+	/* === Spacing Scale === */
+	--intently-space-xs: 0.25rem; /* 4px */
+	--intently-space-sm: 0.5rem; /* 8px */
+	--intently-space-md: 1rem; /* 16px */
+	--intently-space-lg: 1.5rem; /* 24px */
+	--intently-space-xl: 2rem; /* 32px */
+	--intently-space-2xl: 3rem; /* 48px */
+	--intently-space-3xl: 4rem; /* 64px */
+	--intently-space-4xl: 6rem; /* 96px */
+
+	/* === Transitions === */
+	--intently-transition-fast: 150ms ease;
+	--intently-transition-normal: 250ms ease;
+	--intently-transition-slow: 350ms ease;
+}

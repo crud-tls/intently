@@ -2,7 +2,14 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Hero from '../components/marketing/Hero.astro';
+import FeatureCard from '../components/marketing/FeatureCard.astro';
+import PlatformCard from '../components/marketing/PlatformCard.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const androidFeatures = ["Complete app blocking", "Usage analytics", "Streak tracking", "Widget support"];
+const iosFeatures = ["Screen Time API", "Widget support", "iCloud sync", "Beautiful design"];
+const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick settings"];
 ---
 
 <!doctype html>
@@ -12,39 +19,196 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
+
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<Hero />
+
+			<!-- Features Section -->
+			<section class="features-section">
+				<div class="container">
+					<h2 class="section-title">Build Mindful Digital Habits</h2>
+					<p class="section-subtitle">Intently helps you take control of your screen time through gentle, privacy-first interventions.</p>
+					<div class="features-grid">
+						<FeatureCard
+							icon="📊"
+							title="Smart Usage Tracking"
+							description="Automatically track app usage with daily goals and progress visualization. See exactly where your time goes."
+							color="blue"
+						/>
+						<FeatureCard
+							icon="🔔"
+							title="Mindful Interventions"
+							description="Gentle reminders when opening apps help you make conscious choices about how you spend your time."
+							color="purple"
+						/>
+						<FeatureCard
+							icon="🏆"
+							title="Gamified Progress"
+							description="Build streaks and earn achievements as you develop healthier habits. Celebrate your milestones!"
+							color="orange"
+						/>
+						<FeatureCard
+							icon="🔒"
+							title="Privacy-First"
+							description="Your data never leaves your device. 100% offline, no tracking, no account required."
+							color="green"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Platforms Section -->
+			<section class="platforms-section">
+				<div class="container">
+					<h2 class="section-title">Available on All Your Devices</h2>
+					<p class="section-subtitle">Get Intently on Android, iOS, and Chrome to stay mindful everywhere.</p>
+					<div class="platforms-grid">
+						<PlatformCard
+							platform="android"
+							title="Android"
+							description="Full-featured app with usage tracking, interventions, and analytics."
+							features={androidFeatures}
+							downloadUrl="#"
+							storeType="playstore"
+						/>
+						<PlatformCard
+							platform="ios"
+							title="iOS"
+							description="Native iOS experience with seamless system integration."
+							features={iosFeatures}
+							downloadUrl="#"
+							storeType="appstore"
+						/>
+						<PlatformCard
+							platform="chrome"
+							title="Chrome Extension"
+							description="Stay mindful while browsing with web-based interventions."
+							features={chromeFeatures}
+							downloadUrl="#"
+							storeType="chromestore"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="cta-section">
+				<div class="container">
+					<div class="cta-content">
+						<h2>Start Your Mindful Journey Today</h2>
+						<p>Join thousands of users building healthier digital habits with Intently.</p>
+						<a href="/download" class="cta-button">Download Now - It's Free</a>
+					</div>
+				</div>
+			</section>
 		</main>
+
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		width: 100%;
+	}
+
+	/* Features Section */
+	.features-section {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-primary);
+	}
+
+	/* Platforms Section */
+	.platforms-section {
+		padding: var(--intently-space-4xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 var(--intently-space-lg);
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-align: center;
+		margin: 0 0 var(--intently-space-md) 0;
+		color: var(--intently-text-primary);
+	}
+
+	.section-subtitle {
+		font-size: 1.125rem;
+		text-align: center;
+		max-width: 600px;
+		margin: 0 auto var(--intently-space-3xl);
+		color: var(--intently-text-secondary);
+	}
+
+	.features-grid,
+	.platforms-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: var(--intently-space-xl);
+	}
+
+	/* CTA Section */
+	.cta-section {
+		padding: var(--intently-space-4xl) 0;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		color: white;
+	}
+
+	.cta-content {
+		text-align: center;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.cta-content h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: white;
+	}
+
+	.cta-content p {
+		font-size: 1.125rem;
+		margin: 0 0 var(--intently-space-xl);
+		opacity: 0.95;
+	}
+
+	.cta-button {
+		display: inline-block;
+		padding: 1rem 2rem;
+		background: white;
+		color: var(--intently-blue);
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1.125rem;
+		border-radius: var(--intently-radius-full);
+		transition: all var(--intently-transition-normal);
+	}
+
+	.cta-button:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-lg);
+	}
+
+	/* Responsive */
+	@media (max-width: 768px) {
+		.section-title {
+			font-size: 2rem;
+		}
+
+		.features-grid,
+		.platforms-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-content h2 {
+			font-size: 1.75rem;
+		}
+	}
+</style>

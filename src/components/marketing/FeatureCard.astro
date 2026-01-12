@@ -1,0 +1,92 @@
+---
+/**
+ * Feature Card Component
+ * For showcasing individual features on the home and features pages
+ */
+interface Props {
+	icon: string;
+	title: string;
+	description: string;
+	color?: 'blue' | 'green' | 'orange' | 'red' | 'purple';
+}
+
+const { icon, title, description, color = 'blue' } = Astro.props;
+---
+
+<div class="feature-card" class:list={[`feature-card-color-${color}`]}>
+	<div class="feature-icon">
+		<span class="icon-emoji">{icon}</span>
+	</div>
+	<h3 class="feature-title">{title}</h3>
+	<p class="feature-description">{description}</p>
+</div>
+
+<style>
+	.feature-card {
+		display: flex;
+		flex-direction: column;
+		gap: var(--intently-space-md);
+		padding: var(--intently-space-xl);
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-lg);
+		box-shadow: var(--intently-shadow-md);
+		transition: all var(--intently-transition-normal);
+		height: 100%;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--intently-shadow-lg);
+	}
+
+	.feature-icon {
+		width: 56px;
+		height: 56px;
+		border-radius: var(--intently-radius-md);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.75rem;
+		background-color: var(--intently-blue);
+		opacity: 0.15;
+	}
+
+	.feature-card-color-green .feature-icon {
+		background-color: var(--intently-green);
+		opacity: 0.15;
+	}
+
+	.feature-card-color-orange .feature-icon {
+		background-color: var(--intently-orange);
+		opacity: 0.15;
+	}
+
+	.feature-card-color-red .feature-icon {
+		background-color: var(--intently-red);
+		opacity: 0.15;
+	}
+
+	.feature-card-color-purple .feature-icon {
+		background-color: var(--intently-purple);
+		opacity: 0.15;
+	}
+
+	.icon-emoji {
+		font-size: 1.75rem;
+		line-height: 1;
+	}
+
+	.feature-title {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0;
+		color: var(--intently-text-primary);
+	}
+
+	.feature-description {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: 0;
+	}
+</style>

@@ -1,0 +1,60 @@
+---
+/**
+ * Card Component
+ * Used for feature cards, stats cards, and content cards
+ */
+interface Props {
+	variant?: 'default' | 'elevated' | 'outlined';
+	hover?: boolean;
+	class?: string;
+	[attr: string]: any;
+}
+
+const {
+	variant = 'elevated',
+	hover = true,
+	class: className = '',
+	...attrs
+} = Astro.props;
+
+const classes = `card card-${variant} ${hover ? 'card-hover' : ''} ${className}`.trim();
+---
+
+<div class={classes} {...attrs}>
+	<slot />
+</div>
+
+<style>
+	.card {
+		background-color: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-lg);
+		padding: var(--intently-space-xl);
+		transition: all var(--intently-transition-normal);
+	}
+
+	/* Default - flat card */
+	.card-default {
+		background-color: var(--intently-bg-primary);
+	}
+
+	/* Elevated - with shadow */
+	.card-elevated {
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	/* Outlined - with border */
+	.card-outlined {
+		border: 1px solid var(--intently-gray-200);
+	}
+
+	/* Hover effect */
+	.card-hover:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-lg);
+	}
+
+	/* No hover for cards that shouldn't lift */
+	.card-outlined:not(.card-hover):hover {
+		border-color: var(--intently-gray-300);
+	}
+</style>
