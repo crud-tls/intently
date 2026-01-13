@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import Card from '../components/ui/Card.astro';
 import Button from '../components/ui/Button.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import { SITE_TITLE } from '../consts';
 
 const features = [
@@ -94,6 +95,12 @@ const featureFAQs = [
 <html lang="en">
 	<head>
 		<BaseHead title={`Features - ${SITE_TITLE}`} description="Explore Intently's features: smart usage tracking, mindful interventions, gamification, and privacy-first design." />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Features", url: "https://liveintently.app/features" }
+			]}
+		/>
 	</head>
 	<body>
 		<Header />

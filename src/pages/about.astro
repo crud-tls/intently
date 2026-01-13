@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Button from '../components/ui/Button.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
@@ -10,6 +11,12 @@ import { SITE_TITLE } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={`About - ${SITE_TITLE}`} description="Learn about Intently's mission to help people build healthier digital habits through privacy-first technology." />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "About", url: "https://liveintently.app/about" }
+			]}
+		/>
 	</head>
 	<body>
 		<Header />

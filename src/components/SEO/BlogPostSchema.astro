@@ -6,6 +6,7 @@ interface Props {
   modifiedAt?: Date;
   author?: string;
   image?: string;
+  url?: string;
 }
 
 const {
@@ -14,7 +15,8 @@ const {
   publishedAt,
   modifiedAt,
   author = "Intently Team",
-  image
+  image,
+  url
 } = Astro.props;
 
 const blogSchema = {
@@ -22,7 +24,7 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": title,
   "description": description,
-  "image": image || "https://intently.app/blog-placeholder-1.jpg",
+  "image": image ? `https://liveintently.app${image}` : "https://liveintently.app/blog-placeholder-1.jpg",
   "datePublished": publishedAt.toISOString(),
   "dateModified": (modifiedAt || publishedAt).toISOString(),
   "author": {
@@ -34,8 +36,12 @@ const blogSchema = {
     "name": "Intently",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://intently.app/favicon.svg"
+      "url": "https://liveintently.app/favicon.svg"
     }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": url || `https://liveintently.app/blog/${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
   }
 };
 ---

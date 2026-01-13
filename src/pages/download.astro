@@ -20,8 +20,8 @@ import { SITE_TITLE } from '../consts';
 		/>
 		<BreadcrumbSchema
 			items={[
-				{ name: "Home", url: "https://intently.app" },
-				{ name: "Download", url: "https://intently.app/download" }
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Download", url: "https://liveintently.app/download" }
 			]}
 		/>
 	</head>
@@ -83,7 +83,6 @@ import { SITE_TITLE } from '../consts';
 							</ul>
 						</div>
 
-					<div class="coming-soon-badge">Coming Soon</div>
 						<!-- Chrome -->
 						<div class="download-card">
 							<div class="platform-badge chrome">
@@ -92,10 +91,8 @@ import { SITE_TITLE } from '../consts';
 								</svg>
 							</div>
 							<h3>Chrome Extension</h3>
-							<p>Stay mindful while browsing with web-based interventions (Coming Soon)</p>
-							<button class="store-button-disabled" disabled>
-	<span class="button-text">Coming Soon</span>
-</button>
+							<p>Stay mindful while browsing with web-based interventions</p>
+							<StoreButton store="chromestore" href="https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop" />
 							<ul class="feature-list">
 								<li>Website time tracking</li>
 								<li>Focus mode for deep work</li>

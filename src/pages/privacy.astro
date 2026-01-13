@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Card from '../components/ui/Card.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import { SITE_TITLE } from '../consts';
 
 const privacyFAQs = [
@@ -39,6 +40,12 @@ const privacyFAQs = [
 	<head>
 		<BaseHead title={`Privacy - ${SITE_TITLE}`} description="Intently is privacy-first. Your data never leaves your device. 100% offline, no tracking, no account required." />
 		<FAQSchema faqs={privacyFAQs} />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Privacy", url: "https://liveintently.app/privacy" }
+			]}
+		/>
 	</head>
 	<body>
 		<Header />

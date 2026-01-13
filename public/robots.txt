@@ -6,6 +6,9 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: CCBot
 Allow: /
 
@@ -15,11 +18,47 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+User-agent: Omgilibot
 Allow: /
 
 # Crawl delay
 Crawl-delay: 1
 
 # Sitemap
-Sitemap: https://intently.app/sitemap-index.xml
+Sitemap: https://liveintently.app/sitemap-index.xml
