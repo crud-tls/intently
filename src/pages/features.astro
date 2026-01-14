@@ -561,6 +561,10 @@ const featureFAQs = [
 		flex-wrap: wrap;
 	}
 
+	.cta-buttons .btn {
+		flex-shrink: 0;
+	}
+
 	.container {
 		max-width: 1400px;
 		margin: 0 auto;
@@ -660,8 +664,26 @@ const featureFAQs = [
 			font-size: 0.9375rem;
 		}
 
+		.cta-section {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.cta-content {
+			padding: 0 var(--intently-space-md);
+		}
+
 		.cta-buttons {
 			flex-direction: column;
+			gap: var(--intently-space-md);
+			margin-left: calc(-1 * var(--intently-space-md));
+			margin-right: calc(-1 * var(--intently-space-md));
+			width: calc(100% + var(--intently-space-lg));
+		}
+
+		.cta-buttons .btn {
+			width: 100%;
+			box-sizing: border-box;
 		}
 
 		.timeline-connector {

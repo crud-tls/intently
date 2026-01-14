@@ -256,6 +256,10 @@ import { SITE_TITLE } from '../consts';
 		flex-wrap: wrap;
 	}
 
+	.cta-buttons .btn {
+		flex-shrink: 0;
+	}
+
 	.container {
 		max-width: 1400px;
 		margin: 0 auto;
@@ -321,8 +325,26 @@ import { SITE_TITLE } from '../consts';
 			grid-template-columns: 1fr;
 		}
 
+		.cta-section {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.cta-content {
+			padding: 0 var(--intently-space-md);
+		}
+
 		.cta-buttons {
 			flex-direction: column;
+			gap: var(--intently-space-md);
+			margin-left: calc(-1 * var(--intently-space-md));
+			margin-right: calc(-1 * var(--intently-space-md));
+			width: calc(100% + var(--intently-space-lg));
+		}
+
+		.cta-buttons .btn {
+			width: 100%;
+			box-sizing: border-box;
 		}
 	}
 

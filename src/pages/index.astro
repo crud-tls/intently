@@ -153,8 +153,37 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 	.features-grid,
 	.platforms-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		grid-template-columns: 1fr;
 		gap: var(--intently-space-xl);
+	}
+
+	.features-grid .feature-card,
+	.platforms-grid .platform-card {
+		height: auto;
+	}
+
+	/* Tablet: 2 columns */
+	@media (min-width: 768px) {
+		.features-grid,
+		.platforms-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.features-grid .feature-card,
+		.platforms-grid .platform-card {
+			height: 100%;
+		}
+	}
+
+	/* Desktop: 4 columns for features, 3 for platforms */
+	@media (min-width: 1024px) {
+		.features-grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		.platforms-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 
 	/* CTA Section */
@@ -227,11 +256,6 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 
 		.section-subtitle {
 			font-size: 1rem;
-		}
-
-		.features-grid,
-		.platforms-grid {
-			grid-template-columns: 1fr;
 		}
 
 		.cta-content h2 {
