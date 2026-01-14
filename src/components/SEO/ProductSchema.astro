@@ -6,6 +6,12 @@ interface Props {
   downloadUrl: string;
   ratingValue?: number;
   ratingCount?: number;
+  reviews?: Array<{
+    author: string;
+    rating: number;
+    date: string;
+    text: string;
+  }>;
 }
 
 const {
@@ -14,7 +20,8 @@ const {
   platform,
   downloadUrl,
   ratingValue = 4.8,
-  ratingCount = 1200
+  ratingCount = 1200,
+  reviews = []
 } = Astro.props;
 
 const platformNames = {
@@ -38,14 +45,49 @@ const productSchema = {
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": ratingValue,
-    "ratingCount": ratingCount
+    "ratingCount": ratingCount,
+    "bestRating": "5",
+    "worstRating": "1"
   },
   "author": {
     "@type": "Organization",
-    "name": "Intently"
+    "name": "Intently",
+    "url": "https://liveintently.app"
   },
-  "operatingSystem": platform === 'chrome' ? 'Windows, macOS, Linux' : platform.toUpperCase()
+  "operatingSystem": platform === 'chrome' ? 'Windows, macOS, Linux' : platform.toUpperCase(),
+  "softwareVersion": "1.0",
+  "datePublished": "2024",
+  "featureList": [
+    "Screen time tracking",
+    "Mindful interventions",
+    "App blocking",
+    "Usage analytics",
+    "Streak tracking",
+    "Privacy-first offline mode",
+    "No account required",
+    "Widget support"
+  ]
 };
+
+// Include individual reviews if provided
+const reviewsSchema = reviews.length > 0 ? reviews.map(review => ({
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": review.author
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": review.rating,
+    "bestRating": "5"
+  },
+  "datePublished": review.date,
+  "reviewBody": review.text
+})) : [];
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+
+{reviews.length > 0 && reviewsSchema.map(review => (
+  <script type="application/ld+json" set:html={JSON.stringify(review)} />
+))}

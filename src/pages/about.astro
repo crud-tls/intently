@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Button from '../components/ui/Button.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+import ProfilePageSchema from '../components/SEO/ProfilePageSchema.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
@@ -17,6 +18,7 @@ import { SITE_TITLE } from '../consts';
 				{ name: "About", url: "https://liveintently.app/about" }
 			]}
 		/>
+		<ProfilePageSchema />
 	</head>
 	<body>
 		<Header />

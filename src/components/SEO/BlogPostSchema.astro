@@ -5,8 +5,11 @@ interface Props {
   publishedAt: Date;
   modifiedAt?: Date;
   author?: string;
+  authorType?: 'Organization' | 'Person';
   image?: string;
   url?: string;
+  section?: string;
+  tags?: string[];
 }
 
 const {
@@ -15,8 +18,11 @@ const {
   publishedAt,
   modifiedAt,
   author = "Intently Team",
+  authorType = 'Organization',
   image,
-  url
+  url,
+  section = "Digital Wellbeing",
+  tags = []
 } = Astro.props;
 
 const blogSchema = {
@@ -28,7 +34,7 @@ const blogSchema = {
   "datePublished": publishedAt.toISOString(),
   "dateModified": (modifiedAt || publishedAt).toISOString(),
   "author": {
-    "@type": "Organization",
+    "@type": authorType,
     "name": author
   },
   "publisher": {
@@ -42,7 +48,11 @@ const blogSchema = {
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": url || `https://liveintently.app/blog/${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
-  }
+  },
+  "articleSection": section,
+  "keywords": tags.join(', '),
+  "inLanguage": "en-US",
+  "wordCount": description.split(' ').length
 };
 ---
 

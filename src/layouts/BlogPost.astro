@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import BlogPostSchema from '../components/SEO/BlogPostSchema.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
+import SpeakableSchema from '../components/SEO/SpeakableSchema.astro';
 import AuthorBio from '../components/blog/AuthorBio.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -14,11 +15,30 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage, faq } = Astro.props;
 const { currentPath } = Astro.url;
 const postUrl = `https://liveintently.app${currentPath}`;
+
+// Calculate estimated reading time (average 200 words per minute)
+const wordsPerMinute = 200;
+const wordCount = description.split(/\s+/).length;
+const readingTime = Math.max(1, Math.ceil(wordCount / wordsPerMinute));
+
+// Default tags for SEO if not specified in frontmatter
+const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead
+			title={title}
+			description={description}
+			image={heroImage}
+			pubDate={pubDate}
+			modifiedDate={updatedDate}
+			author="Intently Team"
+			section="Digital Wellbeing"
+			tags={defaultTags}
+			readingTime={readingTime}
+			ogType="article"
+		/>
 		<BlogPostSchema
 			title={title}
 			description={description}
@@ -26,6 +46,8 @@ const postUrl = `https://liveintently.app${currentPath}`;
 			modifiedAt={updatedDate}
 			image={heroImage}
 			url={postUrl}
+			section="Digital Wellbeing"
+			tags={defaultTags}
 		/>
 		<BreadcrumbSchema
 			items={[
@@ -33,6 +55,10 @@ const postUrl = `https://liveintently.app${currentPath}`;
 				{ name: "Blog", url: "https://liveintently.app/blog" },
 				{ name: title, url: postUrl }
 			]}
+		/>
+		<SpeakableSchema
+			title={title}
+			speakableSelectors={["#article-intro", "#article-conclusion"]}
 		/>
 		{faq && <FAQSchema faqs={faq} />}
 		<style>
@@ -98,7 +124,13 @@ const postUrl = `https://liveintently.app${currentPath}`;
 						<h1>{title}</h1>
 						<hr />
 					</div>
-					<slot />
+					<!-- Speakable section for voice search optimization -->
+					<div id="article-intro" class="speakable-content">
+						<slot />
+					</div>
+					<div id="article-conclusion" class="speakable-content" style="display: none;">
+						{title} - A comprehensive guide on digital wellbeing and screen time management by Intently.
+					</div>
 					<AuthorBio />
 				</div>
 			</article>

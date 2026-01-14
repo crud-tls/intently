@@ -1,0 +1,58 @@
+---
+/**
+ * VideoObject Schema for Video Content
+ * Enables video rich results in Google search
+ * Usage: Add to pages containing video content
+ */
+
+interface Props {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  duration?: string;
+  contentUrl?: string;
+  embedUrl?: string;
+  width?: number;
+  height?: number;
+  expires?: string;
+}
+
+const {
+  name,
+  description,
+  thumbnailUrl,
+  uploadDate,
+  duration,
+  contentUrl,
+  embedUrl,
+  width,
+  height,
+  expires
+} = Astro.props;
+
+const videoSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": name,
+  "description": description,
+  "thumbnailUrl": thumbnailUrl.startsWith('http') ? thumbnailUrl : `https://liveintently.app${thumbnailUrl}`,
+  "uploadDate": uploadDate,
+  "duration": duration,
+  "contentUrl": contentUrl,
+  "embedUrl": embedUrl,
+  "width": width,
+  "height": height,
+  "expires": expires,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Intently",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://liveintently.app/favicon.svg"
+    }
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(videoSchema)} />

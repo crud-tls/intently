@@ -6,6 +6,7 @@ import Hero from '../components/marketing/Hero.astro';
 import FeatureCard from '../components/marketing/FeatureCard.astro';
 import PlatformCard from '../components/marketing/PlatformCard.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import WebSiteSchema from '../components/SEO/WebSiteSchema.astro';
 
 const androidFeatures = ["Complete app blocking", "Usage analytics", "Streak tracking", "Widget support"];
 const iosFeatures = ["Screen Time API", "Widget support", "iCloud sync", "Beautiful design"];
@@ -16,6 +17,7 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<WebSiteSchema />
 	</head>
 	<body>
 		<Header />

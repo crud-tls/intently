@@ -1,0 +1,58 @@
+---
+/**
+ * HowTo Schema for Tutorial Content
+ * Enables how-to rich results in Google search with step-by-step display
+ * Usage: Add to blog posts that contain tutorials or step-by-step guides
+ */
+
+interface HowToStep {
+  name: string;
+  text: string;
+  image?: string;
+  url?: string;
+}
+
+interface Props {
+  name: string;
+  description: string;
+  image?: string;
+  estimatedCost?: string;
+  totalTime?: string;
+  supplies?: string[];
+  tools?: string[];
+  steps: HowToStep[];
+}
+
+const {
+  name,
+  description,
+  image,
+  estimatedCost,
+  totalTime,
+  supplies = [],
+  tools = [],
+  steps
+} = Astro.props;
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": name,
+  "description": description,
+  "image": image ? `https://liveintently.app${image}` : undefined,
+  "estimatedCost": estimatedCost,
+  "totalTime": totalTime,
+  "supply": supplies.map(item => ({ "@type": "HowToSupply", "name": item })),
+  "tool": tools.map(item => ({ "@type": "HowToTool", "name": item })),
+  "step": steps.map((step, index) => ({
+    "@type": "HowToStep",
+    "position": index + 1,
+    "name": step.name,
+    "text": step.text,
+    "image": step.image ? `https://liveintently.app${step.image}` : undefined,
+    "url": step.url
+  }))
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />

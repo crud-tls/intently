@@ -1,0 +1,37 @@
+---
+/**
+ * Speakable Schema for Voice Search Optimization
+ * Optimizes content for Google Assistant, Alexa, Siri, and other voice assistants
+ * Usage: Add to blog posts and articles to highlight voice-friendly sections
+ */
+
+interface Props {
+  title: string;
+  speakableSelectors?: string[];
+  xpathSelectors?: string[];
+}
+
+const {
+  title,
+  speakableSelectors = ["#article-intro", "#article-conclusion"],
+  xpathSelectors = []
+} = Astro.props;
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "speakable": [
+    ...speakableSelectors.map(selector => ({
+      "@type": "WebPageElement",
+      "cssSelector": selector
+    })),
+    ...xpathSelectors.map(xpath => ({
+      "@type": "WebPageElement",
+      "xpath": xpath
+    }))
+  ].filter(item => Object.keys(item).length > 1)
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(speakableSchema)} />

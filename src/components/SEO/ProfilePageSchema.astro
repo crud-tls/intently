@@ -1,0 +1,71 @@
+---
+/**
+ * ProfilePage Schema for About/Organization Pages
+ * Enhanced representation for organization and about pages
+ * Usage: Add to the about page to provide detailed organization information
+ */
+
+interface Props {
+  name?: string;
+  description?: string;
+  url?: string;
+  logo?: string;
+  foundingDate?: string;
+  areaServed?: string;
+  contactEmail?: string;
+  socialLinks?: string[];
+}
+
+const {
+  name = "Intently",
+  description = "Build healthier digital habits through mindful interventions. Privacy-first, 100% offline screen time tracking and digital wellbeing app.",
+  url = "https://liveintently.app",
+  logo = "https://liveintently.app/favicon.svg",
+  foundingDate = "2024",
+  areaServed = "Worldwide",
+  contactEmail = "support@liveintently.app",
+  socialLinks = [
+    "https://twitter.com/intently_app",
+    "https://github.com/intently"
+  ]
+} = Astro.props;
+
+const profilePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "dateCreated": foundingDate,
+  "about": {
+    "@type": "Organization",
+    "name": name,
+    "description": description,
+    "url": url,
+    "logo": {
+      "@type": "ImageObject",
+      "url": logo
+    },
+    "foundingDate": foundingDate,
+    "areaServed": {
+      "@type": "Country",
+      "name": areaServed
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": contactEmail
+    },
+    "sameAs": socialLinks,
+    "knowsAbout": [
+      "Digital Wellbeing",
+      "Screen Time Management",
+      "App Blocking",
+      "Mindful Technology",
+      "Privacy-First Design",
+      "Offline-First Applications",
+      "Behavioral Change"
+    ],
+    "slogan": "Build healthier digital habits"
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(profilePageSchema)} />

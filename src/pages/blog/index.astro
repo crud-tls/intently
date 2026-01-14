@@ -6,21 +6,37 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import BreadcrumbSchema from '../../components/SEO/BreadcrumbSchema.astro';
+import CollectionPageSchema from '../../components/SEO/CollectionPageSchema.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+// Prepare collection items for schema
+const collectionItems = posts.map(post => ({
+	name: post.data.title,
+	url: `https://liveintently.app/blog/${post.id}/`,
+	description: post.data.description,
+	image: post.data.heroImage,
+	datePublished: post.data.pubDate.toISOString()
+}));
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
 		<BreadcrumbSchema
 			items={[
 				{ name: "Home", url: "https://liveintently.app" },
 				{ name: "Blog", url: "https://liveintently.app/blog" }
 			]}
+		/>
+		<CollectionPageSchema
+			name="Intently Blog"
+			description="Articles, guides, and research on digital wellbeing, screen time management, and building healthier relationships with technology."
+			url="/blog"
+			items={collectionItems}
 		/>
 		<style>
 			html {

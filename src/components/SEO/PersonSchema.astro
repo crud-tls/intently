@@ -1,0 +1,58 @@
+---
+/**
+ * Person Schema for Author Profiles
+ * Provides detailed author information for better attribution
+ * Usage: Add to blog posts, about page, author pages
+ */
+
+interface Props {
+  name?: string;
+  jobTitle?: string;
+  description?: string;
+  image?: string;
+  url?: string;
+  sameAs?: string[];
+}
+
+const {
+  name = "Intently Team",
+  jobTitle = "Digital Wellbeing Experts",
+  description = "The Intently team consists of digital wellbeing researchers, designers, and engineers passionate about helping people build healthier relationships with technology.",
+  image = "https://liveintently.app/favicon.svg",
+  url = "https://liveintently.app",
+  sameAs = [
+    "https://twitter.com/intently_app",
+    "https://github.com/intently"
+  ]
+} = Astro.props;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": name,
+  "jobTitle": jobTitle,
+  "description": description,
+  "url": url,
+  "image": image,
+  "sameAs": sameAs,
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Intently",
+    "url": "https://liveintently.app",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://liveintently.app/favicon.svg"
+    }
+  },
+  "knowsAbout": [
+    "Digital Wellbeing",
+    "Screen Time Management",
+    "App Addiction",
+    "Mindful Technology",
+    "Behavioral Psychology",
+    "Privacy-First Design"
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
