@@ -89,4 +89,28 @@ const { icon, title, description, color = 'blue' } = Astro.props;
 		color: var(--intently-text-secondary);
 		margin: 0;
 	}
+
+	/* Mobile: optimize spacing and sizing */
+	@media (max-width: 767px) {
+		.feature-card {
+			padding: var(--intently-space-lg);
+		}
+
+		.feature-icon {
+			width: 48px;
+			height: 48px;
+		}
+
+		.icon-emoji {
+			font-size: 1.5rem;
+		}
+
+		.feature-title {
+			font-size: 1.125rem;
+		}
+
+		.feature-description {
+			font-size: 0.9375rem;
+		}
+	}
 </style>

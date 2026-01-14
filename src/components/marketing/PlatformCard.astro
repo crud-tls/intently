@@ -174,5 +174,40 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 		font-weight: 600;
 		cursor: not-allowed;
 		font-size: 1rem;
+		min-height: 48px;
+	}
+
+	/* Mobile: optimize spacing and sizing */
+	@media (max-width: 767px) {
+		.platform-card {
+			padding: var(--intently-space-lg);
+		}
+
+		.platform-header {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.platform-icon {
+			width: 56px;
+			height: 56px;
+		}
+
+		.platform-icon svg {
+			width: 36px;
+			height: 36px;
+		}
+
+		.platform-title {
+			font-size: 1.125rem;
+		}
+
+		.platform-description {
+			font-size: 0.9375rem;
+		}
+
+		.platform-features li {
+			font-size: 0.875rem;
+		}
 	}
 </style>

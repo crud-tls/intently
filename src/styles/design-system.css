@@ -78,4 +78,14 @@
 	--intently-transition-fast: 150ms ease;
 	--intently-transition-normal: 250ms ease;
 	--intently-transition-slow: 350ms ease;
+
+	/* === Breakpoints (Mobile-First) === */
+	--breakpoint-mobile: 0px;
+	--breakpoint-tablet: 768px;
+	--breakpoint-desktop: 1024px;
+	--breakpoint-wide: 1280px;
+
+	/* === Touch Targets (Mobile-First) === */
+	--touch-target-min: 44px;
+	--touch-target-comfortable: 48px;
 }

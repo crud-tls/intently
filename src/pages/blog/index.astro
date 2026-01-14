@@ -50,12 +50,27 @@ const collectionItems = posts.map(post => ({
 			.container {
 				max-width: 1200px;
 				margin: 0 auto;
-				padding: 0 var(--intently-space-xl);
+				padding: 0 1rem;
 			}
 
 			section {
-				padding: var(--intently-space-4xl) 0;
+				width: 100%;
+				padding: var(--intently-space-2xl) 0;
 				background: var(--intently-bg-primary);
+			}
+
+			/* Tablet: more spacing */
+			@media (min-width: 768px) {
+				section {
+					padding: var(--intently-space-3xl) 0;
+				}
+			}
+
+			/* Desktop: even more spacing */
+			@media (min-width: 1024px) {
+				section {
+					padding: var(--intently-space-4xl) 0;
+				}
 			}
 			ul {
 				display: flex;
@@ -63,7 +78,7 @@ const collectionItems = posts.map(post => ({
 				gap: var(--intently-space-xl);
 				list-style-type: none;
 				margin: 0;
-				padding: 0;
+				padding: 0 1rem;
 			}
 			ul li {
 				width: calc(50% - 1rem);
@@ -112,7 +127,7 @@ const collectionItems = posts.map(post => ({
 				outline: 2px solid var(--intently-blue);
 				outline-offset: 2px;
 			}
-			@media (max-width: 768px) {
+			@media (max-width: 767px) {
 				ul {
 					gap: var(--intently-space-md);
 				}

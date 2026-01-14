@@ -116,20 +116,22 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 
 	/* Features Section */
 	.features-section {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-primary);
 	}
 
 	/* Platforms Section */
 	.platforms-section {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-secondary);
 	}
 
 	.container {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding: 0 var(--intently-space-lg);
+		padding: 0 1rem;
 	}
 
 	.section-title {
@@ -157,7 +159,7 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 
 	/* CTA Section */
 	.cta-section {
-		padding: var(--intently-space-4xl) 0;
+		padding: var(--intently-space-2xl) 0;
 		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
 		color: white;
 	}
@@ -198,10 +200,33 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 		box-shadow: var(--intently-shadow-lg);
 	}
 
-	/* Responsive */
-	@media (max-width: 768px) {
+	/* Responsive - Mobile First */
+	/* Tablet: more spacing */
+	@media (min-width: 768px) {
+		.features-section,
+		.platforms-section,
+		.cta-section {
+			padding: var(--intently-space-3xl) 0;
+		}
+	}
+
+	/* Desktop: even more spacing */
+	@media (min-width: 1024px) {
+		.features-section,
+		.platforms-section,
+		.cta-section {
+			padding: var(--intently-space-4xl) 0;
+		}
+	}
+
+	/* Mobile: optimize layouts */
+	@media (max-width: 767px) {
 		.section-title {
-			font-size: 2rem;
+			font-size: 1.75rem;
+		}
+
+		.section-subtitle {
+			font-size: 1rem;
 		}
 
 		.features-grid,
@@ -210,7 +235,11 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 		}
 
 		.cta-content h2 {
-			font-size: 1.75rem;
+			font-size: 1.5rem;
+		}
+
+		.cta-content p {
+			font-size: 1rem;
 		}
 	}
 </style>

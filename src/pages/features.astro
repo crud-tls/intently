@@ -236,17 +236,19 @@ const featureFAQs = [
 	}
 
 	.features-hero {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
 		text-align: center;
 	}
 
 	.features-hero h1 {
-		font-size: 3.5rem;
+		font-size: 2rem;
 		font-weight: 800;
 		margin: 0 0 var(--intently-space-md);
 		color: white;
 		letter-spacing: -0.02em;
+		line-height: 1.2;
 	}
 
 	.hero-subtitle {
@@ -260,7 +262,8 @@ const featureFAQs = [
 
 	/* What is Intently Section - Featured Snippet Optimization */
 	.intro-section {
-		padding: var(--intently-space-3xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-secondary);
 		text-align: center;
 	}
@@ -310,7 +313,8 @@ const featureFAQs = [
 	}
 
 	.features-grid-section {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-primary);
 	}
 
@@ -324,8 +328,8 @@ const featureFAQs = [
 
 	.features-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: var(--intently-space-xl);
+		grid-template-columns: 1fr;
+		gap: var(--intently-space-lg);
 	}
 
 	.feature-header {
@@ -383,7 +387,7 @@ const featureFAQs = [
 
 	.feature-details {
 		list-style: none;
-		padding: 0;
+		padding: 0 1rem;
 		margin: 0;
 	}
 
@@ -405,6 +409,7 @@ const featureFAQs = [
 
 	/* How It Works */
 	.how-it-works {
+		width: 100%;
 		padding: var(--intently-space-2xl) 0 var(--intently-space-4xl);
 		background: var(--intently-bg-secondary);
 	}
@@ -494,15 +499,16 @@ const featureFAQs = [
 
 	/* FAQ Section */
 	.faq-section {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-secondary);
 	}
 
 	.faq-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		gap: var(--intently-space-xl);
-		margin-top: var(--intently-space-2xl);
+		grid-template-columns: 1fr;
+		gap: var(--intently-space-lg);
+		margin-top: var(--intently-space-xl);
 	}
 
 	.faq-item {
@@ -528,7 +534,8 @@ const featureFAQs = [
 
 	/* CTA Section */
 	.cta-section {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-primary);
 		text-align: center;
 	}
@@ -557,18 +564,16 @@ const featureFAQs = [
 	.container {
 		max-width: 1400px;
 		margin: 0 auto;
-		padding: 0 var(--intently-space-xl);
+		padding: 0 1rem;
 	}
 
-	/* Responsive */
-	@media (max-width: 1024px) {
-		.features-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	@media (max-width: 768px) {
-		.features-hero {
+	/* Responsive - Mobile First */
+	/* Tablet: more spacing and larger grids */
+	@media (min-width: 768px) {
+		.features-hero,
+		.features-grid-section,
+		.faq-section,
+		.cta-section {
 			padding: var(--intently-space-3xl) 0;
 		}
 
@@ -576,16 +581,74 @@ const featureFAQs = [
 			font-size: 2.5rem;
 		}
 
-		.hero-subtitle {
-			font-size: 1.125rem;
+		.intro-section h2 {
+			font-size: 1.75rem;
 		}
 
-		.intro-section {
-			padding: var(--intently-space-2xl) 0;
+		.section-title {
+			font-size: 1.75rem;
+		}
+
+		.features-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: var(--intently-space-xl);
+		}
+
+		.faq-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+
+		.timeline-step {
+			gap: var(--intently-space-md);
+		}
+	}
+
+	/* Desktop: even more spacing and larger grids */
+	@media (min-width: 1024px) {
+		.features-hero,
+		.features-grid-section,
+		.faq-section,
+		.cta-section {
+			padding: var(--intently-space-4xl) 0;
+		}
+
+		.features-hero h1 {
+			font-size: 3.5rem;
 		}
 
 		.intro-section h2 {
-			font-size: 1.75rem;
+			font-size: 2rem;
+		}
+
+		.section-title {
+			font-size: 2rem;
+		}
+
+		.features-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.faq-grid {
+			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		}
+
+		.cta-content h2 {
+			font-size: 2.5rem;
+		}
+	}
+
+	/* Mobile: optimize small screens */
+	@media (max-width: 767px) {
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.intro-section h2 {
+			font-size: 1.5rem;
 		}
 
 		.direct-answer {
@@ -597,56 +660,12 @@ const featureFAQs = [
 			font-size: 0.9375rem;
 		}
 
-		.section-title {
-			font-size: 1.75rem;
-		}
-
-		.features-grid {
-			grid-template-columns: 1fr;
-		}
-
-		.faq-grid {
-			grid-template-columns: 1fr;
-		}
-
-		.timeline-step {
-			gap: var(--intently-space-md);
-		}
-
-		.step-marker {
-			width: 40px;
-			height: 40px;
-		}
-
-		.step-number {
-			font-size: 1.125rem;
-		}
-
-		.timeline-connector {
-			height: calc(100% + var(--intently-space-xl) - 40px);
-			top: 40px;
-		}
-
-		.step-content h3 {
-			font-size: 1.125rem;
-		}
-
-		.step-content p {
-			font-size: 0.875rem;
-		}
-
-		.cta-content h2 {
-			font-size: 2rem;
-		}
-
 		.cta-buttons {
 			flex-direction: column;
 		}
-	}
 
-	@media (max-width: 640px) {
-		.features-hero h1 {
-			font-size: 2rem;
+		.timeline-connector {
+			display: none;
 		}
 	}
 

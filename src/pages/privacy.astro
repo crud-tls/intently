@@ -187,33 +187,35 @@ const privacyFAQs = [
 	}
 
 	.privacy-hero {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
 		color: white;
 		text-align: center;
 	}
 
 	.privacy-badge-large {
-		width: 80px;
-		height: 80px;
+		width: 64px;
+		height: 64px;
 		background: white;
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin: 0 auto var(--intently-space-xl);
+		margin: 0 auto var(--intently-space-lg);
 		color: var(--intently-green);
 	}
 
 	.privacy-hero h1 {
-		font-size: 3rem;
+		font-size: 2rem;
 		font-weight: 800;
 		margin: 0 0 var(--intently-space-md);
 		color: white;
+		line-height: 1.2;
 	}
 
 	.hero-subtitle {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		max-width: 700px;
 		margin: 0 auto;
 		opacity: 0.95;
@@ -221,7 +223,7 @@ const privacyFAQs = [
 	}
 
 	.hero-links {
-		font-size: 1.125rem;
+		font-size: 1rem;
 		max-width: 700px;
 		margin: var(--intently-space-lg) auto 0;
 		opacity: 0.95;
@@ -240,31 +242,32 @@ const privacyFAQs = [
 	}
 
 	.commitments {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-primary);
 	}
 
 	.section-title {
-		font-size: 2.5rem;
+		font-size: 1.75rem;
 		font-weight: 700;
 		text-align: center;
-		margin: 0 0 var(--intently-space-3xl);
+		margin: 0 0 var(--intently-space-2xl);
 		color: var(--intently-text-primary);
 	}
 
 	.commitments-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: var(--intently-space-xl);
+		grid-template-columns: 1fr;
+		gap: var(--intently-space-lg);
 	}
 
 	.commitment-icon {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		margin-bottom: var(--intently-space-md);
 	}
 
 	.commitments-grid h3 {
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 		font-weight: 700;
 		margin: 0 0 var(--intently-space-sm);
 		color: var(--intently-text-primary);
@@ -278,7 +281,8 @@ const privacyFAQs = [
 
 	/* Data Flow */
 	.data-flow {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-secondary);
 	}
 
@@ -286,8 +290,8 @@ const privacyFAQs = [
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: var(--intently-space-lg);
-		margin: var(--intently-space-3xl) 0;
+		gap: var(--intently-space-md);
+		margin: var(--intently-space-2xl) 0;
 		flex-wrap: wrap;
 	}
 
@@ -299,14 +303,14 @@ const privacyFAQs = [
 	}
 
 	.flow-icon {
-		width: 80px;
-		height: 80px;
+		width: 64px;
+		height: 64px;
 		background: white;
 		border-radius: var(--intently-radius-lg);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		box-shadow: var(--intently-shadow-md);
 	}
 
@@ -317,11 +321,13 @@ const privacyFAQs = [
 
 	.flow-label {
 		font-weight: 600;
+		font-size: 0.875rem;
 		color: var(--intently-text-primary);
+		text-align: center;
 	}
 
 	.flow-arrow {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		color: var(--intently-green);
 		font-weight: 700;
 	}
@@ -335,12 +341,13 @@ const privacyFAQs = [
 		color: var(--intently-text-secondary);
 		max-width: 600px;
 		margin: 0 auto;
-		font-size: 1.125rem;
+		font-size: 1rem;
 	}
 
 	/* FAQ */
 	.faq {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-primary);
 	}
 
@@ -350,7 +357,7 @@ const privacyFAQs = [
 	}
 
 	.faq-item {
-		padding: var(--intently-space-xl) 0;
+		padding: var(--intently-space-lg) 0;
 		border-bottom: 1px solid var(--intently-gray-200);
 	}
 
@@ -359,7 +366,7 @@ const privacyFAQs = [
 	}
 
 	.faq-item h3 {
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 		font-weight: 700;
 		margin: 0 0 var(--intently-space-sm);
 		color: var(--intently-text-primary);
@@ -373,33 +380,34 @@ const privacyFAQs = [
 
 	/* CTA */
 	.cta-section {
-		padding: var(--intently-space-4xl) 0;
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-secondary);
 		text-align: center;
 	}
 
 	.cta-content h2 {
-		font-size: 2.5rem;
+		font-size: 1.75rem;
 		font-weight: 700;
 		margin: 0 0 var(--intently-space-md);
 		color: var(--intently-text-primary);
 	}
 
 	.cta-content p {
-		font-size: 1.125rem;
+		font-size: 1rem;
 		color: var(--intently-text-secondary);
 		max-width: 600px;
-		margin: 0 auto var(--intently-space-xl);
+		margin: 0 auto var(--intently-space-lg);
 	}
 
 	.cta-button {
 		display: inline-block;
-		padding: 1rem 2rem;
+		padding: 0.875rem 1.75rem;
 		background: var(--intently-green);
 		color: white;
 		text-decoration: none;
 		font-weight: 700;
-		font-size: 1.125rem;
+		font-size: 1rem;
 		border-radius: var(--intently-radius-full);
 		transition: all var(--intently-transition-normal);
 	}
@@ -413,27 +421,22 @@ const privacyFAQs = [
 	.container {
 		max-width: 1400px;
 		margin: 0 auto;
-		padding: 0 var(--intently-space-xl);
+		padding: 0 1rem;
 	}
 
-	/* Responsive */
-	@media (max-width: 960px) {
-		.commitments-grid {
-			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	/* Responsive - Mobile First */
+	/* Tablet: more spacing and larger grids */
+	@media (min-width: 768px) {
+		.privacy-hero,
+		.commitments,
+		.data-flow,
+		.faq,
+		.cta-section {
+			padding: var(--intently-space-3xl) 0;
 		}
-	}
 
-	@media (max-width: 768px) {
 		.privacy-hero h1 {
-			font-size: 2rem;
-		}
-
-		.hero-subtitle {
-			font-size: 1rem;
-		}
-
-		.hero-links {
-			font-size: 1rem;
+			font-size: 2.5rem;
 		}
 
 		.section-title {
@@ -441,9 +444,48 @@ const privacyFAQs = [
 		}
 
 		.commitments-grid {
-			grid-template-columns: 1fr;
+			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+			gap: var(--intently-space-xl);
 		}
 
+		.commitment-icon {
+			font-size: 2.5rem;
+		}
+
+		.commitments-grid h3 {
+			font-size: 1.25rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+
+	/* Desktop: even more spacing */
+	@media (min-width: 1024px) {
+		.privacy-hero,
+		.commitments,
+		.data-flow,
+		.faq,
+		.cta-section {
+			padding: var(--intently-space-4xl) 0;
+		}
+
+		.privacy-hero h1 {
+			font-size: 3rem;
+		}
+
+		.section-title {
+			font-size: 2.5rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2.5rem;
+		}
+	}
+
+	/* Mobile: optimize small screens */
+	@media (max-width: 767px) {
 		.flow-diagram {
 			flex-direction: column;
 		}
@@ -452,8 +494,8 @@ const privacyFAQs = [
 			transform: rotate(90deg);
 		}
 
-		.cta-content h2 {
-			font-size: 2rem;
+		.container {
+			padding: 0 var(--intently-space-md);
 		}
 	}
 

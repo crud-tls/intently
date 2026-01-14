@@ -57,4 +57,11 @@ const classes = `card card-${variant} ${hover ? 'card-hover' : ''} ${className}`
 	.card-outlined:not(.card-hover):hover {
 		border-color: var(--intently-gray-300);
 	}
+
+	/* Mobile: reduce padding */
+	@media (max-width: 767px) {
+		.card {
+			padding: var(--intently-space-lg);
+		}
+	}
 </style>
