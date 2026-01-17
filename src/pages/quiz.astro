@@ -1,0 +1,595 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/ui/Button.astro';
+
+const questions = [
+	{
+		id: 1,
+		question: "How often do you check your phone first thing in the morning?",
+		options: [
+			{ text: "Within 5 minutes of waking up", score: 3 },
+			{ text: "Within 30 minutes", score: 2 },
+			{ text: "After my morning routine", score: 1 },
+			{ text: "I don't check it in the morning", score: 0 }
+		]
+	},
+	{
+		id: 2,
+		question: "How many hours per day do you spend on your phone?",
+		options: [
+			{ text: "More than 6 hours", score: 3 },
+			{ text: "4-6 hours", score: 2 },
+			{ text: "2-4 hours", score: 1 },
+			{ text: "Less than 2 hours", score: 0 }
+		]
+	},
+	{
+		id: 3,
+		question: "Do you feel anxious when you can't access your phone?",
+		options: [
+			{ text: "Very anxious - I panic", score: 3 },
+			{ text: "Somewhat anxious", score: 2 },
+			{ text: "A little uncomfortable", score: 1 },
+			{ text: "Not anxious at all", score: 0 }
+		]
+	},
+	{
+		id: 4,
+		question: "How often do you use your phone while spending time with others?",
+		options: [
+			{ text: "Constantly checking", score: 3 },
+			{ text: "Frequently", score: 2 },
+			{ text: "Occasionally", score: 1 },
+			{ text: "Rarely or never", score: 0 }
+		]
+	},
+	{
+		id: 5,
+		question: "Have you tried to reduce your phone usage but failed?",
+		options: [
+			{ text: "Many times - I always fail", score: 3 },
+			{ text: "A few times with limited success", score: 2 },
+			{ text: "Once or twice", score: 1 },
+			{ text: "I haven't tried", score: 0 }
+		]
+	},
+	{
+		id: 6,
+		question: "Do you reach for your phone when you're bored?",
+		options: [
+			{ text: "Always - it's automatic", score: 3 },
+			{ text: "Most of the time", score: 2 },
+			{ text: "Sometimes", score: 1 },
+			{ text: "Rarely", score: 0 }
+		]
+	},
+	{
+		id: 7,
+		question: "Does phone usage interfere with your work or studies?",
+		options: [
+			{ text: "Severely - I can't focus", score: 3 },
+			{ text: "Moderately - it's distracting", score: 2 },
+			{ text: "Slightly", score: 1 },
+			{ text: "Not at all", score: 0 }
+		]
+	},
+	{
+		id: 8,
+		question: "How often do you mindlessly scroll social media?",
+		options: [
+			{ text: "Multiple times daily for hours", score: 3 },
+			{ text: "Once or twice daily", score: 2 },
+			{ text: "A few times per week", score: 1 },
+			{ text: "Rarely", score: 0 }
+		]
+	}
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Phone Addiction Test: Are You Addicted? (Free Quiz) | Intently"
+			description="Take our free phone addiction quiz to assess your smartphone usage. 8 science-backed questions reveal if you have phone addiction. Get personalized recommendations."
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Quiz Hero -->
+			<section class="quiz-hero">
+				<div class="container">
+					<h1>📱 Phone Addiction Quiz</h1>
+					<p class="hero-subtitle">Take this 2-minute quiz to find out if you have phone addiction</p>
+					<p class="quiz-meta">8 questions • Science-backed • 100% confidential</p>
+				</div>
+			</section>
+
+			<!-- Quiz Container -->
+			<section class="quiz-section">
+				<div class="container">
+					<div class="quiz-card">
+						<div id="quiz-progress" class="progress-bar">
+							<div id="progress-fill" class="progress-fill"></div>
+						</div>
+
+						<div id="quiz-questions">
+							{questions.map((q, index) => (
+								<div class="question-slide" data-question={index + 1} style={index === 0 ? '' : 'display: none;'}>
+									<div class="question-number">Question {index + 1} of {questions.length}</div>
+									<h2 class="question-text">{q.question}</h2>
+									<div class="options-grid">
+										{q.options.map((option) => (
+											<button
+												class="option-button"
+												data-score={option.score}
+												data-question={q.id}
+											>
+												{option.text}
+											</button>
+										))}
+									</div>
+								</div>
+							))}
+						</div>
+
+						<!-- Results Section (hidden initially) -->
+						<div id="quiz-results" style="display: none;">
+							<div class="results-content">
+								<div id="result-icon" class="result-icon"></div>
+								<h2 id="result-title" class="result-title"></h2>
+								<p id="result-description" class="result-description"></p>
+
+								<div class="result-card">
+									<h3>Your Score</h3>
+									<div id="result-score" class="score-display"></div>
+								</div>
+
+								<div class="recommendations">
+									<h3>Recommended Actions</h3>
+									<ul id="recommendations-list" class="recommendations-list"></ul>
+								</div>
+
+								<div class="cta-buttons">
+									<Button href="/download" variant="primary" size="lg">Try Intently Free</Button>
+									<Button href="/blog" variant="secondary" size="lg">Learn More</Button>
+								</div>
+
+								<button id="retake-quiz" class="retake-button">Retake Quiz</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Info Section -->
+					<div class="info-section">
+						<h3>Why Take This Quiz?</h3>
+						<p>This phone addiction assessment is based on behavioral science research and helps you understand your relationship with technology. Your results are private and never stored.</p>
+
+						<h3>What Happens Next?</h3>
+						<p>Based on your score, you'll receive personalized recommendations to improve your digital wellbeing. Whether you need gentle reminders or more structured support, we'll guide you toward healthier habits.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+
+		<script>
+			let currentQuestion = 1;
+			let totalScore = 0;
+			const totalQuestions = 8;
+
+			// Option button click handler
+			document.querySelectorAll('.option-button').forEach(button => {
+				button.addEventListener('click', function() {
+					const score = parseInt(this.dataset.score);
+					totalScore += score;
+
+					// Update progress
+					const progress = (currentQuestion / totalQuestions) * 100;
+					document.getElementById('progress-fill')!.style.width = `${progress}%`;
+
+					// Move to next question or show results
+					if (currentQuestion < totalQuestions) {
+						// Hide current question
+						document.querySelector(`[data-question="${currentQuestion}"]`)!.setAttribute('style', 'display: none;');
+
+						// Show next question
+						currentQuestion++;
+						document.querySelector(`[data-question="${currentQuestion}"]`)!.setAttribute('style', '');
+					} else {
+						// Show results
+						showResults();
+					}
+				});
+			});
+
+			function showResults() {
+				// Hide questions, show results
+				document.getElementById('quiz-questions')!.style.display = 'none';
+				document.getElementById('quiz-results')!.style.display = 'block';
+
+				// Calculate result level
+				let level, title, description, recommendations;
+
+				if (totalScore >= 18) {
+					level = 'severe';
+					title = '🔴 Severe Phone Addiction';
+					description = 'Your phone usage is significantly impacting your daily life. You likely experience anxiety without your phone and struggle to focus on other activities. Professional support combined with digital wellbeing tools could help.';
+					recommendations = [
+						'Download Intently to create mindful interventions',
+						'Set strict daily time limits for social media apps',
+						'Consider a digital detox (24-48 hours without phone)',
+						'Talk to a therapist about phone dependency',
+						'Use grayscale mode to reduce phone appeal'
+					];
+				} else if (totalScore >= 12) {
+					level = 'moderate';
+					title = '🟡 Moderate Phone Addiction';
+					description = 'You show clear signs of phone dependency that occasionally interfere with daily activities. You recognize the issue but find it challenging to change habits. With the right tools and strategies, you can regain control.';
+					recommendations = [
+						'Use Intently\'s mindful interventions to build awareness',
+						'Set app time limits (start with 30 min reduction)',
+						'Create phone-free zones (bedroom, dining table)',
+						'Replace scrolling with alternative activities',
+						'Track your usage to identify trigger times'
+					];
+				} else if (totalScore >= 6) {
+					level = 'mild';
+					title = '🟢 Mild Phone Dependency';
+					description = 'You have a relatively healthy relationship with your phone but show some habits worth addressing. You occasionally reach for your phone mindlessly. Small adjustments can help you maintain balanced usage.';
+					recommendations = [
+						'Use Intently to track usage patterns',
+						'Set mindful reminders for your most-used apps',
+						'Implement "no phone" during specific activities',
+						'Practice intentional phone checking',
+						'Celebrate your mindful choices'
+					];
+				} else {
+					level = 'healthy';
+					title = '✅ Healthy Phone Usage';
+					description = 'Congratulations! You have a balanced relationship with your phone. You use it intentionally and rarely feel controlled by it. Continue your mindful approach to maintain this healthy relationship.';
+					recommendations = [
+						'Maintain your current habits',
+						'Use Intently to track and celebrate progress',
+						'Be mindful of gradual usage creep',
+						'Share your strategies with others',
+						'Stay informed about digital wellbeing'
+					];
+				}
+
+				// Update results UI
+				document.getElementById('result-title')!.textContent = title;
+				document.getElementById('result-description')!.textContent = description;
+				document.getElementById('result-score')!.textContent = `${totalScore} out of 24`;
+
+				// Add recommendations
+				const recList = document.getElementById('recommendations-list')!;
+				recommendations.forEach((rec: string) => {
+					const li = document.createElement('li');
+					li.textContent = rec;
+					recList.appendChild(li);
+				});
+
+				// Add result class for styling
+				document.getElementById('result-icon')!.className = `result-icon ${level}`;
+			}
+
+			// Retake quiz button
+			document.getElementById('retake-quiz')?.addEventListener('click', function() {
+				// Reset state
+				currentQuestion = 1;
+				totalScore = 0;
+				document.getElementById('progress-fill')!.style.width = '0%';
+				document.getElementById('recommendations-list')!.innerHTML = '';
+
+				// Show questions, hide results
+				document.getElementById('quiz-questions')!.style.display = 'block';
+				document.getElementById('quiz-results')!.style.display = 'none';
+
+				// Reset to first question
+				document.querySelectorAll('.question-slide').forEach((slide, index) => {
+					if (index === 0) {
+						slide.setAttribute('style', '');
+					} else {
+						slide.setAttribute('style', 'display: none;');
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+	}
+
+	.quiz-hero {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
+		text-align: center;
+		color: white;
+	}
+
+	.quiz-hero h1 {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		color: white;
+	}
+
+	.hero-subtitle {
+		font-size: 1.125rem;
+		margin: 0 0 var(--intently-space-sm);
+		opacity: 0.95;
+	}
+
+	.quiz-meta {
+		font-size: 0.875rem;
+		opacity: 0.85;
+		margin: 0;
+	}
+
+	.quiz-section {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	.quiz-card {
+		background: white;
+		border-radius: 20px;
+		padding: var(--intently-space-2xl);
+		box-shadow: var(--intently-shadow-lg);
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	.progress-bar {
+		width: 100%;
+		height: 8px;
+		background: var(--intently-gray-200);
+		border-radius: var(--intently-radius-full);
+		overflow: hidden;
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	.progress-fill {
+		height: 100%;
+		background: linear-gradient(90deg, var(--intently-blue), var(--intently-purple));
+		border-radius: var(--intently-radius-full);
+		transition: width 0.3s ease;
+		width: 0%;
+	}
+
+	.question-number {
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--intently-blue);
+		margin-bottom: var(--intently-space-sm);
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.question-text {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+		margin: 0 0 var(--intently-space-xl);
+		line-height: 1.3;
+	}
+
+	.options-grid {
+		display: grid;
+		gap: var(--intently-space-md);
+	}
+
+	.option-button {
+		width: 100%;
+		padding: var(--intently-space-lg);
+		background: var(--intently-bg-secondary);
+		border: 2px solid var(--intently-gray-200);
+		border-radius: var(--intently-radius-lg);
+		font-size: 1rem;
+		font-weight: 500;
+		color: var(--intently-text-primary);
+		text-align: left;
+		cursor: pointer;
+		transition: all var(--intently-transition-normal);
+	}
+
+	.option-button:hover {
+		border-color: var(--intently-blue);
+		background: white;
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.results-content {
+		text-align: center;
+	}
+
+	.result-icon {
+		width: 80px;
+		height: 80px;
+		margin: 0 auto var(--intently-space-lg);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+	}
+
+	.result-icon.severe {
+		background: rgba(244, 67, 54, 0.1);
+	}
+
+	.result-icon.moderate {
+		background: rgba(255, 152, 0, 0.1);
+	}
+
+	.result-icon.mild {
+		background: rgba(76, 175, 80, 0.1);
+	}
+
+	.result-icon.healthy {
+		background: rgba(76, 175, 80, 0.1);
+	}
+
+	.result-title {
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.result-description {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-xl);
+	}
+
+	.result-card {
+		background: var(--intently-bg-secondary);
+		padding: var(--intently-space-lg);
+		border-radius: var(--intently-radius-lg);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.result-card h3 {
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-sm);
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.score-display {
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--intently-blue);
+	}
+
+	.recommendations {
+		text-align: left;
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.recommendations h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.recommendations-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.recommendations-list li {
+		padding: var(--intently-space-sm) 0 var(--intently-space-sm) var(--intently-space-lg);
+		position: relative;
+		line-height: 1.5;
+		color: var(--intently-text-secondary);
+	}
+
+	.recommendations-list li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--intently-green);
+		font-weight: 700;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: var(--intently-space-md);
+		justify-content: center;
+		margin-bottom: var(--intently-space-xl);
+		flex-wrap: wrap;
+	}
+
+	.retake-button {
+		background: none;
+		border: none;
+		color: var(--intently-blue);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		cursor: pointer;
+		text-decoration: underline;
+		padding: var(--intently-space-sm);
+	}
+
+	.retake-button:hover {
+		color: var(--intently-purple);
+	}
+
+	.info-section {
+		background: white;
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+	}
+
+	.info-section h3 {
+		font-size: 1.125rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		color: var(--intently-text-primary);
+	}
+
+	.info-section p {
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-lg);
+	}
+
+	.info-section p:last-child {
+		margin-bottom: 0;
+	}
+
+	/* Responsive */
+	@media (min-width: 768px) {
+		.quiz-hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.25rem;
+		}
+
+		.question-text {
+			font-size: 1.75rem;
+		}
+
+		.quiz-card {
+			padding: var(--intently-space-3xl);
+		}
+	}
+
+	@media (max-width: 767px) {
+		.cta-buttons {
+			flex-direction: column;
+		}
+
+		.cta-buttons .btn {
+			width: 100%;
+		}
+	}
+</style>

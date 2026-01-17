@@ -230,6 +230,10 @@ Ready to take control of your screen time? [Download Intently](/download) today 
 
 ---
 
+**📱 Want to know your current screen time health?** Take our free [Phone Addiction Quiz](/quiz) to assess your habits and get a personalized action plan to reduce screen time effectively.
+
+---
+
 **Related Articles:**
 - [Understanding Digital Wellbeing and Why It Matters](/blog/)
 - [Privacy-First Screen Time Tracking: Why It Matters](/blog/)

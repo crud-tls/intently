@@ -366,6 +366,10 @@ Ready to try a compassionate, mindful approach to screen time? [Download Intentl
 
 ---
 
+**📱 Curious about your phone habits?** Take our free [Phone Addiction Quiz](/quiz) to see if mindful interventions or blocking is the right approach for you based on your usage patterns.
+
+---
+
 **Related Articles:**
 - [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)

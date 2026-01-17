@@ -315,6 +315,10 @@ Ready to experience the difference mindful interventions make? [Download Intentl
 
 ---
 
+**📱 Still deciding between apps?** Take our free [Phone Addiction Quiz](/quiz) to get personalized recommendations based on your usage patterns and goals.
+
+---
+
 **Related Articles:**
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
 - [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking)

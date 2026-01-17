@@ -7,16 +7,26 @@ import FeatureCard from '../components/marketing/FeatureCard.astro';
 import PlatformCard from '../components/marketing/PlatformCard.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import WebSiteSchema from '../components/SEO/WebSiteSchema.astro';
+import { getCollection } from 'astro:content';
 
 const androidFeatures = ["Complete app blocking", "Usage analytics", "Streak tracking", "Widget support"];
 const iosFeatures = ["Screen Time API", "Widget support", "iCloud sync", "Beautiful design"];
 const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick settings"];
+
+// Get latest 3 blog posts
+const allPosts = await getCollection('blog');
+const latestPosts = allPosts
+	.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+	.slice(0, 3);
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title="Intently - Privacy-First Screen Time App | Break Phone Addiction"
+			description="Break phone addiction with mindful interventions. Free screen time tracker for Android, iOS & Chrome. 100% offline, no data collection. Build healthier digital habits today."
+		/>
 		<WebSiteSchema />
 	</head>
 	<body>
@@ -89,6 +99,36 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 							downloadUrl="https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop"
 							storeType="chromestore"
 						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Blog Section -->
+			<section class="blog-section">
+				<div class="container">
+					<h2 class="section-title">Latest from Our Blog</h2>
+					<p class="section-subtitle">Expert tips and insights on digital wellbeing, phone addiction, and mindful tech use.</p>
+					<div class="blog-grid">
+						{latestPosts.map((post) => (
+							<article class="blog-card">
+								{post.data.heroImage && (
+									<a href={`/blog/${post.id}`} class="blog-image-link">
+										<img src={post.data.heroImage} alt={post.data.title} class="blog-image" />
+									</a>
+								)}
+								<div class="blog-content">
+									<h3 class="blog-title">
+										<a href={`/blog/${post.id}`}>{post.data.title}</a>
+									</h3>
+									<p class="blog-description">{post.data.description}</p>
+									<a href={`/blog/${post.id}`} class="blog-link">Read More →</a>
+								</div>
+							</article>
+						))}
+					</div>
+					<div class="blog-cta">
+						<a href="/blog" class="view-all-button">View All Articles</a>
+						<a href="/quiz" class="quiz-button">📱 Take Our Phone Addiction Quiz</a>
 					</div>
 				</div>
 			</section>
@@ -186,6 +226,148 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 		}
 	}
 
+	/* Blog Section */
+	.blog-section {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-primary);
+	}
+
+	.blog-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--intently-space-xl);
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	.blog-card {
+		background: white;
+		border-radius: var(--intently-radius-lg);
+		overflow: hidden;
+		border: 1px solid var(--intently-gray-200);
+		transition: all var(--intently-transition-normal);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.blog-card:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--intently-shadow-lg);
+		border-color: var(--intently-blue);
+	}
+
+	.blog-image-link {
+		display: block;
+		overflow: hidden;
+	}
+
+	.blog-image {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		transition: transform var(--intently-transition-normal);
+	}
+
+	.blog-image-link:hover .blog-image {
+		transform: scale(1.05);
+	}
+
+	.blog-content {
+		padding: var(--intently-space-lg);
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.blog-title {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		line-height: 1.3;
+	}
+
+	.blog-title a {
+		color: var(--intently-text-primary);
+		text-decoration: none;
+		transition: color var(--intently-transition-fast);
+	}
+
+	.blog-title a:hover {
+		color: var(--intently-blue);
+	}
+
+	.blog-description {
+		font-size: 0.9375rem;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-md);
+		line-height: 1.5;
+		flex: 1;
+	}
+
+	.blog-link {
+		color: var(--intently-blue);
+		font-weight: 600;
+		text-decoration: none;
+		font-size: 0.9375rem;
+		transition: color var(--intently-transition-fast);
+		align-self: flex-start;
+	}
+
+	.blog-link:hover {
+		color: var(--intently-purple);
+	}
+
+	.blog-cta {
+		display: flex;
+		gap: var(--intently-space-md);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.view-all-button,
+	.quiz-button {
+		display: inline-block;
+		padding: 0.875rem 1.75rem;
+		border-radius: var(--intently-radius-full);
+		font-weight: 600;
+		font-size: 1rem;
+		text-decoration: none;
+		transition: all var(--intently-transition-normal);
+	}
+
+	.view-all-button {
+		background: var(--intently-blue);
+		color: white;
+		border: 2px solid var(--intently-blue);
+	}
+
+	.view-all-button:hover {
+		background: var(--intently-blue-dark);
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.quiz-button {
+		background: white;
+		color: var(--intently-blue);
+		border: 2px solid var(--intently-blue);
+	}
+
+	.quiz-button:hover {
+		background: var(--intently-bg-secondary);
+		transform: translateY(-2px);
+	}
+
+	@media (min-width: 768px) {
+		.blog-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.blog-image {
+			height: 180px;
+		}
+	}
+
 	/* CTA Section */
 	.cta-section {
 		padding: var(--intently-space-2xl) 0;
@@ -234,6 +416,7 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 	@media (min-width: 768px) {
 		.features-section,
 		.platforms-section,
+		.blog-section,
 		.cta-section {
 			padding: var(--intently-space-3xl) 0;
 		}
@@ -243,6 +426,7 @@ const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick 
 	@media (min-width: 1024px) {
 		.features-section,
 		.platforms-section,
+		.blog-section,
 		.cta-section {
 			padding: var(--intently-space-4xl) 0;
 		}

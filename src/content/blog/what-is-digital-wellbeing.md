@@ -369,6 +369,10 @@ Ready to improve your digital wellbeing with privacy-first, mindful tools? [Down
 
 ---
 
+**📱 Want to assess your digital wellbeing?** Take our free [Phone Addiction Quiz](/quiz) to understand your current habits and get actionable steps to improve your relationship with technology.
+
+---
+
 **Related Articles:**
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)

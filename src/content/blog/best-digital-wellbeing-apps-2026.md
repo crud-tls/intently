@@ -441,6 +441,10 @@ Ready to transform your relationship with technology? [Download Intently](/downl
 
 ---
 
+**📱 Not sure which app you need?** Take our free [Phone Addiction Quiz](/quiz) to get a personalized assessment and find out which digital wellbeing approach works best for you.
+
+---
+
 **Related Articles:**
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [Privacy-First Screen Time Tracking: Why It Matters](/blog/)

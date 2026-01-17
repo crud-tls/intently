@@ -346,6 +346,10 @@ Ready to break free from app addiction with psychology-backed, compassionate too
 
 ---
 
+**📱 How addicted are you to your apps?** Take our free [Phone Addiction Quiz](/quiz) to get a science-backed assessment and discover personalized strategies to break the cycle.
+
+---
+
 **Related Articles:**
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [What Is Digital Wellbeing?](/blog/what-is-digital-wellbeing)

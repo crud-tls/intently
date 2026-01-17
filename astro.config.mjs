@@ -28,7 +28,8 @@ export default defineConfig({
 					item.changefreq = 'daily';
 				} else if (
 					item.url.includes('/features') ||
-					item.url.includes('/download')
+					item.url.includes('/download') ||
+					item.url.includes('/quiz')
 				) {
 					item.priority = 0.9;
 					item.changefreq = 'weekly';

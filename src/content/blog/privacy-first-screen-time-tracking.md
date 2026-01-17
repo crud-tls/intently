@@ -300,6 +300,10 @@ Ready to track your screen time without being tracked yourself? [Download Intent
 
 ---
 
+**📱 Struggling with phone addiction?** Take our free [Phone Addiction Quiz](/quiz) to assess your relationship with your phone and get personalized recommendations for building healthier habits.
+
+---
+
 **Related Articles:**
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
