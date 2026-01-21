@@ -2,48 +2,18 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Card from '../components/ui/Card.astro';
-import FAQSchema from '../components/SEO/FAQSchema.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import { SITE_TITLE } from '../consts';
-
-const privacyFAQs = [
-	{
-		question: "Does Intently collect any personal information?",
-		answer: "No. Intently does not collect, store, or transmit any personal information. Your usage data stays on your device."
-	},
-	{
-		question: "Can I export my data?",
-		answer: "Yes, you can export your usage data at any time from within the app. This data is saved locally and never transmitted."
-	},
-	{
-		question: "What happens if I lose my device?",
-		answer: "Since data is stored locally only, you would lose your usage history if you lose your device. We recommend periodic exports if you want to keep long-term records."
-	},
-	{
-		question: "Will Intently ever add cloud sync?",
-		answer: "If we ever add sync features, they will be opt-in only and use end-to-end encryption so we cannot read your data. The offline-first experience will always remain available."
-	},
-	{
-		question: "Does Intently use third-party services?",
-		answer: "No. Intently has no third-party analytics, advertising, or tracking services. The only network requests are for app updates and crash reporting (which can be disabled)."
-	},
-	{
-		question: "Is Intently open source?",
-		answer: "We believe in transparency. Contact us if you're interested in reviewing our code or contributing to the project."
-	}
-];
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Privacy - ${SITE_TITLE}`} description="Intently is privacy-first. Your data never leaves your device. 100% offline, no tracking, no account required." />
-		<FAQSchema faqs={privacyFAQs} />
+		<BaseHead title={`Privacy Policy - ${SITE_TITLE}`} description="Privacy Policy for Intently Android app - Digital wellbeing application built with privacy as a core principle." />
 		<BreadcrumbSchema
 			items={[
 				{ name: "Home", url: "https://liveintently.app" },
-				{ name: "Privacy", url: "https://liveintently.app/privacy" }
+				{ name: "Privacy Policy", url: "https://liveintently.app/privacy" }
 			]}
 		/>
 	</head>
@@ -54,124 +24,336 @@ const privacyFAQs = [
 			<!-- Privacy Hero -->
 			<section class="privacy-hero">
 				<div class="container">
-					<div class="privacy-badge-large">
-						<svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
-							<path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-						</svg>
-					</div>
-					<h1>Your Privacy is Our Foundation</h1>
-					<p class="hero-subtitle">Intently is built on the belief that personal wellbeing data should stay personal. Your data never leaves your device. Ever.</p>
-					<p class="hero-links">
-						Explore our <a href="/features">privacy-first features</a> or <a href="/download">download Intently</a> to experience true digital privacy.
-					</p>
+					<h1>Privacy Policy for Intently (Android)</h1>
+					<p class="updated"><strong>Last Updated:</strong> January 21, 2026</p>
 				</div>
 			</section>
 
-			<!-- Privacy Commitments -->
-			<section class="commitments">
+			<!-- Privacy Content -->
+			<section class="privacy-content">
 				<div class="container">
-					<h2 class="section-title">Our Privacy Commitments</h2>
-					<div class="commitments-grid">
-						<Card variant="elevated">
-							<div class="commitment-icon">📱</div>
-							<h3>100% Offline</h3>
-							<p>Intently works completely offline. No internet connection required for any core functionality.</p>
-						</Card>
-						<Card variant="elevated">
-							<div class="commitment-icon">💾</div>
-							<h3>Local Data Only</h3>
-							<p>All your usage data is stored locally on your device. Nothing is transmitted to any server.</p>
-						</Card>
-						<Card variant="elevated">
-							<div class="commitment-icon">🔐</div>
-							<h3>No Account Required</h3>
-							<p>Use Intently without creating an account. No email, no password, no personal information needed.</p>
-						</Card>
-						<Card variant="elevated">
-							<div class="commitment-icon">🚫</div>
-							<h3>No Analytics</h3>
-							<p>We don't track how you use the app. No behavioral analytics, no usage statistics, no telemetry.</p>
-						</Card>
-						<Card variant="elevated">
-							<div class="commitment-icon">📊</div>
-							<h3>No Advertising</h3>
-							<p>No ads, no tracking pixels, no third-party SDKs. Just you and your habit-building journey.</p>
-						</Card>
-						<Card variant="elevated">
-							<div class="commitment-icon">🔓</div>
-							<h3>No Data Selling</h3>
-							<p>We have no data to sell. Your personal information remains yours alone.</p>
-						</Card>
-					</div>
-				</div>
-			</section>
+					<div class="content-wrapper">
+						<h2>Introduction</h2>
+						<p>Intently is a digital wellbeing application designed to help you build mindful social media usage habits. This privacy policy explains how Intently collects, uses, and protects your information.</p>
 
-			<!-- How Data Works -->
-			<section class="data-flow">
-				<div class="container">
-					<h2 class="section-title">How Your Data Works</h2>
-					<div class="data-flow-content">
-						<div class="flow-diagram">
-							<div class="flow-step">
-								<div class="flow-icon">📱</div>
-								<div class="flow-label">Your Device</div>
-							</div>
-							<div class="flow-arrow">→</div>
-							<div class="flow-step">
-								<div class="flow-icon">📊</div>
-								<div class="flow-label">Intently App</div>
-							</div>
-							<div class="flow-arrow blocked">✗</div>
-							<div class="flow-step blocked">
-								<div class="flow-icon">☁️</div>
-								<div class="flow-label">The Internet</div>
-							</div>
-						</div>
-						<p class="flow-explanation">Your usage data flows from your system directly to the Intently app on your device. It never leaves your device, period.</p>
-					</div>
-				</div>
-			</section>
+						<h2>Developer Information</h2>
+						<p><strong>App Name:</strong> Intently<br>
+						<strong>Developer:</strong> Intently Team<br>
+						<strong>Contact Email:</strong>support@liveintently.app</p>
 
-			<!-- FAQ -->
-			<section class="faq">
-				<div class="container">
-					<h2 class="section-title">Privacy FAQ</h2>
-					<div class="faq-list">
-						<div class="faq-item">
-							<h3>Does Intently collect any personal information?</h3>
-							<p>No. Intently does not collect, store, or transmit any personal information. Your usage data stays on your device.</p>
+						<h2>Our Commitment to Privacy</h2>
+						<div class="highlight">
+							<p><strong>Intently is built with privacy as a core principle. Your data is encrypted and stored securely. Sign-in is optional - the app works fully without an account. When you choose to sync, your data is encrypted and only accessible by you.</strong></p>
 						</div>
-						<div class="faq-item">
-							<h3>Can I export my data?</h3>
-							<p>Yes, you can export your usage data at any time from within the app. This data is saved locally and never transmitted.</p>
-						</div>
-						<div class="faq-item">
-							<h3>What happens if I lose my device?</h3>
-							<p>Since data is stored locally only, you would lose your usage history if you lose your device. We recommend periodic exports if you want to keep long-term records.</p>
-						</div>
-						<div class="faq-item">
-							<h3>Will Intently ever add cloud sync?</h3>
-							<p>If we ever add sync features, they will be opt-in only and use end-to-end encryption so we cannot read your data. The offline-first experience will always remain available.</p>
-						</div>
-						<div class="faq-item">
-							<h3>Does Intently use third-party services?</h3>
-							<p>No. Intently has no third-party analytics, advertising, or tracking services. The only network requests are for app updates and crash reporting (which can be disabled).</p>
-						</div>
-						<div class="faq-item">
-							<h3>Is Intently open source?</h3>
-							<p>We believe in transparency. Contact us if you're interested in reviewing our code or contributing to the project.</p>
-						</div>
-					</div>
-				</div>
-			</section>
 
-			<!-- CTA -->
-			<section class="cta-section">
-				<div class="container">
-					<div class="cta-content">
-						<h2>Privacy Shouldn't Be a Premium Feature</h2>
-						<p>Experience digital wellbeing without compromising your privacy. Download Intently today.</p>
-						<a href="/download" class="cta-button">Download Intently</a>
+						<h2>Information We Collect</h2>
+						<h3>App Usage Data</h3>
+						<p>All usage data is stored locally on your device. When you enable sync, data is encrypted and securely stored in the cloud.</p>
+						<ul>
+							<li><strong>Target App Detection:</strong> When you open monitored apps (e.g., Facebook, Instagram)</li>
+							<li><strong>Usage Sessions:</strong> Start time, end time, and duration of app usage</li>
+							<li><strong>Session Events:</strong> When reminders are shown, when timer alerts are triggered</li>
+							<li><strong>Daily Statistics:</strong> Aggregated usage data per day</li>
+							<li><strong>User Goals:</strong> Goals you set for managing your usage time</li>
+							<li><strong>Intervention Results:</strong> How you respond to mindfulness prompts</li>
+						</ul>
+
+						<h3>Account Information (Optional)</h3>
+						<p>Sign-in is optional. When you choose to create an account:</p>
+						<ul>
+							<li><strong>Email Address:</strong> Used for authentication and account recovery</li>
+							<li><strong>Authentication Token:</strong> Secure token to access your synced data</li>
+							<li><strong>No Password Storage:</strong> Authentication is handled through Google Sign-In or Facebook Login</li>
+						</ul>
+
+						<h3>Anonymous Analytics (Optional)</h3>
+						<div class="toggle-info">
+							<p><strong>📊 Anonymous Analytics Feature:</strong> Intently includes optional privacy-safe analytics to help improve app quality. You can toggle this feature ON or OFF in the Analytics screen (Settings → Intervention Analytics).</p>
+							<p><strong>When enabled, we collect ONLY aggregated summaries:</strong></p>
+							<ul class="collect">
+								<li><strong>✓ Content category performance</strong> (reflection, breathing, question types)</li>
+								<li><strong>✓ Time-of-day patterns</strong> (morning, afternoon, evening - not exact times)</li>
+								<li><strong>✓ Success rates</strong> (percentage of users who choose "go back")</li>
+								<li><strong>✓ Decision time buckets</strong> (instant, quick, moderate, deliberate)</li>
+								<li><strong>✓ App quality metrics</strong> (crashes, performance issues)</li>
+							</ul>
+						</div>
+
+						<h3>What We DON'T Collect</h3>
+						<ul class="no-collect">
+							<li><strong>❌ No passwords</strong> (authentication handled via Google/Facebook OAuth)</li>
+							<li><strong>❌ No personal device identifiers</strong> (no IMEI, no advertising ID, no Android ID)</li>
+							<li><strong>❌ No exact timestamps</strong> (only time-of-day buckets: morning/afternoon/evening/night)</li>
+							<li><strong>❌ No app content</strong> (no posts, messages, photos from monitored apps)</li>
+							<li><strong>❌ No specific app package names</strong> (only broad categories like "social_media")</li>
+							<li><strong>❌ No location data</strong> (no GPS, no precise location)</li>
+							<li><strong>❌ No individual user tracking</strong> (all analytics are aggregated)</li>
+							<li><strong>❌ No browsing history</strong> (only local app usage monitoring)</li>
+						</ul>
+						<div class="toggle-info">
+							<p><strong>Note on Firebase Analytics:</strong> Firebase automatically collects minimal device information (device model, Android version, app instance ID) for analytics purposes. This data is anonymized and not linked to your personal identity. We do not collect or send your device's IMEI, advertising ID, or other persistent personal identifiers.</p>
+						</div>
+
+						<h2>How We Use Your Information</h2>
+
+						<h3>Local Data Usage (No analytics required)</h3>
+						<p>All data collected is used exclusively to:</p>
+						<ul>
+							<li><strong>Show Reminders:</strong> Display mindfulness prompts when you open monitored apps</li>
+							<li><strong>Track Usage Time:</strong> Monitor how long you use specific apps</li>
+							<li><strong>Display Statistics:</strong> Show you charts and insights about your usage patterns</li>
+							<li><strong>Timer Alerts:</strong> Notify you when you've exceeded your set time limits</li>
+							<li><strong>Goal Tracking:</strong> Help you monitor progress toward your usage goals</li>
+							<li><strong>Improve Interventions:</strong> Learn which content types work best for you</li>
+						</ul>
+
+						<h3>Anonymous Analytics Usage (Requires Firebase)</h3>
+						<div class="success">
+							<p><strong>✓ Privacy-Safe Approach:</strong> All analytics data is <strong>aggregated locally on your device</strong> before sending. Raw individual user behavior never leaves your phone.</p>
+							<p><strong>✓ Purpose:</strong> To improve app quality and intervention effectiveness</p>
+							<p><strong>✓ Service Provider:</strong> Firebase (Google) - used only for aggregated analytics storage</p>
+						</div>
+
+						<h2>Data Storage and Security</h2>
+						<h3>Local Storage</h3>
+						<ul>
+							<li>All usage data is stored <strong>locally on your device</strong> using Android's SQLite database</li>
+							<li>Data is stored in your app's private storage directory</li>
+							<li>Only Intently can access its own data</li>
+						</ul>
+
+						<h3>Cloud Sync (Optional)</h3>
+						<ul>
+							<li><strong>Only available when you sign in</strong></li>
+							<li><strong>Encrypted storage:</strong> Your data is encrypted before syncing</li>
+							<li><strong>Purpose:</strong> Backup your data and sync across multiple devices</li>
+							<li><strong>Service:</strong> Supabase (secure cloud database)</li>
+							<li><strong>Access Control:</strong> Only you can access your synced data using your authenticated account</li>
+						</ul>
+
+						<h3>Cloud Analytics (Optional)</h3>
+						<ul>
+							<li><strong>Only when Anonymous Analytics is enabled</strong></li>
+							<li><strong>Aggregated summaries only</strong> - no raw individual data</li>
+							<li>Service: Firebase Analytics by Google</li>
+							<li>Purpose: App quality improvement and intervention optimization</li>
+						</ul>
+
+						<h3>Data Retention</h3>
+						<ul>
+							<li>Usage sessions older than <strong>90 days</strong> are automatically deleted from local storage</li>
+							<li>Synced data remains in the cloud until you delete your account</li>
+							<li>Analytics data sent to Firebase follows Firebase's retention policies</li>
+							<li>You can manually clear all local data by uninstalling the app</li>
+							<li>You can delete your account and all associated data from the Settings screen</li>
+						</ul>
+
+						<h3>Data Security</h3>
+						<ul>
+							<li>Data is stored in Android's app-specific storage (protected by Android OS)</li>
+							<li>Synced data is encrypted during transmission and at rest</li>
+							<li>Firebase and Supabase use industry-standard encryption for data in transit and at rest</li>
+							<li>Standard Android security protections apply</li>
+						</ul>
+
+						<h2>Data Sharing and Third Parties</h2>
+						<h3>What We DON'T Share</h3>
+						<div class="highlight">
+							<p><strong>We do not share, sell, or rent your personal data to third parties.</strong></p>
+						</div>
+						<ul class="no-collect">
+							<li><strong>❌ No personal information shared</strong></li>
+							<li><strong>❌ No individual user behavior shared</strong></li>
+							<li><strong>❌ No advertising networks</strong></li>
+							<li><strong>❌ No data brokers</strong></li>
+						</ul>
+
+						<h3>Third-Party Services</h3>
+						<h4>Analytics & Monitoring (Default: ON, can be toggled OFF):</h4>
+						<ul class="collect">
+							<li><strong>✓ Firebase Analytics (Google)</strong> - For storing aggregated app analytics and usage patterns</li>
+							<li><strong>✓ Firebase Crashlytics (Google)</strong> - For crash reporting to improve app stability</li>
+						</ul>
+						<div class="warning">
+							<p><strong>⚠️ Important:</strong> Firebase receives only <strong>aggregated summaries</strong>. No personally identifiable information or individual user behavior is transmitted. Analytics default to ON but can be toggled OFF in Settings → Intervention Analytics.</p>
+						</div>
+
+						<h4>App Updates & Features (Always Active):</h4>
+						<ul class="collect">
+							<li><strong>✓ Firebase Remote Config (Google)</strong> - For managing app updates and feature rollouts (does not collect usage data)</li>
+						</ul>
+						<div class="toggle-info">
+							<p><strong>Note:</strong> Remote Config only fetches configuration data to determine if app updates are available. It does not send any of your personal data.</p>
+						</div>
+
+						<h4>When You Sign In (Optional):</h4>
+						<ul class="collect">
+							<li><strong>✓ Google Sign-In (Play Services Auth)</strong> - For secure authentication via Google account</li>
+							<li><strong>✓ Facebook Login SDK</strong> - For secure authentication via Facebook account</li>
+							<li><strong>✓ Supabase</strong> - For encrypted data storage and cross-device sync</li>
+						</ul>
+						<div class="warning">
+							<p><strong>⚠️ Important:</strong> Your synced data is encrypted and only accessible by you. We do not have access to your Google or Facebook account passwords. Authentication is handled securely by Google and Facebook's respective SDKs.</p>
+						</div>
+
+						<h2>Permissions Explained</h2>
+						<p>Intently requires the following Android permissions to function:</p>
+
+						<h3>1. Usage Access (PACKAGE_USAGE_STATS)</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Detect when you open Facebook, Instagram, or other configured apps</li>
+							<li><strong>What it accesses:</strong> Recent app launch history and foreground app detection</li>
+							<li><strong>What it does NOT access:</strong> App content, messages, or personal data within apps</li>
+							<li><strong>User control:</strong> You grant this in Android Settings → Apps → Special Access → Usage Access</li>
+						</ul>
+
+						<h3>2. Display Over Other Apps (SYSTEM_ALERT_WINDOW)</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Show reminder overlays when you open monitored apps</li>
+							<li><strong>What it does:</strong> Displays full-screen mindfulness prompts over your apps</li>
+							<li><strong>User control:</strong> You grant this in Android Settings → Apps → Special Access → Display Over Other Apps</li>
+						</ul>
+
+						<h3>3. Foreground Service - Special Use</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Run continuous monitoring in the background</li>
+							<li><strong>What it does:</strong> Keeps the app running to detect app launches even when you're not actively using Intently</li>
+							<li><strong>Notification:</strong> Shows a persistent "Intently is monitoring" notification (required by Android)</li>
+						</ul>
+
+						<h3>4. Post Notifications</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Display the persistent foreground service notification</li>
+							<li><strong>What it does:</strong> Shows low-priority notification that the service is active</li>
+						</ul>
+
+						<h3>5. Wake Lock</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Keep monitoring active during usage sessions</li>
+							<li><strong>Battery impact:</strong> Optimized with adaptive polling to minimize battery drain</li>
+						</ul>
+
+						<h3>6. Receive Boot Completed</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Restart monitoring service after device reboot</li>
+							<li><strong>User control:</strong> Monitoring automatically resumes only if it was active before reboot</li>
+						</ul>
+
+						<h3>7. Vibrate</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Provide haptic feedback for notifications and alerts</li>
+							<li><strong>What it does:</strong> Brief vibration when goals are reached, reminders are shown, or achievements unlocked</li>
+							<li><strong>Battery impact:</strong> Minimal</li>
+						</ul>
+
+						<h3>8. Query All Packages</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Allow you to select which apps to track and set usage time limits</li>
+							<li><strong>What it does:</strong> Shows all installed apps in the "Manage Apps" screen so you can choose which apps to monitor</li>
+							<li><strong>User control:</strong> Apps are ONLY tracked when you explicitly add them - you have full control</li>
+							<li><strong>Privacy:</strong> The app does NOT scan or access app content - it only shows the list of installed apps for your selection</li>
+						</ul>
+
+						<h3>9. Internet Access</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Enable data sync and send analytics to Firebase</li>
+							<li><strong>When it's used:</strong> When syncing your data or sending analytics (when enabled)</li>
+							<li><strong>User control:</strong> Sync is optional - only when you sign in. Analytics can be toggled OFF in Settings</li>
+							<li><strong>Core app functionality:</strong> Works fully offline without internet (monitoring, reminders, stats)</li>
+						</ul>
+
+						<h2>Your Rights and Control</h2>
+						<h3>You Have Full Control:</h3>
+						<ul>
+							<li><strong>Enable/Disable Monitoring:</strong> Turn the service on/off anytime from the app</li>
+							<li><strong>Configure Target Apps:</strong> Choose which apps to monitor</li>
+							<li><strong>Adjust Settings:</strong> Customize timer duration and reminder behavior</li>
+							<li><strong>View Your Data:</strong> See all collected usage statistics in the Stats screen</li>
+							<li><strong>Toggle Analytics:</strong> Enable/disable anonymous analytics in Settings → Intervention Analytics</li>
+							<li><strong>Sign In/Out:</strong> Optional - use the app without an account, or sign in to enable sync</li>
+							<li><strong>Delete Account:</strong> Permanently delete your account and all synced data from Settings → Account & Sync</li>
+							<li><strong>Delete All Local Data:</strong> Uninstalling Intently permanently removes all local data</li>
+						</ul>
+
+						<div class="toggle-info">
+							<h4>Analytics Toggle Control</h4>
+							<p><strong>Location:</strong> Settings → Intervention Analytics → Anonymous Analytics toggle</p>
+							<p><strong>Default:</strong> ON (opt-out model - you can turn it off anytime)</p>
+							<p><strong>When OFF:</strong> No analytics data is collected or sent. Core app functionality works normally.</p>
+							<p><strong>When ON:</strong> Aggregated summaries are sent to Firebase to help improve the app</p>
+						</div>
+
+						<h3>Optional Account:</h3>
+						<ul>
+							<li><strong>Intently works fully without an account</strong> - all core features available offline</li>
+							<li><strong>Optional Sign-In:</strong> Create an account to enable cloud sync across devices</li>
+							<li><strong>Authentication Options:</strong> Google Sign-In or Facebook Login - secure authentication without password storage</li>
+							<li><strong>You Can Delete:</strong> Delete your account and all synced data anytime from Settings → Account & Sync</li>
+							<li><strong>All analytics are anonymous</strong> with no personal user identifiers</li>
+						</ul>
+
+						<h2>Children's Privacy</h2>
+						<p>Intently does not knowingly collect information from children under 13. The app is designed for general audiences and does not contain age-restricted content. All analytics are fully anonymous with no personal identifiers.</p>
+
+						<h2>Changes to This Privacy Policy</h2>
+						<p>We may update this privacy policy from time to time. Any changes will be reflected in:</p>
+						<ul>
+							<li>The "Last Updated" date at the top of this policy</li>
+							<li>App updates through the Google Play Store</li>
+						</ul>
+						<p>Continued use of the app after policy changes constitutes acceptance of the updated policy.</p>
+
+						<h2>Data Protection Rights (GDPR/CCPA Compliance)</h2>
+						<p>If you are in the European Union or California, you have the following rights:</p>
+						<ul>
+							<li><strong>Right to Access:</strong> View all data through the app's Stats screen</li>
+							<li><strong>Right to Deletion:</strong> Delete your account and synced data from Settings → Account & Sync. Uninstall to delete all local data.</li>
+							<li><strong>Right to Portability:</strong> Not applicable (data is for app use only)</li>
+							<li><strong>Right to Rectification:</strong> Modify goals and settings within the app</li>
+							<li><strong>Right to Object:</strong> Disable monitoring, disable analytics, sign out, or delete your account</li>
+							<li><strong>Right to Opt-Out:</strong> Toggle anonymous analytics OFF anytime in Settings → Intervention Analytics</li>
+						</ul>
+						<p>All analytics are fully anonymous with no identifiers. Synced data is encrypted and only accessible by you.</p>
+
+						<h2>Technical Implementation Details</h2>
+						<p>For transparency, here's how Intently works technically:</p>
+						<ul>
+							<li><strong>App Detection:</strong> Uses Android's UsageStatsManager API to detect foreground apps</li>
+							<li><strong>Local Storage:</strong> SQLite database via Android Room library with encryption</li>
+							<li><strong>Cloud Sync:</strong> Supabase for encrypted data backup and cross-device sync (optional)</li>
+							<li><strong>Authentication:</strong> Google Sign-In and Facebook Login for secure account access (optional)</li>
+							<li><strong>Monitoring:</strong> Foreground service with adaptive polling to minimize battery drain</li>
+							<li><strong>Overlays:</strong> WindowManager API to display reminders over apps</li>
+							<li><strong>Analytics:</strong> Firebase Analytics, Crashlytics & Remote Config (default: ON, can be toggled OFF, aggregated data only)</li>
+							<li><strong>Background Tasks:</strong> WorkManager for scheduled operations (daily stats, cleanup)</li>
+							<li><strong>UI Framework:</strong> Jetpack Compose with Material Design 3</li>
+							<li><strong>Data Visualization:</strong> Vico and MPAndroidChart libraries for usage statistics</li>
+						</ul>
+
+						<h2>Contact Us</h2>
+						<p>If you have questions about this privacy policy or Intently's privacy practices:</p>
+						<p><strong>Email:</strong> info@liveintently.app<br>
+						<strong>Response Time:</strong> Within 48 hours</p>
+
+						<h2>Compliance</h2>
+						<p>This privacy policy complies with:</p>
+						<ul>
+							<li>Google Play Store Developer Policies</li>
+							<li>General Data Protection Regulation (GDPR)</li>
+							<li>California Consumer Privacy Act (CCPA)</li>
+							<li>Android app privacy best practices</li>
+						</ul>
+
+						<hr>
+
+						<div class="highlight">
+							<p><strong>Summary:</strong> Intently is a privacy-first app. Sign-in is optional (Google or Facebook) - all core features work fully offline. Your detailed usage data is stored locally and automatically deleted after 90 days. When you sign in, your data is encrypted and synced across devices via Supabase. We use anonymous analytics (default: ON, can be toggled OFF) to improve app quality and fix crashes. You can delete your account and all synced data anytime from Settings → Account & Sync.</p>
+						</div>
+
+						<p class="back-links">
+							<a href="/terms">Terms of Service</a> |
+							<a href="/">Back to Home</a>
+						</p>
 					</div>
 				</div>
 			</section>
@@ -194,18 +376,6 @@ const privacyFAQs = [
 		text-align: center;
 	}
 
-	.privacy-badge-large {
-		width: 64px;
-		height: 64px;
-		background: white;
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0 auto var(--intently-space-lg);
-		color: var(--intently-green);
-	}
-
 	.privacy-hero h1 {
 		font-size: 2rem;
 		font-weight: 800;
@@ -214,208 +384,184 @@ const privacyFAQs = [
 		line-height: 1.2;
 	}
 
-	.hero-subtitle {
-		font-size: 1rem;
+	.updated {
+		font-size: 0.875rem;
 		max-width: 700px;
 		margin: 0 auto;
-		opacity: 0.95;
-		line-height: 1.6;
+		opacity: 0.9;
+		font-style: italic;
 	}
 
-	.hero-links {
-		font-size: 1rem;
-		max-width: 700px;
-		margin: var(--intently-space-lg) auto 0;
-		opacity: 0.95;
-	}
-
-	.hero-links a {
-		color: white;
-		font-weight: 600;
-		text-decoration: none;
-		border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-		transition: var(--intently-transition-normal);
-	}
-
-	.hero-links a:hover {
-		border-bottom-color: white;
-	}
-
-	.commitments {
+	.privacy-content {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-primary);
 	}
 
-	.section-title {
-		font-size: 1.75rem;
-		font-weight: 700;
-		text-align: center;
-		margin: 0 0 var(--intently-space-2xl);
-		color: var(--intently-text-primary);
-	}
-
-	.commitments-grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: var(--intently-space-lg);
-	}
-
-	.commitment-icon {
-		font-size: 2rem;
-		margin-bottom: var(--intently-space-md);
-	}
-
-	.commitments-grid h3 {
-		font-size: 1.125rem;
-		font-weight: 700;
-		margin: 0 0 var(--intently-space-sm);
-		color: var(--intently-text-primary);
-	}
-
-	.commitments-grid p {
-		color: var(--intently-text-secondary);
-		line-height: 1.6;
-		margin: 0;
-	}
-
-	/* Data Flow */
-	.data-flow {
-		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
-	}
-
-	.flow-diagram {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: var(--intently-space-md);
-		margin: var(--intently-space-2xl) 0;
-		flex-wrap: wrap;
-	}
-
-	.flow-step {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: var(--intently-space-sm);
-	}
-
-	.flow-icon {
-		width: 64px;
-		height: 64px;
+	.content-wrapper {
+		max-width: 800px;
+		margin: 0 auto;
 		background: white;
+		padding: var(--intently-space-2xl);
 		border-radius: var(--intently-radius-lg);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 1.5rem;
 		box-shadow: var(--intently-shadow-md);
 	}
 
-	.flow-step.blocked .flow-icon {
-		background: var(--intently-gray-200);
-		opacity: 0.5;
-	}
-
-	.flow-label {
-		font-weight: 600;
-		font-size: 0.875rem;
-		color: var(--intently-text-primary);
-		text-align: center;
-	}
-
-	.flow-arrow {
+	.content-wrapper h2 {
 		font-size: 1.5rem;
-		color: var(--intently-green);
 		font-weight: 700;
-	}
-
-	.flow-arrow.blocked {
-		color: var(--intently-red);
-	}
-
-	.flow-explanation {
-		text-align: center;
-		color: var(--intently-text-secondary);
-		max-width: 600px;
-		margin: 0 auto;
-		font-size: 1rem;
-	}
-
-	/* FAQ */
-	.faq {
-		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-primary);
-	}
-
-	.faq-list {
-		max-width: 800px;
-		margin: 0 auto;
-	}
-
-	.faq-item {
-		padding: var(--intently-space-lg) 0;
-		border-bottom: 1px solid var(--intently-gray-200);
-	}
-
-	.faq-item:last-child {
-		border-bottom: none;
-	}
-
-	.faq-item h3 {
-		font-size: 1.125rem;
-		font-weight: 700;
-		margin: 0 0 var(--intently-space-sm);
 		color: var(--intently-text-primary);
+		margin: var(--intently-space-xl) 0 var(--intently-space-md);
+		border-bottom: 2px solid var(--intently-blue);
+		padding-bottom: var(--intently-space-sm);
 	}
 
-	.faq-item p {
+	.content-wrapper h2:first-of-type {
+		margin-top: 0;
+	}
+
+	.content-wrapper h3 {
+		font-size: 1.125rem;
+		font-weight: 600;
 		color: var(--intently-text-secondary);
+		margin: var(--intently-space-lg) 0 var(--intently-space-sm);
+	}
+
+	.content-wrapper h4 {
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+		margin: var(--intently-space-md) 0 var(--intently-space-sm);
+	}
+
+	.content-wrapper p {
 		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: var(--intently-space-md) 0;
+	}
+
+	.content-wrapper ul {
+		list-style-type: none;
+		padding-left: 0;
+		margin: var(--intently-space-md) 0;
+	}
+
+	.content-wrapper ul li {
+		position: relative;
+		padding-left: 1.5rem;
+		margin-bottom: var(--intently-space-sm);
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+	}
+
+	.content-wrapper ul li:before {
+		content: "•";
+		color: var(--intently-blue);
+		font-weight: bold;
+		position: absolute;
+		left: 0;
+	}
+
+	.content-wrapper ul.no-collect li {
+		color: #e74c3c;
+	}
+
+	.content-wrapper ul.no-collect li:before {
+		color: #e74c3c;
+	}
+
+	.content-wrapper ul.collect li {
+		color: #27ae60;
+	}
+
+	.content-wrapper ul.collect li:before {
+		color: #27ae60;
+	}
+
+	.content-wrapper a {
+		color: var(--intently-blue);
+		text-decoration: none;
+		transition: color var(--intently-transition-fast);
+	}
+
+	.content-wrapper a:hover {
+		color: var(--intently-blue-dark);
+		text-decoration: underline;
+	}
+
+	.highlight {
+		background-color: #e8f4f8;
+		padding: var(--intently-space-md);
+		border-left: 4px solid var(--intently-blue);
+		margin: var(--intently-space-lg) 0;
+		border-radius: var(--intently-radius-sm);
+	}
+
+	.highlight p {
 		margin: 0;
 	}
 
-	/* CTA */
-	.cta-section {
-		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
+	.warning {
+		background-color: #fff3cd;
+		padding: var(--intently-space-md);
+		border-left: 4px solid #ffc107;
+		margin: var(--intently-space-lg) 0;
+		border-radius: var(--intently-radius-sm);
+	}
+
+	.warning p {
+		margin: 0;
+	}
+
+	.success {
+		background-color: #d4edda;
+		padding: var(--intently-space-md);
+		border-left: 4px solid #28a745;
+		margin: var(--intently-space-lg) 0;
+		border-radius: var(--intently-radius-sm);
+	}
+
+	.success p {
+		margin: 0;
+	}
+
+	.toggle-info {
+		background-color: #f8f9fa;
+		padding: var(--intently-space-md);
+		border-radius: var(--intently-radius-sm);
+		margin: var(--intently-space-lg) 0;
+		border: 1px solid #dee2e6;
+	}
+
+	.toggle-info p {
+		margin: var(--intently-space-sm) 0;
+	}
+
+	.toggle-info p:first-child {
+		margin-top: 0;
+	}
+
+	.toggle-info p:last-child {
+		margin-bottom: 0;
+	}
+
+	.toggle-info h4 {
+		margin-top: 0;
+	}
+
+	.content-wrapper hr {
+		border: none;
+		border-top: 1px solid var(--intently-gray-200);
+		margin: var(--intently-space-xl) 0;
+	}
+
+	.back-links {
 		text-align: center;
+		margin-top: var(--intently-space-xl);
 	}
 
-	.cta-content h2 {
-		font-size: 1.75rem;
-		font-weight: 700;
-		margin: 0 0 var(--intently-space-md);
-		color: var(--intently-text-primary);
-	}
-
-	.cta-content p {
-		font-size: 1rem;
-		color: var(--intently-text-secondary);
-		max-width: 600px;
-		margin: 0 auto var(--intently-space-lg);
-	}
-
-	.cta-button {
-		display: inline-block;
-		padding: 0.875rem 1.75rem;
-		background: var(--intently-green);
-		color: white;
-		text-decoration: none;
-		font-weight: 700;
-		font-size: 1rem;
-		border-radius: var(--intently-radius-full);
-		transition: all var(--intently-transition-normal);
-	}
-
-	.cta-button:hover {
-		background: var(--intently-green-dark);
-		transform: translateY(-2px);
-		box-shadow: var(--intently-shadow-lg);
+	.back-links a {
+		margin: 0 var(--intently-space-sm);
 	}
 
 	.container {
@@ -425,13 +571,8 @@ const privacyFAQs = [
 	}
 
 	/* Responsive - Mobile First */
-	/* Tablet: more spacing and larger grids */
 	@media (min-width: 768px) {
-		.privacy-hero,
-		.commitments,
-		.data-flow,
-		.faq,
-		.cta-section {
+		.privacy-hero {
 			padding: var(--intently-space-3xl) 0;
 		}
 
@@ -439,35 +580,25 @@ const privacyFAQs = [
 			font-size: 2.5rem;
 		}
 
-		.section-title {
-			font-size: 2rem;
+		.privacy-content {
+			padding: var(--intently-space-3xl) 0;
 		}
 
-		.commitments-grid {
-			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-			gap: var(--intently-space-xl);
+		.content-wrapper {
+			padding: var(--intently-space-3xl);
 		}
 
-		.commitment-icon {
-			font-size: 2.5rem;
+		.content-wrapper h2 {
+			font-size: 1.75rem;
 		}
 
-		.commitments-grid h3 {
+		.content-wrapper h3 {
 			font-size: 1.25rem;
-		}
-
-		.cta-content h2 {
-			font-size: 2rem;
 		}
 	}
 
-	/* Desktop: even more spacing */
 	@media (min-width: 1024px) {
-		.privacy-hero,
-		.commitments,
-		.data-flow,
-		.faq,
-		.cta-section {
+		.privacy-hero {
 			padding: var(--intently-space-4xl) 0;
 		}
 
@@ -475,44 +606,18 @@ const privacyFAQs = [
 			font-size: 3rem;
 		}
 
-		.section-title {
-			font-size: 2.5rem;
-		}
-
-		.cta-content h2 {
-			font-size: 2.5rem;
+		.privacy-content {
+			padding: var(--intently-space-4xl) 0;
 		}
 	}
 
-	/* Mobile: optimize small screens */
 	@media (max-width: 767px) {
-		.flow-diagram {
-			flex-direction: column;
-		}
-
-		.flow-arrow {
-			transform: rotate(90deg);
-		}
-
 		.container {
 			padding: 0 var(--intently-space-md);
 		}
 
-		.cta-section {
-			padding-left: 0;
-			padding-right: 0;
-		}
-
-		.cta-content {
-			padding: 0 var(--intently-space-md);
-		}
-
-		.cta-button {
-			display: block;
-			width: 100%;
-			margin: 0 calc(-1 * var(--intently-space-md));
-			box-sizing: border-box;
-			min-width: 0;
+		.content-wrapper {
+			padding: var(--intently-space-lg);
 		}
 	}
 

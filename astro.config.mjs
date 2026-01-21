@@ -38,6 +38,7 @@ export default defineConfig({
 					item.changefreq = 'weekly';
 				} else if (
 					item.url.includes('/privacy') ||
+					item.url.includes('/terms') ||
 					item.url.includes('/about')
 				) {
 					item.priority = 0.7;

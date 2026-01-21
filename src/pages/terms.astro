@@ -1,0 +1,548 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Terms of Service - ${SITE_TITLE}`} description="Terms of Service for Intently - Digital wellbeing application to help you build mindful digital habits." />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Terms of Service", url: "https://liveintently.app/terms" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Terms Hero -->
+			<section class="terms-hero">
+				<div class="container">
+					<h1>Terms of Service</h1>
+					<p class="hero-subtitle">Please read these Terms of Service carefully before using the Intently mobile application.</p>
+					<p class="updated"><strong>Last Updated:</strong> January 21, 2026</p>
+				</div>
+			</section>
+
+			<!-- Terms Content -->
+			<section class="terms-content">
+				<div class="container">
+					<div class="content-wrapper">
+						<div class="highlight">
+							<p><strong>Please read these Terms of Service carefully before using the Intently mobile application.</strong></p>
+						</div>
+
+						<h2>1. Acceptance of Terms</h2>
+						<p>By downloading, installing, or using Intently (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+						<p>These Terms constitute a legally binding agreement between you ("User," "you," or "your") and MD Sadakat Hussain Fahad ("Developer," "we," "us," or "our").</p>
+
+						<h2>2. Description of Service</h2>
+						<p>Intently is a digital wellbeing application designed to help users:</p>
+						<ul>
+							<li>Monitor and track their social media and app usage</li>
+							<li>Receive mindful interventions when opening monitored apps</li>
+							<li>Set and track usage goals</li>
+							<li>View detailed usage statistics and analytics</li>
+							<li>Optionally sync data across devices via cloud storage</li>
+						</ul>
+
+						<div class="warning">
+							<p><strong>Important:</strong> Intently is a self-help tool designed to assist with mindful digital habits. It is not a substitute for professional mental health services or medical advice. If you need help with addiction, anxiety, depression, or other mental health concerns, please consult a qualified healthcare professional.</p>
+						</div>
+
+						<h2>3. Eligibility</h2>
+						<p>You must be at least 13 years old to use this App. By using the App, you represent and warrant that you:</p>
+						<ul>
+							<li>Are at least 13 years of age</li>
+							<li>Have the legal capacity to enter into these Terms</li>
+							<li>Will comply with these Terms and all applicable laws and regulations</li>
+						</ul>
+						<p>If you are under 18, you must have your parent or legal guardian's permission to use the App.</p>
+
+						<h2>4. License Grant</h2>
+						<h3>4.1 Limited License</h3>
+						<p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the App for your personal, non-commercial use on your Android device.</p>
+
+						<h3>4.2 Restrictions</h3>
+						<p>You agree NOT to:</p>
+						<ul>
+							<li>Copy, modify, or create derivative works of the App</li>
+							<li>Reverse engineer, decompile, or disassemble the App</li>
+							<li>Remove, alter, or obscure any proprietary notices on the App</li>
+							<li>Use the App for any commercial purpose or for the benefit of any third party</li>
+							<li>Use the App in any manner that could damage, disable, or impair the App</li>
+							<li>Use any robot, spider, or other automatic device to access the App</li>
+							<li>Circumvent or attempt to circumvent any security features of the App</li>
+							<li>Use the App to violate any applicable laws or regulations</li>
+						</ul>
+
+						<h2>5. User Accounts (Optional)</h2>
+						<h3>5.1 Account Creation</h3>
+						<p>The App works fully without an account. If you choose to create an account to enable cloud sync:</p>
+						<ul>
+							<li>You must use Google Sign-In or Facebook Login</li>
+							<li>You are responsible for maintaining the confidentiality of your account credentials</li>
+							<li>You are responsible for all activities that occur under your account</li>
+							<li>You must notify us immediately of any unauthorized use of your account</li>
+						</ul>
+
+						<h3>5.2 Account Termination</h3>
+						<p>You may delete your account at any time from within the App (Settings → Account & Sync). Upon deletion:</p>
+						<ul>
+							<li>All synced data will be permanently deleted from our servers</li>
+							<li>Local data on your device will remain until you uninstall the App</li>
+							<li>This action cannot be undone</li>
+						</ul>
+
+						<h2>6. User Conduct and Responsibilities</h2>
+						<p>You agree to:</p>
+						<ul>
+							<li>Use the App in accordance with these Terms and all applicable laws</li>
+							<li>Provide accurate information when creating an account (if applicable)</li>
+							<li>Maintain the security of your device and account</li>
+							<li>Not use the App to harm, threaten, or harass others</li>
+							<li>Not attempt to gain unauthorized access to the App or related systems</li>
+							<li>Not use the App to transmit any viruses, malware, or harmful code</li>
+						</ul>
+
+						<h2>7. Android Permissions</h2>
+						<p>The App requires certain Android permissions to function properly. By using the App, you acknowledge and consent to the following permissions:</p>
+						<ul>
+							<li><strong>Usage Access:</strong> To detect when you open monitored apps</li>
+							<li><strong>Display Over Other Apps:</strong> To show mindfulness interventions</li>
+							<li><strong>Foreground Service:</strong> To run continuous monitoring</li>
+							<li><strong>Notifications:</strong> To display alerts and reminders</li>
+							<li><strong>Internet Access:</strong> For optional cloud sync and analytics</li>
+							<li><strong>Query All Packages:</strong> To display installed apps for selection</li>
+						</ul>
+						<p>For a complete list and detailed explanation of permissions, please see our <a href="/privacy">Privacy Policy</a>.</p>
+
+						<h2>8. Privacy and Data Protection</h2>
+						<p>Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our <a href="/privacy">Privacy Policy</a>, which is incorporated into these Terms by reference.</p>
+
+						<p>Key privacy highlights:</p>
+						<ul>
+							<li>All usage data is stored locally on your device by default</li>
+							<li>Cloud sync is optional and requires explicit sign-in</li>
+							<li>Analytics are aggregated and can be toggled off</li>
+							<li>We do not sell your data to third parties</li>
+							<li>You can delete all your data at any time</li>
+						</ul>
+
+						<h2>9. Intellectual Property Rights</h2>
+						<h3>9.1 Ownership</h3>
+						<p>The App and all its content, features, and functionality (including but not limited to all software, code, text, graphics, logos, and designs) are owned by MD Sadakat Hussain Fahad and are protected by international copyright, trademark, and other intellectual property laws.</p>
+
+						<h3>9.2 Third-Party Software</h3>
+						<p>The App uses third-party open-source libraries and SDKs, which are licensed under their respective licenses (primarily Apache 2.0). These licenses are listed in the App's "About" section.</p>
+
+						<h3>9.3 Your Data</h3>
+						<p>You retain all rights to your usage data collected by the App. We do not claim ownership of your personal data.</p>
+
+						<h2>10. Third-Party Services</h2>
+						<p>The App integrates with third-party services including:</p>
+						<ul>
+							<li>Google Firebase (Analytics, Crashlytics, Remote Config)</li>
+							<li>Google Sign-In</li>
+							<li>Facebook Login</li>
+							<li>Supabase (cloud storage)</li>
+						</ul>
+						<p>Your use of these third-party services is subject to their respective terms of service and privacy policies. We are not responsible for the practices of these third parties.</p>
+
+						<h2>11. Updates and Modifications</h2>
+						<p>We may update the App from time to time to:</p>
+						<ul>
+							<li>Add new features or improve existing ones</li>
+							<li>Fix bugs and improve performance</li>
+							<li>Ensure compatibility with new Android versions</li>
+							<li>Comply with legal requirements</li>
+						</ul>
+						<p>Updates may be automatic or require your manual action. We recommend keeping the App updated to the latest version for the best experience and security.</p>
+
+						<h2>12. Disclaimers and Warranties</h2>
+
+						<div class="warning">
+							<h3>12.1 "As Is" and "As Available" Basis</h3>
+							<p><strong>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</strong></p>
+						</div>
+
+						<p>To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to:</p>
+						<ul>
+							<li>Warranties of merchantability</li>
+							<li>Fitness for a particular purpose</li>
+							<li>Non-infringement</li>
+							<li>Accuracy, reliability, or completeness of content</li>
+							<li>That the App will be uninterrupted, secure, or error-free</li>
+							<li>That defects will be corrected</li>
+						</ul>
+
+						<h3>12.2 No Medical Advice</h3>
+						<p>Intently is not a medical device and does not provide medical advice. The App:</p>
+						<ul>
+							<li>Is not intended to diagnose, treat, cure, or prevent any disease or condition</li>
+							<li>Is not a substitute for professional medical advice, diagnosis, or treatment</li>
+							<li>Should not be relied upon for health-related decisions</li>
+						</ul>
+						<p>Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition or mental health concern.</p>
+
+						<h3>12.3 No Guarantee of Results</h3>
+						<p>While Intently is designed to help you build mindful digital habits, we do not guarantee:</p>
+						<ul>
+							<li>That you will achieve your usage goals</li>
+							<li>That the App will prevent compulsive app usage</li>
+							<li>Any specific results or outcomes</li>
+						</ul>
+						<p>Individual results may vary based on personal commitment and circumstances.</p>
+
+						<h2>13. Limitation of Liability</h2>
+
+						<div class="warning">
+							<p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL MD SADAKAT HUSSAIN FAHAD BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE APP.</strong></p>
+						</div>
+
+						<p>This includes liability for:</p>
+						<ul>
+							<li>Any errors or omissions in the App</li>
+							<li>Any interruption or cessation of the App</li>
+							<li>Any viruses or malicious code transmitted through the App</li>
+							<li>Any loss or damage to your data</li>
+							<li>Any bugs, errors, or defects in the App</li>
+							<li>Any unauthorized access to your account or data</li>
+						</ul>
+
+						<p>In jurisdictions that do not allow the exclusion or limitation of liability, our liability shall be limited to the maximum extent permitted by law.</p>
+
+						<p><strong>Maximum Liability:</strong> In no event shall our total liability to you for all damages, losses, and causes of action exceed the amount you paid for the App (which is zero for a free app).</p>
+
+						<h2>14. Indemnification</h2>
+						<p>You agree to indemnify, defend, and hold harmless Intently Team and our affiliates, officers, employees, and agents from and against any and all claims, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising from:</p>
+						<ul>
+							<li>Your use or misuse of the App</li>
+							<li>Your violation of these Terms</li>
+							<li>Your violation of any rights of another party</li>
+							<li>Your violation of any applicable laws or regulations</li>
+						</ul>
+
+						<h2>15. Termination</h2>
+						<h3>15.1 By You</h3>
+						<p>You may terminate your use of the App at any time by:</p>
+						<ul>
+							<li>Deleting your account (if you have one) from Settings → Account & Sync</li>
+							<li>Uninstalling the App from your device</li>
+						</ul>
+
+						<h3>15.2 By Us</h3>
+						<p>We reserve the right to suspend or terminate your access to the App at any time, with or without notice, if:</p>
+						<ul>
+							<li>You violate these Terms</li>
+							<li>You engage in fraudulent or illegal activities</li>
+							<li>We need to comply with legal requirements</li>
+							<li>We discontinue the App</li>
+						</ul>
+
+						<h3>15.3 Effect of Termination</h3>
+						<p>Upon termination:</p>
+						<ul>
+							<li>Your license to use the App will immediately cease</li>
+							<li>You must delete the App from all your devices</li>
+							<li>Sections that by their nature should survive termination will remain in effect (including intellectual property rights, disclaimers, limitations of liability, and dispute resolution)</li>
+						</ul>
+
+						<h2>16. Governing Law and Jurisdiction</h2>
+						<p>These Terms shall be governed by and construed in accordance with the laws of Bangladesh, without regard to its conflict of law provisions.</p>
+
+						<p>Any disputes arising from these Terms or your use of the App shall be subject to the exclusive jurisdiction of the courts located in Bangladesh.</p>
+
+						<h2>17. Dispute Resolution</h2>
+						<h3>17.1 Informal Resolution</h3>
+						<p>Before filing any formal claim, you agree to first contact us at <strong>support@liveintently.app</strong> to attempt to resolve the dispute informally. We will make a good faith effort to resolve the dispute within 30 days.</p>
+
+						<h3>17.2 Binding Arbitration</h3>
+						<p>If we cannot resolve the dispute informally, any claim or dispute shall be resolved by binding arbitration in accordance with the rules of the Bangladesh Arbitration Association, rather than in court.</p>
+
+						<h3>17.3 Class Action Waiver</h3>
+						<p>You agree that any arbitration or proceeding shall be limited to the dispute between you and us individually. You waive any right to participate in a class action lawsuit or class-wide arbitration.</p>
+
+						<h2>18. Severability</h2>
+						<p>If any provision of these Terms is found to be unenforceable or invalid by a court of competent jurisdiction, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect.</p>
+
+						<h2>19. Waiver</h2>
+						<p>Our failure to enforce any right or provision of these Terms will not be deemed a waiver of such right or provision. Any waiver of any provision of these Terms will be effective only if in writing and signed by us.</p>
+
+						<h2>20. Entire Agreement</h2>
+						<p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and us regarding the use of the App and supersede all prior and contemporaneous agreements, proposals, or representations, written or oral, concerning its subject matter.</p>
+
+						<h2>21. Changes to Terms</h2>
+						<p>We reserve the right to modify these Terms at any time. We will notify you of any changes by:</p>
+						<ul>
+							<li>Updating the "Last Updated" date at the top of this page</li>
+							<li>Posting a notice in the App</li>
+							<li>Sending you an email notification (if you have an account)</li>
+						</ul>
+
+						<p>Your continued use of the App after any such changes constitutes your acceptance of the new Terms. If you do not agree to the modified Terms, you must stop using the App.</p>
+
+						<h2>22. Contact Information</h2>
+						<p>If you have any questions about these Terms, please contact us:</p>
+						<p>
+							<strong>Developer:</strong> Intently Team<br>
+							<strong>Email:</strong> support@liveintently.app<br>
+							<strong>Response Time:</strong> Within 48 hours
+						</p>
+
+						<h2>23. App Store Terms</h2>
+						<p>If you downloaded the App from the Google Play Store, you acknowledge that:</p>
+						<ul>
+							<li>These Terms are between you and us, not with Google</li>
+							<li>Google has no obligation to furnish maintenance and support services</li>
+							<li>Google is not responsible for addressing any claims relating to the App</li>
+							<li>In the event of any failure of the App to conform to any warranty, you may notify Google, and Google will refund the purchase price (if any) to you</li>
+							<li>Google and its subsidiaries are third-party beneficiaries of these Terms, and upon your acceptance of these Terms, Google will have the right to enforce these Terms against you</li>
+						</ul>
+
+						<hr>
+
+						<div class="highlight">
+							<p><strong>Acknowledgment:</strong> By using Intently, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy.</p>
+						</div>
+
+						<p class="back-links">
+							<a href="/privacy">Privacy Policy</a> |
+							<a href="/">Back to Home</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+	}
+
+	.terms-hero {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.terms-hero h1 {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		color: white;
+		line-height: 1.2;
+	}
+
+	.hero-subtitle {
+		font-size: 1rem;
+		max-width: 700px;
+		margin: 0 auto var(--intently-space-sm);
+		opacity: 0.95;
+		line-height: 1.6;
+	}
+
+	.updated {
+		font-size: 0.875rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.9;
+		font-style: italic;
+	}
+
+	.terms-content {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-primary);
+	}
+
+	.content-wrapper {
+		max-width: 800px;
+		margin: 0 auto;
+		background: white;
+		padding: var(--intently-space-2xl);
+		border-radius: var(--intently-radius-lg);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.content-wrapper h2 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+		margin: var(--intently-space-xl) 0 var(--intently-space-md);
+		border-bottom: 2px solid var(--intently-blue);
+		padding-bottom: var(--intently-space-sm);
+	}
+
+	.content-wrapper h2:first-of-type {
+		margin-top: 0;
+	}
+
+	.content-wrapper h3 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+		margin: var(--intently-space-lg) 0 var(--intently-space-sm);
+	}
+
+	.content-wrapper p {
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: var(--intently-space-md) 0;
+	}
+
+	.content-wrapper ul {
+		list-style-type: none;
+		padding-left: 0;
+		margin: var(--intently-space-md) 0;
+	}
+
+	.content-wrapper ul li {
+		position: relative;
+		padding-left: 1.5rem;
+		margin-bottom: var(--intently-space-sm);
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+	}
+
+	.content-wrapper ul li:before {
+		content: "•";
+		color: var(--intently-blue);
+		font-weight: bold;
+		position: absolute;
+		left: 0;
+	}
+
+	.content-wrapper a {
+		color: var(--intently-blue);
+		text-decoration: none;
+		transition: color var(--intently-transition-fast);
+	}
+
+	.content-wrapper a:hover {
+		color: var(--intently-blue-dark);
+		text-decoration: underline;
+	}
+
+	.highlight {
+		background-color: #e8f4f8;
+		padding: var(--intently-space-md);
+		border-left: 4px solid var(--intently-blue);
+		margin: var(--intently-space-lg) 0;
+		border-radius: var(--intently-radius-sm);
+	}
+
+	.highlight p {
+		margin: 0;
+	}
+
+	.warning {
+		background-color: #fff3cd;
+		padding: var(--intently-space-md);
+		border-left: 4px solid #ffc107;
+		margin: var(--intently-space-lg) 0;
+		border-radius: var(--intently-radius-sm);
+	}
+
+	.warning p {
+		margin: 0;
+	}
+
+	.warning h3 {
+		margin-top: 0;
+	}
+
+	.content-wrapper hr {
+		border: none;
+		border-top: 1px solid var(--intently-gray-200);
+		margin: var(--intently-space-xl) 0;
+	}
+
+	.back-links {
+		text-align: center;
+		margin-top: var(--intently-space-xl);
+	}
+
+	.back-links a {
+		margin: 0 var(--intently-space-sm);
+	}
+
+	.container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* Responsive - Mobile First */
+	@media (min-width: 768px) {
+		.terms-hero {
+			padding: var(--intently-space-3xl) 0;
+		}
+
+		.terms-hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.terms-content {
+			padding: var(--intently-space-3xl) 0;
+		}
+
+		.content-wrapper {
+			padding: var(--intently-space-3xl);
+		}
+
+		.content-wrapper h2 {
+			font-size: 1.75rem;
+		}
+
+		.content-wrapper h3 {
+			font-size: 1.25rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.terms-hero {
+			padding: var(--intently-space-4xl) 0;
+		}
+
+		.terms-hero h1 {
+			font-size: 3rem;
+		}
+
+		.terms-content {
+			padding: var(--intently-space-4xl) 0;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.container {
+			padding: 0 var(--intently-space-md);
+		}
+
+		.content-wrapper {
+			padding: var(--intently-space-lg);
+		}
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
+	}
+</style>
