@@ -5,7 +5,9 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<a href="/" class="logo-link">
+			<img src="/logo.svg" alt="Intently" class="logo" />
+		</a>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/features">Features</HeaderLink>
@@ -91,16 +93,16 @@ import { SITE_TITLE } from '../consts';
 		z-index: 100;
 	}
 
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		font-weight: 700;
+	.logo-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
 	}
 
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-		color: var(--intently-blue);
+	.logo {
+		height: 40px;
+		width: auto;
+		display: block;
 	}
 
 	nav {
@@ -267,6 +269,10 @@ import { SITE_TITLE } from '../consts';
 
 	/* Mobile: hide desktop nav, show hamburger */
 	@media (max-width: 767px) {
+		.logo {
+			height: 32px;
+		}
+
 		.internal-links {
 			display: none;
 		}
