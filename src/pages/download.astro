@@ -11,7 +11,7 @@ import { SITE_TITLE } from '../consts';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Download - Intently | Free Screen Time Tracker" description="Get Intently free on Android, iOS & Chrome. Break phone addiction with privacy-first screen time tracking and mindful interventions. No account required, 100% offline." />
+		<BaseHead title="Download Intently Free | Your Next Hour Starts Now" description="Download in 30 seconds. No account, no credit card, no data shared. Intently gives you back the hours you've been losing to mindless scrolling. Free on Android and Chrome." />
 		<ProductSchema
 			name="Intently Android"
 			description="Full-featured digital wellbeing app with usage tracking, interventions, and analytics"
@@ -32,8 +32,8 @@ import { SITE_TITLE } from '../consts';
 			<!-- Hero Section -->
 			<section class="hero">
 				<div class="container">
-					<h1>Get Intently</h1>
-					<p class="subtitle">Build healthier digital habits across all your devices</p>
+					<h1>Your Next Hour Starts Now</h1>
+					<p class="subtitle">In 30 seconds, you'll have a tool that gives you back the time you've been losing. No sign-up. No credit card. No data shared. Just freedom.</p>
 					<p class="hero-links">
 						See all <a href="/features">features</a> or learn about our <a href="/privacy">privacy commitment</a>.
 					</p>
@@ -52,7 +52,7 @@ import { SITE_TITLE } from '../consts';
 								</svg>
 							</div>
 							<h3>Android</h3>
-							<p>Full-featured app with usage tracking, interventions, and analytics</p>
+							<p>The full Intently experience. Within 24 hours, you'll know exactly where your time goes—and have the power to change it.</p>
 							<StoreButton store="playstore" href="https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster" />
 							<ul class="feature-list">
 								<li>Complete app usage tracking</li>
@@ -71,7 +71,7 @@ import { SITE_TITLE } from '../consts';
 								</svg>
 							</div>
 							<h3>iOS</h3>
-							<p>Native iOS experience with Screen Time integration (Coming Soon)</p>
+							<p>iPhone users, your moment is coming. A beautiful, native experience built to respect your attention and your privacy.</p>
 							<button class="store-button-disabled" disabled>
 	<span class="button-text">Coming Soon</span>
 </button>
@@ -91,7 +91,7 @@ import { SITE_TITLE } from '../consts';
 								</svg>
 							</div>
 							<h3>Chrome Extension</h3>
-							<p>Stay mindful while browsing with web-based interventions</p>
+							<p>That browser tab you opened 'for just a second' 40 minutes ago? Intently catches you before the rabbit hole swallows you whole.</p>
 							<StoreButton store="chromestore" href="https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop" />
 							<ul class="feature-list">
 								<li>Website time tracking</li>
@@ -99,6 +99,7 @@ import { SITE_TITLE } from '../consts';
 								<li>Usage insights and reports</li>
 								<li>Quick settings access</li>
 							</ul>
+							<p class="privacy-link"><a href="/privacy-chrome">Chrome Extension Privacy Policy</a></p>
 						</div>
 					</div>
 				</div>
@@ -112,7 +113,7 @@ import { SITE_TITLE } from '../consts';
 							<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
 						</svg>
 						<div class="privacy-text">
-							<strong>100% Private</strong> — Your data never leaves your device. No account required.
+							<strong>We can't see your data. We don't want to.</strong> — Your screen time is your business—we just help you make it intentional.
 						</div>
 					</div>
 				</div>
@@ -325,6 +326,23 @@ import { SITE_TITLE } from '../consts';
 		height: 6px;
 		background: var(--intently-blue);
 		border-radius: 50%;
+	}
+
+	.privacy-link {
+		font-size: 0.8125rem;
+		color: var(--intently-text-hint);
+		margin: var(--intently-space-sm) 0 0;
+		text-align: center;
+	}
+
+	.privacy-link a {
+		color: var(--intently-blue);
+		text-decoration: none;
+		transition: var(--intently-transition-fast);
+	}
+
+	.privacy-link a:hover {
+		text-decoration: underline;
 	}
 
 	/* Privacy Section */

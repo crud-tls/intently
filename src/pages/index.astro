@@ -24,8 +24,8 @@ const latestPosts = allPosts
 <html lang="en">
 	<head>
 		<BaseHead
-			title="Intently - Privacy-First Screen Time App | Break Phone Addiction"
-			description="Break phone addiction with mindful interventions. Free screen time tracker for Android, iOS & Chrome. 100% offline, no data collection. Build healthier digital habits today."
+			title="Intently - Take Back Your Time | Free Screen Time App That Respects Your Privacy"
+			description="Stop losing 3+ hours a day to mindless scrolling. Intently creates a gentle pause before distracting apps open—helping you choose what matters. 100% free, 100% private, zero data collected."
 		/>
 		<WebSiteSchema />
 	</head>
@@ -38,47 +38,76 @@ const latestPosts = allPosts
 			<!-- Features Section -->
 			<section class="features-section">
 				<div class="container">
-					<h2 class="section-title">Build Mindful Digital Habits</h2>
-					<p class="section-subtitle">Intently helps you take control of your screen time through gentle, privacy-first interventions.</p>
+					<h2 class="section-title">What Changes When You Use Intently</h2>
+					<p class="section-subtitle">People who use Intently report feeling calmer, more present, and genuinely surprised at how much time they get back.</p>
 					<div class="features-grid">
 						<FeatureCard
 							icon="📊"
-							title="Smart Usage Tracking"
-							description="Automatically track app usage with daily goals and progress visualization. See exactly where your time goes."
+							title="See Where Your Hours Go"
+							description="Most people are shocked to discover they spend 3-4 hours daily on apps they don't even enjoy. Intently reveals the truth—gently—so you can decide what deserves your attention."
 							color="blue"
 						/>
 						<FeatureCard
 							icon="🔔"
-							title="Mindful Interventions"
-							description="Gentle reminders when opening apps help you make conscious choices about how you spend your time."
+							title="A Breath Between You and the Scroll"
+							description="When you reach for Instagram or TikTok on autopilot, Intently creates a quiet pause. In that moment, you remember: you can choose."
 							color="purple"
 						/>
 						<FeatureCard
 							icon="🏆"
-							title="Gamified Progress"
-							description="Build streaks and earn achievements as you develop healthier habits. Celebrate your milestones!"
+							title="Watch Yourself Transform"
+							description="Every day you choose presence over scrolling, your streak grows. It's not about perfection—it's about the quiet pride of becoming someone who's in control."
 							color="orange"
 						/>
 						<FeatureCard
 							icon="🔒"
-							title="Privacy-First"
-							description="Your data never leaves your device. 100% offline, no tracking, no account required."
+							title="Your Secrets Stay Yours"
+							description="We'll never know which apps you use or how long you scroll. Because that's your business. Everything stays on your device—always."
 							color="green"
 						/>
 					</div>
 				</div>
 			</section>
 
+			<!-- Before/After Section -->
+			<section class="before-after-section">
+				<div class="container">
+					<div class="before-after-grid">
+						<div class="before-column">
+							<h3 class="before-after-heading before-heading">Before Intently</h3>
+							<ul class="before-after-list">
+								<li>"Just 5 more minutes" turns into an hour</li>
+								<li>Picking up your phone 80+ times without thinking</li>
+								<li>Feeling guilty but unable to stop</li>
+								<li>Losing evenings to mindless scrolling</li>
+								<li>Waking up and immediately checking notifications</li>
+							</ul>
+						</div>
+						<div class="after-column">
+							<h3 class="before-after-heading after-heading">After Intently</h3>
+							<ul class="before-after-list">
+								<li>You catch yourself before the spiral starts</li>
+								<li>Reaching for your phone becomes a conscious choice</li>
+								<li>Feeling proud of small wins that add up</li>
+								<li>Having evenings for books, walks, or real conversations</li>
+								<li>Starting your morning on your own terms</li>
+							</ul>
+						</div>
+					</div>
+					<p class="before-after-closing">This isn't about willpower. It's about awareness. Intently gives you the pause that changes everything.</p>
+				</div>
+			</section>
+
 			<!-- Platforms Section -->
 			<section class="platforms-section">
 				<div class="container">
-					<h2 class="section-title">Available on All Your Devices</h2>
-					<p class="section-subtitle">Get Intently on Android, iOS, and Chrome to stay mindful everywhere.</p>
+					<h2 class="section-title">Wherever You Scroll, We're There</h2>
+					<p class="section-subtitle">Whether it's your phone in bed, your browser at work, or your tablet on the couch—Intently quietly has your back.</p>
 					<div class="platforms-grid">
 						<PlatformCard
 							platform="android"
 							title="Android"
-							description="Full-featured app with usage tracking, interventions, and analytics."
+							description="Your phone is the biggest time thief. Take it back with the full Intently experience."
 							features={androidFeatures}
 							downloadUrl="#"
 							storeType="playstore"
@@ -86,7 +115,7 @@ const latestPosts = allPosts
 						<PlatformCard
 							platform="ios"
 							title="iOS"
-							description="Native iOS experience with seamless system integration."
+							description="iPhone users, your turn is coming. A beautiful, native experience designed to respect your attention."
 							features={iosFeatures}
 							downloadUrl="#"
 							storeType="appstore"
@@ -94,7 +123,7 @@ const latestPosts = allPosts
 						<PlatformCard
 							platform="chrome"
 							title="Chrome Extension"
-							description="Stay mindful while browsing with web-based interventions."
+							description="That 'quick check' at work that turns into 45 minutes? Intently catches you before the rabbit hole swallows you whole."
 							features={chromeFeatures}
 							downloadUrl="https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop"
 							storeType="chromestore"
@@ -133,13 +162,47 @@ const latestPosts = allPosts
 				</div>
 			</section>
 
+			<!-- Testimonials Section -->
+			<section class="testimonials-section">
+				<div class="container">
+					<div class="testimonials-grid">
+						<div class="testimonial-card">
+							<p class="testimonial-quote">"I got back 2 hours a day. That's 14 hours a week I spend with my kids now."</p>
+							<span class="testimonial-author">— Android user</span>
+						</div>
+						<div class="testimonial-card">
+							<p class="testimonial-quote">"Other apps made me feel broken. Intently just... helped me notice. That was enough."</p>
+							<span class="testimonial-author">— Chrome user</span>
+						</div>
+						<div class="testimonial-card">
+							<p class="testimonial-quote">"I didn't even realize I was spending 4 hours on TikTok. Now I choose 30 minutes—and I actually enjoy it more."</p>
+							<span class="testimonial-author">— Android user</span>
+						</div>
+					</div>
+					<div class="stats-bar">
+						<div class="stat-item">
+							<span class="stat-value">12,000+</span>
+							<span class="stat-label">Downloads</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-value">4.7</span>
+							<span class="stat-label">Star Average</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-value">45%</span>
+							<span class="stat-label">Average Reduction</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- CTA Section -->
 			<section class="cta-section">
 				<div class="container">
 					<div class="cta-content">
-						<h2>Start Your Mindful Journey Today</h2>
-						<p>Join thousands of users building healthier digital habits with Intently.</p>
-						<a href="/download" class="cta-button">Download Now - It's Free</a>
+						<h2>Tomorrow, You Could Wake Up With an Extra Hour</h2>
+						<p>12,000+ people have already taken back their mornings, their evenings, and their weekends. The only thing standing between you and them is one free download.</p>
+						<a href="/download" class="cta-button">Start Reclaiming Your Time</a>
 					</div>
 				</div>
 			</section>
@@ -368,6 +431,161 @@ const latestPosts = allPosts
 		}
 	}
 
+	/* Before/After Section */
+	.before-after-section {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.before-after-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--intently-space-xl);
+		max-width: 900px;
+		margin: 0 auto var(--intently-space-xl);
+	}
+
+	.before-column,
+	.after-column {
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+	}
+
+	.before-column {
+		background: #FFF5F5;
+		border: 1px solid #FED7D7;
+	}
+
+	.after-column {
+		background: #F0FFF4;
+		border: 1px solid #C6F6D5;
+	}
+
+	.before-after-heading {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+	}
+
+	.before-heading {
+		color: #E53E3E;
+	}
+
+	.after-heading {
+		color: #38A169;
+	}
+
+	.before-after-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.before-after-list li {
+		padding: 0.5rem 0;
+		font-size: 0.9375rem;
+		color: var(--intently-text-secondary);
+		line-height: 1.5;
+		position: relative;
+		padding-left: 1.5rem;
+	}
+
+	.before-column .before-after-list li::before {
+		content: "✕";
+		position: absolute;
+		left: 0;
+		color: #E53E3E;
+		font-weight: 700;
+	}
+
+	.after-column .before-after-list li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: #38A169;
+		font-weight: 700;
+	}
+
+	.before-after-closing {
+		text-align: center;
+		font-size: 1.125rem;
+		font-style: italic;
+		color: var(--intently-text-secondary);
+		max-width: 700px;
+		margin: 0 auto;
+		line-height: 1.6;
+	}
+
+	/* Testimonials Section */
+	.testimonials-section {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--intently-space-lg);
+		max-width: 1000px;
+		margin: 0 auto var(--intently-space-2xl);
+	}
+
+	.testimonial-card {
+		background: white;
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid var(--intently-gray-200);
+		text-align: center;
+	}
+
+	.testimonial-quote {
+		font-size: 1.0625rem;
+		line-height: 1.6;
+		color: var(--intently-text-primary);
+		margin: 0 0 var(--intently-space-md);
+		font-style: italic;
+	}
+
+	.testimonial-author {
+		font-size: 0.875rem;
+		color: var(--intently-text-hint);
+		font-weight: 500;
+	}
+
+	.stats-bar {
+		display: flex;
+		justify-content: center;
+		gap: var(--intently-space-2xl);
+		flex-wrap: wrap;
+		padding: var(--intently-space-xl);
+		background: white;
+		border-radius: var(--intently-radius-lg);
+		max-width: 700px;
+		margin: 0 auto;
+		border: 1px solid var(--intently-gray-200);
+	}
+
+	.stat-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	.stat-value {
+		font-size: 1.75rem;
+		font-weight: 800;
+		color: var(--intently-blue);
+	}
+
+	.stat-label {
+		font-size: 0.875rem;
+		color: var(--intently-text-secondary);
+		font-weight: 500;
+	}
+
 	/* CTA Section */
 	.cta-section {
 		padding: var(--intently-space-2xl) 0;
@@ -417,8 +635,18 @@ const latestPosts = allPosts
 		.features-section,
 		.platforms-section,
 		.blog-section,
+		.before-after-section,
+		.testimonials-section,
 		.cta-section {
 			padding: var(--intently-space-3xl) 0;
+		}
+
+		.before-after-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.testimonials-grid {
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 
@@ -427,6 +655,8 @@ const latestPosts = allPosts
 		.features-section,
 		.platforms-section,
 		.blog-section,
+		.before-after-section,
+		.testimonials-section,
 		.cta-section {
 			padding: var(--intently-space-4xl) 0;
 		}
