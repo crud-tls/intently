@@ -1,0 +1,310 @@
+---
+import Icon from '../ui/Icon.astro';
+---
+
+<button
+	class="sidebar-toggle"
+	id="blog-sidebar-toggle"
+	aria-label="Toggle blog navigation menu"
+	aria-expanded="false"
+	aria-controls="blog-sidebar">
+	<span></span>
+	<span></span>
+	<span></span>
+</button>
+
+<aside class="blog-sidebar" id="blog-sidebar" aria-label="Blog categories" aria-hidden="false">
+	<!-- Category Navigation -->
+	<nav class="sidebar-nav">
+		<h3 class="nav-heading">Categories</h3>
+		<a href="#all" class="sidebar-link active" data-category="all">All Posts</a>
+		<a href="#getting-started" class="sidebar-link" data-category="getting-started">Getting Started</a>
+		<a href="#app-guides" class="sidebar-link" data-category="app-guides">App Guides</a>
+		<a href="#time-solutions" class="sidebar-link" data-category="time-solutions">Morning & Evening</a>
+		<a href="#recovery" class="sidebar-link" data-category="recovery">Recovery</a>
+		<a href="#comparisons" class="sidebar-link" data-category="comparisons">Comparisons</a>
+		<a href="#privacy" class="sidebar-link" data-category="privacy">Privacy</a>
+	</nav>
+
+	<!-- Featured CTAs -->
+	<div class="featured-ctas">
+		<div class="quiz-card">
+			<h3>
+				<Icon name="Smartphone" size={24} color="white" />
+				Phone Addiction Quiz
+			</h3>
+			<a href="/quiz" class="quiz-button">Take the Free Quiz</a>
+		</div>
+
+		<div class="download-card">
+			<h3>Download Intently</h3>
+			<a href="/download" class="download-button">Download Free</a>
+		</div>
+	</div>
+</aside>
+
+<style>
+	/* Sidebar toggle button - only visible on mobile */
+	.sidebar-toggle {
+		display: none;
+		position: fixed;
+		bottom: 1.5rem;
+		right: 1.5rem;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 56px;
+		min-height: 56px;
+		padding: 1rem;
+		background: var(--intently-blue);
+		border: none;
+		border-radius: var(--intently-radius-full);
+		cursor: pointer;
+		z-index: 101;
+		box-shadow: var(--intently-shadow-lg);
+		transition: all var(--intently-transition-fast);
+	}
+
+	.sidebar-toggle span {
+		width: 24px;
+		height: 2px;
+		background: white;
+		border-radius: 2px;
+		transition: all 0.3s ease;
+		transform-origin: center;
+	}
+
+	.sidebar-toggle:hover {
+		transform: scale(1.05);
+		background: var(--intently-blue-dark);
+	}
+
+	.sidebar-toggle:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
+	}
+
+	/* Hamburger animation when open */
+	.sidebar-toggle[aria-expanded="true"] span:nth-child(1) {
+		transform: translateY(7px) rotate(45deg);
+	}
+
+	.sidebar-toggle[aria-expanded="true"] span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.sidebar-toggle[aria-expanded="true"] span:nth-child(3) {
+		transform: translateY(-7px) rotate(-45deg);
+	}
+
+	/* Sidebar - desktop sticky, mobile drawer */
+	.blog-sidebar {
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-md);
+		box-shadow: var(--intently-shadow-sm);
+		display: flex;
+		flex-direction: column;
+		gap: var(--intently-space-lg);
+	}
+
+	/* Featured CTAs */
+	.featured-ctas {
+		display: flex;
+		flex-direction: column;
+		gap: var(--intently-space-md);
+		padding: var(--intently-space-lg);
+	}
+
+	.quiz-card {
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		color: white;
+		text-align: center;
+		padding: var(--intently-space-lg);
+		border-radius: var(--intently-radius-md);
+	}
+
+	.quiz-card h3 {
+		color: white;
+		font-size: 1rem;
+		font-weight: 600;
+		margin-bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--intently-space-xs);
+	}
+
+	.quiz-card p {
+		color: rgba(255, 255, 255, 0.95);
+		line-height: 1.5;
+		font-size: 0.875rem;
+		margin: 0;
+	}
+
+	.quiz-button {
+		display: inline-block;
+		background: white;
+		color: var(--intently-blue);
+		padding: 0.625rem 1.25rem;
+		border-radius: var(--intently-radius-sm);
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.875rem;
+		margin-top: var(--intently-space-md);
+		transition: transform var(--intently-transition-fast), box-shadow var(--intently-transition-fast);
+	}
+
+	.quiz-button:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.quiz-button:focus-visible {
+		outline: 2px solid white;
+		outline-offset: 2px;
+	}
+
+	.download-card {
+		background: var(--intently-green);
+		color: white;
+		text-align: center;
+		padding: var(--intently-space-lg);
+		border-radius: var(--intently-radius-md);
+	}
+
+	.download-card h3 {
+		color: white;
+		font-size: 1rem;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+
+	.download-card p {
+		color: rgba(255, 255, 255, 0.95);
+		line-height: 1.5;
+		font-size: 0.875rem;
+		margin: 0;
+	}
+
+	.download-button {
+		display: inline-block;
+		background: white;
+		color: var(--intently-green);
+		padding: 0.625rem 1.25rem;
+		border-radius: var(--intently-radius-sm);
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.875rem;
+		margin-top: var(--intently-space-md);
+		transition: transform var(--intently-transition-fast), box-shadow var(--intently-transition-fast);
+	}
+
+	.download-button:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.download-button:focus-visible {
+		outline: 2px solid white;
+		outline-offset: 2px;
+	}
+
+	/* Sidebar Navigation */
+	.sidebar-nav {
+		display: flex;
+		flex-direction: column;
+		gap: var(--intently-space-xs);
+		padding: var(--intently-space-lg) var(--intently-space-lg) 0;
+	}
+
+	.nav-heading {
+		font-size: 0.875rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--intently-text-primary);
+		margin: 0 0 var(--intently-space-sm) 0;
+	}
+
+	.sidebar-link {
+		padding: var(--intently-space-md);
+		color: var(--intently-text-secondary);
+		text-decoration: none;
+		border-radius: var(--intently-radius-sm);
+		border-left: 4px solid transparent;
+		transition: all var(--intently-transition-fast);
+		font-weight: 500;
+		font-size: 0.9375rem;
+	}
+
+	.sidebar-link:hover {
+		color: var(--intently-blue);
+		background: var(--intently-bg-accent);
+		border-left-color: var(--intently-blue);
+	}
+
+	.sidebar-link:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
+	}
+
+	.sidebar-link.active {
+		color: var(--intently-blue);
+		background: var(--intently-bg-accent);
+		border-left-color: var(--intently-blue);
+		border-left-width: 4px;
+		font-weight: 600;
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	/* Desktop: sticky sidebar */
+	@media (min-width: 768px) {
+		.sidebar-toggle {
+			display: none !important;
+		}
+
+		.blog-sidebar {
+			position: sticky;
+			top: 80px;
+			max-height: calc(100vh - 100px);
+			overflow-y: auto;
+		}
+	}
+
+	/* Mobile: drawer pattern */
+	@media (max-width: 767px) {
+		.sidebar-toggle {
+			display: flex;
+		}
+
+		.blog-sidebar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 280px;
+			height: 100vh;
+			transform: translateX(-100%);
+			transition: transform 0.3s ease;
+			z-index: 99;
+			background: white;
+			box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+			padding-top: 2rem;
+			overflow-y: auto;
+		}
+
+		.blog-sidebar.open {
+			transform: translateX(0);
+		}
+	}
+
+	/* Overlay when sidebar is open on mobile */
+	body.blog-sidebar-open::after {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 98;
+	}
+</style>

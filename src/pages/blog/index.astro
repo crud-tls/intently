@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import BlogSidebar from '../../components/blog/BlogSidebar.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
@@ -20,12 +21,37 @@ const collectionItems = posts.map(post => ({
 	image: post.data.heroImage,
 	datePublished: post.data.pubDate.toISOString()
 }));
+
+// Category mapping for posts
+const categoryMap: Record<string, string> = {
+	'how-to-reduce-screen-time': 'getting-started',
+	'what-is-digital-wellbeing': 'getting-started',
+	'mindful-tech-interventions-vs-blocking': 'getting-started',
+	'stop-tiktok-scrolling': 'app-guides',
+	'reduce-instagram-usage': 'app-guides',
+	'stop-youtube-binge': 'app-guides',
+	'stop-twitter-doomscrolling': 'app-guides',
+	'stop-checking-phone-morning': 'time-solutions',
+	'stop-scrolling-at-night': 'time-solutions',
+	'how-to-stop-phone-addiction': 'recovery',
+	'phone-addiction-help': 'recovery',
+	'productive-without-deleting-social': 'recovery',
+	'psychology-of-app-addiction': 'recovery',
+	'intently-vs-opal': 'comparisons',
+	'intently-vs-google-digital-wellbeing': 'comparisons',
+	'best-digital-wellbeing-apps-2026': 'comparisons',
+	'google-digital-wellbeing-alternatives': 'comparisons',
+	'privacy-first-screen-time-tracking': 'privacy'
+};
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={`Blog & Resources - ${SITE_TITLE}`}
+			description="Digital wellbeing blog and resources: guides, tools, and expert strategies for building healthier tech habits."
+		/>
 		<BreadcrumbSchema
 			items={[
 				{ name: "Home", url: "https://liveintently.app" },
@@ -33,7 +59,7 @@ const collectionItems = posts.map(post => ({
 			]}
 		/>
 		<CollectionPageSchema
-			name="Intently Blog"
+			name="Intently Blog & Resources"
 			description="Articles, guides, and research on digital wellbeing, screen time management, and building healthier relationships with technology."
 			url="/blog"
 			items={collectionItems}
@@ -41,68 +67,66 @@ const collectionItems = posts.map(post => ({
 		<style>
 			html {
 				scroll-behavior: smooth;
+				scroll-padding-top: 80px;
 			}
 
 			main {
 				width: 100%;
 			}
 
-			.container {
-				max-width: 1200px;
+			.blog-layout {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: var(--intently-space-3xl);
+				max-width: 1400px;
 				margin: 0 auto;
-				padding: 0 1rem;
+				padding: var(--intently-space-3xl) var(--intently-space-md);
+			}
+
+			@media (min-width: 768px) {
+				.blog-layout {
+					grid-template-columns: 280px 1fr;
+				}
+			}
+
+			.blog-content {
+				min-width: 0;
 			}
 
 			section {
 				width: 100%;
-				padding: var(--intently-space-2xl) 0;
-				background: var(--intently-bg-primary);
 			}
-
-			/* Tablet: more spacing */
-			@media (min-width: 768px) {
-				section {
-					padding: var(--intently-space-3xl) 0;
-				}
-			}
-
-			/* Desktop: even more spacing */
-			@media (min-width: 1024px) {
-				section {
-					padding: var(--intently-space-4xl) 0;
-				}
-			}
-			ul {
+			.blog-grid {
 				display: flex;
 				flex-wrap: wrap;
 				gap: var(--intently-space-xl);
 				list-style-type: none;
 				margin: 0;
-				padding: 0 1rem;
+				padding: 0;
 			}
-			ul li {
+			.blog-grid li {
 				width: calc(50% - 1rem);
 			}
-			ul li * {
+			.blog-grid li * {
 				text-decoration: none;
 				transition: var(--intently-transition-normal);
 			}
-			ul li:first-child {
+			.blog-grid li:first-child {
 				width: 100%;
 				margin-bottom: 1rem;
 				text-align: center;
 			}
-			ul li:first-child img {
+			.blog-grid li:first-child img {
 				width: 100%;
 			}
-			ul li:first-child .title {
+			.blog-grid li:first-child .title {
 				font-size: 2.5rem;
 			}
-			ul li img {
+			.blog-grid li img {
 				margin-bottom: 0.5rem;
 				border-radius: 12px;
 			}
-			ul li a {
+			.blog-grid li a {
 				display: block;
 			}
 			.title {
@@ -114,11 +138,11 @@ const collectionItems = posts.map(post => ({
 				margin: 0;
 				color: var(--intently-text-secondary);
 			}
-			ul li a:hover h4,
-			ul li a:hover .date {
+			.blog-grid li a:hover h4,
+			.blog-grid li a:hover .date {
 				color: var(--intently-blue);
 			}
-			ul a:hover img {
+			.blog-grid a:hover img {
 				box-shadow: var(--intently-shadow-lg);
 			}
 
@@ -128,51 +152,149 @@ const collectionItems = posts.map(post => ({
 				outline-offset: 2px;
 			}
 			@media (max-width: 767px) {
-				ul {
+				.blog-grid {
 					gap: var(--intently-space-md);
 				}
-				ul li {
+				.blog-grid li {
 					width: 100%;
 					text-align: center;
 				}
-				ul li:first-child {
+				.blog-grid li:first-child {
 					margin-bottom: 0;
 				}
-				ul li:first-child .title {
+				.blog-grid li:first-child .title {
 					font-size: 2rem;
 				}
 			}
 		</style>
 	</head>
 	<body>
-		<Header />
-		<main>
-			<section>
-				<div class="container">
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									<img
-										width={720}
-										height={360}
-										src={post.data.heroImage}
-										alt={post.data.title}
-										loading="lazy"
-									/>
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
+		<script>
+			// Mobile sidebar toggle functionality
+			const sidebarToggle = document.getElementById('blog-sidebar-toggle');
+			const sidebar = document.getElementById('blog-sidebar');
+
+			function toggleSidebar() {
+				const isExpanded = sidebarToggle?.getAttribute('aria-expanded') === 'true';
+				sidebarToggle?.setAttribute('aria-expanded', (!isExpanded).toString());
+				sidebar?.setAttribute('aria-hidden', isExpanded.toString());
+				sidebar?.classList.toggle('open', !isExpanded);
+				document.body.classList.toggle('blog-sidebar-open', !isExpanded);
+			}
+
+			sidebarToggle?.addEventListener('click', toggleSidebar);
+
+			// Close sidebar when clicking outside
+			document.addEventListener('click', (event) => {
+				if (sidebar?.classList.contains('open')) {
+					const isClickInsideSidebar = sidebar.contains(event.target as Node);
+					const isClickOnToggle = sidebarToggle?.contains(event.target as Node);
+					if (!isClickInsideSidebar && !isClickOnToggle) {
+						toggleSidebar();
 					}
-				</ul>
-				</div>
-			</section>
-		</main>
+				}
+			});
+
+			// Close sidebar when clicking a link
+			const sidebarLinks = sidebar?.querySelectorAll('a');
+			sidebarLinks?.forEach(link => {
+				link.addEventListener('click', () => {
+					if (sidebar?.classList.contains('open')) {
+						toggleSidebar();
+					}
+				});
+			});
+
+			// Close sidebar on escape key
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && sidebar?.classList.contains('open')) {
+					toggleSidebar();
+				}
+			});
+
+			// Category filtering functionality
+			const categoryLinks = document.querySelectorAll('.sidebar-link');
+			const blogPosts = document.querySelectorAll('.blog-grid li');
+
+			categoryLinks.forEach(link => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const category = link.getAttribute('data-category') || 'all';
+
+					// Update active state
+					categoryLinks.forEach(l => l.classList.remove('active'));
+					link.classList.add('active');
+
+					// Update aria-current
+					categoryLinks.forEach(l => l.removeAttribute('aria-current'));
+					link.setAttribute('aria-current', 'true');
+
+					// Filter posts
+					let firstVisiblePost: Element | null = null;
+					blogPosts.forEach(post => {
+						const postCategory = post.getAttribute('data-category');
+						const shouldShow = category === 'all' || postCategory === category;
+
+						if (shouldShow) {
+							(post as HTMLElement).style.display = 'block';
+							if (!firstVisiblePost) {
+								firstVisiblePost = post;
+							}
+						} else {
+							(post as HTMLElement).style.display = 'none';
+						}
+					});
+
+					// Scroll to first visible post
+					if (firstVisiblePost) {
+						firstVisiblePost.scrollIntoView({ behavior: 'smooth', block: 'start' });
+					}
+
+					// Update URL hash
+					history.pushState(null, '', category === 'all' ? '/blog' : `#${category}`);
+				});
+			});
+
+			// Handle initial hash on page load
+			window.addEventListener('DOMContentLoaded', () => {
+				const hash = window.location.hash.replace('#', '');
+				if (hash) {
+					const targetLink = document.querySelector(`.sidebar-link[data-category="${hash}"]`);
+					if (targetLink) {
+						(targetLink as HTMLElement).click();
+					}
+				}
+			});
+		</script>
+		<Header />
+		<div class="blog-layout">
+			<BlogSidebar />
+			<main class="blog-content">
+				<section>
+					<ul class="blog-grid">
+						{
+							posts.map((post) => (
+								<li data-category={categoryMap[post.id] || 'other'}>
+									<a href={`/blog/${post.id}/`}>
+										<img
+											width={720}
+											height={360}
+											src={post.data.heroImage}
+											alt={post.data.title}
+											loading="lazy"
+										/>
+										<h4 class="title">{post.data.title}</h4>
+										<p class="date">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+									</a>
+								</li>
+							))
+						}
+					</ul>
+				</section>
+			</main>
+		</div>
 		<Footer />
 	</body>
 </html>

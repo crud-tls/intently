@@ -1,0 +1,4 @@
+# Redirects for consolidated blog and resources page
+/resources                      /blog                       301
+/guides/screen-time-reduction   /blog#getting-started       301
+/comparisons                    /blog#comparisons           301
