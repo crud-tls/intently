@@ -1,0 +1,359 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/ui/PageHeader.astro';
+import ResourceCard from '../components/ui/ResourceCard.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Resources - Digital Wellbeing Guides, Tools & Quizzes"
+			description="Complete resource hub for digital wellbeing: guides, quizzes, tools, and tips to help you build a healthier relationship with technology."
+		/>
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Resources", url: "https://liveintently.app/resources" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<PageHeader
+			title="Digital Wellbeing Resources"
+			description="Everything you need to build a healthier relationship with technology: guides, tools, quizzes, and expert-backed strategies."
+		/>
+
+		<main class="resources-content">
+			<!-- Featured Quiz -->
+			<section class="resource-section">
+				<div class="quiz-card">
+					<h3>📱 Phone Addiction Quiz</h3>
+					<p>Not sure if you have a phone addiction? Take our free quiz to assess your habits and get personalized recommendations for change.</p>
+					<a href="/quiz" class="quiz-button">Take the Free Quiz</a>
+				</div>
+			</section>
+
+			<!-- Download App -->
+			<section class="resource-section">
+				<div class="download-card">
+					<h3>Download Intently</h3>
+					<p>Get the app that helps you build mindful digital habits. Free for Android, iOS, and Chrome.</p>
+					<a href="/download" class="download-button">Download Free</a>
+				</div>
+			</section>
+
+			<!-- Getting Started Guides -->
+			<section class="resource-section">
+				<h2>Getting Started Guides</h2>
+				<div class="resource-grid">
+					<ResourceCard
+						href="/blog/how-to-reduce-screen-time"
+						title="How to Reduce Screen Time"
+						description="10 science-backed strategies that actually work for lasting behavior change."
+						tag="Beginner"
+					/>
+					<ResourceCard
+						href="/blog/what-is-digital-wellbeing"
+						title="What Is Digital Wellbeing?"
+						description="Understanding the concept and why it matters for your mental health."
+						tag="Foundational"
+					/>
+					<ResourceCard
+						href="/blog/mindful-tech-interventions-vs-blocking"
+						title="Mindful Interventions vs Blocking"
+						description="Why awareness works better than restriction for lasting change."
+						tag="Approach"
+					/>
+				</div>
+			</section>
+
+			<!-- Problem-Solution Guides -->
+			<section class="resource-section">
+				<h2>Problem-Solution Guides</h2>
+				<div class="resource-grid">
+					<ResourceCard
+						href="/blog/stop-tiktok-scrolling"
+						title="Stop TikTok Scrolling"
+						description="5 strategies to reduce TikTok usage without deleting the app."
+						tag="TikTok"
+					/>
+					<ResourceCard
+						href="/blog/reduce-instagram-usage"
+						title="Reduce Instagram Usage"
+						description="A mindful approach to cutting down on Instagram without deletion."
+						tag="Instagram"
+					/>
+					<ResourceCard
+						href="/blog/stop-youtube-binge"
+						title="Stop YouTube Binge Watching"
+						description="Break the autoplay cycle and watch YouTube intentionally."
+						tag="YouTube"
+					/>
+					<ResourceCard
+						href="/blog/stop-twitter-doomscrolling"
+						title="Break Twitter Doomscrolling"
+						description="Protect your mental health from the outrage algorithm."
+						tag="Twitter/X"
+					/>
+				</div>
+			</section>
+
+			<!-- Time-Specific Solutions -->
+			<section class="resource-section">
+				<h2>Morning & Evening Solutions</h2>
+				<div class="resource-grid">
+					<ResourceCard
+						href="/blog/stop-checking-phone-morning"
+						title="Stop Checking Phone in Morning"
+						description="A 7-step protocol to reclaim your mornings and start intentionally."
+						tag="Morning"
+					/>
+					<ResourceCard
+						href="/blog/stop-scrolling-at-night"
+						title="Stop Scrolling at Night"
+						description="A sleep-saving guide to protect your rest from bedtime phone use."
+						tag="Evening"
+					/>
+				</div>
+			</section>
+
+			<!-- Deep Dive Resources -->
+			<section class="resource-section">
+				<h2>Comprehensive Recovery Resources</h2>
+				<div class="resource-grid">
+					<ResourceCard
+						href="/blog/how-to-stop-phone-addiction"
+						title="How to Stop Phone Addiction"
+						description="15 expert strategies for breaking free from phone dependency."
+						tag="Addiction"
+					/>
+					<ResourceCard
+						href="/blog/phone-addiction-help"
+						title="Phone Addiction Help"
+						description="Complete guide to recovery without deleting apps."
+						tag="Recovery"
+					/>
+					<ResourceCard
+						href="/blog/productive-without-deleting-social"
+						title="Productive Without Deleting Social Media"
+						description="Balanced approach to social media that supports productivity."
+						tag="Productivity"
+					/>
+					<ResourceCard
+						href="/blog/psychology-of-app-addiction"
+						title="Psychology of App Addiction"
+						description="Understanding why apps are designed to be addictive."
+						tag="Psychology"
+					/>
+				</div>
+			</section>
+
+			<!-- App Comparisons -->
+			<section class="resource-section">
+				<h2>App Comparisons</h2>
+				<p class="section-description">Compare Intently with other popular screen time apps:</p>
+				<div class="resource-grid">
+					<ResourceCard
+						href="/blog/intently-vs-opal"
+						title="Intently vs Opal"
+						description="Mindful interventions vs app blocking: which approach works best?"
+						tag="Comparison"
+					/>
+					<ResourceCard
+						href="/blog/intently-vs-google-digital-wellbeing"
+						title="Intently vs Google Digital Wellbeing"
+						description="Privacy-first mindful tracking vs built-in Android tools."
+						tag="Comparison"
+					/>
+					<ResourceCard
+						href="/blog/best-digital-wellbeing-apps-2026"
+						title="Best Digital Wellbeing Apps 2026"
+						description="Comprehensive review of the top 8 apps for screen time management."
+						tag="Review"
+					/>
+					<ResourceCard
+						href="/blog/google-digital-wellbeing-alternatives"
+						title="Google Digital Wellbeing Alternatives"
+						description="Top 8 privacy-first alternatives to the built-in Android tool."
+						tag="Alternatives"
+					/>
+				</div>
+			</section>
+
+			<!-- Privacy Resources -->
+			<section class="resource-section">
+				<h2>Privacy & Security</h2>
+				<div class="resource-grid">
+					<ResourceCard
+						href="/blog/privacy-first-screen-time-tracking"
+						title="Privacy-First Screen Time Tracking"
+						description="Why your digital habits should stay private and how to choose secure apps."
+						tag="Privacy"
+					/>
+					<ResourceCard
+						href="/privacy"
+						title="Intently Privacy Policy"
+						description="Learn about our commitment to your data privacy and security."
+						tag="Policy"
+					/>
+				</div>
+			</section>
+
+			<!-- Hub Pages -->
+			<section class="resource-section">
+				<h2>Resource Hubs</h2>
+				<div class="resource-grid">
+					<ResourceCard
+						href="/guides/screen-time-reduction"
+						title="Screen Time Reduction Guide"
+						description="Complete guide with all strategies for reducing screen time."
+						tag="Guide Hub"
+					/>
+					<ResourceCard
+						href="/comparisons"
+						title="App Comparisons"
+						description="Detailed comparisons of Intently vs other screen time apps."
+						tag="Comparison Hub"
+					/>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.resources-content {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: var(--intently-space-3xl) var(--intently-space-md);
+	}
+
+	.resource-section {
+		margin-bottom: var(--intently-space-4xl);
+	}
+
+	.resource-section h2 {
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin-bottom: var(--intently-space-xl);
+		color: var(--intently-text-primary);
+		text-align: center;
+	}
+
+	.section-description {
+		text-align: center;
+		color: var(--intently-text-secondary);
+		margin-bottom: var(--intently-space-xl);
+		line-height: 1.7;
+	}
+
+	.resource-grid {
+		display: grid;
+		gap: var(--intently-space-xl);
+	}
+
+	.quiz-card {
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		color: white;
+		text-align: center;
+		padding: var(--intently-space-3xl) var(--intently-space-xl);
+		border-radius: var(--intently-radius-md);
+	}
+
+	.quiz-card h3 {
+		color: white;
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: var(--intently-space-md);
+	}
+
+	.quiz-card p {
+		color: rgba(255,255,255,0.95);
+		line-height: 1.7;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.quiz-button {
+		display: inline-block;
+		background: white;
+		color: var(--intently-blue);
+		padding: 0.75rem 2rem;
+		border-radius: var(--intently-radius-sm);
+		text-decoration: none;
+		font-weight: 600;
+		margin-top: var(--intently-space-lg);
+		transition: transform var(--intently-transition-fast), box-shadow var(--intently-transition-fast);
+	}
+
+	.quiz-button:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.download-card {
+		background: var(--intently-green);
+		color: white;
+		text-align: center;
+		padding: var(--intently-space-2xl);
+		border-radius: var(--intently-radius-md);
+	}
+
+	.download-card h3 {
+		color: white;
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: var(--intently-space-sm);
+	}
+
+	.download-card p {
+		color: rgba(255,255,255,0.95);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.download-button {
+		display: inline-block;
+		background: white;
+		color: var(--intently-green);
+		padding: 0.75rem 2rem;
+		border-radius: var(--intently-radius-sm);
+		text-decoration: none;
+		font-weight: 600;
+		margin-top: var(--intently-space-md);
+		transition: transform var(--intently-transition-fast), box-shadow var(--intently-transition-fast);
+	}
+
+	.download-button:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	@media (min-width: 768px) {
+		.resources-content {
+			padding: var(--intently-space-4xl) var(--intently-space-xl);
+		}
+
+		.resource-section h2 {
+			font-size: 2rem;
+		}
+
+		.resource-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.resource-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+</style>

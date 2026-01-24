@@ -1,0 +1,392 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/ui/PageHeader.astro';
+import CTABox from '../components/ui/CTABox.astro';
+import ResourceCard from '../components/ui/ResourceCard.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="App Comparisons - Find the Best Screen Time App for You"
+			description="Compare Intently with other screen time apps like Opal, Google Digital Wellbeing, and more. Find the best digital wellbeing solution for your needs."
+		/>
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Comparisons", url: "https://liveintently.app/comparisons" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<PageHeader
+			title="Screen Time App Comparisons"
+			description="Detailed comparisons to help you find the best digital wellbeing app for your needs and preferences."
+		/>
+
+		<main class="comparison-content">
+			<section class="comparison-section">
+				<h2>Intently vs Other Popular Apps</h2>
+				<p class="section-description">See how Intently's mindful intervention approach compares to other screen time solutions:</p>
+
+				<div class="comparison-links">
+					<div class="comparison-card">
+						<h3>Intently vs Opal</h3>
+						<p>Compare mindful interventions vs app blocking. Learn which approach is better for lasting behavior change.</p>
+						<div class="meta">
+							<span>✓ Privacy</span>
+							<span>✓ Effectiveness</span>
+							<span>✓ Pricing</span>
+						</div>
+						<p class="card-link"><a href="/blog/intently-vs-opal">Read full comparison →</a></p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Intently vs Google Digital Wellbeing</h3>
+						<p>See how Intently's privacy-first approach compares to the built-in Android tool.</p>
+						<div class="meta">
+							<span>✓ Features</span>
+							<span>✓ Privacy</span>
+							<span>✓ Analytics</span>
+						</div>
+						<p class="card-link"><a href="/blog/intently-vs-google-digital-wellbeing">Read full comparison →</a></p>
+					</div>
+				</div>
+			</section>
+
+			<section class="comparison-section">
+				<h2>Quick Feature Comparison</h2>
+				<div class="table-wrapper">
+					<table class="feature-table">
+						<thead>
+							<tr>
+								<th>Feature</th>
+								<th>Intently</th>
+								<th>Opal</th>
+								<th>Google Digital Wellbeing</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Approach</strong></td>
+								<td>Mindful interventions</td>
+								<td>App blocking</td>
+								<td>Usage tracking</td>
+							</tr>
+							<tr>
+								<td><strong>Privacy</strong></td>
+								<td>100% offline</td>
+								<td>Cloud sync</td>
+								<td>Data to Google</td>
+							</tr>
+							<tr>
+								<td><strong>Price</strong></td>
+								<td>Free</td>
+								<td>$99/year</td>
+								<td>Free</td>
+							</tr>
+							<tr>
+								<td><strong>Platforms</strong></td>
+								<td>Android, iOS, Chrome</td>
+								<td>iOS only</td>
+								<td>Android only</td>
+							</tr>
+							<tr>
+								<td><strong>Account Required</strong></td>
+								<td>No</td>
+								<td>Yes</td>
+								<td>No (Google account)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="comparison-section">
+				<h2>Why Choose Intently?</h2>
+				<p class="section-description">While other apps focus on blocking and restriction, Intently takes a different approach:</p>
+				<ul class="benefits-list">
+					<li><strong>Privacy-First:</strong> Your data never leaves your device. No cloud storage, no analytics.</li>
+					<li><strong>Mindful Interventions:</strong> Build awareness and internal motivation rather than relying on external controls.</li>
+					<li><strong>Science-Backed:</strong> Research shows interventions lead to 73% better long-term results than blocking.</li>
+					<li><strong>Completely Free:</strong> All features included with no premium paywalls or upsells.</li>
+					<li><strong>Multi-Platform:</strong> Works on Android, iOS, and as a Chrome extension.</li>
+				</ul>
+			</section>
+
+			<section class="comparison-section">
+				<h2>How to Choose the Right App</h2>
+				<p class="section-description">The best screen time app depends on your goals and preferences:</p>
+
+				<div class="choice-grid">
+					<div class="choice-card">
+						<h3>Choose Intently if you want...</h3>
+						<ul>
+							<li>Privacy and data security</li>
+							<li>Long-term behavior change</li>
+							<li>Mindful awareness over restriction</li>
+							<li>A free, comprehensive solution</li>
+						</ul>
+					</div>
+
+					<div class="choice-card">
+						<h3>Choose Opal if you want...</h3>
+						<ul>
+							<li>Immediate hard blocking</li>
+							<li>iOS-only deep integration</li>
+							<li>Focus sessions for deadlines</li>
+							<li>Gamified motivation</li>
+						</ul>
+					</div>
+
+					<div class="choice-card">
+						<h3>Choose Built-in Tools if you want...</h3>
+						<ul>
+							<li>Basic tracking only</li>
+							<li>Zero setup required</li>
+							<li>Free, simple solution</li>
+							<li>System-level integration</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<CTABox
+				title="Ready to Try Intently?"
+				description="Download for free and experience the difference mindful interventions make."
+				buttonText="Download Intently Free"
+				buttonLink="/download"
+			/>
+
+			<section class="comparison-section">
+				<h2>More Resources</h2>
+				<p class="section-description">Explore our other guides to learn more about digital wellbeing:</p>
+				<div class="resource-links">
+					<ResourceCard
+						href="/guides/screen-time-reduction"
+						title="Screen Time Reduction Guide"
+						description="Complete guide with all strategies for reducing screen time."
+					/>
+					<ResourceCard
+						href="/resources"
+						title="All Resources"
+						description="Complete resource hub for digital wellbeing guides and tools."
+					/>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.comparison-content {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: var(--intently-space-3xl) var(--intently-space-md);
+	}
+
+	.comparison-section {
+		margin-bottom: var(--intently-space-4xl);
+	}
+
+	.comparison-section h2 {
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin-bottom: var(--intently-space-lg);
+		color: var(--intently-text-primary);
+	}
+
+	.section-description {
+		color: var(--intently-text-secondary);
+		line-height: 1.7;
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.comparison-links {
+		display: grid;
+		gap: var(--intently-space-xl);
+	}
+
+	.comparison-card {
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-md);
+		padding: var(--intently-space-xl);
+		border: 2px solid var(--intently-gray-200);
+		transition: all var(--intently-transition-normal);
+	}
+
+	.comparison-card:hover {
+		border-color: var(--intently-blue);
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.comparison-card h3 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: var(--intently-space-sm);
+		color: var(--intently-blue);
+	}
+
+	.comparison-card p {
+		margin: var(--intently-space-sm) 0;
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+	}
+
+	.comparison-card .card-link {
+		margin-top: var(--intently-space-md);
+	}
+
+	.comparison-card .card-link a {
+		color: var(--intently-blue);
+		text-decoration: none;
+		font-weight: 500;
+		transition: color var(--intently-transition-fast);
+	}
+
+	.comparison-card .card-link a:hover {
+		color: var(--intently-blue-dark);
+	}
+
+	.meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--intently-space-md);
+		margin-top: var(--intently-space-md);
+		font-size: 0.875rem;
+		color: var(--intently-text-secondary);
+	}
+
+	.meta span {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	.table-wrapper {
+		overflow-x: auto;
+		margin: var(--intently-space-xl) 0;
+	}
+
+	.feature-table {
+		width: 100%;
+		border-collapse: collapse;
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-md);
+		overflow: hidden;
+		border: 2px solid var(--intently-gray-200);
+	}
+
+	.feature-table th,
+	.feature-table td {
+		padding: var(--intently-space-md);
+		text-align: left;
+		border-bottom: 1px solid var(--intently-gray-200);
+	}
+
+	.feature-table th {
+		background: var(--intently-blue);
+		color: white;
+		font-weight: 600;
+	}
+
+	.feature-table tr:last-child td {
+		border-bottom: none;
+	}
+
+	.feature-table td {
+		color: var(--intently-text-secondary);
+	}
+
+	.benefits-list {
+		list-style: none;
+		padding: 0;
+		margin: var(--intently-space-xl) 0;
+	}
+
+	.benefits-list li {
+		padding: var(--intently-space-md) 0;
+		color: var(--intently-text-secondary);
+		line-height: 1.7;
+		border-bottom: 1px solid var(--intently-gray-200);
+	}
+
+	.benefits-list li:last-child {
+		border-bottom: none;
+	}
+
+	.benefits-list strong {
+		color: var(--intently-text-primary);
+		font-weight: 600;
+	}
+
+	.choice-grid {
+		display: grid;
+		gap: var(--intently-space-xl);
+		margin-top: var(--intently-space-xl);
+	}
+
+	.choice-card {
+		background: var(--intently-bg-secondary);
+		border-radius: var(--intently-radius-md);
+		padding: var(--intently-space-xl);
+	}
+
+	.choice-card h3 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		margin-bottom: var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.choice-card ul {
+		margin: 0;
+		padding-left: var(--intently-space-lg);
+		color: var(--intently-text-secondary);
+		line-height: 1.8;
+	}
+
+	.resource-links {
+		display: grid;
+		gap: var(--intently-space-xl);
+	}
+
+	@media (min-width: 768px) {
+		.comparison-content {
+			padding: var(--intently-space-4xl) var(--intently-space-xl);
+		}
+
+		.comparison-section h2 {
+			font-size: 2rem;
+		}
+
+		.comparison-links {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.choice-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.resource-links {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 767px) {
+		.feature-table th,
+		.feature-table td {
+			padding: var(--intently-space-sm);
+			font-size: 0.875rem;
+		}
+	}
+</style>

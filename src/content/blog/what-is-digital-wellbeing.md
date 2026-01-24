@@ -375,5 +375,8 @@ Ready to improve your digital wellbeing with privacy-first, mindful tools? [Down
 
 **Related Articles:**
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
+- [How to Stop Scrolling at Night](/blog/stop-scrolling-at-night)
+- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
 - [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)

@@ -321,5 +321,8 @@ Ready to experience the difference mindful interventions make? [Download Intentl
 
 **Related Articles:**
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
+- [Stop TikTok Scrolling Without Deleting](/blog/stop-tiktok-scrolling)
 - [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)

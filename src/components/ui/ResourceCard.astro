@@ -1,0 +1,66 @@
+---
+interface Props {
+	href: string;
+	title: string;
+	description: string;
+	tag?: string;
+}
+
+const { href, title, description, tag } = Astro.props;
+---
+
+<a href={href} class="resource-card">
+	<h3>{title}</h3>
+	<p>{description}</p>
+	{tag && <span class="tag">{tag}</span>}
+</a>
+
+<style>
+	.resource-card {
+		display: block;
+		background: var(--intently-bg-primary);
+		border: 2px solid var(--intently-gray-200);
+		border-radius: var(--intently-radius-md);
+		padding: var(--intently-space-xl);
+		text-decoration: none;
+		color: inherit;
+		transition: all var(--intently-transition-normal);
+	}
+
+	.resource-card:hover {
+		border-color: var(--intently-blue);
+		transform: translateY(-4px);
+		box-shadow: var(--intently-shadow-lg);
+	}
+
+	.resource-card h3 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		margin: 0 0 var(--intently-space-sm) 0;
+		color: var(--intently-blue);
+	}
+
+	.resource-card p {
+		margin: 0;
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+		font-size: 0.9375rem;
+	}
+
+	.tag {
+		display: inline-block;
+		background: var(--intently-blue);
+		color: white;
+		padding: 0.25rem 0.75rem;
+		border-radius: var(--intently-radius-full);
+		font-size: 0.8125rem;
+		font-weight: 500;
+		margin-top: var(--intently-space-md);
+	}
+
+	@media (max-width: 767px) {
+		.resource-card {
+			padding: var(--intently-space-lg);
+		}
+	}
+</style>

@@ -352,5 +352,8 @@ Ready to break free from app addiction with psychology-backed, compassionate too
 
 **Related Articles:**
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
+- [Stop TikTok Scrolling Without Deleting](/blog/stop-tiktok-scrolling)
+- [Stop YouTube Binge Watching](/blog/stop-youtube-binge)
 - [What Is Digital Wellbeing?](/blog/what-is-digital-wellbeing)
-- [Mindful Tech: Using Interventions Instead of Blocking](/blog/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)

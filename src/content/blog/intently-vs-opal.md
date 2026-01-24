@@ -389,8 +389,10 @@ The best app is the one you'll actually use consistently—and for most people, 
 ## Related Articles
 
 - [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps)
-- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
+- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
+- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech-interventions-vs-blocking)
 - [Intently vs Google Digital Wellbeing](/blog/intently-vs-google-digital-wellbeing)
 
 ---

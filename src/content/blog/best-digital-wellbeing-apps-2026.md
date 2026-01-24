@@ -447,5 +447,8 @@ Ready to transform your relationship with technology? [Download Intently](/downl
 
 **Related Articles:**
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Privacy-First Screen Time Tracking: Why It Matters](/blog/)
-- [Understanding Digital Wellbeing](/blog/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
+- [Stop Twitter Doomscrolling](/blog/stop-twitter-doomscrolling)
+- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
+- [Understanding Digital Wellbeing](/blog/what-is-digital-wellbeing)

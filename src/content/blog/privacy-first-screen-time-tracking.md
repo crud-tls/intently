@@ -306,5 +306,8 @@ Ready to track your screen time without being tracked yourself? [Download Intent
 
 **Related Articles:**
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
+- [Stop Scrolling at Night](/blog/stop-scrolling-at-night)
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Understanding Digital Wellbeing](/blog/)
+- [Understanding Digital Wellbeing](/blog/what-is-digital-wellbeing)

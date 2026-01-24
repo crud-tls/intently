@@ -235,6 +235,9 @@ Ready to take control of your screen time? [Download Intently](/download) today 
 ---
 
 **Related Articles:**
-- [Understanding Digital Wellbeing and Why It Matters](/blog/)
-- [Privacy-First Screen Time Tracking: Why It Matters](/blog/)
-- [Best Digital Wellbeing Apps 2026](/blog/)
+- [Understanding Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
+- [Stop Scrolling at Night](/blog/stop-scrolling-at-night)
+- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
+- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)

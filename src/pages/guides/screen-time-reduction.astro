@@ -1,0 +1,225 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PageHeader from '../../components/ui/PageHeader.astro';
+import CTABox from '../../components/ui/CTABox.astro';
+import ResourceCard from '../../components/ui/ResourceCard.astro';
+import BreadcrumbSchema from '../../components/SEO/BreadcrumbSchema.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Screen Time Reduction Guide - Complete Resource Hub"
+			description="Comprehensive guides to reduce screen time, stop phone addiction, and build healthier digital habits. Expert-backed strategies for mindful tech use."
+		/>
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Guides", url: "https://liveintently.app/guides" },
+				{ name: "Screen Time Reduction", url: "https://liveintently.app/guides/screen-time-reduction" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<PageHeader
+			title="Screen Time Reduction Guide"
+			description="Science-backed strategies to help you reduce screen time, break phone addiction, and build a healthier relationship with technology."
+		/>
+
+		<main class="guide-content">
+			<section class="guide-section">
+				<h2>Getting Started with Screen Time Reduction</h2>
+				<p class="section-description">Reducing screen time isn't about willpower—it's about understanding the psychology behind app design and using proven strategies to build healthier habits. Start with these foundational guides:</p>
+
+				<div class="guide-links">
+					<ResourceCard
+						href="/blog/how-to-reduce-screen-time"
+						title="How to Reduce Screen Time: 10 Science-Backed Strategies"
+						description="Practical, proven methods to cut down on screen time without feeling deprived or restricted."
+					/>
+					<ResourceCard
+						href="/blog/what-is-digital-wellbeing"
+						title="What Is Digital Wellbeing? A Complete Guide"
+						description="Understand the concept of digital wellbeing and why it matters for your mental health and productivity."
+					/>
+					<ResourceCard
+						href="/blog/psychology-of-app-addiction"
+						title="The Psychology of App Addiction: Why You Can't Stop Scrolling"
+						description="Learn how apps are engineered to be addictive and what you can do about it."
+					/>
+				</div>
+			</section>
+
+			<section class="guide-section">
+				<h2>Problem-Solution Guides for Specific Apps</h2>
+				<p class="section-description">Different apps present different challenges. These targeted guides help you overcome platform-specific struggles:</p>
+
+				<div class="guide-links">
+					<ResourceCard
+						href="/blog/stop-tiktok-scrolling"
+						title="How to Stop Scrolling TikTok Without Deleting"
+						description="5 mindful strategies to reduce TikTok usage while staying connected to content you enjoy."
+					/>
+					<ResourceCard
+						href="/blog/reduce-instagram-usage"
+						title="Reduce Instagram Usage Without Deleting"
+						description="A mindful approach to cutting down on Instagram without the drastic step of deletion."
+					/>
+					<ResourceCard
+						href="/blog/stop-youtube-binge"
+						title="How to Stop YouTube Binge Watching"
+						description="Strategies to break the autoplay cycle and watch YouTube intentionally."
+					/>
+					<ResourceCard
+						href="/blog/stop-twitter-doomscrolling"
+						title="How to Break the Twitter/X Doomscrolling Cycle"
+						description="Protect your mental health from Twitter's outrage-driven algorithm."
+					/>
+				</div>
+			</section>
+
+			<section class="guide-section">
+				<h2>Time-Specific Solutions</h2>
+				<p class="section-description">Morning and evening are the most critical times for building healthy digital habits. These guides help you reclaim your mornings and protect your sleep:</p>
+
+				<div class="guide-links">
+					<ResourceCard
+						href="/blog/stop-checking-phone-morning"
+						title="Stop Checking Phone First Thing in Morning"
+						description="A 7-step protocol to break the habit and start your days with intention."
+					/>
+					<ResourceCard
+						href="/blog/stop-scrolling-at-night"
+						title="How to Stop Mindless Scrolling at Night"
+						description="A sleep-saving guide to protect your rest from bedtime scrolling."
+					/>
+				</div>
+			</section>
+
+			<section class="guide-section">
+				<h2>Comprehensive Recovery Resources</h2>
+				<p class="section-description">For those seeking deeper transformation, these comprehensive guides address the root causes of phone addiction:</p>
+
+				<div class="guide-links">
+					<ResourceCard
+						href="/blog/how-to-stop-phone-addiction"
+						title="How to Stop Phone Addiction: 15 Expert Strategies"
+						description="Science-backed strategies that actually work for lasting behavior change."
+					/>
+					<ResourceCard
+						href="/blog/phone-addiction-help"
+						title="Phone Addiction Help Without Deleting Apps"
+						description="A complete guide to recovery that doesn't require extreme measures."
+					/>
+					<ResourceCard
+						href="/blog/productive-without-deleting-social"
+						title="How to Be More Productive Without Deleting Social Media"
+						description="A balanced approach to social media that supports productivity."
+					/>
+				</div>
+			</section>
+
+			<section class="guide-section">
+				<h2>Understanding the Approach</h2>
+				<p class="section-description">Not all screen time solutions are created equal. Learn why mindful interventions outperform blocking:</p>
+
+				<div class="guide-links">
+					<ResourceCard
+						href="/blog/mindful-tech-interventions-vs-blocking"
+						title="Mindful Tech: Why Interventions Beat Blocking"
+						description="The science behind why awareness creates lasting change while restriction fails."
+					/>
+				</div>
+			</section>
+
+			<CTABox
+				title="Ready to Take Control of Your Screen Time?"
+				description="Download Intently and start building healthier digital habits today with privacy-first, mindful interventions."
+				buttonText="Download Intently Free"
+				buttonLink="/download"
+			/>
+
+			<section class="guide-section">
+				<h2>Assess Your Current Habits</h2>
+				<p class="section-description">Not sure where to start? Take our free quiz to understand your current relationship with your phone:</p>
+				<div class="quiz-link">
+					<a href="/quiz" class="quiz-button">Take the Phone Addiction Quiz →</a>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.guide-content {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: var(--intently-space-3xl) var(--intently-space-md);
+	}
+
+	.guide-section {
+		margin-bottom: var(--intently-space-4xl);
+	}
+
+	.guide-section h2 {
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin-bottom: var(--intently-space-lg);
+		color: var(--intently-text-primary);
+	}
+
+	.section-description {
+		color: var(--intently-text-secondary);
+		line-height: 1.7;
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.guide-links {
+		display: grid;
+		gap: var(--intently-space-xl);
+	}
+
+	.quiz-link {
+		text-align: center;
+		margin-top: var(--intently-space-xl);
+	}
+
+	.quiz-button {
+		display: inline-block;
+		color: var(--intently-blue);
+		font-weight: 600;
+		text-decoration: none;
+		padding: var(--intently-space-md) var(--intently-space-xl);
+		border-radius: var(--intently-radius-sm);
+		border: 2px solid var(--intently-blue);
+		transition: all var(--intently-transition-normal);
+	}
+
+	.quiz-button:hover {
+		background: var(--intently-blue);
+		color: white;
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	@media (min-width: 768px) {
+		.guide-content {
+			padding: var(--intently-space-4xl) var(--intently-space-xl);
+		}
+
+		.guide-section h2 {
+			font-size: 2rem;
+		}
+
+		.guide-links {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+</style>
