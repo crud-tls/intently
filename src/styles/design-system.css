@@ -47,6 +47,12 @@
 	--intently-bg-secondary: #F5F7FA;
 	--intently-bg-accent: #E3F2FD;
 
+	/* Tinted backgrounds for alert boxes */
+	--intently-bg-info: #E3F2FD;
+	--intently-bg-warning: #FFF3E0;
+	--intently-bg-success: #E8F5E9;
+	--intently-bg-error: #FFEBEE;
+
 	--intently-text-primary: #212121;
 	--intently-text-secondary: #757575;
 	--intently-text-hint: #9E9E9E;

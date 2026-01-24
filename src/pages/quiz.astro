@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Button from '../components/ui/Button.astro';
+import Icon from '../components/ui/Icon.astro';
 
 const questions = [
 	{
@@ -103,7 +104,7 @@ const questions = [
 			<!-- Quiz Hero -->
 			<section class="quiz-hero">
 				<div class="container">
-					<h1>📱 Phone Addiction Quiz</h1>
+					<h1><Icon name="Smartphone" size={32} color="var(--intently-blue)" /> Phone Addiction Quiz</h1>
 					<p class="hero-subtitle">Take this 2-minute quiz to find out if you have phone addiction</p>
 					<p class="quiz-meta">8 questions • Science-backed • 100% confidential</p>
 				</div>
@@ -140,7 +141,12 @@ const questions = [
 						<!-- Results Section (hidden initially) -->
 						<div id="quiz-results" style="display: none;">
 							<div class="results-content">
-								<div id="result-icon" class="result-icon"></div>
+								<div class="result-icon-wrapper">
+									<span id="icon-severe" class="result-level-icon" style="display: none;"><Icon name="Circle" size={24} color="var(--intently-red)" /></span>
+									<span id="icon-moderate" class="result-level-icon" style="display: none;"><Icon name="Circle" size={24} color="var(--intently-orange)" /></span>
+									<span id="icon-mild" class="result-level-icon" style="display: none;"><Icon name="Circle" size={24} color="var(--intently-green)" /></span>
+									<span id="icon-healthy" class="result-level-icon" style="display: none;"><Icon name="CheckCircle2" size={24} color="var(--intently-green)" /></span>
+								</div>
 								<h2 id="result-title" class="result-title"></h2>
 								<p id="result-description" class="result-description"></p>
 
@@ -218,7 +224,7 @@ const questions = [
 
 				if (totalScore >= 18) {
 					level = 'severe';
-					title = '🔴 Severe Phone Addiction';
+					title = 'Severe Phone Addiction';
 					description = 'Your phone usage is significantly impacting your daily life. You likely experience anxiety without your phone and struggle to focus on other activities. Professional support combined with digital wellbeing tools could help.';
 					recommendations = [
 						'Download Intently to create mindful interventions',
@@ -229,7 +235,7 @@ const questions = [
 					];
 				} else if (totalScore >= 12) {
 					level = 'moderate';
-					title = '🟡 Moderate Phone Addiction';
+					title = 'Moderate Phone Addiction';
 					description = 'You show clear signs of phone dependency that occasionally interfere with daily activities. You recognize the issue but find it challenging to change habits. With the right tools and strategies, you can regain control.';
 					recommendations = [
 						'Use Intently\'s mindful interventions to build awareness',
@@ -240,7 +246,7 @@ const questions = [
 					];
 				} else if (totalScore >= 6) {
 					level = 'mild';
-					title = '🟢 Mild Phone Dependency';
+					title = 'Mild Phone Dependency';
 					description = 'You have a relatively healthy relationship with your phone but show some habits worth addressing. You occasionally reach for your phone mindlessly. Small adjustments can help you maintain balanced usage.';
 					recommendations = [
 						'Use Intently to track usage patterns',
@@ -251,7 +257,7 @@ const questions = [
 					];
 				} else {
 					level = 'healthy';
-					title = '✅ Healthy Phone Usage';
+					title = 'Healthy Phone Usage';
 					description = 'Congratulations! You have a balanced relationship with your phone. You use it intentionally and rarely feel controlled by it. Continue your mindful approach to maintain this healthy relationship.';
 					recommendations = [
 						'Maintain your current habits',
@@ -267,16 +273,21 @@ const questions = [
 				document.getElementById('result-description')!.textContent = description;
 				document.getElementById('result-score')!.textContent = `${totalScore} out of 24`;
 
+				// Show appropriate icon based on level
+				['severe', 'moderate', 'mild', 'healthy'].forEach(l => {
+					const icon = document.getElementById(`icon-${l}`);
+					if (icon) {
+						icon.style.display = l === level ? 'inline-flex' : 'none';
+					}
+				});
+
 				// Add recommendations
 				const recList = document.getElementById('recommendations-list')!;
 				recommendations.forEach((rec: string) => {
 					const li = document.createElement('li');
-					li.textContent = rec;
+					li.innerHTML = `<span class="rec-icon">✓</span>${rec}`;
 					recList.appendChild(li);
 				});
-
-				// Add result class for styling
-				document.getElementById('result-icon')!.className = `result-icon ${level}`;
 			}
 
 			// Retake quiz button
@@ -504,18 +515,18 @@ const questions = [
 	}
 
 	.recommendations-list li {
-		padding: var(--intently-space-sm) 0 var(--intently-space-sm) var(--intently-space-lg);
-		position: relative;
+		padding: var(--intently-space-sm) 0;
+		display: flex;
+		align-items: flex-start;
+		gap: var(--intently-space-sm);
 		line-height: 1.5;
 		color: var(--intently-text-secondary);
 	}
 
-	.recommendations-list li::before {
-		content: "✓";
-		position: absolute;
-		left: 0;
+	.rec-icon {
 		color: var(--intently-green);
 		font-weight: 700;
+		flex-shrink: 0;
 	}
 
 	.cta-buttons {

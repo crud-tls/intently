@@ -5,6 +5,7 @@
  * Shows accurate Intently app UI mockup
  */
 import Button from '../ui/Button.astro';
+import Icon from '../ui/Icon.astro';
 ---
 
 <section class="hero">
@@ -92,7 +93,7 @@ import Button from '../ui/Button.astro';
 									<div class="metric-label">Sessions</div>
 								</div>
 								<div class="metric">
-									<div class="metric-icon">🔥</div>
+									<div class="metric-icon"><Icon name="Flame" size={16} color="var(--intently-orange)" /></div>
 									<div class="metric-value">7</div>
 									<div class="metric-label">Streak</div>
 								</div>
@@ -128,7 +129,7 @@ import Button from '../ui/Button.astro';
 								<div class="app-limit">Daily limit: 1h</div>
 							</div>
 							<div class="app-progress">
-								<div class="streak-badge-small">🔥 7</div>
+								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--intently-orange)" /> 7</div>
 								<div class="progress-bar">
 									<div class="progress-fill orange"></div>
 								</div>
@@ -148,7 +149,7 @@ import Button from '../ui/Button.astro';
 								<div class="app-limit">Daily limit: 30m</div>
 							</div>
 							<div class="app-progress">
-								<div class="streak-badge-small">🔥 5</div>
+								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--intently-orange)" /> 5</div>
 								<div class="progress-bar">
 									<div class="progress-fill green"></div>
 								</div>
@@ -168,7 +169,7 @@ import Button from '../ui/Button.astro';
 								<div class="app-limit">Daily limit: 45m</div>
 							</div>
 							<div class="app-progress">
-								<div class="streak-badge-small">🔥 3</div>
+								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--intently-orange)" /> 3</div>
 								<div class="progress-bar">
 									<div class="progress-fill red"></div>
 								</div>

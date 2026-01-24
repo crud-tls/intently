@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import Hero from '../components/marketing/Hero.astro';
 import FeatureCard from '../components/marketing/FeatureCard.astro';
 import PlatformCard from '../components/marketing/PlatformCard.astro';
+import Icon from '../components/ui/Icon.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import WebSiteSchema from '../components/SEO/WebSiteSchema.astro';
 import { getCollection } from 'astro:content';
@@ -42,25 +43,25 @@ const latestPosts = allPosts
 					<p class="section-subtitle">People who use Intently report feeling calmer, more present, and genuinely surprised at how much time they get back.</p>
 					<div class="features-grid">
 						<FeatureCard
-							icon="📊"
+							icon="BarChart3"
 							title="See Where Your Hours Go"
 							description="Most people are shocked to discover they spend 3-4 hours daily on apps they don't even enjoy. Intently reveals the truth—gently—so you can decide what deserves your attention."
 							color="blue"
 						/>
 						<FeatureCard
-							icon="🔔"
+							icon="Bell"
 							title="A Breath Between You and the Scroll"
 							description="When you reach for Instagram or TikTok on autopilot, Intently creates a quiet pause. In that moment, you remember: you can choose."
 							color="purple"
 						/>
 						<FeatureCard
-							icon="🏆"
+							icon="Trophy"
 							title="Watch Yourself Transform"
 							description="Every day you choose presence over scrolling, your streak grows. It's not about perfection—it's about the quiet pride of becoming someone who's in control."
 							color="orange"
 						/>
 						<FeatureCard
-							icon="🔒"
+							icon="Lock"
 							title="Your Secrets Stay Yours"
 							description="We'll never know which apps you use or how long you scroll. Because that's your business. Everything stays on your device—always."
 							color="green"
@@ -74,23 +75,33 @@ const latestPosts = allPosts
 				<div class="container">
 					<div class="before-after-grid">
 						<div class="before-column">
-							<h3 class="before-after-heading before-heading">Before Intently</h3>
+							<h3 class="before-after-heading before-heading">
+								<span class="heading-icon">
+									<Icon name="Frown" size={24} color="var(--intently-text-secondary)" />
+								</span>
+								Before Intently
+							</h3>
 							<ul class="before-after-list">
-								<li>"Just 5 more minutes" turns into an hour</li>
-								<li>Picking up your phone 80+ times without thinking</li>
-								<li>Feeling guilty but unable to stop</li>
-								<li>Losing evenings to mindless scrolling</li>
-								<li>Waking up and immediately checking notifications</li>
+								<li><span class="list-icon list-icon-negative"><Icon name="X" size={12} color="var(--intently-red)" /></span>"Just 5 more minutes" turns into an hour</li>
+								<li><span class="list-icon list-icon-negative"><Icon name="X" size={12} color="var(--intently-red)" /></span>Picking up your phone 80+ times without thinking</li>
+								<li><span class="list-icon list-icon-negative"><Icon name="X" size={12} color="var(--intently-red)" /></span>Feeling guilty but unable to stop</li>
+								<li><span class="list-icon list-icon-negative"><Icon name="X" size={12} color="var(--intently-red)" /></span>Losing evenings to mindless scrolling</li>
+								<li><span class="list-icon list-icon-negative"><Icon name="X" size={12} color="var(--intently-red)" /></span>Waking up and immediately checking notifications</li>
 							</ul>
 						</div>
 						<div class="after-column">
-							<h3 class="before-after-heading after-heading">After Intently</h3>
+							<h3 class="before-after-heading after-heading">
+								<span class="heading-icon">
+									<Icon name="Sparkles" size={24} color="var(--intently-text-secondary)" />
+								</span>
+								After Intently
+							</h3>
 							<ul class="before-after-list">
-								<li>You catch yourself before the spiral starts</li>
-								<li>Reaching for your phone becomes a conscious choice</li>
-								<li>Feeling proud of small wins that add up</li>
-								<li>Having evenings for books, walks, or real conversations</li>
-								<li>Starting your morning on your own terms</li>
+								<li><span class="list-icon list-icon-positive"><Icon name="Check" size={12} color="var(--intently-green)" /></span>You catch yourself before the spiral starts</li>
+								<li><span class="list-icon list-icon-positive"><Icon name="Check" size={12} color="var(--intently-green)" /></span>Reaching for your phone becomes a conscious choice</li>
+								<li><span class="list-icon list-icon-positive"><Icon name="Check" size={12} color="var(--intently-green)" /></span>Feeling proud of small wins that add up</li>
+								<li><span class="list-icon list-icon-positive"><Icon name="Check" size={12} color="var(--intently-green)" /></span>Having evenings for books, walks, or real conversations</li>
+								<li><span class="list-icon list-icon-positive"><Icon name="Check" size={12} color="var(--intently-green)" /></span>Starting your morning on your own terms</li>
 							</ul>
 						</div>
 					</div>
@@ -157,7 +168,7 @@ const latestPosts = allPosts
 					</div>
 					<div class="blog-cta">
 						<a href="/blog" class="view-all-button">View All Articles</a>
-						<a href="/quiz" class="quiz-button">📱 Take Our Phone Addiction Quiz</a>
+						<a href="/quiz" class="quiz-button"><Icon name="Smartphone" size={20} /> Take Our Phone Addiction Quiz</a>
 					</div>
 				</div>
 			</section>
@@ -452,16 +463,29 @@ const latestPosts = allPosts
 		padding: var(--intently-space-2xl);
 		border-radius: var(--intently-radius-lg);
 		box-shadow: var(--intently-shadow-md);
-		border-left: 4px solid transparent;
 		transition: all var(--intently-transition-normal);
+		position: relative;
+		overflow: hidden;
 	}
 
-	.before-column {
-		border-left-color: var(--intently-red);
+	.before-column::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: var(--intently-red);
 	}
 
-	.after-column {
-		border-left-color: var(--intently-green);
+	.after-column::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: var(--intently-green);
 	}
 
 	.before-column:hover,
@@ -477,24 +501,18 @@ const latestPosts = allPosts
 		display: flex;
 		align-items: center;
 		gap: var(--intently-space-sm);
-	}
-
-	.before-heading {
 		color: var(--intently-text-primary);
 	}
 
-	.before-heading::before {
-		content: "😔";
-		font-size: 1.5rem;
-	}
-
-	.after-heading {
-		color: var(--intently-text-primary);
-	}
-
-	.after-heading::before {
-		content: "✨";
-		font-size: 1.5rem;
+	.heading-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		border-radius: var(--intently-radius-md);
+		background: var(--intently-gray-100);
+		flex-shrink: 0;
 	}
 
 	.before-after-list {
@@ -504,63 +522,32 @@ const latestPosts = allPosts
 	}
 
 	.before-after-list li {
-		padding: var(--intently-space-sm) 0 var(--intently-space-sm) var(--intently-space-xl);
+		padding: var(--intently-space-sm) 0;
 		font-size: 1rem;
 		color: var(--intently-text-secondary);
 		line-height: 1.6;
-		position: relative;
+		display: flex;
+		align-items: flex-start;
+		gap: var(--intently-space-sm);
 	}
 
-	.before-column .before-after-list li::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
+	.list-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 		width: 20px;
 		height: 20px;
+		border-radius: 50%;
+		flex-shrink: 0;
+		margin-top: 2px;
+	}
+
+	.list-icon-negative {
 		background: var(--intently-red-light);
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 
-	.before-column .before-after-list li::after {
-		content: "✕";
-		position: absolute;
-		left: 6px;
-		top: 50%;
-		transform: translateY(-50%);
-		color: var(--intently-red);
-		font-weight: 700;
-		font-size: 0.75rem;
-	}
-
-	.after-column .before-after-list li::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 20px;
-		height: 20px;
+	.list-icon-positive {
 		background: var(--intently-green-light);
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.after-column .before-after-list li::after {
-		content: "✓";
-		position: absolute;
-		left: 6px;
-		top: 50%;
-		transform: translateY(-50%);
-		color: var(--intently-green);
-		font-weight: 700;
-		font-size: 0.75rem;
 	}
 
 	.before-after-closing {

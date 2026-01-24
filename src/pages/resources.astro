@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Icon from '../components/ui/Icon.astro';
 import PageHeader from '../components/ui/PageHeader.astro';
 import ResourceCard from '../components/ui/ResourceCard.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
@@ -33,7 +34,7 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 			<!-- Featured Quiz -->
 			<section class="resource-section">
 				<div class="quiz-card">
-					<h3>📱 Phone Addiction Quiz</h3>
+					<h3><Icon name="Smartphone" size={24} color="var(--intently-blue)" /> Phone Addiction Quiz</h3>
 					<p>Not sure if you have a phone addiction? Take our free quiz to assess your habits and get personalized recommendations for change.</p>
 					<a href="/quiz" class="quiz-button">Take the Free Quiz</a>
 				</div>

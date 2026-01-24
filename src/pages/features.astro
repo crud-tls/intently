@@ -4,62 +4,63 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Card from '../components/ui/Card.astro';
 import Button from '../components/ui/Button.astro';
+import Icon from '../components/ui/Icon.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import { SITE_TITLE } from '../consts';
 
 const features = [
 	{
-		icon: "📊",
+		icon: "BarChart3",
 		title: "Finally See the Truth",
 		description: "You tell yourself it's only 20 minutes. The data tells a different story. Intently shows you exactly where your time goes—without judgment.",
 		details: ["Daily time summaries", "Per-app usage breakdown", "Weekly and monthly trends", "Category-based grouping"],
 		color: "blue"
 	},
 	{
-		icon: "🎯",
+		icon: "Target",
 		title: "Set Boundaries You Actually Keep",
 		description: "Choose how much time feels right for each app. When you're getting close, Intently lets you know. No locking, no lectures—just a gentle heads-up.",
 		details: ["Custom time limits per app", "Visual progress rings", "Goal achievement celebrations", "Flexible limit adjustments"],
 		color: "green"
 	},
 	{
-		icon: "🔔",
+		icon: "Bell",
 		title: "The 3-Second Pause That Changes Everything",
 		description: "Before an app opens, a simple screen appears: 'Is this what you want to be doing right now?' That tiny moment is all it takes.",
 		details: ["Customizable reminder messages", "Timer-based interventions", "Multiple intervention types", "Reflection prompts"],
 		color: "purple"
 	},
 	{
-		icon: "🏆",
+		icon: "Trophy",
 		title: "Celebrate Every Win (Even the Small Ones)",
 		description: "Day 1 feels small. Day 7 feels like something. Day 30 feels like you're becoming someone new. Intently tracks your streaks because lasting change deserves recognition.",
 		details: ["Daily streak tracking", "Milestone celebrations", "Achievement badges", "Streak recovery options"],
 		color: "orange"
 	},
 	{
-		icon: "📈",
+		icon: "TrendingUp",
 		title: "Watch Your Progress Unfold",
 		description: "Beautiful charts show your journey over days, weeks, and months. See your baseline shrink, and feel the pride of measurable progress.",
 		details: ["Usage trend charts", "Baseline comparisons", "Improvement metrics", "Exportable reports"],
 		color: "blue"
 	},
 	{
-		icon: "🧘",
+		icon: "Brain",
 		title: "Ask Yourself: Is This What I Want?",
 		description: "Custom prompts invite you to pause and reflect before diving into an app. Breathing exercises calm the impulse. It's mindfulness, built into your phone.",
 		details: ["Custom reflection prompts", "Breathing exercises", "Intention setting", "Usage journaling"],
 		color: "green"
 	},
 	{
-		icon: "📱",
+		icon: "Smartphone",
 		title: "Your Progress, At a Glance",
 		description: "A beautiful widget on your home screen shows your streak and today's progress. One look is often enough to remind you of who you're becoming.",
 		details: ["Home screen widgets", "Quick settings toggle", "One-tap stats view", "Notification center integration"],
 		color: "purple"
 	},
 	{
-		icon: "🔒",
+		icon: "Lock",
 		title: "We Literally Cannot See Your Data",
 		description: "No cloud. No servers. No account. Not even we can access your usage patterns. Your digital life is yours alone. Period.",
 		details: ["100% offline functionality", "Local data storage only", "No account required", "No tracking or analytics"],
@@ -132,20 +133,28 @@ const featureFAQs = [
 				<div class="container">
 					<h2 class="section-title">Core Features</h2>
 					<div class="features-grid">
-						{features.map(feature => (
-							<Card variant="elevated" hover={true}>
-								<div class="feature-header">
-								<div class={`feature-icon-wrapper ${feature.color}`}>
-								<span class="feature-icon">{feature.icon}</span>
-							</div>
-									<h3>{feature.title}</h3>
-								</div>
-								<p class="feature-description">{feature.description}</p>
-								<ul class="feature-details">
-									{feature.details.map(detail => <li>{detail}</li>)}
-								</ul>
-							</Card>
-						))}
+						{features.map(feature => {
+							const colorMap = {
+								blue: 'var(--intently-blue)',
+								green: 'var(--intently-green)',
+								orange: 'var(--intently-orange)',
+								purple: 'var(--intently-purple)'
+							};
+							return (
+								<Card variant="elevated" hover={true}>
+									<div class="feature-header">
+										<div class={`feature-icon-wrapper ${feature.color}`}>
+											<Icon name={feature.icon} size={24} color={colorMap[feature.color]} />
+										</div>
+										<h3>{feature.title}</h3>
+									</div>
+									<p class="feature-description">{feature.description}</p>
+									<ul class="feature-details">
+										{feature.details.map(detail => <li>{detail}</li>)}
+									</ul>
+								</Card>
+							);
+						})}
 					</div>
 				</div>
 			</section>
@@ -281,11 +290,10 @@ const featureFAQs = [
 		max-width: 800px;
 		margin: 0 auto;
 		color: var(--intently-text-secondary);
-		padding: var(--intently-space-xl);
-		background: white;
+		padding: var(--intently-space-2xl);
+		background: linear-gradient(135deg, #E3F2FD 0%, #FFFFFF 100%);
 		border-radius: var(--intently-radius-lg);
-		border-left: 4px solid var(--intently-blue);
-		box-shadow: var(--intently-shadow-sm);
+		box-shadow: var(--intently-shadow-md);
 	}
 
 	.direct-answer strong {
@@ -363,11 +371,6 @@ const featureFAQs = [
 
 	.feature-icon-wrapper.orange {
 		background: rgba(255, 152, 0, 0.08);
-	}
-
-	.feature-icon {
-		font-size: 1.5rem;
-		line-height: 1;
 	}
 
 	.feature-header h3 {
@@ -512,10 +515,16 @@ const featureFAQs = [
 	}
 
 	.faq-item {
-		background: white;
+		background: var(--intently-gray-50);
 		padding: var(--intently-space-xl);
 		border-radius: var(--intently-radius-lg);
-		border-left: 4px solid var(--intently-blue);
+		transition: all var(--intently-transition-normal);
+	}
+
+	.faq-item:hover {
+		background: white;
+		box-shadow: var(--intently-shadow-md);
+		transform: translateY(-2px);
 	}
 
 	.faq-item h3 {

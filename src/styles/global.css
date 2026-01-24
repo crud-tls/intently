@@ -179,9 +179,12 @@ pre > code {
 }
 
 blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0px;
+	background: var(--intently-gray-50);
+	padding: var(--intently-space-lg) var(--intently-space-xl);
+	border-radius: var(--intently-radius-md);
+	border-left: 3px solid var(--intently-gray-300);
+	font-style: italic;
+	margin: var(--intently-space-lg) 0;
 	font-size: 1.333em;
 }
 

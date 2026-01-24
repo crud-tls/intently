@@ -3,6 +3,8 @@
  * Feature Card Component
  * For showcasing individual features on the home and features pages
  */
+import Icon from '../ui/Icon.astro';
+
 interface Props {
 	icon: string;
 	title: string;
@@ -11,11 +13,21 @@ interface Props {
 }
 
 const { icon, title, description, color = 'blue' } = Astro.props;
+
+// Map color to actual color value for the icon
+const colorMap = {
+	blue: 'var(--intently-blue)',
+	green: 'var(--intently-green)',
+	orange: 'var(--intently-orange)',
+	red: 'var(--intently-red)',
+	purple: 'var(--intently-purple)'
+};
+const iconColor = colorMap[color];
 ---
 
 <div class="feature-card" class:list={[`feature-card-color-${color}`]}>
-	<div class="feature-icon">
-		<span class="icon-emoji">{icon}</span>
+	<div class="feature-icon" class:list={[`feature-icon-${color}`]}>
+		<Icon name={icon} size={28} color={iconColor} />
 	</div>
 	<h3 class="feature-title">{title}</h3>
 	<p class="feature-description">{description}</p>
@@ -46,34 +58,26 @@ const { icon, title, description, color = 'blue' } = Astro.props;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 1.75rem;
-		background-color: var(--intently-blue);
-		opacity: 0.15;
 	}
 
-	.feature-card-color-green .feature-icon {
-		background-color: var(--intently-green);
-		opacity: 0.15;
+	.feature-icon-blue {
+		background-color: rgba(33, 150, 243, 0.15); /* var(--intently-blue) with 15% opacity */
 	}
 
-	.feature-card-color-orange .feature-icon {
-		background-color: var(--intently-orange);
-		opacity: 0.15;
+	.feature-icon-green {
+		background-color: rgba(76, 175, 80, 0.15); /* var(--intently-green) with 15% opacity */
 	}
 
-	.feature-card-color-red .feature-icon {
-		background-color: var(--intently-red);
-		opacity: 0.15;
+	.feature-icon-orange {
+		background-color: rgba(255, 152, 0, 0.15); /* var(--intently-orange) with 15% opacity */
 	}
 
-	.feature-card-color-purple .feature-icon {
-		background-color: var(--intently-purple);
-		opacity: 0.15;
+	.feature-icon-red {
+		background-color: rgba(244, 67, 54, 0.15); /* var(--intently-red) with 15% opacity */
 	}
 
-	.icon-emoji {
-		font-size: 1.75rem;
-		line-height: 1;
+	.feature-icon-purple {
+		background-color: rgba(156, 39, 176, 0.15); /* var(--intently-purple) with 15% opacity */
 	}
 
 	.feature-title {
@@ -99,10 +103,6 @@ const { icon, title, description, color = 'blue' } = Astro.props;
 		.feature-icon {
 			width: 48px;
 			height: 48px;
-		}
-
-		.icon-emoji {
-			font-size: 1.5rem;
 		}
 
 		.feature-title {

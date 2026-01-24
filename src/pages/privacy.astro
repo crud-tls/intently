@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Icon from '../components/ui/Icon.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import { SITE_TITLE } from '../consts';
 ---
@@ -68,27 +69,27 @@ import { SITE_TITLE } from '../consts';
 
 						<h3>Anonymous Analytics (Optional)</h3>
 						<div class="toggle-info">
-							<p><strong>📊 Anonymous Analytics Feature:</strong> Intently includes optional privacy-safe analytics to help improve app quality. You can toggle this feature ON or OFF in the Analytics screen (Settings → Intervention Analytics).</p>
+							<p><strong><Icon name="BarChart3" size={20} color="var(--intently-blue)" /> Anonymous Analytics Feature:</strong> Intently includes optional privacy-safe analytics to help improve app quality. You can toggle this feature ON or OFF in the Analytics screen (Settings → Intervention Analytics).</p>
 							<p><strong>When enabled, we collect ONLY aggregated summaries:</strong></p>
 							<ul class="collect">
-								<li><strong>✓ Content category performance</strong> (reflection, breathing, question types)</li>
-								<li><strong>✓ Time-of-day patterns</strong> (morning, afternoon, evening - not exact times)</li>
-								<li><strong>✓ Success rates</strong> (percentage of users who choose "go back")</li>
-								<li><strong>✓ Decision time buckets</strong> (instant, quick, moderate, deliberate)</li>
-								<li><strong>✓ App quality metrics</strong> (crashes, performance issues)</li>
+								<li><strong><Icon name="Check" size={16} color="var(--intently-green)" /> Content category performance</strong> (reflection, breathing, question types)</li>
+								<li><strong><Icon name="Check" size={16} color="var(--intently-green)" /> Time-of-day patterns</strong> (morning, afternoon, evening - not exact times)</li>
+								<li><strong><Icon name="Check" size={16} color="var(--intently-green)" /> Success rates</strong> (percentage of users who choose "go back")</li>
+								<li><strong><Icon name="Check" size={16} color="var(--intently-green)" /> Decision time buckets</strong> (instant, quick, moderate, deliberate)</li>
+								<li><strong><Icon name="Check" size={16} color="var(--intently-green)" /> App quality metrics</strong> (crashes, performance issues)</li>
 							</ul>
 						</div>
 
 						<h3>What We DON'T Collect</h3>
 						<ul class="no-collect">
-							<li><strong>❌ No passwords</strong> (authentication handled via Google/Facebook OAuth)</li>
-							<li><strong>❌ No personal device identifiers</strong> (no IMEI, no advertising ID, no Android ID)</li>
-							<li><strong>❌ No exact timestamps</strong> (only time-of-day buckets: morning/afternoon/evening/night)</li>
-							<li><strong>❌ No app content</strong> (no posts, messages, photos from monitored apps)</li>
-							<li><strong>❌ No specific app package names</strong> (only broad categories like "social_media")</li>
-							<li><strong>❌ No location data</strong> (no GPS, no precise location)</li>
-							<li><strong>❌ No individual user tracking</strong> (all analytics are aggregated)</li>
-							<li><strong>❌ No browsing history</strong> (only local app usage monitoring)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No passwords</strong> (authentication handled via Google/Facebook OAuth)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No personal device identifiers</strong> (no IMEI, no advertising ID, no Android ID)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No exact timestamps</strong> (only time-of-day buckets: morning/afternoon/evening/night)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No app content</strong> (no posts, messages, photos from monitored apps)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No specific app package names</strong> (only broad categories like "social_media")</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No location data</strong> (no GPS, no precise location)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No individual user tracking</strong> (all analytics are aggregated)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No browsing history</strong> (only local app usage monitoring)</li>
 						</ul>
 						<div class="toggle-info">
 							<p><strong>Note on Firebase Analytics:</strong> Firebase automatically collects minimal device information (device model, Android version, app instance ID) for analytics purposes. This data is anonymized and not linked to your personal identity. We do not collect or send your device's IMEI, advertising ID, or other persistent personal identifiers.</p>
@@ -109,9 +110,9 @@ import { SITE_TITLE } from '../consts';
 
 						<h3>Anonymous Analytics Usage (Requires Firebase)</h3>
 						<div class="success">
-							<p><strong>✓ Privacy-Safe Approach:</strong> All analytics data is <strong>aggregated locally on your device</strong> before sending. Raw individual user behavior never leaves your phone.</p>
-							<p><strong>✓ Purpose:</strong> To improve app quality and intervention effectiveness</p>
-							<p><strong>✓ Service Provider:</strong> Firebase (Google) - used only for aggregated analytics storage</p>
+							<p><strong><Icon name="Check" size={16} color="var(--intently-green)" /> Privacy-Safe Approach:</strong> All analytics data is <strong>aggregated locally on your device</strong> before sending. Raw individual user behavior never leaves your phone.</p>
+							<p><strong><Icon name="Check" size={16} color="var(--intently-green)" /> Purpose:</strong> To improve app quality and intervention effectiveness</p>
+							<p><strong><Icon name="Check" size={16} color="var(--intently-green)" /> Service Provider:</strong> Firebase (Google) - used only for aggregated analytics storage</p>
 						</div>
 
 						<h2>Data Storage and Security</h2>
@@ -162,10 +163,10 @@ import { SITE_TITLE } from '../consts';
 							<p><strong>We do not share, sell, or rent your personal data to third parties.</strong></p>
 						</div>
 						<ul class="no-collect">
-							<li><strong>❌ No personal information shared</strong></li>
-							<li><strong>❌ No individual user behavior shared</strong></li>
-							<li><strong>❌ No advertising networks</strong></li>
-							<li><strong>❌ No data brokers</strong></li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No personal information shared</strong></li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No individual user behavior shared</strong></li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No advertising networks</strong></li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No data brokers</strong></li>
 						</ul>
 
 						<h3>Third-Party Services</h3>
@@ -490,11 +491,11 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.highlight {
-		background-color: #e8f4f8;
-		padding: var(--intently-space-md);
-		border-left: 4px solid var(--intently-blue);
+		background: var(--intently-bg-info);
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid var(--intently-blue-light);
 		margin: var(--intently-space-lg) 0;
-		border-radius: var(--intently-radius-sm);
 	}
 
 	.highlight p {
@@ -502,11 +503,11 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.warning {
-		background-color: #fff3cd;
-		padding: var(--intently-space-md);
-		border-left: 4px solid #ffc107;
+		background: var(--intently-bg-warning);
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid var(--intently-orange-light);
 		margin: var(--intently-space-lg) 0;
-		border-radius: var(--intently-radius-sm);
 	}
 
 	.warning p {
@@ -514,11 +515,11 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.success {
-		background-color: #d4edda;
-		padding: var(--intently-space-md);
-		border-left: 4px solid #28a745;
+		background: var(--intently-bg-success);
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid var(--intently-green-light);
 		margin: var(--intently-space-lg) 0;
-		border-radius: var(--intently-radius-sm);
 	}
 
 	.success p {
