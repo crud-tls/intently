@@ -16,6 +16,7 @@
 		"@astrojs/mdx": "4.3.12",
 		"@astrojs/rss": "4.0.14",
 		"@astrojs/sitemap": "3.6.0",
+		"@lottiefiles/dotlottie-wc": "^0.8.14",
 		"astro": "5.16.2",
 		"lucide-static": "^0.563.0",
 		"typescript": "5.9.3"
