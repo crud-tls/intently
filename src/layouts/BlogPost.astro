@@ -62,6 +62,10 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 		/>
 		{faq && <FAQSchema faqs={faq} />}
 		<style>
+			body {
+				background: var(--intently-bg-primary);
+			}
+
 			main {
 				width: calc(100% - 2em);
 				max-width: 100%;
@@ -81,7 +85,7 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 				max-width: 720px;
 				margin: auto;
 				padding: 1em;
-				color: rgb(var(--gray-dark));
+				color: var(--intently-text-primary);
 			}
 			.title {
 				margin-bottom: 1em;
@@ -94,7 +98,7 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
+				color: var(--intently-text-secondary);
 			}
 			.last-updated-on {
 				font-style: italic;

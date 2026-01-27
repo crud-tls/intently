@@ -26,13 +26,13 @@ const { store, href, class: className = '' } = Astro.props;
 		)}
 		{store === 'chromestore' && (
 			<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-				<path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 3.6c1.7 0 3.27.5 4.6 1.35l-1.45 2.5c-.85-.5-1.85-.8-2.9-.8-1.05 0-2.05.3-2.9.8L7.9 4.95C9.23 4.1 10.8 3.6 12 3.6zM3.6 12c0-1.7.5-3.27 1.35-4.6l2.5 1.45c-.5.85-.8 1.85-.8 2.9 0 1.05.3 2.05.8 2.9l-2.5 1.45C4.1 15.27 3.6 13.7 3.6 12zm8.4 8.4c-1.7 0-3.27-.5-4.6-1.35l1.45-2.5c.85.5 1.85.8 2.9.8 1.05 0 2.05-.3 2.9-.8l1.45 2.5c-1.33.85-2.9 1.35-4.6 1.35z"/>
+				<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
 			</svg>
 		)}
 	</div>
 	<div class="store-text">
-		<span class="store-subtitle">{store === 'chromestore' ? '' : store === 'appstore' ? 'Download on the' : 'GET IT ON'}</span>
-		<span class="store-name">{store === 'appstore' ? 'App Store' : store === 'playstore' ? 'Google Play' : 'Chrome'}</span>
+		<span class="store-subtitle">{store === 'chromestore' ? 'GET IT ON' : store === 'appstore' ? 'Download on the' : 'GET IT ON'}</span>
+		<span class="store-name">{store === 'appstore' ? 'App Store' : store === 'playstore' ? 'Google Play' : 'Chrome Store'}</span>
 	</div>
 </a>
 
@@ -42,7 +42,7 @@ const { store, href, class: className = '' } = Astro.props;
 		align-items: center;
 		gap: 0.75rem;
 		padding: 0.5rem 1rem;
-		background-color: var(--intently-gray-900);
+		background-color: #212121;
 		color: white;
 		border-radius: var(--intently-radius-md);
 		text-decoration: none;
@@ -53,7 +53,7 @@ const { store, href, class: className = '' } = Astro.props;
 	.store-button:hover {
 		transform: translateY(-2px);
 		box-shadow: var(--intently-shadow-lg);
-		background-color: black;
+		background-color: #000000;
 	}
 
 	.store-button:active {

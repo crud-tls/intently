@@ -215,3 +215,31 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+/* === Dark Mode === */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--gray-gradient: rgba(30, 30, 30, 50%), #121212;
+		/* Blog-specific RGB color variables for dark mode */
+		--gray: 160, 160, 160;
+		--gray-dark: 232, 232, 232;
+	}
+
+	body {
+		color: var(--intently-text-primary);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--intently-text-primary);
+	}
+
+	blockquote {
+		background: var(--intently-gray-100);
+		border-left: 3px solid var(--intently-gray-400);
+	}
+}
