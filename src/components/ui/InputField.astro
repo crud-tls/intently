@@ -1,0 +1,184 @@
+---
+/**
+ * InputField Component
+ * A reusable form input component with label, error state, and accessibility support.
+ * Supports: text, email, select, and textarea input types.
+ */
+interface Props {
+	label: string;
+	type?: 'text' | 'email' | 'select' | 'textarea';
+	name: string;
+	required?: boolean;
+	error?: string;
+	placeholder?: string;
+	id?: string;
+	minlength?: number;
+	rows?: number;
+	options?: Array<{ value: string; label: string }>;
+	class?: string;
+	[attr: string]: any;
+}
+
+const {
+	label,
+	type = 'text',
+	name,
+	required = false,
+	error = '',
+	placeholder = '',
+	id,
+	minlength,
+	rows = 6,
+	options = [],
+	class: className = '',
+	...attrs
+} = Astro.props;
+
+// Generate unique ID if not provided
+const fieldId = id || `${name}-field`;
+const errorId = `${name}-error`;
+
+// Build CSS classes
+const groupClasses = `input-field-group ${error ? 'input-field-group-error' : ''} ${className}`.trim();
+const inputClasses = `input-field-input ${error ? 'input-field-input-error' : ''}`.trim();
+---
+
+<div class={groupClasses}>
+	<label for={fieldId}>
+		{label}
+		{required && <span class="input-field-required" aria-label="required">*</span>}
+	</label>
+
+	{type === 'textarea' ? (
+		<textarea
+			id={fieldId}
+			name={name}
+			placeholder={placeholder}
+			required={required}
+			class={inputClasses}
+			rows={rows}
+			minlength={minlength}
+			aria-describedby={errorId}
+			aria-invalid={error ? 'true' : 'false'}
+			{...attrs}
+		/>
+	) : type === 'select' ? (
+		<select
+			id={fieldId}
+			name={name}
+			required={required}
+			class={inputClasses}
+			aria-describedby={errorId}
+			aria-invalid={error ? 'true' : 'false'}
+			{...attrs}
+		>
+			<option value="" disabled selected>Select a subject</option>
+			{options.map((option) => (
+				<option value={option.value}>{option.label}</option>
+			))}
+		</select>
+	) : (
+		<input
+			type={type}
+			id={fieldId}
+			name={name}
+			placeholder={placeholder}
+			required={required}
+			class={inputClasses}
+			minlength={minlength}
+			aria-describedby={errorId}
+			aria-invalid={error ? 'true' : 'false'}
+			{...attrs}
+		/>
+	)}
+
+	{error && (
+		<span class="input-field-error" id={errorId} role="alert">
+			{error}
+		</span>
+	)}
+	{!error && (
+		<span class="input-field-error-placeholder" id={errorId}></span>
+	)}
+</div>
+
+<style>
+	.input-field-group {
+		display: flex;
+		flex-direction: column;
+		gap: var(--intently-space-xs);
+	}
+
+	.input-field-group label {
+		font-weight: 600;
+		font-size: 0.9375rem;
+		color: var(--intently-text-primary);
+	}
+
+	.input-field-required {
+		color: var(--intently-red);
+		margin-left: 0.125rem;
+	}
+
+	.input-field-input {
+		padding: var(--intently-space-sm) var(--intently-space-md);
+		border: 2px solid var(--intently-gray-200);
+		border-radius: var(--intently-radius-md);
+		font-size: 1rem;
+		font-family: inherit;
+		background: var(--intently-bg-primary);
+		color: var(--intently-text-primary);
+		transition: border-color var(--intently-transition-fast);
+		min-height: 44px;
+	}
+
+	.input-field-input::placeholder {
+		color: var(--intently-gray-400);
+	}
+
+	.input-field-input:focus {
+		outline: none;
+		border-color: var(--intently-blue);
+	}
+
+	.input-field-input-error {
+		border-color: var(--intently-red);
+		background-color: var(--intently-bg-error);
+	}
+
+	.input-field-error {
+		font-size: 0.875rem;
+		color: var(--intently-red);
+		min-height: 1.25em;
+		display: block;
+	}
+
+	.input-field-error-placeholder {
+		font-size: 0.875rem;
+		min-height: 1.25em;
+		display: block;
+		visibility: hidden;
+	}
+
+	/* Focus styles for accessibility */
+	.input-field-input:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
+	}
+
+	/* Dark mode adjustments */
+	@media (prefers-color-scheme: dark) {
+		.input-field-input {
+			background: var(--intently-bg-secondary);
+			border-color: var(--intently-gray-700);
+		}
+
+		.input-field-input::placeholder {
+			color: var(--intently-gray-500);
+		}
+
+		.input-field-input-error {
+			background-color: var(--intently-bg-error);
+		}
+	}
+</style>
