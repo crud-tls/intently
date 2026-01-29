@@ -2,6 +2,16 @@
 User-agent: *
 Disallow:
 
+# Explicitly allow Google crawlers
+User-agent: Googlebot
+Allow:
+
+User-agent: Googlebot-Image
+Allow:
+
+User-agent: Googlebot-News
+Allow:
+
 # Allow AI/LLM crawlers for AEO
 User-agent: GPTBot
 Disallow:
@@ -22,7 +32,7 @@ User-agent: ClaudeBot
 Disallow:
 
 User-agent: PerplexityBot
-Disallow:
+Allow:
 
 User-agent: Google-Extended
 Disallow:
