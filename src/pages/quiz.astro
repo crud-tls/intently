@@ -4,6 +4,27 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Button from '../components/ui/Button.astro';
 import Icon from '../components/ui/Icon.astro';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+
+const quizFaqs = [
+	{
+		question: "How do I know if I'm addicted to my phone?",
+		answer: "Signs of phone addiction include checking your phone within 5 minutes of waking, feeling anxious without it, failed attempts to reduce usage, phone use interfering with work or relationships, and mindlessly scrolling for hours. Take this free quiz to get a personalized assessment of your phone habits."
+	},
+	{
+		question: "Is this phone addiction test accurate?",
+		answer: "This quiz is based on behavioral science research and assesses 8 key areas of phone dependency. While not a clinical diagnosis, it provides a reliable indication of your relationship with your phone and personalized recommendations for improvement."
+	},
+	{
+		question: "What should I do if I score high on the phone addiction quiz?",
+		answer: "A high score indicates significant phone dependency. Start by downloading Intently (free, no account needed) to create mindful pauses before opening distracting apps. Set daily time limits, create phone-free zones, and consider speaking with a therapist about digital dependency."
+	},
+	{
+		question: "How much screen time is considered phone addiction?",
+		answer: "While there's no universal threshold, research suggests more than 4-6 hours of non-work screen time daily, combined with compulsive checking behavior and failed reduction attempts, indicates problematic phone use. This quiz evaluates multiple factors beyond just screen time hours."
+	}
+];
 
 const questions = [
 	{
@@ -93,8 +114,15 @@ const questions = [
 <html lang="en">
 	<head>
 		<BaseHead
-			title="Phone Addiction Test: Are You Addicted? (Free Quiz) | Intently"
-			description="Take our free phone addiction quiz to assess your smartphone usage. 8 science-backed questions reveal if you have phone addiction. Get personalized recommendations."
+			title="Phone Addiction Test: Am I Addicted to My Phone? (Free Quiz) | Intently"
+			description="Take this free phone addiction quiz to find out if you're addicted to your phone. Answer 8 science-backed questions and get a personalized screen time assessment with actionable recommendations. 100% private — no data stored."
+		/>
+		<FAQSchema faqs={quizFaqs} />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Phone Addiction Quiz", url: "https://liveintently.app/quiz" }
+			]}
 		/>
 	</head>
 	<body>
@@ -177,6 +205,18 @@ const questions = [
 
 						<h3>What Happens Next?</h3>
 						<p>Based on your score, you'll receive personalized recommendations to improve your digital wellbeing. Whether you need gentle reminders or more structured support, we'll guide you toward healthier habits.</p>
+
+						<h3>Frequently Asked Questions</h3>
+						{quizFaqs.map((faq) => (
+							<details class="faq-item">
+								<summary>{faq.question}</summary>
+								<p>{faq.answer}</p>
+							</details>
+						))}
+
+						<div class="quiz-links">
+							<p>Want to learn more? Read our guides on <a href="/blog/how-to-stop-phone-addiction">how to stop phone addiction</a> or <a href="/blog/how-to-reduce-screen-time">how to reduce screen time</a>. Ready to take action? <a href="/download">Download Intently free</a>.</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -573,6 +613,56 @@ const questions = [
 
 	.info-section p:last-child {
 		margin-bottom: 0;
+	}
+
+	.faq-item {
+		border: 1px solid var(--intently-gray-200);
+		border-radius: var(--intently-radius-md);
+		margin-bottom: var(--intently-space-sm);
+		overflow: hidden;
+	}
+
+	.faq-item summary {
+		padding: var(--intently-space-md);
+		font-weight: 600;
+		color: var(--intently-text-primary);
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.faq-item summary::after {
+		content: "+";
+		font-size: 1.25rem;
+		color: var(--intently-blue);
+		flex-shrink: 0;
+	}
+
+	.faq-item[open] summary::after {
+		content: "-";
+	}
+
+	.faq-item p {
+		padding: 0 var(--intently-space-md) var(--intently-space-md);
+		margin: 0;
+	}
+
+	.quiz-links {
+		margin-top: var(--intently-space-lg);
+		padding-top: var(--intently-space-lg);
+		border-top: 1px solid var(--intently-gray-200);
+	}
+
+	.quiz-links a {
+		color: var(--intently-blue);
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.quiz-links a:hover {
+		text-decoration: underline;
 	}
 
 	/* Responsive */

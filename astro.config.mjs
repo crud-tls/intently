@@ -29,7 +29,8 @@ export default defineConfig({
 				} else if (
 					item.url.includes('/features') ||
 					item.url.includes('/download') ||
-					item.url.includes('/quiz')
+					item.url.includes('/quiz') ||
+					item.url.includes('/compare')
 				) {
 					item.priority = 0.9;
 					item.changefreq = 'weekly';

@@ -16,6 +16,27 @@ faq:
     answer: "Paradoxically, no. Studies show people who reduce screen time report increased productivity. Why? Better focus, more deep work time, improved sleep, and reduced context-switching."
   - question: "Can kids reduce screen time using these methods?"
     answer: "Yes, with adaptations. Kids need more parental involvement, clearer boundaries, and emphasis on replacement activities. Model the behavior you want to see—kids mirror parents' phone use."
+howToSteps:
+  - name: "Track Your Current Usage Without Judgment"
+    text: "Install a usage tracking app and observe your patterns for one week without trying to change anything. Identify which apps consume the most time, when you reach for your phone, and what triggers mindless scrolling."
+  - name: "Set Realistic Daily Limits"
+    text: "Reduce screen time by 10-15% weekly instead of making extreme cuts. If you spend 2 hours on social media, aim for 1 hour 45 minutes this week, then 1 hour 30 minutes next week."
+  - name: "Enable Grayscale Mode"
+    text: "Remove color from your phone display to make it dramatically less appealing. Studies show grayscale can reduce phone pickups by 30-40%."
+  - name: "Create Phone-Free Zones and Times"
+    text: "Establish clear boundaries: no phones in the bedroom after 9 PM, phone-free meals, no screens for the first 60 minutes after waking."
+  - name: "Turn Off All Non-Essential Notifications"
+    text: "Keep only calls, messages from important contacts, and calendar alerts. Disable social media, news, promotional emails, and app suggestions."
+  - name: "Use Mindful Interventions, Not Hard Blocks"
+    text: "Use apps like Intently that create moments of awareness before opening distracting apps, rather than blocking them entirely. Research shows mindful interventions reduce unconscious app opens by 67%."
+  - name: "Build Replacement Habits"
+    text: "For every hour of reduced screen time, plan an alternative activity. Replace morning scrolling with a walk, evening YouTube with reading, and idle phone checking with breathing exercises."
+  - name: "Charge Your Phone Outside the Bedroom"
+    text: "Get an alarm clock and charge your phone in another room overnight. This improves sleep quality and prevents late-night scrolling sessions."
+  - name: "Use Focus Modes Strategically"
+    text: "Create custom focus modes for different activities like work, sleep, and exercise. Design your phone's behavior around the task at hand."
+  - name: "Review Progress Weekly and Adjust"
+    text: "Check your usage data weekly, celebrate reductions, identify remaining problem areas, and adjust your strategies. Consistent review keeps you accountable and motivated."
 ---
 
 **To reduce screen time effectively, start by tracking your current usage to understand your habits, then set realistic daily limits for distracting apps. Enable grayscale mode to make your phone less appealing, create phone-free zones in your home, and build replacement habits like reading or exercise. Apps like Intently help by providing mindful interventions rather than restrictive blocking, creating lasting behavior change.**

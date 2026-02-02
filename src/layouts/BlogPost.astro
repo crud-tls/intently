@@ -8,11 +8,12 @@ import BlogPostSchema from '../components/SEO/BlogPostSchema.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
 import SpeakableSchema from '../components/SEO/SpeakableSchema.astro';
+import HowToSchema from '../components/SEO/HowToSchema.astro';
 import AuthorBio from '../components/blog/AuthorBio.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, faq } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, faq, howToSteps } = Astro.props;
 const { currentPath } = Astro.url;
 const postUrl = `https://liveintently.app${currentPath}`;
 
@@ -61,6 +62,14 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 			speakableSelectors={["#article-intro", "#article-conclusion"]}
 		/>
 		{faq && <FAQSchema faqs={faq} />}
+		{howToSteps && (
+			<HowToSchema
+				name={title}
+				description={description}
+				image={heroImage}
+				steps={howToSteps}
+			/>
+		)}
 		<style>
 			body {
 				background: var(--intently-bg-primary);

@@ -19,6 +19,27 @@ faq:
     answer: "Yes. Studies link excessive phone use to increased anxiety, depression, sleep disruption, and reduced attention span. The constant dopamine hits from notifications rewire your brain's reward system, making it harder to feel satisfied without your phone."
   - question: "What's the best free app to stop phone addiction?"
     answer: "Intently is the best free option—it uses mindful interventions proven more effective than blocking, tracks usage automatically, and is 100% private with no data collection. Unlike paid alternatives, all features are free forever."
+howToSteps:
+  - name: "Use Mindful Interventions Instead of Blocking"
+    text: "Install Intently to create gentle full-screen reminders when opening distracting apps. Set custom intervention messages and allow yourself to proceed—the goal is awareness, not punishment."
+  - name: "Track Your Usage Without Judgment"
+    text: "Use automatic usage tracking to see real data about your phone habits. Review weekly summaries, identify peak usage times, and notice which apps consume the most time."
+  - name: "Set Realistic Daily Limits"
+    text: "Reduce usage by 15-20% gradually rather than making dramatic cuts. Start with your current average and reduce every two weeks."
+  - name: "Delete the Most Addictive Apps Temporarily"
+    text: "Identify your top 3 time-wasting apps and delete them for 7 days. Keep access via desktop browser only to add friction."
+  - name: "Create Phone-Free Zones"
+    text: "Make your bedroom, dining table, and bathroom phone-free zones. Charge your phone outside the bedroom overnight."
+  - name: "Replace Scrolling with Alternative Behaviors"
+    text: "Replace morning phone checking with journaling, commute scrolling with reading, and bedtime browsing with gentle yoga or music."
+  - name: "Use Grayscale Mode"
+    text: "Enable grayscale mode on your phone to make the screen less appealing. This single change can reduce screen time by 30-40%."
+  - name: "Turn Off All Non-Essential Notifications"
+    text: "Keep only calls, texts, and calendar alerts. Disable social media, news, games, and entertainment notifications to break the conditioning loop."
+  - name: "Implement the 5-Minute Rule"
+    text: "When you feel the urge to check your phone, wait 5 minutes. This brief delay activates rational decision-making and often eliminates the impulse."
+  - name: "Practice Regular Digital Detox Days"
+    text: "Schedule phone-free periods weekly. Start with a few hours and work up to a full day. Use this time for real-world activities and relationships."
 ---
 
 # How to Stop Phone Addiction: 15 Expert Strategies That Actually Work
