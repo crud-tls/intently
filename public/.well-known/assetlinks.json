@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.sadakat.thinkfaster",
+      "sha256_cert_fingerprints": [
+        "63:17:56:2E:4A:6C:02:F6:5D:4D:7B:30:8B:F1:32:D8:F0:2B:82:C5:8A:0D:7E:73:C2:BC:58:0E:99:54:86:72"
+      ]
+    }
+  }
+]
