@@ -23,57 +23,57 @@ faq:
 
 # Intently vs ScreenZen: Two Free Apps, Two Takes on the Same Idea
 
-If you have decided that hard blockers are not the answer to your screen time struggles, you have likely come across **Intently** and **ScreenZen**. These two apps share a core philosophy -- using **pause-based mindful interventions** instead of brute-force blocking -- but they execute that vision in meaningfully different ways.
+If you've decided that hard blockers aren't the answer to your screen time struggles, you've probably come across Intently and ScreenZen. Both apps share a core philosophy -- using pause-based mindful interventions instead of brute-force blocking -- but they execute that vision in meaningfully different ways.
 
-What makes this comparison interesting is that price is not the deciding factor. Both apps are free (ScreenZen has an optional premium tier, but its core features cost nothing). So the real question is not "which is cheaper?" but **"which style of intervention fits the way you think?"**
+What makes this comparison interesting is that price isn't the deciding factor. Both apps are free (ScreenZen has an optional premium tier, but its core features cost nothing). So the real question isn't "which is cheaper?" but **which style of intervention fits the way you think?**
 
 ## What Makes Each App Distinct
 
 ### Intently: Your Words, Your Rules
 
-When you open a tracked app, Intently shows a **full-screen intervention** with a message you have written yourself -- a question, a reminder of your goals, a breathing prompt, or whatever matters to you. You decide what you see, when you see it, and how long the pause lasts.
+When you open a tracked app, Intently shows a full-screen intervention with a message you've written yourself -- a question, a reminder of your goals, a breathing prompt, or whatever matters to you. You decide what you see, when you see it, and how long the pause lasts.
 
-Some people write themselves pointed questions: "Is this what you want to spend your time on right now?" Others use gentle nudges: "Remember -- you said you would read more this week." The key is that **you craft the experience**, which means the intervention can evolve as your goals change.
+Some people write themselves pointed questions: "Is this what you want to spend your time on right now?" Others use gentle nudges: "Remember -- you said you'd read more this week." You craft the experience, which means the intervention can evolve as your goals change.
 
-You always have the choice to proceed. The point is not to lock you out but to make every app launch a conscious decision rather than an autopilot reflex.
+You always have the choice to proceed. The point isn't to lock you out but to make every app launch a conscious decision rather than an autopilot reflex.
 
-**Why this matters long-term**: Generic messages tend to become wallpaper over time. When the words are yours, they tend to stay meaningful longer because they are tied to something you actually care about.
+**Why this matters long-term**: Generic messages tend to become wallpaper over time. When the words are yours, they tend to stay meaningful longer because they're tied to something you actually care about.
 
 ### ScreenZen: Structured Calm
 
-ScreenZen intercepts app launches with a **"take a breath" countdown screen**. You wait through a brief structured pause -- often paired with a breathing animation -- before the app opens. The pause creates friction and a natural moment to reconsider.
+ScreenZen intercepts app launches with a "take a breath" countdown screen. You wait through a brief structured pause -- often paired with a breathing animation -- before the app opens. The pause creates friction and a natural moment to reconsider.
 
-The experience is consistent and predictable: the same calm countdown, the same breathing rhythm, every time. ScreenZen also has solid **streak tracking**, which can be a powerful motivator if you are the kind of person who does not want to break a chain.
+The experience is consistent and predictable: the same calm countdown, the same breathing rhythm, every time. ScreenZen also has solid streak tracking, which can be a strong motivator if you're the kind of person who doesn't want to break a chain.
 
 You can still proceed after the pause. Many users find that even a few seconds of forced waiting is enough to break the compulsion.
 
-**Why this matters long-term**: There is something to be said for simplicity. You never have to think about what your intervention should say or whether it needs updating. It just works, the same way, every time.
+**Why this matters long-term**: There's something to be said for simplicity. You never have to think about what your intervention should say or whether it needs updating. It just works, the same way, every time.
 
-## Where They Genuinely Differ
+## Where They Differ
 
 ### Customization vs Consistency
 
 This is the core tradeoff. Intently gives you deep control -- different messages for different apps, adjustable timing, multiple intervention types (questions, affirmations, breathing, goals). ScreenZen gives you a reliable, structured pause that requires no configuration.
 
-Neither approach is inherently superior. If you are someone who enjoys tailoring your tools and finds that personalization keeps you engaged, Intently will feel like a better fit. If you prefer a set-it-and-forget-it approach where the app just does its thing without asking anything of you, ScreenZen's consistency is appealing.
+Neither approach is better in the abstract. If you enjoy tailoring your tools and find that personalization keeps you engaged, Intently will feel like a better fit. If you prefer a set-it-and-forget-it tool that does its thing without asking anything of you, ScreenZen's consistency is appealing.
 
 ### Privacy
 
-This is one area where there is a clear difference. Intently is **100% offline** -- no internet connection required, no account, no data collection of any kind. Your usage data never leaves your device.
+This is one area with a clear difference. Intently is 100% offline -- no internet connection required, no account, no data collection of any kind. Your usage data never leaves your device.
 
-ScreenZen is privacy-conscious compared to most apps, but it is not a zero-data approach. It collects minimal data and requires some connectivity for features like streak syncing. For most people this is perfectly fine, but if absolute privacy is non-negotiable for you, Intently is the only option here.
+ScreenZen is privacy-conscious compared to most apps, but it's not a zero-data approach. It collects minimal data and requires some connectivity for features like streak syncing. For most people that's perfectly fine, but if absolute privacy is non-negotiable, Intently is the only option here.
 
 ### Platform Support
 
-ScreenZen has an edge on mobile -- it supports both **iOS and Android** today. Intently currently covers **Android** with an iOS version on the way, but it also offers a **Chrome extension** for managing distracting websites on your computer, which ScreenZen does not have.
+ScreenZen has an edge on mobile -- it supports both iOS and Android today. Intently currently covers Android with an iOS version on the way, but it also offers a Chrome extension for managing distracting websites on your computer, which ScreenZen doesn't have.
 
 If you need an iPhone solution right now, ScreenZen is the pause-based app available to you. If you spend a lot of time distracted on your laptop, Intently's Chrome extension fills a gap that ScreenZen leaves open.
 
 ### Pricing Model
 
-Both are free, but the models differ slightly. Intently is completely free with no limitations -- every feature is available, no premium tier, no upsells. ScreenZen has a generous free tier covering its core pause features, with some advanced analytics and scheduling features available through a premium upgrade.
+Both are free, but the models differ slightly. Intently is completely free with no limitations -- every feature available, no premium tier, no upsells. ScreenZen has a generous free tier covering its core pause features, with some advanced analytics and scheduling features behind a premium upgrade.
 
-For the basics of what both apps do -- creating a pause before you mindlessly open an app -- you will not pay anything with either one.
+For the basics of what both apps do -- creating a pause before you mindlessly open an app -- you won't pay anything with either one.
 
 ## Usage Tracking and Streaks
 
@@ -83,22 +83,22 @@ Intently provides detailed, locally-stored analytics -- daily, weekly, and month
 
 ScreenZen puts more emphasis on streaks as a core motivational tool, with daily and weekly counters and mindful minutes tracking. Its analytics are solid, though some deeper insights may require the premium tier.
 
-If data privacy around your usage stats matters to you, Intently's local-only approach is notable. If streak motivation is what keeps you going, both apps deliver, with ScreenZen making it a slightly more central part of the experience.
+If data privacy around your usage stats matters to you, Intently's local-only approach is worth noting. If streak motivation is what keeps you going, both apps deliver, with ScreenZen making it a slightly more central part of the experience.
 
 [Download Intently Free](/download)
 
 ## How Pause-Based Interventions Work
 
-Both Intently and ScreenZen are built on the same behavioral principle: **interrupting automaticity**. When you reach for your phone on autopilot, a brief pause forces your brain out of habit mode and into conscious decision-making.
+Both Intently and ScreenZen are built on the same behavioral principle: interrupting automaticity. When you reach for your phone on autopilot, a brief pause forces your brain out of habit mode and into conscious decision-making.
 
-The general finding in behavioral science is that these kinds of mindful interventions tend to outperform hard blocking for sustained habit change. Hard blocking can trigger what psychologists call "reactance" -- the more you are told you cannot have something, the more you want it. Pause-based approaches sidestep this by keeping the choice in your hands while simply slowing you down enough to make that choice deliberately.
+The general finding in behavioral science is that mindful interventions tend to outperform hard blocking for sustained habit change. Hard blocking can trigger what psychologists call "reactance" -- the more you're told you can't have something, the more you want it. Pause-based approaches sidestep this by keeping the choice in your hands while simply slowing you down enough to make that choice deliberately.
 
 Where Intently and ScreenZen differ is in how they keep that pause effective over weeks and months:
 
-- **Intently** relies on **personalization** to prevent habituation. Because you write your own messages and can change them, the intervention can stay fresh and relevant as your goals evolve.
-- **ScreenZen** relies on **consistency** to build routine. The same breathing pause becomes a reliable ritual, and the streak tracking adds an external motivational layer.
+- **Intently** relies on personalization to prevent habituation. Because you write your own messages and can change them, the intervention can stay fresh as your goals evolve.
+- **ScreenZen** relies on consistency to build routine. The same breathing pause becomes a reliable ritual, and streak tracking adds an external motivational layer.
 
-Both strategies have merit. The risk with customization is that some users never bother to update their messages. The risk with consistency is that a repetitive prompt can eventually fade into background noise. Knowing which risk applies more to you is a good way to choose between them.
+Both strategies have merit. The risk with customization is that some users never bother to update their messages. The risk with consistency is that a repetitive prompt can eventually fade into background noise. Knowing which risk applies more to you is a good way to choose.
 
 ## Which App Fits You Better
 
@@ -106,9 +106,9 @@ Both strategies have merit. The risk with customization is that some users never
 
 - You want to write your own intervention messages and tailor the experience to your goals
 - Privacy is a firm requirement -- you want zero data collection and fully offline operation
-- You are on Android or use Chrome and want to manage both phone apps and websites
+- You're on Android or use Chrome and want to manage both phone apps and websites
 - You want every feature available for free, with no premium gates
-- You have found that generic prompts lose their impact on you over time
+- You've found that generic prompts lose their impact on you over time
 - You want different interventions for different apps (a pointed question for Instagram, a breathing exercise for Reddit)
 
 ### ScreenZen is likely the better fit if:
@@ -117,20 +117,20 @@ Both strategies have merit. The risk with customization is that some users never
 - You prefer a simple, consistent breathing pause that requires no configuration
 - Streak tracking is a primary motivator for you
 - You like a structured, predictable intervention every time
-- You are comfortable with a freemium model and may want advanced analytics later
+- You're comfortable with a freemium model and may want advanced analytics later
 - You want the same app on both iPhone and Android
 
 ## The Bigger Picture
 
-The fact that both Intently and ScreenZen exist -- and that both are free or nearly free -- is genuinely good news for anyone trying to be more intentional with their phone. A few years ago, your options were mostly hard blockers or willpower alone. Now there are thoughtful, pause-based alternatives that respect your autonomy while still providing meaningful friction.
+The fact that both Intently and ScreenZen exist -- and that both are free or nearly free -- is good news for anyone trying to be more intentional with their phone. A few years ago, your options were mostly hard blockers or willpower alone. Now there are thoughtful, pause-based alternatives that respect your autonomy while still providing meaningful friction.
 
-The difference between these two apps is not about quality. Both are well-made, both work, and both are grounded in the same behavioral insight. The difference is about **style**: do you want an intervention that speaks in your voice, or one that offers the same steady calm every time?
+The difference between these two apps isn't about quality. Both are well-made, both work, and both are grounded in the same behavioral insight. The difference is about style: do you want an intervention that speaks in your voice, or one that offers the same steady calm every time?
 
-There is no wrong answer. Pick the one that matches how you think, give it at least a few weeks, and pay attention to whether the pauses are still making you think or whether they have started to feel invisible. If the latter happens, that is your signal to either switch or adjust.
+There's no wrong answer. Pick the one that matches how you think, give it at least a few weeks, and pay attention to whether the pauses are still making you think or whether they've started to feel invisible. If the latter happens, that's your signal to adjust.
 
 [Download Intently for Android, iOS & Chrome](/download)
 
-**Questions or feedback?** Reach out at support@liveintently.app.
+Questions or feedback? Reach out at support@liveintently.app.
 
 ---
 

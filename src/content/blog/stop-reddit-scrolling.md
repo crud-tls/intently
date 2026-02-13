@@ -34,161 +34,69 @@ howToSteps:
 
 # Stop Reddit Scrolling: How to Use Reddit Without Losing Hours
 
-**You opened Reddit to check one post 45 minutes ago. You've now read about a relationship crisis in AITA, learned an obscure history fact, watched three videos of cats being weird, debated someone about a topic you didn't care about 10 minutes ago, and completely forgotten what you originally came for.**
+Reddit has a particular talent for eating your time. You go in to check one thread and somehow end up reading about a stranger's divorce, learning an obscure fact about octopuses, watching three oddly satisfying videos, and arguing with someone about a topic you didn't care about ten minutes ago. An hour gone, and you've completely forgotten what you originally came for.
 
-Reddit is one of the most time-consuming platforms on the internet — and one of the hardest to quit because it's also genuinely useful. Unlike TikTok or Instagram, Reddit contains real information, helpful communities, and substantive discussions. The challenge isn't eliminating Reddit — it's using it intentionally.
+The tricky part is that Reddit isn't just a time-waster -- it's genuinely useful. There are real answers, helpful communities, and substantive discussions on the platform. That's what makes it harder to walk away from than something like TikTok, where you at least know you're just being entertained. Reddit lets you tell yourself you're "learning."
 
-## Why Reddit Is Uniquely Addictive
+## What Makes Reddit Different
 
-Reddit's addiction mechanics differ from other social platforms in ways that make it particularly insidious:
+Most social platforms hook you with one type of content. Instagram is images. TikTok is short video. Reddit hooks you with everything: text, links, images, video, debates, advice, humor, and rabbit holes within rabbit holes. That diversity means your brain never hits a saturation point. There's always something new and different on the next scroll.
 
-### The Infinite Novelty Problem
+The subreddit structure adds another layer. You're not just a Reddit user -- you belong to specific communities. Leaving Reddit can feel like leaving those communities, which triggers a real sense of loss.
 
-Instagram serves you photos. TikTok serves you videos. Reddit serves you **everything**: text posts, links, images, videos, discussions, news, advice, humor, stories, debates, tutorials, and rabbit holes within rabbit holes. This content diversity means there is always something new and interesting — your brain never reaches a satiation point.
+And then there's the unpredictability. A post might have 5 upvotes or 5,000. A comment might be hilarious, insightful, or completely boring. You keep scrolling because the next one might be the most interesting thing you've read all week. It's the same mechanism that makes slot machines work.
 
-### The Community Identity Trap
+## Catch Yourself Before the First Scroll
 
-Reddit's subreddit structure creates **identity investment**. You're not just a Reddit user — you're a member of r/cooking, r/personalfinance, r/gaming, and r/ADHD. Each community becomes part of your identity. Leaving Reddit feels like leaving communities you belong to, which triggers loss aversion.
+Once you're on the front page, the variable rewards kick in and pulling away gets much harder. The most effective intervention happens before you start scrolling.
 
-### The Variable Reward Engine
+**On your phone:** Install [Intently](/download) and add Reddit to your tracked apps. Every time you tap the Reddit icon, you'll see a brief prompt asking if this is an intentional visit.
 
-Reddit's voting system creates powerful variable rewards:
-- A post you made might get 5 upvotes or 5,000
-- The top comment on any thread might be hilarious, insightful, or boring
-- Clicking any link might lead to a fascinating article or a dead end
+**On your computer:** Intently's Chrome extension catches the automatic "bored → type reddit.com → scroll" habit that most desktop users have. A pause screen appears before the page loads, giving you a moment to decide.
 
-This unpredictability is identical to the slot machine mechanism that makes gambling addictive. You keep scrolling because the next post *might* be the most interesting thing you've read all week.
+Most Reddit sessions start unconsciously. You don't plan to spend 90 minutes there -- you plan to "quickly check," and 90 minutes later you realize what happened. The pause interrupts that autopilot.
 
-### The Rabbit Hole Architecture
+## Stop Browsing the Front Page
 
-Reddit is designed for depth. One interesting post leads to:
-- Reading all the comments
-- Clicking through to a linked article
-- Discovering a new subreddit mentioned in the comments
-- Browsing that subreddit's top posts
-- Reading comments on those posts
-- Finding another new subreddit
+The front page and r/all are engagement-optimized feeds showing you the most addictive content across all of Reddit. This is where hours disappear.
 
-Each rabbit hole can consume 20-60 minutes, and they chain together endlessly. You enter Reddit through one door and exit through a completely different one, hours later.
+Instead, go directly to 2-3 specific subreddits that genuinely add value (r/personalfinance, a professional subreddit, whatever matters to you). Bookmark those subreddits directly. Unsubscribe from the high-volume, low-value ones like r/funny and r/askreddit.
 
-### The "Just One More" Post Illusion
+The front page is infinite. A specific subreddit has a finite amount of new content. You can read the new posts and actually be done. That natural endpoint changes everything.
 
-Unlike videos (which have defined lengths), Reddit posts vary wildly. A quick meme takes 3 seconds. A compelling TIFU story takes 5 minutes. A detailed AMA takes 30 minutes. You can't predict the time investment of the next post, so you keep scrolling, telling yourself "just one more quick one."
+## Give Reddit a Schedule
 
-## Signs You Have a Reddit Problem
+Instead of Reddit being available whenever you're bored, pick specific times:
 
-Ask yourself honestly:
+- 15 minutes during lunch
+- 20 minutes in the evening after you've finished what you need to do
+- 30 minutes on weekend mornings with coffee
 
-- Do you open Reddit automatically when you're bored, without conscious decision?
-- Have you spent 2+ hours on Reddit when you intended to spend 15 minutes?
-- Do you check Reddit first thing in the morning or last thing at night?
-- Have you been late to obligations because you were reading Reddit?
-- Do you find yourself refreshing subreddits you already checked 10 minutes ago?
-- Do you participate in arguments with strangers about topics you don't actually care about?
-- Has someone commented on how much time you spend on Reddit?
-- Do you feel worse (drained, anxious, unproductive) after Reddit sessions but keep returning?
+Set a timer before opening. When it goes off, close Reddit immediately. If you catch yourself reaching for it outside your windows, that's a sign the habit is still running on autopilot -- exactly what Intently is designed to catch.
 
-If 3 or more of these apply, your Reddit use has moved from intentional to compulsive. For a comprehensive assessment, take our [Phone Addiction Quiz](/quiz).
+## Switch to a Less Addictive Interface
 
-## Strategy 1: Use Mindful Interventions Before Reddit Opens
+New Reddit is deliberately designed for maximum engagement. It has inline media previews, infinite scroll, and algorithm-sorted feeds. You can get the same content through a much less addictive interface.
 
-The most effective approach for Reddit is catching yourself **before** the scrolling starts. Once you're on the front page, the variable reward mechanism kicks in and pulling away becomes much harder.
+**old.reddit.com** is the classic Reddit layout. It's less visually stimulating, doesn't autoplay video, and requires clicking into posts. It forces more intentional browsing. You can also try RSS readers that pull in specific subreddit feeds, which eliminates the browsing behavior entirely.
 
-**How to implement with Intently:**
+Same content, much less pull. It's like the difference between a casino and a quiet card game.
 
-**On your phone:** Install [Intently](/download) and add the Reddit app to your tracked apps. Every time you tap the Reddit icon, you'll see a gentle prompt: "You wanted to spend less time on Reddit. Do you still want to open it?"
+## Have Alternatives Ready
 
-**On your computer:** Install the Intently Chrome extension. When you type "reddit.com" or click a Reddit link, a pause screen appears before the page loads. This catches the automatic "bored → type reddit → scroll" habit that most desktop Reddit users have.
+If boredom is your main trigger, keep a book near wherever you usually scroll. If it's procrastination, try starting whatever you're avoiding for just two minutes -- momentum tends to build from there. If it's curiosity, save articles and videos for your scheduled Reddit windows instead of diving in right now.
 
-**Why this works:** Most Reddit sessions start unconsciously. You don't decide to spend 90 minutes on Reddit — you decide to "quickly check" Reddit, and 90 minutes later you realize what happened. The mindful pause interrupts the automatic behavior at the only point where intervention is effective: before the first scroll.
+The formula is simple: "When I feel [trigger], instead of opening Reddit, I'll [specific alternative]." Write a few of these down. Having them ready makes the difference between caving and choosing differently.
 
-## Strategy 2: Replace Front-Page Browsing with Direct Subreddit Visits
+## Take Action
 
-The Reddit front page and r/all are engagement-optimized feeds designed to show you the most addictive content across all of Reddit. This is where hours disappear.
+1. [Download Intently](/download) -- set up the app and Chrome extension for Reddit
+2. Bookmark 3-5 specific subreddits and delete your front-page bookmark
+3. Decide when you'll use Reddit and for how long
+4. Switch to old.reddit.com
+5. [Take the Phone Addiction Quiz](/quiz) to understand your broader relationship with technology
 
-**The switch:**
-
-**Instead of:** Opening reddit.com and browsing the front page or r/all
-**Do this:** Go directly to 2-3 specific subreddits you actually value
-
-**How to implement:**
-1. Identify 3-5 subreddits that genuinely add value to your life (e.g., r/personalfinance, r/cooking, r/your_profession)
-2. Bookmark these subreddits directly (not the front page)
-3. Visit only these bookmarked subreddits when you use Reddit
-4. Unsubscribe from high-volume, low-value subreddits (r/funny, r/memes, r/pics, r/askreddit)
-5. Remove Reddit's front page from your bookmarks entirely
-
-**Why this works:** The front page is the addiction engine. Specific subreddits have finite content — you can read the new posts and be done. The front page is infinite. By switching from passive browsing to purposeful visiting, you naturally limit your time because there's a natural endpoint.
-
-## Strategy 3: Set Specific Reddit Windows
-
-Instead of Reddit being available all day, designate specific times for Reddit use:
-
-**Example schedule:**
-- **Lunch break:** 15 minutes of Reddit (specific subreddits only)
-- **Evening wind-down:** 20 minutes of Reddit (after obligations are done)
-- **Weekend:** 30 minutes morning Reddit with coffee
-
-**Rules for Reddit windows:**
-- Set a timer before opening Reddit
-- When the timer goes off, close Reddit immediately (this is where Intently helps — it catches you if you try to return outside your window)
-- Don't use Reddit as a reward for completing tasks (this reinforces the dopamine association)
-
-**Why this works:** Scheduling transforms Reddit from a default behavior (something you do whenever you're bored) into a deliberate activity (something you do at specific times). This shift from unconscious to conscious is the foundation of mindful technology use.
-
-## Strategy 4: Use Less Addictive Reddit Interfaces
-
-New Reddit (the current default) is deliberately designed for maximum engagement with infinite scroll, inline media previews, and algorithm-sorted feeds. You can reduce Reddit's addictiveness by changing how you access it.
-
-**Options:**
-- **old.reddit.com:** The classic Reddit interface. Less visually stimulating, no inline video autoplay, requires clicking into posts. Forces more intentional browsing.
-- **Third-party Reddit apps:** Many offer chronological sorting, no infinite scroll, and no algorithmically optimized feeds.
-- **RSS readers:** Subscribe to specific subreddit RSS feeds and read them in an RSS reader. This eliminates the browsing behavior entirely.
-
-**Why this works:** New Reddit is an engagement machine. Old Reddit is a discussion forum. The same content is available on both, but the friction and interface design of old Reddit naturally limits how long you browse. It's like the difference between a casino and a quiet card game — same activity, vastly different engagement.
-
-## Strategy 5: Build Replacement Habits for Reddit Triggers
-
-Identify what drives you to Reddit and prepare specific alternatives:
-
-| Reddit Trigger | What You Actually Need | Replacement |
-|---------------|----------------------|-------------|
-| **Boredom** | Stimulation | Keep a book by your desk/couch |
-| **Procrastination** | Avoidance relief | Start a 2-minute task (momentum builds) |
-| **Curiosity** | Learning | Save articles/videos to watch during Reddit window |
-| **Loneliness** | Connection | Text a friend, call someone |
-| **News checking** | Information | Check a single news source once daily |
-| **Arguing** | Intellectual engagement | Join a local discussion group or book club |
-
-**The implementation intention formula:**
-"When I feel [trigger], instead of opening Reddit, I will [specific alternative]."
-
-Examples:
-- "When I feel bored at my desk, instead of opening Reddit, I will read one chapter of my current book."
-- "When I'm procrastinating on a task, instead of opening Reddit, I will set a 5-minute timer and work on just the first step."
-- "When I feel the urge to check Reddit before bed, I will read my Kindle instead."
-
-**Why this works:** You can't eliminate a habit without replacing it. If you remove Reddit without filling the time, your brain will find another distraction. By preparing specific alternatives, you give your brain a healthier path through the same habit loop.
-
-## The Reddit-Specific Challenge: Useful vs. Mindless
-
-Reddit is harder to quit than TikTok or Instagram because it genuinely contains useful content. You learn things on Reddit. You get advice. You find solutions to problems. This utility creates a rationalization: "Reddit isn't wasting time — I'm learning."
-
-The distinction to make:
-- **Intentional Reddit:** Going to r/personalfinance to research Roth IRA options = productive
-- **Mindless Reddit:** Spending 2 hours on the front page because you opened Reddit to check one thing = not productive
-
-Tools like Intently help you maintain this distinction by creating a conscious decision point before each Reddit session. The prompt doesn't say "Don't use Reddit." It asks "Is this an intentional visit?" That question alone shifts your usage from compulsive to conscious.
-
-## Take Action Today
-
-1. **[Download Intently](/download)** — Set up the Android app and Chrome extension to create mindful pauses before Reddit
-2. **Bookmark 3-5 specific subreddits** and delete your front-page bookmark
-3. **Set your Reddit windows** — Decide when you'll use Reddit and for how long
-4. **Switch to old.reddit.com** for less addictive browsing
-5. **[Take the Phone Addiction Quiz](/quiz)** — Understand your overall relationship with technology
-
-Reddit is a tool. Like any tool, it can be used intentionally or it can use you. The strategies above help you keep Reddit's value while eliminating its cost.
+Reddit is a tool. These strategies help you keep its value while reclaiming the hours that currently disappear into the front page.
 
 ---
 
@@ -200,7 +108,3 @@ Reddit is a tool. Like any tool, it can be used intentionally or it can use you.
 - [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction)
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [Social Media Addiction Signs: 10 Warning Signs](/blog/social-media-addiction-signs)
-
----
-
-*Reddit can be one of the best resources on the internet when used intentionally. These strategies help you keep the valuable parts while eliminating the hours of mindless scrolling.*

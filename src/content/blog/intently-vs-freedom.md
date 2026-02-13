@@ -21,101 +21,97 @@ faq:
     answer: "Yes. Some users run Freedom during work hours for strict blocking and use Intently during personal time for mindful habit-building. This can work, though most people find it simpler to commit to one approach."
 ---
 
-# Intently vs Freedom: Two Different Philosophies for Managing Screen Time
+# Intently vs Freedom: Two Very Different Approaches to Screen Time
 
-Most screen time apps fall into one of two camps. The first says: block the distractions and remove the choice. The second says: keep the choice, but make it a conscious one.
+If you've been looking into screen time apps, you've probably noticed that Freedom and Intently keep coming up -- and they couldn't be more different. Freedom is a heavy-duty cross-device blocker that physically prevents you from accessing distracting apps and websites. Intently is a free, privacy-first app that inserts a moment of reflection before you open something mindlessly. Same goal (less wasted screen time), totally different methods.
 
-Freedom and Intently are arguably the best representatives of these two philosophies. Freedom is one of the most powerful cross-device blockers on the market. Intently is a free, privacy-first app built around mindful interventions. They look nothing alike, they work nothing alike, and they are designed for different kinds of people.
+We built Intently, so we're obviously biased. But we genuinely think Freedom is a strong product for a certain kind of user, and we want to lay out where each app shines and where it doesn't -- so you can figure out which one actually fits your situation.
 
-This article is an honest look at both -- where each one excels, where each one falls short, and how to decide which approach fits your life.
+## The Psychology Behind Blocking vs. Pausing
 
-## Why Blocking Fails for Many People (and Why It Works for Some)
+Before getting into features, it's worth understanding why these apps work the way they do, because that's really the core difference.
 
-Before comparing features, it is worth understanding the psychology behind these two approaches, because that is where the real difference lies.
+Freedom's approach is straightforward: if you can't access the distraction, you can't be distracted. And for certain situations -- like a writer staring down a deadline who knows they'll check Twitter every ten minutes if given the chance -- removing the option entirely can be the difference between shipping and not shipping. Freedom's Locked Mode, which literally prevents you from turning off a block session once it starts, exists for exactly this kind of moment.
 
-Hard blocking -- the kind Freedom specializes in -- works on a simple principle: if you cannot access the distraction, you cannot be distracted by it. For certain situations, this is exactly right. If you are a writer facing a deadline and you know you will check Twitter every ten minutes if given the chance, removing the option entirely can be the difference between shipping and not shipping. Freedom's Locked Mode, which prevents you from disabling a block session once it starts, is specifically designed for this kind of scenario.
+But blocking has a real limitation that anyone who's used a blocker has probably felt firsthand. Psychologists call it **psychological reactance** -- you want something more when you're told you can't have it. You end up watching the countdown timer, switching to an unblocked device, or binge-using the app the second the session expires. Research suggests restriction-based approaches work well during active use, but they often don't change the underlying behavior once the restrictions come off.
 
-But blocking has a well-documented limitation. Psychologists call it **psychological reactance** -- the tendency to want something more when you are told you cannot have it. Anyone who has used a blocking app has probably experienced this: watching the countdown timer, wondering when the session ends, switching to a device that is not blocked, or binge-using the app the moment the session expires. Research suggests that restriction-based approaches can be effective during active use but often fail to change underlying behavior once the restrictions are removed.
+Mindful intervention apps like Intently make a different bet. Instead of locking you out, they insert a brief pause before you open a tracked app. The idea is that most mindless phone use isn't a deliberate decision. You're not sitting down and choosing to scroll Instagram for 45 minutes -- you're picking up your phone out of habit, tapping an app without thinking, and then 45 minutes have passed. A well-timed pause breaks that automatic loop without the frustration of being locked out.
 
-Mindful intervention apps like Intently take a different bet. Instead of removing your access, they insert a brief pause -- a moment of reflection -- before you open a tracked app. The idea is that most mindless phone use is not deliberate. You are not sitting down and deciding to scroll Instagram for 45 minutes. You are picking up your phone out of habit, tapping an app without thinking, and then 45 minutes have passed. A well-timed intervention breaks that automatic loop without creating the frustration that comes from being locked out.
+One Sec, an app with a similar intervention philosophy, published a study with the Max Planck Institute showing their approach led to a 57% reduction in social media use. That's a meaningful number -- brief, well-designed pauses can have a real impact on behavior without any blocking at all.
 
-One Sec, an app with a similar philosophy, published a study with the Max Planck Institute showing that their intervention approach led to a 57% reduction in social media use. This is a meaningful data point: brief, well-designed pauses can have a significant impact on behavior without any blocking at all.
+Neither approach is wrong. They genuinely serve different needs.
 
-Neither approach is wrong. They serve different needs. The question is which need is yours.
+## Freedom: Best-in-Class Blocking, Not Much Else
 
-## What Freedom Does Well
+Let's give credit where it's due -- Freedom is the most capable cross-device blocker out there, and it's not particularly close.
 
-Freedom deserves credit for being the most capable cross-device blocker available. Here is what it offers:
+It works on iOS, Android, Windows, Mac, and Chrome, and it syncs across all of them. Block Instagram and it's blocked everywhere -- your phone, your laptop, your desktop. No device-hopping to sneak around it. For people who need that level of enforcement, nothing else matches it.
 
-**Hard blocking across every platform.** Freedom works on iOS, Android, Windows, Mac, and Chrome. More importantly, it syncs across all of them. If you block Instagram, it is blocked on your phone, your laptop, and your desktop simultaneously. No switching devices to get around it. For people who need this level of enforcement, Freedom is genuinely unmatched.
+Locked Mode is the standout feature. Start a session and you genuinely cannot turn it off. You can't uninstall the app to get around it. You're locked out until the timer runs out. For deep work, it's powerful.
 
-**Locked Mode.** This is Freedom's signature feature. Once you start a Locked Mode session, you cannot turn it off. You cannot uninstall the app to get around it. You are locked out of whatever you blocked until the timer runs out. For deep work sessions, this is powerful.
+The scheduling system is also well thought out. You can set up recurring sessions -- say, blocking social media and news every weekday from 9 to 5 -- and create custom blocklists for different contexts like work, study, or sleep. There are also ambient focus sounds you can play during sessions, which is a nice touch.
 
-**Scheduled sessions and blocklists.** Freedom lets you create recurring sessions -- for example, blocking social media and news sites every weekday from 9am to 5pm automatically. You can create custom blocklists for different contexts (work, study, sleep) and stack them as needed. The scheduling system is sophisticated and well-designed.
+Where Freedom runs into trouble is everything outside those active sessions. It doesn't really track your usage in a meaningful way. It doesn't help you understand your habits or offer much in the way of behavior change tools. When the session ends, you're on your own -- and whatever habits drove you to install a blocking app are still there, waiting.
 
-**Ambient sounds.** A smaller feature, but Freedom includes focus sounds you can play during blocking sessions. It is a nice touch that adds to the "focus session" experience.
+There's also the cost. After a limited free trial (usually 7 sessions), you're looking at $8.99/month, $40/year, or $120 for lifetime access. That's fair for a professional productivity tool, but it's a real barrier if you're just starting to think about your screen time.
 
-Where Freedom falls short is in everything outside of active blocking sessions. It does not track your usage in any meaningful way. It does not help you understand your habits. It does not offer any tools for behavior change. When the session ends, you are back on your own -- and the habits that led you to install a blocking app in the first place are still there.
+## Intently: Awareness-First, With Some Trade-Offs
 
-Freedom also requires a paid subscription. After a limited free trial (typically 7 sessions), you need to pay $8.99/month, $40/year, or $120 for a lifetime plan. For a professional productivity tool, this is reasonable. For someone exploring digital wellbeing for the first time, it is a barrier.
-
-## What Intently Does Well
-
-Intently takes a fundamentally different approach. There is no blocking. Instead, when you open a tracked app, a full-screen intervention appears with a prompt you have customized yourself:
+Intently doesn't block anything. Instead, when you open a tracked app, a full-screen intervention pops up with a prompt you've customized:
 
 - "Is this aligned with what you want to accomplish today?"
 - "Take a breath. What were you about to do?"
 - A breathing exercise
 - A custom message tied to your personal goals
 
-You can always tap through and continue to the app. The intervention is not a wall -- it is a pause. Users commonly report that this brief moment of reflection is enough to make them realize they did not actually want to open the app in the first place, and they close it voluntarily.
+You can always tap through and continue. The intervention isn't a wall -- it's a pause. And users tell us, over and over, that this brief moment of reflection is often enough to make them realize they didn't actually want to open the app. They close it voluntarily.
 
-**Detailed usage tracking.** Unlike Freedom, Intently tracks how you actually use your phone -- daily, weekly, and monthly summaries, category breakdowns, baseline comparisons, progress visualization, and exportable reports. This is where the "awareness" philosophy comes through. You cannot change what you do not measure, and Intently gives you a clear picture of your habits over time.
+Beyond interventions, Intently offers detailed usage tracking -- daily, weekly, and monthly summaries, category breakdowns, baseline comparisons, progress visualization, and exportable reports. Freedom barely tracks anything, so this is a big differentiator. You can't change what you don't measure, and Intently gives you a clear picture of how your habits shift over time.
 
-**Streaks and motivation.** Intently includes streak tracking, milestone celebrations, and achievement badges. These are small features, but they add up. Building a streak creates positive momentum, and the app is designed to be encouraging rather than punitive -- including streak recovery options for days when you slip.
+There's also streak tracking, milestone celebrations, and achievement badges. These sound small, but building a streak creates real momentum. The app is designed to encourage you rather than punish you -- including streak recovery for days when you slip.
 
-**Privacy.** Intently is 100% offline. No account required, no cloud sync, no data collection of any kind. Your usage data never leaves your device. For people who care about privacy, this is a meaningful differentiator. Freedom's cross-device sync, by design, requires cloud infrastructure and an account with your email.
+On privacy, Intently is 100% offline. No account, no cloud sync, no data collection of any kind. Your usage data stays on your device, period. Freedom's cross-device sync requires cloud infrastructure and an account with your email, which is a trade-off inherent to how it works.
 
-**Price.** Intently is free. Not freemium, not free-with-ads, not free-trial-then-pay. All features are available to everyone at no cost.
+And Intently is free. Not freemium, not free-with-ads. All features, no cost.
 
-Where Intently falls short is platform coverage. It currently supports Android and Chrome, with iOS support coming. There is no desktop app for Windows or Mac. If you need to block distractions on your laptop during work, Intently cannot help with that today. Freedom has a clear advantage here.
+Now, the honest downsides. Intently currently supports Android and Chrome, with iOS coming. There's no desktop app for Windows or Mac yet. If you need to block distractions on your laptop during work hours, Intently can't do that today -- and Freedom clearly wins there.
 
-Intently also cannot stop you from opening an app if you really want to. That is by design, but it means that for someone who truly cannot resist -- who will tap through any intervention without pausing -- Freedom's hard blocking may be a more appropriate tool.
+The other limitation is baked into the design itself. Intently can't stop you if you're determined to tap through. For someone who will blow past any intervention without a second thought, Freedom's hard blocking might genuinely be the better tool.
 
 [Try Intently free on Android or Chrome](/download)
 
-## Honest Comparison Table
+## Side-by-Side Comparison
 
 | | Intently | Freedom |
 |---|---|---|
-| **Philosophy** | Awareness and choice | Restriction and enforcement |
-| **Price** | Free | $40/year or $120 lifetime |
-| **Platforms** | Android, Chrome (iOS coming) | iOS, Android, Windows, Mac, Chrome |
-| **Privacy** | Fully offline, no account | Account required, cloud sync |
-| **Blocking** | No (by design) | Yes, with Locked Mode |
-| **Cross-device sync** | No | Yes |
-| **Usage analytics** | Detailed tracking and reports | Minimal session history |
-| **Streak tracking** | Yes | No |
-| **Scheduling** | Always-on interventions | Sophisticated time-based scheduling |
-| **Behavior change tools** | Mindful prompts, breathing exercises, goal-setting | None beyond blocking |
-| **Best scenario** | Building lasting habits over time | Enforcing focus during work sessions |
-| **Rating** | 4/5 (limited platform support) | 4/5 (no behavior change tools) |
+| Philosophy | Awareness and choice | Restriction and enforcement |
+| Price | Free | $40/yr or $120 lifetime |
+| Platforms | Android, Chrome (iOS coming) | iOS, Android, Windows, Mac, Chrome |
+| Privacy | Fully offline, no account | Account required, cloud sync |
+| Blocking | No (by design) | Yes, with Locked Mode |
+| Cross-device sync | No | Yes |
+| Usage analytics | Detailed tracking and reports | Minimal session history |
+| Streaks | Yes | No |
+| Scheduling | Always-on interventions | Time-based scheduling |
+| Behavior change | Mindful prompts, breathing exercises, goals | None beyond blocking |
+| Best for | Building lasting habits | Enforcing focus during work |
+| Rating | 4/5 (limited platforms) | 4/5 (no behavior change tools) |
 
-## Who Should Choose What
+## So Which One Should You Actually Use?
 
-**Freedom is the right choice if** your primary problem is staying focused during defined work periods. If you are a freelancer, student, or professional who needs to eliminate distractions between 9 and 5, and you work across multiple devices, Freedom is purpose-built for that. Its Locked Mode and cross-device sync are best-in-class features that no other app replicates as well. The $40/year annual plan is a reasonable investment for anyone whose livelihood depends on sustained focus.
+If your main problem is staying focused during defined work blocks -- you're a freelancer, student, or professional who needs distractions gone between 9 and 5 across multiple devices -- Freedom is built for that. Its Locked Mode and cross-device sync are best-in-class, and $40/year is a reasonable investment if your livelihood depends on sustained focus.
 
-**Intently is the right choice if** your goal is to change your overall relationship with your phone. If you find yourself picking up your phone without thinking, scrolling through apps out of habit rather than intent, and feeling like your screen time is something that happens to you rather than something you choose -- Intently is designed for exactly that problem. It is also the right choice if privacy matters to you, if you do not want to pay for a screen time app, or if you have tried blocking apps before and found that they did not change your behavior outside of active sessions.
+If your goal is broader than productivity -- if you want to change your overall relationship with your phone, if you catch yourself picking it up without thinking, if your screen time feels like something that happens to you rather than something you choose -- that's the problem Intently is designed for. It's also worth trying if you care about privacy, don't want to pay for a screen time app, or have tried blocking apps before and found they didn't change much once the sessions ended.
 
-**Neither app is the right choice** if you are looking for parental controls or need to manage someone else's device usage. Both are designed for adults managing their own behavior.
+One more thing: neither app is meant for parental controls or managing someone else's device. Both are built for adults managing their own behavior.
 
-## The Bigger Picture
+## Where This Is All Heading
 
-The conversation around screen time has matured a lot in recent years. Early approaches were almost entirely restriction-based -- block the apps, set time limits, treat your phone like an adversary. That works for some people, and Freedom is the best tool in that category.
+The conversation around screen time has shifted a lot in recent years. The early wave was almost entirely about restriction -- block the apps, set time limits, treat your phone like the enemy. That works for some people, and Freedom is the best tool in that category.
 
-But there is growing recognition that for many people, the more sustainable path is building awareness rather than imposing restrictions. The goal is not to never use your phone -- it is to use it deliberately, on your own terms. That is what mindful intervention apps are designed for, and it is the bet Intently is making.
+But more and more, people are recognizing that the sustainable path for most of us is building awareness rather than relying on restrictions. The goal isn't to never use your phone -- it's to use it deliberately, on your terms. That's the approach Intently is built around.
 
-The good news is that you do not have to take anyone's word for it. Freedom offers a free trial. Intently is entirely free. You can try both and see which philosophy resonates with how your mind actually works.
+The good thing is you don't have to take our word for it. Freedom offers a free trial, and Intently is entirely free. Try both and see which one clicks with how your mind actually works.
 
 [Download Intently for Android and Chrome](/download)
 

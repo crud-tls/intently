@@ -34,202 +34,97 @@ howToSteps:
 
 # YouTube Shorts Addiction: How to Stop the Vertical Video Loop
 
-**You opened YouTube to follow a tutorial on Excel formulas. Somehow, twenty minutes later, you are watching a man silently assemble a tiny hamburger. You have no idea how you got here. You were supposed to be working.**
+There's a specific feeling that comes with a YouTube Shorts spiral. It's not even enjoyable, exactly. You're swiping on autopilot, half-watching a clip of someone pressure-washing a driveway, then a cat falling off a counter, then a cooking hack you'll never try. Ten minutes pass. Twenty. You put the phone down feeling vaguely worse than before you picked it up, but you couldn't really tell someone what you watched.
 
-This is the defining problem of YouTube Shorts: it does not require you to seek it out. It lives inside an app you already use for perfectly legitimate reasons, and it hijacks sessions that started with real intent. That piggybacking problem makes YouTube Shorts a fundamentally different beast from TikTok or Instagram Reels, and it requires a different set of solutions.
+That's the thing about Shorts. It doesn't feel like binge-watching. It feels like nothing -- a blank spot in your day that leaves you a little drained and slightly annoyed at yourself.
 
-## The Piggybacking Problem: Why YouTube Shorts Is Uniquely Dangerous
+If that sounds familiar, you're not alone, and it's not a willpower failure. Shorts is designed to keep you swiping, and unlike TikTok or Reels, it lives inside an app you probably can't just delete.
 
-Every other major short-form video platform requires a deliberate action to engage. You have to open TikTok. You have to tap the Reels tab in Instagram. These are separate decisions, and each one is a moment where your brain can intervene and say "maybe not right now."
+## Shorts Lives Where You Already Are
 
-YouTube Shorts does not work that way. Shorts lives inside the same app where you:
+This is the core of the problem, and it's worth understanding clearly: YouTube Shorts doesn't need its own app.
 
-- Watch tutorials for work and school
-- Follow educational channels
-- Listen to music and podcasts
-- Watch product reviews before buying something
-- Follow along with workout or cooking videos
+To use TikTok, you open TikTok. To watch Reels, you open Instagram. Each time, there's a small moment of decision -- you're choosing to open an entertainment app. That moment, tiny as it is, gives your brain a chance to say "not right now."
 
-The Shorts shelf sits on the YouTube homepage, wedged between your subscription uploads and recommended videos. It appears at the end of long-form videos as "related" content. It shows up in search results. You cannot use YouTube for its legitimate purposes without constantly encountering entry points into the Shorts feed.
+Shorts skips that step entirely. It sits on the YouTube homepage, wedged between your subscriptions and recommended videos. It shows up after long-form videos end. It appears in search results. You open YouTube to look up how to fix a leaky faucet, and there it is -- a Shorts shelf pulling your eye before you even type your search.
 
-This is what makes Shorts uniquely insidious. TikTok users at least have to make the conscious choice to open an app whose sole purpose is short-form entertainment. YouTube users stumble into Shorts while trying to do something productive. The line between intentional use and compulsive scrolling is blurred from the moment you open the app.
+This matters because you can't just delete YouTube. You use it for work tutorials, music, cooking videos, educational stuff. So the standard advice for addictive apps ("just delete it") doesn't apply here. You can't set aggressive screen time limits on an app you legitimately need for an hour a day. The Shorts habit hides behind real, productive usage.
 
-### How Piggybacking Defeats Willpower
+## YouTube's Algorithm Knows You Better Than TikTok's
 
-Traditional advice for managing addictive apps — delete it, use screen time limits, block it — falls apart for YouTube Shorts. You cannot delete YouTube if you rely on it for learning, music, or work. You cannot set aggressive time limits on an app you use productively for an hour a day. You cannot block it at the network level without losing access to content you actually need.
+YouTube has been learning what keeps people watching for over fifteen years. Every tutorial you've watched, every search you've run, every video you abandoned after thirty seconds -- it's all data. When Shorts serves you content, it isn't starting from scratch. It's drawing on your entire YouTube history, and if you're logged into a Google account, potentially your broader Google activity too.
 
-This is why YouTube Shorts addiction often goes unaddressed longer than TikTok addiction. People do not think of themselves as having a "YouTube problem" because YouTube is a tool they genuinely need. The Shorts habit hides behind legitimate use.
+TikTok's algorithm is excellent at learning your preferences quickly. But YouTube had a massive head start and a much deeper data profile on most users. The practical result is that Shorts calibrates to you fast, holds attention well, and doesn't lose its grip easily even if you try to "poison" the algorithm by watching stuff you don't like.
 
-## The Algorithm's Unfair Advantage
+## What Shorts Does to Your Attention
 
-YouTube's recommendation algorithm is not just good. It is arguably the most battle-tested content recommendation system in existence.
+Here's something you might've noticed on your own: after a long Shorts session, it's harder to sit through a regular video. A ten-minute explainer that would've been interesting last year now feels slow. You catch yourself reaching for your phone during a twenty-minute video, or skipping ahead to find the "good part."
 
-Google has been refining this algorithm for over 15 years, across billions of users, trillions of watch sessions, and countless A/B tests. The system that powers Shorts is not a new algorithm built from scratch. It is the same engine that turned YouTube into the world's second-largest search engine, now applied to short-form video with devastating precision.
+This isn't imagined. When your brain gets used to new stimulation every fifteen seconds, anything that asks for sustained focus feels uncomfortable by comparison. Reading gets harder. Long videos feel tedious. Work tasks that require deep concentration become a battle against restlessness.
 
-### What 15 Years of Data Means in Practice
+The good news is that this reverses. Your attention span isn't permanently broken -- it's deconditioned. But it takes deliberate effort to rebuild it, which we'll get to below.
 
-When you open YouTube Shorts, the algorithm does not start from zero. It already knows:
+## How to Actually Break the Shorts Cycle
 
-- **Your long-form watch history.** Every documentary, tutorial, and music video you have ever watched on YouTube feeds into the Shorts recommendation model. If you spent three hours watching woodworking videos last month, Shorts knows to serve you 15-second woodworking clips.
-- **Your search history.** Every query you have ever typed into the YouTube search bar is data. The algorithm understands not just what you watch but what you want to watch.
-- **Your engagement patterns.** How long you watch before clicking away. What thumbnails you click. What time of day you browse. Whether you engage more on mobile or desktop. Fifteen years of these micro-signals create a behavioral profile of extraordinary depth.
-- **Cross-platform signals.** If you are signed into a Google account, YouTube's data connects to your broader Google activity — your search queries, your Gmail content categories, your Google Maps visits. The recommendation engine has context that no other short-form platform can match.
+There's no single fix here. The strategies that work best depend on whether your Shorts problem is mostly on desktop, mobile, or both. Here's what actually helps.
 
-TikTok's algorithm is famously good at learning what you like. But TikTok has roughly eight years of data and only knows you within the TikTok ecosystem. YouTube has a decade-and-a-half head start and can draw on your entire Google identity.
+### Remove Shorts from Desktop YouTube with a Browser Extension
 
-The practical result: YouTube Shorts calibrates to your preferences faster, holds your attention more effectively, and is harder to "break" by consciously trying to watch things you do not like. The algorithm simply has too much information about you.
+If you use YouTube on a computer at all, this is the single highest-impact change you can make. It takes about sixty seconds and doesn't require any ongoing willpower.
 
-## The Attention Span Compression Crisis
+Three solid options:
 
-There is a particular irony to YouTube Shorts. YouTube was once the place where people went to learn, to watch in-depth content, and to engage with ideas that took longer than a sound bite to express. Channels built audiences around 20-minute, 40-minute, even hour-long videos. The platform rewarded depth.
+- **Unhook** -- The most configurable. Lets you selectively remove the Shorts shelf, hide Shorts in search results, disable the Shorts tab, and strip out recommended videos. You keep the parts of YouTube you actually use.
+- **Hide YouTube Shorts** -- Does exactly what the name says. Lighter than Unhook, focused specifically on removing Shorts content across the interface.
+- **DF YouTube** -- The scorched-earth option. No homepage feed, no recommendations, no comments, no Shorts. Just a search bar and your subscriptions.
 
-Shorts inverted that value system. Now the same platform that hosts three-hour podcast interviews and detailed educational series is training its users to consume content in 15-second increments.
+Once you install one of these, you'll notice something interesting: how often your eye would've landed on that Shorts shelf. It's a bit unsettling to realize how many times a day the entry point was just... there.
 
-### What Happens to Your Brain
+### Bookmark Your Subscriptions Feed
 
-When you regularly consume sub-60-second content, your neural circuits adapt to that pace. Research suggests that consistent short-form video consumption is associated with reduced performance on sustained attention tasks. The mechanism is straightforward: your brain optimizes for the stimulation pattern it encounters most frequently. If that pattern is "new stimulus every 15 seconds," then anything requiring focus for 10 or 20 minutes starts to feel intolerably slow.
+Even without an extension, you can sidestep the homepage entirely. Bookmark `youtube.com/feed/subscriptions` and use that as your YouTube starting point.
 
-This has concrete effects:
+The Subscriptions tab only shows uploads from channels you've chosen to follow. No algorithm. No Shorts shelf. No trending section. Just your creators, in order. This works on any browser and it's a solid mobile habit too -- when you open the YouTube app, go straight to Subscriptions instead of lingering on Home.
 
-- **Reading becomes harder.** Books, articles, and long documents require sustained attention that feels uncomfortable after heavy Shorts consumption.
-- **Long-form video feels boring.** The 20-minute YouTube videos you used to enjoy now feel slow. You find yourself reaching for your phone or clicking away within the first few minutes.
-- **Work suffers.** Tasks that require deep focus — writing, coding, analysis, creative work — become interrupted by a restless need for stimulation.
-- **Conversations lose your attention.** You zone out during discussions that last more than a few minutes.
+### Name What You're Here to Watch
 
-### The Creator Ecosystem Impact
+Before you open YouTube, answer one question: what specifically are you going to watch?
 
-The attention compression problem is not just personal. It is reshaping what content gets made. YouTube creators report that their long-form content performs worse as Shorts consumption rises. Viewers who used to watch 15-minute videos now bounce after two minutes. In response, creators are shifting toward shorter and more sensationalized content, which further accelerates the attention span compression cycle.
+If you've got an answer -- "the new video from [creator]" or "a tutorial on conditional formatting" -- great. Watch it, then close YouTube.
 
-The platform that once democratized long-form education and storytelling is now incentivizing creators to compress everything into 60 seconds. The result is a content ecosystem optimized for engagement, not understanding.
+If you don't have an answer, that's your signal. The absence of intent is exactly when Shorts takes over. An aimless YouTube open almost always ends up in the Shorts feed, because the homepage is designed to catch wandering attention.
 
-## The Desktop Difference: Solutions Most People Overlook
+[Intently](/download) can help here. It shows a brief pause screen before YouTube opens on your phone, giving you a moment to check in with yourself before the homepage loads. That half-second of friction catches a surprising number of autopilot opens.
 
-Here is something that sets YouTube apart from every other short-form platform: people use it extensively on desktop computers.
+### Rebuild Your Attention Span Gradually
 
-TikTok is overwhelmingly a mobile app. Instagram is designed for phones. But YouTube has a massive desktop user base — people watching at work, during study sessions, while coding, or while doing research. This creates a unique opportunity: browser-based solutions that are impossible on mobile-only platforms.
+If Shorts has made longer content feel boring, you can reverse that -- but treat it like building a muscle back up after an injury. Don't jump straight to hour-long documentaries.
 
-### Browser Extensions That Actually Work
+Start with something you're genuinely curious about (this shouldn't feel like homework). Watch a ten-minute video all the way through without checking your phone or switching tabs. Next week, try twenty minutes. Then thirty. By week four, a forty-five minute video essay or lecture won't feel like a slog anymore.
 
-The most effective single intervention for YouTube Shorts addiction is a browser extension that removes Shorts from the interface entirely. On desktop, this is a solved problem.
+The first few sessions might feel restless. That's normal and expected. It's your brain readjusting to a different pace of stimulation. Each time you sit through it, it gets a little easier.
 
-**Unhook (Remove YouTube Recommended Videos)**
-Unhook is the most comprehensive option. It lets you selectively remove the Shorts shelf from the homepage, hide Shorts in search results, disable the Shorts tab in the sidebar, remove the recommended videos sidebar, and hide the homepage feed entirely if you want a completely clean interface. You can configure exactly what to remove, keeping the parts of YouTube you use while eliminating the parts that pull you into compulsive scrolling.
+One tip that helps: put your phone in another room during these sessions. Not face-down on the desk -- in another room. The temptation to "just check" something is stronger than most people expect.
 
-**Hide YouTube Shorts**
-A more targeted extension that does exactly what the name says. It detects and hides Shorts content across the YouTube interface — homepage shelf, search results, and sidebar suggestions. Lighter-weight than Unhook but focused specifically on the Shorts problem.
+### Pause Your Watch History
 
-**DF YouTube (Distraction Free YouTube)**
-Strips YouTube down to its essentials. No homepage feed, no recommendations, no comments, no Shorts. You get a search bar and your subscriptions. Nothing else. This is the nuclear option for people who want YouTube as a pure utility.
+Most people don't know about this one. Go to YouTube Settings > History & Privacy > Pause Watch History.
 
-These extensions are free, take under a minute to install, and completely eliminate the visual triggers that pull you from intentional YouTube use into Shorts scrolling. If you use YouTube on a desktop or laptop even occasionally, installing one of these extensions should be your first step.
+When your watch history is paused, the Shorts algorithm can't learn from your recent behavior. It falls back on generic recommendations, which are far less compelling. Shorts will feel noticeably less "sticky" because the content isn't tailored to you anymore.
 
-### Subscription-Tab-Only Browsing
+The tradeoff is that your long-form recommendations also get less personalized, but if you're browsing by Subscriptions (which you should be), that doesn't matter much. You're picking your own content anyway.
 
-Even without extensions, you can bypass the algorithm-driven homepage entirely by bookmarking `youtube.com/feed/subscriptions` and using it as your default YouTube entry point.
+## When to Take It More Seriously
 
-The Subscriptions tab shows only new uploads from channels you have deliberately chosen to follow. No algorithmic recommendations. No Shorts shelf. No "trending" content designed to grab your attention. Just the creators you actually care about, in chronological order.
+For most people, the strategies above are enough to get Shorts under control. But if you've tried several of these approaches and you're still losing chunks of your day to the feed -- or if you're noticing it's affecting your work, sleep, or relationships -- it might be worth looking at the bigger picture.
 
-This approach works on any browser and requires no extension. It is also an effective mobile strategy — when you open the YouTube app, immediately navigate to the Subscriptions tab instead of lingering on the Home tab.
+A Shorts habit that resists multiple interventions could be part of a broader pattern of [phone addiction](/blog/how-to-stop-phone-addiction). There's no shame in that. These apps are built by teams of very smart people whose job is to keep you scrolling.
 
-## Five Strategies for Breaking the Shorts Cycle
+## Getting Started
 
-### 1. Ask "What Am I Here to Watch?"
+You don't need to do all of this at once. If you're on desktop, install a browser extension today -- it takes a minute and makes an immediate difference. If your Shorts problem is mostly on your phone, try [Intently](/download) to add a pause before YouTube opens, and start using the Subscriptions tab as your default.
 
-The most powerful question you can ask yourself before any YouTube session is: **What am I here to watch?**
-
-Not "what looks interesting." Not "what's trending." What specific video, creator, or topic are you opening YouTube for?
-
-If you have a specific answer — "I'm watching the new Veritasium video" or "I need a tutorial on pivot tables" — proceed. Watch that content, then close YouTube.
-
-If you do not have a specific answer, do not open YouTube. The absence of intent is the entry point for Shorts. When you open YouTube without a purpose, the homepage decides your purpose for you, and that purpose is always Shorts.
-
-This is where a tool like [Intently](/download) helps. It displays a brief pause screen before YouTube opens, prompting the intent question before you see the homepage. That moment of friction is often enough to catch the automatic, purposeless opens that lead to Shorts spirals.
-
-### 2. Use Browser Extensions to Eliminate Shorts on Desktop
-
-If you use YouTube on a computer, install Unhook or Hide YouTube Shorts immediately. This is not a willpower strategy. It is an environmental change that removes the trigger entirely.
-
-Once Shorts are invisible on your desktop YouTube experience, you will notice how often you would have been pulled in. The shelf that used to catch your eye on the homepage is gone. The Shorts that used to appear in your search results are gone. You are left with the YouTube that existed before Shorts: long-form content organized by your subscriptions and search queries.
-
-For many people, the desktop is where the most productive YouTube use happens — research, tutorials, background music, educational content. Protecting that environment from Shorts contamination is high-leverage.
-
-### 3. Navigate Directly to Subscriptions on Mobile
-
-On your phone, build the habit of immediately tapping the Subscriptions tab every time you open YouTube. Do not linger on the Home tab. Do not scroll past the Shorts shelf. Go straight to Subscriptions.
-
-Better yet, train yourself to open YouTube only when you know which subscription upload you want to watch. Check a creator's community post, see a notification for a new upload, or have a friend send you a specific link. Then open YouTube, go to that content, watch it, and close the app.
-
-The Home tab is the danger zone. It is where the algorithm exerts maximum control and where the Shorts shelf is most prominent. The Subscriptions tab is your territory — it shows only what you chose.
-
-### 4. Retrain Your Brain with Long-Form Content
-
-The attention span damage from Shorts consumption is reversible, but it requires deliberate effort. Think of it as physical therapy for your focus.
-
-**A progressive retraining schedule:**
-
-- **Week 1:** Watch one 10-minute YouTube video per day, start to finish, without checking your phone or switching tabs. Choose a topic you genuinely enjoy.
-- **Week 2:** Extend to a 20-minute video. Notice when the urge to skip ahead or switch away arises, and sit with that discomfort.
-- **Week 3:** Try a 30-minute video or a short podcast episode. You may feel restless. That restlessness is your attention span rebuilding.
-- **Week 4:** Watch a full documentary, lecture, or video essay of 45 minutes or more. Read a book chapter without interruption.
-
-The discomfort in the early weeks is not a sign of failure. It is your brain recalibrating. Shorts trained it to expect a new stimulus every 15 seconds. Long-form content is teaching it to sustain focus again. Each session gets easier.
-
-**Tips for success:**
-- Put your phone in another room during long-form content sessions
-- Use a physical book rather than a reading app to eliminate notification temptation
-- Choose content you are genuinely curious about — this is not supposed to be punishment
-- Track your progress — noticing improvement is motivating
-
-### 5. Pause Your Watch History to Starve the Algorithm
-
-This is a technical strategy that most people do not know about. YouTube lets you pause your watch history, and doing so significantly weakens the Shorts recommendation engine.
-
-Go to YouTube Settings > History & Privacy > Pause Watch History.
-
-When watch history is paused, the Shorts algorithm cannot learn from your recent viewing behavior. It falls back on broader demographic data rather than your specific profile. The recommendations become generic and less compelling. You will notice that Shorts feel less "magnetic" because the algorithm is no longer precisely calibrated to your interests.
-
-The tradeoff: your long-form recommendations also become less personalized. But if you are using the Subscriptions tab as your primary navigation (Strategy 3), this tradeoff matters less. You are choosing what to watch rather than relying on algorithmic suggestions.
-
-## Healthy vs. Problematic YouTube Use
-
-| Healthy Use | Problematic Use |
-|-------------|-----------------|
-| Opening YouTube with a specific video in mind | Opening YouTube "to see what's there" |
-| Using the Subscriptions tab | Browsing the Home tab and Shorts shelf |
-| Watching long-form content you chose | Swiping through Shorts that the algorithm chose |
-| Closing the app when the video ends | Continuing to browse after your video finishes |
-| Feeling informed or entertained afterward | Feeling drained, guilty, or restless afterward |
-| Sessions that match your intended duration | Sessions that consistently exceed your plan |
-
-If your use falls primarily in the right column, the strategies above will help. If you have tried multiple approaches and still cannot control your Shorts consumption, consider whether a broader pattern of [phone addiction](/blog/how-to-stop-phone-addiction) may be at play.
-
-## FAQ: YouTube Shorts Addiction
-
-**Why is YouTube Shorts so addictive?**
-YouTube Shorts combines ultra-short content delivering rapid dopamine hits, a recommendation algorithm with over 15 years of behavioral data, infinite vertical scroll with no stopping cues, autoplay, and variable rewards. The additional factor of piggybacking on an app people already use for legitimate purposes makes it uniquely hard to avoid.
-
-**Is YouTube Shorts more addictive than TikTok?**
-They use similar mechanisms, but YouTube Shorts has a unique advantage: it lives within the broader YouTube app. Many people open YouTube for a specific video and get pulled into Shorts unintentionally, without ever making the conscious decision to "open the addictive app."
-
-**How does YouTube Shorts affect attention span?**
-Regular consumption of sub-60-second content trains your brain to expect stimulation every few seconds. Research suggests that heavy short-form video users experience decreases in sustained attention, making it harder to focus on longer content like books, articles, lectures, or even regular YouTube videos.
-
-**Can I disable YouTube Shorts?**
-YouTube does not offer a built-in way to disable Shorts. On desktop, browser extensions like Unhook and Hide YouTube Shorts can remove Shorts from the interface entirely. On mobile, navigating directly to the Subscriptions tab and using the "Not Interested" button are the most effective approaches.
-
-**How much YouTube Shorts is too much?**
-If you regularly spend more than 15-20 minutes on Shorts per session, lose track of time, open YouTube for a specific purpose but end up in Shorts instead, or feel restless or guilty afterward, your usage has likely become compulsive.
-
-**What is the single most effective thing I can do?**
-Install a browser extension that removes Shorts from desktop YouTube, and use [Intently](/download) to add a moment of pause before opening YouTube on mobile. These two changes address the problem at both entry points without requiring willpower in the moment.
-
-## Take the First Step Today
-
-YouTube Shorts addiction is not a willpower problem. It is an environmental design problem. The Shorts feed is engineered to capture attention, and it is embedded inside an app you cannot simply delete.
-
-The solution is to change your environment: install browser extensions that remove Shorts on desktop, use the Subscriptions tab instead of the Home tab, and add a moment of intentional pause before opening YouTube on your phone. These are structural changes that work without relying on in-the-moment self-control.
-
-Ready to break the Shorts loop? [Download Intently](/download) to add that critical pause before YouTube opens on your phone, and install Unhook or Hide YouTube Shorts on your browser today.
+Small structural changes beat willpower every time. The goal isn't to quit YouTube -- it's to use it on your terms.
 
 ---
 

@@ -23,215 +23,155 @@ faq:
 
 # Best Apple Screen Time Alternatives (2026 Guide)
 
-Apple Screen Time ships on every iPhone, iPad, and Mac. For many people, it is the first and only tool they try for managing phone habits. And to its credit, Screen Time does some things well: it is free, requires no setup, and gives you a basic picture of how you spend time on your devices.
+Apple Screen Time ships on every iPhone, iPad, and Mac. For most people, it's the first -- and only -- tool they try for managing phone habits. And honestly, it does some things well: it's free, it requires no setup, and it gives you a basic picture of how you're spending time on your devices.
 
-But if you have ever tapped "Ignore Limit" and then spent another hour scrolling, you already know the problem. Screen Time was built primarily as a parental control tool, and it shows. For adults trying to change their own behavior, it often falls short.
+But if you've ever tapped "Ignore Limit" and then spent another hour scrolling, you already know the problem. Screen Time was built primarily as a parental control tool, and it shows. For adults trying to change their own behavior, it often falls short.
 
-This guide explains what Screen Time does well, where it breaks down, and what third-party alternatives can (and cannot) do on iOS. Rather than ranking apps 1 through 8, we have grouped them by the type of approach they take, so you can find the one that matches how you actually want to change your habits.
+This guide covers what Screen Time does well, where it breaks down, and what third-party alternatives can realistically do on iOS. We've grouped the apps by approach rather than ranking them 1 through 6, so you can find something that matches how you actually want to change your habits.
 
-## What Apple Screen Time Gets Right
+## What Screen Time Does Well
 
-Before looking at alternatives, it is worth acknowledging what Screen Time does well:
+To be fair, Screen Time isn't useless:
 
-- **No installation required** -- It is built into every iPhone, iPad, and Mac
-- **Basic usage dashboard** -- You can see daily and weekly screen time broken down by app and category
-- **App limits** -- Set daily time caps on individual apps or app categories
-- **Downtime scheduling** -- Block most apps during set hours (useful for bedtime routines)
-- **Parental controls** -- Content restrictions and communication limits for children's devices
-- **Cross-Apple-device syncing** -- Limits apply across your iPhone, iPad, and Mac
+- It's built into every Apple device -- nothing to install
+- The usage dashboard shows daily and weekly screen time broken down by app and category
+- You can set daily time caps on individual apps or categories
+- Downtime scheduling blocks most apps during set hours (handy for bedtime)
+- Parental controls let you restrict content and communication on a child's device
+- Limits sync across your iPhone, iPad, and Mac
 
-For parents managing a child's device, Screen Time is genuinely useful. The problem is when adults try to use it on themselves.
+For parents managing a kid's device, Screen Time is genuinely useful. The trouble starts when adults try to use it on themselves.
 
 ## Where Screen Time Falls Short
 
 ### The "Ignore Limit" Problem
 
-Screen Time's biggest flaw is the "Ignore Limit" button. When your time runs out, a notification appears with two options: "OK" or "Ignore Limit for 15 minutes" (or "Ignore Limit for Today"). There is no friction, no pause, no moment of reflection. One tap and the limit vanishes.
+Screen Time's biggest flaw is also its most obvious one. When your time runs out, a notification pops up with two options: "OK" or "Ignore Limit for 15 minutes" (or "Ignore Limit for Today"). There's no friction, no pause, no moment of reflection. One tap and the limit disappears.
 
-You can set a passcode to make ignoring harder, but if you set your own passcode, you already know it. Some people ask a friend to set it, which helps -- until you need to install an app and cannot remember who has the code.
+Sure, you can set a passcode -- but if you set your own passcode, you already know it. Some people ask a friend to set it, which works until you need to install an app and can't track down whoever has the code.
 
-### No Behavior Change Methodology
+### No Help Changing the Underlying Behavior
 
-Screen Time restricts. That is all it does. It does not help you understand why you pick up your phone, does not create moments of pause before you open distracting apps, and does not build any internal motivation to change. When the restriction is removed, the behavior returns unchanged.
+Screen Time restricts. That's it. It doesn't help you understand why you pick up your phone, doesn't create a pause before you open distracting apps, and doesn't build any internal motivation. Remove the restriction, and the behavior comes right back.
 
-### Limited Insights
+### Shallow Insights
 
-Screen Time shows you bar charts of daily usage. That is useful, but it does not identify patterns (like checking your phone more on certain days), does not track triggers, and often miscategorizes apps. The data is surface-level.
+You get bar charts of daily usage. That's helpful at a surface level, but Screen Time doesn't identify patterns (like heavier phone use on certain days), doesn't track triggers, and frequently miscategorizes apps.
 
 ### Easy to Circumvent
 
-Beyond the Ignore Limit button, users have found they can bypass Screen Time by deleting and reinstalling apps, changing their device's time zone, or using workarounds through iMessage and other system apps.
+Beyond the Ignore Limit button, people have figured out they can bypass Screen Time by deleting and reinstalling apps, changing the device's time zone, or using workarounds through iMessage and other system apps.
 
-### Apple Devices Only
+### Apple-Only
 
-If you also use a Windows computer or a Chromebook, Screen Time cannot help you there. Your digital habits do not stop at the edge of the Apple ecosystem.
+If you also use a Windows PC or Chromebook, Screen Time can't follow you there. Your phone habits don't stop at the edge of Apple's ecosystem.
 
-## What Third-Party Apps Can and Cannot Do on iOS
+## A Quick Reality Check: What iOS Actually Lets Third-Party Apps Do
 
-Before diving into alternatives, it is important to understand an iOS limitation that affects every third-party app.
+This is important context before we get into alternatives. Apple tightly restricts what apps can do at the system level. Unlike Android, where apps can overlay screens, intercept app launches, and monitor usage in real time, iOS locks most of this down. Third-party screen time apps on iPhone typically work through one of three workarounds:
 
-Apple restricts what apps can do at the system level. Unlike Android, where apps can overlay screens, intercept app launches, and monitor usage in real time, iOS locks most of this down. Third-party screen time apps on iPhone typically work through one of three methods:
+- **Shortcuts automation** -- Apps like One Sec hook into the Shortcuts app to trigger a breathing exercise when you open a specific app. It works, but requires per-app setup and can be finicky.
+- **VPN-based blocking** -- Apps like Freedom and Opal route your traffic through a local VPN to block access to certain apps or websites. Effective, but it means you can't use an actual VPN at the same time.
+- **Screen Time API** -- Apple offers a developer API, but it's limited in what it exposes. Some apps use it for basic tracking.
 
-- **Apple Shortcuts automation** -- Apps like One Sec hook into the Shortcuts app to trigger an action (like a breathing exercise) when you open a specific app. This works but requires per-app setup and can be finicky.
-- **VPN-based blocking** -- Apps like Freedom and Opal route your traffic through a local VPN to block access to certain apps or websites. This is effective but means you cannot use an actual VPN at the same time.
-- **Screen Time API** -- Apple introduced a Screen Time API for developers, but it is limited in what it exposes. Some apps use it for basic tracking.
+No third-party app on iPhone has the same deep system access as Screen Time. On the upside, that also means these apps can't silently monitor everything you do.
 
-No third-party app on iPhone has the same deep system access that Screen Time has. That is both a limitation and a privacy benefit -- it means these apps cannot silently monitor everything you do.
-
-With that context, here are the most effective alternatives, grouped by the approach they take.
+With that in mind, here are the alternatives worth considering.
 
 ## Mindful Pause Apps
 
-These apps work by inserting a moment of awareness between your impulse to open an app and actually using it. Instead of blocking you outright, they create friction that makes you conscious of the choice.
+These apps insert a moment of awareness between the impulse to open an app and actually using it. Instead of blocking you outright, they create friction that makes you conscious of the choice you're making.
 
-### One Sec -- Best Mindful Pause for iPhone
+### One Sec
 
-One Sec uses Apple's Shortcuts integration to inject a breathing exercise every time you open a distracting app. When you tap Instagram or TikTok, instead of the app opening immediately, you get a 5-to-30-second breathing exercise. After the pause, you choose whether to continue or close the app.
+One Sec does something clever with Apple's Shortcuts integration: every time you open a distracting app, it intercepts the launch and shows you a breathing exercise. Tap Instagram, and instead of your feed, you get a 5-to-30-second breathing prompt. After the pause, you decide whether to continue or close the app.
 
-This is backed by real research: a study conducted with the Max Planck Institute found that One Sec's intervention reduced social media usage by 57%.
+A study conducted with the Max Planck Institute found this approach reduced social media usage by 57%, which is a pretty striking number for such a simple intervention.
 
-**Key features:**
-- Breathing intervention before app opens (via Shortcuts)
-- Customizable breath duration (5-30 seconds)
-- Intention prompts ("Why are you opening this?")
-- "App opened" vs "app actually used" tracking
-- iOS and Android support
+The setup on iOS requires configuring each app individually through Shortcuts, which is tedious but workable. Once it's running, it feels surprisingly native. The app also tracks "opened" versus "actually used," which gives you a nice picture of how often the pause alone was enough to change your mind.
 
-**Pricing:** ~$50 lifetime or ~$25/year
+Pricing runs about $50 lifetime or $25/year -- steep for a single-purpose tool, but the approach genuinely works. If you're the type of person who just needs that one extra beat of friction, it's worth the investment.
 
-**Strengths:** Simple, effective, research-backed. Does one thing and does it well. Native-feeling on iOS through Shortcuts integration.
+Rating: 4/5
 
-**Limitations:** Expensive for a single-purpose tool. Shortcuts setup on iOS requires configuring each app individually. Limited analytics beyond open/use tracking.
+### ClearSpace: A Newer iPhone-Native Take
 
-**Rating: 4/5** -- The most proven mindful-pause tool on iPhone. The price is steep for what you get, but the approach genuinely works.
+ClearSpace works similarly to One Sec -- breathing exercises and reflection prompts before you can access distracting apps -- but bundles in daily usage limits with gentler enforcement. Think of it as One Sec with a wider feature set, designed specifically for iOS.
 
-### ClearSpace -- Mindful Delays Built for iPhone
+The interface is clean and modern, and the development team has been shipping features consistently. The free tier is fairly limited, though, and at about $50/year for premium, you're paying in the same ballpark as One Sec for an app with a smaller track record.
 
-ClearSpace creates a "speed bump" between you and distracting apps on iPhone. When you tap an app, ClearSpace shows a breathing exercise or reflection prompt before letting you through. It combines the breathing pause of One Sec with daily usage limits.
+It's worth watching. If you want a mindful-pause app but prefer a freemium model over a flat purchase, ClearSpace is a reasonable pick.
 
-**Key features:**
-- Breathing exercise before app opening
-- Reflection prompts ("Is this intentional?")
-- Daily usage limits with gentle enforcement
-- Session tracking and customizable delays
-- Clean, modern iOS interface
+Rating: 3.5/5
 
-**Pricing:** Freemium -- Free tier available, Premium ~$50/year
+### What About Intently?
 
-**Strengths:** Well-designed for iOS. Combines mindful pauses with soft time limits. Active development with a growing feature set.
+Intently takes a different angle from the apps above. Instead of just a breathing exercise, it creates full-screen moments of awareness when you open distracting apps, then pairs that with usage tracking, streaks, and achievements. Everything is completely free -- no premium tier, no ads, no account required, and no data ever leaves your device.
 
-**Limitations:** Free version has significant restrictions. iOS only -- no Android or desktop. Newer app with a smaller user base.
+That privacy-first model is a genuine differentiator. Most apps in this space want your usage data. Intently doesn't collect any.
 
-**Rating: 3.5/5** -- A promising mindful approach native to iPhone, though the freemium model limits the free experience.
+The catch for iPhone users: Intently is currently on Android and Chrome, with iOS in development. If you're on Android or use Chrome on desktop, it's an easy recommendation. If you're on iPhone, keep it on your radar.
 
-### Intently -- Best Free Mindful Intervention Tool
-
-Intently takes a mindful-intervention approach: instead of blocking apps, it creates full-screen moments of awareness when you open distracting apps. It combines this with usage tracking, streaks, and achievements -- all completely free and with no data collection.
-
-**Key features:**
-- Full-screen mindful interventions before distracting apps
-- Automatic daily, weekly, and monthly usage tracking
-- Streaks, achievements, and gamification
-- 100% offline -- no account required, no data leaves your device
-- Android and Chrome extension (iOS coming soon)
-
-**Pricing:** Free -- all features included, no premium tier
-
-**Strengths:** Completely free with no ads or paywalls. Strong privacy model with all data stored locally. Combines mindful pauses with tracking and gamification in one tool.
-
-**Limitations:** Not yet available on iOS (Android and Chrome only, with iOS in development). Fewer hard-blocking features, though this is by design.
-
-**Rating: 4/5** -- An excellent free option that combines mindful interventions with tracking and gamification. The main drawback for iPhone users is that iOS support is not here yet.
+Rating: 4/5
 
 [Download Intently Free](/download)
 
 ## Hard Blockers
 
-These apps take a more restrictive approach: they block access to apps and websites outright, making it impossible (or very difficult) to use them during set periods.
+If you don't trust yourself with a gentle nudge and want something that actually locks you out, these are your options.
 
-### Opal -- Best Hard Blocker for iPhone
+### Opal: Premium Blocking for iPhone
 
-Opal positions itself as a premium focus and productivity app for iPhone. It uses session-based blocking and a feature called "Opal Shield" that installs a device management profile to make blocks harder to bypass.
+Opal is the most polished hard-blocking app on iOS. It uses session-based blocking and a feature called "Opal Shield" that installs a device management profile to make blocks genuinely difficult to bypass. You can group apps by category (Social, News, Entertainment), run "Deep Focus" sessions, and even set up group focus sessions with coworkers or study partners.
 
-**Key features:**
-- Session-based app blocking ("Deep Focus" mode)
-- App groups (Social, News, Entertainment)
-- "Opal Shield" for harder-to-bypass blocking via device management profile
-- Focus score and streaks
-- Team and group focus sessions
+Here's the trade-off you should think about: Opal Shield requires installing a device management profile on your phone. That's how it makes blocking so hard to circumvent -- but it also means you're giving a third-party app a level of device access that's worth scrutinizing. At $99/year (or $14.99/month), it's also one of the priciest options in this category.
 
-**Pricing:** $99/year or $14.99/month (limited free tier)
+Opal is effective at what it does. But blocking alone doesn't build self-regulation. Once the session ends, you're back where you started -- which is fine for work sprints but less useful for long-term habit change.
 
-**Strengths:** Polished iOS experience. Opal Shield makes blocking genuinely hard to circumvent. Good for professional or academic focus sessions. Social features allow group accountability.
+Rating: 3.5/5
 
-**Limitations:** $99/year makes it one of the most expensive options. Opal Shield requires installing a device management profile, which raises legitimate privacy questions. Free version is extremely limited. Blocking-based approach does not build self-regulation.
+### Freedom: The Cross-Platform Workhorse
 
-**Rating: 3.5/5** -- Effective and well-designed, but expensive. The device management profile is a trade-off worth considering carefully.
+Freedom's selling point is straightforward: it blocks distracting websites and apps across every device you own -- iPhone, Mac, Windows, Android, Chrome -- all at once. If your digital life spans multiple platforms, Freedom is really the only tool that covers all of them simultaneously.
 
-### Freedom -- Best for Blocking Across All Devices
+"Locked Mode" is its standout feature. Once you start a session, you genuinely cannot disable the block until it ends. No workaround, no override. Scheduled recurring blocks are also useful for building routines around deep work.
 
-Freedom blocks distracting websites and apps across all your devices simultaneously -- iPhone, Mac, Windows, Android, and Chrome. If you need one tool that locks everything down everywhere, Freedom is the most comprehensive option.
+On the downside, Freedom costs $120/year (or $240 lifetime), uses a VPN on iOS which conflicts with actual VPN usage, and takes a purely restrictive approach. There's no habit-building here, no mindful pauses, no insights into your behavior. It's a lock, not a coach. That said, if you need focused blocks across multiple devices, nothing else really competes.
 
-**Key features:**
-- Cross-device blocking (iOS, Mac, Windows, Android, Chrome)
-- Scheduled recurring block sessions
-- "Locked Mode" prevents disabling blocks during a session
-- Website and app blocking with customizable blocklists
-- Ambient focus sounds
+Rating: 3.5/5
 
-**Pricing:** $120/year, $240 lifetime, or $8.99/month
+## ScreenZen: A Free, Lightweight Nudge
 
-**Strengths:** True cross-platform coverage -- the only tool that blocks on every device type simultaneously. Locked Mode is genuinely unbypassable during a session. Scheduled blocks help build routines.
+ScreenZen takes the gentlest approach of anything on this list. It adds small delays and a "times opened today" counter when you launch distracting apps. Tap Instagram, and you'll see a brief timer and a number: "You've opened this app 23 times today." It doesn't block you -- it just makes the pattern visible.
 
-**Limitations:** Expensive at $120/year. Uses a VPN on iOS, which conflicts with actual VPN usage. Purely restrictive -- no habit-building, no mindful pauses, no insights into behavior. Can feel frustrating rather than empowering.
+It's free, available on both iOS and Android, dead simple to set up, and uses minimal battery. For someone who just wants a bit more self-awareness without committing to a full blocking or intervention system, it's a solid starting point.
 
-**Rating: 3.5/5** -- The most powerful cross-device blocker, but the cost is high and the approach is purely restrictive.
+The honest downside is that the novelty can wear off. After a few weeks, you might start mentally dismissing the counter the same way you dismiss Screen Time notifications. It works best when paired with another tool, or when you're already somewhat motivated to change.
 
-## Awareness and Nudge Tools
+Rating: 3.5/5
 
-These apps take the gentlest approach: they make you aware of your habits without blocking anything. The theory is that awareness itself changes behavior.
+## Picking the Right One
 
-### ScreenZen -- Best Free Awareness Tool
+The right tool depends on what's actually failing for you with Screen Time.
 
-ScreenZen adds small delays and usage counters when you open apps. When you tap Instagram, for example, you see a brief timer and a counter showing how many times you have opened the app today. It does not block you -- it just makes you conscious of the pattern.
+If you keep tapping "Ignore Limit," the problem isn't the limit itself -- it's the lack of friction. One Sec or ClearSpace add the pause that Screen Time doesn't. When you have to breathe for 10 seconds before opening an app, you're genuinely more likely to reconsider.
 
-**Key features:**
-- Delay timer before opening distracting apps
-- "Times opened today" counter displayed on launch
-- Customizable delay duration per app
-- Usage stats and daily summaries
-- iOS and Android support
+If you need unbreakable focus blocks for work or studying, Opal or Freedom can deliver that. They're not habit-building tools, but they're effective at creating distraction-free windows.
 
-**Pricing:** Free (with optional premium features)
+If you want to understand your habits before committing to restrictions, ScreenZen gives you awareness without getting in the way.
 
-**Strengths:** Free with no ads in the core experience. Available on both iOS and Android. Lightweight and non-intrusive. Very simple to set up.
+If you want something free and comprehensive, Intently combines mindful interventions with tracking and gamification at no cost -- though it's currently Android and Chrome only, with iOS on the way.
 
-**Limitations:** Minimal feature set. No gamification or achievement system. Limited analytics. The gentle approach is easy to mentally dismiss over time as the novelty fades.
+If you use a mix of Apple, Windows, and Android devices, Freedom is the only option that covers all of them.
 
-**Rating: 3.5/5** -- A good free starting point, especially on iPhone where options are limited. May not be engaging enough for lasting change on its own.
+### Layering With Screen Time
 
-## How to Choose the Right Alternative
+A lot of people don't replace Screen Time -- they add to it. A common setup:
 
-The right tool depends on why Screen Time is not working for you.
+- Screen Time handles Downtime (no apps after 10 PM) while One Sec handles breathing pauses during the day
+- Screen Time sets broad category limits while ScreenZen provides awareness of how often you're opening individual apps
 
-**If you keep tapping "Ignore Limit"**, the problem is not that the limit exists -- it is that there is no friction. A mindful-pause app like **One Sec** or **ClearSpace** adds the friction Screen Time lacks. When you have to breathe for 10 seconds before opening an app, you are much more likely to reconsider.
-
-**If you need unbreakable focus sessions for work or study**, a hard blocker like **Opal** or **Freedom** can help. These are not habit-building tools, but they are effective for creating distraction-free windows when you need to get things done.
-
-**If you want to understand your habits first**, an awareness tool like **ScreenZen** gives you data without restriction. Sometimes just seeing "You have opened Instagram 47 times today" is enough to spark change.
-
-**If you want a free, comprehensive approach**, **Intently** combines mindful interventions with tracking and gamification at no cost. The caveat is that it is currently Android and Chrome only, with iOS on the way.
-
-**If you use multiple devices**, **Freedom** is the only tool that blocks across iPhone, Mac, Windows, and Android simultaneously.
-
-### Can You Layer These With Screen Time?
-
-Yes, and many people do. A common approach is to keep Screen Time active for basic limits and Downtime scheduling while adding a third-party app for the mindful intervention or awareness layer that Screen Time lacks. For example:
-
-- Screen Time for Downtime (no apps after 10 PM) + One Sec for breathing pauses during the day
-- Screen Time for app category limits + ScreenZen for awareness of how often you open apps
-
-This layered approach can be more effective than either tool alone. The one thing to watch for is "tool fatigue" -- if you are managing three different apps to control your phone use, simplify.
+This layered approach can work well. Just watch out for "tool fatigue" -- if you're juggling three different apps to manage your phone use, it's time to simplify.
 
 ---
 
@@ -239,34 +179,34 @@ This layered approach can be more effective than either tool alone. The one thin
 
 ### Is Apple Screen Time good enough for managing phone habits?
 
-For basic time limits and parental controls, Screen Time is adequate. But if you find yourself tapping "Ignore Limit" every day, it is not working for you. The fundamental issue is that Screen Time restricts without building awareness or motivation. Third-party apps that add mindful pauses or breathing exercises address this gap.
+For basic time limits and parental controls, it's adequate. But if you're tapping "Ignore Limit" every day, it's not working for you. Screen Time restricts without building awareness or motivation. Third-party apps that add mindful pauses or breathing exercises fill that gap.
 
 ### Why is Apple Screen Time so easy to bypass?
 
-Screen Time was designed primarily as a parental control tool. Its "Ignore Limit" button is built right into the restriction notification, and users have found workarounds involving app reinstallation, time zone changes, and iMessage. For adults managing their own habits, these escape hatches undermine the tool's effectiveness.
+It was designed primarily as a parental control tool. The "Ignore Limit" button is built right into the restriction notification, and users have found workarounds involving app reinstallation, time zone changes, and iMessage. For adults managing their own habits, these escape hatches undermine the whole system.
 
 ### Do I need to pay for a better Screen Time alternative?
 
-No. Intently is completely free with all features included (Android and Chrome, iOS coming soon). ScreenZen is also free on both iOS and Android. Paid options like One Sec (~$50), Opal ($99/year), and Freedom ($120/year) offer specific capabilities but are not necessary for most users.
+Not necessarily. Intently is completely free with all features included (Android and Chrome, iOS coming soon). ScreenZen is also free on both iOS and Android. Paid options like One Sec (~$50), Opal ($99/year), and Freedom ($120/year) offer specific capabilities, but plenty of people get results without spending anything.
 
 ### Which alternative works best on iPhone right now?
 
-For iPhone users today, **One Sec** offers the most proven mindful-pause experience, backed by real research. **ClearSpace** is a good alternative with a freemium model. **Opal** is the strongest option for hard blocking. **ScreenZen** is the best free awareness tool on iOS. **Intently** is coming to iOS soon and is already a strong choice on Android and Chrome.
+For a proven mindful-pause experience, One Sec is the strongest option on iOS, backed by actual research. ClearSpace offers a freemium alternative in the same category. Opal is the most effective hard blocker. ScreenZen is the best free awareness tool. Intently is coming to iOS soon and is already a top pick on Android and Chrome.
 
-### Can I use these alternatives alongside Apple Screen Time?
+### Can I use these alongside Apple Screen Time?
 
-Yes. Many users keep Screen Time active for basic limits and Downtime scheduling while adding a third-party app for mindful interventions or awareness. This layered approach can work well, though we recommend committing to one primary tool for at least 30 days to build consistency rather than constantly switching between apps.
+Yes, and many people do. Keep Screen Time active for basic limits and Downtime scheduling, then add a third-party app for the mindful intervention or awareness layer. We'd recommend committing to one primary tool for at least 30 days to build consistency rather than constantly switching.
 
 ---
 
 ## Getting Started
 
-The best Apple Screen Time alternative depends on what is not working for you right now:
+The best Screen Time alternative depends on what isn't working for you right now:
 
-- **Keep tapping "Ignore Limit"?** Try One Sec or ClearSpace for mindful pauses
-- **Need focus sessions for work?** Try Opal or Freedom for hard blocking
-- **Want free awareness on iPhone?** Try ScreenZen for gentle nudges
-- **Want a free, comprehensive tool?** Try [Intently](/download) on Android or Chrome (iOS coming soon)
+- Keep tapping "Ignore Limit"? Try One Sec or ClearSpace for mindful pauses.
+- Need focus sessions for work? Try Opal or Freedom for hard blocking.
+- Want free awareness on iPhone? Try ScreenZen for lightweight nudges.
+- Want a free, all-in-one tool? Try [Intently](/download) on Android or Chrome (iOS coming soon).
 
 Whatever you choose, the goal is the same: building a relationship with your phone that you actually feel good about.
 

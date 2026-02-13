@@ -30,321 +30,145 @@ howToSteps:
     text: "Review your full month of data and identify what worked best. Create a sustainable personal phone use plan with realistic daily limits, scheduled screen-free times, and go-to replacement activities. Set up ongoing tracking with Intently and establish a weekly review habit to maintain your progress long-term."
 ---
 
-# 30-Day Digital Detox Challenge: A Step-by-Step Guide to Healthier Phone Use
+# 30-Day Digital Detox Challenge: A Practical Guide to Healthier Phone Use
 
-**The average person checks their phone 96 times a day and spends over 7 hours on screens. If you have tried to cut back and failed, you are not alone. Willpower-based approaches have a failure rate of over 80%. This 30-day challenge takes a different approach: gradual, structured, and grounded in behavioral science.**
+If you've ever caught yourself opening Instagram for no reason, closing it, and then immediately opening it again -- you know the feeling. Most of us use our phones far more than we'd like to, and the usual advice ("just put it down!") doesn't really help.
 
-This is not about going cold turkey. It is about systematically rebuilding your relationship with technology over four weeks, using proven strategies that create lasting change.
+This 30-day challenge is built around a simpler idea: change happens in stages. You can't just decide to use your phone less and expect willpower to carry you through. Instead, you spend the first week just watching your habits, then gradually make changes, build alternatives, and settle into a routine that actually sticks.
 
-## Why a 30-Day Challenge Works
+Will it work perfectly? Honestly, probably not. You'll have off days. But the structure gives you something to come back to, and that makes a real difference.
 
-Behavioral research shows that habit change follows a predictable pattern. You cannot simply decide to use your phone less and expect it to stick. Instead, lasting change requires:
+## Why a 30-Day Structure Helps
 
-1. **Awareness** of current behavior (most people drastically underestimate their usage)
-2. **Gradual reduction** rather than sudden elimination (prevents psychological reactance)
-3. **Replacement behaviors** to fill the void (you cannot just remove a habit)
-4. **Maintenance systems** to prevent relapse (accountability and tracking)
+Habit change tends to go better when you break it into phases rather than trying to overhaul everything at once. This challenge follows a pretty natural progression:
 
-This 30-day challenge maps each of these stages to one week, giving you the structure and time needed for each phase. By the end, you will have built new habits that feel natural rather than forced.
+- **Week 1** is just observation. You track your usage without trying to change it.
+- **Week 2** introduces boundaries based on what you actually learned in Week 1.
+- **Week 3** focuses on filling the gap -- because reducing screen time without replacing it with something better usually doesn't last.
+- **Week 4** is about making it stick beyond the challenge itself.
 
-## Before You Start: What You Will Need
+Each week builds on the last, which is what makes this more sustainable than a weekend phone detox that fizzles out by Tuesday.
 
-- **A tracking app:** [Download Intently](/download) for privacy-first screen time tracking with mindful interventions
-- **A journal:** Physical or digital, for daily reflections (2-3 minutes per day)
-- **An alarm clock:** If you currently use your phone as your alarm ($10-20 investment that pays off enormously)
-- **An open mind:** Some days will be uncomfortable. That is part of the process.
+## Before You Start
 
-Set your start date, tell a friend or family member for accountability, and commit to completing all four weeks regardless of how the first few days go.
+You'll need a few things:
+
+- A tracking app -- [Download Intently](/download) for privacy-first screen time tracking with mindful interventions
+- Something to jot notes in (a notebook, a notes app, whatever works)
+- An alarm clock, if your phone currently wakes you up
+- Some patience with yourself
+
+It also helps to tell someone you're doing this. Not for dramatic accountability reasons, just so someone knows and can ask you how it's going.
 
 ## Week 1: Awareness (Days 1-7)
 
-**Theme: Observe without judgment.**
+The whole point of this week is observation. Don't try to cut back yet -- just watch.
 
-The first week is entirely about understanding your current habits. You are not trying to change anything yet. This is critical---research shows that the observation phase alone reduces screen time by 15-20% because awareness naturally shifts behavior.
+This might sound like a waste of time, but it's the most important part. Most people are genuinely surprised by their own data. And the act of paying attention, on its own, tends to shift behavior a bit.
 
-### Day 1: Install and Set Up Tracking
+**Day 1:** Download [Intently](/download), set it up for your most-used apps, and screenshot your current daily average as your baseline. That's it.
 
-- Download [Intently](/download) and enable usage tracking
-- Set it up for all your most-used apps
-- Take a screenshot of your current daily average screen time as your "before" baseline
-- **Journal prompt:** "What do I hope to gain from this 30-day challenge?"
+**Day 2:** Try to notice every time you pick up your phone today. At the end of the day, guess your total pickups and check it against the data. Most people are way off.
 
-### Day 2: The Pickup Count
+**Day 3:** Start tracking your triggers. Each time you reach for your phone, ask: was that boredom? Anxiety? A notification? Or did I actually need something? A simple tally works fine.
 
-- Every time you pick up your phone, make a mental note of why
-- At the end of the day, estimate your total pickups and compare with your tracking data
-- **Journal prompt:** "How many times did I pick up my phone today? How many were intentional?"
+**Day 4:** Look at your app breakdown in Intently. Sort your apps mentally into "actually useful," "sometimes enjoyable," and "why am I even on this?" Be honest.
 
-### Day 3: Trigger Mapping
+**Day 5:** After any phone session longer than 10 minutes today, notice how you feel afterward. Energized? Neutral? A little drained? Some apps consistently leave people feeling worse, and it's worth knowing which ones do that for you.
 
-- Each time you reach for your phone, note what triggered it: boredom, anxiety, habit, notification, or genuine need
-- Create a simple tally of triggers throughout the day
-- **Journal prompt:** "What are my top 3 phone triggers?"
+**Day 6:** Write a list of 10 things you enjoy (or used to enjoy, or want to try) that don't involve a screen. Keep it somewhere you can see it -- on paper, ideally, not buried in your phone.
 
-### Day 4: Time Audit
-
-- Review your daily app breakdown in Intently
-- Categorize each app as "productive," "social," "entertainment," or "mindless"
-- Calculate what percentage of your screen time is genuinely valuable
-- **Journal prompt:** "If I could only keep 3 apps, which would I choose and why?"
-
-### Day 5: Emotional Check-In
-
-- After each phone session longer than 10 minutes, rate how you feel: energized, neutral, or drained
-- Notice patterns between specific apps and emotional states
-- **Journal prompt:** "Which apps leave me feeling better? Which leave me feeling worse?"
-
-### Day 6: The Replacement List
-
-- Write down 10 activities you enjoy or want to try that do not involve screens
-- Keep this list accessible on paper (not your phone)
-- **Journal prompt:** "What did I love doing before smartphones consumed my free time?"
-
-### Day 7: Week 1 Review
-
-- Review your full week of data in Intently
-- Calculate your daily average screen time
-- Identify your top 3 problem apps
-- Identify your peak usage times
-- **Journal prompt:** "What surprised me most about my phone habits this week?"
+**Day 7:** Review your full week of data. What's your daily average? Which apps eat the most time? When are your peak usage hours? Take a few minutes to write down what surprised you. This becomes the foundation for everything in Week 2.
 
 ## Week 2: Reduction (Days 8-14)
 
-**Theme: Set boundaries and cut back intentionally.**
+Now that you have real data, you can make targeted changes instead of guessing. The goal this week isn't dramatic -- it's about introducing friction and boundaries where they'll matter most.
 
-Armed with a week of data, you now know exactly where your time goes. This week, you will start making targeted changes based on your personal patterns.
+**Day 8:** Set up [Intently's mindful interventions](/blog/mindful-tech-interventions-vs-blocking) for your top 3 problem apps. These are gentle pauses that ask if you really want to open the app right now. They're surprisingly effective because most phone use is automatic, not deliberate.
 
-### Day 8: Enable Mindful Interventions
+**Day 9:** Do a notification purge. Go through every app and turn off anything that isn't truly important. Keep calls, messages from people who matter, and calendar reminders. Kill everything else. You'll be amazed at how much quieter your day gets.
 
-- Set up [Intently's mindful interventions](/blog/mindful-tech-interventions-vs-blocking) for your top 3 problem apps
-- Each time you open these apps, you will see a gentle reminder asking if this use is intentional
-- Do not fight the urge to open apps. Simply pause, breathe, and choose consciously
-- **Journal prompt:** "How did the interventions change my behavior today?"
+**Day 10:** Try the morning phone-free experiment. Put your phone outside your bedroom tonight and don't touch it for the first 30 minutes after waking. Use your alarm clock. Fill that time with literally anything else -- water, stretching, staring out the window. See how it feels. (Our full guide on [the morning phone check habit](/blog/stop-checking-phone-morning) goes deeper on this.)
 
-### Day 9: Notification Purge
+**Day 11:** Pick at least two spots in your home where phones aren't allowed. The dining table and the bedroom are the classics. Charge your phone somewhere else.
 
-- Go through every app on your phone and disable non-essential notifications
-- Keep only: phone calls, messages from close contacts, calendar alerts
-- Disable: social media, news, email badges, app promotions, game alerts
-- **Journal prompt:** "How did fewer notifications affect my day?"
+**Day 12:** Set a screen time goal that's about 25% below your Week 1 average. If you were at 6 hours, aim for 4.5. Use Intently to check in during the day. If you don't hit it, that's fine -- just notice where the time went.
 
-### Day 10: The Morning Protocol
+**Day 13:** Set specific windows for social media. Instead of checking throughout the day, try twice: once around lunch, once in the evening. No social media in the first or last hour of your day.
 
-- Place your phone outside your bedroom tonight
-- Tomorrow morning, do not touch your phone for the first 30 minutes after waking
-- Use your alarm clock instead
-- Fill the morning time with: water, stretching, journaling, or a walk
-- **Journal prompt:** "How was my morning different without my phone?" (Read our full guide on [stopping the morning phone check](/blog/stop-checking-phone-morning))
+**Day 14:** Review the week. Compare your numbers to Week 1. Even small reductions matter here. More importantly, notice which changes felt manageable and which felt like a fight. You'll lean into the easy wins going forward.
 
-### Day 11: Create Phone-Free Zones
-
-- Designate at least two areas in your home as phone-free: the dining table and the bedroom
-- Use a physical charging station outside these zones
-- **Journal prompt:** "What was different about meals or bedtime without my phone nearby?"
-
-### Day 12: The 25% Reduction
-
-- Using your Week 1 baseline, set a daily screen time goal that is 25% lower
-- For example, if your baseline was 6 hours, aim for 4.5 hours today
-- Use Intently to monitor your progress throughout the day
-- **Journal prompt:** "Did I hit my reduction goal? What helped or got in the way?"
-
-### Day 13: Social Media Boundaries
-
-- Set a specific daily time limit for social media (start with half your current usage)
-- Check social media only at designated times (for example, 12 PM and 6 PM)
-- No social media during the first and last hour of your day
-- **Journal prompt:** "What did I do with the time I saved from social media?"
-
-### Day 14: Week 2 Review
-
-- Compare Week 2 data with Week 1 in Intently
-- Celebrate any reductions, no matter how small
-- Identify which strategies felt natural and which felt forced
-- **Journal prompt:** "What is working? What needs adjustment?"
+What's something you'd do with an extra hour each day? It's worth thinking about, because that's roughly what most people reclaim in this week.
 
 ## Week 3: Replacement (Days 15-21)
 
-**Theme: Fill the gap with activities that genuinely nourish you.**
+Here's the thing about cutting screen time: if you don't replace it with something, you'll just end up back on your phone. Boredom and habit are powerful, and they need somewhere to go. This week is about finding [activities that actually fill that space](/blog/how-to-reduce-screen-time).
 
-Reducing screen time creates a void. If you do not intentionally fill it, you will drift back to old habits. This week focuses on building [replacement behaviors](/blog/how-to-reduce-screen-time) that satisfy the same underlying needs your phone was meeting.
+**Day 15:** Try habit stacking. Pick one screen-free activity and attach it to something you already do. "After I pour my coffee, I'll read five pages." "When I sit down for lunch, the phone stays in my bag for the first 10 minutes." Small and specific works best.
 
-### Day 15: Habit Stacking
+**Day 16:** When you feel bored today, don't reach for your phone. Just... sit with it for five minutes. This sounds miserable, but something interesting happens when you let boredom exist without immediately filling it. Thoughts show up. Ideas surface. It gets easier.
 
-- Choose one screen-free habit and attach it to an existing routine
-- Examples: "After I pour my morning coffee, I will read 5 pages of a book" or "When I sit down for lunch, I will eat without my phone for the first 10 minutes"
-- **Journal prompt:** "What habit stack did I try? How did it go?"
+**Day 17:** Swap at least 30 minutes of screen time for movement. Walking counts. Stretching counts. Dancing in your kitchen counts. Notice whether physical activity changes your urge to scroll afterward.
 
-### Day 16: The Boredom Experiment
+**Day 18:** Reach out to someone for a real conversation -- a call, a coffee, a walk together. Not a text thread. Thirty minutes of genuine human interaction, and see how it compares to thirty minutes of social media.
 
-- When you feel bored today, do NOT reach for your phone
-- Instead, sit with the boredom for 5 full minutes
-- Notice what thoughts, ideas, or impulses arise
-- **Journal prompt:** "What happened when I let myself be bored?"
+**Day 19:** Spend an hour doing something creative. Cook something new, draw, write, play an instrument, build something. Leave your phone in another room.
 
-### Day 17: Move Your Body
+**Day 20:** Try a screen-free evening. Stop all screens one hour before bed and replace that time with reading, stretching, a bath, or conversation. Pay attention to your sleep quality the next morning. (Our guide on [stopping nighttime scrolling](/blog/stop-scrolling-at-night) has more on this.)
 
-- Replace at least 30 minutes of typical screen time with physical activity
-- Walk, stretch, dance, do yoga, hit the gym---any movement counts
-- Notice how physical activity affects your phone cravings
-- **Journal prompt:** "How did exercise change my desire to scroll?"
-
-### Day 18: Social Connection
-
-- Reach out to one person for an in-person or voice conversation (not text)
-- Replace 30 minutes of screen time with genuine human connection
-- Notice the difference between online interaction and real conversation
-- **Journal prompt:** "How did real social connection compare to social media?"
-
-### Day 19: Creative Hour
-
-- Dedicate one hour to a creative activity: drawing, writing, cooking, music, gardening, building something
-- Leave your phone in another room during this time
-- **Journal prompt:** "What did I create today? How did it feel?"
-
-### Day 20: The Evening Wind-Down
-
-- Stop all screen use 1 hour before bed tonight
-- Replace evening scrolling with: reading, gentle stretching, conversation, a warm bath, or meditation
-- Track your sleep quality tomorrow morning
-- **Journal prompt:** "How was my sleep after a screen-free evening?" (See our full guide on [stopping nighttime scrolling](/blog/stop-scrolling-at-night))
-
-### Day 21: Week 3 Review
-
-- Review your third week of data
-- Compare with Weeks 1 and 2
-- List the replacement activities that you enjoyed most
-- **Journal prompt:** "Which new activities do I want to keep permanently?"
+**Day 21:** Week 3 review. Look at three weeks of data now. Which replacement activities did you actually enjoy? Which ones felt forced? Keep what works and drop what doesn't -- this isn't about perfection, it's about building a life you prefer to scrolling.
 
 ## Week 4: Maintenance (Days 22-30)
 
-**Theme: Build a sustainable system that lasts beyond 30 days.**
+The final stretch is less about new experiments and more about figuring out what's sustainable. A lot of 30-day challenges fall apart on Day 31 because there's no plan for after. Let's not do that.
 
-The final week is about converting your experimental changes into a permanent lifestyle. You will create a personalized plan, establish accountability systems, and prepare for the inevitable challenges ahead.
+**Days 22-23: Build your plan.** Write down what you want your daily phone use to look like going forward. What's your target screen time? Which boundaries are non-negotiable (morning routine, phone-free zones, evening cutoff)? What are your go-to replacement activities? Also think honestly about when you're most likely to slip -- weekends, stressful days, lonely evenings -- and have a specific backup plan for those moments.
 
-### Day 22: Your Personal Phone Use Plan
+**Days 24-25: Set up your environment.** Share your results with someone who cares. Set a weekly calendar reminder to check your Intently data. Reorganize your home screen so only essential apps are front and center -- move social media and entertainment apps into folders on the last page. Remove anything you haven't opened in two weeks.
 
-- Write down your ideal daily screen time budget (total and per-app)
-- Define your non-negotiable boundaries (phone-free zones, morning protocol, evening cutoff)
-- List your top 3 replacement activities
-- **Journal prompt:** "What does my ideal relationship with my phone look like?"
+**Days 26-27: Stress test it.** Apply everything you've built on a full weekend day (weekends are harder because there's less structure). Notice how you handle stress or boredom without defaulting to your phone. This is the real test of whether your new habits hold up outside the challenge structure.
 
-### Day 23: Identify Your Vulnerabilities
+**Day 28:** Read back through whatever notes or journal entries you've kept this month. The contrast between Week 1 and now is usually the most motivating part of the whole challenge.
 
-- Review your month of data and find patterns in when you slip
-- Common vulnerability points: weekends, stress, loneliness, boredom, late nights
-- For each vulnerability, create a specific plan: "When I feel [trigger], I will [alternative behavior] instead of reaching for my phone"
-- **Journal prompt:** "What are my biggest risk factors for relapse?"
+**Days 29-30: Wrap up.** Finalize your Intently settings with the intervention preferences that worked best. Set up a monthly check-in with yourself to recalibrate. And on Day 30 -- compare your baseline to your current data and do something good with the time you've reclaimed. A meal with someone you love, a long walk, a project you've been putting off. Something that reminds you what the extra time is actually for.
 
-### Day 24: Set Up Ongoing Accountability
+## Honest Tips for Getting Through This
 
-- Share your results with a friend or family member
-- Consider finding an accountability partner who wants to improve their phone habits too
-- Set a recurring weekly calendar reminder to review your Intently data
-- **Journal prompt:** "Who will help me stay accountable after this challenge?"
+**Start on a weekday.** The structure of a workday helps. Starting on a Saturday when you have nothing planned is setting yourself up for a rough first few days.
 
-### Day 25: Optimize Your Phone Environment
+**You will slip up.** A day of heavy scrolling doesn't undo two weeks of progress. Notice it, figure out what triggered it, and move on. Self-criticism makes this harder, not easier. This is consistent with [how mindful approaches to phone habits work](/blog/phone-addiction-help) -- compassion beats shame every time.
 
-- Reorganize your home screen: only essential apps on the first page
-- Move all social media and entertainment apps to folders on the last page
-- Set up [Focus modes](/blog/how-to-reduce-screen-time) for work, sleep, and personal time
-- Remove any apps you have not used in the past 2 weeks
-- **Journal prompt:** "How does my phone feel different now?"
+**Track consistently.** Having objective data removes a lot of the guesswork and self-deception. [Intently's privacy-first tracking](/blog/privacy-first-screen-time-tracking) gives you real numbers without compromising your personal information.
 
-### Day 26: The Weekend Test
+**Replace, don't just remove.** Every chunk of screen time you cut should be filled with something you actually like. If this whole thing feels like punishment, something's off. The point is a better daily life, not a more spartan one.
 
-- Apply all your new habits on a full weekend day
-- Weekends are typically the hardest because of less structure and more free time
-- Plan at least 2 screen-free activities for the day
-- **Journal prompt:** "How did the weekend challenge go?"
+## Keeping It Going After Day 30
 
-### Day 27: Stress Test
+The challenge gives you a structure, but after it ends, you need a lighter version to maintain what you've built. A few things that help:
 
-- Notice how you handle stress today without defaulting to your phone
-- When a stressful moment arises, use your replacement behavior instead of scrolling
-- **Journal prompt:** "How did I cope with stress without my phone today?"
+- A quick 5-minute review of your Intently data each Sunday
+- Keeping mindful interventions active for your trigger apps
+- Monthly check-ins where you adjust goals based on what's actually happening
+- Staying engaged with the hobbies and habits you picked up during the challenge
 
-### Day 28: Reflect on Your Journey
+People who keep tracking and using mindful interventions tend to hold onto their new habits much longer than those who stop cold after a challenge. The awareness itself is a big part of what makes this work.
 
-- Read back through your entire month of journal entries
-- Note the biggest changes in your habits, feelings, and daily life
-- **Journal prompt:** "How has my life changed over these 28 days?"
+## What You're Really After
 
-### Day 29: Finalize Your Maintenance Plan
+After 30 days, the goal isn't some austere, phone-free existence. You'll still use your phone. You'll still enjoy social media, watch videos, and message people. The difference is how it feels. When you open an app because you chose to, it feels completely different from opening it because your thumb moved on autopilot.
 
-- Confirm your ongoing daily screen time goals
-- Set up Intently with your final intervention preferences
-- Schedule a monthly review to check in on your progress
-- **Journal prompt:** "What three commitments am I making to myself going forward?"
+That sense of choosing -- that's what this whole thing is about.
 
-### Day 30: Celebrate
-
-- Compare your Day 1 baseline with your Day 30 data
-- Calculate your total reduction in screen time over the month
-- Do something meaningful with the time you have reclaimed: a special meal, an outing, a creative project
-- **Journal prompt:** "What am I most proud of from this challenge?"
-
-## What to Expect: The Emotional Arc of a Digital Detox
-
-Understanding the typical emotional journey helps you push through difficult moments:
-
-**Days 1-3: Curiosity and motivation.** You feel excited about the challenge and eager to learn about your habits. Energy is high.
-
-**Days 4-7: Surprise and mild discomfort.** The data reveals patterns you did not expect. You may feel slightly defensive or uncomfortable with what you discover.
-
-**Days 8-12: Frustration and resistance.** As you start making changes, your brain pushes back. You may feel irritable, bored, or restless. This is the critical phase---most people who quit do so here.
-
-**Days 13-18: Adjustment and relief.** The discomfort fades. You start noticing benefits: better sleep, more time, improved focus. New habits begin to feel more natural.
-
-**Days 19-25: Confidence and momentum.** You feel genuinely different. Phone cravings decrease. You have more energy and time for things that matter.
-
-**Days 26-30: Integration and ownership.** The new habits feel like yours, not imposed restrictions. You use your phone intentionally rather than automatically.
-
-## Tips for Success
-
-### Start on a Monday
-Beginning on a weekday gives you structure. Weekends without a plan can derail new habits before they form.
-
-### Tell Someone
-Social accountability increases success rates by 65%. Tell a friend, post about it (the irony is noted), or find a challenge buddy.
-
-### Be Compassionate with Slip-Ups
-You will have bad days. A day of excessive scrolling does not erase two weeks of progress. Acknowledge it, learn from it, and continue. This is consistent with [how mindful approaches to phone addiction work](/blog/phone-addiction-help)---compassion, not shame.
-
-### Track Everything
-Data removes guesswork. [Intently's privacy-first tracking](/blog/privacy-first-screen-time-tracking) gives you objective insights without compromising your personal information.
-
-### Focus on Addition, Not Just Subtraction
-Every minute of screen time you remove should be replaced with something you genuinely enjoy. If the challenge feels like pure deprivation, you are doing it wrong. The goal is a richer life, not an emptier one.
-
-## After the Challenge: Maintaining Your New Habits
-
-The 30-day challenge is the beginning, not the end. Long-term maintenance requires:
-
-- **Weekly data reviews:** Spend 5 minutes every Sunday reviewing your Intently data
-- **Monthly recalibration:** Adjust your goals based on what is working and what is not
-- **Ongoing mindful interventions:** Keep Intently's interventions active for your trigger apps
-- **Regular replacement activities:** Maintain the hobbies and habits you built during the challenge
-- **Self-compassion:** Some weeks will be better than others, and that is normal
-
-Research on [digital wellbeing](/blog/what-is-digital-wellbeing) shows that people who maintain tracking and mindful interventions after an initial reduction period are 3x more likely to sustain their new habits at the 6-month mark.
-
-## Conclusion: Your Phone Should Work for You
-
-At the end of 30 days, the goal is simple: your phone should feel like a tool you control, not a compulsion that controls you. You will still use your phone. You will still enjoy social media, entertainment, and communication. But you will do so on your terms.
-
-The difference between mindless scrolling and intentional use is not the amount of time---it is the feeling of choice. When you open an app because you decided to, it feels completely different from opening it because your thumb moved automatically.
-
-Ready to start? [Download Intently](/download) today and begin Day 1 of your digital detox challenge. Your future self will thank you.
+Ready to start? [Download Intently](/download) and begin Day 1.
 
 ---
 
-**Not ready for a full 30-day challenge?** Take our free [Phone Addiction Quiz](/quiz) to see where you stand and get personalized recommendations for your starting point.
+Not ready for a full 30-day challenge? Take our free [Phone Addiction Quiz](/quiz) to see where you stand and get personalized recommendations for your starting point.
 
 ---
 
 **Related Articles:**
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
+- [How to Reduce Screen Time: 10 Practical Strategies](/blog/how-to-reduce-screen-time)
 - [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much)
 - [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
 - [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night)

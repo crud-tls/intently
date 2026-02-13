@@ -23,242 +23,239 @@ faq:
 
 # Social Media Addiction Signs: 10 Warning Signs You Need to Know
 
-**You check Instagram before your feet hit the floor in the morning. You scroll Twitter during every meal. You watch TikTok until your eyes burn at night. You have told yourself a hundred times that you will cut back, and a hundred times you have not. But is that addiction, or just a habit?**
+Somewhere between "I just like staying connected" and "I can't put this thing down" is a gray area most of us live in. Maybe you've noticed your screen time creeping up, or a friend made a comment about you always being on your phone. Maybe you've tried setting limits and quietly abandoned them a week later. Whatever brought you here, the fact that you're asking the question matters.
 
-The line between heavy social media use and genuine addiction is not always obvious. This guide covers the 10 most reliable warning signs of social media addiction, backed by behavioral psychology research, so you can honestly assess where you stand and know what to do about it.
+This guide walks through 10 warning signs of social media addiction -- grounded in behavioral psychology research -- so you can figure out where you actually stand and what to do about it.
 
 ## What Is Social Media Addiction?
 
-Social media addiction is a behavioral addiction characterized by compulsive, excessive engagement with social media platforms that continues despite negative consequences to mental health, relationships, work, or daily functioning.
+Social media addiction is a behavioral addiction: compulsive, excessive use of social platforms that continues even when it's hurting your mental health, relationships, work, or day-to-day life.
 
-While not yet a formal diagnosis in the DSM-5, the American Psychological Association and numerous researchers recognize it as a genuine behavioral pattern with neurological underpinnings similar to gambling addiction. Brain imaging studies show that heavy social media users exhibit dopamine response patterns nearly identical to those observed in substance addiction.
+It's not a formal DSM-5 diagnosis yet, but the American Psychological Association and a growing body of researchers treat it as a real behavioral pattern. Brain imaging studies have found that heavy social media users show dopamine response patterns strikingly similar to those in substance addiction.
 
-The key distinction between heavy use and addiction is **impaired control**: the inability to regulate your behavior even when you want to, even when you know it is causing harm.
+The difference between heavy use and addiction comes down to control. If you want to cut back but can't -- even when you see the damage -- that's the line.
 
 ## The 10 Warning Signs
 
-### Sign 1: You Check Social Media First Thing Every Morning
+### Sign 1: Social Media Is the First Thing You Reach For Every Morning
 
-**What it looks like:** Before you get out of bed, before you use the bathroom, before you say good morning to anyone, you reach for your phone and open a social media app. This is not a deliberate choice. It happens automatically, often before you are fully awake.
+Your alarm goes off and your thumb is already on Instagram before you've fully opened your eyes. Not as a conscious decision -- more like a reflex. It happens before coffee, before the bathroom, before saying good morning to anyone in your house.
 
-**Why it matters:** This behavior indicates that social media has become a primary coping mechanism for the transition from sleep to wakefulness. Your brain has learned that the dopamine hit from notifications and new content is the most reliable way to "wake up" and feel alert. When checking social media is the first action of your day, it sets a reactive, stimulus-seeking tone that carries through the following hours.
+When this is your pattern, social media has essentially become the thing your brain uses to "boot up." That first hit of notifications and new content triggers a dopamine response that your nervous system has learned to depend on. It sets a reactive, stimulus-seeking tone for the rest of your day.
 
-**The test:** Tomorrow morning, try not checking any social media app for the first 30 minutes after waking. If this feels uncomfortable, anxiety-inducing, or nearly impossible, this sign applies to you. For strategies on breaking this specific habit, see our guide on [how to stop checking your phone first thing in the morning](/blog/stop-checking-phone-morning).
+Try this tomorrow: don't open any social media for the first 30 minutes after waking. If that sounds easy but turns out to be surprisingly hard, pay attention to that gap. We've written a whole guide on [how to stop checking your phone first thing in the morning](/blog/stop-checking-phone-morning) if you want practical strategies.
 
 ### Sign 2: You Lose Track of Time While Scrolling
 
-**What it looks like:** You open an app intending to spend 5 minutes and suddenly 45 minutes have passed. You miss appointments, meals, or bedtimes because you were scrolling without awareness of how much time elapsed.
+You open TikTok to watch one video. Forty-five minutes later, you realize you're late for something. This is "dissociative scrolling" -- a trance-like state where your normal sense of time just switches off. It's one of the strongest indicators of addictive use because it means the platform has overridden basic executive functions like time awareness and task prioritization.
 
-**Why it matters:** This is called "dissociative scrolling," a trance-like state where normal time perception is suspended. It is one of the strongest indicators of addictive behavior because it demonstrates that the platform has captured your attention so completely that basic executive functions (time tracking, task prioritization) are overridden.
+A quick gut check: before your next scroll session, set a 10-minute timer. When it goes off, notice your reaction. Are you surprised it's already been 10 minutes? Do you dismiss the timer and keep going? That tells you something.
 
-**The test:** Before opening your most-used social media app, set a timer for 10 minutes. Note how long 10 minutes feels. If you are consistently shocked by how quickly time passes, or if you routinely ignore the timer and keep scrolling, this sign applies to you.
+### Sign 3: You Feel Anxious Without Access to Social Media
 
-### Sign 3: You Feel Anxious When You Cannot Access Social Media
+Phone dies at a restaurant. No Wi-Fi on the train. Someone asks you to put your phone away during dinner. If any of these scenarios trigger real anxiety -- not mild annoyance, but genuine restlessness or irritability -- that's worth examining.
 
-**What it looks like:** When your phone dies, when you are in an area without service, when an app is down, or when someone asks you to put your phone away, you feel genuine anxiety, restlessness, or irritability. You may check your phone repeatedly even when you know there is no service.
+In clinical terms, this is withdrawal. Your brain has adapted to constant social media input, and when that stream cuts off, it sends distress signals. The same mechanism behind withdrawal from substances is at work here, just at a different intensity.
 
-**Why it matters:** Anxiety in the absence of a substance or behavior is a hallmark of addiction. In clinical terms, this is called withdrawal. Your brain has adapted to a constant stream of social media stimulation. When that stream is interrupted, the brain signals distress because it is not receiving the dopamine it has come to depend on.
+Here's a telling experiment: leave your phone at home for a couple of hours while you run errands. Mild inconvenience is fine and normal. But if you find yourself reaching into an empty pocket every few minutes, struggling to focus on anything, or feeling a low hum of anxiety the entire time -- that points to dependence.
 
-**The test:** Leave your phone at home for 2 hours while running errands. Notice how you feel. Mild inconvenience is normal. Persistent anxiety, compulsive reaching for a phantom phone, or difficulty concentrating on anything else suggests dependence.
+### Sign 4: You've Tried to Cut Back and It Hasn't Stuck
 
-### Sign 4: You Have Repeatedly Failed to Cut Back
+"I'm only checking twice a day." "I'm deleting the app for a month." "No scrolling after 10 PM." Sound familiar? If you've made these kinds of resolutions multiple times over the past year and they consistently fall apart after a few days or weeks, that pattern itself is a warning sign.
 
-**What it looks like:** You have made resolutions to reduce social media use: "I'll only check twice a day," "I'm deleting Instagram for a month," "No more scrolling after 10 PM." These resolutions last days or weeks at most before you return to old patterns.
+This isn't a willpower problem. Repeated failed attempts to control a behavior -- despite genuinely wanting to change -- is one of the core criteria for addiction across every category, behavioral and substance alike. It means the habit has become neurologically entrenched enough that good intentions alone can't override it.
 
-**Why it matters:** Repeated failed attempts to control a behavior despite genuine desire to change is one of the core criteria for addiction across all behavioral and substance categories. It is not about willpower. It indicates that the behavior has become neurologically entrenched to the point where conscious intention alone cannot override it.
+Think back over the last 12 months. How many times did you try to cut back? How many of those attempts made it past two weeks?
 
-**The test:** Reflect on the last 12 months. How many times have you tried to reduce your social media use? How many of those attempts lasted more than 2 weeks? If the answer is "multiple attempts, few lasting," this is a significant warning sign.
+### Sign 5: Social Media Is Your Go-To Emotional Escape
 
-### Sign 5: You Use Social Media to Escape Negative Emotions
+Stressed about work? Open Reddit. Feeling lonely on a Friday night? Scroll Instagram. Bored in a waiting room? TikTok.
 
-**What it looks like:** When you feel stressed, sad, anxious, bored, lonely, or overwhelmed, your first instinct is to open a social media app. The scrolling provides temporary relief from the uncomfortable emotion, but the emotion returns (often worse) when you stop.
+When social media becomes your default response to uncomfortable emotions, it's functioning as a coping mechanism -- not entertainment. The problem is that it's a bad coping mechanism. Scrolling doesn't resolve the stress or loneliness; it just numbs it temporarily. And when you stop, the feeling usually comes back worse, now with a layer of guilt about the time you just wasted.
 
-**Why it matters:** Using a behavior to regulate emotions is a core feature of addiction. It transforms social media from entertainment into a coping mechanism. The problem is that social media is an ineffective coping tool: it does not resolve the underlying emotion, and it often worsens it through comparison, time waste guilt, and attention fragmentation.
+Next time you feel an uncomfortable emotion, pause and notice what your hands do. If the automatic move is to reach for your phone and open a social app, that reflex is telling you something important. We dig deeper into [the psychology behind this pattern](/blog/psychology-of-app-addiction) if you want to understand what's happening in your brain.
 
-**The test:** Next time you feel an uncomfortable emotion, notice your impulse. Is your first thought to reach for your phone? If social media is your default response to stress, sadness, or boredom, this sign applies. For more on [the psychology behind this pattern](/blog/psychology-of-app-addiction), see our in-depth guide.
+### Sign 6: People Around You Have Noticed
 
-### Sign 6: Your Relationships Are Affected
+This one's uncomfortable, but it's telling. Has a partner, friend, or family member ever said something about how much you're on your phone? Have you caught yourself scrolling during a meal, a conversation, or a movie night?
 
-**What it looks like:** Partners, friends, or family members have commented on your phone use. You scroll during meals, conversations, or shared activities. You are physically present but mentally absent. Intimacy, connection, and quality time have deteriorated because part of your attention is always on the screen.
+When a behavior is damaging your relationships and you continue doing it anyway, that's a significant red flag. Many people don't fully grasp how much their phone use affects the people around them until someone says it directly.
 
-**Why it matters:** When a behavior damages relationships and you continue it anyway, that is a red flag for addiction. It means the compulsion to use social media is overriding your value of connection with the people in your life. Many people do not realize the extent of the impact until a partner or friend directly confronts them.
+The most honest test: ask someone close to you whether your phone use bothers them. And when they answer, just listen. Don't explain or defend. If they've noticed and it's affecting them, that's important data.
 
-**The test:** Ask someone close to you, honestly, whether your phone use affects your relationship. Listen without defending. If they have noticed and it bothers them, this sign applies.
+### Sign 7: FOMO Drives Your Usage
 
-### Sign 7: You Experience FOMO (Fear of Missing Out)
+You check Twitter because something might be happening. You open Instagram stories because you might miss an announcement. Even when you're fairly sure there's nothing important waiting, the possibility that there could be keeps pulling you back.
 
-**What it looks like:** You feel compelled to check social media because you might miss something: a trending topic, a friend's announcement, a viral moment, breaking news. Even when you know nothing important is happening, the possibility that something might be keeps you checking.
+FOMO exploits something fundamental about how our brains work: we hate uncertainty. Not knowing what you might be missing feels worse than the mild letdown of checking and finding nothing new. Social platforms lean into this hard -- they're designed to show you what you "missed" every time you come back, reinforcing the fear.
 
-**Why it matters:** FOMO is a powerful driver of compulsive social media use. It exploits the brain's uncertainty aversion: not knowing what you might be missing feels worse than the mild disappointment of checking and finding nothing interesting. Social platforms amplify FOMO by design, showing you what you "missed" when you return.
+Try turning off all social media notifications for 48 hours. Count how many times you open apps on your own, driven purely by the feeling that you might be missing something. The number will probably surprise you.
 
-**The test:** Turn off all social media notifications for 48 hours. Notice how often you check apps proactively, driven by the feeling that you might be missing something. If the urge is frequent and strong, FOMO is driving your usage.
+### Sign 8: Your Sleep Has Gotten Worse
 
-### Sign 8: Your Sleep Is Disrupted
+You meant to go to bed at 11. It's 12:45 and you're still in a Reels spiral. Or you wake up at 3 AM and, instead of rolling over, you check your notifications.
 
-**What it looks like:** You scroll social media in bed, often for 30 minutes to 2+ hours past your intended bedtime. You have trouble falling asleep after scrolling. You wake up during the night and check social media. Your overall sleep quality has declined since heavy social media use began.
+Sleep disruption from social media creates a vicious cycle. Poor sleep weakens your prefrontal cortex -- the brain region responsible for self-control and decision-making -- which makes it harder to resist scrolling the next day, which makes your sleep even worse.
 
-**Why it matters:** Sleep disruption from social media use is both a symptom of addiction and a factor that worsens it. Poor sleep impairs prefrontal cortex function (self-control, decision-making), making it harder to resist social media the next day. This creates a downward spiral: more scrolling leads to worse sleep, which leads to less self-control, which leads to more scrolling.
+Track your intended bedtime versus your actual bedtime for a week. If social media is consistently pushing your sleep back by 30 minutes or more, that's a pattern worth breaking. Our guide on [stopping nighttime scrolling](/blog/stop-scrolling-at-night) has specific strategies that work.
 
-**The test:** Track your actual bedtime versus your intended bedtime for one week. If social media consistently pushes your sleep back by 30+ minutes, this sign applies. Our guide on [stopping nighttime scrolling](/blog/stop-scrolling-at-night) offers specific strategies.
+### Sign 9: You Feel Worse After Using It, But Keep Going
 
-### Sign 9: You Feel Worse After Using Social Media, But Keep Using It
+This might be the most telling sign on the list. After a long scrolling session, you feel drained, guilty, inadequate, or just empty. You're aware of this. And you keep doing it at the same rate anyway.
 
-**What it looks like:** After a social media session, you feel drained, guilty, anxious, inadequate, or empty. You know this, and yet you continue using the platforms at the same rate. The behavior persists despite awareness that it makes you feel bad.
+When the compulsive drive to use something has decoupled from the actual experience of using it -- when you're not scrolling because it feels good, but because you can't stop -- that's addiction in its clearest form.
 
-**Why it matters:** Continuing a behavior despite knowing it harms you is one of the most telling signs of addiction. It means the compulsive drive to use the platform has decoupled from the actual experience of using it. You are no longer scrolling because it feels good. You are scrolling because you cannot stop.
+Try this for a week: after each social media session, rate how you feel on a 1-10 scale. If your average lands below 5 and your usage doesn't drop, sit with what that means.
 
-**The test:** After your next social media session, rate how you feel on a 1-10 scale (1 = terrible, 10 = great). Track this for a week. If your average score is below 5 and your usage does not decrease, this sign applies.
+### Sign 10: The Same Amount Doesn't Satisfy You Anymore
 
-### Sign 10: You Have Developed Tolerance
+A year ago, 20 minutes of Instagram felt like plenty. Now an hour barely scratches the itch. You've added TikTok, Threads, maybe a few more. The content that used to entertain you feels flat, so you seek out more intense or niche material.
 
-**What it looks like:** The same amount of social media use that once felt satisfying no longer does. You need more time, more platforms, or more stimulating content to achieve the same level of engagement or emotional relief. You have added new platforms or spend increasing amounts of time to feel the same effect.
+This is tolerance -- needing more of a behavior for the same effect. It's the same mechanism that drives substance users to increase doses. Your brain's dopamine system has adapted to the current level of stimulation and now requires escalation.
 
-**Why it matters:** Tolerance, needing more of a substance or behavior for the same effect, is a hallmark criterion of addiction. It indicates that your brain's dopamine system has adapted to the current level of stimulation and now requires escalation. This is the same mechanism that drives substance users to increase doses.
-
-**The test:** Compare your social media usage from 6 months ago to today. If you are spending more time, using more platforms, or seeking more extreme content to feel satisfied, tolerance has developed.
+Compare your usage from six months ago to today. More time, more platforms, more extreme content to feel engaged? That's tolerance at work.
 
 ## Self-Assessment: Where Do You Stand?
 
-Count how many of the 10 signs apply to you:
+Count how many of those 10 signs ring true for you:
 
-**0-2 signs:** Your social media use is likely within healthy bounds. Continue practicing intentional use and monitor for changes.
+**0-2 signs:** Your social media use is probably in a healthy range. Keep being intentional about it and check in with yourself periodically.
 
-**3-4 signs:** You are showing early signs of problematic use. This is the ideal time to intervene with mindful strategies before patterns become more entrenched. The strategies below will help.
+**3-4 signs:** Early warning territory. This is actually the best time to make changes -- before patterns get more deeply wired. The strategies below will help.
 
-**5-7 signs:** You have a significant problematic relationship with social media. Active intervention is recommended. Implement multiple strategies from this article and consider tools like Intently to support behavior change.
+**5-7 signs:** Your relationship with social media has become a real problem. Active intervention is worth it here. Implement several strategies from this article and consider using a tool like Intently to build better habits.
 
-**8-10 signs:** Your social media use has reached addiction levels. Implement the strategies below immediately, and consider speaking with a mental health professional who specializes in behavioral addiction or digital wellbeing.
+**8-10 signs:** This is addiction-level use. Start with the strategies below, and seriously consider talking to a mental health professional who works with behavioral addiction or digital wellbeing.
 
-For a more detailed, personalized assessment, take our free [Phone Addiction Quiz](/quiz). It evaluates your specific patterns and provides tailored recommendations.
+For a more detailed, personalized look at your habits, take our free [Phone Addiction Quiz](/quiz) -- it evaluates your specific patterns and gives you tailored recommendations.
 
-## What to Do If You Recognize Yourself in These Signs
+## What to Do If You See Yourself in These Signs
 
-### Step 1: Acknowledge Without Shame
+### Step 1: Drop the Shame
 
-The first step is honest acknowledgment. Social media addiction is not a character flaw or a willpower failure. These platforms employ hundreds of engineers and psychologists specifically to make them as engaging as possible. Getting hooked is a predictable response to a product designed to hook you.
+Let's get this out of the way: social media addiction isn't a character flaw. These platforms employ hundreds of engineers and psychologists whose entire job is to make their product as hard to put down as possible. Getting hooked is a predictable response to a product built to hook you.
 
-Self-compassion, not shame, is the foundation of change. Our article on [mindful tech interventions vs. blocking](/blog/mindful-tech-interventions-vs-blocking) explains why compassionate approaches outperform punitive ones.
+Self-compassion -- not self-punishment -- is what actually drives change. If you're curious why, our piece on [mindful tech interventions vs. app blocking](/blog/mindful-tech-interventions-vs-blocking) gets into the research.
 
 ### Step 2: Measure Your Actual Usage
 
-Most people underestimate their social media time by 50% or more. Before making changes, get accurate data:
+Most people underestimate their social media time by about 50%. Before changing anything, get the real numbers:
 
 - Check your phone's built-in screen time data (iPhone: Settings > Screen Time; Android: Settings > Digital Wellbeing)
 - Install Intently for detailed, privacy-first tracking across all your social media apps
-- Record your usage for one full week without trying to change it
+- Record a full week of usage without trying to change anything
 
-Seeing real numbers is often the catalyst that transforms vague concern into concrete motivation.
+Seeing your actual numbers is often the thing that turns vague worry into real motivation.
 
 ### Step 3: Set Up Mindful Interventions
 
-[Download Intently](/download) and configure it for your most problematic social media apps. The gentle pause screen before each app opens creates a moment of conscious choice that is the single most effective tool for reducing compulsive social media use.
+[Download Intently](/download) and configure it for whatever apps give you the most trouble. It shows a gentle pause screen before each app opens -- just a moment that asks, "Do you actually want to do this right now?"
 
-Intently's approach works because it does not block or restrict. It simply asks: "Do you want to do this right now?" For addictive behavior that operates on autopilot, that one question changes everything.
+That single question is surprisingly powerful. Intently doesn't block or restrict anything. It just interrupts the autopilot. And for compulsive behavior that runs on autopilot, that interruption changes the equation.
 
-### Step 4: Implement Environmental Changes
+### Step 4: Change Your Environment
 
-Reduce automatic access to social media:
+Small changes to your physical setup can reduce triggers for compulsive use:
 
 - Move social media apps off your home screen
-- Disable all non-essential notifications
+- Turn off all non-essential notifications
 - Charge your phone outside the bedroom
-- Designate phone-free zones (dining table, bedroom, bathroom)
-- Enable grayscale mode on your phone to make apps less visually appealing
+- Pick a few phone-free zones: dining table, bedroom, bathroom
+- Try grayscale mode -- it makes apps significantly less visually appealing
 
-These environmental changes reduce the triggers that initiate compulsive use. For a comprehensive approach, see our guide on [how to reduce screen time](/blog/how-to-reduce-screen-time).
+For a more comprehensive approach, check out our guide on [how to reduce screen time](/blog/how-to-reduce-screen-time).
 
-### Step 5: Address the Underlying Needs
+### Step 5: Figure Out What You're Actually Looking For
 
-Social media addiction often masks unmet psychological needs. Identify what your social media use is really about:
+Social media use tends to spike when it's filling a need that isn't being met elsewhere. It helps to get honest about what that need is:
 
-| If Social Media Fills Your Need For... | Try Instead... |
+| If you're really looking for... | A healthier alternative... |
 |----------------------------------------|----------------|
-| Connection | Schedule regular calls or meetups with friends |
-| Validation | Practice self-affirmation or seek feedback from trusted people |
-| Entertainment | Develop hobbies that provide active rather than passive enjoyment |
+| Connection | Schedule regular calls or in-person hangouts |
+| Validation | Practice self-affirmation or seek feedback from people you trust |
+| Entertainment | Pick up hobbies that engage you actively, not passively |
 | Information | Subscribe to curated newsletters that respect your attention |
-| Emotional regulation | Learn breathing techniques, journaling, or mindfulness |
-| Boredom relief | Embrace boredom as creative space, or keep a book accessible |
+| Emotional regulation | Try breathwork, journaling, or mindfulness exercises |
+| Boredom relief | Keep a book within arm's reach, or let yourself be bored |
 
-When underlying needs are met through healthier channels, the compulsion to reach for social media diminishes naturally.
+When those underlying needs get met through better channels, the pull toward social media weakens on its own.
 
-### Step 6: Build Replacement Habits
+### Step 6: Build Specific Replacements
 
-For every social media habit you want to reduce, plan a specific alternative:
+Vague goals ("I'll scroll less") don't work. Specific swaps do:
 
-- **Morning scroll** becomes **morning walk or journaling**
-- **Meal-time scrolling** becomes **conversation or mindful eating**
-- **Bathroom scrolling** becomes **leaving phone outside the bathroom**
-- **Bedtime scrolling** becomes **reading a physical book**
-- **Idle-moment scrolling** becomes **breathing exercises or podcasts**
+- Morning scroll becomes a morning walk or 10 minutes of journaling
+- Meal-time scrolling becomes conversation or just eating without a screen
+- Bedtime scrolling becomes reading a physical book
+- Idle-moment scrolling becomes a breathing exercise or a podcast episode
 
-The specificity matters. "I'll scroll less" fails. "When I feel the urge to scroll during lunch, I will listen to a podcast episode instead" succeeds. For more ideas, see our guide on [staying productive without deleting social media](/blog/productive-without-deleting-social).
+The specificity is what makes it stick. "When I feel the urge to scroll during lunch, I'll put on a podcast instead" is a plan. "I'll use my phone less" is a wish. Our guide on [staying productive without deleting social media](/blog/productive-without-deleting-social) has more ideas along these lines.
 
-### Step 7: Track Progress and Adjust
+### Step 7: Review Weekly and Be Patient
 
-Review your usage data weekly:
+Check your usage data once a week:
 
-- Is total social media time trending downward?
-- Are your most problematic apps showing improvement?
-- How do you feel after sessions now compared to when you started?
-- Are you catching yourself before automatic opens more often?
+- Is total social media time trending down?
+- Are your worst apps improving?
+- Do you feel different after sessions compared to when you started?
+- Are you catching yourself before automatic opens more frequently?
 
-Celebrate progress. A 20% reduction in the first month is excellent. A 50% reduction over three months is transformative. Perfection is not the standard. The trajectory matters.
+A 20% reduction in the first month is genuinely great progress. A 50% reduction over three months is life-changing. You're not going for perfection -- you're going for a better trajectory.
 
-## How Intently Supports Your Recovery
+## How Intently Helps
 
-Intently is designed specifically for the kind of behavior change that social media addiction requires:
+Intently was built for exactly this kind of behavior change:
 
-- **Mindful interventions:** Gentle pause screens before social media apps open, creating conscious choice moments
-- **Usage tracking:** See exactly how much time you spend on each platform, with daily and weekly trends
-- **Privacy-first:** All data stays on your device. No cloud, no account, no tracking. Your usage data is yours alone.
-- **Customizable messages:** Set intervention messages that resonate with your personal motivation
-- **Non-punitive:** Never blocks access, always preserves your autonomy
-- **Cross-platform:** Works on Android, iOS, and Chrome
+- Mindful pause screens before social media apps open, creating a moment of conscious choice
+- Detailed usage tracking with daily and weekly trends
+- Fully private -- all data stays on your device, no cloud, no account, no tracking
+- Customizable intervention messages that speak to your personal reasons for changing
+- Never blocks access -- it preserves your autonomy while building awareness
+- Works on Android, iOS, and Chrome
 
-Unlike app blockers that trigger frustration and workarounds, Intently builds genuine self-awareness. Over time, you do not need the intervention because you have internalized the pause. That is real, lasting change.
+Unlike blockers that just trigger frustration (and creative workarounds), Intently builds real self-awareness. Over time, you internalize the pause and don't need the prompt anymore. That's lasting change.
 
-[Download Intently](/download) and start transforming your relationship with social media today.
+[Download Intently](/download) and start using social media on your terms.
 
 ## When to Seek Professional Help
 
-The strategies in this article are effective for most people. However, professional support is recommended if:
+The strategies here work for most people. But professional support makes sense if:
 
-- You scored 8-10 on the self-assessment above and have been unable to make changes independently
-- Social media addiction is co-occurring with depression, anxiety, or other mental health conditions
-- Your work, school, or professional life has been significantly impacted
-- Relationships have been damaged or lost due to your social media use
-- You experience severe withdrawal symptoms (anxiety, irritability, inability to concentrate) when attempting to reduce use
+- You scored 8-10 on the self-assessment and haven't been able to make changes on your own
+- Social media addiction is happening alongside depression, anxiety, or other mental health conditions
+- Your work or academic performance has taken a real hit
+- Relationships have been damaged or lost because of your usage
+- Reducing use triggers severe anxiety, irritability, or an inability to concentrate
 
-A therapist specializing in behavioral addiction or digital wellbeing can provide structured support, cognitive-behavioral strategies, and accountability that complement the self-help approaches in this article.
+A therapist who specializes in behavioral addiction or digital wellbeing can provide structured support and cognitive-behavioral strategies that go beyond what any self-help article can offer.
 
 ## FAQ: Social Media Addiction Signs
 
 **Is social media addiction a real condition?**
-While not yet a formal DSM-5 diagnosis, researchers widely recognize it as a behavioral addiction with characteristics similar to gambling disorder. Brain imaging studies show neurological patterns in heavy social media users that mirror substance addiction.
+It's not a formal DSM-5 diagnosis yet, but researchers widely recognize it as a behavioral addiction -- similar in many ways to gambling disorder. Brain imaging studies consistently show neurological patterns in heavy social media users that mirror substance addiction.
 
 **How many signs do I need to have to be addicted?**
-Experiencing 4 or more regularly indicates problematic use. Experiencing 6 or more suggests significant addiction patterns. Even 2-3 signs are worth addressing early.
+Four or more experienced regularly points to problematic use. Six or more suggests significant addiction patterns. Even 2-3 are worth paying attention to -- early intervention makes a big difference.
 
 **Can you be addicted to social media without realizing it?**
-Yes. Social media addiction often develops gradually. Many people do not recognize it until they try to reduce usage and discover they cannot.
+Absolutely. It develops gradually. What starts as normal use slowly escalates until compulsive patterns feel like "just how I use my phone." Many people don't realize it until they try to stop and find that they can't.
 
 **Is social media addiction the same as phone addiction?**
-They overlap but are not identical. Phone addiction includes compulsive use of any phone feature. Social media addiction is specifically tied to social platforms. Most people with social media addiction also have phone addiction.
+They're related but not the same. Phone addiction covers compulsive use of any phone feature -- texting, browsing, games, anything. Social media addiction is specific to platforms like Instagram, TikTok, and Twitter/X. There's a lot of overlap, but they're distinct patterns.
 
 **What causes social media addiction?**
-It results from the interaction between platform design (variable rewards, infinite scroll, social validation) and individual vulnerability factors (loneliness, anxiety, low self-esteem, ADHD, depression).
+It's a combination of how the platforms are designed (variable rewards, infinite scroll, social validation, algorithmic personalization) and individual factors (loneliness, anxiety, low self-esteem, ADHD, depression). The platforms are built to maximize engagement, and some people are more neurologically susceptible to those design patterns.
 
 **Can social media addiction be cured?**
-Yes. Unlike substance addiction where abstinence is often necessary, social media addiction can typically be resolved through mindful use practices, environmental design, and addressing underlying needs. Tools like Intently support the transition from compulsive to intentional use.
+Yes. Unlike substance addiction, you don't usually need to quit entirely. Most people can shift from compulsive use to intentional use through mindful habits, environmental changes, and addressing the needs that social media was filling. Tools like Intently support that shift.
 
-## The Path Forward
+## Moving Forward
 
-Recognizing the signs of social media addiction is the hardest and most important step. If you see yourself in these warning signs, you are not broken, weak, or hopeless. You are human, using platforms designed by some of the smartest engineers in the world to capture exactly this level of engagement.
+If you recognized yourself in several of these signs, here's what matters most: you noticed. That awareness is the foundation everything else builds on. You're not broken, and you're not weak. You're dealing with platforms engineered by some of the smartest people in tech to capture exactly this level of engagement.
 
-The path forward is not punishment or deprivation. It is awareness, intention, and compassion. Start by taking our [Phone Addiction Quiz](/quiz) for a personalized assessment. Then [download Intently](/download) to begin building the mindful habits that will transform your relationship with social media.
+The way out isn't about punishment or going cold turkey. It's about building awareness, making intentional choices, and being patient with yourself. Start with our [Phone Addiction Quiz](/quiz) for a personalized picture of your habits, then [download Intently](/download) to start building the mindful habits that make real change possible.
 
-You deserve to use technology on your terms. And with the right tools and strategies, you can.
+You deserve to use technology on your terms.
 
 ---
 

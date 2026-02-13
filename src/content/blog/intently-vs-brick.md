@@ -23,43 +23,38 @@ faq:
 
 # Intently vs Brick: Mind vs Matter in the Fight Against Phone Addiction
 
-This is one of the most interesting comparisons in the digital wellbeing space -- not because these two products are similar, but because they are so fundamentally different that choosing between them says something about how you think about habits, willpower, and change.
+This is one of the more unusual comparisons in the digital wellbeing space. Intently and Brick aren't really competitors -- they're built on completely different ideas about what makes people change.
 
-**Intently** is a free app that creates **mindful pauses** before you use distracting apps. **Brick** is a **$59 physical NFC device** that locks your apps until you physically tap a tile. One asks you to think. The other makes thinking irrelevant by putting a physical obstacle in your path.
+Intently is a free app that creates mindful pauses before you open distracting apps. Brick is a $59 physical NFC device that locks your apps until you physically tap a tile. One asks you to think. The other removes thinking from the equation by putting a physical obstacle in your way.
 
-This is, in a real sense, the software vs hardware debate applied to human behavior. And the answer is not as obvious as you might expect.
+They represent two genuinely different theories of behavior change, and the right pick depends more on your personality than on a feature checklist.
 
-## The Philosophical Divide
+## Two Different Bets on How Habits Work
 
-Before we get into features and pricing, it is worth sitting with the question these two products are really asking:
+Here's the core tension: should you train yourself to resist the cookie jar, or should you put the cookie jar in the attic? Should you build the discipline to wake up early, or should you put your alarm clock across the room?
 
-**Is it better to change how you think about phone use, or to make phone use physically harder?**
+Intently bets that awareness drives lasting change. Brick bets that environment design does. There's solid evidence behind both approaches -- the interesting part is figuring out which one matches how you actually operate.
 
-This is not a new question. It shows up everywhere in behavioral science. Should you train yourself to resist the cookie jar, or should you put the cookie jar in the attic? Should you build the discipline to wake up early, or should you put your alarm clock across the room?
-
-Intently bets on the first approach. Brick bets on the second. Both have real arguments in their favor.
-
-## Quick Comparison Table
+## Quick Comparison
 
 | Feature | Intently | Brick |
 |---------|----------|-------|
 | **Type** | Software app | Physical NFC device + app |
 | **Approach** | Mindful interventions and pauses | Physical NFC tap to unlock apps |
-| **Pricing** | Completely free | $59 one-time purchase |
-| **Privacy** | 100% offline, zero data collection | Account and connectivity required |
-| **Platform** | Android, iOS (coming), Chrome | iOS and Android |
-| **Friction Type** | Psychological (makes you think) | Physical (makes you walk) |
-| **Portability** | Works anywhere your phone goes | Requires proximity to NFC tile |
-| **Customization** | Fully customizable prompts | Block/unblock lists |
-| **Hardware Required** | No | Yes (NFC tile) |
-| **Can Be Lost** | No (it is software) | Yes (physical device) |
-| **Best For** | Building lasting awareness | Maximum external accountability |
+| **Pricing** | Free -- all features included | $59 one-time (replacement tiles cost extra) |
+| **Privacy** | 100% offline, zero data collection | Account required, standard data practices |
+| **Platform** | Android, iOS (coming), Chrome extension | iOS and Android |
+| **Friction Type** | Psychological -- makes you pause and reflect | Physical -- makes you get up and walk |
+| **Portability** | Goes wherever your phone goes | Tied to your NFC tile's location |
+| **Customization** | Fully customizable prompts and messages | Block/unblock app lists |
+| **Hardware dependency** | None | Yes -- the tile is the whole mechanism |
+| **Best for** | Building lasting awareness over time | Hard lockout when you need it most |
 
-## How Each One Works
+## How Each One Actually Works
 
-### Intently: The Pause That Makes You Think
+### Intently: The Pause Before You Act
 
-When you open a tracked app, Intently presents a **full-screen intervention** -- a customizable message, breathing exercise, or reflection prompt that you have written yourself. You pause. You consider whether you actually want to use the app. You make a conscious choice.
+When you open a tracked app, Intently shows a full-screen intervention -- a customizable message, breathing exercise, or reflection prompt that you've written yourself. You pause. You consider whether you actually want to use the app. Then you decide.
 
 The messages are entirely yours:
 
@@ -67,110 +62,110 @@ The messages are entirely yours:
 - "Take a breath. What were you about to do before you picked up your phone?"
 - Custom reminders tied to whatever goals matter to you
 
-You always have the option to proceed. The intervention does not lock you out. It simply ensures that every app launch is a deliberate decision rather than a reflex. Over time, the idea is that you internalize this pause -- you start catching yourself even without the app's help, because you have trained the habit of asking yourself "do I actually want this?"
+You can always choose to proceed. Intently doesn't lock you out. It makes sure every app launch is a conscious choice instead of a reflex. Over time, you start catching yourself even without the prompt -- you've trained the habit of asking "do I actually want this?"
 
-### Brick: The Wall You Cannot Think Your Way Around
+### Brick: A Physical Lock You Can't Think Past
 
-Brick takes a completely different approach. It comes with a physical NFC tile -- a small, brick-shaped tag that you place somewhere deliberate: a drawer, another room, your office. You configure which apps to block, and those apps become **completely inaccessible** until you physically tap your phone against the tile.
+Brick takes the opposite approach. It ships with a physical NFC tile -- a small, brick-shaped tag you place somewhere intentional: a drawer, another room, your office. You configure which apps to block, and those apps are completely inaccessible until you physically tap your phone against the tile.
 
-No tile tap, no app access. It does not matter how persuasive your inner voice is, how bored you are, or how strong the urge is. If the tile is in your kitchen and you are on the couch, Instagram is not opening until you get up, walk to the kitchen, and tap.
+No tile tap, no app access. Doesn't matter how persuasive your inner voice gets. If the tile's in your kitchen and you're on the couch, Instagram isn't opening until you get up and walk over there.
 
-The brilliance of this design is that it converts a split-second digital impulse into a multi-step physical task. By the time you have walked to the tile, the urge has often passed. Brick is not trying to change your mind -- it is trying to make the mindless path inconvenient enough that you naturally choose something else.
+What's clever about this is that it turns a split-second digital impulse into a multi-step physical task. By the time you've walked to the tile, the urge has usually faded. Brick isn't trying to change your mind -- it's making the mindless path inconvenient enough that you naturally do something else.
 
-## Where the Differences Matter Most
+## Where the Differences Actually Show Up
 
 ### Flexibility vs Force
 
-Intently is inherently flexible. It works anywhere your phone goes -- no extra hardware, no physical dependency. You can adjust your interventions instantly, toggle them per app, and adapt to changing schedules. If you are traveling, commuting, or just moved to a new apartment, nothing changes. The software travels with you.
+Intently goes wherever your phone goes. No extra hardware, no planning around a physical object. You can tweak your interventions on the fly, toggle them per app, and adapt as your schedule changes. Traveling, commuting, moved apartments -- doesn't matter.
 
-Brick is inherently forceful. That is its strength and its limitation. The physical barrier is powerful precisely because you cannot just tap through it. But it also means that if you leave the tile at home, your blocking strategy either fails completely (if you need to override) or works too well (if you genuinely need an app you blocked). Planning around the tile becomes part of your routine.
+Brick's strength is its rigidity, but that cuts both ways. The physical barrier works because you can't just tap through it. But if you leave the tile at home, your blocking strategy either fails entirely (if you need to override) or works too well (if you genuinely need a blocked app). You end up planning your day around the tile's location.
 
-For people with predictable schedules and a fixed home base, Brick's approach works smoothly. For people with irregular routines, travel, or a need for on-the-fly adjustments, Intently's software flexibility is a significant advantage.
+If your routine is predictable and you work from a consistent spot, Brick's approach is smooth. If your life is less structured, Intently's software flexibility matters a lot.
 
-### The Cost Question
+### Cost
 
-This one is straightforward. Intently is free -- all features, no premium tier, no upsells. Brick costs $59 for the NFC tile plus app access, and if you lose or damage the tile, replacement costs extra.
+Straightforward. Intently is free -- all features, no premium tier, no upsells. Brick is $59 for the NFC tile plus app access, and replacement tiles cost extra if you lose or damage one.
 
-$59 is not an unreasonable price for a well-designed product, and there is no ongoing subscription. But it is worth noting that Intently's entire feature set -- customizable interventions, usage tracking, streak tracking, analytics -- costs nothing. If budget matters, Intently removes the question entirely.
+$59 isn't unreasonable for a well-designed product, and there's no subscription. But Intently's full feature set -- customizable interventions, usage tracking, streaks, analytics -- costs nothing. If budget's a factor, that settles it.
 
 ### Privacy
 
-Intently is **100% offline** with zero data collection. No account, no cloud, no analytics. Your usage data stays on your device and nowhere else.
+Intently is 100% offline with zero data collection. No account, no cloud, no analytics. Your usage data stays on your device, period.
 
-Brick requires an account for setup and configuration, and the app needs connectivity for NFC authentication and sync. Its data practices are standard and not hostile, but they are not zero-collection either.
+Brick requires an account for setup and uses connectivity for NFC authentication and sync. Their data practices aren't hostile, but they're not zero-collection either.
 
-If privacy is a priority, this is a clear distinction.
+If privacy matters to you, this is a clear-cut difference.
 
 [Download Intently Free](/download)
 
-### What Happens When You Stop?
+### What Happens When You Stop Using It?
 
-This is perhaps the most important question, and it is where the philosophical divide becomes practical.
+This is the question that matters most in the long run.
 
-If you stop using Intently after several months, you take the habits with you. The practice of pausing before acting, of asking yourself whether you really want to open an app -- that awareness does not uninstall when the app does. You have spent months training a mental habit, and mental habits tend to persist.
+If you stop using Intently after a few months, you keep the habits. The practice of pausing before acting, of questioning whether you actually want to open an app -- that awareness doesn't uninstall with the software. You've spent months training a mental reflex, and mental reflexes tend to stick.
 
-If you stop using Brick, the physical barrier disappears entirely. The apps are right there again, one tap away, with no pause and no friction. If the underlying impulse patterns have not changed -- and Brick does not directly address those patterns -- there is a real risk of sliding back to old behavior.
+If you stop using Brick, the physical barrier vanishes. The apps are right there again, one tap away, no pause, no friction. If the underlying impulse patterns haven't shifted -- and Brick doesn't directly work on those -- there's a real chance of sliding back.
 
-This is not a knock on Brick. Physical barriers are genuinely effective while they are in place. But it is worth thinking about your long-term plan. Are you looking for a permanent tool, or are you trying to build habits that eventually stand on their own?
+That's not a knock on Brick. Physical barriers genuinely work while they're active. But it's worth thinking about your endgame. Are you looking for a permanent tool, or are you trying to build habits that eventually stand on their own?
 
 ### Platform Availability
 
-Brick covers both iOS and Android. Intently currently covers Android with iOS on the way, and also offers a Chrome extension for managing distracting websites on your computer. If you need an iOS solution right now and want the physical barrier approach, Brick is available. If you want to extend intervention coverage to your browser, Intently's Chrome extension fills that gap.
+Brick covers iOS and Android today. Intently currently covers Android with iOS on the way, plus a Chrome extension for managing distracting websites on your computer. If you need iOS right now and want the physical barrier approach, Brick's available. If you want to extend coverage to your browser, Intently's Chrome extension fills that gap.
 
-## The Strength-of-Intervention Spectrum
+## On Intervention Strength -- An Honest Take
 
-It is honest to say that Brick provides a stronger immediate barrier. You simply cannot open a blocked app without the tile. Intently's pause is meaningful, but you can choose to proceed through it. For someone in a genuine crisis of phone overuse, Brick's unyielding wall might be exactly what is needed to break the cycle.
+Let's be direct: Brick provides a stronger immediate barrier. You physically cannot open a blocked app without the tile. Intently's pause is meaningful, but you can choose to tap through it. For someone in genuine crisis-level phone overuse, Brick's hard lock might be what's needed to break the cycle.
 
-But "stronger" and "better" are not the same thing. A cast is stronger than physical therapy, but you do not want to wear a cast forever. The question is whether you need an emergency intervention or a long-term practice. Many people need the former first and the latter second -- and some need only one.
+But stronger doesn't mean better for everyone. There's a difference between needing an emergency brake and building the driving skills to not need one. Lots of people need the brake first and the skill-building second -- and some only need one or the other.
 
 ## Can You Use Both?
 
-Unlike two software apps that would conflict with each other, Intently and Brick operate on entirely different layers -- and this is one pairing where using both genuinely makes sense.
+Unlike two software apps that would conflict, Intently and Brick operate on completely different layers -- and this is a pairing that actually makes sense together.
 
-The combination works like this:
+Here's how it works:
 
-- **Brick** handles the hard lockout during your highest-risk times -- work hours, bedtime, study sessions. The tile goes in a drawer, and social media simply does not exist for those blocks.
-- **Intently** provides mindful interventions during unlocked periods, so you are still building awareness and self-regulation skills even when Brick is not active.
+- Brick handles the hard lockout during your highest-risk windows -- work hours, bedtime, study sessions. The tile goes in a drawer, and social media just doesn't exist for those blocks.
+- Intently provides mindful interventions during unlocked periods, so you're still building awareness even when Brick isn't active.
 
-This gives you external control when you need it most and internal skill-building the rest of the time. If you have the budget for Brick and find that software-only pauses are not enough during certain parts of your day, this layered approach is worth considering.
+You get external control when you need it most and internal skill-building the rest of the time. If you've got the budget for Brick and find that software pauses alone aren't enough during certain parts of your day, this layered approach is worth trying.
 
-That said, for most people, starting with Intently alone is a reasonable first step. It costs nothing, requires no hardware, and builds the foundational awareness habits. If after a few weeks you find that certain times of day defeat your resolve no matter what, Brick can be added as a targeted supplement.
+That said, starting with Intently alone makes sense for most people. It costs nothing, requires no hardware, and builds the foundational awareness habits. If after a few weeks you notice that certain times of day defeat your resolve no matter what, Brick can fill that specific gap.
 
 ## Which Approach Fits You
 
-### Intently is likely the better fit if:
+### Intently is probably the better fit if:
 
-- You want to build lasting self-awareness around your phone use, not just block access
+- You want to build lasting self-awareness, not just block access
 - Privacy matters -- you want fully offline, zero data collection
-- You prefer a free solution with no hardware dependency
-- You want something that works anywhere without extra devices
-- You are on Android or use Chrome and want coverage for both
-- You have experience with blockers and have found that restriction alone does not stick
-- You want the flexibility to adjust your approach on the fly
+- You'd rather not spend money or depend on extra hardware
+- You need something that works everywhere without planning ahead
+- You're on Android or Chrome and want coverage across both
+- You've tried blockers before and found that restriction alone doesn't stick
+- You want to adjust your approach as you go
 
-### Brick is likely the better fit if:
+### Brick is probably the better fit if:
 
-- You have tried software-only approaches and found them too easy to dismiss
-- You are in a period of genuinely severe phone overuse and need a forceful reset
-- You have a consistent routine where you can place the tile strategically
-- You are willing to invest $59 in a physical tool
-- You prefer environmental design -- making the wrong choice hard rather than relying on willpower
-- You want a solution that works on iOS or Android right now
-- You do not mind the tradeoffs of hardware dependency
+- You've tried software-only approaches and found them too easy to dismiss
+- You're in a period of seriously heavy phone overuse and need a hard reset
+- Your routine is consistent enough to place the tile strategically
+- You're willing to invest $59 in a physical tool
+- You prefer environment design over willpower
+- You need iOS or Android support right now
+- You're okay with the tradeoffs of carrying extra hardware
 
-## The Bigger Picture
+## Wrapping Up
 
-Intently and Brick sit at opposite ends of the digital wellbeing spectrum, and that is what makes this comparison interesting. One trusts you to make the right choice when given a moment to think. The other does not ask you to think at all -- it just makes the wrong choice physically inconvenient.
+Intently and Brick sit at opposite ends of the digital wellbeing spectrum. One trusts you to make the right choice when given a moment to think. The other doesn't ask you to think at all -- it just makes the wrong choice physically inconvenient.
 
-Neither philosophy is wrong. The cookie jar in the attic and the mindful eater who can keep cookies on the counter and only have one -- both strategies reduce cookie consumption. The question is which person you are today, and which person you want to become.
+Neither philosophy is wrong. The real question is which person you are today and which habits will serve you a year from now.
 
-For sustainable, long-term change, building internal awareness tends to serve people well. But if you need to break through a crisis first, there is nothing wrong with putting the cookie jar in the attic while you learn healthier habits.
+For sustainable, long-term change, building internal awareness tends to hold up well. But if you need to break a bad cycle first, there's nothing wrong with leaning on physical barriers while you build healthier patterns underneath.
 
-**The best approach is the one you will actually commit to.** For most people, that starts with awareness -- and awareness starts with a pause.
+The best approach is the one you'll actually stick with. For most people, that starts with awareness -- and awareness starts with a pause.
 
 [Download Intently for Android, iOS & Chrome](/download)
 
-**Questions or feedback?** Reach out at support@liveintently.app.
+Questions or feedback? Reach out at support@liveintently.app.
 
 ---
 

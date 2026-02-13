@@ -23,152 +23,87 @@ faq:
 
 # How to Stop Scrolling TikTok Without Deleting: 5 Strategies That Work
 
-**TikTok's algorithm is engineered to keep you scrolling. The average user spends 95 minutes daily on the platform, with many reporting hours of unintended use. But you don't have to delete the app to regain control.**
+TikTok's algorithm is genuinely impressive -- and that's exactly the problem. It learns what keeps you watching faster than any other platform, and it serves up an endless stream of short clips perfectly calibrated to your interests. Deleting the app is one option, but for most people it's not realistic (and the urge usually wins within a week anyway).
 
-Mindful strategies can reduce your TikTok usage by 60-70% without the drastic step of deletion—while preserving the aspects of the platform you actually enjoy.
+Here's what actually works instead.
 
-## Why TikTok Is So Hard to Quit
+## Why TikTok Pulls You In
 
-Understanding TikTok's design helps you beat it. The platform combines several addictive elements:
+TikTok combines a few addictive design elements in a way that's hard to resist:
 
-- **Algorithmic personalization**: The more you watch, the better it knows what keeps you engaged
-- **Variable reward schedule**: You never know what's coming next, creating anticipation
-- **Short-form content**: Quick hits maintain stimulation without fatigue
-- **Infinite scroll**: No natural stopping point—no end to the feed
-- **Sound and motion**: Audio-visual stimulation triggers stronger dopamine release
+- An algorithm that gets better at hooking you the more you watch
+- Short clips that feel low-commitment ("just one more" always seems harmless)
+- No natural stopping point -- the feed never ends
+- Variable quality that keeps you swiping for the next great one
 
-This combination creates what behavioral psychologists call a **"compulsion loop"**—you scroll → get rewarded → want more → scroll more.
+It's the same basic psychology behind slot machines: unpredictable rewards delivered in quick succession. Your brain learns to keep pulling the lever.
 
-## Strategy 1: Use Mindful Interventions
+## Add a Moment of Awareness
 
-Instead of blocking TikTok, add a moment of awareness before each session. Intently shows a gentle, full-screen reminder when you tap the TikTok app icon:
+The most effective change you can make is adding friction before TikTok opens. Most sessions start without any conscious decision -- your thumb navigates there on autopilot.
+
+Intently shows a gentle, full-screen prompt when you tap TikTok:
 
 > *"Take a breath. You wanted to spend less time on TikTok today. Do you still want to open it?"*
 
-You can always proceed—the goal is awareness, not restriction.
+You can always proceed. But that brief pause activates the decision-making part of your brain before the habit takes over. Many people find they close the app more often than they expect -- not because they were forced to, but because they realized they didn't actually want to scroll.
 
-**Why this works**: Most TikTok use is automatic. You unlock your phone, muscle memory takes over, and suddenly 30 minutes have passed. A brief pause activates your prefrontal cortex (rational decision-making) before your limbic system (automatic habits) takes control.
+[Download Intently](/download) for Android, iOS, or Chrome.
 
-**Implementation**: [Download Intently](/download) for Android, iOS, or Chrome. Set custom intervention messages that resonate with you.
+## Make It Harder to Open
 
-## Strategy 2: Add Friction to Access
+Small barriers make a surprising difference. Each extra step between you and TikTok reduces the likelihood of an automatic open.
 
-Make TikTok harder to open automatically. Each extra step reduces usage by 10-15%.
+- Move TikTok off your home screen into a folder on the last page
+- Require Face ID or password authentication each time
+- Remove it from app suggestions and quick access
+- Log out after each use so you have to sign back in
 
-**Try these friction techniques**:
+None of these prevent you from using TikTok. They just make it a deliberate choice instead of a reflex.
 
-1. **Move the icon**: Drag TikTok off your home screen to a folder on the last page
-2. **Enable Face ID/Touch ID**: Require authentication every time (iOS: Settings > Screen Time > App Limits > TikTok > Block at End of Timer, then toggle "Require Authentication")
-3. **Delete from shortcuts**: Remove TikTok from iOS's App Library or Android's app suggestions
-4. **Log out after each use**: Forces manual login, adding 15-20 seconds of deliberation
+## Set Boundaries That Make Sense
 
-**The key**: Make conscious effort required to access TikTok. Even small delays break the automatic chain of muscle-memory behavior.
+Instead of a single daily time limit (which most people override instantly), set rules for specific situations:
 
-## Strategy 3: Set Context-Specific Boundaries
+- No TikTok before 9 AM
+- No TikTok during work or study hours
+- No TikTok within an hour of bedtime
+- No TikTok when you're with other people
 
-Instead of a global time limit, set rules for specific situations where TikTok use is most problematic:
+Situation-specific boundaries feel more reasonable than blanket restrictions. You're not telling yourself TikTok is off-limits -- you're saying "not right now, but later is fine." That distinction matters psychologically.
 
-- **Morning**: No TikTok before 9 AM (protect your morning routine)
-- **Work/study**: TikTok blocked during focus hours
-- **Bedtime**: No TikTok within 1 hour of sleep (protect rest)
-- **Social**: No TikTok when with friends or family (be present)
+## Have Something Else Ready
 
-**Why context works**: Context-specific boundaries feel more reasonable than blanket restrictions. You're not saying "TikTok is bad"—you're saying "not right now." This reduces psychological reactance.
+If you remove TikTok without replacing it, you'll just feel antsy and end up back on it. The trick is having a specific alternative ready for each trigger:
 
-## Strategy 4: Replace the Behavior
+When you're bored, try an article you've saved or a podcast episode. When you're anxious, try a breathing exercise or a quick walk. When you're procrastinating, try working on just the first step of whatever you're avoiding -- even two minutes of momentum can shift things.
 
-You can't just remove a habit—you must replace it. When the urge to scroll TikTok strikes, have an alternative ready:
+Keep a short list somewhere accessible. When the TikTok urge hits, check the list first. You'll still choose TikTok sometimes, and that's fine -- the point is making it a choice.
 
-**For boredom**: 
-- Read an article you've saved
-- Listen to a podcast episode
-- Do a quick exercise routine
+## Set an Intention Before Every Session
 
-**For anxiety**:
-- Try the 4-7-8 breathing technique
-- Journal what you're feeling
-- Take a brief walk outside
+Before you open TikTok, say (even just internally) what you're there for:
 
-**For procrastination**:
-- Use the 2-minute rule (if it takes less than 2 minutes, do it now)
-- Break tasks into smaller steps
-- Set a timer for 5 minutes of focused work
-
-**For entertainment**:
-- Watch a specific show episode (intentional, not infinite)
-- Call a friend
-- Work on a hobby project
-
-**Keep a physical list** of alternatives on your phone or in a notebook. When the TikTok urge hits, consult your list first.
-
-## Strategy 5: Practice "Session Intention"
-
-Before opening TikTok, state your intention:
-
-- "I'm checking TikTok to see if my friend posted."
+- "I'm checking to see if my friend posted."
 - "I have 10 minutes for entertainment before dinner."
-- "I'm looking for cooking inspiration."
+- "I'm looking for recipe ideas."
 
-**If you can't articulate a specific intention**, you probably don't need to open the app.
+If you can't name a reason, you probably don't need to open it. And if you can, set a timer for how long you'll stay. When it goes off, close immediately -- don't fall for "just one more."
 
-**Add a time commitment**: "I'll close TikTok when this video ends" or "I'll set a timer for 15 minutes."
+This is genuinely hard at first. It gets easier.
 
-**When time's up, close immediately**—don't watch "just one more." This trains the habit of intentional, bounded TikTok use.
+## Tools That Help
 
-## Sample Daily TikTok Routine
+Intently is built for exactly this kind of habit change:
 
-Here's how these strategies work together in practice:
+- Gentle full-screen reminders before each TikTok session
+- Custom intervention messages you write yourself
+- Automatic usage tracking so you can see patterns
+- Works on Android, iOS, and Chrome
 
-**Morning**: Phone alarm goes off. You reach for TikTok automatically.
-- Intently intervention: *"Take a breath. No TikTok before 9 AM. Do you want to proceed?"*
-- You pause, remember your morning boundary, and choose to close the app.
+[Download Intently free](/download) and start building awareness around your TikTok use.
 
-**Afternoon break**: You have 15 minutes and want entertainment.
-- You set intention: "15 minutes of TikTok, then back to work."
-- You set a timer and open intentionally.
-- When the timer sounds, you close TikTok immediately.
-
-**Evening commute**: You're bored on the train.
-- Urge to scroll TikTok hits.
-- You check your alternatives list and choose a podcast instead.
-- You feel satisfied, not deprived.
-
-## TikTok Use: Healthy vs. Problematic
-
-| **Healthy Use** | **Problematic Use** |
-|----------------|---------------------|
-| Intentional ("I'll watch for 10 minutes") | Automatic (hours pass unnoticed) |
-| Bounded by time or content | Infinite scroll until interrupted |
-| Doesn't interfere with sleep, work, relationships | Disrupts sleep, work, relationships |
-| You feel satisfied after watching | You feel guilty, empty, or anxious after |
-| You can easily skip days without it | You feel anxious or irritable without it |
-
-**If your use is primarily in the right column**, these strategies will help. If you've tried multiple approaches without success, consider temporarily deleting the app for 30 days while building new habits.
-
-## Tools That Support Your Goals
-
-While willpower alone often fails, the right tools make success much easier:
-
-**Intently** provides mindful interventions specifically designed to break automatic TikTok use:
-- Gentle full-screen reminders before each session
-- Customizable intervention messages
-- Automatic usage tracking without privacy invasion
-- Works on Android, iOS, and as a Chrome extension
-
-[Download Intently free](/download) and start building awareness around your TikTok use today.
-
-## The Mindful TikTok User
-
-You don't have to hate TikTok to use it less. The goal isn't abstinence—it's intentionality.
-
-**Mindful TikTok users**:
-- Know why they're opening the app before they tap
-- Set time limits and stick to them
-- Close the app when their session ends
-- Don't let TikTok interfere with priorities
-- Enjoy the platform guilt-free within boundaries
-
-With these 5 strategies, you can transform from mindless scroller to intentional user—retaining TikTok's benefits while reclaiming your time and attention.
+You don't have to quit TikTok to take back your time. You just have to make every session a conscious choice instead of an automatic one.
 
 ---
 
@@ -178,4 +113,4 @@ With these 5 strategies, you can transform from mindless scroller to intentional
 - [How to Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
 - [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
-**📱** Take our free [Phone Addiction Quiz](/quiz) to assess your TikTok habits and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz) to assess your TikTok habits and get personalized recommendations.
