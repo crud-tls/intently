@@ -1,0 +1,502 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import InputField from '../components/ui/InputField.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Delete Your Account | Intently" description="Permanently delete your Intently account and all associated data. This action cannot be undone." />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Delete Account", url: "https://liveintently.app/delete-account" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Hero -->
+			<section class="delete-hero">
+				<div class="container">
+					<h1>Delete Your Account</h1>
+					<p class="hero-subtitle">Permanently delete your account and all associated data</p>
+				</div>
+			</section>
+
+			<!-- Form Section -->
+			<section class="delete-form-section">
+				<div class="container">
+					<div class="delete-content">
+						<!-- Form -->
+						<div id="formContainer">
+							<Card variant="elevated" hover={false} class="form-card-wrapper">
+								<div class="warning-box">
+									<strong>Warning: This action cannot be undone</strong>
+									<p>Once your account is deleted, all your data will be permanently removed from our servers. This action cannot be reversed.</p>
+								</div>
+
+								<div class="will-delete">
+									<h3>The following will be deleted:</h3>
+									<ul>
+										<li>Email address and account credentials</li>
+										<li>All usage tracking data</li>
+										<li>Goals, streaks, and achievements</li>
+										<li>Preferences and settings</li>
+										<li>Cloud sync data</li>
+									</ul>
+								</div>
+
+								<div class="info-box">
+									<strong>What happens next?</strong>
+									<p>After submitting this request, you'll receive a confirmation email within 24 hours once your account deletion is complete.</p>
+								</div>
+
+								<form id="delete-form" class="delete-form" novalidate>
+									<InputField
+										label="Email Address"
+										type="email"
+										name="email"
+										placeholder="your@email.com"
+										required
+									/>
+
+									<InputField
+										label="Reason for leaving (optional)"
+										type="textarea"
+										name="reason"
+										placeholder="Help us improve by letting us know why you're leaving..."
+										rows={3}
+									/>
+
+									<div class="checkbox-group">
+										<input
+											type="checkbox"
+											id="confirm-checkbox"
+											required
+										/>
+										<label for="confirm-checkbox">
+											I understand that this action cannot be undone and all my data will be permanently deleted.
+										</label>
+									</div>
+
+									<div id="form-status" class="form-status" aria-live="polite"></div>
+
+									<Button type="submit" variant="primary" size="lg" id="submit-btn" class="delete-btn">
+										<span class="btn-text">Delete My Account</span>
+										<span class="btn-loading" hidden>Processing...</span>
+									</Button>
+								</form>
+							</Card>
+						</div>
+
+						<!-- Success State -->
+						<div id="successContainer" class="success-container" hidden>
+							<Card variant="elevated" hover={false}>
+								<div class="success">
+									<div class="success-icon"></div>
+									<h2>Deletion Request Received</h2>
+									<p>Thank you. Your account deletion request has been submitted.</p>
+									<p>
+										You will receive a confirmation email at <strong id="confirmEmail"></strong>
+										within 24 hours once your account has been permanently deleted.
+									</p>
+									<p>
+										If you have any questions, please contact us at
+										<a href="mailto:contact@sadakat.dev">contact@sadakat.dev</a>
+									</p>
+								</div>
+							</Card>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<script>
+	const form = document.getElementById('delete-form') as HTMLFormElement;
+	const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+	const btnText = submitBtn?.querySelector('.btn-text') as HTMLElement;
+	const btnLoading = submitBtn?.querySelector('.btn-loading') as HTMLElement;
+	const formStatus = document.getElementById('form-status') as HTMLElement;
+	const formContainer = document.getElementById('formContainer') as HTMLElement;
+	const successContainer = document.getElementById('successContainer') as HTMLElement;
+	const confirmEmail = document.getElementById('confirmEmail') as HTMLElement;
+	const confirmCheckbox = document.getElementById('confirm-checkbox') as HTMLInputElement;
+
+	form?.addEventListener('submit', async (e) => {
+		e.preventDefault();
+		clearErrors();
+
+		const formData = new FormData(form);
+		const email = (formData.get('email') as string)?.trim();
+		const reason = (formData.get('reason') as string)?.trim();
+		const errors: Record<string, string> = {};
+
+		if (!email || !isValidEmail(email)) {
+			errors.email = 'Please enter a valid email address';
+		}
+
+		if (!confirmCheckbox?.checked) {
+			showStatus('error', 'Please confirm that you understand this action cannot be undone.');
+			return;
+		}
+
+		if (Object.keys(errors).length > 0) {
+			showErrors(errors);
+			return;
+		}
+
+		setLoading(true);
+
+		try {
+			const response = await fetch('https://intently-api.fsadakathussain.workers.dev/account/delete-request', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ email, reason: reason || undefined }),
+			});
+
+			const data = await response.json();
+
+			if (response.ok) {
+				confirmEmail.textContent = email;
+				formContainer.hidden = true;
+				successContainer.hidden = false;
+			} else {
+				showStatus('error', data.error || 'Failed to submit request. Please try again or email contact@sadakat.dev');
+			}
+		} catch (error) {
+			console.error('Error:', error);
+			showStatus('error', 'Unable to connect. Please email contact@sadakat.dev with your deletion request.');
+		} finally {
+			setLoading(false);
+		}
+	});
+
+	function isValidEmail(email: string) {
+		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+	}
+
+	function showErrors(errors: Record<string, string>) {
+		for (const [field, message] of Object.entries(errors)) {
+			const input = document.getElementById(`${field}-field`);
+			const errorSpan = document.getElementById(`${field}-error`);
+			if (input) input.classList.add('input-field-input-error');
+			if (errorSpan) errorSpan.textContent = message;
+		}
+	}
+
+	function clearErrors() {
+		const inputs = form?.querySelectorAll('.input-field-input');
+		inputs?.forEach(input => input.classList.remove('input-field-input-error'));
+		const errorSpans = form?.querySelectorAll('.input-field-error, .input-field-error-placeholder');
+		errorSpans?.forEach(span => (span.textContent = ''));
+		if (formStatus) {
+			formStatus.className = 'form-status';
+			formStatus.textContent = '';
+		}
+	}
+
+	function showStatus(type: string, message: string) {
+		if (formStatus) {
+			formStatus.className = `form-status ${type}`;
+			formStatus.textContent = message;
+		}
+	}
+
+	function setLoading(isLoading: boolean) {
+		if (submitBtn) submitBtn.disabled = isLoading;
+		if (btnText) btnText.hidden = isLoading;
+		if (btnLoading) btnLoading.hidden = !isLoading;
+	}
+</script>
+
+<style>
+	main {
+		width: 100%;
+	}
+
+	/* Hero */
+	.delete-hero {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: linear-gradient(135deg, var(--intently-red) 0%, #D32F2F 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.delete-hero h1 {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		color: white;
+	}
+
+	.hero-subtitle {
+		font-size: 1.125rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.95;
+		line-height: 1.6;
+		padding: 0 1rem;
+	}
+
+	/* Form section */
+	.delete-form-section {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-secondary);
+		min-height: 60vh;
+	}
+
+	.delete-content {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+
+	.form-card-wrapper :global(.card) {
+		height: 100%;
+	}
+
+	.delete-form {
+		display: flex;
+		flex-direction: column;
+		gap: var(--intently-space-md);
+	}
+
+	/* Warning box */
+	.warning-box {
+		background: var(--intently-bg-error);
+		border-left: 4px solid var(--intently-red);
+		padding: var(--intently-space-md);
+		border-radius: var(--intently-radius-md);
+		margin-bottom: var(--intently-space-md);
+	}
+
+	.warning-box strong {
+		color: var(--intently-red-dark);
+		display: block;
+		margin-bottom: var(--intently-space-xs);
+	}
+
+	.warning-box p {
+		color: var(--intently-red-dark);
+		font-size: 0.875rem;
+		margin: 0;
+	}
+
+	/* What will be deleted */
+	.will-delete {
+		background: var(--intently-bg-error);
+		padding: var(--intently-space-md);
+		border-radius: var(--intently-radius-md);
+		margin-bottom: var(--intently-space-md);
+	}
+
+	.will-delete h3 {
+		color: var(--intently-red-dark);
+		font-size: 1rem;
+		margin-bottom: var(--intently-space-sm);
+	}
+
+	.will-delete ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.will-delete li {
+		padding: var(--intently-space-xs) 0;
+		color: var(--intently-text-secondary);
+		font-size: 0.875rem;
+		display: flex;
+		align-items: center;
+		gap: var(--intently-space-sm);
+	}
+
+	.will-delete li::before {
+		content: "\2713";
+		color: var(--intently-red);
+		font-weight: bold;
+	}
+
+	/* Info box */
+	.info-box {
+		background: var(--intently-bg-info, #e3f2fd);
+		border-left: 4px solid var(--intently-blue);
+		padding: var(--intently-space-md);
+		border-radius: var(--intently-radius-md);
+		margin-bottom: var(--intently-space-md);
+	}
+
+	.info-box strong {
+		color: var(--intently-blue-dark);
+		display: block;
+		margin-bottom: var(--intently-space-xs);
+	}
+
+	.info-box p {
+		color: var(--intently-blue-dark);
+		font-size: 0.875rem;
+		margin: 0;
+	}
+
+	/* Checkbox */
+	.checkbox-group {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--intently-space-sm);
+	}
+
+	.checkbox-group input[type="checkbox"] {
+		width: 20px;
+		height: 20px;
+		margin-top: 2px;
+		cursor: pointer;
+		accent-color: var(--intently-red);
+		flex-shrink: 0;
+	}
+
+	.checkbox-group label {
+		flex: 1;
+		font-size: 0.875rem;
+		color: var(--intently-text-secondary);
+		cursor: pointer;
+		line-height: 1.5;
+	}
+
+	/* Delete button override */
+	.delete-btn :global(.btn) {
+		width: 100%;
+		background: var(--intently-red);
+		border-color: var(--intently-red);
+	}
+
+	.delete-btn :global(.btn:hover) {
+		background: var(--intently-red-dark, #C62828);
+		border-color: var(--intently-red-dark, #C62828);
+	}
+
+	.delete-btn :global(.btn:disabled) {
+		background: var(--intently-gray-400);
+		border-color: var(--intently-gray-400);
+		cursor: not-allowed;
+		transform: none;
+	}
+
+	/* Form status */
+	.form-status {
+		padding: var(--intently-space-md);
+		border-radius: var(--intently-radius-md);
+		font-size: 0.9375rem;
+		display: none;
+	}
+
+	.form-status:not(:empty) {
+		display: block;
+	}
+
+	.form-status.success {
+		background: var(--intently-bg-success);
+		color: var(--intently-green-dark);
+		border: 1px solid var(--intently-green-light);
+	}
+
+	.form-status.error {
+		background: var(--intently-bg-error);
+		color: var(--intently-red-dark);
+		border: 1px solid var(--intently-red-light);
+	}
+
+	/* Success state */
+	.success-container {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+
+	.success {
+		text-align: center;
+		padding: var(--intently-space-xl) var(--intently-space-md);
+	}
+
+	.success-icon {
+		width: 80px;
+		height: 80px;
+		background: var(--intently-green);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto var(--intently-space-lg);
+	}
+
+	.success-icon::after {
+		content: "\2713";
+		color: white;
+		font-size: 2.5rem;
+	}
+
+	.success h2 {
+		color: var(--intently-text-primary);
+		margin-bottom: var(--intently-space-md);
+	}
+
+	.success p {
+		color: var(--intently-text-secondary);
+		line-height: 1.8;
+		margin-bottom: var(--intently-space-sm);
+	}
+
+	.success a {
+		color: var(--intently-blue);
+		text-decoration: none;
+	}
+
+	.success a:hover {
+		text-decoration: underline;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* Responsive */
+	@media (min-width: 768px) {
+		.delete-hero,
+		.delete-form-section {
+			padding: var(--intently-space-3xl) 0;
+		}
+
+		.delete-hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.25rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.delete-hero,
+		.delete-form-section {
+			padding: var(--intently-space-4xl) 0;
+		}
+
+		.delete-hero h1 {
+			font-size: 3rem;
+		}
+	}
+</style>
