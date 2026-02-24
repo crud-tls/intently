@@ -7,20 +7,16 @@ import FormattedDate from '../components/FormattedDate.astro';
 import BlogPostSchema from '../components/SEO/BlogPostSchema.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
-import SpeakableSchema from '../components/SEO/SpeakableSchema.astro';
+
 import HowToSchema from '../components/SEO/HowToSchema.astro';
 import AuthorBio from '../components/blog/AuthorBio.astro';
+import { Image } from 'astro:assets';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { wordCount?: number; readingTime?: number };
 
-const { title, description, pubDate, updatedDate, heroImage, faq, howToSteps } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, faq, howToSteps, wordCount = 0, readingTime = 1 } = Astro.props;
 const { currentPath } = Astro.url;
 const postUrl = `https://liveintently.app${currentPath}`;
-
-// Calculate estimated reading time (average 200 words per minute)
-const wordsPerMinute = 200;
-const wordCount = description.split(/\s+/).length;
-const readingTime = Math.max(1, Math.ceil(wordCount / wordsPerMinute));
 
 // Default tags for SEO if not specified in frontmatter
 const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
@@ -49,6 +45,7 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 			url={postUrl}
 			section="Digital Wellbeing"
 			tags={defaultTags}
+			wordCount={wordCount}
 		/>
 		<BreadcrumbSchema
 			items={[
@@ -57,10 +54,7 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 				{ name: title, url: postUrl }
 			]}
 		/>
-		<SpeakableSchema
-			title={title}
-			speakableSelectors={["#article-intro", "#article-conclusion"]}
-		/>
+
 		{faq && <FAQSchema faqs={faq} />}
 		{howToSteps && (
 			<HowToSchema
@@ -120,7 +114,7 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt={`${title} - Intently blog post illustration`} />}
+					{heroImage && <Image width={1020} height={510} src={heroImage} alt={`${title} - Intently blog post illustration`} />}
 				</div>
 				<div class="prose">
 					<div class="title">
@@ -137,12 +131,8 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 						<h1>{title}</h1>
 						<hr />
 					</div>
-					<!-- Speakable section for voice search optimization -->
-					<div id="article-intro" class="speakable-content">
+					<div id="article-intro">
 						<slot />
-					</div>
-					<div id="article-conclusion" class="speakable-content" style="display: none;">
-						{title} - A comprehensive guide on digital wellbeing and screen time management by Intently.
 					</div>
 					<AuthorBio />
 				</div>

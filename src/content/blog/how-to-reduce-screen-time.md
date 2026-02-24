@@ -1,5 +1,5 @@
 ---
-title: "How to Reduce Screen Time: 10 Science-Backed Strategies That Actually Work"
+title: "How to Reduce Screen Time: 10 Science-Backed Strategies"
 description: "Discover proven strategies to reduce screen time with these expert tips on app usage tracking, mindful interventions, and building healthy digital habits. Transform your relationship with technology today."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-5.jpg"

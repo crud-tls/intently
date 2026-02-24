@@ -137,7 +137,7 @@ Phone addiction isn't a character flaw. It's a natural response to software desi
 
 **Related Reading:**
 - [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
 - [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
 

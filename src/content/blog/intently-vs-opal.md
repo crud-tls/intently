@@ -1,5 +1,5 @@
 ---
-title: 'Intently vs Opal: Which Screen Time App Is Right for You? (2026 Comparison)'
+title: 'Intently vs Opal: Screen Time App Comparison (2026)'
 description: 'Comprehensive comparison of Intently and Opal screen time apps. Compare features, pricing, privacy, effectiveness, and user reviews to choose the best digital wellbeing solution for your needs.'
 pubDate: 2026-01-16
 author: 'Intently Team'

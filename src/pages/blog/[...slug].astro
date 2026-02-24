@@ -13,9 +13,15 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
-const { Content } = await render(post);
+const { Content, remarkPluginFrontmatter } = await render(post);
+
+// Calculate word count and reading time from actual post body
+const rawBody = post.body || '';
+const plainText = rawBody.replace(/```[\s\S]*?```/g, '').replace(/[#*\[\]()_>`~|!-]/g, '').replace(/https?:\/\/\S+/g, '');
+const wordCount = plainText.split(/\s+/).filter(w => w.length > 0).length;
+const readingTime = Math.max(1, Math.ceil(wordCount / 200));
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...post.data} wordCount={wordCount} readingTime={readingTime}>
 	<Content />
 </BlogPost>

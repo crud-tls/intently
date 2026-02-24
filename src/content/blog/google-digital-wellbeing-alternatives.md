@@ -1,5 +1,5 @@
 ---
-title: 'Best Google Digital Wellbeing Alternatives (2026): Top 8 Privacy-First Apps'
+title: 'Best Google Digital Wellbeing Alternatives 2026'
 description: 'Looking for a Google Digital Wellbeing alternative? Compare the top 8 screen time apps including Intently, ActionDash, Opal, and more. Find the best privacy-focused option for Android.'
 pubDate: 2026-01-16
 author: 'Intently Team'
@@ -278,7 +278,7 @@ Then download Intently and start building healthier digital habits:
 - [Intently vs Google Digital Wellbeing: Full Comparison](/blog/intently-vs-google-digital-wellbeing)
 - [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
 - [Intently vs Opal: Which Is Better?](/blog/intently-vs-opal)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
 
 ---
 

@@ -143,7 +143,7 @@ Your feed should work for you. Right now, there's a good chance it's the other w
 **Related Reading:**
 - [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
 - [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your Twitter habits and get personalized recommendations.

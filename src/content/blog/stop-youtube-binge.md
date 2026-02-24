@@ -101,7 +101,7 @@ Intently supports intentional YouTube habits:
 **Related Reading:**
 - [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
 - [How to Stop Twitter/X Doomscrolling](/blog/stop-twitter-doomscrolling)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your YouTube habits and get personalized recommendations.

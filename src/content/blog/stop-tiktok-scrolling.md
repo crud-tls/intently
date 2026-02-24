@@ -1,5 +1,5 @@
 ---
-title: "How to Stop Scrolling TikTok Without Deleting: 5 Strategies That Work"
+title: "Stop Scrolling TikTok Without Deleting: 5 Strategies"
 description: "Stop scrolling TikTok without deleting the app. Learn 5 mindful strategies to reduce TikTok usage, break the addiction cycle, and reclaim your time while staying connected."
 pubDate: 2026-01-23
 author: "Intently Team"

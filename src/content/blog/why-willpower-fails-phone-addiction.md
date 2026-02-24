@@ -1,5 +1,5 @@
 ---
-title: "Why Willpower Fails: The Science of Phone Addiction (And What Works Instead)"
+title: "Why Willpower Fails: The Science of Phone Addiction"
 description: "Discover why willpower alone can't beat phone addiction. Learn the neuroscience behind dopamine loops, habit formation, and psychological reactance — and the science-backed strategies that actually work."
 pubDate: 2026-02-01
 author: "Intently Team"

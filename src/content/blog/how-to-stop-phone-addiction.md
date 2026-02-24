@@ -167,10 +167,10 @@ It's free for Android, iOS, and Chrome. [Give it a try](/download).
 
 ## Related Reading
 
-- [The Psychology of App Addiction](/blog/app-addiction)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps)
-- [Mindful Interventions vs App Blocking](/blog/mindful-tech)
-- [Privacy-First Screen Time Tracking](/blog/privacy-screen-time)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
+- [Mindful Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
+- [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking)
 
 ---
 

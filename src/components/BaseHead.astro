@@ -49,8 +49,8 @@ const {
 <link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
 
 <!-- Preconnect to external domains for faster loading -->
-<link rel="preconnect" href="https://liveintently.app" />
-<link rel="dns-prefetch" href="https://liveintently.app" />
+<link rel="preconnect" href="https://analytics.ahrefs.com" />
+<link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -79,11 +79,11 @@ const {
 {modifiedDate && <meta property="article:modified_time" content={modifiedDate.toISOString()} />}
 {author && <meta property="article:author" content={author} />}
 {section && <meta property="article:section" content={section} />}
-{tags.length > 0 && <meta property="article:tag" content={tags.join(', ')} />}
+{tags.length > 0 && tags.map(tag => <meta property="article:tag" content={tag} />)}
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={ogType} />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
@@ -91,14 +91,14 @@ const {
 <meta property="og:locale" content="en_US" />
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={Astro.url} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(image, Astro.url)} />
 <meta name="twitter:creator" content="@intently_app" />
 <meta name="twitter:site" content="@intently_app" />
-<meta property="twitter:domain" content="liveintently.app" />
+<meta name="twitter:domain" content="liveintently.app" />
 
 <!-- Mobile App Meta Tags -->
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -108,9 +108,6 @@ const {
 <meta property="al:android:url" content="intently://home" />
 <meta property="al:android:package" content="app.intently" />
 <meta property="al:android:app_name" content="Intently" />
-<meta property="al:ios:url" content="intently://home" />
-<meta property="al:ios:app_store_id" content="644xxxxxxxx" />
-<meta property="al:ios:app_name" content="Intently" />
 <meta property="al:web:url" content={canonicalURL} />
 <meta property="al:web:should_fallback" content="true" />
 

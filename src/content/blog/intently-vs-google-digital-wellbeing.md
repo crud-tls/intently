@@ -1,5 +1,5 @@
 ---
-title: "Intently vs Google Digital Wellbeing: Which Screen Time App Is Right for You?"
+title: "Intently vs Google Digital Wellbeing: Full Comparison"
 description: "Compare Intently and Google Digital Wellbeing feature-by-feature. Discover which app offers better privacy, more effective interventions, and the right approach for your digital wellbeing goals."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-2.jpg"

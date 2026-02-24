@@ -200,3 +200,5 @@ dist
 
 ### Astro ###
 .astro/
+seo-audit/
+seo-audit/*

@@ -1,5 +1,5 @@
 ---
-title: 'Best One Sec Alternatives 2026: Free Apps That Pause Before Scrolling'
+title: 'Best One Sec Alternatives 2026: Pause Before Scrolling'
 description: 'Looking for a One Sec alternative? Compare the top mindful pause apps including Intently, ScreenZen, and ClearSpace. Find free options for Android and iOS that add a moment of awareness before opening distracting apps.'
 pubDate: 2026-02-01
 author: 'Intently Team'

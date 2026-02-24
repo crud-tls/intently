@@ -1,5 +1,5 @@
 ---
-title: 'Intently vs Freedom: Mindful Pause vs Hard Blocking (2026 Comparison)'
+title: 'Intently vs Freedom: Mindful Pause vs Hard Blocking'
 description: 'An honest comparison of two different philosophies for managing screen time. Intently uses mindful interventions to build awareness, while Freedom uses hard blocking to enforce focus. Here is how to decide which approach fits your life.'
 pubDate: 2026-02-01
 author: 'Intently Team'

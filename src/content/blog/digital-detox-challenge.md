@@ -1,5 +1,5 @@
 ---
-title: "30-Day Digital Detox Challenge: A Step-by-Step Guide to Healthier Phone Use"
+title: "30-Day Digital Detox Challenge: Step-by-Step Guide"
 description: "Take the 30-day digital detox challenge with weekly themes, daily mini-challenges, and proven strategies. Transform your phone habits step by step without going cold turkey."
 pubDate: 2026-02-01
 author: "Intently Team"

@@ -176,7 +176,7 @@ You don't have to overhaul your entire evening right away. Small, consistent cha
 Related Reading:
 - [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
 - [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your nighttime habits and get personalized recommendations.

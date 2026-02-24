@@ -1,0 +1,59 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title="Page Not Found - Intently" description="The page you're looking for doesn't exist." />
+		<style>
+			body {
+				background: var(--intently-bg-primary);
+			}
+			.error-page {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				min-height: 60vh;
+				text-align: center;
+				padding: 2rem;
+			}
+			.error-page h1 {
+				font-size: 4rem;
+				margin: 0;
+				color: var(--intently-text-primary);
+			}
+			.error-page p {
+				color: var(--intently-text-secondary);
+				font-size: 1.2rem;
+				margin: 1rem 0 2rem;
+			}
+			.error-page a {
+				color: var(--intently-blue);
+				text-decoration: none;
+				font-weight: 600;
+			}
+			.error-page a:hover {
+				text-decoration: underline;
+			}
+			.error-links {
+				display: flex;
+				gap: 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main class="error-page">
+			<h1>404</h1>
+			<p>The page you're looking for doesn't exist or has been moved.</p>
+			<div class="error-links">
+				<a href="/">Go Home</a>
+				<a href="/blog">Read the Blog</a>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,5 +1,5 @@
 ---
-title: 'Intently vs One Sec: Free Mindful Pause vs $50 Breathing Exercise (2026)'
+title: 'Intently vs One Sec: Mindful Pause Comparison (2026)'
 description: 'Comprehensive comparison of Intently and One Sec screen time apps. Compare features, pricing, privacy, scientific backing, and user reviews to find the best mindful intervention app for your needs.'
 pubDate: 2026-02-01
 author: 'Intently Team'

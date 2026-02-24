@@ -10,6 +10,7 @@ interface Props {
   url?: string;
   section?: string;
   tags?: string[];
+  wordCount?: number;
 }
 
 const {
@@ -22,7 +23,8 @@ const {
   image,
   url,
   section = "Digital Wellbeing",
-  tags = []
+  tags = [],
+  wordCount = 0
 } = Astro.props;
 
 const blogSchema = {
@@ -42,7 +44,7 @@ const blogSchema = {
     "name": "Intently",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://liveintently.app/favicon.svg"
+      "url": "https://liveintently.app/logo.png"
     }
   },
   "mainEntityOfPage": {
@@ -52,7 +54,7 @@ const blogSchema = {
   "articleSection": section,
   "keywords": tags.join(', '),
   "inLanguage": "en-US",
-  "wordCount": description.split(' ').length
+  "wordCount": wordCount
 };
 ---
 

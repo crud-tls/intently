@@ -31,19 +31,19 @@
     {
       "src": "/logo.png",
       "sizes": "any",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
       "src": "/logo.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any"
     },
     {
       "src": "/logo.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],
@@ -75,10 +75,6 @@
       "platform": "play",
       "url": "https://play.google.com/store/apps/details?id=app.intently",
       "id": "app.intently"
-    },
-    {
-      "platform": "itunes",
-      "url": "https://apps.apple.com/app/intently/id644xxxxxxxx"
     },
     {
       "platform": "chrome_web_store",

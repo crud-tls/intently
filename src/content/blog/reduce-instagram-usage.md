@@ -1,5 +1,5 @@
 ---
-title: "Reduce Instagram Usage Without Deleting: A Mindful Approach That Works"
+title: "Reduce Instagram Usage Without Deleting: A Mindful Guide"
 description: "Reduce Instagram usage without deleting the app. Learn mindful strategies to cut down on Instagram, break the scrolling habit, and reclaim hours of your week while staying connected."
 pubDate: 2026-01-23
 author: "Intently Team"
@@ -124,7 +124,7 @@ Intently is built specifically for this. It adds mindful check-ins before each s
 Related Reading:
 - [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
 - [How to Be More Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your Instagram habits and get personalized recommendations.

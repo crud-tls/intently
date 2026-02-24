@@ -1,5 +1,5 @@
 ---
-title: "Phone Addiction and ADHD: Why Your Brain Can't Stop & What Actually Helps"
+title: "Phone Addiction and ADHD: Why You Can't Stop & What Helps"
 description: "Understand the unique connection between phone addiction and ADHD. Learn why standard screen time advice fails for ADHD brains and discover ADHD-friendly strategies that actually work."
 pubDate: 2026-02-01
 author: "Intently Team"

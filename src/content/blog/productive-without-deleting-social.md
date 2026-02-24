@@ -1,5 +1,5 @@
 ---
-title: "How to Be More Productive Without Deleting Social Media: A Balanced Approach"
+title: "Be More Productive Without Deleting Social Media"
 description: "Be more productive without deleting social media. Learn how to use social media mindfully, avoid distraction, and maintain connections while maximizing your productivity."
 pubDate: 2026-01-23
 author: "Intently Team"
@@ -136,7 +136,7 @@ You don't have to choose between being connected and being productive. You just 
 
 **Related Reading:**
 - [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
 - [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
 

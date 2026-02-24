@@ -1,5 +1,5 @@
 ---
-title: "Privacy-First Screen Time Tracking: Why Your Digital Habits Should Stay Private"
+title: "Privacy-First Screen Time Tracking: Keep Your Data Private"
 description: "Learn why privacy matters in screen time tracking and how to choose apps that keep your data secure. Discover the best privacy-first alternatives to data-harvesting apps."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-3.jpg"

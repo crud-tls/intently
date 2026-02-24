@@ -1,5 +1,5 @@
 ---
-title: 'Best Forest App Alternatives 2026: Focus, Gamification & Digital Wellness Apps'
+title: 'Best Forest App Alternatives 2026: Top Focus & Wellness Apps'
 description: 'Looking for a Forest app alternative? Explore the best focus and gamification apps for reducing screen time, from social tree-growing to mindful interventions, with honest reviews of each approach.'
 pubDate: 2026-02-01
 author: 'Intently Team'

@@ -1,5 +1,5 @@
 ---
-title: 'Intently vs ScreenZen: Comparing Free Mindful Screen Time Apps (2026)'
+title: 'Intently vs ScreenZen: Free Mindful Screen Time Apps'
 description: 'Detailed comparison of Intently and ScreenZen, two free mindful screen time apps. Compare intervention styles, privacy, features, and effectiveness to find the best pause-based alternative to hard blockers.'
 pubDate: 2026-02-01
 author: 'Intently Team'

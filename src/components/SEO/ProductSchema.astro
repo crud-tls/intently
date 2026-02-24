@@ -19,8 +19,8 @@ const {
   description,
   platform,
   downloadUrl,
-  ratingValue = 4.8,
-  ratingCount = 1200,
+  ratingValue,
+  ratingCount,
   reviews = []
 } = Astro.props;
 
@@ -42,13 +42,15 @@ const productSchema = {
     "price": "0",
     "priceCurrency": "USD"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": ratingValue,
-    "ratingCount": ratingCount,
-    "bestRating": "5",
-    "worstRating": "1"
-  },
+  ...(ratingValue && ratingCount ? {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": ratingValue,
+      "ratingCount": ratingCount,
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  } : {}),
   "author": {
     "@type": "Organization",
     "name": "Intently",
@@ -56,12 +58,12 @@ const productSchema = {
   },
   "operatingSystem": platform === 'chrome' ? 'Windows, macOS, Linux' : platform.toUpperCase(),
   "softwareVersion": "1.0",
-  "datePublished": "2024",
+  "datePublished": "2024-01-01",
   "featureList": [
     "Screen time decrease and tracking",
     "Reduce screen time effectively",
     "Mindful interventions to lower usage",
-    "App blocking and daily limits",
+    "Mindful interventions and daily awareness",
     "Usage analytics and insights",
     "Streak tracking for motivation",
     "Privacy-first offline mode",

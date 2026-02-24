@@ -1,5 +1,5 @@
 ---
-title: 'Best Apple Screen Time Alternatives 2026: Better Phone Habit Apps for iPhone'
+title: 'Best Apple Screen Time Alternatives 2026 for iPhone'
 description: 'Looking for an Apple Screen Time alternative? Understand what Screen Time does well, where it falls short, and which third-party apps actually help iPhone users build better phone habits.'
 pubDate: 2026-02-01
 author: 'Intently Team'
