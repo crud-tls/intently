@@ -1,0 +1,380 @@
+---
+/**
+ * Glass Bento Card Component
+ * Glassmorphic cards with prominent icons - theme aware
+ */
+import Icon from '../ui/Icon.astro';
+
+interface Props {
+	title: string;
+	description: string;
+	stat?: string;
+	statLabel?: string;
+	icon: string;
+	size?: 'hero' | 'medium' | 'wide';
+	color?: 'blue' | 'green' | 'orange' | 'purple';
+	glassLevel?: 'heavy' | 'soft';
+}
+
+const { title, description, stat, statLabel, icon, size = 'medium', color = 'blue', glassLevel = 'soft' } = Astro.props;
+
+const colorDefs = {
+	blue: { primary: '#2196F3', secondary: '#64B5F6', light: 'rgba(33, 150, 243, 0.12)' },
+	green: { primary: '#4CAF50', secondary: '#81C784', light: 'rgba(76, 175, 80, 0.12)' },
+	orange: { primary: '#FF9800', secondary: '#FFB74D', light: 'rgba(255, 152, 0, 0.12)' },
+	purple: { primary: '#9C27B0', secondary: '#BA68C8', light: 'rgba(156, 39, 176, 0.12)' }
+};
+const c = colorDefs[color];
+
+const iconSize = size === 'hero' ? 48 : 40;
+---
+
+<div class:list={["glass-card", `glass-${size}`, `glass-${glassLevel}`, `glass-${color}`]} data-color={color}>
+	<div class="glass-inner">
+		<div class="card-content">
+			<div class="card-icon-wrap">
+				<Icon name={icon} size={iconSize} color={c.primary} />
+			</div>
+
+			{stat && (
+				<div class="stat-display">
+					<span class="stat-value">{stat}</span>
+					{statLabel && <span class="stat-label">{statLabel}</span>}
+				</div>
+			)}
+
+			<h3 class="card-title">{title}</h3>
+			<p class="card-description">{description}</p>
+		</div>
+	</div>
+	<div class="card-shadow"></div>
+</div>
+
+<style>
+	.glass-card {
+		position: relative;
+		border-radius: 24px;
+		overflow: hidden;
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.glass-inner {
+		position: relative;
+		z-index: 2;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-shadow {
+		position: absolute;
+		inset: 0;
+		border-radius: 24px;
+		z-index: 1;
+		pointer-events: none;
+		box-shadow:
+			0 4px 20px rgba(0, 0, 0, 0.06),
+			0 1px 3px rgba(0, 0, 0, 0.04);
+		transition: box-shadow 0.3s ease;
+	}
+
+	/* Glass effects - Light */
+	.glass-card.glass-heavy .glass-inner {
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(24px) saturate(180%);
+		-webkit-backdrop-filter: blur(24px) saturate(180%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			inset 0 -1px 0 rgba(255, 255, 255, 0.5);
+	}
+
+	.glass-card.glass-soft .glass-inner {
+		background: rgba(255, 255, 255, 0.85);
+		backdrop-filter: blur(16px) saturate(160%);
+		-webkit-backdrop-filter: blur(16px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.9);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 1),
+			inset 0 -1px 0 rgba(255, 255, 255, 0.6);
+	}
+
+	/* Glass effects - Dark */
+	@media (prefers-color-scheme: dark) {
+		.glass-card.glass-heavy .glass-inner {
+			background: rgba(40, 40, 40, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.15);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.2),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+
+		.glass-card.glass-soft .glass-inner {
+			background: rgba(50, 50, 50, 0.85);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.25),
+				0 4px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.card-shadow {
+			box-shadow:
+				0 4px 20px rgba(0, 0, 0, 0.3),
+				0 1px 3px rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	/* Hover */
+	.glass-card:hover {
+		transform: translateY(-6px);
+	}
+
+	.glass-card:hover .card-shadow {
+		box-shadow:
+			0 12px 40px rgba(0, 0, 0, 0.1),
+			0 4px 12px rgba(0, 0, 0, 0.06);
+	}
+
+	.glass-heavy:hover .glass-inner {
+		background: rgba(255, 255, 255, 0.85);
+	}
+
+	.glass-soft:hover .glass-inner {
+		background: rgba(255, 255, 255, 0.95);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.glass-heavy:hover .glass-inner {
+			background: rgba(40, 40, 40, 0.85);
+		}
+
+		.glass-soft:hover .glass-inner {
+			background: rgba(50, 50, 50, 0.95);
+		}
+	}
+
+	/* Size variants */
+	.glass-hero {
+		grid-column: span 1;
+		grid-row: span 1;
+		min-height: 280px;
+	}
+
+	.glass-medium {
+		grid-column: span 1;
+		min-height: 240px;
+	}
+
+	.glass-wide {
+		grid-column: span 1;
+		min-height: 200px;
+	}
+
+	@media (min-width: 768px) {
+		.glass-hero {
+			grid-column: span 2;
+			min-height: 300px;
+		}
+
+		.glass-wide {
+			grid-column: span 2;
+		}
+
+		.glass-medium {
+			min-height: 280px;
+		}
+	}
+
+	/* Icon wrapper */
+	.card-icon-wrap {
+		width: 72px;
+		height: 72px;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1rem;
+		background: rgba(255, 255, 255, 0.6);
+		border: 1px solid rgba(0, 0, 0, 0.05);
+	}
+
+	.glass-hero .card-icon-wrap {
+		width: 80px;
+		height: 80px;
+		border-radius: 22px;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.card-icon-wrap {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+
+	/* Stat display */
+	.stat-display {
+		margin-bottom: 0.75rem;
+	}
+
+	.stat-value {
+		display: block;
+		font-size: 2.25rem;
+		font-weight: 800;
+		letter-spacing: -0.03em;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		line-height: 1;
+	}
+
+	.glass-green .stat-value {
+		background: linear-gradient(135deg, var(--intently-green) 0%, #2E7D32 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.glass-orange .stat-value {
+		background: linear-gradient(135deg, var(--intently-orange) 0%, #E65100 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.glass-purple .stat-value {
+		background: linear-gradient(135deg, var(--intently-purple) 0%, #6A1B9A 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.glass-blue .stat-value {
+			background: linear-gradient(135deg, #42A5F5 0%, #1976D2 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+
+		.glass-green .stat-value {
+			background: linear-gradient(135deg, #66BB6A 0%, #388E3C 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+
+		.glass-orange .stat-value {
+			background: linear-gradient(135deg, #FFA726 0%, #F57C00 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+
+		.glass-purple .stat-value {
+			background: linear-gradient(135deg, #AB47BC 0%, #7B1FA2 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+	}
+
+	.stat-label {
+		display: block;
+		font-size: 0.75rem;
+		color: var(--intently-text-secondary);
+		margin-top: 0.25rem;
+		font-weight: 500;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+
+	/* Card content */
+	.card-content {
+		padding: 1.5rem;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.glass-hero .card-content {
+		padding: 2rem;
+	}
+
+	.card-title {
+		font-size: 1.0625rem;
+		font-weight: 700;
+		margin: 0 0 0.5rem 0;
+		color: var(--intently-text-primary);
+		line-height: 1.3;
+		letter-spacing: -0.01em;
+	}
+
+	.glass-hero .card-title {
+		font-size: 1.375rem;
+	}
+
+	.card-description {
+		font-size: 0.9rem;
+		line-height: 1.55;
+		color: var(--intently-text-secondary);
+		margin: 0;
+	}
+
+	.glass-hero .card-description {
+		font-size: 0.975rem;
+	}
+
+	/* Mobile */
+	@media (max-width: 767px) {
+		.glass-hero,
+		.glass-wide,
+		.glass-medium {
+			grid-column: span 1;
+			grid-row: span 1;
+		}
+
+		.glass-hero {
+			min-height: 260px;
+		}
+
+		.glass-medium {
+			min-height: 220px;
+		}
+
+		.card-icon-wrap {
+			width: 60px;
+			height: 60px;
+			border-radius: 16px;
+		}
+
+		.glass-hero .card-icon-wrap {
+			width: 68px;
+			height: 68px;
+		}
+
+		.stat-value {
+			font-size: 1.875rem;
+		}
+
+		.card-content {
+			padding: 1.25rem;
+		}
+
+		.glass-hero .card-content {
+			padding: 1.25rem;
+		}
+
+		.card-title {
+			font-size: 1rem;
+		}
+
+		.glass-hero .card-title {
+			font-size: 1.1875rem;
+		}
+
+		.card-description {
+			font-size: 0.875rem;
+		}
+	}
+</style>

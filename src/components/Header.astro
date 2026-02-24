@@ -175,24 +175,22 @@ import { SITE_TITLE } from '../consts';
 		justify-content: space-between;
 		gap: 1.5rem;
 		padding: 0.875rem 1.5rem;
-		background: rgba(255, 255, 255, 0.7);
+		background: color-mix(in srgb, var(--intently-bg-primary) 70%, transparent);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
-		border: 1px solid rgba(255, 255, 255, 0.3);
+		border: 1px solid color-mix(in srgb, var(--intently-bg-primary) 30%, transparent);
 		border-radius: 1rem;
 		box-shadow:
-			0 4px 24px rgba(0, 0, 0, 0.06),
-			0 1px 3px rgba(0, 0, 0, 0.04),
-			inset 0 1px 0 rgba(255, 255, 255, 0.5);
+			var(--intently-shadow-sm),
+			inset 0 1px 0 color-mix(in srgb, var(--intently-bg-primary) 50%, transparent);
 		pointer-events: auto;
 		transition: all 0.3s ease;
 	}
 
 	nav:hover {
 		box-shadow:
-			0 8px 32px rgba(0, 0, 0, 0.08),
-			0 2px 8px rgba(0, 0, 0, 0.04),
-			inset 0 1px 0 rgba(255, 255, 255, 0.5);
+			var(--intently-shadow-md),
+			inset 0 1px 0 color-mix(in srgb, var(--intently-bg-primary) 50%, transparent);
 	}
 
 	.internal-links {
@@ -255,10 +253,10 @@ import { SITE_TITLE } from '../consts';
 		width: 44px;
 		min-height: 44px;
 		padding: 0.625rem;
-		background: rgba(255, 255, 255, 0.5);
+		background: color-mix(in srgb, var(--intently-bg-primary) 50%, transparent);
 		backdrop-filter: blur(8px);
 		-webkit-backdrop-filter: blur(8px);
-		border: 1px solid rgba(255, 255, 255, 0.3);
+		border: 1px solid color-mix(in srgb, var(--intently-bg-primary) 30%, transparent);
 		border-radius: 0.75rem;
 		cursor: pointer;
 		z-index: 101;
@@ -266,7 +264,7 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.hamburger:hover {
-		background: rgba(255, 255, 255, 0.7);
+		background: color-mix(in srgb, var(--intently-bg-primary) 70%, transparent);
 	}
 
 	.hamburger span {
@@ -331,7 +329,7 @@ import { SITE_TITLE } from '../consts';
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: rgba(0, 0, 0, 0.5);
+		background: color-mix(in srgb, var(--intently-bg-primary) 50%, transparent);
 		z-index: 98;
 	}
 

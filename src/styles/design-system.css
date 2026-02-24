@@ -79,6 +79,7 @@
 	--intently-space-2xl: 3rem; /* 48px */
 	--intently-space-3xl: 4rem; /* 64px */
 	--intently-space-4xl: 6rem; /* 96px */
+	--intently-space-5xl: 8rem; /* 128px */
 
 	/* === Transitions === */
 	--intently-transition-fast: 150ms ease;
