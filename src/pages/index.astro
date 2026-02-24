@@ -3,7 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/marketing/Hero.astro';
-import GlassBentoCard from '../components/marketing/GlassBentoCard.astro';
 import PlatformCard from '../components/marketing/PlatformCard.astro';
 import Icon from '../components/ui/Icon.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
@@ -36,48 +35,79 @@ const latestPosts = allPosts
 		<main>
 			<Hero />
 
-			<!-- Features Section - Glass Bento Grid -->
-			<section class="bento-glass-section">
+			<!-- Features Section - Asymmetric Bento -->
+			<section class="bento-section">
 				<div class="container">
 					<div class="section-header">
 						<h2 class="section-title">What Changes When You Use Intently</h2>
 						<p class="section-subtitle">Four ways your relationship with your phone transforms.</p>
 					</div>
+
 					<div class="bento-grid">
-						<GlassBentoCard
-							size="hero"
-							color="blue"
-							glassLevel="heavy"
-							icon="Clock"
-							stat="2.3 hrs"
-							statLabel="average time saved daily"
-							title="See Where Your Hours Go"
-							description="Most people are shocked to discover they spend 3-4 hours daily on apps they don't even enjoy. Intently reveals the truth gently."
-						/>
-						<GlassBentoCard
-							size="medium"
-							color="purple"
-							glassLevel="soft"
-							icon="Pause"
-							title="A Breath Between You and the Scroll"
-							description="When you reach for apps on autopilot, Intently creates a quiet pause. In that moment, you remember: you can choose."
-						/>
-						<GlassBentoCard
-							size="medium"
-							color="orange"
-							glassLevel="soft"
-							icon="TrendingUp"
-							title="Watch Yourself Transform"
-							description="Every day you choose presence over scrolling, your streak grows. It's not about perfection—it's about becoming someone in control."
-						/>
-						<GlassBentoCard
-							size="wide"
-							color="green"
-							glassLevel="soft"
-							icon="ShieldCheck"
-							title="Your Secrets Stay Yours"
-							description="We'll never know which apps you use or how long you scroll. Everything stays on your device—always. Your business, your progress, your data. Private."
-						/>
+						<!-- Hero Card: Stat Showpiece -->
+						<div class="bento-card bento-hero">
+							<div class="bento-accent bento-accent-blue" aria-hidden="true"></div>
+							<div class="bento-glow-bg" aria-hidden="true"></div>
+							<div class="bento-hero-layout">
+								<div class="bento-hero-stat">
+									<span class="bento-stat-number">2.3</span>
+									<span class="bento-stat-unit">hrs</span>
+									<span class="bento-stat-caption">average time saved daily</span>
+								</div>
+								<div class="bento-hero-content">
+									<div class="bento-icon bento-icon-blue">
+										<Icon name="Clock" size={32} color="var(--intently-blue)" />
+									</div>
+									<h3>See Where Your Hours Go</h3>
+									<p>Most people are shocked to discover they spend 3-4 hours daily on apps they don't even enjoy. Intently reveals the truth gently.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Pause Card: Breathing Animation -->
+						<div class="bento-card bento-pause">
+							<div class="bento-accent bento-accent-purple" aria-hidden="true"></div>
+							<div class="bento-icon bento-icon-purple">
+								<div class="breath-ring" aria-hidden="true"></div>
+								<Icon name="Pause" size={28} color="var(--intently-purple)" />
+							</div>
+							<h3>A Breath Between You and the Scroll</h3>
+							<p>When you reach for apps on autopilot, Intently creates a quiet pause. In that moment, you remember: you can choose.</p>
+						</div>
+
+						<!-- Transform Card: Streak Dots -->
+						<div class="bento-card bento-transform">
+							<div class="bento-accent bento-accent-orange" aria-hidden="true"></div>
+							<div class="bento-icon bento-icon-orange">
+								<Icon name="TrendingUp" size={28} color="var(--intently-orange)" />
+							</div>
+							<div class="mini-streak" aria-hidden="true">
+								<span class="streak-dot"></span>
+								<span class="streak-dot"></span>
+								<span class="streak-dot filled"></span>
+								<span class="streak-dot filled"></span>
+								<span class="streak-dot filled"></span>
+								<span class="streak-dot filled"></span>
+								<span class="streak-dot filled active"></span>
+							</div>
+							<h3>Watch Yourself Transform</h3>
+							<p>Every day you choose presence over scrolling, your streak grows. It's not about perfection—it's about becoming someone in control.</p>
+						</div>
+
+						<!-- Privacy Card: Badge Pills -->
+						<div class="bento-card bento-privacy">
+							<div class="bento-accent bento-accent-green" aria-hidden="true"></div>
+							<div class="bento-icon bento-icon-green">
+								<Icon name="ShieldCheck" size={28} color="var(--intently-green)" />
+							</div>
+							<h3>Your Secrets Stay Yours</h3>
+							<p>We'll never know which apps you use or how long you scroll. Everything stays on your device—always.</p>
+							<div class="privacy-badges">
+								<span class="privacy-badge"><Icon name="WifiOff" size={14} color="var(--intently-green)" /> No servers</span>
+								<span class="privacy-badge"><Icon name="EyeOff" size={14} color="var(--intently-green)" /> No tracking</span>
+								<span class="privacy-badge"><Icon name="Database" size={14} color="var(--intently-green)" /> On-device only</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -233,14 +263,15 @@ const latestPosts = allPosts
 			<!-- Blog Section -->
 			<section class="blog-section">
 				<div class="container">
-					<h2 class="section-title">Latest from Our Blog</h2>
-					<p class="section-subtitle">Expert tips and insights on digital wellbeing, phone addiction, and mindful tech use.</p>
+					<span class="blog-eyebrow">From the blog</span>
+					<h2 class="section-title">Insights for a More Intentional Life</h2>
+					<p class="section-subtitle">Expert tips on digital wellbeing, phone addiction, and mindful tech use.</p>
 					<div class="blog-grid">
 						{latestPosts.map((post) => (
 							<article class="blog-card">
 								{post.data.heroImage && (
 									<a href={`/blog/${post.id}`} class="blog-image-link">
-										<img src={post.data.heroImage} alt={post.data.title} class="blog-image" />
+										<img src={post.data.heroImage} alt={post.data.title} class="blog-image" loading="lazy" />
 									</a>
 								)}
 								<div class="blog-content">
@@ -248,7 +279,10 @@ const latestPosts = allPosts
 										<a href={`/blog/${post.id}`}>{post.data.title}</a>
 									</h3>
 									<p class="blog-description">{post.data.description}</p>
-									<a href={`/blog/${post.id}`} class="blog-link">Read More →</a>
+									<a href={`/blog/${post.id}`} class="blog-link">
+										Read More
+										<Icon name="ArrowRight" size={14} color="currentColor" />
+									</a>
 								</div>
 							</article>
 						))}
@@ -263,32 +297,66 @@ const latestPosts = allPosts
 			<!-- Testimonials Section -->
 			<section class="testimonials-section">
 				<div class="container">
-					<div class="testimonials-grid">
-						<div class="testimonial-card">
-							<p class="testimonial-quote">"I got back 2 hours a day. That's 14 hours a week I spend with my kids now."</p>
-							<span class="testimonial-author">— Android user</span>
+					<h2 class="section-title">What People Are Saying</h2>
+				</div>
+				<div class="marquee-wrap">
+					<div class="marquee-track">
+						<div class="quote-card">
+							<p class="quote-text">"I got back 2 hours a day. That's 14 hours a week I spend with my kids now."</p>
+							<span class="quote-author">— Android user</span>
 						</div>
-						<div class="testimonial-card">
-							<p class="testimonial-quote">"Other apps made me feel broken. Intently just... helped me notice. That was enough."</p>
-							<span class="testimonial-author">— Chrome user</span>
+						<div class="quote-card">
+							<p class="quote-text">"Other apps made me feel broken. Intently just... helped me notice. That was enough."</p>
+							<span class="quote-author">— Chrome user</span>
 						</div>
-						<div class="testimonial-card">
-							<p class="testimonial-quote">"I didn't even realize I was spending 4 hours on TikTok. Now I choose 30 minutes—and I actually enjoy it more."</p>
-							<span class="testimonial-author">— Android user</span>
+						<div class="quote-card">
+							<p class="quote-text">"I didn't even realize I was spending 4 hours on TikTok. Now I choose 30 minutes—and I actually enjoy it more."</p>
+							<span class="quote-author">— Android user</span>
+						</div>
+						<div class="quote-card">
+							<p class="quote-text">"The pause screen is genius. It's not annoying—it just makes you think for a second."</p>
+							<span class="quote-author">— Android user</span>
+						</div>
+						<div class="quote-card">
+							<p class="quote-text">"My screen time dropped from 6 hours to under 3. I didn't even try that hard."</p>
+							<span class="quote-author">— Chrome user</span>
+						</div>
+						<!-- Duplicate for seamless loop -->
+						<div class="quote-card" aria-hidden="true">
+							<p class="quote-text">"I got back 2 hours a day. That's 14 hours a week I spend with my kids now."</p>
+							<span class="quote-author">— Android user</span>
+						</div>
+						<div class="quote-card" aria-hidden="true">
+							<p class="quote-text">"Other apps made me feel broken. Intently just... helped me notice. That was enough."</p>
+							<span class="quote-author">— Chrome user</span>
+						</div>
+						<div class="quote-card" aria-hidden="true">
+							<p class="quote-text">"I didn't even realize I was spending 4 hours on TikTok. Now I choose 30 minutes—and I actually enjoy it more."</p>
+							<span class="quote-author">— Android user</span>
+						</div>
+						<div class="quote-card" aria-hidden="true">
+							<p class="quote-text">"The pause screen is genius. It's not annoying—it just makes you think for a second."</p>
+							<span class="quote-author">— Android user</span>
+						</div>
+						<div class="quote-card" aria-hidden="true">
+							<p class="quote-text">"My screen time dropped from 6 hours to under 3. I didn't even try that hard."</p>
+							<span class="quote-author">— Chrome user</span>
 						</div>
 					</div>
+				</div>
+				<div class="container">
 					<div class="stats-bar">
 						<div class="stat-item">
-							<span class="stat-value">12,000+</span>
-							<span class="stat-label">Downloads</span>
+							<span class="stat-number">12,000+</span>
+							<span class="stat-desc">Downloads</span>
 						</div>
 						<div class="stat-item">
-							<span class="stat-value">4.7</span>
-							<span class="stat-label">Star Average</span>
+							<span class="stat-number">4.7</span>
+							<span class="stat-desc">Star Average</span>
 						</div>
 						<div class="stat-item">
-							<span class="stat-value">45%</span>
-							<span class="stat-label">Average Reduction</span>
+							<span class="stat-number">45%</span>
+							<span class="stat-desc">Average Reduction</span>
 						</div>
 					</div>
 				</div>
@@ -296,11 +364,39 @@ const latestPosts = allPosts
 
 			<!-- CTA Section -->
 			<section class="cta-section">
+				<div class="cta-divider" aria-hidden="true"></div>
 				<div class="container">
-					<div class="cta-content">
-						<h2>Tomorrow, You Could Wake Up With an Extra Hour</h2>
-						<p>12,000+ people have already taken back their mornings, their evenings, and their weekends. The only thing standing between you and them is one free download.</p>
-						<a href="/download" class="cta-button">Start Reclaiming Your Time</a>
+					<div class="cta-layout">
+						<div class="cta-content">
+							<span class="cta-eyebrow">
+								<Icon name="Sparkles" size={16} color="var(--intently-blue)" />
+								Ready to change?
+							</span>
+							<h2 class="cta-headline">
+								Tomorrow, You Could Wake Up With
+								<span class="cta-highlight">an Extra Hour</span>
+							</h2>
+							<p class="cta-body">12,000+ people have already taken back their mornings, their evenings, and their weekends. The only thing standing between you and them is one free download.</p>
+							<div class="cta-actions">
+								<a href="/download" class="cta-button-primary">
+									Start Reclaiming Your Time
+									<Icon name="ArrowRight" size={18} color="currentColor" />
+								</a>
+								<span class="cta-reassurance">
+									<Icon name="ShieldCheck" size={14} color="var(--intently-green)" />
+									Free forever. No account needed.
+								</span>
+							</div>
+						</div>
+						<div class="cta-visual" aria-hidden="true">
+							<div class="clock-face">
+								<div class="clock-ring"></div>
+								<div class="clock-hand clock-hour"></div>
+								<div class="clock-hand clock-minute"></div>
+								<div class="clock-center"></div>
+								<div class="clock-highlight"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -315,13 +411,12 @@ const latestPosts = allPosts
 		width: 100%;
 	}
 
-	/* Bento Glass Section */
-	.bento-glass-section {
+	/* Bento Section — Asymmetric Showcase */
+	.bento-section {
 		width: 100%;
 		padding: var(--intently-space-4xl) 0;
 		background: var(--intently-bg-secondary);
 		position: relative;
-		transition: background-color 0.3s ease;
 	}
 
 	.section-header {
@@ -349,23 +444,327 @@ const latestPosts = allPosts
 		font-weight: 400;
 	}
 
-	/* Bento grid layout */
+	/* Bento grid */
 	.bento-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 1.25rem;
-		max-width: 900px;
+		gap: 1rem;
+		max-width: 1080px;
 		margin: 0 auto;
 		padding: 0 1rem;
+	}
+
+	/* Base card glass */
+	.bento-card {
+		position: relative;
+		border-radius: 24px;
+		overflow: hidden;
+		padding: 1.5rem;
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	@media (hover: hover) {
+		.bento-card:hover {
+			transform: scale(1.02);
+		}
+
+		.bento-card:hover .bento-accent {
+			height: 5px;
+		}
+
+		.bento-card:hover .bento-icon::before {
+			opacity: 0.25;
+			transform: scale(1.3);
+		}
+
+		.bento-card:hover .bento-glow-bg {
+			opacity: 1;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.bento-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	.bento-card h3 {
+		font-size: 1.0625rem;
+		font-weight: 700;
+		margin: 0 0 0.5rem;
+		color: var(--intently-text-primary);
+		line-height: 1.3;
+		letter-spacing: -0.01em;
+	}
+
+	.bento-card p {
+		font-size: 0.9rem;
+		line-height: 1.55;
+		color: var(--intently-text-secondary);
+		margin: 0;
+	}
+
+	/* Accent edges */
+	.bento-accent {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		border-radius: 24px 24px 0 0;
+		transition: height 0.4s ease;
+	}
+
+	.bento-accent-blue { background: linear-gradient(90deg, #2196F3, #9C27B0); }
+	.bento-accent-purple { background: linear-gradient(90deg, #9C27B0, #E040FB); }
+	.bento-accent-orange { background: linear-gradient(90deg, #FF9800, #FF5722); }
+	.bento-accent-green { background: linear-gradient(90deg, #4CAF50, #00BCD4); }
+
+	/* Floating icons with glow */
+	.bento-icon {
+		width: 56px;
+		height: 56px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		margin-bottom: 1rem;
+		flex-shrink: 0;
+	}
+
+	.bento-icon::before {
+		content: '';
+		position: absolute;
+		inset: -4px;
+		border-radius: 50%;
+		opacity: 0.15;
+		transition: opacity 0.4s ease, transform 0.4s ease;
+	}
+
+	.bento-icon-blue::before { background: radial-gradient(circle, var(--intently-blue), transparent 70%); }
+	.bento-icon-purple::before { background: radial-gradient(circle, var(--intently-purple), transparent 70%); }
+	.bento-icon-orange::before { background: radial-gradient(circle, var(--intently-orange), transparent 70%); }
+	.bento-icon-green::before { background: radial-gradient(circle, var(--intently-green), transparent 70%); }
+
+	/* === Hero Card === */
+	.bento-hero {
+		padding: 2rem;
+	}
+
+	.bento-hero-layout {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
 		position: relative;
 		z-index: 1;
 	}
 
-	/* Tablet: 2 columns */
+	.bento-glow-bg {
+		position: absolute;
+		inset: -20px;
+		z-index: 0;
+		border-radius: 40px;
+		background:
+			radial-gradient(ellipse at 30% 50%, rgba(33, 150, 243, 0.08) 0%, transparent 60%),
+			radial-gradient(ellipse at 70% 50%, rgba(156, 39, 176, 0.06) 0%, transparent 60%);
+		filter: blur(20px);
+		opacity: 0.6;
+		animation: glow-pulse 8s ease-in-out infinite;
+		pointer-events: none;
+	}
+
+	@keyframes glow-pulse {
+		0%, 100% { opacity: 0.6; }
+		50% { opacity: 1; }
+	}
+
+	.bento-hero-stat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.bento-stat-number {
+		font-size: clamp(3.5rem, 7vw, 5.5rem);
+		font-weight: 900;
+		letter-spacing: -0.04em;
+		line-height: 1;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 50%, var(--intently-blue) 100%);
+		background-size: 200% 200%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		animation: gradient-shift 6s ease-in-out infinite;
+	}
+
+	@keyframes gradient-shift {
+		0%, 100% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+	}
+
+	.bento-stat-unit {
+		font-size: clamp(1.5rem, 3vw, 2.5rem);
+		font-weight: 700;
+		color: var(--intently-text-secondary);
+		margin-top: -0.25rem;
+	}
+
+	.bento-stat-caption {
+		font-size: 0.8125rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: var(--intently-text-hint);
+		font-weight: 600;
+		margin-top: 0.5rem;
+	}
+
+	.bento-hero-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bento-hero h3 {
+		font-size: 1.375rem;
+	}
+
+	.bento-hero p {
+		font-size: 0.975rem;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.bento-stat-number {
+			background: linear-gradient(135deg, #42A5F5 0%, #AB47BC 50%, #42A5F5 100%);
+			background-size: 200% 200%;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			animation: gradient-shift 6s ease-in-out infinite;
+		}
+
+		.bento-glow-bg {
+			background:
+				radial-gradient(ellipse at 30% 50%, rgba(33, 150, 243, 0.04) 0%, transparent 60%),
+				radial-gradient(ellipse at 70% 50%, rgba(156, 39, 176, 0.03) 0%, transparent 60%);
+		}
+	}
+
+	/* === Breathing Ring (Pause card) === */
+	.breath-ring {
+		position: absolute;
+		inset: -8px;
+		border-radius: 50%;
+		border: 2px solid var(--intently-purple);
+		opacity: 0.3;
+		animation: breathe 4s ease-in-out infinite;
+	}
+
+	@keyframes breathe {
+		0%, 100% { transform: scale(0.8); opacity: 0.15; }
+		50% { transform: scale(1.2); opacity: 0.35; }
+	}
+
+	/* === Streak Dots (Transform card) === */
+	.mini-streak {
+		display: flex;
+		gap: 6px;
+		margin-bottom: 0.75rem;
+	}
+
+	.streak-dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: var(--intently-gray-300);
+	}
+
+	.streak-dot.filled {
+		background: var(--intently-orange);
+	}
+
+	.streak-dot.active {
+		background: var(--intently-orange);
+		box-shadow: 0 0 8px rgba(255, 152, 0, 0.5);
+		animation: pulse-dot 2s ease-in-out infinite;
+	}
+
+	@keyframes pulse-dot {
+		0%, 100% { box-shadow: 0 0 4px rgba(255, 152, 0, 0.3); }
+		50% { box-shadow: 0 0 12px rgba(255, 152, 0, 0.6); }
+	}
+
+	/* === Privacy Badges === */
+	.privacy-badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid rgba(0, 0, 0, 0.04);
+	}
+
+	.privacy-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.375rem;
+		font-size: 0.75rem;
+		font-weight: 600;
+		color: var(--intently-green);
+		background: rgba(76, 175, 80, 0.08);
+		padding: 0.25rem 0.75rem;
+		border-radius: var(--intently-radius-full);
+		border: 1px solid rgba(76, 175, 80, 0.15);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.privacy-badges {
+			border-top-color: rgba(255, 255, 255, 0.06);
+		}
+
+		.privacy-badge {
+			background: rgba(76, 175, 80, 0.12);
+			border-color: rgba(76, 175, 80, 0.2);
+		}
+
+		.streak-dot {
+			background: var(--intently-gray-400);
+		}
+	}
+
+	/* Bento responsive */
 	@media (min-width: 768px) {
 		.bento-grid {
 			grid-template-columns: repeat(2, 1fr);
 			gap: 1.5rem;
+		}
+
+		.bento-hero {
+			grid-column: 1 / -1;
+		}
+
+		.bento-privacy {
+			grid-column: 1 / -1;
+		}
+
+		.bento-hero-layout {
+			flex-direction: row;
+			align-items: center;
+			gap: 2.5rem;
+		}
+
+		.bento-hero-stat {
+			min-width: 200px;
 		}
 
 		.section-header .section-title {
@@ -377,15 +776,57 @@ const latestPosts = allPosts
 		}
 	}
 
-	/* Desktop */
 	@media (min-width: 1024px) {
-		.bento-glass-section {
+		.bento-section {
 			padding: var(--intently-space-5xl) 0;
 		}
 
 		.bento-grid {
-			max-width: 1000px;
+			grid-template-columns: 1.2fr 1fr 1.2fr;
 			gap: 1.75rem;
+		}
+
+		.bento-hero {
+			grid-column: 1 / -1;
+		}
+
+		.bento-pause { grid-column: 1; }
+		.bento-transform { grid-column: 2; }
+		.bento-privacy { grid-column: 3; }
+	}
+
+	/* Bento mobile */
+	@media (max-width: 767px) {
+		.bento-hero {
+			padding: 1.5rem;
+		}
+
+		.bento-hero h3 {
+			font-size: 1.125rem;
+		}
+
+		.bento-icon {
+			width: 48px;
+			height: 48px;
+		}
+	}
+
+	/* Reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+		.bento-stat-number,
+		.bento-glow-bg,
+		.breath-ring,
+		.streak-dot.active {
+			animation: none;
+		}
+
+		.bento-glow-bg {
+			opacity: 0.8;
+		}
+
+		.breath-ring {
+			transform: scale(1);
+			opacity: 0.2;
 		}
 	}
 
@@ -465,30 +906,66 @@ const latestPosts = allPosts
 	.blog-section {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-primary);
+		background: var(--intently-bg-secondary);
+	}
+
+	.blog-eyebrow {
+		display: block;
+		text-align: center;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--intently-blue);
+		margin-bottom: 0.75rem;
 	}
 
 	.blog-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: var(--intently-space-xl);
+		gap: 1.25rem;
 		margin-bottom: var(--intently-space-2xl);
 	}
 
 	.blog-card {
-		background: var(--intently-bg-primary);
-		border-radius: var(--intently-radius-lg);
+		background: rgba(255, 255, 255, 0.7);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border-radius: 24px;
 		overflow: hidden;
-		border: 1px solid var(--intently-gray-200);
-		transition: all var(--intently-transition-normal);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 		display: flex;
 		flex-direction: column;
 	}
 
 	.blog-card:hover {
 		transform: translateY(-4px);
-		box-shadow: var(--intently-shadow-lg);
-		border-color: var(--intently-blue);
+		background: rgba(255, 255, 255, 0.85);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 12px 40px rgba(0, 0, 0, 0.1),
+			0 4px 12px rgba(0, 0, 0, 0.06);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.blog-card {
+			background: rgba(40, 40, 40, 0.7);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.15),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+
+		.blog-card:hover {
+			background: rgba(40, 40, 40, 0.85);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.2),
+				0 12px 40px rgba(0, 0, 0, 0.5);
+		}
 	}
 
 	.blog-image-link {
@@ -500,25 +977,26 @@ const latestPosts = allPosts
 		width: 100%;
 		height: 200px;
 		object-fit: cover;
-		transition: transform var(--intently-transition-normal);
+		transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
-	.blog-image-link:hover .blog-image {
-		transform: scale(1.05);
+	.blog-card:hover .blog-image {
+		transform: scale(1.06);
 	}
 
 	.blog-content {
-		padding: var(--intently-space-lg);
+		padding: 1.25rem 1.5rem 1.5rem;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.blog-title {
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-sm);
+		margin: 0 0 0.5rem;
 		line-height: 1.3;
+		letter-spacing: -0.01em;
 	}
 
 	.blog-title a {
@@ -532,24 +1010,28 @@ const latestPosts = allPosts
 	}
 
 	.blog-description {
-		font-size: 0.9375rem;
+		font-size: 0.9rem;
 		color: var(--intently-text-secondary);
-		margin: 0 0 var(--intently-space-md);
-		line-height: 1.5;
+		margin: 0 0 1rem;
+		line-height: 1.55;
 		flex: 1;
 	}
 
 	.blog-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.375rem;
 		color: var(--intently-blue);
 		font-weight: 600;
 		text-decoration: none;
-		font-size: 0.9375rem;
-		transition: color var(--intently-transition-fast);
+		font-size: 0.875rem;
+		transition: all var(--intently-transition-fast);
 		align-self: flex-start;
 	}
 
 	.blog-link:hover {
-		color: var(--intently-purple);
+		gap: 0.625rem;
+		color: var(--intently-blue-dark);
 	}
 
 	.blog-cta {
@@ -571,26 +1053,53 @@ const latestPosts = allPosts
 	}
 
 	.view-all-button {
-		background: var(--intently-blue);
+		background: rgba(33, 150, 243, 0.85);
 		color: white;
-		border: 2px solid var(--intently-blue);
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		backdrop-filter: blur(12px) saturate(150%);
+		-webkit-backdrop-filter: blur(12px) saturate(150%);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.3),
+			0 4px 16px rgba(33, 150, 243, 0.3);
 	}
 
 	.view-all-button:hover {
-		background: var(--intently-blue-dark);
+		background: rgba(33, 150, 243, 0.95);
 		transform: translateY(-2px);
-		box-shadow: var(--intently-shadow-md);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.35),
+			0 8px 24px rgba(33, 150, 243, 0.4);
 	}
 
 	.quiz-button {
-		background: white;
+		background: rgba(255, 255, 255, 0.6);
 		color: var(--intently-blue);
-		border: 2px solid var(--intently-blue);
+		border: 1px solid rgba(33, 150, 243, 0.2);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
 	}
 
 	.quiz-button:hover {
-		background: var(--intently-bg-secondary);
+		background: rgba(255, 255, 255, 0.85);
+		border-color: rgba(33, 150, 243, 0.4);
 		transform: translateY(-2px);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.5),
+			0 4px 16px rgba(33, 150, 243, 0.1);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.quiz-button {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(66, 165, 245, 0.25);
+			color: var(--intently-blue);
+		}
+
+		.quiz-button:hover {
+			background: rgba(255, 255, 255, 0.15);
+			border-color: rgba(66, 165, 245, 0.45);
+		}
 	}
 
 	@media (min-width: 768px) {
@@ -1001,50 +1510,152 @@ const latestPosts = allPosts
 	.testimonials-section {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
-	}
-
-	.testimonials-grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: var(--intently-space-lg);
-		max-width: 1000px;
-		margin: 0 auto var(--intently-space-2xl);
-	}
-
-	.testimonial-card {
 		background: var(--intently-bg-primary);
-		padding: var(--intently-space-xl);
-		border-radius: var(--intently-radius-lg);
-		border: 1px solid var(--intently-gray-200);
-		text-align: center;
+		overflow: hidden;
 	}
 
-	.testimonial-quote {
-		font-size: 1.0625rem;
+	.testimonials-section .section-title {
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	/* Marquee */
+	.marquee-wrap {
+		position: relative;
+		width: 100%;
+		padding: 0.5rem 0 1.5rem;
+	}
+
+	.marquee-wrap::before,
+	.marquee-wrap::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 80px;
+		z-index: 2;
+		pointer-events: none;
+	}
+
+	.marquee-wrap::before {
+		left: 0;
+		background: linear-gradient(90deg, var(--intently-bg-primary) 0%, transparent 100%);
+	}
+
+	.marquee-wrap::after {
+		right: 0;
+		background: linear-gradient(270deg, var(--intently-bg-primary) 0%, transparent 100%);
+	}
+
+	.marquee-track {
+		display: flex;
+		gap: 1.25rem;
+		width: max-content;
+		animation: marquee 40s linear infinite;
+	}
+
+	.marquee-track:hover {
+		animation-play-state: paused;
+	}
+
+	@keyframes marquee {
+		0% { transform: translateX(0); }
+		100% { transform: translateX(-50%); }
+	}
+
+	/* Quote cards */
+	.quote-card {
+		min-width: 300px;
+		max-width: 360px;
+		flex-shrink: 0;
+		padding: 1.5rem;
+		background: rgba(255, 255, 255, 0.65);
+		backdrop-filter: blur(16px) saturate(150%);
+		-webkit-backdrop-filter: blur(16px) saturate(150%);
+		border: 1px solid rgba(255, 255, 255, 0.7);
+		border-radius: 20px;
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.8),
+			0 2px 12px rgba(0, 0, 0, 0.04);
+		transition: all 0.3s ease;
+		position: relative;
+	}
+
+	.quote-card::before {
+		content: '\201C';
+		position: absolute;
+		top: 0.5rem;
+		left: 1rem;
+		font-size: 3rem;
+		line-height: 1;
+		color: var(--intently-blue);
+		opacity: 0.12;
+		font-family: Georgia, serif;
+		pointer-events: none;
+	}
+
+	.quote-card:hover {
+		transform: scale(1.02);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 8px 24px rgba(0, 0, 0, 0.08);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.quote-card {
+			background: rgba(50, 50, 50, 0.7);
+			border-color: rgba(255, 255, 255, 0.1);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.08),
+				0 2px 12px rgba(0, 0, 0, 0.3);
+		}
+
+		.quote-card:hover {
+			background: rgba(50, 50, 50, 0.85);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.12),
+				0 8px 24px rgba(0, 0, 0, 0.4);
+		}
+
+		.quote-card::before {
+			opacity: 0.15;
+		}
+	}
+
+	.quote-text {
+		font-size: 0.9375rem;
 		line-height: 1.6;
 		color: var(--intently-text-primary);
-		margin: 0 0 var(--intently-space-md);
+		margin: 0 0 0.75rem;
 		font-style: italic;
 	}
 
-	.testimonial-author {
-		font-size: 0.875rem;
+	.quote-author {
+		font-size: 0.8125rem;
 		color: var(--intently-text-hint);
 		font-weight: 500;
 	}
 
+	/* Stats bar — glass */
 	.stats-bar {
 		display: flex;
 		justify-content: center;
 		gap: var(--intently-space-2xl);
 		flex-wrap: wrap;
 		padding: var(--intently-space-xl);
-		background: var(--intently-bg-primary);
-		border-radius: var(--intently-radius-lg);
+		background: rgba(255, 255, 255, 0.6);
+		backdrop-filter: blur(16px);
+		-webkit-backdrop-filter: blur(16px);
+		border: 1px solid rgba(255, 255, 255, 0.7);
+		border-radius: 20px;
 		max-width: 700px;
-		margin: 0 auto;
-		border: 1px solid var(--intently-gray-200);
+		margin: var(--intently-space-xl) auto 0;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.stats-bar {
+			background: rgba(50, 50, 50, 0.6);
+			border-color: rgba(255, 255, 255, 0.1);
+		}
 	}
 
 	.stat-item {
@@ -1054,59 +1665,271 @@ const latestPosts = allPosts
 		gap: 0.25rem;
 	}
 
-	.stat-value {
+	.stat-number {
 		font-size: 1.75rem;
 		font-weight: 800;
 		color: var(--intently-blue);
 	}
 
-	.stat-label {
+	.stat-desc {
 		font-size: 0.875rem;
 		color: var(--intently-text-secondary);
 		font-weight: 500;
 	}
 
-	/* CTA Section */
+	/* CTA Section — The Inversion */
 	.cta-section {
-		padding: var(--intently-space-2xl) 0;
-		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
-		color: white;
+		padding: var(--intently-space-3xl) 0 var(--intently-space-2xl);
+		background: var(--intently-bg-primary);
+		position: relative;
+		overflow: hidden;
 	}
 
-	.cta-content {
+	.cta-divider {
+		position: absolute;
+		top: 0;
+		left: 10%;
+		right: 10%;
+		height: 1px;
+		background: linear-gradient(90deg,
+			transparent 0%,
+			var(--intently-blue) 30%,
+			var(--intently-purple) 70%,
+			transparent 100%
+		);
+		opacity: 0.3;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.cta-divider {
+			opacity: 0.4;
+		}
+	}
+
+	.cta-layout {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		text-align: center;
-		max-width: 600px;
+		gap: var(--intently-space-2xl);
+		max-width: 1000px;
 		margin: 0 auto;
 	}
 
-	.cta-content h2 {
-		font-size: 2rem;
-		font-weight: 700;
-		margin: 0 0 var(--intently-space-md);
-		color: white;
+	.cta-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
-	.cta-content p {
-		font-size: 1.125rem;
-		margin: 0 0 var(--intently-space-xl);
-		opacity: 0.95;
-	}
-
-	.cta-button {
-		display: inline-block;
-		padding: 1rem 2rem;
-		background: white;
+	.cta-eyebrow {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 0.875rem;
+		font-weight: 600;
 		color: var(--intently-blue);
-		text-decoration: none;
-		font-weight: 700;
-		font-size: 1.125rem;
-		border-radius: var(--intently-radius-full);
-		transition: all var(--intently-transition-normal);
+		letter-spacing: 0.02em;
+		margin-bottom: var(--intently-space-md);
 	}
 
-	.cta-button:hover {
+	.cta-headline {
+		font-size: clamp(1.75rem, 4vw, 3rem);
+		font-weight: 800;
+		line-height: 1.15;
+		letter-spacing: -0.03em;
+		color: var(--intently-text-primary);
+		margin: 0 0 var(--intently-space-lg);
+	}
+
+	.cta-highlight {
+		display: block;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		font-size: 1.15em;
+	}
+
+	.cta-body {
+		font-size: 1.0625rem;
+		line-height: 1.7;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-xl);
+		max-width: 540px;
+	}
+
+	.cta-actions {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0;
+	}
+
+	.cta-button-primary {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 1rem 2rem;
+		background: var(--intently-blue);
+		color: white;
+		font-weight: 700;
+		font-size: 1.0625rem;
+		border-radius: var(--intently-radius-full);
+		text-decoration: none;
+		box-shadow: 0 4px 16px rgba(33, 150, 243, 0.3);
+		transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.cta-button-primary:hover {
 		transform: translateY(-2px);
-		box-shadow: var(--intently-shadow-lg);
+		box-shadow: 0 8px 28px rgba(33, 150, 243, 0.4);
+		filter: brightness(1.1);
+	}
+
+	.cta-reassurance {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.375rem;
+		font-size: 0.8125rem;
+		color: var(--intently-text-hint);
+		font-weight: 500;
+		margin-top: 0.75rem;
+	}
+
+	/* CSS-only Clock */
+	.cta-visual {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.clock-face {
+		width: clamp(160px, 22vw, 240px);
+		aspect-ratio: 1;
+		border-radius: 50%;
+		position: relative;
+	}
+
+	.clock-ring {
+		position: absolute;
+		inset: 0;
+		border-radius: 50%;
+		border: 2px solid var(--intently-gray-300);
+		background: conic-gradient(
+			from 270deg,
+			rgba(33, 150, 243, 0.1) 0deg,
+			rgba(33, 150, 243, 0.1) 30deg,
+			transparent 30deg
+		);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.clock-ring {
+			border-color: var(--intently-gray-400);
+			background: conic-gradient(
+				from 270deg,
+				rgba(66, 165, 245, 0.15) 0deg,
+				rgba(66, 165, 245, 0.15) 30deg,
+				transparent 30deg
+			);
+		}
+	}
+
+	.clock-hand {
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+		transform-origin: bottom center;
+		border-radius: 2px;
+	}
+
+	.clock-hour {
+		width: 3px;
+		height: 28%;
+		background: var(--intently-text-primary);
+		transform: translateX(-50%) rotate(0deg);
+		animation: hour-tick 40s linear infinite;
+	}
+
+	.clock-minute {
+		width: 2px;
+		height: 38%;
+		background: var(--intently-blue);
+		transform: translateX(-50%) rotate(90deg);
+		animation: minute-tick 4s linear infinite;
+	}
+
+	.clock-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: var(--intently-blue);
+	}
+
+	.clock-highlight {
+		position: absolute;
+		inset: 8px;
+		border-radius: 50%;
+		background: conic-gradient(
+			from 270deg,
+			rgba(33, 150, 243, 0.15) 0deg,
+			rgba(33, 150, 243, 0) 30deg,
+			transparent 30deg
+		);
+		animation: highlight-pulse 4s ease-in-out infinite;
+	}
+
+	@keyframes hour-tick {
+		0% { transform: translateX(-50%) rotate(0deg); }
+		100% { transform: translateX(-50%) rotate(360deg); }
+	}
+
+	@keyframes minute-tick {
+		0% { transform: translateX(-50%) rotate(90deg); }
+		100% { transform: translateX(-50%) rotate(450deg); }
+	}
+
+	@keyframes highlight-pulse {
+		0%, 100% { opacity: 0.6; }
+		50% { opacity: 1; }
+	}
+
+	/* CTA responsive */
+	@media (min-width: 1024px) {
+		.cta-layout {
+			flex-direction: row;
+			text-align: left;
+			align-items: center;
+			gap: var(--intently-space-3xl);
+		}
+
+		.cta-content {
+			flex: 1.2;
+			align-items: flex-start;
+		}
+
+		.cta-visual {
+			flex: 0.8;
+		}
+
+		.cta-reassurance {
+			justify-content: flex-start;
+		}
+	}
+
+	/* CTA reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+		.clock-hour,
+		.clock-minute,
+		.clock-highlight {
+			animation: none;
+		}
 	}
 
 	/* Responsive - Mobile First */
@@ -1118,10 +1941,6 @@ const latestPosts = allPosts
 		.testimonials-section,
 		.cta-section {
 			padding: var(--intently-space-3xl) 0;
-		}
-
-		.testimonials-grid {
-			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 
@@ -1146,12 +1965,17 @@ const latestPosts = allPosts
 			font-size: 1rem;
 		}
 
-		.cta-content h2 {
-			font-size: 1.5rem;
+		.cta-button-primary {
+			width: 100%;
+			justify-content: center;
 		}
 
-		.cta-content p {
+		.cta-body {
 			font-size: 1rem;
+		}
+
+		.cta-divider {
+			display: none;
 		}
 	}
 </style>

@@ -61,21 +61,45 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 		flex-direction: column;
 		gap: var(--intently-space-md);
 		padding: var(--intently-space-xl);
-		background: var(--intently-bg-primary);
-		border-radius: var(--intently-radius-lg);
-		box-shadow: var(--intently-shadow-md);
-		transition: all var(--intently-transition-normal);
-		border: 2px solid transparent;
+		background: rgba(255, 255, 255, 0.7);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border-radius: 24px;
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 	.platform-card:hover {
 		transform: translateY(-4px);
-		box-shadow: var(--intently-shadow-lg);
-		border-color: var(--intently-blue-light);
+		background: rgba(255, 255, 255, 0.85);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 12px 40px rgba(0, 0, 0, 0.1),
+			0 4px 12px rgba(0, 0, 0, 0.06);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.platform-card {
+			background: rgba(40, 40, 40, 0.7);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.15),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+
+		.platform-card:hover {
+			background: rgba(40, 40, 40, 0.85);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.2),
+				0 12px 40px rgba(0, 0, 0, 0.5);
+		}
 	}
 
 	.platform-card-soon {
-		opacity: 0.8;
+		opacity: 0.75;
 	}
 
 	.platform-card-soon:hover {
@@ -94,10 +118,18 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: var(--intently-bg-secondary);
+		background: rgba(255, 255, 255, 0.6);
+		border: 1px solid rgba(0, 0, 0, 0.05);
 		border-radius: var(--intently-radius-md);
 		color: var(--intently-text-primary);
 		flex-shrink: 0;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.platform-icon {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.1);
+		}
 	}
 
 	.platform-icon svg {
