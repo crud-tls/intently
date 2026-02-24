@@ -205,8 +205,15 @@ import Icon from '../ui/Icon.astro';
 <style>
 	.hero {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0; /* Mobile: smaller padding */
+		padding: var(--intently-space-2xl) 0;
 		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-primary) 100%);
+	}
+
+	/* Add spacer at top for fixed header */
+	.hero::before {
+		content: '';
+		display: block;
+		height: 7rem;
 	}
 
 	.hero-container {

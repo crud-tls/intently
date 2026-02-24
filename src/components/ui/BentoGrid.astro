@@ -1,0 +1,92 @@
+---
+/**
+ * BentoGrid Component
+ * Modern bento-grid layout system with flexible spanning
+ */
+interface Props {
+	columns?: 2 | 3 | 4;
+	gap?: 'sm' | 'md' | 'lg';
+	class?: string;
+}
+
+const { columns = 3, gap = 'md', class: className = '' } = Astro.props;
+
+const gapMap = {
+	sm: 'var(--intently-space-md)',
+	md: 'var(--intently-space-xl)',
+	lg: 'var(--intently-space-2xl)'
+};
+
+const gridClass = `bento-${columns}col`;
+const gapStyle = `--bento-gap: ${gapMap[gap]};`;
+---
+
+<div class:list={['bento-grid', gridClass, className]} style={gapStyle}>
+	<slot />
+</div>
+
+<style>
+	.bento-grid {
+		display: grid;
+		gap: var(--bento-gap);
+		grid-auto-rows: minmax(180px, auto);
+		grid-auto-flow: dense;
+	}
+
+	.bento-2col {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bento-3col {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.bento-4col {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	/* Span modifiers - column span */
+	.bento-grid > :global(.span-2) {
+		grid-column: span 2;
+	}
+
+	.bento-grid > :global(.span-3) {
+		grid-column: span 3;
+	}
+
+	.bento-grid > :global(.span-4) {
+		grid-column: span 4;
+	}
+
+	/* Span modifiers - row span */
+	.bento-grid > :global(.row-span-2) {
+		grid-row: span 2;
+	}
+
+	.bento-grid > :global(.row-span-3) {
+		grid-row: span 3;
+	}
+
+	/* Tablet adjustments */
+	@media (max-width: 1024px) and (min-width: 768px) {
+		.bento-4col {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.bento-4col > :global(.span-4) {
+			grid-column: span 3;
+		}
+	}
+
+	/* Mobile: collapse to single column */
+	@media (max-width: 767px) {
+		.bento-grid {
+			grid-template-columns: 1fr !important;
+		}
+
+		.bento-grid > :global([class*='span-']) {
+			grid-column: span 1 !important;
+			grid-row: span 1 !important;
+		}
+	}
+</style>

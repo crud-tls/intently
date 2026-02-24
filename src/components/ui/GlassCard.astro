@@ -1,0 +1,147 @@
+---
+/**
+ * GlassCard Component
+ * Modern glassmorphism card with layered depth and variant styles
+ */
+interface Props {
+	variant?: 'glass' | 'solid' | 'gradient';
+	color?: 'blue' | 'purple' | 'green' | 'orange' | 'teal';
+	hover?: 'lift' | 'glow' | 'tilt';
+	class?: string;
+}
+
+const { variant = 'glass', color = 'blue', hover = 'lift', class: className = '' } = Astro.props;
+
+// Get gradient for color
+const gradients = {
+	blue: 'var(--intently-gradient-blue)',
+	purple: 'var(--intently-gradient-purple)',
+	green: 'var(--intently-gradient-teal)',
+	orange: 'var(--intently-gradient-sunset)',
+	teal: 'var(--intently-gradient-teal)'
+};
+---
+
+<div class:list={['glass-card', `glass-${variant}`, `glass-${color}`, `glass-hover-${hover}`, className]}>
+	<div class="glass-highlight"></div>
+	<div class="glass-content">
+		<slot />
+	</div>
+</div>
+
+<style>
+	.glass-card {
+		position: relative;
+		background: var(--intently-glass-bg);
+		backdrop-filter: var(--intently-glass-blur);
+		-webkit-backdrop-filter: var(--intently-glass-blur);
+		border: 1px solid var(--intently-glass-border);
+		border-radius: var(--intently-radius-xl);
+		padding: var(--intently-space-xl);
+		overflow: hidden;
+		transition: all var(--intently-float-duration) ease;
+	}
+
+	.glass-highlight {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50%;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, transparent 100%);
+		pointer-events: none;
+	}
+
+	/* Glass variant */
+	.glass-glass {
+		background: var(--intently-glass-bg);
+		backdrop-filter: var(--intently-glass-blur);
+		-webkit-backdrop-filter: var(--intently-glass-blur);
+		border: 1px solid var(--intently-glass-border);
+	}
+
+	/* Solid variant */
+	.glass-solid {
+		background: var(--intently-bg-primary);
+		border: 1px solid var(--intently-gray-200);
+	}
+
+	/* Gradient variant */
+	.glass-gradient {
+		background: var(--intently-gradient-blue);
+		border: none;
+		color: white;
+	}
+
+	.glass-gradient.glass-blue { background: var(--intently-gradient-blue); }
+	.glass-gradient.glass-purple { background: var(--intently-gradient-purple); }
+	.glass-gradient.glass-green { background: var(--intently-gradient-teal); }
+	.glass-gradient.glass-orange { background: var(--intently-gradient-sunset); }
+	.glass-gradient.glass-teal { background: var(--intently-gradient-teal); }
+
+	/* Color-specific highlights */
+	.glass-blue .glass-highlight {
+		background: linear-gradient(180deg, rgba(33, 150, 243, 0.15) 0%, transparent 100%);
+	}
+	.glass-purple .glass-highlight {
+		background: linear-gradient(180deg, rgba(156, 39, 176, 0.15) 0%, transparent 100%);
+	}
+	.glass-green .glass-highlight {
+		background: linear-gradient(180deg, rgba(76, 175, 80, 0.15) 0%, transparent 100%);
+	}
+	.glass-orange .glass-highlight {
+		background: linear-gradient(180deg, rgba(255, 152, 0, 0.15) 0%, transparent 100%);
+	}
+	.glass-teal .glass-highlight {
+		background: linear-gradient(180deg, rgba(0, 188, 212, 0.15) 0%, transparent 100%);
+	}
+
+	/* Hover effects */
+	.glass-card.glass-hover-lift:hover {
+		transform: translateY(var(--intently-float-y));
+		box-shadow: var(--intently-glass-shadow);
+	}
+
+	.glass-card.glass-hover-glow:hover {
+		box-shadow: 0 0 30px rgba(33, 150, 243, 0.3);
+	}
+
+	.glass-card.glass-hover-tilt:hover {
+		transform: perspective(1000px) rotateX(2deg) rotateY(2deg) translateY(-4px);
+		box-shadow: var(--intently-glass-shadow);
+	}
+
+	/* Content styling for gradient cards */
+	.glass-gradient .glass-content {
+		position: relative;
+		z-index: 1;
+	}
+
+	.glass-gradient .glass-content h3,
+	.glass-gradient .glass-content h2,
+	.glass-gradient .glass-content p {
+		color: white;
+	}
+
+	.glass-gradient .glass-content a {
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	/* Dark mode adjustments */
+	@media (prefers-color-scheme: dark) {
+		.glass-card.glass-glass {
+			background: rgba(30, 30, 30, 0.7);
+			border-color: rgba(255, 255, 255, 0.1);
+		}
+
+		.glass-highlight {
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.glass-card:hover {
+			transform: none !important;
+		}
+	}
+</style>

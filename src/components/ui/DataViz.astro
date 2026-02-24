@@ -1,0 +1,257 @@
+---
+/**
+ * DataViz Component
+ * Data visualization components for stats and metrics
+ */
+interface Props {
+	type?: 'circular' | 'counter' | 'trend';
+	value?: number;
+	label?: string;
+	unit?: string;
+	color?: string;
+	size?: 'sm' | 'md' | 'lg';
+}
+
+const {
+	type = 'counter',
+	value = 0,
+	label = '',
+	unit = '',
+	color = 'var(--intently-blue)',
+	size = 'md'
+} = Astro.props;
+
+const sizeClasses = {
+	sm: 'dataviz-sm',
+	md: 'dataviz-md',
+	lg: 'dataviz-lg'
+};
+
+// For circular progress, calculate stroke offset
+const circumference = 283; // 2 * pi * 45
+const offset = circumference - ((value || 0) / 100) * circumference;
+---
+
+<div class:list={['dataviz', `dataviz-${type}`, sizeClasses[size]]}>
+	{type === 'circular' && (
+		<svg viewBox="0 0 100 100" class="dataviz-circle" data-value={value}>
+			<circle
+				cx="50"
+				cy="50"
+				r="45"
+				fill="none"
+				stroke="var(--intently-gray-200)"
+				stroke-width="8"
+			/>
+			<circle
+				cx="50"
+				cy="50"
+				r="45"
+				fill="none"
+				stroke={color}
+				stroke-width="8"
+				stroke-dasharray={circumference}
+				stroke-dashoffset={circumference}
+				stroke-linecap="round"
+				transform="rotate(-90 50 50)"
+				class="dataviz-progress"
+				style={`--target-offset: ${offset};`}
+			/>
+			<text
+				x="50"
+				y="50"
+				text-anchor="middle"
+				dominant-baseline="middle"
+				fill="currentColor"
+				class="dataviz-value"
+			>
+				{value}{unit}
+			</text>
+		</svg>
+	)}
+
+	{type === 'counter' && (
+		<div class="dataviz-counter" data-value={value}>
+			<span class="counter-value">{value}</span>
+			{unit && <span class="counter-unit">{unit}</span>}
+		</div>
+	)}
+
+	{label && <p class="dataviz-label">{label}</p>}
+</div>
+
+<style>
+	.dataviz {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--intently-space-sm);
+	}
+
+	/* Circular progress */
+	.dataviz-circle {
+		width: 120px;
+		height: 120px;
+		transition: transform 0.3s ease;
+	}
+
+	.dataviz-circle:hover {
+		transform: scale(1.05);
+	}
+
+	.dataviz-progress {
+		transition: stroke-dashoffset 1.5s ease-out;
+	}
+
+	.dataviz-value {
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+	}
+
+	/* Counter */
+	.dataviz-counter {
+		display: flex;
+		align-items: baseline;
+		gap: 0.25rem;
+	}
+
+	.counter-value {
+		font-size: 3rem;
+		font-weight: 800;
+		color: var(--intently-blue);
+		line-height: 1;
+	}
+
+	.counter-unit {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: var(--intently-blue);
+	}
+
+	/* Label */
+	.dataviz-label {
+		color: var(--intently-text-secondary);
+		font-weight: 500;
+		text-align: center;
+		font-size: 0.9375rem;
+		margin: 0;
+	}
+
+	/* Size variants */
+	.dataviz-sm .dataviz-circle {
+		width: 80px;
+		height: 80px;
+	}
+
+	.dataviz-sm .dataviz-value {
+		font-size: 1rem;
+	}
+
+	.dataviz-sm .counter-value {
+		font-size: 2rem;
+	}
+
+	.dataviz-sm .counter-unit {
+		font-size: 1rem;
+	}
+
+	.dataviz-lg .dataviz-circle {
+		width: 160px;
+		height: 160px;
+	}
+
+	.dataviz-lg .dataviz-value {
+		font-size: 1.5rem;
+	}
+
+	.dataviz-lg .counter-value {
+		font-size: 4rem;
+	}
+
+	.dataviz-lg .counter-unit {
+		font-size: 2rem;
+	}
+
+	/* Dark mode */
+	@media (prefers-color-scheme: dark) {
+		.dataviz-circle circle:first-child {
+			stroke: var(--intently-gray-700);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.dataviz-circle:hover {
+			transform: none;
+		}
+	}
+</style>
+
+<script>
+	// Animated counter and circle progress
+	document.addEventListener('DOMContentLoaded', () => {
+		// Circle progress animation
+		const circles = document.querySelectorAll('.dataviz-progress');
+
+		const circleObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						const circle = entry.target;
+						const targetOffset = circle.style.getPropertyValue('--target-offset');
+						circle.style.strokeDashoffset = targetOffset;
+						circleObserver.unobserve(circle);
+					}
+				});
+			},
+			{ threshold: 0.5 }
+		);
+
+		circles.forEach((circle) => circleObserver.observe(circle));
+
+		// Counter animation
+		const counters = document.querySelectorAll('.dataviz-counter');
+
+		const counterObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						const counter = entry.target;
+						const target = parseInt(counter.dataset.value || '0');
+						animateCounter(counter, target);
+						counterObserver.unobserve(counter);
+					}
+				});
+			},
+			{ threshold: 0.5 }
+		);
+
+		counters.forEach((counter) => counterObserver.observe(counter));
+	});
+
+	function animateCounter(element, target) {
+		const duration = 2000;
+		const start = 0;
+		const startTime = performance.now();
+		const valueElement = element.querySelector('.counter-value');
+
+		if (!valueElement) return;
+
+		function update(currentTime) {
+			const elapsed = currentTime - startTime;
+			const progress = Math.min(elapsed / duration, 1);
+
+			// Ease out cubic
+			const eased = 1 - Math.pow(1 - progress, 3);
+			const current = Math.floor(start + (target - start) * eased);
+
+			valueElement.textContent = current.toLocaleString();
+
+			if (progress < 1) {
+				requestAnimationFrame(update);
+			}
+		}
+
+		requestAnimationFrame(update);
+	}
+</script>
