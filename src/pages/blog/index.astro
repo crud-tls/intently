@@ -2,67 +2,73 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import BlogSidebar from '../../components/blog/BlogSidebar.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { SITE_TITLE } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import BreadcrumbSchema from '../../components/SEO/BreadcrumbSchema.astro';
 import CollectionPageSchema from '../../components/SEO/CollectionPageSchema.astro';
+import {
+	BLOG_CATEGORIES,
+	getBlogCategoryId,
+	getBlogCategoryMeta,
+	getNormalizedHeroImage,
+} from '../../data/blogMeta';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-// Prepare collection items for schema
-const collectionItems = posts.map(post => ({
+function getWordCount(markdownBody = ''): number {
+	const plainText = markdownBody
+		.replace(/```[\s\S]*?```/g, ' ')
+		.replace(/`[^`]*`/g, ' ')
+		.replace(/\[(.*?)\]\(.*?\)/g, '$1')
+		.replace(/https?:\/\/\S+/g, ' ')
+		.replace(/[#*_>~|!-]/g, ' ')
+		.replace(/\s+/g, ' ')
+		.trim();
+
+	if (!plainText) {
+		return 0;
+	}
+
+	return plainText.split(' ').length;
+}
+
+const postsWithMeta = posts.map((post) => {
+	const wordCount = getWordCount(post.body || '');
+	const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+	const categoryId = getBlogCategoryId(post.id);
+	const category = getBlogCategoryMeta(post.id);
+	const heroImage = getNormalizedHeroImage(post.data.heroImage);
+
+	return {
+		...post,
+		categoryId,
+		category,
+		heroImage,
+		readingTime,
+		searchText: `${post.data.title} ${post.data.description} ${category.label}`.toLowerCase(),
+	};
+});
+
+const featuredPost = postsWithMeta[0];
+const regularPosts = postsWithMeta.slice(1);
+
+const categoryFilters = BLOG_CATEGORIES
+	.map((category) => ({
+		...category,
+		count: postsWithMeta.filter((post) => post.categoryId === category.id).length,
+	}))
+	.filter((category) => category.count > 0);
+
+const collectionItems = postsWithMeta.map((post) => ({
 	name: post.data.title,
 	url: `https://liveintently.app/blog/${post.id}/`,
 	description: post.data.description,
-	image: post.data.heroImage,
-	datePublished: post.data.pubDate.toISOString()
+	image: post.heroImage,
+	datePublished: post.data.pubDate.toISOString(),
 }));
-
-// Category mapping for posts
-const categoryMap: Record<string, string> = {
-	'how-to-reduce-screen-time': 'getting-started',
-	'what-is-digital-wellbeing': 'getting-started',
-	'mindful-tech-interventions-vs-blocking': 'getting-started',
-	'how-to-stop-doomscrolling': 'getting-started',
-	'how-much-screen-time-is-too-much': 'getting-started',
-	'why-willpower-fails-phone-addiction': 'getting-started',
-	'stop-tiktok-scrolling': 'app-guides',
-	'reduce-instagram-usage': 'app-guides',
-	'stop-youtube-binge': 'app-guides',
-	'stop-twitter-doomscrolling': 'app-guides',
-	'stop-reddit-scrolling': 'app-guides',
-	'youtube-shorts-addiction': 'app-guides',
-	'instagram-reels-addiction': 'app-guides',
-	'stop-checking-phone-morning': 'time-solutions',
-	'stop-scrolling-at-night': 'time-solutions',
-	'digital-detox-challenge': 'time-solutions',
-	'how-to-stop-phone-addiction': 'recovery',
-	'phone-addiction-help': 'recovery',
-	'productive-without-deleting-social': 'recovery',
-	'psychology-of-app-addiction': 'recovery',
-	'phone-addiction-adhd': 'recovery',
-	'social-media-addiction-signs': 'recovery',
-	'screen-time-apps-for-students': 'recovery',
-	'intently-vs-opal': 'comparisons',
-	'intently-vs-one-sec': 'comparisons',
-	'intently-vs-freedom': 'comparisons',
-	'intently-vs-forest': 'comparisons',
-	'intently-vs-screenzen': 'comparisons',
-	'intently-vs-brick': 'comparisons',
-	'intently-vs-google-digital-wellbeing': 'comparisons',
-	'best-digital-wellbeing-apps-2026': 'comparisons',
-	'google-digital-wellbeing-alternatives': 'comparisons',
-	'opal-alternatives': 'comparisons',
-	'freedom-alternatives': 'comparisons',
-	'one-sec-alternatives': 'comparisons',
-	'apple-screen-time-alternatives': 'comparisons',
-	'forest-app-alternatives': 'comparisons',
-	'privacy-first-screen-time-tracking': 'privacy'
-};
 ---
 
 <!doctype html>
@@ -70,12 +76,12 @@ const categoryMap: Record<string, string> = {
 	<head>
 		<BaseHead
 			title={`Blog & Resources - ${SITE_TITLE}`}
-			description="Digital wellbeing blog and resources: guides, tools, and expert strategies for building healthier tech habits."
+			description="Actionable digital wellbeing guides, behavior-change strategies, and app comparisons to help you build healthier phone habits."
 		/>
 		<BreadcrumbSchema
 			items={[
-				{ name: "Home", url: "https://liveintently.app" },
-				{ name: "Blog", url: "https://liveintently.app/blog" }
+				{ name: 'Home', url: 'https://liveintently.app' },
+				{ name: 'Blog', url: 'https://liveintently.app/blog' },
 			]}
 		/>
 		<CollectionPageSchema
@@ -84,242 +90,627 @@ const categoryMap: Record<string, string> = {
 			url="/blog"
 			items={collectionItems}
 		/>
-		<style>
-			html {
-				scroll-behavior: smooth;
-				scroll-padding-top: 8rem;
-			}
-
-			body {
-				background: var(--intently-bg-primary);
-			}
-
-			main {
-				width: 100%;
-			}
-
-			.blog-layout {
-				display: grid;
-				grid-template-columns: 1fr;
-				gap: var(--intently-space-3xl);
-				max-width: 1400px;
-				margin: 0 auto;
-				padding: 10rem var(--intently-space-md) var(--intently-space-3xl) var(--intently-space-md);
-			}
-
-			@media (min-width: 768px) {
-				.blog-layout {
-					grid-template-columns: 280px 1fr;
-				}
-			}
-
-			.blog-content {
-				min-width: 0;
-			}
-
-			section {
-				width: 100%;
-			}
-			.blog-grid {
-				display: flex;
-				flex-wrap: wrap;
-				gap: var(--intently-space-xl);
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			.blog-grid li {
-				width: calc(50% - 1rem);
-			}
-			.blog-grid li * {
-				text-decoration: none;
-				transition: var(--intently-transition-normal);
-			}
-			.blog-grid li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			.blog-grid li:first-child img {
-				width: 100%;
-			}
-			.blog-grid li:first-child .title {
-				font-size: 2.5rem;
-			}
-			.blog-grid li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			.blog-grid li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: var(--intently-text-primary);
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: var(--intently-text-secondary);
-			}
-			.blog-grid li a:hover h4,
-			.blog-grid li a:hover .date {
-				color: var(--intently-blue);
-			}
-			.blog-grid a:hover img {
-				box-shadow: var(--intently-shadow-lg);
-			}
-
-			a:focus-visible,
-			button:focus-visible {
-				outline: 2px solid var(--intently-blue);
-				outline-offset: 2px;
-			}
-			@media (max-width: 767px) {
-				.blog-grid {
-					gap: var(--intently-space-md);
-				}
-				.blog-grid li {
-					width: 100%;
-					text-align: center;
-				}
-				.blog-grid li:first-child {
-					margin-bottom: 0;
-				}
-				.blog-grid li:first-child .title {
-					font-size: 2rem;
-				}
-			}
-		</style>
 	</head>
 	<body>
-		<script>
-			// Mobile sidebar toggle functionality
-			const sidebarToggle = document.getElementById('blog-sidebar-toggle');
-			const sidebar = document.getElementById('blog-sidebar');
+		<Header />
+		<main class="blog-page">
+			<section class="blog-hero">
+				<div class="hero-copy">
+					<p class="hero-eyebrow">Intently Journal</p>
+					<h1>Blog & Resources</h1>
+					<p>
+						Practical, research-backed content for people who want to reduce screen time without
+						deleting the apps they care about.
+					</p>
+				</div>
+				<div class="hero-actions">
+					<a href="/quiz" class="hero-button primary">Take the Phone Habit Quiz</a>
+					<a href="/download" class="hero-button secondary">Download Intently</a>
+				</div>
+			</section>
 
-			function toggleSidebar() {
-				const isExpanded = sidebarToggle?.getAttribute('aria-expanded') === 'true';
-				sidebarToggle?.setAttribute('aria-expanded', (!isExpanded).toString());
-				sidebar?.setAttribute('aria-hidden', isExpanded.toString());
-				sidebar?.classList.toggle('open', !isExpanded);
-				document.body.classList.toggle('blog-sidebar-open', !isExpanded);
+			<section class="blog-controls" aria-label="Filter and search blog posts">
+				<div class="search-field">
+					<label for="blog-search">Search articles</label>
+					<input
+						id="blog-search"
+						type="search"
+						placeholder="Try: doomscrolling, Instagram, alternatives, ADHD..."
+						autocomplete="off"
+					/>
+				</div>
+
+				<div class="filter-row" role="group" aria-label="Blog categories">
+					<button
+						type="button"
+						class="filter-chip active"
+						data-category="all"
+						aria-pressed="true">
+						All Posts
+						<span>{postsWithMeta.length}</span>
+					</button>
+					{
+						categoryFilters.map((category) => (
+							<button
+								type="button"
+								class="filter-chip"
+								data-category={category.id}
+								aria-pressed="false">
+								{category.label}
+								<span>{category.count}</span>
+							</button>
+						))
+					}
+				</div>
+
+				<p id="results-summary" class="results-summary">Showing {postsWithMeta.length} articles</p>
+			</section>
+
+			{featuredPost && (
+				<article
+					class="featured-post"
+					data-post
+					data-category={featuredPost.categoryId}
+					data-search={featuredPost.searchText}>
+					<a href={`/blog/${featuredPost.id}/`} class="featured-media" aria-label={`Read ${featuredPost.data.title}`}>
+						<img
+							src={featuredPost.heroImage}
+							alt={featuredPost.data.title}
+							width="960"
+							height="540"
+							loading="eager"
+						/>
+					</a>
+					<div class="featured-content">
+						<div class="post-meta">
+							<span class="category-tag" style={`--category-accent: ${featuredPost.category.accentColor}`}>
+								{featuredPost.category.label}
+							</span>
+							<span><FormattedDate date={featuredPost.data.pubDate} /></span>
+							<span>{featuredPost.readingTime} min read</span>
+						</div>
+						<h2>
+							<a href={`/blog/${featuredPost.id}/`}>{featuredPost.data.title}</a>
+						</h2>
+						<p>{featuredPost.data.description}</p>
+						<a href={`/blog/${featuredPost.id}/`} class="read-link">Read featured article</a>
+					</div>
+				</article>
+			)}
+
+			<section class="blog-grid" id="blog-grid" aria-live="polite">
+				{
+					regularPosts.map((post) => (
+						<article
+							class="blog-card"
+							data-post
+							data-category={post.categoryId}
+							data-search={post.searchText}>
+							<a href={`/blog/${post.id}/`} class="card-media" aria-label={`Read ${post.data.title}`}>
+								<img
+									src={post.heroImage}
+									alt={post.data.title}
+									width="720"
+									height="405"
+									loading="lazy"
+								/>
+							</a>
+							<div class="card-content">
+								<div class="post-meta">
+									<span class="category-tag" style={`--category-accent: ${post.category.accentColor}`}>
+										{post.category.label}
+									</span>
+									<span><FormattedDate date={post.data.pubDate} /></span>
+									<span>{post.readingTime} min read</span>
+								</div>
+								<h3>
+									<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+								</h3>
+								<p>{post.data.description}</p>
+								<a href={`/blog/${post.id}/`} class="read-link">Read article</a>
+							</div>
+						</article>
+					))
+				}
+			</section>
+
+			<p id="empty-state" class="empty-state" hidden>
+				No articles match that filter. Try a different category or a broader search term.
+			</p>
+
+			<section class="blog-cta">
+				<h2>Want a personalized starting point?</h2>
+				<p>
+					Take the 2-minute phone habit quiz to get targeted recommendations based on your biggest
+					scrolling trigger.
+				</p>
+				<div class="cta-actions">
+					<a href="/quiz" class="hero-button primary">Start the Quiz</a>
+					<a href="/compare" class="hero-button secondary">Compare Alternatives</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+
+		<script>
+			const searchInput = document.getElementById('blog-search');
+			const filterButtons = Array.from(document.querySelectorAll('.filter-chip'));
+			const postCards = Array.from(document.querySelectorAll('[data-post]'));
+			const emptyState = document.getElementById('empty-state');
+			const resultsSummary = document.getElementById('results-summary');
+
+			let activeCategory = 'all';
+
+			function setActiveCategoryChip(category) {
+				filterButtons.forEach((button) => {
+					const isActive = button.getAttribute('data-category') === category;
+					button.classList.toggle('active', isActive);
+					button.setAttribute('aria-pressed', String(isActive));
+				});
 			}
 
-			sidebarToggle?.addEventListener('click', toggleSidebar);
+			function applyFilters(updateHash) {
+				const query = (searchInput?.value || '').trim().toLowerCase();
+				let visibleCount = 0;
 
-			// Close sidebar when clicking outside
-			document.addEventListener('click', (event) => {
-				if (sidebar?.classList.contains('open')) {
-					const isClickInsideSidebar = sidebar.contains(event.target as Node);
-					const isClickOnToggle = sidebarToggle?.contains(event.target as Node);
-					if (!isClickInsideSidebar && !isClickOnToggle) {
-						toggleSidebar();
+				postCards.forEach((card) => {
+					const cardCategory = card.getAttribute('data-category') || '';
+					const searchableText = card.getAttribute('data-search') || '';
+					const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
+					const matchesSearch = query.length === 0 || searchableText.includes(query);
+					const shouldShow = matchesCategory && matchesSearch;
+
+					card.toggleAttribute('hidden', !shouldShow);
+					if (shouldShow) {
+						visibleCount += 1;
 					}
+				});
+
+				if (resultsSummary) {
+					const noun = visibleCount === 1 ? 'article' : 'articles';
+					resultsSummary.textContent = query
+						? `Showing ${visibleCount} ${noun} for "${query}"`
+						: `Showing ${visibleCount} ${noun}`;
 				}
-			});
 
-			// Close sidebar when clicking a link
-			const sidebarLinks = sidebar?.querySelectorAll('a');
-			sidebarLinks?.forEach(link => {
-				link.addEventListener('click', () => {
-					if (sidebar?.classList.contains('open')) {
-						toggleSidebar();
-					}
+				if (emptyState) {
+					emptyState.toggleAttribute('hidden', visibleCount > 0);
+				}
+
+				if (updateHash) {
+					history.replaceState(null, '', activeCategory === 'all' ? '/blog' : `/blog#${activeCategory}`);
+				}
+			}
+
+			function applyHashCategory() {
+				const hashCategory = window.location.hash.replace('#', '');
+				const hashIsValid = filterButtons.some(
+					(button) => button.getAttribute('data-category') === hashCategory,
+				);
+				activeCategory = hashCategory && hashIsValid ? hashCategory : 'all';
+				setActiveCategoryChip(activeCategory);
+				applyFilters(false);
+			}
+
+			filterButtons.forEach((button) => {
+				button.addEventListener('click', () => {
+					activeCategory = button.getAttribute('data-category') || 'all';
+					setActiveCategoryChip(activeCategory);
+					applyFilters(true);
 				});
 			});
 
-			// Close sidebar on escape key
-			document.addEventListener('keydown', (event) => {
-				if (event.key === 'Escape' && sidebar?.classList.contains('open')) {
-					toggleSidebar();
-				}
-			});
+			searchInput?.addEventListener('input', () => applyFilters(false));
+			window.addEventListener('hashchange', applyHashCategory);
 
-			// Category filtering functionality
-			const categoryLinks = document.querySelectorAll('.sidebar-link');
-			const blogPosts = document.querySelectorAll('.blog-grid li');
-
-			categoryLinks.forEach(link => {
-				link.addEventListener('click', (e) => {
-					e.preventDefault();
-					const category = link.getAttribute('data-category') || 'all';
-
-					// Update active state
-					categoryLinks.forEach(l => l.classList.remove('active'));
-					link.classList.add('active');
-
-					// Update aria-current
-					categoryLinks.forEach(l => l.removeAttribute('aria-current'));
-					link.setAttribute('aria-current', 'true');
-
-					// Filter posts
-					let firstVisiblePost: Element | null = null;
-					blogPosts.forEach(post => {
-						const postCategory = post.getAttribute('data-category');
-						const shouldShow = category === 'all' || postCategory === category;
-
-						if (shouldShow) {
-							(post as HTMLElement).style.display = 'block';
-							if (!firstVisiblePost) {
-								firstVisiblePost = post;
-							}
-						} else {
-							(post as HTMLElement).style.display = 'none';
-						}
-					});
-
-					// Scroll to first visible post
-					if (firstVisiblePost) {
-						firstVisiblePost.scrollIntoView({ behavior: 'smooth', block: 'start' });
-					}
-
-					// Update URL hash
-					history.pushState(null, '', category === 'all' ? '/blog' : `#${category}`);
-				});
-			});
-
-			// Handle initial hash on page load
-			window.addEventListener('DOMContentLoaded', () => {
-				const hash = window.location.hash.replace('#', '');
-				if (hash) {
-					const targetLink = document.querySelector(`.sidebar-link[data-category="${hash}"]`);
-					if (targetLink) {
-						(targetLink as HTMLElement).click();
-					}
-				}
-			});
+			applyHashCategory();
 		</script>
-		<Header />
-		<div class="blog-layout">
-			<BlogSidebar />
-			<main class="blog-content">
-				<section>
-					<h1>Blog & Resources</h1>
-					<ul class="blog-grid">
-						{
-							posts.map((post) => (
-								<li data-category={categoryMap[post.id] || 'other'}>
-									<a href={`/blog/${post.id}/`}>
-										<img
-											width={720}
-											height={360}
-											src={post.data.heroImage}
-											alt={post.data.title}
-											loading="lazy"
-										/>
-										<h4 class="title">{post.data.title}</h4>
-										<p class="date">
-											<FormattedDate date={post.data.pubDate} />
-										</p>
-									</a>
-								</li>
-							))
-						}
-					</ul>
-				</section>
-			</main>
-		</div>
-		<Footer />
 	</body>
 </html>
+
+<style>
+	body {
+		background:
+			radial-gradient(circle at 15% 15%, color-mix(in srgb, var(--intently-blue) 16%, transparent) 0%, transparent 35%),
+			radial-gradient(circle at 90% 8%, color-mix(in srgb, var(--intently-green) 14%, transparent) 0%, transparent 32%),
+			var(--intently-bg-primary);
+	}
+
+	.blog-page {
+		max-width: 1160px;
+		margin: 0 auto;
+		padding: 9rem var(--intently-space-md) var(--intently-space-4xl);
+		display: grid;
+		gap: var(--intently-space-xl);
+	}
+
+	.blog-hero {
+		border-radius: var(--intently-radius-xl);
+		padding: clamp(1.5rem, 2.5vw, 2.5rem);
+		background:
+			linear-gradient(140deg, color-mix(in srgb, var(--intently-blue) 12%, transparent), transparent 50%),
+			linear-gradient(210deg, color-mix(in srgb, var(--intently-green) 10%, transparent), transparent 55%),
+			var(--intently-bg-secondary);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 18%, transparent);
+		box-shadow: var(--intently-shadow-sm);
+		display: grid;
+		gap: var(--intently-space-lg);
+	}
+
+	.hero-copy h1 {
+		margin: 0 0 var(--intently-space-sm);
+		font-size: clamp(1.8rem, 2.7vw, 2.8rem);
+		line-height: 1.12;
+		letter-spacing: -0.02em;
+	}
+
+	.hero-copy p {
+		margin: 0;
+		max-width: 60ch;
+		color: var(--intently-text-secondary);
+		line-height: 1.7;
+	}
+
+	.hero-eyebrow {
+		display: inline-flex;
+		margin: 0 0 var(--intently-space-sm);
+		padding: 0.3rem 0.75rem;
+		border-radius: var(--intently-radius-full);
+		background: color-mix(in srgb, var(--intently-blue) 14%, transparent);
+		color: var(--intently-blue);
+		font-size: 0.8rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+
+	.hero-actions,
+	.cta-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--intently-space-sm);
+	}
+
+	.hero-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: var(--touch-target-comfortable);
+		padding: 0.7rem 1.2rem;
+		border-radius: 999px;
+		font-weight: 700;
+		font-size: 0.95rem;
+		text-decoration: none;
+		border: 1px solid transparent;
+		transition: transform var(--intently-transition-fast), box-shadow var(--intently-transition-fast), background var(--intently-transition-fast);
+	}
+
+	.hero-button.primary {
+		background: var(--intently-blue);
+		color: white;
+		box-shadow: 0 10px 26px color-mix(in srgb, var(--intently-blue) 35%, transparent);
+	}
+
+	.hero-button.primary:hover {
+		transform: translateY(-1px);
+		background: var(--intently-blue-dark);
+	}
+
+	.hero-button.secondary {
+		background: color-mix(in srgb, var(--intently-bg-primary) 88%, transparent);
+		color: var(--intently-text-primary);
+		border-color: color-mix(in srgb, var(--intently-text-hint) 22%, transparent);
+	}
+
+	.hero-button.secondary:hover {
+		transform: translateY(-1px);
+		border-color: color-mix(in srgb, var(--intently-blue) 45%, transparent);
+		color: var(--intently-blue);
+	}
+
+	.blog-controls {
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 20%, transparent);
+		padding: var(--intently-space-lg);
+		display: grid;
+		gap: var(--intently-space-md);
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	.search-field {
+		display: grid;
+		gap: 0.4rem;
+	}
+
+	.search-field label {
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+	}
+
+	.search-field input {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0.72rem 0.9rem;
+		border-radius: var(--intently-radius-md);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 32%, transparent);
+		background: color-mix(in srgb, var(--intently-bg-secondary) 75%, var(--intently-bg-primary));
+		color: var(--intently-text-primary);
+		font-family: inherit;
+	}
+
+	.search-field input:focus-visible {
+		outline: 2px solid color-mix(in srgb, var(--intently-blue) 70%, white);
+		outline-offset: 2px;
+	}
+
+	.filter-row {
+		display: flex;
+		gap: var(--intently-space-sm);
+		overflow-x: auto;
+		padding-bottom: 0.2rem;
+		scrollbar-width: thin;
+	}
+
+	.filter-chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		padding: 0.55rem 0.95rem;
+		border-radius: 999px;
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 30%, transparent);
+		background: var(--intently-bg-primary);
+		color: var(--intently-text-secondary);
+		font-size: 0.88rem;
+		font-weight: 600;
+		cursor: pointer;
+		white-space: nowrap;
+		transition: all var(--intently-transition-fast);
+	}
+
+	.filter-chip span {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 1.35rem;
+		height: 1.35rem;
+		padding: 0 0.35rem;
+		border-radius: 999px;
+		font-size: 0.75rem;
+		background: color-mix(in srgb, var(--intently-text-hint) 18%, transparent);
+		color: var(--intently-text-primary);
+	}
+
+	.filter-chip:hover {
+		border-color: color-mix(in srgb, var(--intently-blue) 50%, transparent);
+		color: var(--intently-blue);
+	}
+
+	.filter-chip.active {
+		background: color-mix(in srgb, var(--intently-blue) 10%, transparent);
+		border-color: color-mix(in srgb, var(--intently-blue) 40%, transparent);
+		color: var(--intently-blue);
+	}
+
+	.results-summary {
+		margin: 0;
+		font-size: 0.9rem;
+		color: var(--intently-text-secondary);
+	}
+
+	.featured-post {
+		display: grid;
+		grid-template-columns: 1fr;
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-xl);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 22%, transparent);
+		overflow: hidden;
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.featured-media {
+		display: block;
+		aspect-ratio: 16 / 9;
+		background: color-mix(in srgb, var(--intently-bg-secondary) 80%, transparent);
+	}
+
+	.featured-media img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0;
+	}
+
+	.featured-content {
+		padding: var(--intently-space-lg);
+		display: grid;
+		gap: var(--intently-space-sm);
+	}
+
+	.post-meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem 0.75rem;
+		font-size: 0.82rem;
+		color: var(--intently-text-secondary);
+	}
+
+	.category-tag {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.24rem 0.6rem;
+		border-radius: var(--intently-radius-full);
+		background: color-mix(in srgb, var(--category-accent) 14%, transparent);
+		color: var(--category-accent);
+		font-weight: 700;
+		letter-spacing: 0.01em;
+	}
+
+	.featured-content h2,
+	.card-content h3 {
+		margin: 0;
+		font-size: clamp(1.35rem, 2.1vw, 2rem);
+		line-height: 1.2;
+	}
+
+	.card-content h3 {
+		font-size: 1.2rem;
+	}
+
+	.featured-content h2 a,
+	.card-content h3 a {
+		text-decoration: none;
+		color: var(--intently-text-primary);
+	}
+
+	.featured-content p,
+	.card-content p {
+		margin: 0;
+		color: var(--intently-text-secondary);
+		line-height: 1.68;
+	}
+
+	.read-link {
+		display: inline-flex;
+		align-items: center;
+		font-weight: 700;
+		text-decoration: none;
+		color: var(--intently-blue);
+		margin-top: var(--intently-space-xs);
+	}
+
+	.read-link:hover {
+		color: var(--intently-blue-dark);
+	}
+
+	.blog-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--intently-space-md);
+	}
+
+	.blog-card {
+		display: grid;
+		grid-template-rows: auto 1fr;
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 20%, transparent);
+		overflow: hidden;
+		box-shadow: var(--intently-shadow-sm);
+		transition: transform var(--intently-transition-normal), box-shadow var(--intently-transition-normal), border-color var(--intently-transition-normal);
+	}
+
+	.blog-card:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--intently-shadow-md);
+		border-color: color-mix(in srgb, var(--intently-blue) 28%, transparent);
+	}
+
+	.card-media {
+		display: block;
+		aspect-ratio: 16 / 10;
+		background: color-mix(in srgb, var(--intently-bg-secondary) 78%, transparent);
+	}
+
+	.card-media img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0;
+	}
+
+	.card-content {
+		display: grid;
+		gap: var(--intently-space-sm);
+		padding: var(--intently-space-md) var(--intently-space-md) var(--intently-space-lg);
+	}
+
+	.empty-state {
+		margin: 0;
+		padding: var(--intently-space-lg);
+		text-align: center;
+		border: 1px dashed color-mix(in srgb, var(--intently-text-hint) 35%, transparent);
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-lg);
+		color: var(--intently-text-secondary);
+	}
+
+	.blog-cta {
+		padding: clamp(1.4rem, 2.4vw, 2.2rem);
+		border-radius: var(--intently-radius-xl);
+		background:
+			linear-gradient(145deg, color-mix(in srgb, var(--intently-blue) 12%, transparent), transparent 50%),
+			linear-gradient(220deg, color-mix(in srgb, var(--intently-purple) 10%, transparent), transparent 60%),
+			var(--intently-bg-secondary);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 18%, transparent);
+		display: grid;
+		gap: var(--intently-space-sm);
+	}
+
+	.blog-cta h2 {
+		margin: 0;
+		font-size: clamp(1.2rem, 2.3vw, 1.8rem);
+	}
+
+	.blog-cta p {
+		margin: 0;
+		color: var(--intently-text-secondary);
+		max-width: 56ch;
+	}
+
+	[data-post][hidden] {
+		display: none !important;
+	}
+
+	a:focus-visible,
+	button:focus-visible,
+	input:focus-visible {
+		outline: 2px solid color-mix(in srgb, var(--intently-blue) 70%, white);
+		outline-offset: 2px;
+	}
+
+	@media (min-width: 760px) {
+		.blog-page {
+			padding-top: 9.5rem;
+		}
+
+		.blog-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: var(--intently-space-lg);
+		}
+
+		.featured-post {
+			grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+		}
+
+		.featured-media {
+			aspect-ratio: auto;
+			height: 100%;
+			min-height: 100%;
+		}
+
+		.featured-content {
+			padding: var(--intently-space-xl);
+			align-content: center;
+		}
+	}
+
+	@media (min-width: 1080px) {
+		.blog-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.blog-hero,
+		.blog-controls,
+		.featured-post,
+		.blog-card,
+		.blog-cta,
+		.empty-state {
+			border-color: color-mix(in srgb, var(--intently-text-hint) 32%, transparent);
+		}
+	}
+</style>

@@ -7,19 +7,45 @@ import FormattedDate from '../components/FormattedDate.astro';
 import BlogPostSchema from '../components/SEO/BlogPostSchema.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
-
 import HowToSchema from '../components/SEO/HowToSchema.astro';
 import AuthorBio from '../components/blog/AuthorBio.astro';
 import { Image } from 'astro:assets';
 
-type Props = CollectionEntry<'blog'>['data'] & { wordCount?: number; readingTime?: number };
+interface RelatedPost {
+	id: string;
+	title: string;
+	description: string;
+	pubDate: Date;
+	heroImage?: string;
+	readingTime: number;
+	categoryLabel: string;
+}
 
-const { title, description, pubDate, updatedDate, heroImage, faq, howToSteps, wordCount = 0, readingTime = 1 } = Astro.props;
+type Props = CollectionEntry<'blog'>['data'] & {
+	wordCount?: number;
+	readingTime?: number;
+	categoryLabel?: string;
+	relatedPosts?: RelatedPost[];
+};
+
+const {
+	title,
+	description,
+	pubDate,
+	updatedDate,
+	heroImage,
+	faq,
+	howToSteps,
+	wordCount = 0,
+	readingTime = 1,
+	categoryLabel = 'Insights',
+	relatedPosts = [],
+} = Astro.props;
 const { currentPath } = Astro.url;
 const postUrl = `https://liveintently.app${currentPath}`;
 
 // Default tags for SEO if not specified in frontmatter
-const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
+const defaultTags = ['digital wellbeing', 'screen time', 'mindful tech'];
 ---
 
 <html lang="en">
@@ -49,101 +75,796 @@ const defaultTags = ["digital wellbeing", "screen time", "mindful tech"];
 		/>
 		<BreadcrumbSchema
 			items={[
-				{ name: "Home", url: "https://liveintently.app" },
-				{ name: "Blog", url: "https://liveintently.app/blog" },
-				{ name: title, url: postUrl }
+				{ name: 'Home', url: 'https://liveintently.app' },
+				{ name: 'Blog', url: 'https://liveintently.app/blog' },
+				{ name: title, url: postUrl },
 			]}
 		/>
 
 		{faq && <FAQSchema faqs={faq} />}
-		{howToSteps && (
-			<HowToSchema
-				name={title}
-				description={description}
-				image={heroImage}
-				steps={howToSteps}
-			/>
-		)}
-		<style>
-			body {
-				background: var(--intently-bg-primary);
-			}
-
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 100%;
-				max-width: 720px;
-				margin: auto;
-				padding: 1em;
-				color: var(--intently-text-primary);
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-
-			.title::before {
-				content: '';
-				display: block;
-				height: 6rem;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: var(--intently-text-secondary);
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
+		{howToSteps && <HowToSchema name={title} description={description} image={heroImage} steps={howToSteps} />}
 	</head>
 
 	<body>
 		<Header />
-		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt={`${title} - Intently blog post illustration`} />}
+		<div class="reading-progress" aria-hidden="true">
+			<div class="reading-progress-bar" id="reading-progress-bar"></div>
+		</div>
+		<main class="article-shell">
+			<header class="article-hero">
+				<a href="/blog" class="back-link">&larr; Back to all articles</a>
+				<p class="hero-category">{categoryLabel}</p>
+				<h1>{title}</h1>
+				<p class="hero-description">{description}</p>
+				<div class="hero-meta">
+					<span><FormattedDate date={pubDate} /></span>
+					{updatedDate && <span>Updated <FormattedDate date={updatedDate} /></span>}
+					<span>{readingTime} min read</span>
+					<span>{wordCount.toLocaleString()} words</span>
 				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+				{heroImage && (
+					<div class="hero-image">
+						<Image
+							width={1020}
+							height={510}
+							src={heroImage}
+							alt={`${title} - Intently blog post illustration`}
+						/>
 					</div>
-					<div id="article-intro">
+				)}
+			</header>
+
+			<div class="article-layout">
+				<aside class="article-sidebar" aria-label="Article tools">
+					<div class="sidebar-card toc-panel">
+						<div class="toc-panel-header">
+							<p class="sidebar-label">On this page</p>
+						</div>
+						<ol class="toc-list toc-desktop-list" id="toc-desktop"></ol>
+						<p class="toc-empty" id="toc-empty-desktop">Headings appear automatically as you scroll.</p>
+					</div>
+					<div class="sidebar-card sidebar-cta">
+						<h2>Take control of your attention</h2>
+						<p>Use mindful prompts to reduce autopilot scrolling without harsh app blocking.</p>
+						<div class="sidebar-cta-actions">
+							<a href="/quiz" class="sidebar-button primary">Take the quiz</a>
+							<a href="/download" class="sidebar-button secondary">Download free</a>
+						</div>
+					</div>
+				</aside>
+
+				<article class="article-content">
+					<section class="toc-mobile" id="toc-mobile-shell" aria-label="On this page">
+						<div class="toc-mobile-head">
+							<p class="toc-mobile-title">On this page</p>
+						</div>
+						<ol class="toc-list toc-mobile-list" id="toc-mobile"></ol>
+						<p class="toc-empty" id="toc-empty-mobile">Headings appear automatically as you scroll.</p>
+					</section>
+
+					<div class="reading-note" aria-label="Article context">
+						<p>
+							<strong>Quick context:</strong>
+							This article is designed for practical action. Read it once, then apply one strategy today.
+						</p>
+					</div>
+
+					<div id="article-intro" class="article-body">
 						<slot />
 					</div>
+
 					<AuthorBio />
-				</div>
-			</article>
+
+					{relatedPosts.length > 0 && (
+						<section class="related-posts" aria-label="Related articles">
+							<h2>Keep Reading</h2>
+							<div class="related-grid">
+								{relatedPosts.map((related) => (
+									<article class="related-card">
+										<a href={`/blog/${related.id}/`} class="related-image-link" aria-label={`Read ${related.title}`}>
+											<img
+												src={related.heroImage || '/blog-placeholder-2.jpg'}
+												alt={related.title}
+												width="640"
+												height="360"
+												loading="lazy"
+											/>
+										</a>
+										<div class="related-content">
+											<p class="related-meta">
+												<span>{related.categoryLabel}</span>
+												<span><FormattedDate date={related.pubDate} /></span>
+												<span>{related.readingTime} min read</span>
+											</p>
+											<h3>
+												<a href={`/blog/${related.id}/`}>{related.title}</a>
+											</h3>
+											<p>{related.description}</p>
+										</div>
+									</article>
+								))}
+							</div>
+						</section>
+					)}
+				</article>
+			</div>
 		</main>
 		<Footer />
+
+		<script>
+			const articleBody = document.querySelector('.article-body');
+			const progressBar = document.getElementById('reading-progress-bar');
+			const tocDesktop = document.getElementById('toc-desktop');
+			const tocMobile = document.getElementById('toc-mobile');
+			const tocEmptyDesktop = document.getElementById('toc-empty-desktop');
+			const tocEmptyMobile = document.getElementById('toc-empty-mobile');
+			const tocMobileShell = document.getElementById('toc-mobile-shell');
+
+			function slugify(text) {
+				return text
+					.toLowerCase()
+					.trim()
+					.replace(/[^a-z0-9\s-]/g, '')
+					.replace(/\s+/g, '-')
+					.replace(/-+/g, '-');
+			}
+
+			const headings = articleBody
+				? Array.from(articleBody.querySelectorAll('h2, h3'))
+				: [];
+
+			function createTocItem(heading, index) {
+				if (!heading.id) {
+					heading.id = `${slugify(heading.textContent || 'section')}-${index + 1}`;
+				}
+
+				const item = document.createElement('li');
+				item.className = heading.tagName === 'H3' ? 'toc-item toc-sub-item' : 'toc-item';
+
+				const link = document.createElement('a');
+				link.href = `#${heading.id}`;
+				link.textContent = heading.textContent || 'Section';
+				item.appendChild(link);
+
+				return item;
+			}
+
+			function renderToc(listNode) {
+				if (!listNode) {
+					return;
+				}
+
+				listNode.innerHTML = '';
+				headings.forEach((heading, index) => {
+					listNode.appendChild(createTocItem(heading, index));
+				});
+			}
+
+			if (headings.length === 0) {
+				if (tocMobileShell) {
+					tocMobileShell.hidden = true;
+				}
+			} else {
+				renderToc(tocDesktop);
+				renderToc(tocMobile);
+
+				if (tocEmptyDesktop) {
+					tocEmptyDesktop.hidden = true;
+				}
+
+				if (tocEmptyMobile) {
+					tocEmptyMobile.hidden = true;
+				}
+			}
+
+			const tocLinks = Array.from(document.querySelectorAll('.toc-list a'));
+
+			function updateActiveHeading() {
+				if (headings.length === 0) {
+					return;
+				}
+
+				const offset = 180;
+				let activeId = headings[0].id;
+
+				headings.forEach((heading) => {
+					if (heading.getBoundingClientRect().top - offset <= 0) {
+						activeId = heading.id;
+					}
+				});
+
+				tocLinks.forEach((link) => {
+					const isActive = link.getAttribute('href') === `#${activeId}`;
+					link.classList.toggle('active', isActive);
+				});
+			}
+
+			function updateReadingProgress() {
+				if (!articleBody || !progressBar) {
+					return;
+				}
+
+				const articleTop = articleBody.offsetTop - 220;
+				const articleHeight = articleBody.offsetHeight;
+				const rawProgress = (window.scrollY - articleTop) / Math.max(articleHeight, 1);
+				const boundedProgress = Math.min(1, Math.max(0, rawProgress));
+				progressBar.style.transform = `scaleX(${boundedProgress})`;
+			}
+
+			let ticking = false;
+			function onScroll() {
+				if (ticking) {
+					return;
+				}
+
+				ticking = true;
+				window.requestAnimationFrame(() => {
+					updateActiveHeading();
+					updateReadingProgress();
+					ticking = false;
+				});
+			}
+
+			window.addEventListener('scroll', onScroll, { passive: true });
+			window.addEventListener('resize', onScroll);
+
+			updateActiveHeading();
+			updateReadingProgress();
+		</script>
 	</body>
 </html>
+
+<style>
+	body {
+		background:
+			radial-gradient(circle at 15% 12%, color-mix(in srgb, var(--intently-blue) 12%, transparent) 0%, transparent 30%),
+			radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--intently-green) 10%, transparent) 0%, transparent 28%),
+			var(--intently-bg-primary);
+	}
+
+	.reading-progress {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: transparent;
+		z-index: 130;
+		pointer-events: none;
+	}
+
+	.reading-progress-bar {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, var(--intently-blue), var(--intently-green));
+		transform-origin: left center;
+		transform: scaleX(0);
+	}
+
+	.article-shell {
+		max-width: 1220px;
+		margin: 0 auto;
+		padding: 9rem var(--intently-space-md) var(--intently-space-4xl);
+		display: grid;
+		gap: var(--intently-space-xl);
+	}
+
+	.article-hero {
+		background:
+			linear-gradient(145deg, color-mix(in srgb, var(--intently-blue) 10%, transparent), transparent 52%),
+			linear-gradient(220deg, color-mix(in srgb, var(--intently-green) 8%, transparent), transparent 60%),
+			var(--intently-bg-secondary);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 20%, transparent);
+		border-radius: var(--intently-radius-xl);
+		padding: clamp(1.4rem, 2.5vw, 2.4rem);
+		display: grid;
+		gap: var(--intently-space-sm);
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	.back-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		font-size: 0.9rem;
+		font-weight: 700;
+		color: var(--intently-blue);
+		text-decoration: none;
+		margin-bottom: var(--intently-space-xs);
+	}
+
+	.back-link:hover {
+		color: var(--intently-blue-dark);
+	}
+
+	.hero-category {
+		margin: 0;
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--intently-blue);
+	}
+
+	.article-hero h1 {
+		margin: 0;
+		font-size: clamp(1.9rem, 3vw, 3.2rem);
+		line-height: 1.12;
+		letter-spacing: -0.02em;
+	}
+
+	.hero-description {
+		margin: 0;
+		max-width: 70ch;
+		font-size: clamp(1rem, 1.4vw, 1.2rem);
+		line-height: 1.7;
+		color: var(--intently-text-secondary);
+	}
+
+	.hero-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.55rem 0.85rem;
+		font-size: 0.86rem;
+		color: var(--intently-text-secondary);
+	}
+
+	.hero-meta span {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	.hero-image {
+		margin-top: var(--intently-space-sm);
+		border-radius: var(--intently-radius-lg);
+		overflow: hidden;
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 20%, transparent);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.hero-image img {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 0;
+	}
+
+	.article-layout {
+		display: grid;
+		gap: var(--intently-space-lg);
+	}
+
+	.article-sidebar {
+		display: none;
+	}
+
+	.sidebar-card {
+		background: var(--intently-bg-primary);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 20%, transparent);
+		padding: var(--intently-space-md);
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	.toc-panel {
+		background: var(--intently-bg-primary);
+	}
+
+	.toc-panel-header {
+		margin-bottom: var(--intently-space-sm);
+	}
+
+	.sidebar-label {
+		margin: 0;
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: var(--intently-text-secondary);
+	}
+
+	.toc-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: var(--intently-space-xs);
+	}
+
+	.toc-item a {
+		display: block;
+		padding: 0.55rem 0.75rem;
+		border-radius: var(--intently-radius-sm);
+		border-left: 3px solid transparent;
+		font-size: 0.9rem;
+		font-weight: 500;
+		line-height: 1.45;
+		text-decoration: none;
+		color: var(--intently-text-secondary);
+		transition: all var(--intently-transition-fast);
+	}
+
+	.toc-item a:hover {
+		background: var(--intently-bg-accent);
+		border-left-color: var(--intently-blue);
+		color: var(--intently-text-primary);
+	}
+
+	.toc-item a.active {
+		background: var(--intently-bg-accent);
+		border-left-color: var(--intently-blue);
+		color: var(--intently-text-primary);
+		font-weight: 600;
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	.toc-sub-item a {
+		padding-left: 1.25rem;
+		font-size: 0.84rem;
+	}
+
+	.toc-empty {
+		margin: var(--intently-space-sm) 0 0;
+		font-size: 0.85rem;
+		line-height: 1.5;
+		color: var(--intently-text-hint);
+	}
+
+	.sidebar-cta {
+		display: grid;
+		gap: var(--intently-space-sm);
+	}
+
+	.sidebar-cta h2 {
+		margin: 0;
+		font-size: 1.05rem;
+		line-height: 1.3;
+	}
+
+	.sidebar-cta p {
+		margin: 0;
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+	}
+
+	.sidebar-cta-actions {
+		display: grid;
+		gap: 0.55rem;
+	}
+
+	.sidebar-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.65rem 0.9rem;
+		border-radius: 999px;
+		text-decoration: none;
+		font-size: 0.88rem;
+		font-weight: 700;
+		min-height: 44px;
+		border: 1px solid transparent;
+	}
+
+	.sidebar-button.primary {
+		background: var(--intently-blue);
+		color: #fff;
+	}
+
+	.sidebar-button.primary:hover {
+		background: var(--intently-blue-dark);
+	}
+
+	.sidebar-button.secondary {
+		background: var(--intently-bg-primary);
+		color: var(--intently-text-primary);
+		border-color: color-mix(in srgb, var(--intently-text-hint) 30%, transparent);
+	}
+
+	.sidebar-button.secondary:hover {
+		border-color: color-mix(in srgb, var(--intently-blue) 45%, transparent);
+		color: var(--intently-blue);
+	}
+
+	.article-content {
+		min-width: 0;
+	}
+
+	.toc-mobile {
+		background: var(--intently-bg-primary);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 24%, transparent);
+		border-radius: var(--intently-radius-lg);
+		padding: var(--intently-space-sm) var(--intently-space-md);
+		margin-bottom: var(--intently-space-md);
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	.toc-mobile-head {
+		margin-bottom: var(--intently-space-sm);
+	}
+
+	.toc-mobile-title {
+		margin: 0;
+		font-size: 0.8rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: var(--intently-text-secondary);
+	}
+
+	.toc-mobile-list {
+		max-height: 13.5rem;
+		overflow-y: auto;
+		padding-right: var(--intently-space-xs);
+	}
+
+	.reading-note {
+		margin-bottom: var(--intently-space-md);
+		padding: var(--intently-space-md) var(--intently-space-lg);
+		border-radius: var(--intently-radius-md);
+		background: color-mix(in srgb, var(--intently-green) 9%, transparent);
+		border: 1px solid color-mix(in srgb, var(--intently-green) 26%, transparent);
+	}
+
+	.reading-note p {
+		margin: 0;
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+	}
+
+	.reading-note strong {
+		color: var(--intently-text-primary);
+	}
+
+	.article-body {
+		max-width: 74ch;
+	}
+
+	:global(.article-body > *:first-child) {
+		margin-top: 0;
+	}
+
+	:global(.article-body p) {
+		margin: 0 0 1.15rem;
+		font-size: clamp(1rem, 1.2vw, 1.12rem);
+		line-height: 1.85;
+		color: var(--intently-text-primary);
+	}
+
+	:global(.article-body h2),
+	:global(.article-body h3),
+	:global(.article-body h4) {
+		margin: 2rem 0 0.8rem;
+		line-height: 1.25;
+		letter-spacing: -0.015em;
+		color: var(--intently-text-primary);
+		scroll-margin-top: 7.5rem;
+	}
+
+	:global(.article-body h2) {
+		font-size: clamp(1.45rem, 2vw, 2rem);
+	}
+
+	:global(.article-body h3) {
+		font-size: clamp(1.2rem, 1.5vw, 1.45rem);
+	}
+
+	:global(.article-body h4) {
+		font-size: 1.1rem;
+	}
+
+	:global(.article-body ul),
+	:global(.article-body ol) {
+		margin: 0 0 1.2rem;
+		padding-left: 1.25rem;
+		color: var(--intently-text-primary);
+	}
+
+	:global(.article-body li) {
+		margin: 0.42rem 0;
+		line-height: 1.75;
+	}
+
+	:global(.article-body a) {
+		color: color-mix(in srgb, var(--intently-blue-dark) 82%, var(--intently-text-primary));
+		font-weight: 600;
+		text-decoration: none;
+		box-shadow: inset 0 -0.12em 0 color-mix(in srgb, var(--intently-blue) 24%, transparent);
+		transition:
+			color var(--intently-transition-fast),
+			box-shadow var(--intently-transition-fast);
+	}
+
+	:global(.article-body a:hover) {
+		color: var(--intently-text-primary);
+		box-shadow: inset 0 -0.42em 0 color-mix(in srgb, var(--intently-blue) 18%, transparent);
+	}
+
+	:global(.article-body a:focus-visible) {
+		outline: 2px solid color-mix(in srgb, var(--intently-blue) 65%, white);
+		outline-offset: 2px;
+		border-radius: 2px;
+	}
+
+	:global(.article-body blockquote) {
+		margin: 1.8rem 0;
+		padding: var(--intently-space-md) var(--intently-space-lg);
+		border-left: 4px solid color-mix(in srgb, var(--intently-blue) 55%, transparent);
+		background: color-mix(in srgb, var(--intently-blue) 6%, transparent);
+		border-radius: 0 var(--intently-radius-md) var(--intently-radius-md) 0;
+		font-style: normal;
+	}
+
+	:global(.article-body hr) {
+		margin: 2rem 0;
+		border: 0;
+		border-top: 1px solid color-mix(in srgb, var(--intently-text-hint) 35%, transparent);
+	}
+
+	:global(.article-body img) {
+		width: 100%;
+		height: auto;
+		margin: 1.5rem 0;
+		border-radius: var(--intently-radius-md);
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	:global(.article-body pre) {
+		margin: 1.5rem 0;
+		padding: var(--intently-space-md);
+		border-radius: var(--intently-radius-md);
+		background: color-mix(in srgb, var(--intently-bg-secondary) 85%, black 5%);
+		overflow-x: auto;
+	}
+
+	:global(.article-body table) {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		border-collapse: collapse;
+		margin: 1.4rem 0;
+	}
+
+	:global(.article-body th),
+	:global(.article-body td) {
+		padding: 0.65rem 0.8rem;
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 28%, transparent);
+		text-align: left;
+	}
+
+	.related-posts {
+		margin-top: var(--intently-space-3xl);
+		display: grid;
+		gap: var(--intently-space-md);
+	}
+
+	.related-posts h2 {
+		margin: 0;
+		font-size: clamp(1.3rem, 2vw, 1.8rem);
+	}
+
+	.related-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--intently-space-md);
+	}
+
+	.related-card {
+		display: grid;
+		grid-template-rows: auto 1fr;
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 22%, transparent);
+		border-radius: var(--intently-radius-lg);
+		overflow: hidden;
+		background: var(--intently-bg-primary);
+		box-shadow: var(--intently-shadow-sm);
+	}
+
+	.related-image-link {
+		display: block;
+		aspect-ratio: 16 / 9;
+	}
+
+	.related-image-link img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0;
+	}
+
+	.related-content {
+		display: grid;
+		gap: var(--intently-space-xs);
+		padding: var(--intently-space-md);
+	}
+
+	.related-meta {
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 0.75rem;
+		font-size: 0.78rem;
+		color: var(--intently-text-secondary);
+	}
+
+	.related-content h3 {
+		margin: 0;
+		font-size: 1.06rem;
+		line-height: 1.3;
+	}
+
+	.related-content h3 a {
+		text-decoration: none;
+		color: var(--intently-text-primary);
+	}
+
+	.related-content h3 a:hover {
+		color: var(--intently-blue);
+	}
+
+	.related-content p {
+		margin: 0;
+		color: var(--intently-text-secondary);
+		font-size: 0.93rem;
+		line-height: 1.55;
+	}
+
+	a:focus-visible,
+	button:focus-visible,
+	summary:focus-visible {
+		outline: 2px solid color-mix(in srgb, var(--intently-blue) 70%, white);
+		outline-offset: 2px;
+	}
+
+	@media (min-width: 980px) {
+		.article-layout {
+			grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+			align-items: start;
+		}
+
+		.article-sidebar {
+			display: grid;
+			gap: var(--intently-space-md);
+			position: sticky;
+			top: 7.2rem;
+		}
+
+		.toc-mobile {
+			display: none;
+		}
+
+		.related-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 560px) {
+		.article-shell {
+			padding-left: 0.85rem;
+			padding-right: 0.85rem;
+		}
+
+		.hero-meta {
+			font-size: 0.8rem;
+		}
+
+		.reading-note {
+			padding: var(--intently-space-sm) var(--intently-space-md);
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.article-hero,
+		.sidebar-card,
+		.toc-mobile,
+		.related-card,
+		.hero-image {
+			border-color: color-mix(in srgb, var(--intently-text-hint) 35%, transparent);
+		}
+
+		.reading-note {
+			background: color-mix(in srgb, var(--intently-green) 12%, transparent);
+		}
+	}
+</style>

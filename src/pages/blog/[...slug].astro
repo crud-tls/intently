@@ -1,7 +1,12 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import { render } from 'astro:content';
+import {
+	getBlogCategoryId,
+	getBlogCategoryMeta,
+	getNormalizedHeroImage,
+} from '../../data/blogMeta';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -10,18 +15,74 @@ export async function getStaticPaths() {
 		props: post,
 	}));
 }
-type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
-const { Content, remarkPluginFrontmatter } = await render(post);
+const { Content } = await render(post);
 
-// Calculate word count and reading time from actual post body
+function getWordCount(markdownBody = ''): number {
+	const plainText = markdownBody
+		.replace(/```[\s\S]*?```/g, ' ')
+		.replace(/`[^`]*`/g, ' ')
+		.replace(/\[(.*?)\]\(.*?\)/g, '$1')
+		.replace(/https?:\/\/\S+/g, ' ')
+		.replace(/[#*_>~|!-]/g, ' ')
+		.replace(/\s+/g, ' ')
+		.trim();
+
+	if (!plainText) {
+		return 0;
+	}
+
+	return plainText.split(' ').length;
+}
+
 const rawBody = post.body || '';
-const plainText = rawBody.replace(/```[\s\S]*?```/g, '').replace(/[#*\[\]()_>`~|!-]/g, '').replace(/https?:\/\/\S+/g, '');
-const wordCount = plainText.split(/\s+/).filter(w => w.length > 0).length;
+const wordCount = getWordCount(rawBody);
 const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+const categoryId = getBlogCategoryId(post.id);
+const categoryLabel = getBlogCategoryMeta(post.id).label;
+const normalizedHeroImage = getNormalizedHeroImage(post.data.heroImage);
+
+const allPosts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const relatedPosts = allPosts
+	.filter((candidate) => candidate.id !== post.id)
+	.map((candidate) => {
+		const candidateWordCount = getWordCount(candidate.body || '');
+		const candidateReadingTime = Math.max(1, Math.ceil(candidateWordCount / 200));
+		const candidateCategoryId = getBlogCategoryId(candidate.id);
+		const isSameCategory = candidateCategoryId === categoryId;
+
+		return {
+			id: candidate.id,
+			title: candidate.data.title,
+			description: candidate.data.description,
+			pubDate: candidate.data.pubDate,
+			heroImage: getNormalizedHeroImage(candidate.data.heroImage),
+			readingTime: candidateReadingTime,
+			categoryLabel: getBlogCategoryMeta(candidate.id).label,
+			sortPriority: isSameCategory ? 0 : 1,
+		};
+	})
+	.sort((a, b) => {
+		if (a.sortPriority !== b.sortPriority) {
+			return a.sortPriority - b.sortPriority;
+		}
+
+		return b.pubDate.valueOf() - a.pubDate.valueOf();
+	})
+	.slice(0, 3)
+	.map(({ sortPriority, ...related }) => related);
 ---
 
-<BlogPost {...post.data} wordCount={wordCount} readingTime={readingTime}>
+<BlogPost
+	{...post.data}
+	heroImage={normalizedHeroImage}
+	wordCount={wordCount}
+	readingTime={readingTime}
+	categoryLabel={categoryLabel}
+	relatedPosts={relatedPosts}>
 	<Content />
 </BlogPost>
