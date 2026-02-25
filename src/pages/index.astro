@@ -46,7 +46,6 @@ const latestPosts = allPosts
 					<div class="bento-grid">
 						<!-- Hero Card: Stat Showpiece -->
 						<div class="bento-card bento-hero">
-							<div class="bento-accent bento-accent-blue" aria-hidden="true"></div>
 							<div class="bento-glow-bg" aria-hidden="true"></div>
 							<div class="bento-hero-layout">
 								<div class="bento-hero-stat">
@@ -66,7 +65,6 @@ const latestPosts = allPosts
 
 						<!-- Pause Card: Breathing Animation -->
 						<div class="bento-card bento-pause">
-							<div class="bento-accent bento-accent-purple" aria-hidden="true"></div>
 							<div class="bento-icon bento-icon-purple">
 								<div class="breath-ring" aria-hidden="true"></div>
 								<Icon name="Pause" size={28} color="var(--intently-purple)" />
@@ -77,7 +75,6 @@ const latestPosts = allPosts
 
 						<!-- Transform Card: Streak Dots -->
 						<div class="bento-card bento-transform">
-							<div class="bento-accent bento-accent-orange" aria-hidden="true"></div>
 							<div class="bento-icon bento-icon-orange">
 								<Icon name="TrendingUp" size={28} color="var(--intently-orange)" />
 							</div>
@@ -96,7 +93,6 @@ const latestPosts = allPosts
 
 						<!-- Privacy Card: Badge Pills -->
 						<div class="bento-card bento-privacy">
-							<div class="bento-accent bento-accent-green" aria-hidden="true"></div>
 							<div class="bento-icon bento-icon-green">
 								<Icon name="ShieldCheck" size={28} color="var(--intently-green)" />
 							</div>
@@ -475,10 +471,6 @@ const latestPosts = allPosts
 			transform: scale(1.02);
 		}
 
-		.bento-card:hover .bento-accent {
-			height: 5px;
-		}
-
 		.bento-card:hover .bento-icon::before {
 			opacity: 0.25;
 			transform: scale(1.3);
@@ -514,22 +506,6 @@ const latestPosts = allPosts
 		color: var(--intently-text-secondary);
 		margin: 0;
 	}
-
-	/* Accent edges */
-	.bento-accent {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 3px;
-		border-radius: 24px 24px 0 0;
-		transition: height 0.4s ease;
-	}
-
-	.bento-accent-blue { background: linear-gradient(90deg, #2196F3, #9C27B0); }
-	.bento-accent-purple { background: linear-gradient(90deg, #9C27B0, #E040FB); }
-	.bento-accent-orange { background: linear-gradient(90deg, #FF9800, #FF5722); }
-	.bento-accent-green { background: linear-gradient(90deg, #4CAF50, #00BCD4); }
 
 	/* Floating icons with glow */
 	.bento-icon {
@@ -663,7 +639,11 @@ const latestPosts = allPosts
 	/* === Breathing Ring (Pause card) === */
 	.breath-ring {
 		position: absolute;
-		inset: -8px;
+		width: 72px;
+		height: 72px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		border-radius: 50%;
 		border: 2px solid var(--intently-purple);
 		opacity: 0.3;
@@ -671,8 +651,8 @@ const latestPosts = allPosts
 	}
 
 	@keyframes breathe {
-		0%, 100% { transform: scale(0.8); opacity: 0.15; }
-		50% { transform: scale(1.2); opacity: 0.35; }
+		0%, 100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.15; }
+		50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.35; }
 	}
 
 	/* === Streak Dots (Transform card) === */
@@ -825,7 +805,7 @@ const latestPosts = allPosts
 		}
 
 		.breath-ring {
-			transform: scale(1);
+			transform: translate(-50%, -50%) scale(1);
 			opacity: 0.2;
 		}
 	}

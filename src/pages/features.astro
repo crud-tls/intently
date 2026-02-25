@@ -2,9 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Card from '../components/ui/Card.astro';
 import Button from '../components/ui/Button.astro';
 import Icon from '../components/ui/Icon.astro';
+import ScrollReveal from '../components/ui/ScrollReveal.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import { SITE_TITLE } from '../consts';
@@ -90,6 +90,13 @@ const featureFAQs = [
 		answer: "Intently stores zero data in the cloud. No servers, no analytics, no advertising networks, no tracking. You don't need to create an account. We make money through optional premium features on-device, not through selling your data."
 	}
 ];
+
+const colorMap: Record<string, string> = {
+	blue: 'var(--intently-blue)',
+	green: 'var(--intently-green)',
+	orange: 'var(--intently-orange)',
+	purple: 'var(--intently-purple)'
+};
 ---
 
 <!doctype html>
@@ -107,130 +114,148 @@ const featureFAQs = [
 		<Header />
 
 		<main>
-			<!-- Features Hero -->
+			<!-- Features Hero - Glass -->
 			<section class="features-hero">
+				<div class="hero-glow" aria-hidden="true"></div>
 				<div class="container">
-					<h1>Everything You Need to Take Back Control</h1>
+					<h1 class="text-gradient">Everything You Need to Take Back Control</h1>
 					<p class="hero-subtitle">Intently uses behavioral science—not shame—to help you become the person who puts their phone down and doesn't think twice about it.</p>
 				</div>
 			</section>
 
-			<!-- What is Intently - Featured Snippet Optimization -->
+			<!-- What is Intently - Glass Intro -->
 			<section class="intro-section">
 				<div class="container">
-					<h2>What is Intently?</h2>
-					<p class="direct-answer">
-						Intently is a <strong>privacy-first digital wellbeing app</strong> that helps you build healthier relationships with technology. Instead of blocking apps, it uses <strong>mindful interventions</strong> to create moments of awareness, helping you make conscious choices about screen time. All data stays on your device—no account, no tracking, 100% offline.
-					</p>
-					<p class="intro-links">
-						Learn more about <a href="/privacy">our privacy-first approach</a> or <a href="/download">download Intently today</a> to start building healthier digital habits.
-					</p>
+					<ScrollReveal animation="fadeUp">
+						<h2>What is Intently?</h2>
+						<div class="glass-intro-card">
+							<p class="direct-answer">
+								Intently is a <strong>privacy-first digital wellbeing app</strong> that helps you build healthier relationships with technology. Instead of blocking apps, it uses <strong>mindful interventions</strong> to create moments of awareness, helping you make conscious choices about screen time. All data stays on your device—no account, no tracking, 100% offline.
+							</p>
+						</div>
+						<p class="intro-links">
+							Learn more about <a href="/privacy">our privacy-first approach</a> or <a href="/download">download Intently today</a> to start building healthier digital habits.
+						</p>
+					</ScrollReveal>
 				</div>
 			</section>
 
-			<!-- Core Features Grid -->
-			<section class="features-grid-section">
+			<!-- Core Features - Asymmetric Bento Grid -->
+			<section class="bento-section">
 				<div class="container">
-					<h2 class="section-title">Core Features</h2>
-					<div class="features-grid">
-						{features.map(feature => {
-							const colorMap = {
-								blue: 'var(--intently-blue)',
-								green: 'var(--intently-green)',
-								orange: 'var(--intently-orange)',
-								purple: 'var(--intently-purple)'
-							};
-							return (
-								<Card variant="elevated" hover={true}>
-									<div class="feature-header">
-										<div class={`feature-icon-wrapper ${feature.color}`}>
-											<Icon name={feature.icon} size={24} color={colorMap[feature.color]} />
+					<ScrollReveal animation="fadeUp">
+						<h2 class="section-title">Core Features</h2>
+					</ScrollReveal>
+
+					<ScrollReveal animation="fadeUp">
+						<div class="bento-grid">
+							{features.map((feature, index) => (
+								<div class={`bento-card ${index === 0 ? 'bento-hero-card' : index === 7 ? 'bento-privacy-card' : 'bento-standard'}`} style={`--card-delay: ${[0, 0, 100, 200, 0, 100, 0, 100][index]}ms`}>
+									<div class="bento-feature-header">
+										<div class={`bento-icon bento-icon-${feature.color}`}>
+											<Icon name={feature.icon} size={index === 0 ? 32 : 24} color={colorMap[feature.color]} />
 										</div>
 										<h3>{feature.title}</h3>
 									</div>
-									<p class="feature-description">{feature.description}</p>
-									<ul class="feature-details">
+									<p class="bento-description">{feature.description}</p>
+									<ul class="bento-details">
 										{feature.details.map(detail => <li>{detail}</li>)}
 									</ul>
-								</Card>
-							);
-						})}
-					</div>
+								</div>
+							))}
+						</div>
+					</ScrollReveal>
 				</div>
 			</section>
 
-			<!-- How It Works -->
+			<!-- How It Works - Glass Step Cards -->
 			<section class="how-it-works">
 				<div class="container">
-					<h2 class="section-title">How Intently Works</h2>
+					<ScrollReveal animation="fadeUp">
+						<h2 class="section-title">How Intently Works</h2>
+					</ScrollReveal>
+
+					<ScrollReveal animation="fadeUp">
 					<div class="steps-timeline">
-					<div class="timeline-step">
-						<div class="step-number-wrapper">
-							<div class="step-marker step-1">
-								<span class="step-number">1</span>
+						<div class="timeline-step">
+							<div class="step-number-wrapper">
+								<div class="step-marker step-1">
+									<span class="step-number">1</span>
+								</div>
+								<div class="timeline-connector"></div>
 							</div>
-							<div class="timeline-connector"></div>
-						</div>
-						<div class="step-content">
-							<h3>Notice</h3>
-							<p>Intently quietly observes which apps pull you in. Within a day, you'll see exactly where your time goes.</p>
-						</div>
-					</div>
-					<div class="timeline-step">
-						<div class="step-number-wrapper">
-							<div class="step-marker step-2">
-								<span class="step-number">2</span>
-							</div>
-							<div class="timeline-connector"></div>
-						</div>
-						<div class="step-content">
-							<h3>Pause</h3>
-							<p>When you reach for a distracting app on autopilot, a gentle prompt appears. Not to scold you—to ask: 'Is this what you want right now?'</p>
-						</div>
-					</div>
-					<div class="timeline-step">
-						<div class="step-number-wrapper">
-							<div class="step-marker step-3">
-								<span class="step-number">3</span>
+							<div class="step-glass-card">
+								<h3>Notice</h3>
+								<p>Intently quietly observes which apps pull you in. Within a day, you'll see exactly where your time goes.</p>
 							</div>
 						</div>
-						<div class="step-content">
-							<h3>Transform</h3>
-							<p>Small choices compound. After a week, the pull weakens. After a month, you reach for your phone less. After three months, people start asking what changed about you.</p>
+
+						<div class="timeline-step">
+							<div class="step-number-wrapper">
+								<div class="step-marker step-2">
+									<span class="step-number">2</span>
+								</div>
+								<div class="timeline-connector"></div>
+							</div>
+							<div class="step-glass-card">
+								<h3>Pause</h3>
+								<p>When you reach for a distracting app on autopilot, a gentle prompt appears. Not to scold you—to ask: 'Is this what you want right now?'</p>
+							</div>
 						</div>
+
+						<div class="timeline-step">
+							<div class="step-number-wrapper">
+								<div class="step-marker step-3">
+									<span class="step-number">3</span>
+								</div>
+							</div>
+							<div class="step-glass-card">
+								<h3>Transform</h3>
+								<p>Small choices compound. After a week, the pull weakens. After a month, you reach for your phone less. After three months, people start asking what changed about you.</p>
+							</div>
+							</div>
 					</div>
+				</ScrollReveal>
 				</div>
-		</section>
+			</section>
 
-		<!-- FAQ Section -->
-		<section class="faq-section">
-			<div class="container">
-				<h2 class="section-title">Frequently Asked Questions</h2>
-				<div class="faq-grid">
-					{featureFAQs.map((faq) => (
-						<div class="faq-item">
-							<h3>{faq.question}</h3>
-							<p>{faq.answer}</p>
+			<!-- FAQ Section - Glass Cards -->
+			<section class="faq-section">
+				<div class="container">
+					<ScrollReveal animation="fadeUp">
+						<h2 class="section-title">Frequently Asked Questions</h2>
+					</ScrollReveal>
+
+					<ScrollReveal animation="fadeUp">
+						<div class="faq-list">
+							{featureFAQs.map((faq) => (
+								<details class="faq-glass-card">
+									<summary>{faq.question}</summary>
+									<p>{faq.answer}</p>
+								</details>
+							))}
 						</div>
-					))}
+					</ScrollReveal>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- FAQ Schema -->
-		<FAQSchema faqs={featureFAQs} />
+			<!-- FAQ Schema -->
+			<FAQSchema faqs={featureFAQs} />
 
-		<!-- CTA Section -->
-		<section class="cta-section">
-			<div class="container">
-					<div class="cta-content">
-						<h2>Ready to Take Back Control?</h2>
-						<p>Join 12,000+ people who've transformed their relationship with their phone. One gentle pause at a time.</p>
-						<div class="cta-buttons">
-							<Button href="/download" variant="primary" size="lg">Download Now</Button>
-							<Button href="/privacy" variant="secondary" size="lg">Learn About Privacy</Button>
+			<!-- CTA Section - Enhanced -->
+			<section class="cta-section">
+				<div class="cta-divider" aria-hidden="true"></div>
+				<div class="container">
+					<ScrollReveal animation="fadeUp">
+						<div class="cta-glass">
+							<h2>Ready to Take Back Control?</h2>
+							<p>Join 12,000+ people who've transformed their relationship with their phone. One gentle pause at a time.</p>
+							<div class="cta-buttons">
+								<Button href="/download" variant="primary" size="lg">Download Now</Button>
+								<Button href="/privacy" variant="secondary" size="lg">Learn About Privacy</Button>
+							</div>
 						</div>
-					</div>
+					</ScrollReveal>
 				</div>
 			</section>
 		</main>
@@ -244,11 +269,22 @@ const featureFAQs = [
 		width: 100%;
 	}
 
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* ============================
+	   HERO - Glass with gradient
+	   ============================ */
 	.features-hero {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
-		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
+		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-secondary) 100%);
 		text-align: center;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.features-hero::before {
@@ -257,25 +293,47 @@ const featureFAQs = [
 		height: 7rem;
 	}
 
-	.features-hero h1 {
+	.hero-glow {
+		position: absolute;
+		top: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 600px;
+		height: 400px;
+		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		filter: blur(60px);
+		pointer-events: none;
+	}
+
+	.text-gradient {
 		font-size: 2rem;
 		font-weight: 800;
 		margin: 0 0 var(--intently-space-md);
-		color: white;
 		letter-spacing: -0.02em;
 		line-height: 1.2;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
 	}
 
 	.hero-subtitle {
 		font-size: 1.25rem;
 		max-width: 700px;
 		margin: 0 auto;
-		color: white;
-		opacity: 0.95;
+		color: var(--intently-text-secondary);
 		line-height: 1.6;
 	}
 
-	/* What is Intently Section - Featured Snippet Optimization */
+	@media (prefers-color-scheme: dark) {
+		.hero-glow {
+			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+		}
+	}
+
+	/* ============================
+	   INTRO SECTION - Glass card
+	   ============================ */
 	.intro-section {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
@@ -290,16 +348,25 @@ const featureFAQs = [
 		color: var(--intently-text-primary);
 	}
 
+	.glass-intro-card {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: var(--intently-space-2xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+	}
+
 	.direct-answer {
 		font-size: 1.125rem;
 		line-height: 1.75;
-		max-width: 800px;
-		margin: 0 auto;
 		color: var(--intently-text-secondary);
-		padding: var(--intently-space-2xl);
-		background: var(--intently-bg-accent);
-		border-radius: var(--intently-radius-lg);
-		box-shadow: var(--intently-shadow-md);
+		margin: 0;
 	}
 
 	.direct-answer strong {
@@ -326,10 +393,23 @@ const featureFAQs = [
 		border-bottom-color: var(--intently-blue);
 	}
 
-	.features-grid-section {
+	@media (prefers-color-scheme: dark) {
+		.glass-intro-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	/* ============================
+	   BENTO SECTION - Asymmetric
+	   ============================ */
+	.bento-section {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-primary);
+		background: var(--intently-bg-secondary);
 	}
 
 	.section-title {
@@ -340,67 +420,121 @@ const featureFAQs = [
 		color: var(--intently-text-primary);
 	}
 
-	.features-grid {
+	.bento-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: var(--intently-space-lg);
+		gap: 1rem;
+		max-width: 1100px;
+		margin: 0 auto;
 	}
 
-	.feature-header {
+	/* Base glass card */
+	.bento-card {
+		position: relative;
+		border-radius: 24px;
+		overflow: hidden;
+		padding: 1.5rem;
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	@media (hover: hover) {
+		.bento-card:hover {
+			transform: scale(1.02);
+		}
+
+		.bento-card:hover .bento-icon::before {
+			opacity: 0.25;
+			transform: scale(1.3);
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.bento-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	/* Hero card: full width */
+	.bento-hero-card {
+		padding: 2rem;
+	}
+
+	.bento-hero-card h3 {
+		font-size: 1.375rem;
+	}
+
+	/* Privacy card: wider */
+	.bento-privacy-card {
+		padding: 2rem;
+	}
+
+	/* Feature header with icon */
+	.bento-feature-header {
 		display: flex;
 		align-items: flex-start;
 		gap: var(--intently-space-md);
-		margin-bottom: var(--intently-space-lg);
+		margin-bottom: var(--intently-space-md);
 	}
 
-	.feature-icon-wrapper {
-		width: 48px;
-		height: 48px;
-		border-radius: var(--intently-radius-md);
+	/* Icon with glow */
+	.bento-icon {
+		width: 56px;
+		height: 56px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
 		flex-shrink: 0;
 	}
 
-	.feature-icon-wrapper.blue {
-		background: rgba(33, 150, 243, 0.08);
+	.bento-icon::before {
+		content: '';
+		position: absolute;
+		inset: -4px;
+		border-radius: 50%;
+		opacity: 0.15;
+		transition: opacity 0.4s ease, transform 0.4s ease;
 	}
 
-	.feature-icon-wrapper.green {
-		background: rgba(76, 175, 80, 0.08);
-	}
+	.bento-icon-blue::before { background: radial-gradient(circle, var(--intently-blue), transparent 70%); }
+	.bento-icon-green::before { background: radial-gradient(circle, var(--intently-green), transparent 70%); }
+	.bento-icon-purple::before { background: radial-gradient(circle, var(--intently-purple), transparent 70%); }
+	.bento-icon-orange::before { background: radial-gradient(circle, var(--intently-orange), transparent 70%); }
 
-	.feature-icon-wrapper.purple {
-		background: rgba(156, 39, 176, 0.08);
-	}
-
-	.feature-icon-wrapper.orange {
-		background: rgba(255, 152, 0, 0.08);
-	}
-
-	.feature-header h3 {
+	.bento-feature-header h3 {
 		font-size: 1.125rem;
 		font-weight: 700;
-		margin: 0.125rem 0 0;
+		margin: 0.5rem 0 0;
 		color: var(--intently-text-primary);
-		line-height: 1.4;
+		line-height: 1.3;
+		letter-spacing: -0.01em;
 	}
 
-	.feature-description {
+	.bento-description {
 		color: var(--intently-text-secondary);
 		line-height: 1.6;
 		margin: 0 0 var(--intently-space-md);
 		font-size: 0.9375rem;
 	}
 
-	.feature-details {
+	.bento-details {
 		list-style: none;
-		padding: 0 1rem;
+		padding: 0;
 		margin: 0;
 	}
 
-	.feature-details li {
+	.bento-details li {
 		padding: 0.25rem 0 0.25rem 1.25rem;
 		position: relative;
 		font-size: 0.875rem;
@@ -408,23 +542,29 @@ const featureFAQs = [
 		line-height: 1.5;
 	}
 
-	.feature-details li::before {
-		content: "•";
+	.bento-details li::before {
+		content: "";
 		position: absolute;
 		left: 0;
-		color: var(--intently-blue);
-		font-weight: 700;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 6px;
+		height: 6px;
+		background: var(--intently-blue);
+		border-radius: 50%;
 	}
 
-	/* How It Works */
+	/* ============================
+	   HOW IT WORKS - Glass Steps
+	   ============================ */
 	.how-it-works {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0 var(--intently-space-4xl);
-		background: var(--intently-bg-secondary);
+		background: var(--intently-bg-primary);
 	}
 
 	.steps-timeline {
-		max-width: 1000px;
+		max-width: 800px;
 		margin: 0 auto;
 	}
 
@@ -459,17 +599,9 @@ const featureFAQs = [
 		z-index: 2;
 	}
 
-	.step-marker.step-1 {
-		background: var(--intently-blue);
-	}
-
-	.step-marker.step-2 {
-		background: var(--intently-purple);
-	}
-
-	.step-marker.step-3 {
-		background: var(--intently-green);
-	}
+	.step-marker.step-1 { background: var(--intently-blue); }
+	.step-marker.step-2 { background: var(--intently-purple); }
+	.step-marker.step-3 { background: var(--intently-green); }
 
 	.step-number {
 		color: white;
@@ -478,91 +610,251 @@ const featureFAQs = [
 	}
 
 	.timeline-connector {
-		width: 2px;
+		width: 3px;
 		height: calc(100% + var(--intently-space-xl) - 48px);
-		background: var(--intently-gray-300);
+		background: linear-gradient(180deg, var(--intently-blue) 0%, var(--intently-purple) 50%, var(--intently-green) 100%);
 		position: absolute;
 		top: 48px;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 1;
+		border-radius: 2px;
+		opacity: 0.4;
 	}
 
-	.step-content {
+	/* Glass card for step content */
+	.step-glass-card {
 		flex: 1;
+		padding: var(--intently-space-lg) var(--intently-space-xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
-	.step-content h3 {
+	@media (hover: hover) {
+		.step-glass-card:hover {
+			transform: scale(1.02);
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.step-glass-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	.step-glass-card h3 {
 		font-size: 1.25rem;
 		font-weight: 700;
 		margin: 0 0 var(--intently-space-sm);
 		color: var(--intently-text-primary);
 	}
 
-	.step-content p {
+	.step-glass-card p {
 		color: var(--intently-text-secondary);
 		line-height: 1.6;
 		margin: 0;
 		font-size: 0.9375rem;
 	}
 
-	/* FAQ Section */
+	/* ============================
+	   FAQ SECTION - Glass Cards
+	   ============================ */
 	.faq-section {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-secondary);
 	}
 
-	.faq-grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: var(--intently-space-lg);
-		margin-top: var(--intently-space-xl);
+	.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: var(--intently-space-md);
+		max-width: 900px;
+		margin: 0 auto;
 	}
 
-	.faq-item {
-		background: var(--intently-gray-50);
-		padding: var(--intently-space-xl);
-		border-radius: var(--intently-radius-lg);
-		transition: all var(--intently-transition-normal);
+	.faq-glass-card {
+		padding: 0;
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 16px;
+		transition: all 0.3s ease;
 	}
 
-	.faq-item:hover {
-		background: var(--intently-bg-primary);
-		box-shadow: var(--intently-shadow-md);
-		transform: translateY(-2px);
+	.faq-glass-card[open] {
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 8px 30px rgba(0, 0, 0, 0.08);
 	}
 
-	.faq-item h3 {
+	@media (prefers-color-scheme: dark) {
+		.faq-glass-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+
+		.faq-glass-card[open] {
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 8px 30px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.faq-glass-card summary {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--intently-space-md);
+		padding: var(--intently-space-lg) var(--intently-space-xl);
 		font-size: 1.125rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-md);
 		color: var(--intently-text-primary);
+		cursor: pointer;
+		list-style: none;
+		user-select: none;
+		transition: color 0.2s ease;
 	}
 
-	.faq-item p {
+	.faq-glass-card summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-glass-card summary::after {
+		content: '+';
+		font-size: 1.5rem;
+		font-weight: 300;
+		color: var(--intently-text-hint);
+		flex-shrink: 0;
+		width: 28px;
+		height: 28px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.04);
+		transition: all 0.3s ease;
+		line-height: 1;
+	}
+
+	.faq-glass-card[open] summary::after {
+		content: '\2212';
+		background: rgba(33, 150, 243, 0.1);
+		color: var(--intently-blue);
+		transform: rotate(180deg);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.faq-glass-card summary::after {
+			background: rgba(255, 255, 255, 0.08);
+		}
+
+		.faq-glass-card[open] summary::after {
+			background: rgba(66, 165, 245, 0.15);
+		}
+	}
+
+	@media (hover: hover) {
+		.faq-glass-card summary:hover {
+			color: var(--intently-blue);
+		}
+
+		.faq-glass-card summary:hover::after {
+			background: rgba(33, 150, 243, 0.1);
+			color: var(--intently-blue);
+		}
+	}
+
+	.faq-glass-card p {
 		margin: 0;
+		padding: 0 var(--intently-space-xl) var(--intently-space-lg);
 		color: var(--intently-text-secondary);
-		line-height: 1.6;
+		line-height: 1.7;
 		font-size: 0.9375rem;
 	}
 
-	/* CTA Section */
+	/* ============================
+	   CTA SECTION - Enhanced
+	   ============================ */
 	.cta-section {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
 		background: var(--intently-bg-primary);
 		text-align: center;
+		position: relative;
 	}
 
-	.cta-content h2 {
+	.cta-divider {
+		position: absolute;
+		top: 0;
+		left: 10%;
+		right: 10%;
+		height: 1px;
+		background: linear-gradient(
+			90deg,
+			transparent 0%,
+			var(--intently-blue) 30%,
+			var(--intently-purple) 50%,
+			var(--intently-green) 70%,
+			transparent 100%
+		);
+		opacity: 0.3;
+	}
+
+	.cta-glass {
+		max-width: 700px;
+		margin: 0 auto;
+		padding: var(--intently-space-2xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.cta-divider {
+			opacity: 0.4;
+		}
+
+		.cta-glass {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	.cta-glass h2 {
 		font-size: 2.5rem;
 		font-weight: 700;
 		margin: 0 0 var(--intently-space-md);
 		color: var(--intently-text-primary);
 	}
 
-	.cta-content p {
+	.cta-glass p {
 		font-size: 1.125rem;
 		color: var(--intently-text-secondary);
 		max-width: 600px;
@@ -576,27 +868,20 @@ const featureFAQs = [
 		flex-wrap: wrap;
 	}
 
-	.cta-buttons .btn {
-		flex-shrink: 0;
-	}
+	/* ============================
+	   RESPONSIVE
+	   ============================ */
 
-	.container {
-		max-width: 1400px;
-		margin: 0 auto;
-		padding: 0 1rem;
-	}
-
-	/* Responsive - Mobile First */
-	/* Tablet: more spacing and larger grids */
+	/* Tablet */
 	@media (min-width: 768px) {
 		.features-hero,
-		.features-grid-section,
+		.bento-section,
 		.faq-section,
 		.cta-section {
 			padding: var(--intently-space-3xl) 0;
 		}
 
-		.features-hero h1 {
+		.text-gradient {
 			font-size: 2.5rem;
 		}
 
@@ -608,16 +893,23 @@ const featureFAQs = [
 			font-size: 1.75rem;
 		}
 
-		.features-grid {
-			grid-template-columns: repeat(2, 1fr);
-			gap: var(--intently-space-xl);
+		.bento-grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1.5rem;
 		}
 
-		.faq-grid {
-			grid-template-columns: 1fr;
+		/* Row 1: hero card full width */
+		.bento-hero-card {
+			grid-column: 1 / -1;
 		}
 
-		.cta-content h2 {
+		/* Row 4: privacy card spans 2 */
+		.bento-privacy-card {
+			grid-column: span 2;
+		}
+
+
+		.cta-glass h2 {
 			font-size: 2rem;
 		}
 
@@ -626,16 +918,16 @@ const featureFAQs = [
 		}
 	}
 
-	/* Desktop: even more spacing and larger grids */
+	/* Desktop */
 	@media (min-width: 1024px) {
 		.features-hero,
-		.features-grid-section,
+		.bento-section,
 		.faq-section,
 		.cta-section {
 			padding: var(--intently-space-4xl) 0;
 		}
 
-		.features-hero h1 {
+		.text-gradient {
 			font-size: 3.5rem;
 		}
 
@@ -647,20 +939,18 @@ const featureFAQs = [
 			font-size: 2rem;
 		}
 
-		.features-grid {
+		.bento-grid {
 			grid-template-columns: repeat(3, 1fr);
 		}
 
-		.faq-grid {
-			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		}
 
-		.cta-content h2 {
+
+		.cta-glass h2 {
 			font-size: 2.5rem;
 		}
 	}
 
-	/* Mobile: optimize small screens */
+	/* Mobile */
 	@media (max-width: 767px) {
 		.hero-subtitle {
 			font-size: 1rem;
@@ -670,13 +960,21 @@ const featureFAQs = [
 			font-size: 1.5rem;
 		}
 
+		.glass-intro-card {
+			padding: var(--intently-space-lg);
+		}
+
 		.direct-answer {
 			font-size: 1rem;
-			padding: var(--intently-space-lg);
 		}
 
 		.intro-links {
 			font-size: 0.9375rem;
+		}
+
+		.bento-icon {
+			width: 48px;
+			height: 48px;
 		}
 
 		.cta-section {
@@ -684,25 +982,42 @@ const featureFAQs = [
 			padding-right: 0;
 		}
 
-		.cta-content {
-			padding: 0 var(--intently-space-md);
+		.cta-glass {
+			padding: var(--intently-space-xl) var(--intently-space-md);
+			border-radius: 0;
 		}
 
 		.cta-buttons {
 			flex-direction: column;
 			gap: var(--intently-space-md);
-			margin-left: calc(-1 * var(--intently-space-md));
-			margin-right: calc(-1 * var(--intently-space-md));
-			width: calc(100% + var(--intently-space-lg));
-		}
-
-		.cta-buttons .btn {
-			width: 100%;
-			box-sizing: border-box;
 		}
 
 		.timeline-connector {
 			display: none;
+		}
+
+		.step-glass-card {
+			padding: var(--intently-space-md);
+		}
+
+		.cta-divider {
+			display: none;
+		}
+
+		/* Bento grid on tablet (2-col) */
+		.bento-privacy-card {
+			grid-column: auto;
+		}
+	}
+
+	/* Small tablet: 2-col bento grid */
+	@media (min-width: 480px) and (max-width: 767px) {
+		.bento-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.bento-hero-card {
+			grid-column: 1 / -1;
 		}
 	}
 
@@ -714,5 +1029,13 @@ const featureFAQs = [
 	button:focus-visible {
 		outline: 2px solid var(--intently-blue);
 		outline-offset: 2px;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.bento-card,
+		.step-glass-card,
+		.faq-glass-card {
+			transition: none;
+		}
 	}
 </style>
