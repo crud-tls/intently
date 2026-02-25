@@ -1,5 +1,14 @@
 ---
-// AuthorBio component for blog posts
+interface Props {
+	author?: string;
+}
+
+const { author = 'Intently Team' } = Astro.props;
+
+const isTeam = author === 'Intently Team';
+const descriptionText = isTeam
+	? `Written by the <strong>Intently Team</strong>, experts in digital wellbeing and behavioral psychology. We're building privacy-first tools to help people develop healthier relationships with technology. Our mission is to empower mindful tech usage through compassionate interventions, not restrictive blocking.`
+	: `Written by <strong>${author}</strong>, contributing to the Intently blog on digital wellbeing, screen time management, and building healthier relationships with technology.`;
 ---
 
 <div class="author-bio">
@@ -11,12 +20,10 @@
 		</div>
 		<div class="author-info">
 			<h3>About the Author</h3>
-			<p class="author-name">Intently Team</p>
+			<p class="author-name">{author}</p>
 		</div>
 	</div>
-	<p class="author-description">
-		Written by the <strong>Intently Team</strong>, experts in digital wellbeing and behavioral psychology. We're building privacy-first tools to help people develop healthier relationships with technology. Our mission is to empower mindful tech usage through compassionate interventions, not restrictive blocking.
-	</p>
+	<p class="author-description" set:html={descriptionText} />
 	<a href="/about" class="author-link">Learn more about Intently →</a>
 </div>
 

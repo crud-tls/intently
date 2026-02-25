@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import Button from '../components/ui/Button.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
+import CollectionPageSchema from '../components/SEO/CollectionPageSchema.astro';
 
 const comparisons = [
 	{
@@ -131,6 +132,16 @@ const faqs = [
 			]}
 		/>
 		<FAQSchema faqs={faqs} />
+		<CollectionPageSchema
+			name="Screen Time App Comparisons"
+			description="Compare Intently with popular screen time apps. Head-to-head reviews of features, privacy, pricing, and effectiveness."
+			url="/compare"
+			items={[...comparisons, ...alternatives].map(c => ({
+				name: c.title,
+				url: c.href,
+				description: c.description,
+			}))}
+		/>
 	</head>
 	<body>
 		<Header />

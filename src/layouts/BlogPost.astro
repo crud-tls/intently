@@ -9,6 +9,7 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 import FAQSchema from '../components/SEO/FAQSchema.astro';
 import HowToSchema from '../components/SEO/HowToSchema.astro';
 import AuthorBio from '../components/blog/AuthorBio.astro';
+import Picture from '../components/ui/Picture.astro';
 import { Image } from 'astro:assets';
 
 interface RelatedPost {
@@ -157,7 +158,7 @@ const effectiveAuthor = author || 'Intently Team';
 						<slot />
 					</div>
 
-					<AuthorBio />
+					<AuthorBio author={effectiveAuthor} />
 
 					{relatedPosts.length > 0 && (
 						<section class="related-posts" aria-label="Related articles">
@@ -166,11 +167,11 @@ const effectiveAuthor = author || 'Intently Team';
 								{relatedPosts.map((related) => (
 									<article class="related-card">
 										<a href={`/blog/${related.id}/`} class="related-image-link" aria-label={`Read ${related.title}`}>
-											<img
+											<Picture
 												src={related.heroImage || '/blog-placeholder-2.jpg'}
 												alt={related.title}
-												width="640"
-												height="360"
+												width={640}
+												height={360}
 												loading="lazy"
 											/>
 										</a>

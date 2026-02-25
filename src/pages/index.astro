@@ -5,8 +5,10 @@ import Footer from '../components/Footer.astro';
 import Hero from '../components/marketing/Hero.astro';
 import PlatformCard from '../components/marketing/PlatformCard.astro';
 import Icon from '../components/ui/Icon.astro';
+import Picture from '../components/ui/Picture.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import WebSiteSchema from '../components/SEO/WebSiteSchema.astro';
+import ProductSchema from '../components/SEO/ProductSchema.astro';
 import { getCollection } from 'astro:content';
 
 const androidFeatures = ["Complete app blocking", "Usage analytics", "Streak tracking", "Widget support"];
@@ -28,6 +30,14 @@ const latestPosts = allPosts
 			description="Stop losing 3+ hours a day to mindless scrolling. Intently creates a gentle pause before distracting apps open—helping you choose what matters. 100% free, 100% private, zero data collected."
 		/>
 		<WebSiteSchema />
+		<ProductSchema
+			name="Intently"
+			description="Free privacy-first screen time app. Mindful pause before distracting apps, usage tracking, streak tracking — 100% offline."
+			platform="android"
+			downloadUrl="https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster"
+			ratingValue={4.7}
+			ratingCount={12000}
+		/>
 	</head>
 	<body>
 		<Header />
@@ -267,7 +277,7 @@ const latestPosts = allPosts
 							<article class="blog-card">
 								{post.data.heroImage && (
 									<a href={`/blog/${post.id}`} class="blog-image-link">
-										<img src={post.data.heroImage} alt={post.data.title} class="blog-image" loading="lazy" />
+										<Picture src={post.data.heroImage} alt={post.data.title} class="blog-image" loading="lazy" width={640} height={360} />
 									</a>
 								)}
 								<div class="blog-content">
