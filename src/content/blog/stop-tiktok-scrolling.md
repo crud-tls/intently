@@ -112,5 +112,6 @@ You don't have to quit TikTok to take back your time. You just have to make ever
 - [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
 - [How to Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
 - [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your TikTok habits and get personalized recommendations.

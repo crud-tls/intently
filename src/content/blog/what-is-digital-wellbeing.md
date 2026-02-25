@@ -3,6 +3,8 @@ title: "What Is Digital Wellbeing? A Complete Guide to Healthier Tech Habits"
 description: "Digital wellbeing means having a healthy, balanced relationship with technology. Learn what it means, why it matters, and practical strategies to improve your digital wellbeing today."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-4.jpg"
+author: "Intently Team"
+tags: ["digital wellbeing", "screen time", "healthy tech habits", "mindfulness", "self-care"]
 ---
 
 Digital wellbeing is the practice of using technology in a way that actually supports the life you want -- managing screen time, staying aware of how apps affect your mood and focus, and making sure your devices work for you instead of the other way around.

@@ -3,6 +3,8 @@ title: "Best Digital Wellbeing Apps 2026: Top 8 Apps to Reclaim Your Time"
 description: "Compare the best digital wellbeing and screen time apps of 2026. In-depth reviews of privacy-first tools to help you build healthier digital habits. Find your perfect app match."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-2.jpg"
+author: "Intently Team"
+tags: ["digital wellbeing", "screen time apps", "app reviews", "mindful tech", "productivity"]
 ---
 
 The digital wellbeing space has gotten crowded, and honestly, most of the apps in it blur together. So we spent time with eight that are actually worth talking about -- each with a genuinely different philosophy on how to help you use your phone less (or at least more intentionally).
@@ -214,3 +216,4 @@ Not sure where to start? Take our free [Phone Addiction Quiz](/quiz) for a perso
 - [Stop Twitter Doomscrolling](/blog/stop-twitter-doomscrolling)
 - [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
 - [Understanding Digital Wellbeing](/blog/what-is-digital-wellbeing)
+- [Best Screen Time Apps for Students](/blog/screen-time-apps-for-students)

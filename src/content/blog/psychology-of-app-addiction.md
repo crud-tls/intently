@@ -3,6 +3,8 @@ title: "The Psychology of App Addiction: Why You Can't Stop Scrolling"
 description: "Understand the psychological mechanisms behind app addiction—variable rewards, infinite scroll, and dopamine manipulation. Learn science-backed strategies to break free from compulsive phone use."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-5.jpg"
+author: "Intently Team"
+tags: ["phone addiction", "psychology", "dopamine", "social media addiction", "behavior change"]
 ---
 
 Ever wonder why you unlock your phone, close an app, then immediately reopen the same app? That's not a character flaw. It's the result of very deliberate design choices -- ones rooted in decades of behavioral psychology research.

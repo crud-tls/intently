@@ -171,6 +171,7 @@ It's free for Android, iOS, and Chrome. [Give it a try](/download).
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
 - [Mindful Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking)
+- [7-Day Digital Detox Challenge](/blog/digital-detox-challenge)
 
 ---
 

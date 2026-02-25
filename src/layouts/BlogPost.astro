@@ -34,8 +34,11 @@ const {
 	pubDate,
 	updatedDate,
 	heroImage,
+	heroImageAlt,
 	faq,
 	howToSteps,
+	tags,
+	author,
 	wordCount = 0,
 	readingTime = 1,
 	categoryLabel = 'Insights',
@@ -44,8 +47,9 @@ const {
 const { currentPath } = Astro.url;
 const postUrl = `https://liveintently.app${currentPath}`;
 
-// Default tags for SEO if not specified in frontmatter
-const defaultTags = ['digital wellbeing', 'screen time', 'mindful tech'];
+// Use frontmatter values with fallbacks
+const effectiveTags = tags && tags.length > 0 ? tags : ['digital wellbeing', 'screen time', 'mindful tech'];
+const effectiveAuthor = author || 'Intently Team';
 ---
 
 <html lang="en">
@@ -56,9 +60,9 @@ const defaultTags = ['digital wellbeing', 'screen time', 'mindful tech'];
 			image={heroImage}
 			pubDate={pubDate}
 			modifiedDate={updatedDate}
-			author="Intently Team"
+			author={effectiveAuthor}
 			section="Digital Wellbeing"
-			tags={defaultTags}
+			tags={effectiveTags}
 			readingTime={readingTime}
 			ogType="article"
 		/>
@@ -70,7 +74,7 @@ const defaultTags = ['digital wellbeing', 'screen time', 'mindful tech'];
 			image={heroImage}
 			url={postUrl}
 			section="Digital Wellbeing"
-			tags={defaultTags}
+			tags={effectiveTags}
 			wordCount={wordCount}
 		/>
 		<BreadcrumbSchema
@@ -108,7 +112,7 @@ const defaultTags = ['digital wellbeing', 'screen time', 'mindful tech'];
 							width={1020}
 							height={510}
 							src={heroImage}
-							alt={`${title} - Intently blog post illustration`}
+							alt={heroImageAlt || `${title} - Intently blog post illustration`}
 						/>
 					</div>
 				)}

@@ -183,3 +183,4 @@ Take our free [Phone Addiction Quiz](/quiz) to assess your current digital habit
 - [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
 - [Stop Twitter Doomscrolling](/blog/stop-twitter-doomscrolling)
 - [Mindful Tech Interventions vs. Blocking](/blog/mindful-tech-interventions-vs-blocking)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)

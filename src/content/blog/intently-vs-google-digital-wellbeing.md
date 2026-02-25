@@ -3,6 +3,8 @@ title: "Intently vs Google Digital Wellbeing: Full Comparison"
 description: "Compare Intently and Google Digital Wellbeing feature-by-feature. Discover which app offers better privacy, more effective interventions, and the right approach for your digital wellbeing goals."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-2.jpg"
+author: "Intently Team"
+tags: ["app comparison", "Google Digital Wellbeing", "screen time", "digital wellbeing", "privacy"]
 ---
 
 Google Digital Wellbeing comes pre-installed on every modern Android phone. It's free, it's simple, and it gives you a basic snapshot of how much time you're spending on your device. Intently takes a different approach entirely -- it's a dedicated app built around mindful interventions, detailed analytics, and privacy-first design. Both want to help you use your phone less, but they go about it in very different ways.

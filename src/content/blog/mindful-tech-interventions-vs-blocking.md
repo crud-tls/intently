@@ -3,6 +3,8 @@ title: "Mindful Tech: Why Interventions Beat Blocking for Lasting Behavior Chang
 description: "Discover why mindful interventions create sustainable digital wellbeing while app blocking often backfires. Learn the psychology behind compassionate approaches to screen time management."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-about.jpg"
+author: "Intently Team"
+tags: ["mindful interventions", "app blocking", "behavior change", "digital wellbeing", "psychology"]
 ---
 
 Mindful interventions create a moment of awareness before you open an app, giving you a real choice instead of a forced restriction. Blocking apps feels punitive and tends to trigger the exact opposite of what you want -- a desperate urge to get around it. Mindful approaches respect your autonomy and can reduce unconscious usage by up to 67%, producing behavior change that actually sticks because it's rooted in self-awareness, not external control.
