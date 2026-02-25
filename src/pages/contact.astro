@@ -3,12 +3,11 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Button from '../components/ui/Button.astro';
-import Card from '../components/ui/Card.astro';
 import InputField from '../components/ui/InputField.astro';
 import DotLottie from '../components/ui/DotLottie.astro';
+import ScrollReveal from '../components/ui/ScrollReveal.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 
-// Subject options for the select dropdown
 const subjectOptions = [
 	{ value: 'General Inquiry', label: 'General Inquiry' },
 	{ value: 'Support', label: 'Support' },
@@ -34,10 +33,11 @@ const subjectOptions = [
 		<Header />
 
 		<main>
-			<!-- Contact Hero -->
+			<!-- Contact Hero - Glass -->
 			<section class="contact-hero">
+				<div class="hero-glow" aria-hidden="true"></div>
 				<div class="container">
-					<h1>Get in Touch</h1>
+					<h1 class="text-gradient">Get in Touch</h1>
 					<p class="hero-subtitle">Have questions, feedback, or need support? We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.</p>
 				</div>
 			</section>
@@ -46,65 +46,69 @@ const subjectOptions = [
 			<section class="contact-form-section">
 				<div class="container">
 					<div class="contact-content">
-						<!-- Form Card -->
-						<Card variant="elevated" hover={false} class="form-card-wrapper">
-							<form id="contact-form" class="contact-form" novalidate>
-								<InputField
-									label="Name"
-									type="text"
-									name="name"
-									placeholder="Your name"
-									required
-									minlength={2}
-								/>
+						<!-- Glass Form Card -->
+						<ScrollReveal animation="fadeUp">
+							<div class="form-glass-card">
+								<form id="contact-form" class="contact-form" novalidate>
+									<InputField
+										label="Name"
+										type="text"
+										name="name"
+										placeholder="Your name"
+										required
+										minlength={2}
+									/>
 
-								<InputField
-									label="Email"
-									type="email"
-									name="email"
-									placeholder="your@email.com"
-									required
-								/>
+									<InputField
+										label="Email"
+										type="email"
+										name="email"
+										placeholder="your@email.com"
+										required
+									/>
 
-								<InputField
-									label="Subject"
-									type="select"
-									name="subject"
-									required
-									options={subjectOptions}
-								/>
+									<InputField
+										label="Subject"
+										type="select"
+										name="subject"
+										required
+										options={subjectOptions}
+									/>
 
-								<InputField
-									label="Message"
-									type="textarea"
-									name="message"
-									placeholder="Tell us more about what you'd like to discuss..."
-									required
-									minlength={10}
-									rows={6}
-								/>
+									<InputField
+										label="Message"
+										type="textarea"
+										name="message"
+										placeholder="Tell us more about what you'd like to discuss..."
+										required
+										minlength={10}
+										rows={6}
+									/>
 
-								<div id="form-status" class="form-status" aria-live="polite"></div>
+									<div id="form-status" class="form-status" aria-live="polite"></div>
 
-								<Button type="submit" variant="primary" size="lg" id="submit-btn" class="submit-btn-wrapper">
-									<span class="btn-text">Send Message</span>
-									<span class="btn-loading" hidden>Sending...</span>
-								</Button>
-							</form>
-						</Card>
+									<Button type="submit" variant="primary" size="lg" id="submit-btn" class="submit-btn-wrapper">
+										<span class="btn-text">Send Message</span>
+										<span class="btn-loading" hidden>Sending...</span>
+									</Button>
+								</form>
+							</div>
+						</ScrollReveal>
 
 						<!-- Contact Animation -->
-						<div class="contact-animation">
-							<DotLottie
-								src="/contact_us.lottie"
-								autoplay={true}
-								loop={true}
-								speed={1}
-								width={400}
-								height={400}
-								ariaLabel="Contact us animation"
-							/>
-						</div>
+						<ScrollReveal animation="fadeUp">
+							<div class="contact-animation">
+								<DotLottie
+									src="/contact_us.lottie"
+									autoplay={true}
+									loop={true}
+									speed={1}
+									width={400}
+									height={400}
+									ariaLabel="Contact us animation"
+								/>
+							</div>
+						</ScrollReveal>
 					</div>
 				</div>
 			</section>
@@ -121,14 +125,10 @@ const subjectOptions = [
 	const btnLoading = submitBtn?.querySelector('.btn-loading');
 	const formStatus = document.getElementById('form-status');
 
-	// Client-side validation and form submission
 	form?.addEventListener('submit', async (e) => {
 		e.preventDefault();
-
-		// Clear previous errors
 		clearErrors();
 
-		// Validate form
 		const formData = new FormData(form);
 		const errors = validateForm(formData);
 
@@ -137,7 +137,6 @@ const subjectOptions = [
 			return;
 		}
 
-		// Show loading state
 		setLoading(true);
 
 		try {
@@ -250,12 +249,22 @@ const subjectOptions = [
 		width: 100%;
 	}
 
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* ============================
+	   HERO - Glass
+	   ============================ */
 	.contact-hero {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
-		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
-		color: white;
+		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-secondary) 100%);
 		text-align: center;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.contact-hero::before {
@@ -264,22 +273,47 @@ const subjectOptions = [
 		height: 7rem;
 	}
 
-	.contact-hero h1 {
+	.hero-glow {
+		position: absolute;
+		top: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 600px;
+		height: 400px;
+		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		filter: blur(60px);
+		pointer-events: none;
+	}
+
+	.text-gradient {
 		font-size: 2rem;
 		font-weight: 800;
 		margin: 0 0 var(--intently-space-md);
-		color: white;
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
 	}
 
 	.hero-subtitle {
 		font-size: 1.125rem;
 		max-width: 700px;
 		margin: 0 auto;
-		opacity: 0.95;
+		color: var(--intently-text-secondary);
 		line-height: 1.6;
-		padding: 0 1rem;
 	}
 
+	@media (prefers-color-scheme: dark) {
+		.hero-glow {
+			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+		}
+	}
+
+	/* ============================
+	   FORM SECTION
+	   ============================ */
 	.contact-form-section {
 		width: 100%;
 		padding: var(--intently-space-2xl) 0;
@@ -290,15 +324,33 @@ const subjectOptions = [
 	.contact-content {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: var(--intently-space-md);
+		gap: var(--intently-space-xl);
 		max-width: 1000px;
 		margin: 0 auto;
 		align-items: start;
 	}
 
-	/* Form wrapper for additional styling */
-	.form-card-wrapper :global(.card) {
-		height: 100%;
+	/* Glass form card */
+	.form-glass-card {
+		padding: var(--intently-space-2xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.form-glass-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
 	}
 
 	.contact-form {
@@ -307,7 +359,6 @@ const subjectOptions = [
 		gap: var(--intently-space-md);
 	}
 
-	/* Submit button wrapper */
 	.submit-btn-wrapper {
 		width: 100%;
 	}
@@ -347,7 +398,6 @@ const subjectOptions = [
 		justify-content: center;
 		width: 100%;
 		height: 100%;
-		padding: 0;
 	}
 
 	.contact-animation :global(.dotlottie-wc) {
@@ -358,21 +408,16 @@ const subjectOptions = [
 		object-fit: contain;
 	}
 
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 1rem;
-	}
-
-	/* Responsive - Mobile First */
-	/* Tablet: more spacing */
+	/* ============================
+	   RESPONSIVE
+	   ============================ */
 	@media (min-width: 768px) {
 		.contact-hero,
 		.contact-form-section {
 			padding: var(--intently-space-3xl) 0;
 		}
 
-		.contact-hero h1 {
+		.text-gradient {
 			font-size: 2.5rem;
 		}
 
@@ -382,20 +427,17 @@ const subjectOptions = [
 
 		.contact-content {
 			grid-template-columns: 2fr 1fr;
-			max-width: 1000px;
 			align-items: center;
-			gap: var(--intently-space-md);
 		}
 	}
 
-	/* Desktop: even more spacing */
 	@media (min-width: 1024px) {
 		.contact-hero,
 		.contact-form-section {
 			padding: var(--intently-space-4xl) 0;
 		}
 
-		.contact-hero h1 {
+		.text-gradient {
 			font-size: 3rem;
 		}
 
@@ -405,10 +447,25 @@ const subjectOptions = [
 		}
 	}
 
-	/* Mobile: single column */
 	@media (max-width: 767px) {
-		.contact-content {
-			grid-template-columns: 1fr;
+		.form-glass-card {
+			padding: var(--intently-space-lg);
+		}
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.form-glass-card {
+			transition: none;
 		}
 	}
 </style>
