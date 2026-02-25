@@ -2,6 +2,7 @@
 title: 'Best Google Digital Wellbeing Alternatives 2026'
 description: 'Looking for a Google Digital Wellbeing alternative? Compare the top 8 screen time apps including Intently, ActionDash, Opal, and more. Find the best privacy-focused option for Android.'
 pubDate: 2026-01-16
+updatedDate: 2026-02-26
 author: 'Intently Team'
 section: 'App Comparisons'
 tags: ['digital wellbeing', 'Android', 'screen time', 'privacy', 'app alternatives', 'Google Digital Wellbeing']
@@ -164,6 +165,36 @@ Best suited for professionals who need hard boundaries during work hours and are
 
 ---
 
+## 9. Clearspace -- Physical Exercise Friction
+
+Platform: iOS | Price: Freemium
+
+Clearspace takes "embodied friction" literally: before you can open a distracting app, you have to complete pushups, squats, or another physical exercise verified by your phone's camera. If you want Instagram badly enough to do 10 pushups first, go ahead. Most of the time, you won't bother -- which is the point.
+
+It's a creative concept that fitness-oriented users find genuinely engaging. The physical effort creates a level of friction that's harder to dismiss than a timer or breathing exercise. The main limitations: it's iOS-only, some features require payment, and doing exercises in public isn't always feasible.
+
+---
+
+## 10. FlowBuddy -- Free, Open-Source Breathing Pauses
+
+Platform: Android | Price: Free (open-source)
+
+FlowBuddy is a free, open-source One Sec alternative for Android. It triggers a breathing exercise before distracting apps open -- same core concept, no subscription, no account, no data collection. The code is fully transparent and community-maintained.
+
+The trade-off is that it's intentionally minimal: no analytics, no gamification, no progress tracking. It does one thing cleanly and for free. If you want a simple breathing pause on Android with zero data collection, FlowBuddy delivers.
+
+---
+
+## 11. Refocus -- Mindful Reminders With Time Limits
+
+Platform: iOS, Android | Price: Freemium (generous free tier)
+
+Refocus sits between hard blocking and pure mindfulness. Set daily time limits per app, and when you approach them, Refocus sends a gentle nudge rather than cutting you off. You can keep going, but the reminder creates a conscious decision point.
+
+Cross-platform support is a plus, and the free tier is genuinely useful. The approach blends structure (time limits) with awareness (reminders). Analytics are basic compared to Intently or ActionDash, but it's a solid middle-ground option if you want guardrails without rigidity.
+
+---
+
 ## Feature Comparison
 
 | Feature | Intently | ActionDash | StayFree | YourHour | Socratic | One Sec | Forest | Freedom |
@@ -282,4 +313,4 @@ Then download Intently and start building healthier digital habits:
 
 ---
 
-*Last updated: January 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*

@@ -2,6 +2,7 @@
 title: "How Much Screen Time Is Too Much? What Research Actually Says"
 description: "Wondering how much screen time is too much? Explore what research actually says about healthy screen time limits for adults, teens, and children, and learn how to find your personal balance."
 pubDate: 2026-02-01
+updatedDate: 2026-02-26
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["how much screen time is too much", "screen time recommendations", "healthy screen time", "screen time limits", "digital wellbeing"]
@@ -23,9 +24,9 @@ faq:
 
 # How Much Screen Time Is Too Much? What Research Actually Says
 
-You've heard it a thousand times: too much screen time is bad for you. But when you look at your own usage -- four hours? six? eight? -- it's hard to know when you've crossed the line from "fine" into "problem." And most of the advice out there just throws a number at you without much context.
+For adults, research suggests that negative effects on mental health start showing up around **2 hours of recreational screen time per day**, with clear problems emerging at 4+ hours. For children under 5, the WHO recommends **under 1 hour per day** (and none for babies under 1). For teens, **1-2 hours of non-school screen time** is where most studies find the sweet spot, with diminishing wellbeing past 3-4 hours.
 
-So let's look at what the research actually tells us, who it applies to, and how to figure out what's right for you specifically.
+But those numbers don't tell the whole story. What you're doing on screen matters as much as how long you're on it, and everyone's threshold is a little different. Let's look at what the research actually tells us, who it applies to, and how to figure out what's right for you specifically.
 
 ## What the Research Shows (and What It Doesn't)
 

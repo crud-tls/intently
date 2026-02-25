@@ -2,6 +2,7 @@
 title: "Social Media Addiction Signs: 10 Warning Signs You Need to Know"
 description: "Wondering if you're addicted to social media? Discover the 10 warning signs of social media addiction, understand the science behind compulsive use, and learn what steps to take if you recognize yourself in these symptoms."
 pubDate: 2026-02-01
+updatedDate: 2026-02-26
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["social media addiction signs", "am I addicted to social media", "social media addiction symptoms", "phone addiction signs", "digital wellbeing", "social media habits"]
@@ -115,17 +116,33 @@ This is tolerance -- needing more of a behavior for the same effect. It's the sa
 
 Compare your usage from six months ago to today. More time, more platforms, more extreme content to feel engaged? That's tolerance at work.
 
+## Quick Symptoms Checklist
+
+How many of these apply to you? Check off every sign you recognize:
+
+1. Social media is the first thing you reach for every morning
+2. You regularly lose track of time while scrolling
+3. You feel anxious or restless without access to social media
+4. You've tried to cut back multiple times and it hasn't stuck
+5. Social media is your go-to escape from uncomfortable emotions
+6. People around you have commented on your phone use
+7. FOMO drives you to check apps even when you don't want to
+8. Your sleep has gotten worse because of late-night scrolling
+9. You feel worse after using social media but keep going back
+10. You need more time on social media to feel the same satisfaction
+
+If you checked off 4 or more, keep reading -- the detailed breakdown of each sign below will help you understand what's happening, and the action steps at the end will show you what to do about it.
+
 ## Self-Assessment: Where Do You Stand?
 
 Count how many of those 10 signs ring true for you:
 
-**0-2 signs:** Your social media use is probably in a healthy range. Keep being intentional about it and check in with yourself periodically.
-
-**3-4 signs:** Early warning territory. This is actually the best time to make changes -- before patterns get more deeply wired. The strategies below will help.
-
-**5-7 signs:** Your relationship with social media has become a real problem. Active intervention is worth it here. Implement several strategies from this article and consider using a tool like Intently to build better habits.
-
-**8-10 signs:** This is addiction-level use. Start with the strategies below, and seriously consider talking to a mental health professional who works with behavioral addiction or digital wellbeing.
+| Score | Level | What It Means | Recommended Action |
+|-------|-------|---------------|-------------------|
+| **0-2** | Healthy range | Your social media use is probably fine | Keep being intentional; check in periodically |
+| **3-4** | Early warning | Patterns are forming but aren't deeply wired yet | Start with the strategies below -- this is the best time to act |
+| **5-7** | Problem use | Your relationship with social media needs active intervention | Implement several strategies from this article; try a tool like [Intently](/download) |
+| **8-10** | Addiction-level | Significant behavioral addiction pattern | Use strategies below and seriously consider professional help |
 
 For a more detailed, personalized look at your habits, take our free [Phone Addiction Quiz](/quiz) -- it evaluates your specific patterns and gives you tailored recommendations.
 

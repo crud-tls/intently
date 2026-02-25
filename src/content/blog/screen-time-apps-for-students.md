@@ -2,6 +2,7 @@
 title: "Screen Time Apps for Students: Stay Focused Without Missing Out"
 description: "Discover the best screen time apps for students in 2026. Compare free and paid focus tools for studying, learn strategies to reduce distractions, and find the right balance between academics and social life."
 pubDate: 2026-02-01
+updatedDate: 2026-02-26
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["screen time app for students", "focus app for studying", "student phone addiction", "study focus app", "digital wellbeing students", "reduce phone use studying"]
@@ -131,6 +132,59 @@ The point isn't rigid discipline -- it's removing the guilt of using social medi
 Go through your notification settings and turn off everything that isn't genuinely time-sensitive. Keep calls, texts from close contacts, calendar alerts, and class-related apps. Disable notifications from Instagram, TikTok, Twitter, Snapchat, YouTube, Reddit, and news apps.
 
 Every notification pulls you out of focus, and getting back into deep work takes much longer than you'd think. During a three-hour study session, even a few interruptions can cost you a significant chunk of productive time.
+
+## Exam Season Survival Guide
+
+Finals week is when phone habits go from "minor distraction" to "actively sabotaging your GPA." Here's a concrete plan for getting through it.
+
+### The 48-Hour Finals Prep Strategy
+
+Two days before your first exam, make these changes:
+
+- **Move social media apps to a folder** on your last home screen page. The extra taps create friction.
+- **Set up Intently** with exam-specific messages like "Your chem final is in 36 hours. Is this really what you want to do right now?"
+- **Turn off all non-essential notifications.** Keep calls, texts from study partners, and calendar alerts. Everything else goes silent.
+- **Charge your phone across the room** while studying. If it's not within arm's reach, you're dramatically less likely to pick it up.
+
+### Pre-Exam Doom-Scrolling: Why It Spikes
+
+The night before a big exam is when scrolling hits its worst. This isn't random -- your brain is anxious, and scrolling is the easiest available way to numb that anxiety. The problem is it doesn't actually calm you down; it just eats the hours you need for sleep and last-minute review.
+
+If you catch yourself in a pre-exam scroll spiral: put the phone in another room, set a 20-minute timer, and do one final review pass on your weakest material. Then go to bed. No amount of TikTok is going to help you on tomorrow's exam, but 7 hours of sleep might.
+
+### Study-Break Phone Rules
+
+Breaks are necessary. Mindless 30-minute scroll holes during breaks are not. Set ground rules:
+
+- **Timer first, phone second.** Set a 5-minute timer before you pick up your phone during a break. When it goes off, the phone goes back down.
+- **Specific apps only.** Allow yourself messaging apps (group chats, texts) but not infinite-scroll apps (TikTok, Instagram, Reddit) during study breaks.
+- **Physical breaks beat phone breaks.** Walk around, stretch, grab water. You'll feel more refreshed than you would after 5 minutes of scrolling.
+
+### Post-Exam Decompression (Without the 3-Hour Scroll Hole)
+
+You just finished a brutal exam. You deserve to relax. But "relaxing" by lying on your bed scrolling for 3 hours is going to leave you feeling worse, not better -- and if you have another exam tomorrow, it'll eat your prep time.
+
+Give yourself a 30-minute phone window after an exam. Set a timer. Then do something that actually recharges you: eat a real meal, take a walk, talk to a friend in person, or take a nap. Save the unlimited scrolling for after your last exam.
+
+## Student Scenarios
+
+### The Group-Project Procrastinator
+
+**The problem:** You need to work on a group project, but every time you open your laptop, you end up on Reddit. You tell yourself you're "waiting for your groupmates to respond," but really you're avoiding the hard part of starting.
+
+**The fix:** Use Cold Turkey or Freedom to block Reddit and YouTube on your laptop for a 2-hour session. On your phone, set up Intently with the message: "Your part of the project is due Thursday. Have you finished it?" Keep Slack or your group chat open -- that's the one notification that's actually relevant. Start with just the easiest task on the project (formatting the doc, writing the intro paragraph). Getting started is the hardest part.
+
+### The Pre-Exam Doom-Scroller
+
+**The problem:** You know you should be studying, but instead you're watching "study with me" videos, reading r/college memes about failing, and checking your exam schedule for the fifth time. The anxiety is real, but the scrolling is making it worse.
+
+**The fix:** Set up Intently with a direct message: "Your exam is tomorrow. This is anxiety, not boredom. Put the phone down." Use the 50/10 study block method -- 50 minutes of focused study, 10 minutes of phone. During the 50 minutes, phone goes face-down across the room. During the 10, use it freely (with a timer). The structure removes the decision fatigue of "should I check my phone?"
+
+### The "Just 5 More Minutes" Night Owl
+
+**The problem:** It's 11 PM. You told yourself you'd be in bed by now. But you're 45 minutes into a TikTok spiral and you have an 8 AM class. Every video, you think "one more." Your sleep has been terrible all semester.
+
+**The fix:** This is a [nighttime scrolling problem](/blog/stop-scrolling-at-night) as much as a student problem. Charge your phone in another room starting at 10:30 PM. Set up Do Not Disturb on a schedule. Put a book and a glass of water on your nightstand instead. If you absolutely need your phone nearby, use ScreenZen or Intently to create a pause before every app open after 10 PM. The friction of a mindful prompt at 11 PM -- when you're tired and your willpower is depleted -- is often enough to make you put it down.
 
 ## Balancing Academics and Social Life
 

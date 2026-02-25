@@ -2,6 +2,7 @@
 title: "Best Digital Wellbeing Apps 2026: Top 8 Apps to Reclaim Your Time"
 description: "Compare the best digital wellbeing and screen time apps of 2026. In-depth reviews of privacy-first tools to help you build healthier digital habits. Find your perfect app match."
 pubDate: "Jan 12 2026"
+updatedDate: 2026-02-26
 heroImage: "/blog-placeholder-2.jpg"
 author: "Intently Team"
 tags: ["digital wellbeing", "screen time apps", "app reviews", "mindful tech", "productivity"]
@@ -176,6 +177,48 @@ If budget is a real constraint and you're on Android, start here.
 
 ---
 
+## 9. Clearspace -- Physical Exercise as Phone Friction
+
+**Price:** Freemium
+**Platforms:** iOS
+**Approach:** Embodied friction through physical exercise
+
+Clearspace asks you to do pushups, squats, or other exercises -- verified by your camera -- before opening distracting apps. It's a creative "embodied friction" concept: if you want to scroll TikTok badly enough to do 10 pushups, fair enough. Most of the time, the physical effort breaks the impulse entirely.
+
+Fitness-minded users find it genuinely engaging, and the friction is harder to dismiss than a timer or breathing exercise. The limitations are worth noting: it's iOS-only, some features sit behind a paywall, and it's impractical in many public settings. But as a creative alternative to the standard pause-and-breathe approach, it's worth trying.
+
+**Rating: 3.5/5**
+
+---
+
+## 10. FlowBuddy -- Free, Open-Source Breathing Pauses
+
+**Price:** Free (open-source)
+**Platforms:** Android
+**Approach:** Breathing exercise before app opens
+
+FlowBuddy is a free, community-built alternative to One Sec for Android. It triggers a breathing exercise before distracting apps open -- same core concept, zero cost, no account, no data collection. The code is fully open-source and transparent.
+
+The intentional minimalism means no tracking, no gamification, and no polished UI. It does one thing cleanly. If you want a free breathing pause on Android without handing over any data, FlowBuddy delivers exactly that.
+
+**Rating: 3.0/5**
+
+---
+
+## 11. Refocus -- Time Limits With Mindful Reminders
+
+**Price:** Freemium (generous free tier)
+**Platforms:** iOS, Android
+**Approach:** Time-based limits with awareness nudges
+
+Refocus blends time-limit management with mindful reminders. Set daily limits per app, and when you approach them, Refocus sends a gentle nudge rather than cutting you off. You can keep going -- but the reminder creates a conscious decision point.
+
+Cross-platform support and a generous free tier make it accessible. The approach sits between hard blocking and pure mindfulness, offering structure without rigidity. Analytics are basic compared to dedicated trackers like Intently, but it's a solid middle-ground option.
+
+**Rating: 3.5/5**
+
+---
+
 ## Comparison Table
 
 | App | Best For | Price | Privacy | Approach |
@@ -217,3 +260,7 @@ Not sure where to start? Take our free [Phone Addiction Quiz](/quiz) for a perso
 - [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
 - [Understanding Digital Wellbeing](/blog/what-is-digital-wellbeing)
 - [Best Screen Time Apps for Students](/blog/screen-time-apps-for-students)
+
+---
+
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*

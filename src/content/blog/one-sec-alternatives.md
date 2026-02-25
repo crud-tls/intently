@@ -2,6 +2,7 @@
 title: 'Best One Sec Alternatives 2026: Pause Before Scrolling'
 description: 'Looking for a One Sec alternative? Compare the top mindful pause apps including Intently, ScreenZen, and ClearSpace. Find free options for Android and iOS that add a moment of awareness before opening distracting apps.'
 pubDate: 2026-02-01
+updatedDate: 2026-02-26
 author: 'Intently Team'
 section: 'App Comparisons'
 tags: ['one sec alternatives', 'one sec alternative android', 'one sec alternative free', 'screen time', 'mindful pause', 'digital wellbeing']
@@ -97,6 +98,30 @@ Rating: 3.5/5 as a One Sec alternative (different mechanism), but 4/5 as a focus
 
 ---
 
+### FlowBuddy -- Free, Open-Source Breathing Pauses (Android)
+
+**Platform**: Android | **Price**: Free (open-source)
+
+FlowBuddy is a free, community-built alternative to One Sec designed specifically for Android. It triggers a breathing exercise before distracting apps open -- the same core mechanic as One Sec, but with no subscription, no account, and no data collection. The code is fully open-source.
+
+There's no tracking, no gamification, and no polished onboarding -- it's intentionally minimal. If you want One Sec's breathing pause on Android without paying anything or sharing any data, FlowBuddy is the most direct replacement available. Development depends on community contributors, so updates aren't on a fixed schedule.
+
+Rating: 3/5 -- The closest free analog to One Sec on Android, with the trade-off of minimal features.
+
+---
+
+### Refocus -- Time Limits With Mindful Reminders
+
+**Platform**: iOS, Android | **Price**: Freemium (generous free tier)
+
+Refocus takes a slightly different approach from One Sec: instead of a pause before every app open, it combines daily time limits with mindful reminders. Set a limit per app, and when you approach it, Refocus nudges you with a gentle reminder rather than cutting you off. You can always keep going, but the nudge creates a moment of conscious choice.
+
+It works cross-platform, the free tier is genuinely useful, and the approach blends structure with awareness. The analytics are basic, and the reminders can become routine over time, but it's a solid option for people who want more structure than a pure pause app provides.
+
+Rating: 3.5/5 -- A good fit if you want time-based guardrails alongside mindful nudges, rather than a per-open breathing exercise.
+
+---
+
 ## Where One Sec Still Wins
 
 It wouldn't be honest to write an alternatives guide without being upfront about what One Sec does well:
@@ -169,4 +194,4 @@ If you're curious about the pause-based approach, the fastest way to find out is
 
 ---
 
-*Last updated: February 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*

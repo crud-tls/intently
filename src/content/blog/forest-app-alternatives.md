@@ -2,6 +2,7 @@
 title: 'Best Forest App Alternatives 2026: Top Focus & Wellness Apps'
 description: 'Looking for a Forest app alternative? Explore the best focus and gamification apps for reducing screen time, from social tree-growing to mindful interventions, with honest reviews of each approach.'
 pubDate: 2026-02-01
+updatedDate: 2026-02-26
 author: 'Intently Team'
 section: 'App Comparisons'
 tags: ['forest app alternatives', 'forest alternative free', 'apps like forest', 'focus apps', 'screen time', 'digital wellbeing']
@@ -107,6 +108,36 @@ Pricing: free core experience, optional premium features.
 
 Rating: 3/5 -- Best used alongside another tool rather than as a standalone replacement for Forest.
 
+## Clearspace -- Physical Exercise Unlocks Apps
+
+Platform: iOS | Price: Freemium
+
+Clearspace brings a completely different kind of friction: you have to do pushups, squats, or other physical exercises before opening a distracting app. Your phone's camera verifies you're actually doing them. It's "embodied friction" -- if you want TikTok badly enough to drop and give it 10, then sure, go ahead.
+
+It's a creative approach that fitness-minded users genuinely enjoy. The physical effort creates friction that's harder to dismiss than a countdown timer, and you either break the scroll urge or get a mini workout. The limitations: iOS-only, freemium pricing, and it's not exactly practical to do squats in the library.
+
+Rating: 3.5/5
+
+## FlowBuddy -- Free, Open-Source Breathing Pause
+
+Platform: Android | Price: Free (open-source)
+
+FlowBuddy is a free, community-maintained alternative to One Sec for Android. When you open a distracting app, it triggers a breathing exercise -- same core concept, no subscription, no tracking, no account required. The code is fully open-source.
+
+It's no-frills by design: no analytics, no gamification, no polished onboarding. But if you want a free breathing pause on Android with zero data collection, FlowBuddy delivers exactly that. Updates depend on community contributors, so development pace varies.
+
+Rating: 3/5
+
+## Refocus -- Time Limits With Gentle Reminders
+
+Platform: iOS, Android | Price: Freemium (generous free tier)
+
+Refocus combines time-based usage limits with mindful reminders. Set a daily limit for each app, and when you approach it, Refocus sends a gentle nudge rather than a hard block. You can always keep going, but the reminder creates a conscious decision point.
+
+It works cross-platform, the free tier is genuinely useful, and the approach blends structure with awareness. Analytics are basic, and the reminders can become routine over time, but it's a solid option for people who want guardrails without the rigidity of hard blocking.
+
+Rating: 3.5/5
+
 ## Picking the Right One
 
 The right alternative depends entirely on what's not working for you about Forest.
@@ -184,4 +215,4 @@ Forest is a great app. If it's doing the job for you, stick with it. These alter
 
 ---
 
-*Last updated: February 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*

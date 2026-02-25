@@ -2,6 +2,7 @@
 title: 'Best Freedom Alternatives 2026: Top App Blockers & Mindful Tools'
 description: 'Looking for a Freedom app alternative? Compare the top app blockers and mindful screen time tools including Intently, Cold Turkey, Opal, and more. Find free and paid options that actually work.'
 pubDate: 2026-02-01
+updatedDate: 2026-02-26
 author: 'Intently Team'
 section: 'App Comparisons'
 tags: ['freedom alternatives', 'freedom alternative free', 'freedom app alternative', 'app blockers', 'screen time', 'digital wellbeing']
@@ -152,6 +153,42 @@ Rating: 3/5 -- A decent baseline that's too easy to bypass for meaningful habit 
 
 ---
 
+## Clearspace -- Physical Exercise to Unlock Apps
+
+Platform: iOS | Price: Freemium
+
+Clearspace takes a wildly different approach to screen time friction: it requires you to do pushups, squats, or other exercises before opening a distracting app. Your phone's camera verifies the movement. The concept is "embodied friction" -- if you want Instagram badly enough to do 10 pushups, go ahead.
+
+It's creative and surprisingly effective. Users who enjoy fitness often find it more engaging than breathing exercises, and the physical effort creates friction that's genuinely hard to dismiss. The downside: it's iOS-only, some features are gated behind a paywall, and doing exercises in public isn't always practical.
+
+Rating: 3.5/5
+
+---
+
+## FlowBuddy -- Free, Open-Source One Sec Alternative
+
+Platform: Android | Price: Free (open-source)
+
+FlowBuddy is a free, community-built alternative to One Sec for Android. It adds a breathing exercise before distracting apps open -- same core mechanic, no subscription, no data collection, no account. The code is fully open-source and transparent.
+
+The trade-off is simplicity: no tracking, no gamification, no analytics. It does one thing cleanly and for free. If you want a breathing pause on Android without paying One Sec's subscription or handing over any data, FlowBuddy is the straightforward choice.
+
+Rating: 3/5
+
+---
+
+## Refocus -- Time Limits With Mindful Reminders
+
+Platform: iOS, Android | Price: Freemium (generous free tier)
+
+Refocus blends time-limit management with mindful reminders. Set daily limits per app, and when you approach them, Refocus nudges you with a gentle reminder rather than a hard cutoff. You can always keep going -- but the nudge creates a pause that helps you decide consciously.
+
+It works on both iOS and Android, the free tier is genuinely useful, and the approach sits between hard blocking and pure mindfulness. The analytics are basic compared to dedicated trackers, but the combination of structure and awareness makes it a solid middle-ground option.
+
+Rating: 3.5/5
+
+---
+
 ## Building a Free Multi-Device Setup
 
 One reason Freedom gets away with its premium pricing is the cross-device sync. But you can cover most of the same ground by combining free (or cheap) tools:
@@ -218,4 +255,4 @@ If you're not sure whether you need blocking or awareness, try a free awareness 
 
 ---
 
-*Last updated: February 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*

@@ -2,6 +2,7 @@
 title: 'Best Opal Alternatives 2026: Free & Paid Screen Time Apps Compared'
 description: 'Looking for an Opal alternative? Compare the top screen time apps including Intently, One Sec, ScreenZen, and more. Find the best free and paid options to reduce screen time in 2026.'
 pubDate: 2026-02-01
+updatedDate: 2026-02-26
 author: 'Intently Team'
 section: 'App Comparisons'
 tags: ['opal alternatives', 'opal alternative free', 'best opal alternative', 'screen time', 'app blockers', 'digital wellbeing']
@@ -133,6 +134,48 @@ Rating: 3/5
 
 ---
 
+## Clearspace -- Physical Exercise to Unlock Apps
+
+Platform: iOS | Price: Freemium
+
+Clearspace takes a unique "embodied friction" approach: before you can open a distracting app, you have to complete a set of pushups, squats, or another physical exercise. Your phone's camera verifies you're actually doing the movement. The idea is that if you want to scroll badly enough to do 10 pushups first, you probably have a real reason to open the app.
+
+It's a creative concept, and users who enjoy fitness find it surprisingly motivating -- you either break the scroll urge or get a workout out of it. The novelty factor is strong, and the physical effort creates a level of friction that's harder to dismiss than a breathing exercise or countdown.
+
+The limitations: it's iOS-only, the freemium model gates some features, and the physical exercise requirement can feel impractical in public settings (you're probably not doing squats at your desk in the office). It's also less suited for people with physical limitations. But as a creative alternative to the standard pause-and-breathe approach, it's worth a look.
+
+Rating: 3.5/5
+
+---
+
+## FlowBuddy -- Free, Open-Source Breathing Pauses
+
+Platform: Android | Price: Free (open-source)
+
+FlowBuddy is essentially a free, open-source alternative to One Sec for Android. It inserts a breathing exercise before distracting apps open -- similar to One Sec's core mechanic, but without the subscription fee or data collection.
+
+There's no tracking, no account, no cloud sync. You install it, pick your apps, and it works. The breathing exercise is simple and effective, and the open-source nature means the code is fully transparent and community-maintained.
+
+The trade-off is that "no-frills" really means no frills. There's no usage tracking, no gamification, no progress visualization, and no polished onboarding experience. Development depends on community contributors, so updates can be inconsistent. If you want a free breathing pause on Android and don't need anything beyond that, FlowBuddy delivers exactly what it promises.
+
+Rating: 3/5
+
+---
+
+## Refocus -- Mindful Reminders With Time Limits
+
+Platform: iOS, Android | Price: Freemium (generous free tier)
+
+Refocus combines time-limit-based usage management with mindful reminders. Set a daily limit for each app, and when you approach it, Refocus sends a gentle nudge rather than a hard block. You can keep going, but the reminder creates a moment of awareness that helps you decide if you actually want to.
+
+The cross-platform support is a plus -- it works on both iOS and Android -- and the free tier is genuinely useful without aggressive upselling. The approach sits between hard blocking and pure mindful intervention: you get structure from the time limits plus awareness from the reminders.
+
+Where it falls short is depth. The analytics are basic compared to Intently or ActionDash, and the reminder system can start to feel routine after a few weeks. It's a solid middle-ground option for people who want some structure without the rigidity of a hard blocker.
+
+Rating: 3.5/5
+
+---
+
 ## Picking the Right One
 
 Here's how to narrow it down quickly:
@@ -190,4 +233,4 @@ Not sure what kind of phone user you are? Take our quick quiz to assess your hab
 
 ---
 
-*Last updated: February 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
