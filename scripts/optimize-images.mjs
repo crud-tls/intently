@@ -34,3 +34,14 @@ for (const file of jpgFiles) {
 }
 
 console.log(`\nDone! Generated ${jpgFiles.length} WebP files.`);
+
+// Generate favicon.ico from logo.png
+const logoPath = join(PUBLIC_DIR, 'logo.png');
+const faviconPath = join(PUBLIC_DIR, 'favicon.ico');
+
+await sharp(logoPath)
+	.resize(32, 32, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+	.png()
+	.toFile(faviconPath);
+
+console.log('\nGenerated favicon.ico (32x32) from logo.png');

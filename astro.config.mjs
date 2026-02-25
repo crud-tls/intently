@@ -8,6 +8,7 @@ import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://liveintently.app",
+	trailingSlash: "always",
 	image: {
 		domains: ["liveintently.app"],
 		formats: ["avif", "webp"],

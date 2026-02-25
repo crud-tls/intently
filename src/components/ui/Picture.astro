@@ -5,15 +5,16 @@ interface Props {
 	width?: number | string;
 	height?: number | string;
 	loading?: 'lazy' | 'eager';
+	fetchpriority?: 'high' | 'low' | 'auto';
 	class?: string;
 }
 
-const { src, alt, width, height, loading = 'lazy', class: className } = Astro.props;
+const { src, alt, width, height, loading = 'lazy', fetchpriority, class: className } = Astro.props;
 
 const webpSrc = src.replace(/\.jpe?g$/i, '.webp');
 ---
 
 <picture style="display:contents">
 	<source srcset={webpSrc} type="image/webp" />
-	<img src={src} alt={alt} width={width} height={height} loading={loading} class={className} />
+	<img src={src} alt={alt} width={width} height={height} loading={loading} fetchpriority={fetchpriority} class={className} />
 </picture>
