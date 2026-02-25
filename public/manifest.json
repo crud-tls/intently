@@ -73,8 +73,8 @@
   "related_applications": [
     {
       "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=app.intently",
-      "id": "app.intently"
+      "url": "https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster",
+      "id": "dev.sadakat.thinkfaster"
     },
     {
       "platform": "chrome_web_store",

@@ -42,8 +42,8 @@ const howToSchema = {
   "image": image ? `https://liveintently.app${image}` : undefined,
   "estimatedCost": estimatedCost,
   "totalTime": totalTime,
-  "supply": supplies.map(item => ({ "@type": "HowToSupply", "name": item })),
-  "tool": tools.map(item => ({ "@type": "HowToTool", "name": item })),
+  ...(supplies.length > 0 ? { "supply": supplies.map(item => ({ "@type": "HowToSupply", "name": item })) } : {}),
+  ...(tools.length > 0 ? { "tool": tools.map(item => ({ "@type": "HowToTool", "name": item })) } : {}),
   "step": steps.map((step, index) => ({
     "@type": "HowToStep",
     "position": index + 1,

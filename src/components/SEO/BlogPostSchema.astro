@@ -30,6 +30,7 @@ const {
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": url || `https://liveintently.app/blog/${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
   "headline": title,
   "description": description,
   "image": image ? `https://liveintently.app${image}` : "https://liveintently.app/blog-placeholder-1.jpg",
@@ -41,6 +42,7 @@ const blogSchema = {
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "https://liveintently.app/#organization",
     "name": "Intently",
     "logo": {
       "@type": "ImageObject",

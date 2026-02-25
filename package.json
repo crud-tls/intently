@@ -19,8 +19,10 @@
 		"@lottiefiles/dotlottie-wc": "^0.8.14",
 		"astro": "5.16.2",
 		"lucide-static": "^0.563.0",
+		"markdown-it": "^14.1.1",
 		"mimetext": "^3.0.27",
 		"resend": "^6.9.1",
+		"sanitize-html": "^2.17.1",
 		"typescript": "5.9.3"
 	},
 	"devDependencies": {

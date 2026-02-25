@@ -11,7 +11,6 @@ interface Props {
   url?: string;
   logo?: string;
   foundingDate?: string;
-  areaServed?: string;
   contactEmail?: string;
   socialLinks?: string[];
 }
@@ -22,7 +21,6 @@ const {
   url = "https://liveintently.app",
   logo = "https://liveintently.app/logo.png",
   foundingDate = "2024-01-01",
-  areaServed = "Worldwide",
   contactEmail = "support@liveintently.app",
   socialLinks = [
     "https://twitter.com/intently_app",
@@ -44,7 +42,6 @@ const profilePageSchema = {
       "url": logo
     },
     "foundingDate": foundingDate,
-    "areaServed": areaServed,
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Support",
@@ -54,7 +51,7 @@ const profilePageSchema = {
     "knowsAbout": [
       "Digital Wellbeing",
       "Screen Time Management",
-      "App Blocking",
+      "Mindful Interventions",
       "Mindful Technology",
       "Privacy-First Design",
       "Offline-First Applications",

@@ -13,6 +13,7 @@ const { items } = Astro.props;
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": `${Astro.url.pathname}#breadcrumb`,
   "itemListElement": items.map((item, index) => ({
     "@type": "ListItem",
     "position": index + 1,

@@ -18,6 +18,7 @@ interface Props {
 	readingTime?: number;
 	// Open Graph type override
 	ogType?: 'website' | 'article';
+	noindex?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -32,7 +33,8 @@ const {
 	section,
 	tags = [],
 	readingTime,
-	ogType = 'website'
+	ogType = 'website',
+	noindex = false
 } = Astro.props;
 ---
 
@@ -71,7 +73,7 @@ const {
 <!-- Extended Meta Tags -->
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF" />
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121212" />
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
 <meta name="keywords" content="screen time decrease app, reduce screen time app, screen time reducer, app to decrease screen time, lower screen time app, cut down screen time app, screen time limiter, screen time control app, digital wellbeing, app usage tracking, mindful tech, privacy-first, phone addiction app, stop scrolling app, digital detox app, focus app, productivity tracker, social media limiter, mindful phone use, habit tracker for phone, break phone addiction, reduce Instagram usage, stop TikTok addiction, phone usage tracker, app blocker alternative, mindful interventions, digital wellbeing Android, screen time app no account, offline screen time tracker, privacy screen time app, free screen time app, phone addiction help, reduce social media usage, digital minimalism app, focus app for students, self control app, behavioral science app, psychology-based screen time, gentle app reminder, screen time app without data collection, screen time app that doesn't collect data, offline screen time tracker android, mindful app blocker vs hard blocker, stop scrolling tiktok without deleting, reduce instagram usage without deleting, chrome extension reduce social media, screen time app for students, track screen time without google, privacy focused screen time apps" />
 {readingTime && <meta name="estimated-reading-time" content={readingTime.toString()} />}
 
@@ -109,7 +111,7 @@ const {
 
 <!-- App Linking for deep linking from web to mobile app -->
 <meta property="al:android:url" content="intently://home" />
-<meta property="al:android:package" content="app.intently" />
+<meta property="al:android:package" content="dev.sadakat.thinkfaster" />
 <meta property="al:android:app_name" content="Intently" />
 <meta property="al:web:url" content={canonicalURL} />
 <meta property="al:web:should_fallback" content="true" />
