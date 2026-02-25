@@ -71,8 +71,21 @@ import { SITE_TITLE } from '../consts';
 	// Close menu when clicking a link
 	const mobileNavLinks = mobileNav?.querySelectorAll('a');
 	mobileNavLinks?.forEach(link => {
-		link.addEventListener('click', () => {
-			if (mobileNav.classList.contains('open')) {
+		link.addEventListener('click', (event) => {
+			const target = event.currentTarget as HTMLAnchorElement;
+			const href = target.getAttribute('href');
+			if (!href) {
+				return;
+			}
+
+			// Let the browser perform cross-page navigation uninterrupted.
+			// Only close the drawer immediately for same-page links.
+			const targetUrl = new URL(href, window.location.origin);
+			const isSamePage =
+				targetUrl.pathname === window.location.pathname &&
+				targetUrl.search === window.location.search;
+
+			if (isSamePage && mobileNav.classList.contains('open')) {
 				toggleMenu();
 			}
 		});
@@ -306,6 +319,7 @@ import { SITE_TITLE } from '../consts';
 		transition: transform 0.3s ease;
 		z-index: 99;
 		overflow-y: auto;
+		pointer-events: auto;
 	}
 
 	.mobile-nav.open {
