@@ -2,6 +2,7 @@
 title: 'Best Apple Screen Time Alternatives 2026 for iPhone'
 description: 'Looking for an Apple Screen Time alternative? Understand what Screen Time does well, where it falls short, and which third-party apps actually help iPhone users build better phone habits.'
 pubDate: 2026-02-01
+updatedDate: 2026-02-26
 author: 'Intently Team'
 section: 'App Comparisons'
 tags: ['apple screen time alternatives', 'screen time alternative iphone', 'better than screen time', 'iPhone', 'screen time', 'digital wellbeing']
@@ -150,6 +151,22 @@ The honest downside is that the novelty can wear off. After a few weeks, you mig
 
 Rating: 3.5/5
 
+### FlowBuddy -- Free, Open-Source Breathing Pauses (Android)
+
+FlowBuddy is a free, open-source One Sec alternative built for Android. It inserts a breathing exercise before distracting apps open -- same core mechanic, no subscription, no account, no data collection. The code is fully transparent and community-maintained.
+
+It's intentionally minimal: no analytics, no gamification, no premium tier. If you're on Android and want a breathing pause with zero cost and zero data collection, FlowBuddy delivers exactly that. Not relevant for iPhone-only users, but worth knowing about if you carry both platforms.
+
+Rating: 3/5
+
+### Refocus -- Time Limits With Mindful Reminders
+
+Refocus combines daily time limits with gentle nudges. Set a limit per app, and when you approach it, Refocus sends a mindful reminder rather than a hard block. You can keep going, but the reminder creates a conscious decision point.
+
+It works on both iOS and Android, the free tier is generous, and the approach sits between hard blocking and pure mindfulness. For iPhone users who want more structure than a breathing pause but less rigidity than Opal or Freedom, Refocus fills a useful middle ground.
+
+Rating: 3.5/5
+
 ## Picking the Right One
 
 The right tool depends on what's actually failing for you with Screen Time.
@@ -223,4 +240,4 @@ Whatever you choose, the goal is the same: building a relationship with your pho
 
 ---
 
-*Last updated: February 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*

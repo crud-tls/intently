@@ -2,6 +2,7 @@
 title: "How to Break the Twitter/X Doomscrolling Cycle: Strategies That Work"
 description: "Stop Twitter/X doomscrolling with proven strategies. Learn how to break the cycle, protect your mental health, and use the platform intentionally without getting sucked in."
 pubDate: 2026-01-23
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["twitter doomscrolling", "break twitter addiction", "stop doomscrolling", "twitter mental health", "digital wellbeing"]
@@ -141,9 +142,11 @@ Your feed should work for you. Right now, there's a good chance it's the other w
 ---
 
 **Related Reading:**
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
+- [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
 - [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
 - [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your Twitter habits and get personalized recommendations.

@@ -4,7 +4,7 @@ description: "Discover why mindful interventions create sustainable digital well
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-about.jpg"
 author: "Intently Team"
-tags: ["mindful interventions", "app blocking", "behavior change", "digital wellbeing", "psychology"]
+tags: ["mindful interventions", "app blocking", "behavior change", "digital wellbeing", "psychology", "gentle screen time app", "awareness not blocking phone app"]
 ---
 
 Mindful interventions create a moment of awareness before you open an app, giving you a real choice instead of a forced restriction. Blocking apps feels punitive and tends to trigger the exact opposite of what you want -- a desperate urge to get around it. Mindful approaches respect your autonomy and can reduce unconscious usage by up to 67%, producing behavior change that actually sticks because it's rooted in self-awareness, not external control.

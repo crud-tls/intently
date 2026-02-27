@@ -5,7 +5,7 @@ pubDate: 2026-02-01
 updatedDate: 2026-02-26
 author: 'Intently Team'
 section: 'App Comparisons'
-tags: ['one sec alternatives', 'one sec alternative android', 'one sec alternative free', 'screen time', 'mindful pause', 'digital wellbeing']
+tags: ['one sec alternatives', 'one sec alternative android', 'one sec alternative free', 'screen time', 'mindful pause', 'digital wellbeing', 'free one sec alternative android']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: "Is there a free version of One Sec?"

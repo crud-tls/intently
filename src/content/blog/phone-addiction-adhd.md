@@ -2,6 +2,7 @@
 title: "Phone Addiction and ADHD: Why You Can't Stop & What Helps"
 description: "Understand the unique connection between phone addiction and ADHD. Learn why standard screen time advice fails for ADHD brains and discover ADHD-friendly strategies that actually work."
 pubDate: 2026-02-01
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["phone addiction adhd", "screen time adhd", "adhd phone addiction", "adhd dopamine", "digital wellbeing adhd", "adhd screen time tips"]
@@ -118,6 +119,38 @@ Many people with ADHD carry deep shame about their phone use. "I wasted another 
 That shame isn't just unhelpful -- it actively makes things worse. Shame triggers the emotional dysregulation common in ADHD, which leads to seeking comfort, which leads to more phone use. A vicious cycle.
 
 Try replacing the shame with curiosity. Instead of "I have no self-control," try "My executive function was depleted today. That's ADHD, not a character flaw." Instead of "I'll never fix this," try "What small change can I try tomorrow?" [Mindful tech interventions](/blog/mindful-tech-interventions-vs-blocking) are built on this compassionate philosophy.
+
+## Practical ADHD Phone Tips
+
+Standard screen time advice often falls flat for ADHD brains because it relies on exactly the executive functions that ADHD impairs. These strategies are designed specifically for how ADHD works — not against it.
+
+### 1. Use Body Doubling for Phone-Free Time
+
+Body doubling — working or being present alongside another person — is one of the most effective ADHD productivity strategies. It works for phone habits too. When you want to stay off your phone during a task, do it in the same room as someone else. Their presence provides the external accountability that ADHD brains often need. Even a virtual body double (a co-working video call) can help.
+
+### 2. Set External Timers Instead of Relying on Internal Awareness
+
+Time blindness is a core ADHD challenge. You can't trust your internal sense of "I'll just check for five minutes." Use a physical timer — a kitchen timer, a Time Timer (designed to make time visible), or a loud alarm on a separate device. Place it across the room so you have to physically get up to turn it off. The interruption breaks the hyperfocus loop.
+
+### 3. Rotate Your Friction Strategies (Novelty Matters)
+
+ADHD brains habituate to stimuli faster than neurotypical brains. A screen time intervention that works brilliantly for two weeks may stop working entirely by week three. Plan for this. Rotate between different [mindful intervention](/blog/mindful-tech-interventions-vs-blocking) messages in Intently, switch up your phone's home screen layout, change your wallpaper to something that reminds you of your goals. Novelty keeps the friction effective.
+
+### 4. Replace Phone Stimulation, Don't Just Remove It
+
+ADHD brains need stimulation — that's non-negotiable neurology. If you remove phone stimulation without replacing it, the craving becomes unbearable. Keep high-stimulation alternatives within arm's reach: fidget tools, a puzzle, a sketchpad, a stress ball, an engaging audiobook. The replacement needs to be immediately available, not something that requires planning or setup.
+
+### 5. Use Shorter Focus Blocks with Phone Rewards
+
+Instead of trying to stay off your phone for hours (which fights ADHD's need for frequent reward), use short blocks: 15-20 minutes of focused work, then a 5-minute intentional phone break. This works with your dopamine cycle instead of against it. As the habit builds, you can gradually extend the focus blocks. Apps like Intently can help make even the break intentional rather than a scrolling free-for-all.
+
+### 6. Create Physical Distance at Key Moments
+
+This is the single easiest ADHD phone strategy because it requires zero willpower. Put your phone in another room during focus time. Put it in a drawer during meals. Charge it in the hallway overnight. The out-of-sight, out-of-mind effect is especially strong for ADHD brains — if the phone isn't visible and easily reachable, the impulse to grab it has a chance to pass before you act on it.
+
+### 7. Leverage Hyperfocus Intentionally
+
+Hyperfocus isn't always the enemy. If you can channel it toward a productive or fulfilling activity — a creative project, exercise, a hobby — the phone loses its pull because your brain is already getting the stimulation it needs. The trick is having the engaging activity set up and ready to go before you need it. Preparation during high-executive-function moments pays dividends during low-executive-function ones.
 
 ## A Note on Phones and ADHD
 

@@ -2,6 +2,7 @@
 title: "How to Stop Mindless Scrolling at Night: A Sleep-Saving Guide"
 description: "Stop scrolling at night and protect your sleep. Learn why bedtime scrolling destroys rest and how to break the habit with proven strategies for better sleep and mornings."
 pubDate: 2026-01-23
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["stop scrolling at night", "phone addiction before bed", "sleep hygiene", "digital wellbeing", "screen time at night"]
@@ -175,8 +176,11 @@ You don't have to overhaul your entire evening right away. Small, consistent cha
 
 Related Reading:
 - [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
+- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction)
 - [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your nighttime habits and get personalized recommendations.

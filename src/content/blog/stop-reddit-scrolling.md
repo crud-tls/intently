@@ -2,6 +2,7 @@
 title: "Stop Reddit Scrolling: How to Use Reddit Without Losing Hours"
 description: "Learn how to stop mindless Reddit scrolling with 5 proven strategies. Understand why Reddit is uniquely addictive, recognize the signs of Reddit addiction, and regain control of your time while keeping the communities you value."
 pubDate: 2026-02-01
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["stop reddit scrolling", "reddit addiction", "reduce reddit usage", "mindful reddit", "digital wellbeing", "stop scrolling"]
@@ -102,9 +103,10 @@ Reddit is a tool. These strategies help you keep its value while reclaiming the 
 
 ## Related Articles
 
+- [How to Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
 - [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling)
 - [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
 - [Stop Twitter Doomscrolling: Practical Strategies](/blog/stop-twitter-doomscrolling)
-- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction)
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [Social Media Addiction Signs: 10 Warning Signs](/blog/social-media-addiction-signs)

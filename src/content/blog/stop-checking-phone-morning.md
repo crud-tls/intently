@@ -2,7 +2,7 @@
 title: "Stop Checking Your Phone First Thing in the Morning"
 description: "Stop checking your phone first thing in the morning. Learn a 7-step protocol to break the habit, reclaim your mornings, and start your day with intention instead of reactive scrolling."
 pubDate: 2026-01-23
-updatedDate: 2026-02-26
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["morning routine", "stop checking phone in morning", "phone addiction morning", "digital wellbeing", "mindful mornings"]
@@ -174,8 +174,11 @@ Your morning sets the tone for everything that follows. A reactive start tends t
 
 **Related Reading:**
 - [Stop Scrolling at Night: Sleep-Saving Guide](/blog/stop-scrolling-at-night)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
+- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction)
 - [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your morning habits and get personalized recommendations.

@@ -2,6 +2,7 @@
 title: "How to Stop Doomscrolling: 7 Science-Backed Strategies That Work"
 description: "Learn how to stop doomscrolling with 7 proven strategies backed by behavioral psychology. Understand why doomscrolling is addictive and how mindful interventions break the cycle for good."
 pubDate: 2026-02-01
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["stop doomscrolling", "how to stop doomscrolling", "doomscrolling addiction", "negative news scrolling", "digital wellbeing", "mindful phone use"]
@@ -179,8 +180,10 @@ Take our free [Phone Addiction Quiz](/quiz) to assess your current digital habit
 **Related Articles:**
 - [How to Stop Checking Your Phone First Thing in the Morning](/blog/stop-checking-phone-morning)
 - [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
+- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
 - [Stop Twitter Doomscrolling](/blog/stop-twitter-doomscrolling)
-- [Mindful Tech Interventions vs. Blocking](/blog/mindful-tech-interventions-vs-blocking)
 - [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)

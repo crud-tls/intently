@@ -2,6 +2,7 @@
 title: "Reduce Instagram Usage Without Deleting: A Mindful Guide"
 description: "Reduce Instagram usage without deleting the app. Learn mindful strategies to cut down on Instagram, break the scrolling habit, and reclaim hours of your week while staying connected."
 pubDate: 2026-01-23
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["instagram addiction", "reduce instagram usage", "cut down on instagram", "mindful social media", "digital wellbeing"]
@@ -122,9 +123,12 @@ Intently is built specifically for this. It adds mindful check-ins before each s
 ---
 
 Related Reading:
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
+- [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling)
+- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
 - [How to Be More Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
 - [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your Instagram habits and get personalized recommendations.

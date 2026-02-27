@@ -2,6 +2,7 @@
 title: "How to Stop YouTube Binge Watching: Mindful Strategies That Work"
 description: "Stop YouTube binge watching with proven strategies. Learn how to break the autoplay cycle, watch intentionally, and reclaim hours of your week while still enjoying content you love."
 pubDate: 2026-01-23
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["youtube addiction", "stop youtube binge", "reduce youtube usage", "mindful streaming", "digital wellbeing"]
@@ -99,9 +100,11 @@ Intently supports intentional YouTube habits:
 ---
 
 **Related Reading:**
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
 - [How to Stop Twitter/X Doomscrolling](/blog/stop-twitter-doomscrolling)
 - [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your YouTube habits and get personalized recommendations.

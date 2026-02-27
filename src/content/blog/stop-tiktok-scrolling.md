@@ -2,6 +2,7 @@
 title: "Stop Scrolling TikTok Without Deleting: 5 Strategies"
 description: "Stop scrolling TikTok without deleting the app. Learn 5 mindful strategies to reduce TikTok usage, break the addiction cycle, and reclaim your time while staying connected."
 pubDate: 2026-01-23
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["tiktok addiction", "stop scrolling tiktok", "reduce tiktok usage", "mindful social media", "digital wellbeing"]
@@ -108,10 +109,12 @@ You don't have to quit TikTok to take back your time. You just have to make ever
 ---
 
 **Related Reading:**
+- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
+- [Stop Twitter Doomscrolling: Practical Strategies](/blog/stop-twitter-doomscrolling)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
 - [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
 - [How to Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
 - [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
 
 Take our free [Phone Addiction Quiz](/quiz) to assess your TikTok habits and get personalized recommendations.

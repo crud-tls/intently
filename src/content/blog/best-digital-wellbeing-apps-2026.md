@@ -5,7 +5,7 @@ pubDate: "Jan 12 2026"
 updatedDate: 2026-02-26
 heroImage: "/blog-placeholder-2.jpg"
 author: "Intently Team"
-tags: ["digital wellbeing", "screen time apps", "app reviews", "mindful tech", "productivity"]
+tags: ["digital wellbeing", "screen time apps", "app reviews", "mindful tech", "productivity", "mindful phone app free"]
 ---
 
 The digital wellbeing space has gotten crowded, and honestly, most of the apps in it blur together. So we spent time with eight that are actually worth talking about -- each with a genuinely different philosophy on how to help you use your phone less (or at least more intentionally).
