@@ -2,7 +2,7 @@
 title: "How Much Screen Time Is Too Much? What Research Actually Says"
 description: "Wondering how much screen time is too much? Explore what research actually says about healthy screen time limits for adults, teens, and children, and learn how to find your personal balance."
 pubDate: 2026-02-01
-updatedDate: 2026-02-26
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["how much screen time is too much", "screen time recommendations", "healthy screen time", "screen time limits", "digital wellbeing"]

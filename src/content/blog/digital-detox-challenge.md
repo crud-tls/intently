@@ -2,6 +2,7 @@
 title: "30-Day Digital Detox Challenge: Step-by-Step Guide"
 description: "Take the 30-day digital detox challenge with weekly themes, daily mini-challenges, and proven strategies. Transform your phone habits step by step without going cold turkey."
 pubDate: 2026-02-01
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["digital detox challenge", "30 day digital detox", "digital detox guide", "screen time challenge", "digital wellbeing"]
@@ -31,6 +32,14 @@ howToSteps:
 ---
 
 # 30-Day Digital Detox Challenge: A Practical Guide to Healthier Phone Use
+
+## What Is a Digital Detox?
+
+A digital detox is a deliberate period of reduced or eliminated recreational screen time — stepping back from social media, mindless browsing, and habitual phone checking to reset your relationship with technology. Unlike going cold turkey forever, a detox is temporary and structured. The goal isn't to swear off screens permanently. It's to break the autopilot, build awareness of your habits, and create space for intentional use going forward.
+
+Think of it like a dietary reset. You're not eliminating food — you're eliminating the junk to see how you feel without it, and then reintroducing things deliberately based on what actually adds value to your life. A digital detox works the same way: reduce the noise, notice the difference, and rebuild your tech habits from a place of awareness rather than compulsion.
+
+Most people who complete a digital detox report better sleep, reduced anxiety, improved focus, and a surprising amount of reclaimed free time. The challenge below gives you a day-by-day structure to get there without relying on willpower alone.
 
 If you've ever caught yourself opening Instagram for no reason, closing it, and then immediately opening it again -- you know the feeling. Most of us use our phones far more than we'd like to, and the usual advice ("just put it down!") doesn't really help.
 

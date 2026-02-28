@@ -2,6 +2,7 @@
 title: "Be More Productive Without Deleting Social Media"
 description: "Be more productive without deleting social media. Learn how to use social media mindfully, avoid distraction, and maintain connections while maximizing your productivity."
 pubDate: 2026-01-23
+updatedDate: 2026-02-28
 author: "Intently Team"
 section: "Digital Wellbeing"
 tags: ["productive without deleting social media", "mindful social media use", "social media productivity", "work focus", "digital wellbeing"]
@@ -118,6 +119,22 @@ It sounds minor, but this deliberate shift tells your brain that social media ti
 Evening -- Social media on your own terms, without work guilt.
 
 Total social media time: about 35 minutes. Total productivity lost to random checking: close to zero.
+
+## How to Be More Present With Your Phone
+
+Productivity is one side of the coin. The other is presence — being fully engaged in whatever you're doing, whether that's a conversation, a meal, a walk, or just sitting quietly. Social media erodes presence not just during work, but during the moments that make up your actual life.
+
+You've probably experienced it: you're at dinner with a friend and catch yourself thinking about a post you saw. You're playing with your kids and your hand drifts toward your pocket. You're watching a movie and realize you missed the last 10 minutes because you were scrolling. These aren't productivity problems — they're presence problems.
+
+**Practice the single-activity rule.** When you're doing something, do only that thing. Eating? Just eat. Talking to someone? Just talk. Walking? Just walk. This sounds basic, but for most phone users it's surprisingly difficult — and surprisingly rewarding. The richness of single-focus experience is something many people haven't felt in years.
+
+**Leave your phone behind.** Not everywhere, but deliberately. Go for a walk without it. Have a meal without it on the table. Sit in your backyard for 10 minutes with nothing but your thoughts. These micro-experiences of phone-free presence reset your baseline and remind your brain what undivided attention feels like.
+
+**Notice the reach.** Throughout the day, notice when your hand moves toward your phone. Don't judge it — just notice. "There's the reach." That awareness alone starts to create space between impulse and action. Many people discover they reach for their phone 50-80 times a day, and the vast majority of those reaches are pure reflex.
+
+**Be honest about what you're avoiding.** Sometimes we reach for our phones because the present moment is uncomfortable — a difficult conversation, a boring task, an uncertain silence. The phone becomes an escape hatch from discomfort. Recognizing this pattern is the first step to sitting with discomfort instead of numbing it — and that capacity for discomfort is what makes presence possible.
+
+Presence isn't just about being a better friend or partner (though it helps). It's about experiencing your own life with the volume turned up. When you're fully present, food tastes better, conversations feel richer, and time moves differently. These aren't poetic exaggerations — they're what people consistently report when they reduce the constant background noise of their phones.
 
 ## Tools for the Approach
 
