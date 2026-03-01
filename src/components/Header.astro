@@ -14,7 +14,17 @@ import { SITE_TITLE } from '../consts';
 			<HeaderLink href="/download">Download</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
-			<HeaderLink href="/quiz">Quiz</HeaderLink>
+			<div class="tools-dropdown">
+				<button class="tools-trigger" aria-expanded="false" aria-haspopup="true">
+					Tools
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</button>
+				<div class="tools-menu" role="menu">
+					<a href="/quiz" role="menuitem">Phone Addiction Quiz</a>
+					<a href="/screen-time-calculator" role="menuitem">Screen Time Calculator</a>
+					<a href="/app-addiction-score" role="menuitem">App Addiction Score</a>
+				</div>
+			</div>
 			<HeaderLink href="/contact">Contact</HeaderLink>
 		</div>
 		<div class="cta-links">
@@ -37,7 +47,12 @@ import { SITE_TITLE } from '../consts';
 		<HeaderLink href="/download">Download</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="/quiz">Quiz</HeaderLink>
+		<div class="mobile-tools-section">
+			<span class="mobile-tools-label">Tools</span>
+			<HeaderLink href="/quiz">Phone Addiction Quiz</HeaderLink>
+			<HeaderLink href="/screen-time-calculator">Screen Time Calculator</HeaderLink>
+			<HeaderLink href="/app-addiction-score">App Addiction Score</HeaderLink>
+		</div>
 		<HeaderLink href="/contact">Contact</HeaderLink>
 		<HeaderLink href="/download" class="download-cta">Get the App</HeaderLink>
 	</div>
@@ -96,6 +111,22 @@ import { SITE_TITLE } from '../consts';
 		if (event.key === 'Escape' && mobileNav.classList.contains('open')) {
 			toggleMenu();
 		}
+	});
+
+	// Tools dropdown
+	const toolsTrigger = document.querySelector('.tools-trigger');
+	const toolsMenu = document.querySelector('.tools-menu');
+
+	toolsTrigger?.addEventListener('click', (e) => {
+		e.stopPropagation();
+		const isOpen = toolsTrigger.getAttribute('aria-expanded') === 'true';
+		toolsTrigger.setAttribute('aria-expanded', (!isOpen).toString());
+		toolsMenu?.classList.toggle('open', !isOpen);
+	});
+
+	document.addEventListener('click', () => {
+		toolsTrigger?.setAttribute('aria-expanded', 'false');
+		toolsMenu?.classList.remove('open');
 	});
 
 	// Hide header on scroll down, show on scroll up
@@ -385,6 +416,99 @@ import { SITE_TITLE } from '../consts';
 		nav {
 			max-width: 90%;
 		}
+	}
+
+	/* Tools dropdown */
+	.tools-dropdown {
+		position: relative;
+	}
+
+	.tools-trigger {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		padding: 0.625rem 0.875rem;
+		color: var(--intently-text-secondary);
+		border-radius: 0.625rem;
+		transition: all var(--intently-transition-fast);
+		font-weight: 500;
+		font-size: 0.9375rem;
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-family: inherit;
+	}
+
+	.tools-trigger:hover,
+	.tools-trigger[aria-expanded="true"] {
+		color: var(--intently-blue);
+		background: rgba(59, 130, 246, 0.08);
+	}
+
+	.tools-trigger svg {
+		transition: transform 0.2s ease;
+	}
+
+	.tools-trigger[aria-expanded="true"] svg {
+		transform: rotate(180deg);
+	}
+
+	.tools-menu {
+		display: none;
+		position: absolute;
+		top: calc(100% + 0.5rem);
+		left: 50%;
+		transform: translateX(-50%);
+		min-width: 220px;
+		padding: 0.5rem;
+		background: color-mix(in srgb, var(--intently-bg-primary) 85%, transparent);
+		backdrop-filter: blur(16px);
+		-webkit-backdrop-filter: blur(16px);
+		border: 1px solid color-mix(in srgb, var(--intently-bg-primary) 30%, transparent);
+		border-radius: 0.75rem;
+		box-shadow: var(--intently-shadow-lg);
+		z-index: 200;
+	}
+
+	.tools-menu.open {
+		display: block;
+	}
+
+	.tools-menu a {
+		display: block;
+		padding: 0.625rem 0.875rem;
+		color: var(--intently-text-secondary);
+		text-decoration: none;
+		border-radius: 0.5rem;
+		font-size: 0.875rem;
+		font-weight: 500;
+		transition: all var(--intently-transition-fast);
+		white-space: nowrap;
+	}
+
+	.tools-menu a:hover {
+		color: var(--intently-blue);
+		background: rgba(59, 130, 246, 0.08);
+	}
+
+	/* Mobile tools section */
+	.mobile-tools-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mobile-tools-label {
+		padding: 0.875rem 0 0.25rem;
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--intently-text-hint);
+	}
+
+	.mobile-tools-section a {
+		padding-left: 0.75rem;
+		font-size: 1rem;
 	}
 
 	/* Mobile: hide desktop nav, show hamburger */

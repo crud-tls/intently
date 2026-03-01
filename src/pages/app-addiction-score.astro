@@ -1,0 +1,2076 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/ui/Button.astro';
+import ScrollReveal from '../components/ui/ScrollReveal.astro';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+
+const faqs = [
+	{
+		question: "How is the app addiction score calculated?",
+		answer: "The score is based on 6 scientifically-recognized addiction factors: infinite scroll, variable rewards, push notifications, autoplay, social comparison, and dark patterns. Each app is rated on these factors, and a weighted average produces the overall toxicity score (0-100)."
+	},
+	{
+		question: "Is TikTok more addictive than Instagram?",
+		answer: "Based on our scoring model, TikTok typically scores higher due to its heavy use of variable reward algorithms, infinite scroll, and autoplay. However, Instagram also scores high due to social comparison features and notification strategies. Both use multiple addiction mechanisms."
+	},
+	{
+		question: "What are dark patterns in apps?",
+		answer: "Dark patterns are design choices that manipulate users into behaviors they wouldn't otherwise choose — like hiding unsubscribe buttons, using guilt-trip language when you try to leave, auto-opting you into notifications, or making it confusing to delete your account."
+	},
+	{
+		question: "Can I actually become addicted to an app?",
+		answer: "Yes. Behavioral addiction to apps is well-documented in psychology research. Apps use variable reward schedules (like slot machines), social validation loops, and infinite content feeds that trigger dopamine responses, creating compulsive usage patterns."
+	}
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="App Addiction Score: How Toxic Are Your Apps? (Free Test) | Intently"
+			description="Get your free digital toxicity report. See how addictive your apps really are with FDA-style nutrition labels and RPG trading cards. Science-backed scoring across 6 addiction factors. 100% private."
+		/>
+		<FAQSchema faqs={faqs} />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "App Addiction Score", url: "https://liveintently.app/app-addiction-score" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Hero -->
+			<section class="score-hero">
+				<div class="hero-glow" aria-hidden="true"></div>
+				<div class="container">
+					<h1 class="text-gradient">App Addiction Score</h1>
+					<p class="hero-subtitle">How toxic are your apps? Get your free Digital Toxicity Report</p>
+					<div class="quiz-meta-pills">
+						<span class="meta-pill">Science-backed</span>
+						<span class="meta-pill">6 addiction factors</span>
+						<span class="meta-pill">100% private</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- Main content -->
+			<section class="score-section">
+				<div class="container">
+					<ScrollReveal animation="fadeUp">
+						<div class="score-glass-card">
+
+							<!-- Phase 1: App Selection -->
+							<div id="phase-select" class="phase">
+								<h2 class="phase-title">Select your apps</h2>
+								<p class="phase-hint">Choose 3-8 apps you use regularly</p>
+
+								<div class="app-select-grid" role="group" aria-label="Select apps to analyze">
+								</div>
+
+								<div id="analyze-bar" class="analyze-bar" style="display:none;">
+									<span id="selected-count">0 selected</span>
+									<button id="analyze-btn" class="analyze-btn">Analyze My Apps</button>
+								</div>
+							</div>
+
+							<!-- Phase 2: Scanning Animation -->
+							<div id="phase-scan" class="phase" style="display:none;">
+								<div class="scan-container">
+									<div class="scan-label">Analyzing your apps...</div>
+									<div id="scan-icon" class="scan-icon"></div>
+									<div id="scan-name" class="scan-name"></div>
+									<div class="scan-ring" aria-hidden="true">
+										<svg viewBox="0 0 100 100">
+											<circle cx="50" cy="50" r="45" fill="none" stroke="rgba(33,150,243,0.15)" stroke-width="4" />
+											<circle cx="50" cy="50" r="45" fill="none" stroke="var(--intently-blue)" stroke-width="4"
+												stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round"
+												class="scan-progress" />
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<!-- Phase 3: Results -->
+							<div id="phase-results" class="phase" style="display:none;">
+
+								<!-- Overall Score Gauge -->
+								<div class="gauge-section">
+									<div class="gauge-overline">Your Digital Toxicity Score</div>
+									<div class="gauge-container">
+										<svg viewBox="0 0 200 120" class="gauge-svg" aria-label="Toxicity score gauge">
+											<defs>
+												<linearGradient id="gauge-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+													<stop offset="0%" stop-color="var(--intently-green)" />
+													<stop offset="40%" stop-color="var(--intently-orange)" />
+													<stop offset="100%" stop-color="var(--intently-red)" />
+												</linearGradient>
+											</defs>
+											<!-- Background arc -->
+											<path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="14" stroke-linecap="round" />
+											<!-- Value arc -->
+											<path id="gauge-arc" d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#gauge-grad)" stroke-width="14" stroke-linecap="round"
+												stroke-dasharray="251" stroke-dashoffset="251" />
+											<!-- Score text -->
+											<text x="100" y="85" text-anchor="middle" fill="currentColor" class="gauge-score-text" id="gauge-score">0</text>
+											<text x="100" y="105" text-anchor="middle" fill="currentColor" class="gauge-label-text" id="gauge-label">Calculating...</text>
+										</svg>
+									</div>
+								</div>
+
+								<!-- View toggle -->
+								<div class="view-toggle">
+									<button class="toggle-btn active" data-view="nutrition" aria-pressed="true">Nutrition Labels</button>
+									<button class="toggle-btn" data-view="trading" aria-pressed="false">Trading Cards</button>
+								</div>
+
+								<!-- Nutrition Label Cards -->
+								<div id="nutrition-view" class="cards-view"></div>
+
+								<!-- Trading Card View -->
+								<div id="trading-view" class="cards-view" style="display:none;"></div>
+
+								<!-- Top Risk Factors -->
+								<div class="risk-section">
+									<h3 class="risk-title">Your Top 3 Risk Factors</h3>
+									<div id="risk-factors" class="risk-factors"></div>
+								</div>
+
+								<!-- Recommendations -->
+								<div class="recs-section">
+									<h3 class="recs-title">Personalized Tips</h3>
+									<div id="recs-list" class="recs-list"></div>
+								</div>
+
+								<!-- Share & CTA -->
+								<div class="share-section">
+									<button id="share-copy-score" class="share-btn share-copy" aria-label="Copy link">Copy Link</button>
+								</div>
+
+								<div class="cta-buttons">
+									<Button href="/download" variant="primary" size="lg">Try Intently Free</Button>
+									<Button href="/screen-time-calculator" variant="secondary" size="lg">Calculate Your Screen Time</Button>
+								</div>
+
+								<button id="retake-score" class="retake-button">Start Over</button>
+							</div>
+						</div>
+					</ScrollReveal>
+
+					<!-- Cross-links -->
+					<ScrollReveal animation="fadeUp">
+						<div class="cross-links-card">
+							<h3>More Tools</h3>
+							<div class="tools-grid">
+								<a href="/screen-time-calculator" class="tool-link">
+									<span class="tool-link-icon">📊</span>
+									<span class="tool-link-text">
+										<strong>Screen Time Calculator</strong>
+										<span>Your lifetime on screens</span>
+									</span>
+								</a>
+								<a href="/quiz" class="tool-link">
+									<span class="tool-link-icon">📋</span>
+									<span class="tool-link-text">
+										<strong>Phone Addiction Quiz</strong>
+										<span>8 science-backed questions</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</ScrollReveal>
+
+					<!-- FAQ -->
+					<ScrollReveal animation="fadeUp">
+						<div class="info-glass-card">
+							<h3>About This Tool</h3>
+							<p>This digital toxicity score is based on publicly available research into app design patterns and behavioral psychology. Each app is scored on 6 addiction factors. All calculations happen in your browser — no data is stored or sent anywhere.</p>
+
+							<h3>Frequently Asked Questions</h3>
+							{faqs.map((faq) => (
+								<details class="faq-glass-item">
+									<summary>{faq.question}</summary>
+									<p>{faq.answer}</p>
+								</details>
+							))}
+
+							<div class="quiz-links">
+								<p>Explore the <a href="/blog/psychology-of-app-addiction">psychology of app addiction</a>, learn about <a href="/blog/mindful-tech-interventions-vs-blocking">mindful interventions vs blocking</a>, or <a href="/download">download Intently free</a>.</p>
+							</div>
+						</div>
+					</ScrollReveal>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+
+		<script>
+			// ===== APP DATABASE =====
+			interface AppData {
+				name: string;
+				icon: string;
+				color: string;
+				avgMinutes: number;
+				scores: { infiniteScroll: number; variableRewards: number; notifications: number; autoplay: number; socialComparison: number; darkPatterns: number; };
+			}
+
+			const appsDB: Record<string, AppData> = {
+				tiktok: {
+					name: 'TikTok', icon: '🎵', color: '#00f2ea', avgMinutes: 52,
+					scores: { infiniteScroll: 98, variableRewards: 95, notifications: 82, autoplay: 98, socialComparison: 70, darkPatterns: 75 }
+				},
+				instagram: {
+					name: 'Instagram', icon: '📸', color: '#E1306C', avgMinutes: 45,
+					scores: { infiniteScroll: 92, variableRewards: 88, notifications: 85, autoplay: 80, socialComparison: 95, darkPatterns: 72 }
+				},
+				youtube: {
+					name: 'YouTube', icon: '▶️', color: '#FF0000', avgMinutes: 48,
+					scores: { infiniteScroll: 85, variableRewards: 80, notifications: 78, autoplay: 95, socialComparison: 40, darkPatterns: 65 }
+				},
+				facebook: {
+					name: 'Facebook', icon: '👤', color: '#1877F2', avgMinutes: 35,
+					scores: { infiniteScroll: 90, variableRewards: 82, notifications: 90, autoplay: 85, socialComparison: 88, darkPatterns: 80 }
+				},
+				x: {
+					name: 'X / Twitter', icon: '𝕏', color: '#1DA1F2', avgMinutes: 34,
+					scores: { infiniteScroll: 88, variableRewards: 85, notifications: 80, autoplay: 70, socialComparison: 75, darkPatterns: 60 }
+				},
+				reddit: {
+					name: 'Reddit', icon: '🤖', color: '#FF4500', avgMinutes: 38,
+					scores: { infiniteScroll: 95, variableRewards: 90, notifications: 55, autoplay: 60, socialComparison: 45, darkPatterns: 50 }
+				},
+				snapchat: {
+					name: 'Snapchat', icon: '👻', color: '#FFFC00', avgMinutes: 30,
+					scores: { infiniteScroll: 65, variableRewards: 80, notifications: 88, autoplay: 55, socialComparison: 82, darkPatterns: 78 }
+				},
+				whatsapp: {
+					name: 'WhatsApp', icon: '💬', color: '#25D366', avgMinutes: 28,
+					scores: { infiniteScroll: 30, variableRewards: 50, notifications: 85, autoplay: 20, socialComparison: 35, darkPatterns: 40 }
+				},
+				netflix: {
+					name: 'Netflix', icon: '🎬', color: '#E50914', avgMinutes: 60,
+					scores: { infiniteScroll: 70, variableRewards: 65, notifications: 60, autoplay: 98, socialComparison: 15, darkPatterns: 70 }
+				},
+				spotify: {
+					name: 'Spotify', icon: '🎧', color: '#1DB954', avgMinutes: 45,
+					scores: { infiniteScroll: 40, variableRewards: 55, notifications: 50, autoplay: 85, socialComparison: 30, darkPatterns: 45 }
+				},
+				pinterest: {
+					name: 'Pinterest', icon: '📌', color: '#E60023', avgMinutes: 25,
+					scores: { infiniteScroll: 92, variableRewards: 75, notifications: 65, autoplay: 40, socialComparison: 60, darkPatterns: 55 }
+				},
+				linkedin: {
+					name: 'LinkedIn', icon: '💼', color: '#0A66C2', avgMinutes: 20,
+					scores: { infiniteScroll: 80, variableRewards: 70, notifications: 88, autoplay: 60, socialComparison: 85, darkPatterns: 72 }
+				},
+				telegram: {
+					name: 'Telegram', icon: '✈️', color: '#26A5E4', avgMinutes: 22,
+					scores: { infiniteScroll: 35, variableRewards: 45, notifications: 80, autoplay: 25, socialComparison: 20, darkPatterns: 30 }
+				},
+				twitch: {
+					name: 'Twitch', icon: '🎮', color: '#9146FF', avgMinutes: 55,
+					scores: { infiniteScroll: 75, variableRewards: 85, notifications: 70, autoplay: 90, socialComparison: 50, darkPatterns: 65 }
+				},
+				discord: {
+					name: 'Discord', icon: '🎙️', color: '#5865F2', avgMinutes: 40,
+					scores: { infiniteScroll: 50, variableRewards: 65, notifications: 90, autoplay: 30, socialComparison: 40, darkPatterns: 45 }
+				},
+				threads: {
+					name: 'Threads', icon: '🧵', color: '#000000', avgMinutes: 18,
+					scores: { infiniteScroll: 90, variableRewards: 80, notifications: 75, autoplay: 50, socialComparison: 78, darkPatterns: 60 }
+				},
+			};
+
+			const factorWeights: Record<string, number> = {
+				infiniteScroll: 0.20, variableRewards: 0.25, notifications: 0.15,
+				autoplay: 0.15, socialComparison: 0.15, darkPatterns: 0.10
+			};
+
+			const factorLabels: Record<string, string> = {
+				infiniteScroll: 'Infinite Scroll', variableRewards: 'Variable Rewards',
+				notifications: 'Push Notifications', autoplay: 'Autoplay',
+				socialComparison: 'Social Comparison', darkPatterns: 'Dark Patterns'
+			};
+
+			const factorTips: Record<string, string> = {
+				infiniteScroll: 'Set a timer before opening apps with infinite feeds. Intently can create a mindful pause before you start scrolling.',
+				variableRewards: 'Turn off like counts and follower notifications. The unpredictability of rewards is what makes them addictive.',
+				notifications: 'Disable all non-essential notifications. Keep only messages from real people, not engagement bait.',
+				autoplay: 'Turn off autoplay in every app that has it. Make the next video a conscious choice, not a default.',
+				socialComparison: 'Remember that feeds are highlight reels. Unfollow accounts that make you feel inadequate.',
+				darkPatterns: 'Be aware of manipulation tactics. If an app makes it hard to leave or guilts you for reducing usage, that\'s a red flag.'
+			};
+
+			function computeAppScore(app: AppData): number {
+				return Math.round(
+					app.scores.infiniteScroll * factorWeights.infiniteScroll +
+					app.scores.variableRewards * factorWeights.variableRewards +
+					app.scores.notifications * factorWeights.notifications +
+					app.scores.autoplay * factorWeights.autoplay +
+					app.scores.socialComparison * factorWeights.socialComparison +
+					app.scores.darkPatterns * factorWeights.darkPatterns
+				);
+			}
+
+			function getRarity(score: number): { label: string; class: string } {
+				if (score >= 85) return { label: 'LEGENDARY', class: 'rarity-legendary' };
+				if (score >= 70) return { label: 'RARE', class: 'rarity-rare' };
+				if (score >= 50) return { label: 'UNCOMMON', class: 'rarity-uncommon' };
+				return { label: 'COMMON', class: 'rarity-common' };
+			}
+
+			function getLevel(score: number): { label: string; color: string } {
+				if (score >= 76) return { label: 'Critical', color: 'var(--intently-red)' };
+				if (score >= 51) return { label: 'High', color: 'var(--intently-orange)' };
+				if (score >= 26) return { label: 'Moderate', color: 'var(--intently-orange)' };
+				return { label: 'Low', color: 'var(--intently-green)' };
+			}
+
+			function getIntensity(val: number): string {
+				if (val >= 80) return 'HIGH';
+				if (val >= 50) return 'MED';
+				return 'LOW';
+			}
+
+			function getFOMO(app: AppData): string {
+				const fomoScore = (app.scores.socialComparison + app.scores.notifications + app.scores.variableRewards) / 3;
+				if (fomoScore >= 80) return 'SEVERE';
+				if (fomoScore >= 60) return 'HIGH';
+				if (fomoScore >= 40) return 'MODERATE';
+				return 'LOW';
+			}
+
+			// ===== RENDER APP GRID =====
+			const grid = document.querySelector('.app-select-grid')!;
+			const selectedApps: string[] = [];
+
+			Object.entries(appsDB).forEach(([key, app]) => {
+				const score = computeAppScore(app);
+				const level = getLevel(score);
+				const btn = document.createElement('button');
+				btn.className = 'app-select-card';
+				btn.dataset.app = key;
+				btn.setAttribute('aria-pressed', 'false');
+				btn.style.setProperty('--app-border', level.color);
+				btn.innerHTML = `
+					<span class="asc-icon">${app.icon}</span>
+					<span class="asc-name">${app.name}</span>
+				`;
+				btn.addEventListener('click', () => toggleApp(key, btn));
+				grid.appendChild(btn);
+			});
+
+			function toggleApp(key: string, btn: Element) {
+				const idx = selectedApps.indexOf(key);
+				if (idx > -1) {
+					selectedApps.splice(idx, 1);
+					btn.classList.remove('selected');
+					btn.setAttribute('aria-pressed', 'false');
+				} else if (selectedApps.length < 8) {
+					selectedApps.push(key);
+					btn.classList.add('selected');
+					btn.setAttribute('aria-pressed', 'true');
+				}
+				updateAnalyzeBar();
+			}
+
+			function updateAnalyzeBar() {
+				const bar = document.getElementById('analyze-bar')!;
+				const count = document.getElementById('selected-count')!;
+				if (selectedApps.length >= 3) {
+					bar.style.display = '';
+					count.textContent = `${selectedApps.length} selected`;
+				} else {
+					bar.style.display = 'none';
+				}
+			}
+
+			// ===== ANALYZE =====
+			document.getElementById('analyze-btn')!.addEventListener('click', startScan);
+
+			async function startScan() {
+				document.getElementById('phase-select')!.style.display = 'none';
+				document.getElementById('phase-scan')!.style.display = '';
+
+				const scanIcon = document.getElementById('scan-icon')!;
+				const scanName = document.getElementById('scan-name')!;
+				const scanProgress = document.querySelector('.scan-progress') as SVGCircleElement;
+				const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+				for (let i = 0; i < selectedApps.length; i++) {
+					const app = appsDB[selectedApps[i]];
+					scanIcon.textContent = app.icon;
+					scanName.textContent = app.name;
+
+					// Animate progress
+					const pct = ((i + 1) / selectedApps.length);
+					const offset = 283 - (283 * pct);
+					scanProgress.style.strokeDashoffset = offset.toString();
+
+					if (prefersReducedMotion) {
+						await new Promise(r => setTimeout(r, 300));
+					} else {
+						await new Promise(r => setTimeout(r, 1200));
+					}
+				}
+
+				await new Promise(r => setTimeout(r, prefersReducedMotion ? 200 : 600));
+				showResults();
+			}
+
+			function showResults() {
+				document.getElementById('phase-scan')!.style.display = 'none';
+				document.getElementById('phase-results')!.style.display = '';
+
+				// Compute overall
+				const scores = selectedApps.map(k => computeAppScore(appsDB[k]));
+				const overall = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+				const level = getLevel(overall);
+
+				// Animate gauge
+				const gaugeArc = document.getElementById('gauge-arc')!;
+				const gaugeScore = document.getElementById('gauge-score')!;
+				const gaugeLabel = document.getElementById('gauge-label')!;
+				const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+				const targetOffset = 251 - (251 * overall / 100);
+
+				if (prefersReducedMotion) {
+					gaugeArc.style.strokeDashoffset = targetOffset.toString();
+					gaugeScore.textContent = overall.toString();
+				} else {
+					gaugeArc.style.transition = 'stroke-dashoffset 1.5s ease-out';
+					requestAnimationFrame(() => {
+						gaugeArc.style.strokeDashoffset = targetOffset.toString();
+					});
+					// Animate number
+					const dur = 1500;
+					const start = performance.now();
+					function tickGauge(now: number) {
+						const p = Math.min((now - start) / dur, 1);
+						const eased = 1 - Math.pow(1 - p, 3);
+						gaugeScore.textContent = Math.round(overall * eased).toString();
+						if (p < 1) requestAnimationFrame(tickGauge);
+					}
+					requestAnimationFrame(tickGauge);
+				}
+				gaugeLabel.textContent = level.label;
+				gaugeLabel.style.fill = level.color;
+
+				// Nutrition labels
+				renderNutritionCards();
+				// Trading cards
+				renderTradingCards();
+				// Risk factors
+				renderRiskFactors();
+				// Recommendations
+				renderRecommendations();
+
+				// URL hash
+				history.replaceState(null, '', `#apps=${selectedApps.join(',')}`);
+			}
+
+			function renderNutritionCards() {
+				const container = document.getElementById('nutrition-view')!;
+				container.innerHTML = '';
+
+				selectedApps.forEach(key => {
+					const app = appsDB[key];
+					const score = computeAppScore(app);
+					const fomo = getFOMO(app);
+
+					const card = document.createElement('div');
+					card.className = 'nutrition-card';
+					card.innerHTML = `
+						<div class="nut-header" style="border-color:${app.color}">
+							<div class="nut-title">DIGITAL NUTRITION FACTS</div>
+							<div class="nut-app">${app.icon} ${app.name}</div>
+						</div>
+						<div class="nut-body">
+							<div class="nut-score-row">
+								<span>Toxicity Score</span>
+								<strong>${score}/100</strong>
+							</div>
+							<div class="nut-serving">
+								<span>Serving Size</span>
+								<span>avg ${app.avgMinutes} min/day</span>
+							</div>
+							<div class="nut-divider"></div>
+							<div class="nut-table-header">
+								<span></span>
+								<span>Amount</span>
+								<span>% DV</span>
+							</div>
+							${Object.entries(app.scores).map(([factor, val]) => `
+								<div class="nut-row">
+									<span class="nut-factor">${factorLabels[factor]}</span>
+									<span class="nut-amount nut-${getIntensity(val).toLowerCase()}">${getIntensity(val)}</span>
+									<span class="nut-pct">${val}%</span>
+								</div>
+							`).join('')}
+							<div class="nut-divider"></div>
+							<div class="nut-fomo">
+								<span>FOMO Risk:</span>
+								<strong class="fomo-${fomo.toLowerCase()}">${fomo}</strong>
+							</div>
+							<div class="nut-footnote">% DV = % of Daily Vulnerability</div>
+						</div>
+					`;
+					container.appendChild(card);
+				});
+			}
+
+			function renderTradingCards() {
+				const container = document.getElementById('trading-view')!;
+				container.innerHTML = '';
+
+				selectedApps.forEach(key => {
+					const app = appsDB[key];
+					const score = computeAppScore(app);
+					const rarity = getRarity(score);
+
+					// RPG stats
+					const addictionPower = Math.round(score / 10);
+					const timeDrain = Math.round(app.avgMinutes / 7);
+					const fomoFactor = Math.round(((app.scores.socialComparison + app.scores.notifications) / 2) / 10);
+					const escapability = Math.max(1, 10 - Math.round(score / 12));
+
+					// Top 2 types
+					const sortedFactors = Object.entries(app.scores).sort((a, b) => b[1] - a[1]);
+					const types = sortedFactors.slice(0, 2).map(([f]) => factorLabels[f]);
+
+					const card = document.createElement('div');
+					card.className = `trading-card ${rarity.class}`;
+					card.innerHTML = `
+						<div class="tc-rarity">${rarity.label}</div>
+						<div class="tc-icon">${app.icon}</div>
+						<div class="tc-name">${app.name}</div>
+						<div class="tc-types">
+							${types.map(t => `<span class="tc-type">${t}</span>`).join('')}
+						</div>
+						<div class="tc-stats">
+							<div class="tc-stat">
+								<span class="tc-stat-label">Addiction Power</span>
+								<div class="tc-stat-bar"><div class="tc-stat-fill" style="width:${addictionPower * 10}%"></div></div>
+								<span class="tc-stat-val">${addictionPower}/10</span>
+							</div>
+							<div class="tc-stat">
+								<span class="tc-stat-label">Time Drain</span>
+								<div class="tc-stat-bar"><div class="tc-stat-fill" style="width:${timeDrain * 10}%"></div></div>
+								<span class="tc-stat-val">${timeDrain}/10</span>
+							</div>
+							<div class="tc-stat">
+								<span class="tc-stat-label">FOMO Factor</span>
+								<div class="tc-stat-bar"><div class="tc-stat-fill" style="width:${fomoFactor * 10}%"></div></div>
+								<span class="tc-stat-val">${fomoFactor}/10</span>
+							</div>
+							<div class="tc-stat">
+								<span class="tc-stat-label">Escapability</span>
+								<div class="tc-stat-bar tc-escape"><div class="tc-stat-fill tc-escape-fill" style="width:${escapability * 10}%"></div></div>
+								<span class="tc-stat-val">${escapability}/10</span>
+							</div>
+						</div>
+						<div class="tc-score">Score: ${score}/100</div>
+					`;
+					container.appendChild(card);
+				});
+			}
+
+			function renderRiskFactors() {
+				const container = document.getElementById('risk-factors')!;
+				container.innerHTML = '';
+
+				// Aggregate factor scores
+				const totals: Record<string, number> = {};
+				const factors = Object.keys(factorLabels);
+				factors.forEach(f => { totals[f] = 0; });
+
+				selectedApps.forEach(key => {
+					const app = appsDB[key];
+					factors.forEach(f => {
+						totals[f] += (app.scores as any)[f];
+					});
+				});
+
+				// Average and sort
+				const avgFactors = factors.map(f => ({
+					key: f,
+					label: factorLabels[f],
+					avg: Math.round(totals[f] / selectedApps.length)
+				})).sort((a, b) => b.avg - a.avg);
+
+				avgFactors.slice(0, 3).forEach(f => {
+					const el = document.createElement('div');
+					el.className = 'risk-item';
+					el.innerHTML = `
+						<div class="risk-bar-wrap">
+							<span class="risk-label">${f.label}</span>
+							<div class="risk-bar"><div class="risk-bar-fill" style="width:${f.avg}%"></div></div>
+							<span class="risk-score">${f.avg}%</span>
+						</div>
+					`;
+					container.appendChild(el);
+				});
+			}
+
+			function renderRecommendations() {
+				const container = document.getElementById('recs-list')!;
+				container.innerHTML = '';
+
+				// Find top 3 factors
+				const totals: Record<string, number> = {};
+				Object.keys(factorLabels).forEach(f => { totals[f] = 0; });
+				selectedApps.forEach(key => {
+					const app = appsDB[key];
+					Object.keys(factorLabels).forEach(f => {
+						totals[f] += (app.scores as any)[f];
+					});
+				});
+
+				const topFactors = Object.entries(totals)
+					.sort((a, b) => b[1] - a[1])
+					.slice(0, 3)
+					.map(([f]) => f);
+
+				topFactors.forEach(f => {
+					const el = document.createElement('div');
+					el.className = 'rec-item';
+					el.innerHTML = `
+						<span class="rec-check">&#10003;</span>
+						<span class="rec-text">${factorTips[f]}</span>
+					`;
+					container.appendChild(el);
+				});
+			}
+
+			// ===== VIEW TOGGLE =====
+			document.querySelectorAll('.toggle-btn').forEach(btn => {
+				btn.addEventListener('click', () => {
+					const view = (btn as HTMLElement).dataset.view!;
+					document.querySelectorAll('.toggle-btn').forEach(b => {
+						b.classList.remove('active');
+						b.setAttribute('aria-pressed', 'false');
+					});
+					btn.classList.add('active');
+					btn.setAttribute('aria-pressed', 'true');
+
+					document.getElementById('nutrition-view')!.style.display = view === 'nutrition' ? '' : 'none';
+					document.getElementById('trading-view')!.style.display = view === 'trading' ? '' : 'none';
+				});
+			});
+
+			// ===== SHARE =====
+			document.getElementById('share-copy-score')!.addEventListener('click', async () => {
+				try {
+					await navigator.clipboard.writeText(window.location.href);
+					const btn = document.getElementById('share-copy-score')!;
+					btn.textContent = 'Copied!';
+					setTimeout(() => { btn.textContent = 'Copy Link'; }, 2000);
+				} catch {}
+			});
+
+			// ===== RETAKE =====
+			document.getElementById('retake-score')!.addEventListener('click', () => {
+				document.getElementById('phase-results')!.style.display = 'none';
+				document.getElementById('phase-select')!.style.display = '';
+				selectedApps.length = 0;
+				document.querySelectorAll('.app-select-card').forEach(c => {
+					c.classList.remove('selected');
+					c.setAttribute('aria-pressed', 'false');
+				});
+				updateAnalyzeBar();
+				history.replaceState(null, '', window.location.pathname);
+			});
+
+			// ===== RESTORE FROM HASH =====
+			function restoreFromHash() {
+				const hash = window.location.hash;
+				if (!hash || !hash.includes('apps=')) return;
+				const params = new URLSearchParams(hash.slice(1));
+				const apps = (params.get('apps') || '').split(',').filter(a => appsDB[a]);
+				if (apps.length < 3) return;
+
+				apps.forEach(key => {
+					selectedApps.push(key);
+					const card = document.querySelector(`[data-app="${key}"]`);
+					if (card) {
+						card.classList.add('selected');
+						card.setAttribute('aria-pressed', 'true');
+					}
+				});
+				updateAnalyzeBar();
+
+				// Skip scan, go directly to results
+				document.getElementById('phase-select')!.style.display = 'none';
+				showResults();
+			}
+
+			restoreFromHash();
+		</script>
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+	}
+
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* ============================
+	   HERO
+	   ============================ */
+	.score-hero {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-secondary) 100%);
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.score-hero::before {
+		content: '';
+		display: block;
+		height: 7rem;
+	}
+
+	.hero-glow {
+		position: absolute;
+		top: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 600px;
+		height: 400px;
+		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		filter: blur(60px);
+		pointer-events: none;
+	}
+
+	.text-gradient {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-subtitle {
+		font-size: 1.125rem;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+	}
+
+	.quiz-meta-pills {
+		display: flex;
+		gap: var(--intently-space-sm);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.meta-pill {
+		display: inline-flex;
+		align-items: center;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--intently-blue);
+		background: rgba(33, 150, 243, 0.08);
+		padding: 0.25rem 0.75rem;
+		border-radius: var(--intently-radius-full);
+		border: 1px solid rgba(33, 150, 243, 0.15);
+	}
+
+	/* ============================
+	   MAIN CARD
+	   ============================ */
+	.score-section {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.score-glass-card {
+		padding: var(--intently-space-2xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	/* Phase common */
+	.phase-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+		margin: 0 0 var(--intently-space-sm);
+		text-align: center;
+	}
+
+	.phase-hint {
+		color: var(--intently-text-hint);
+		margin: 0 0 var(--intently-space-xl);
+		text-align: center;
+		font-size: 0.875rem;
+	}
+
+	/* ============================
+	   APP SELECTION GRID
+	   ============================ */
+	.app-select-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--intently-space-sm);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.app-select-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.375rem;
+		padding: var(--intently-space-md) var(--intently-space-sm);
+		border-radius: 14px;
+		background: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+		border: 2px solid color-mix(in srgb, var(--app-border) 25%, transparent);
+		cursor: pointer;
+		transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+		position: relative;
+	}
+
+	@media (hover: hover) {
+		.app-select-card:hover {
+			transform: translateY(-2px);
+			border-color: var(--app-border);
+			box-shadow: 0 4px 12px color-mix(in srgb, var(--app-border) 12%, transparent);
+		}
+	}
+
+	.app-select-card:active {
+		transform: scale(0.97);
+	}
+
+	.app-select-card.selected {
+		border-color: var(--app-border);
+		background: color-mix(in srgb, var(--app-border) 6%, transparent);
+		box-shadow:
+			0 0 0 3px color-mix(in srgb, var(--app-border) 10%, transparent),
+			0 4px 12px color-mix(in srgb, var(--app-border) 8%, transparent);
+	}
+
+	.app-select-card.selected::after {
+		content: '✓';
+		position: absolute;
+		top: 5px;
+		right: 6px;
+		font-size: 0.625rem;
+		font-weight: 700;
+		color: white;
+		background: var(--app-border);
+		border-radius: 50%;
+		width: 18px;
+		height: 18px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 1px 4px color-mix(in srgb, var(--app-border) 30%, transparent);
+	}
+
+	.asc-icon {
+		font-size: 1.75rem;
+		line-height: 1;
+	}
+
+	.asc-name {
+		font-size: 0.6875rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	/* Analyze bar */
+	.analyze-bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.625rem 0.625rem 0.625rem var(--intently-space-lg);
+		background: rgba(33, 150, 243, 0.05);
+		border-radius: var(--intently-radius-full);
+		border: 1px solid rgba(33, 150, 243, 0.12);
+		animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	@keyframes slideUp {
+		from {
+			opacity: 0;
+			transform: translateY(12px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	#selected-count {
+		font-weight: 600;
+		color: var(--intently-blue);
+		font-size: 0.875rem;
+	}
+
+	.analyze-btn {
+		padding: 0.75rem 2rem;
+		border-radius: var(--intently-radius-full);
+		background: rgba(33, 150, 243, 0.85);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		color: white;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		cursor: pointer;
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.25),
+			0 4px 16px rgba(33, 150, 243, 0.3);
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		min-height: 44px;
+		font-family: inherit;
+	}
+
+	.analyze-btn:hover {
+		background: rgba(33, 150, 243, 0.95);
+		transform: translateY(-2px);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.3),
+			0 8px 24px rgba(33, 150, 243, 0.35);
+	}
+
+	/* ============================
+	   SCANNING
+	   ============================ */
+	.scan-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: var(--intently-space-4xl) 0;
+		position: relative;
+		min-height: 280px;
+		justify-content: center;
+	}
+
+	.scan-label {
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: var(--intently-text-hint);
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	.scan-icon {
+		font-size: 3.5rem;
+		margin-bottom: var(--intently-space-sm);
+		z-index: 1;
+	}
+
+	.scan-name {
+		font-size: 1.125rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+		z-index: 1;
+	}
+
+	.scan-ring {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -55%);
+		width: 140px;
+		height: 140px;
+		animation: pulse 2s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%, 100% {
+			opacity: 1;
+			transform: translate(-50%, -55%) scale(1);
+		}
+		50% {
+			opacity: 0.6;
+			transform: translate(-50%, -55%) scale(1.08);
+		}
+	}
+
+	.scan-ring svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.scan-progress {
+		transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+		transform: rotate(-90deg);
+		transform-origin: center;
+	}
+
+	/* ============================
+	   GAUGE
+	   ============================ */
+	.gauge-section {
+		text-align: center;
+		margin-bottom: var(--intently-space-2xl);
+		animation: revealIn 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	@keyframes revealIn {
+		from {
+			opacity: 0;
+			transform: translateY(24px) scale(0.98);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0) scale(1);
+		}
+	}
+
+	.gauge-overline {
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: var(--intently-blue);
+		margin-bottom: var(--intently-space-lg);
+	}
+
+	.gauge-container {
+		max-width: 260px;
+		margin: 0 auto;
+		padding: var(--intently-space-lg);
+		background: rgba(0, 0, 0, 0.02);
+		border-radius: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.03);
+	}
+
+	.gauge-svg {
+		width: 100%;
+	}
+
+	.gauge-score-text {
+		font-size: 2.5rem;
+		font-weight: 800;
+	}
+
+	.gauge-label-text {
+		font-size: 0.875rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	/* ============================
+	   VIEW TOGGLE
+	   ============================ */
+	.view-toggle {
+		display: flex;
+		justify-content: center;
+		gap: 2px;
+		margin-bottom: var(--intently-space-xl);
+		padding: 3px;
+		background: rgba(0, 0, 0, 0.04);
+		border-radius: var(--intently-radius-full);
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.toggle-btn {
+		padding: 0.5rem 1.25rem;
+		border-radius: var(--intently-radius-full);
+		background: transparent;
+		border: none;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--intently-text-hint);
+		cursor: pointer;
+		transition: all 0.25s ease;
+		min-height: 40px;
+		font-family: inherit;
+	}
+
+	.toggle-btn.active {
+		background: white;
+		color: var(--intently-blue);
+		box-shadow:
+			0 1px 3px rgba(0, 0, 0, 0.08),
+			0 1px 2px rgba(0, 0, 0, 0.04);
+	}
+
+	.toggle-btn:not(.active):hover {
+		color: var(--intently-text-secondary);
+	}
+
+	/* ============================
+	   NUTRITION LABELS
+	   ============================ */
+	.cards-view {
+		display: grid;
+		gap: var(--intently-space-md);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.nutrition-card {
+		border-radius: 14px;
+		overflow: hidden;
+		border: 2px solid rgba(0, 0, 0, 0.08);
+		background: rgba(255, 255, 255, 0.95);
+		font-family: 'Courier New', Courier, monospace;
+		transition: transform 0.2s ease;
+	}
+
+	.nutrition-card:hover {
+		transform: translateY(-2px);
+	}
+
+	.nut-header {
+		padding: var(--intently-space-md) var(--intently-space-md) 0.75rem;
+		border-bottom: 3px solid;
+		background: rgba(0, 0, 0, 0.025);
+	}
+
+	.nut-title {
+		font-size: 0.625rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: var(--intently-text-hint);
+	}
+
+	.nut-app {
+		font-size: 1.0625rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+		margin-top: 0.25rem;
+	}
+
+	.nut-body {
+		padding: 0.75rem var(--intently-space-md) var(--intently-space-md);
+	}
+
+	.nut-score-row,
+	.nut-serving {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.3rem 0;
+		font-size: 0.8125rem;
+	}
+
+	.nut-score-row {
+		font-weight: 700;
+		font-size: 0.9375rem;
+		color: var(--intently-text-primary);
+	}
+
+	.nut-serving {
+		color: var(--intently-text-secondary);
+		font-size: 0.8125rem;
+	}
+
+	.nut-divider {
+		height: 2px;
+		background: var(--intently-text-primary);
+		margin: 0.5rem 0;
+	}
+
+	.nut-table-header {
+		display: grid;
+		grid-template-columns: 1fr 50px 45px;
+		gap: var(--intently-space-sm);
+		font-size: 0.6875rem;
+		font-weight: 700;
+		color: var(--intently-text-hint);
+		text-transform: uppercase;
+		padding: 0.3rem 0;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.nut-row {
+		display: grid;
+		grid-template-columns: 1fr 50px 45px;
+		gap: var(--intently-space-sm);
+		padding: 0.35rem 0;
+		font-size: 0.8125rem;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+		align-items: center;
+	}
+
+	.nut-factor {
+		color: var(--intently-text-primary);
+		font-weight: 500;
+	}
+
+	.nut-amount {
+		font-weight: 700;
+		font-size: 0.6875rem;
+		padding: 2px 6px;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.nut-high {
+		color: var(--intently-red);
+		background: rgba(244, 67, 54, 0.08);
+	}
+
+	.nut-med {
+		color: var(--intently-orange);
+		background: rgba(255, 152, 0, 0.08);
+	}
+
+	.nut-low {
+		color: var(--intently-green);
+		background: rgba(76, 175, 80, 0.08);
+	}
+
+	.nut-pct {
+		color: var(--intently-text-secondary);
+		text-align: right;
+		font-size: 0.8125rem;
+	}
+
+	.nut-fomo {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem 0 0.25rem;
+		font-size: 0.8125rem;
+		font-weight: 700;
+	}
+
+	.fomo-severe {
+		color: var(--intently-red);
+	}
+
+	.fomo-high {
+		color: var(--intently-orange);
+	}
+
+	.fomo-moderate {
+		color: var(--intently-orange);
+	}
+
+	.fomo-low {
+		color: var(--intently-green);
+	}
+
+	.nut-footnote {
+		font-size: 0.625rem;
+		color: var(--intently-text-hint);
+		font-style: italic;
+		margin-top: 0.25rem;
+	}
+
+	/* ============================
+	   TRADING CARDS
+	   ============================ */
+	.trading-card {
+		border-radius: 16px;
+		padding: var(--intently-space-xl) var(--intently-space-lg);
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		border: 2px solid;
+		background: linear-gradient(155deg, rgba(255, 255, 255, 0.97), rgba(248, 248, 248, 0.97));
+		transition: transform 0.2s ease;
+	}
+
+	.trading-card:hover {
+		transform: translateY(-2px);
+	}
+
+	.rarity-common {
+		border-color: var(--intently-gray-300);
+	}
+
+	.rarity-uncommon {
+		border-color: var(--intently-green);
+	}
+
+	.rarity-rare {
+		border-color: var(--intently-blue);
+		background: linear-gradient(155deg, rgba(227, 242, 253, 0.5), rgba(255, 255, 255, 0.97));
+	}
+
+	.rarity-legendary {
+		border-color: var(--intently-purple);
+		background: linear-gradient(155deg, rgba(243, 229, 245, 0.5), rgba(255, 255, 255, 0.97));
+		box-shadow: 0 0 24px rgba(156, 39, 176, 0.08);
+		animation: legendaryShimmer 3s ease-in-out infinite;
+	}
+
+	@keyframes legendaryShimmer {
+		0%, 100% { box-shadow: 0 0 24px rgba(156, 39, 176, 0.08); }
+		50% { box-shadow: 0 0 32px rgba(156, 39, 176, 0.15), 0 4px 16px rgba(156, 39, 176, 0.06); }
+	}
+
+	.tc-rarity {
+		font-size: 0.625rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		margin-bottom: var(--intently-space-md);
+		color: var(--intently-text-hint);
+	}
+
+	.rarity-legendary .tc-rarity {
+		color: var(--intently-purple);
+	}
+
+	.rarity-rare .tc-rarity {
+		color: var(--intently-blue);
+	}
+
+	.tc-icon {
+		font-size: 2.5rem;
+		margin-bottom: var(--intently-space-xs);
+	}
+
+	.tc-name {
+		font-size: 1.125rem;
+		font-weight: 800;
+		color: var(--intently-text-primary);
+		margin-bottom: 0.375rem;
+	}
+
+	.tc-types {
+		display: flex;
+		gap: 0.25rem;
+		justify-content: center;
+		margin-bottom: var(--intently-space-lg);
+		flex-wrap: wrap;
+	}
+
+	.tc-type {
+		font-size: 0.625rem;
+		font-weight: 600;
+		padding: 2px 8px;
+		border-radius: var(--intently-radius-full);
+		background: rgba(33, 150, 243, 0.07);
+		color: var(--intently-blue);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.tc-stats {
+		text-align: left;
+	}
+
+	.tc-stat {
+		display: grid;
+		grid-template-columns: 100px 1fr 36px;
+		align-items: center;
+		gap: var(--intently-space-sm);
+		margin-bottom: 0.5rem;
+	}
+
+	.tc-stat-label {
+		font-size: 0.6875rem;
+		font-weight: 600;
+		color: var(--intently-text-hint);
+	}
+
+	.tc-stat-bar {
+		height: 6px;
+		background: rgba(0, 0, 0, 0.05);
+		border-radius: var(--intently-radius-full);
+		overflow: hidden;
+	}
+
+	.tc-stat-fill {
+		height: 100%;
+		background: linear-gradient(90deg, var(--intently-blue), var(--intently-purple));
+		border-radius: var(--intently-radius-full);
+		transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.tc-escape .tc-stat-fill,
+	.tc-escape-fill {
+		background: linear-gradient(90deg, var(--intently-red), var(--intently-orange));
+	}
+
+	.tc-stat-val {
+		font-size: 0.6875rem;
+		font-weight: 700;
+		color: var(--intently-text-secondary);
+		text-align: right;
+	}
+
+	.tc-score {
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: var(--intently-text-hint);
+		margin-top: var(--intently-space-md);
+		padding-top: var(--intently-space-sm);
+		border-top: 1px solid rgba(0, 0, 0, 0.05);
+	}
+
+	/* ============================
+	   RISK FACTORS
+	   ============================ */
+	.risk-section {
+		margin-bottom: var(--intently-space-xl);
+		padding: var(--intently-space-lg);
+		background: rgba(0, 0, 0, 0.02);
+		border-radius: 16px;
+		border: 1px solid rgba(0, 0, 0, 0.03);
+	}
+
+	.risk-title {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-lg);
+		color: var(--intently-text-primary);
+		text-align: center;
+	}
+
+	.risk-factors {
+		display: grid;
+		gap: 0.75rem;
+	}
+
+	.risk-item {
+		padding: 0;
+	}
+
+	.risk-bar-wrap {
+		display: grid;
+		grid-template-columns: 130px 1fr 44px;
+		align-items: center;
+		gap: var(--intently-space-md);
+	}
+
+	.risk-label {
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--intently-text-primary);
+	}
+
+	.risk-bar {
+		height: 8px;
+		background: rgba(0, 0, 0, 0.05);
+		border-radius: var(--intently-radius-full);
+		overflow: hidden;
+	}
+
+	.risk-bar-fill {
+		height: 100%;
+		background: linear-gradient(90deg, var(--intently-orange), var(--intently-red));
+		border-radius: var(--intently-radius-full);
+		transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.risk-score {
+		font-size: 0.8125rem;
+		font-weight: 700;
+		color: var(--intently-text-secondary);
+		text-align: right;
+	}
+
+	/* ============================
+	   RECOMMENDATIONS
+	   ============================ */
+	.recs-section {
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.recs-title {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+		text-align: center;
+	}
+
+	.recs-list {
+		display: grid;
+		gap: var(--intently-space-sm);
+	}
+
+	.rec-item {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--intently-space-sm);
+		padding: 0.875rem var(--intently-space-md);
+		border-radius: 14px;
+		background: rgba(76, 175, 80, 0.03);
+		border: 1px solid rgba(76, 175, 80, 0.08);
+	}
+
+	.rec-check {
+		color: var(--intently-green);
+		font-weight: 700;
+		flex-shrink: 0;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	.rec-text {
+		color: var(--intently-text-secondary);
+		line-height: 1.5;
+		font-size: 0.875rem;
+	}
+
+	/* ============================
+	   SHARE / CTA / RETAKE
+	   ============================ */
+	.share-section {
+		display: flex;
+		gap: var(--intently-space-sm);
+		justify-content: center;
+		margin-bottom: var(--intently-space-xl);
+		flex-wrap: wrap;
+	}
+
+	.share-btn {
+		padding: 0.625rem 1.25rem;
+		border-radius: var(--intently-radius-full);
+		font-size: 0.8125rem;
+		font-weight: 600;
+		cursor: pointer;
+		border: none;
+		transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+		min-height: 44px;
+		font-family: inherit;
+	}
+
+	.share-copy {
+		background: rgba(0, 0, 0, 0.05);
+		color: var(--intently-text-secondary);
+		border: 1px solid rgba(0, 0, 0, 0.04);
+	}
+
+	.share-copy:hover {
+		background: rgba(0, 0, 0, 0.08);
+		color: var(--intently-text-primary);
+		transform: translateY(-1px);
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: var(--intently-space-md);
+		justify-content: center;
+		margin-bottom: var(--intently-space-lg);
+		flex-wrap: wrap;
+	}
+
+	.retake-button {
+		display: block;
+		margin: 0 auto;
+		background: none;
+		border: none;
+		color: var(--intently-text-hint);
+		font-weight: 500;
+		font-size: 0.875rem;
+		cursor: pointer;
+		text-decoration: none;
+		padding: var(--intently-space-sm);
+		transition: color var(--intently-transition-fast);
+		font-family: inherit;
+	}
+
+	.retake-button:hover {
+		color: var(--intently-blue);
+	}
+
+	/* ============================
+	   CROSS-LINKS
+	   ============================ */
+	.cross-links-card {
+		padding: var(--intently-space-xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	.cross-links-card h3 {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.tools-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--intently-space-sm);
+	}
+
+	.tool-link {
+		display: flex;
+		align-items: center;
+		gap: var(--intently-space-md);
+		padding: var(--intently-space-md);
+		border-radius: 14px;
+		background: rgba(0, 0, 0, 0.02);
+		text-decoration: none;
+		transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+		border: 1px solid rgba(0, 0, 0, 0.03);
+	}
+
+	.tool-link:hover {
+		background: rgba(33, 150, 243, 0.05);
+		border-color: rgba(33, 150, 243, 0.12);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+	}
+
+	.tool-link-icon {
+		font-size: 1.5rem;
+	}
+
+	.tool-link-text {
+		display: flex;
+		flex-direction: column;
+		gap: 1px;
+	}
+
+	.tool-link-text strong {
+		font-size: 0.875rem;
+		color: var(--intently-text-primary);
+	}
+
+	.tool-link-text span {
+		font-size: 0.75rem;
+		color: var(--intently-text-hint);
+	}
+
+	/* ============================
+	   INFO / FAQ
+	   ============================ */
+	.info-glass-card {
+		padding: var(--intently-space-xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+	}
+
+	.info-glass-card h3 {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		color: var(--intently-text-primary);
+	}
+
+	.info-glass-card > p {
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-lg);
+		font-size: 0.9375rem;
+	}
+
+	.faq-glass-item {
+		background: rgba(0, 0, 0, 0.025);
+		border-radius: 12px;
+		margin-bottom: var(--intently-space-sm);
+		transition: background 0.3s ease;
+	}
+
+	.faq-glass-item[open] {
+		background: rgba(0, 0, 0, 0.045);
+	}
+
+	.faq-glass-item summary {
+		padding: var(--intently-space-md);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		color: var(--intently-text-primary);
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--intently-space-sm);
+		transition: color 0.2s ease;
+	}
+
+	.faq-glass-item summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-glass-item summary::after {
+		content: '+';
+		font-size: 1.25rem;
+		font-weight: 300;
+		color: var(--intently-text-hint);
+		flex-shrink: 0;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.04);
+		transition: all 0.3s ease;
+		line-height: 1;
+	}
+
+	.faq-glass-item[open] summary::after {
+		content: '\2212';
+		background: rgba(33, 150, 243, 0.1);
+		color: var(--intently-blue);
+	}
+
+	@media (hover: hover) {
+		.faq-glass-item summary:hover {
+			color: var(--intently-blue);
+		}
+	}
+
+	.faq-glass-item p {
+		padding: 0 var(--intently-space-md) var(--intently-space-md);
+		margin: 0;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		font-size: 0.9375rem;
+	}
+
+	.quiz-links {
+		margin-top: var(--intently-space-lg);
+		padding-top: var(--intently-space-lg);
+		border-top: 1px solid rgba(0, 0, 0, 0.06);
+	}
+
+	.quiz-links p {
+		margin: 0;
+		font-size: 0.9375rem;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+	}
+
+	.quiz-links a {
+		color: var(--intently-blue);
+		font-weight: 600;
+		text-decoration: none;
+		transition: color var(--intently-transition-fast);
+	}
+
+	.quiz-links a:hover {
+		text-decoration: underline;
+	}
+
+	/* ============================
+	   DARK MODE
+	   ============================ */
+	@media (prefers-color-scheme: dark) {
+		.hero-glow {
+			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+		}
+
+		.meta-pill {
+			background: rgba(66, 165, 245, 0.12);
+			border-color: rgba(66, 165, 245, 0.2);
+		}
+
+		.score-glass-card,
+		.cross-links-card,
+		.info-glass-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+
+		.app-select-card {
+			background: rgba(255, 255, 255, 0.05);
+			backdrop-filter: none;
+			-webkit-backdrop-filter: none;
+		}
+
+		.app-select-card.selected {
+			background: color-mix(in srgb, var(--app-border) 8%, transparent);
+		}
+
+		.analyze-bar {
+			background: rgba(66, 165, 245, 0.06);
+			border-color: rgba(66, 165, 245, 0.15);
+		}
+
+		.toggle-btn.active {
+			background: rgba(255, 255, 255, 0.1);
+			box-shadow: none;
+		}
+
+		.view-toggle {
+			background: rgba(255, 255, 255, 0.05);
+		}
+
+		.nutrition-card {
+			background: rgba(30, 30, 30, 0.95);
+			border-color: rgba(255, 255, 255, 0.12);
+		}
+
+		.nut-header {
+			background: rgba(255, 255, 255, 0.04);
+		}
+
+		.nut-divider {
+			background: rgba(255, 255, 255, 0.2);
+		}
+
+		.nut-table-header {
+			border-bottom-color: rgba(255, 255, 255, 0.1);
+		}
+
+		.nut-row {
+			border-bottom-color: rgba(255, 255, 255, 0.05);
+		}
+
+		.trading-card {
+			background: linear-gradient(155deg, rgba(30, 30, 30, 0.97), rgba(38, 38, 38, 0.97));
+		}
+
+		.rarity-rare {
+			background: linear-gradient(155deg, rgba(26, 35, 50, 0.7), rgba(30, 30, 30, 0.97));
+		}
+
+		.rarity-legendary {
+			background: linear-gradient(155deg, rgba(50, 20, 60, 0.5), rgba(30, 30, 30, 0.97));
+			box-shadow: 0 0 24px rgba(156, 39, 176, 0.12);
+			animation-name: legendaryShimmerDark;
+		}
+
+		@keyframes legendaryShimmerDark {
+			0%, 100% { box-shadow: 0 0 24px rgba(156, 39, 176, 0.12); }
+			50% { box-shadow: 0 0 32px rgba(156, 39, 176, 0.2), 0 4px 16px rgba(156, 39, 176, 0.1); }
+		}
+
+		.tc-stat-bar,
+		.risk-bar {
+			background: rgba(255, 255, 255, 0.07);
+		}
+
+		.tc-score {
+			border-top-color: rgba(255, 255, 255, 0.06);
+		}
+
+		.risk-section {
+			background: rgba(255, 255, 255, 0.03);
+			border-color: rgba(255, 255, 255, 0.04);
+		}
+
+		.gauge-container {
+			background: rgba(255, 255, 255, 0.04);
+			border-color: rgba(255, 255, 255, 0.04);
+		}
+
+		.rec-item {
+			background: rgba(76, 175, 80, 0.04);
+			border-color: rgba(76, 175, 80, 0.1);
+		}
+
+		.share-copy {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.06);
+		}
+
+		.faq-glass-item {
+			background: rgba(255, 255, 255, 0.04);
+		}
+
+		.faq-glass-item[open] {
+			background: rgba(255, 255, 255, 0.06);
+		}
+
+		.faq-glass-item summary::after {
+			background: rgba(255, 255, 255, 0.08);
+		}
+
+		.faq-glass-item[open] summary::after {
+			background: rgba(66, 165, 245, 0.15);
+		}
+
+		.quiz-links {
+			border-top-color: rgba(255, 255, 255, 0.08);
+		}
+
+		.tool-link {
+			background: rgba(255, 255, 255, 0.04);
+			border-color: rgba(255, 255, 255, 0.04);
+		}
+
+		.tool-link:hover {
+			background: rgba(66, 165, 245, 0.08);
+			border-color: rgba(66, 165, 245, 0.15);
+		}
+
+		.gauge-svg path:first-of-type {
+			stroke: rgba(255, 255, 255, 0.08);
+		}
+	}
+
+	/* ============================
+	   RESPONSIVE
+	   ============================ */
+	@media (min-width: 768px) {
+		.score-hero {
+			padding: var(--intently-space-3xl) 0;
+		}
+
+		.text-gradient {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.25rem;
+		}
+
+		.phase-title {
+			font-size: 1.75rem;
+		}
+
+		.score-glass-card {
+			padding: var(--intently-space-3xl);
+		}
+
+		.cards-view {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.score-hero {
+			padding: var(--intently-space-4xl) 0;
+		}
+
+		.text-gradient {
+			font-size: 3rem;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.score-glass-card {
+			padding: var(--intently-space-lg);
+		}
+
+		.app-select-grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: var(--intently-space-xs);
+		}
+
+		.app-select-card {
+			padding: var(--intently-space-sm) var(--intently-space-xs);
+		}
+
+		.tools-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+
+		.info-glass-card {
+			padding: var(--intently-space-lg);
+		}
+
+		.analyze-bar {
+			flex-direction: column;
+			gap: var(--intently-space-sm);
+			text-align: center;
+			border-radius: 16px;
+			padding: var(--intently-space-md);
+		}
+
+		.risk-bar-wrap {
+			grid-template-columns: 95px 1fr 38px;
+			gap: var(--intently-space-sm);
+		}
+
+		.risk-label {
+			font-size: 0.75rem;
+		}
+
+		.tc-stat {
+			grid-template-columns: 85px 1fr 32px;
+		}
+
+		.tc-stat-label {
+			font-size: 0.625rem;
+		}
+	}
+
+	/* Reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+		.scan-ring {
+			animation: none;
+		}
+
+		.scan-progress {
+			transition: none;
+		}
+
+		.tc-stat-fill,
+		.risk-bar-fill {
+			transition: none;
+		}
+
+		#gauge-arc {
+			transition: none !important;
+		}
+
+		.gauge-section {
+			animation: none;
+		}
+
+		.rarity-legendary {
+			animation: none;
+		}
+
+		.nutrition-card:hover,
+		.trading-card:hover {
+			transform: none;
+		}
+	}
+
+	/* Focus */
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+</style>

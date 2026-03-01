@@ -1,0 +1,1975 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/ui/Button.astro';
+import ScrollReveal from '../components/ui/ScrollReveal.astro';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+import HowToSchema from '../components/SEO/HowToSchema.astro';
+
+const faqs = [
+	{
+		question: "How much screen time does the average person have?",
+		answer: "The average adult spends about 7 hours per day on screens (including work). For personal/leisure use, studies show 3-4 hours daily on smartphones alone. Over a lifetime, that can add up to over 13 years of screen time."
+	},
+	{
+		question: "What is the opportunity cost of screen time?",
+		answer: "Opportunity cost is what you could have done with the time spent on screens. For example, 3 hours/day of social media scrolling equals 1,095 hours/year — enough to learn a new language, read 130+ books, or train for multiple marathons."
+	},
+	{
+		question: "How accurate is this screen time calculator?",
+		answer: "This calculator uses your reported daily screen time and age to estimate lifetime and future screen hours. While individual usage varies by day, the averages provide a realistic picture of cumulative impact over time."
+	},
+	{
+		question: "How can I reduce my screen time effectively?",
+		answer: "Start small: reduce by 1 hour per day using tools like Intently that create mindful pauses before opening apps. Set daily limits, create phone-free zones, replace scrolling with offline activities, and track your progress over time."
+	}
+];
+
+const howToSteps = [
+	{ name: "Enter your daily screen time", text: "Use the slider to set your average daily non-work screen time in hours." },
+	{ name: "Enter your age details", text: "Input your current age and the age you got your first smartphone." },
+	{ name: "Select your most-used apps", text: "Choose 1-5 apps that consume most of your screen time." },
+	{ name: "View your lifetime screen report", text: "See your total lifetime hours on screens, app breakdown, opportunity costs, and how reducing by just 1 hour/day compounds over time." }
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Screen Time Calculator: How Much of Your Life Is Spent on Screens? | Intently"
+			description="Calculate your lifetime screen time and see the opportunity cost of phone use. Free interactive calculator shows what you could accomplish by reducing screen time. No data stored."
+		/>
+		<FAQSchema faqs={faqs} />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Screen Time Calculator", url: "https://liveintently.app/screen-time-calculator" }
+			]}
+		/>
+		<HowToSchema
+			name="Calculate Your Lifetime Screen Time"
+			description="Use this free calculator to find out how much of your life you've spent on screens and what you could do with that time instead."
+			totalTime="PT2M"
+			steps={howToSteps}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Hero -->
+			<section class="calc-hero">
+				<div class="hero-glow" aria-hidden="true"></div>
+				<div class="container">
+					<h1 class="text-gradient">Screen Time Calculator</h1>
+					<p class="hero-subtitle">Discover how much of your life is spent on screens — and what you could do instead</p>
+					<div class="quiz-meta-pills">
+						<span class="meta-pill">30 seconds</span>
+						<span class="meta-pill">Eye-opening results</span>
+						<span class="meta-pill">100% private</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- Calculator -->
+			<section class="calc-section">
+				<div class="container">
+					<ScrollReveal animation="fadeUp">
+						<div class="calc-glass-card">
+							<!-- Progress Bar -->
+							<div class="progress-bar">
+								<div id="calc-progress" class="progress-fill"></div>
+							</div>
+
+							<!-- Step 1: Daily Screen Time -->
+							<div id="step-1" class="calc-step">
+								<div class="step-label">Step 1 of 3</div>
+								<h2 class="step-title">How many hours do you spend on your phone each day?</h2>
+								<p class="step-hint">Non-work personal screen time (social media, videos, browsing, games)</p>
+
+								<div class="slider-container">
+									<div class="slider-value-display">
+										<span id="hours-display" class="slider-big-number">4</span>
+										<span class="slider-unit">hours/day</span>
+									</div>
+									<div id="weekly-display" class="slider-weekly">28 hours/week</div>
+									<input
+										type="range"
+										id="hours-slider"
+										min="1"
+										max="14"
+										value="4"
+										step="0.5"
+										class="glass-slider"
+										aria-label="Daily screen time in hours"
+									/>
+									<div class="slider-labels">
+										<span>1h</span>
+										<span>7h</span>
+										<span>14h</span>
+									</div>
+								</div>
+
+								<button id="step1-next" class="next-button">Continue</button>
+							</div>
+
+							<!-- Step 2: Age -->
+							<div id="step-2" class="calc-step" style="display:none;">
+								<div class="step-label">Step 2 of 3</div>
+								<h2 class="step-title">Tell us about yourself</h2>
+
+								<div class="age-inputs">
+									<div class="age-field">
+										<label for="current-age">Your current age</label>
+										<div class="number-input-wrap">
+											<button class="num-btn" data-target="current-age" data-dir="-1" aria-label="Decrease age">-</button>
+											<input type="number" id="current-age" value="28" min="10" max="90" aria-label="Current age" />
+											<button class="num-btn" data-target="current-age" data-dir="1" aria-label="Increase age">+</button>
+										</div>
+									</div>
+									<div class="age-field">
+										<label for="first-phone-age">Age you got your first smartphone</label>
+										<div class="number-input-wrap">
+											<button class="num-btn" data-target="first-phone-age" data-dir="-1" aria-label="Decrease age">-</button>
+											<input type="number" id="first-phone-age" value="14" min="5" max="60" aria-label="Age of first smartphone" />
+											<button class="num-btn" data-target="first-phone-age" data-dir="1" aria-label="Increase age">+</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="step-nav">
+									<button id="step2-back" class="back-button">Back</button>
+									<button id="step2-next" class="next-button">Continue</button>
+								</div>
+							</div>
+
+							<!-- Step 3: App Selection -->
+							<div id="step-3" class="calc-step" style="display:none;">
+								<div class="step-label">Step 3 of 3</div>
+								<h2 class="step-title">Which apps eat most of your time?</h2>
+								<p class="step-hint">Select 1-5 apps</p>
+
+								<div class="app-grid" role="group" aria-label="Select your most-used apps">
+									<button class="app-card" data-app="instagram" aria-pressed="false">
+										<span class="app-icon">📸</span>
+										<span class="app-name">Instagram</span>
+									</button>
+									<button class="app-card" data-app="tiktok" aria-pressed="false">
+										<span class="app-icon">🎵</span>
+										<span class="app-name">TikTok</span>
+									</button>
+									<button class="app-card" data-app="youtube" aria-pressed="false">
+										<span class="app-icon">▶️</span>
+										<span class="app-name">YouTube</span>
+									</button>
+									<button class="app-card" data-app="x" aria-pressed="false">
+										<span class="app-icon">𝕏</span>
+										<span class="app-name">X / Twitter</span>
+									</button>
+									<button class="app-card" data-app="reddit" aria-pressed="false">
+										<span class="app-icon">🤖</span>
+										<span class="app-name">Reddit</span>
+									</button>
+									<button class="app-card" data-app="facebook" aria-pressed="false">
+										<span class="app-icon">👤</span>
+										<span class="app-name">Facebook</span>
+									</button>
+									<button class="app-card" data-app="snapchat" aria-pressed="false">
+										<span class="app-icon">👻</span>
+										<span class="app-name">Snapchat</span>
+									</button>
+									<button class="app-card" data-app="whatsapp" aria-pressed="false">
+										<span class="app-icon">💬</span>
+										<span class="app-name">WhatsApp</span>
+									</button>
+									<button class="app-card" data-app="netflix" aria-pressed="false">
+										<span class="app-icon">🎬</span>
+										<span class="app-name">Netflix</span>
+									</button>
+									<button class="app-card" data-app="spotify" aria-pressed="false">
+										<span class="app-icon">🎧</span>
+										<span class="app-name">Spotify</span>
+									</button>
+									<button class="app-card" data-app="games" aria-pressed="false">
+										<span class="app-icon">🎮</span>
+										<span class="app-name">Games</span>
+									</button>
+									<button class="app-card" data-app="other" aria-pressed="false">
+										<span class="app-icon">📱</span>
+										<span class="app-name">Other</span>
+									</button>
+								</div>
+
+								<div class="step-nav">
+									<button id="step3-back" class="back-button">Back</button>
+									<button id="step3-calculate" class="next-button" disabled>See My Results</button>
+								</div>
+							</div>
+
+							<!-- Results: 4 reveal cards -->
+							<div id="results-container" style="display:none;">
+
+								<!-- Card 1: Lifetime -->
+								<div class="reveal-card" id="card-lifetime">
+									<div class="reveal-overline">Your Lifetime on Screens</div>
+									<div class="big-stat">
+										<span id="lifetime-hours" class="count-up" data-value="0">0</span>
+										<span class="big-stat-unit">hours</span>
+									</div>
+									<div class="stat-row">
+										<div class="stat-pill">
+											<span class="stat-pill-value" id="lifetime-days">0</span>
+											<span class="stat-pill-label">days</span>
+										</div>
+										<div class="stat-pill">
+											<span class="stat-pill-value" id="lifetime-years">0</span>
+											<span class="stat-pill-label">years</span>
+										</div>
+									</div>
+									<div class="comparison-text" id="comparison-text"></div>
+									<button class="reveal-next-btn" data-next="card-breakdown">Next</button>
+								</div>
+
+								<!-- Card 2: App Breakdown -->
+								<div class="reveal-card" id="card-breakdown" style="display:none;">
+									<div class="reveal-overline">Your App Breakdown</div>
+									<div id="breakdown-bars" class="breakdown-bars"></div>
+									<div id="breakdown-pills" class="breakdown-pills"></div>
+									<button class="reveal-next-btn" data-next="card-opportunity">Next</button>
+								</div>
+
+								<!-- Card 3: Opportunity Cost -->
+								<div class="reveal-card" id="card-opportunity" style="display:none;">
+									<div class="reveal-overline">The Compound Effect</div>
+									<p class="opportunity-intro">Instead of <strong id="opp-hours">0</strong> hours on your phone, you could have...</p>
+									<div id="opportunity-list" class="opportunity-list"></div>
+									<button class="reveal-next-btn" data-next="card-pledge">Next</button>
+								</div>
+
+								<!-- Card 4: 1-Hour Pledge CTA -->
+								<div class="reveal-card" id="card-pledge" style="display:none;">
+									<div class="reveal-overline">The 1-Hour Pledge</div>
+									<p class="pledge-intro">What if you reduced screen time by just <strong>1 hour per day</strong>?</p>
+									<div class="pledge-grid">
+										<div class="pledge-item">
+											<span class="pledge-period">1 Year</span>
+											<span class="pledge-value" id="pledge-1y">0</span>
+											<span class="pledge-unit">hours saved</span>
+										</div>
+										<div class="pledge-item">
+											<span class="pledge-period">5 Years</span>
+											<span class="pledge-value" id="pledge-5y">0</span>
+											<span class="pledge-unit">hours saved</span>
+										</div>
+										<div class="pledge-item">
+											<span class="pledge-period">10 Years</span>
+											<span class="pledge-value" id="pledge-10y">0</span>
+											<span class="pledge-unit">hours saved</span>
+										</div>
+									</div>
+
+									<div class="share-section">
+										<button id="share-twitter" class="share-btn share-twitter" aria-label="Share on X / Twitter">Share on 𝕏</button>
+										<button id="share-copy" class="share-btn share-copy" aria-label="Copy link">Copy Link</button>
+									</div>
+
+									<div class="cta-buttons">
+										<Button href="/download" variant="primary" size="lg">Try Intently Free</Button>
+										<Button href="/app-addiction-score" variant="secondary" size="lg">Check Your App Toxicity</Button>
+									</div>
+
+									<button id="retake-calc" class="retake-button">Start Over</button>
+								</div>
+							</div>
+						</div>
+					</ScrollReveal>
+
+					<!-- Cross-links -->
+					<ScrollReveal animation="fadeUp">
+						<div class="cross-links-card">
+							<h3>More Tools</h3>
+							<div class="tools-grid">
+								<a href="/quiz" class="tool-link">
+									<span class="tool-link-icon">📋</span>
+									<span class="tool-link-text">
+										<strong>Phone Addiction Quiz</strong>
+										<span>8 science-backed questions</span>
+									</span>
+								</a>
+								<a href="/app-addiction-score" class="tool-link">
+									<span class="tool-link-icon">🧪</span>
+									<span class="tool-link-text">
+										<strong>App Addiction Score</strong>
+										<span>How toxic are your apps?</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</ScrollReveal>
+
+					<!-- FAQ -->
+					<ScrollReveal animation="fadeUp">
+						<div class="info-glass-card">
+							<h3>About This Calculator</h3>
+							<p>This screen time calculator estimates your lifetime and future screen hours based on your daily usage. All calculations happen in your browser — no data is stored or sent anywhere.</p>
+
+							<h3>Frequently Asked Questions</h3>
+							{faqs.map((faq) => (
+								<details class="faq-glass-item">
+									<summary>{faq.question}</summary>
+									<p>{faq.answer}</p>
+								</details>
+							))}
+
+							<div class="quiz-links">
+								<p>Learn more about <a href="/blog/what-is-digital-wellbeing">digital wellbeing</a>, explore the <a href="/blog/psychology-of-app-addiction">psychology of app addiction</a>, or <a href="/download">download Intently free</a> to take control of your screen time.</p>
+							</div>
+						</div>
+					</ScrollReveal>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+
+		<script>
+			// ===== STATE =====
+			let dailyHours = 4;
+			let currentAge = 28;
+			let firstPhoneAge = 14;
+			const selectedApps: string[] = [];
+
+			const appWeights: Record<string, number> = {
+				instagram: 18, tiktok: 22, youtube: 20, x: 10, reddit: 12,
+				facebook: 14, snapchat: 8, whatsapp: 6, netflix: 16, spotify: 4,
+				games: 15, other: 10
+			};
+
+			const appLabels: Record<string, string> = {
+				instagram: 'Instagram', tiktok: 'TikTok', youtube: 'YouTube',
+				x: 'X / Twitter', reddit: 'Reddit', facebook: 'Facebook',
+				snapchat: 'Snapchat', whatsapp: 'WhatsApp', netflix: 'Netflix',
+				spotify: 'Spotify', games: 'Games', other: 'Other'
+			};
+
+			const appColors: Record<string, string> = {
+				instagram: '#E1306C', tiktok: '#00f2ea', youtube: '#FF0000',
+				x: '#1DA1F2', reddit: '#FF4500', facebook: '#1877F2',
+				snapchat: '#FFFC00', whatsapp: '#25D366', netflix: '#E50914',
+				spotify: '#1DB954', games: '#9C27B0', other: '#757575'
+			};
+
+			const opportunityCosts = [
+				{ label: 'Learn a new language', hours: 600, emoji: '🌍' },
+				{ label: 'Read books', hours: 8, emoji: '📚', perUnit: true, unitLabel: 'books' },
+				{ label: 'Run marathons (training)', hours: 200, emoji: '🏃', perUnit: true, unitLabel: 'marathons' },
+				{ label: 'Learn to play guitar', hours: 300, emoji: '🎸' },
+				{ label: 'Get a pilot\'s license', hours: 80, emoji: '✈️' },
+				{ label: 'Write novels', hours: 500, emoji: '✍️', perUnit: true, unitLabel: 'novels' },
+				{ label: 'Complete online degrees', hours: 1200, emoji: '🎓', perUnit: true, unitLabel: 'degrees' },
+				{ label: 'Cook every recipe in a cookbook', hours: 150, emoji: '👨‍🍳' },
+			];
+
+			const comparisons = [
+				{ threshold: 50000, text: (h: number) => `That's ${Math.round(h / 24 / 365 * 10) / 10} years — longer than some people's careers` },
+				{ threshold: 30000, text: (h: number) => `That's ${Math.round(h / 5.5)} round trips from New York to Tokyo` },
+				{ threshold: 15000, text: (h: number) => `That's ${Math.round(h / 2)} feature-length movies` },
+				{ threshold: 5000, text: (h: number) => `That's ${Math.round(h / 24)} full days without sleep` },
+				{ threshold: 0, text: (h: number) => `That's ${Math.round(h / 24)} full days of your life` },
+			];
+
+			// ===== SLIDER =====
+			const slider = document.getElementById('hours-slider') as HTMLInputElement;
+			const hoursDisplay = document.getElementById('hours-display')!;
+			const weeklyDisplay = document.getElementById('weekly-display')!;
+
+			function updateSliderColor() {
+				const val = parseFloat(slider.value);
+				const pct = ((val - 1) / 13) * 100;
+				let color: string;
+				if (val <= 3) color = 'var(--intently-green)';
+				else if (val <= 6) color = 'var(--intently-orange)';
+				else color = 'var(--intently-red)';
+				slider.style.setProperty('--slider-pct', `${pct}%`);
+				slider.style.setProperty('--slider-color', color);
+			}
+
+			slider.addEventListener('input', () => {
+				dailyHours = parseFloat(slider.value);
+				hoursDisplay.textContent = dailyHours % 1 === 0 ? dailyHours.toString() : dailyHours.toFixed(1);
+				weeklyDisplay.textContent = `${Math.round(dailyHours * 7)} hours/week`;
+				updateSliderColor();
+			});
+			updateSliderColor();
+
+			// ===== NUMBER INPUTS =====
+			document.querySelectorAll('.num-btn').forEach(btn => {
+				btn.addEventListener('click', () => {
+					const target = document.getElementById((btn as HTMLElement).dataset.target!) as HTMLInputElement;
+					const dir = parseInt((btn as HTMLElement).dataset.dir!);
+					const newVal = Math.min(Math.max(parseInt(target.value) + dir, parseInt(target.min)), parseInt(target.max));
+					target.value = newVal.toString();
+					if (target.id === 'current-age') currentAge = newVal;
+					else firstPhoneAge = newVal;
+				});
+			});
+
+			document.getElementById('current-age')!.addEventListener('change', (e) => {
+				currentAge = parseInt((e.target as HTMLInputElement).value);
+			});
+			document.getElementById('first-phone-age')!.addEventListener('change', (e) => {
+				firstPhoneAge = parseInt((e.target as HTMLInputElement).value);
+			});
+
+			// ===== APP SELECTION =====
+			document.querySelectorAll('.app-card').forEach(card => {
+				card.addEventListener('click', () => {
+					const app = (card as HTMLElement).dataset.app!;
+					const idx = selectedApps.indexOf(app);
+					if (idx > -1) {
+						selectedApps.splice(idx, 1);
+						card.classList.remove('selected');
+						card.setAttribute('aria-pressed', 'false');
+					} else if (selectedApps.length < 5) {
+						selectedApps.push(app);
+						card.classList.add('selected');
+						card.setAttribute('aria-pressed', 'true');
+					}
+					const calcBtn = document.getElementById('step3-calculate') as HTMLButtonElement;
+					calcBtn.disabled = selectedApps.length === 0;
+				});
+			});
+
+			// ===== NAVIGATION =====
+			function showStep(n: number) {
+				[1, 2, 3].forEach(i => {
+					const el = document.getElementById(`step-${i}`);
+					if (el) el.style.display = i === n ? '' : 'none';
+				});
+				const progress = document.getElementById('calc-progress')!;
+				progress.style.width = `${(n / 3) * 100}%`;
+			}
+
+			document.getElementById('step1-next')!.addEventListener('click', () => showStep(2));
+			document.getElementById('step2-back')!.addEventListener('click', () => showStep(1));
+			document.getElementById('step2-next')!.addEventListener('click', () => showStep(3));
+			document.getElementById('step3-back')!.addEventListener('click', () => showStep(2));
+			document.getElementById('step3-calculate')!.addEventListener('click', calculate);
+
+			// ===== CALCULATE =====
+			function calculate() {
+				const yearsWithPhone = Math.max(currentAge - firstPhoneAge, 1);
+				const lifetimeHours = Math.round(dailyHours * 365 * yearsWithPhone);
+				const futureHours = Math.round(dailyHours * 365 * Math.max(80 - currentAge, 1));
+				const lifetimeDays = Math.round(lifetimeHours / 24);
+				const lifetimeYears = (lifetimeHours / 8760).toFixed(1);
+
+				// Hide steps, show results
+				[1, 2, 3].forEach(i => {
+					const el = document.getElementById(`step-${i}`);
+					if (el) el.style.display = 'none';
+				});
+				document.getElementById('calc-progress')!.style.width = '100%';
+				document.getElementById('results-container')!.style.display = '';
+
+				// Card 1: Lifetime
+				animateCountUp('lifetime-hours', lifetimeHours);
+				document.getElementById('lifetime-days')!.textContent = lifetimeDays.toLocaleString();
+				document.getElementById('lifetime-years')!.textContent = lifetimeYears;
+
+				const comp = comparisons.find(c => lifetimeHours >= c.threshold) || comparisons[comparisons.length - 1];
+				document.getElementById('comparison-text')!.textContent = comp.text(lifetimeHours);
+
+				// Card 2: Breakdown
+				const totalWeight = selectedApps.reduce((s, a) => s + (appWeights[a] || 10), 0);
+				const breakdownBars = document.getElementById('breakdown-bars')!;
+				const breakdownPills = document.getElementById('breakdown-pills')!;
+				breakdownBars.innerHTML = '';
+				breakdownPills.innerHTML = '';
+
+				const barContainer = document.createElement('div');
+				barContainer.className = 'stacked-bar';
+				selectedApps.forEach(app => {
+					const pct = ((appWeights[app] || 10) / totalWeight) * 100;
+					const seg = document.createElement('div');
+					seg.className = 'bar-segment';
+					seg.style.width = `${pct}%`;
+					seg.style.background = appColors[app] || '#757575';
+					seg.title = `${appLabels[app]}: ${Math.round(pct)}%`;
+					barContainer.appendChild(seg);
+				});
+				breakdownBars.appendChild(barContainer);
+
+				selectedApps.forEach((app, i) => {
+					const pct = ((appWeights[app] || 10) / totalWeight) * 100;
+					const hrs = Math.round(lifetimeHours * pct / 100);
+					const pill = document.createElement('div');
+					pill.className = 'breakdown-pill';
+					pill.style.animationDelay = `${i * 0.15}s`;
+					pill.innerHTML = `
+						<span class="bp-dot" style="background:${appColors[app]}"></span>
+						<span class="bp-name">${appLabels[app]}</span>
+						<span class="bp-stat">${hrs.toLocaleString()} hrs (${Math.round(pct)}%)</span>
+					`;
+					breakdownPills.appendChild(pill);
+				});
+
+				// Card 3: Opportunity
+				document.getElementById('opp-hours')!.textContent = lifetimeHours.toLocaleString();
+				const oppList = document.getElementById('opportunity-list')!;
+				oppList.innerHTML = '';
+				opportunityCosts.forEach((item, i) => {
+					const count = Math.floor(lifetimeHours / item.hours);
+					if (count < 1) return;
+					const el = document.createElement('div');
+					el.className = 'opp-item';
+					el.style.animationDelay = `${i * 0.12}s`;
+					if (item.perUnit) {
+						el.innerHTML = `<span class="opp-emoji">${item.emoji}</span><span class="opp-text">${item.label.replace(/s$/, '')} <strong>${count}</strong> ${item.unitLabel}</span>`;
+					} else {
+						el.innerHTML = `<span class="opp-emoji">${item.emoji}</span><span class="opp-text">${item.label} <strong>${count}x</strong></span>`;
+					}
+					oppList.appendChild(el);
+				});
+
+				// Card 4: Pledge
+				document.getElementById('pledge-1y')!.textContent = (365).toLocaleString();
+				document.getElementById('pledge-5y')!.textContent = (365 * 5).toLocaleString();
+				document.getElementById('pledge-10y')!.textContent = (365 * 10).toLocaleString();
+
+				// URL hash for sharing
+				const appCodes = selectedApps.join(',');
+				const hash = `#h=${lifetimeHours}&y=${lifetimeYears}&apps=${appCodes}`;
+				history.replaceState(null, '', hash);
+			}
+
+			// ===== COUNT-UP ANIMATION =====
+			function animateCountUp(id: string, target: number) {
+				const el = document.getElementById(id)!;
+				const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+				if (prefersReducedMotion) {
+					el.textContent = target.toLocaleString();
+					return;
+				}
+				const duration = 2000;
+				const start = performance.now();
+				function tick(now: number) {
+					const progress = Math.min((now - start) / duration, 1);
+					const eased = 1 - Math.pow(1 - progress, 3);
+					el.textContent = Math.floor(target * eased).toLocaleString();
+					if (progress < 1) requestAnimationFrame(tick);
+				}
+				requestAnimationFrame(tick);
+			}
+
+			// ===== REVEAL CARD NAVIGATION =====
+			document.querySelectorAll('.reveal-next-btn').forEach(btn => {
+				btn.addEventListener('click', () => {
+					const nextId = (btn as HTMLElement).dataset.next!;
+					(btn.closest('.reveal-card') as HTMLElement).style.display = 'none';
+					document.getElementById(nextId)!.style.display = '';
+				});
+			});
+
+			// ===== SHARE =====
+			document.getElementById('share-twitter')!.addEventListener('click', () => {
+				const hours = document.getElementById('lifetime-hours')!.textContent;
+				const years = document.getElementById('lifetime-years')!.textContent;
+				const text = encodeURIComponent(`I've spent ${hours} hours (${years} years) of my life on screens 😱\n\nFind out yours:`);
+				const url = encodeURIComponent(window.location.href);
+				window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank', 'noopener');
+			});
+
+			document.getElementById('share-copy')!.addEventListener('click', async () => {
+				try {
+					await navigator.clipboard.writeText(window.location.href);
+					const btn = document.getElementById('share-copy')!;
+					btn.textContent = 'Copied!';
+					setTimeout(() => { btn.textContent = 'Copy Link'; }, 2000);
+				} catch {
+					// Fallback: select text
+				}
+			});
+
+			// ===== RETAKE =====
+			document.getElementById('retake-calc')!.addEventListener('click', () => {
+				document.getElementById('results-container')!.style.display = 'none';
+				selectedApps.length = 0;
+				document.querySelectorAll('.app-card').forEach(c => {
+					c.classList.remove('selected');
+					c.setAttribute('aria-pressed', 'false');
+				});
+				(document.getElementById('step3-calculate') as HTMLButtonElement).disabled = true;
+				showStep(1);
+				history.replaceState(null, '', window.location.pathname);
+			});
+
+			// ===== RESTORE FROM HASH =====
+			function restoreFromHash() {
+				const hash = window.location.hash;
+				if (!hash || !hash.includes('h=')) return;
+				const params = new URLSearchParams(hash.slice(1));
+				const h = parseInt(params.get('h') || '0');
+				const y = params.get('y') || '0';
+				const apps = (params.get('apps') || '').split(',').filter(Boolean);
+				if (!h || apps.length === 0) return;
+
+				// Set app selections
+				apps.forEach(app => {
+					if (appLabels[app]) {
+						selectedApps.push(app);
+						const card = document.querySelector(`[data-app="${app}"]`);
+						if (card) {
+							card.classList.add('selected');
+							card.setAttribute('aria-pressed', 'true');
+						}
+					}
+				});
+
+				// Calculate with defaults (we don't have the exact inputs from hash, just the result)
+				// Show results directly
+				[1, 2, 3].forEach(i => {
+					const el = document.getElementById(`step-${i}`);
+					if (el) el.style.display = 'none';
+				});
+				document.getElementById('calc-progress')!.style.width = '100%';
+				document.getElementById('results-container')!.style.display = '';
+
+				const lifetimeHours = h;
+				const lifetimeDays = Math.round(h / 24);
+				const lifetimeYears = y;
+
+				document.getElementById('lifetime-hours')!.textContent = lifetimeHours.toLocaleString();
+				document.getElementById('lifetime-days')!.textContent = lifetimeDays.toLocaleString();
+				document.getElementById('lifetime-years')!.textContent = lifetimeYears;
+
+				const comp = comparisons.find(c => lifetimeHours >= c.threshold) || comparisons[comparisons.length - 1];
+				document.getElementById('comparison-text')!.textContent = comp.text(lifetimeHours);
+
+				// Breakdown
+				const totalWeight = selectedApps.reduce((s, a) => s + (appWeights[a] || 10), 0);
+				const breakdownBars = document.getElementById('breakdown-bars')!;
+				const breakdownPills = document.getElementById('breakdown-pills')!;
+				breakdownBars.innerHTML = '';
+				breakdownPills.innerHTML = '';
+				const barContainer = document.createElement('div');
+				barContainer.className = 'stacked-bar';
+				selectedApps.forEach(app => {
+					const pct = ((appWeights[app] || 10) / totalWeight) * 100;
+					const seg = document.createElement('div');
+					seg.className = 'bar-segment';
+					seg.style.width = `${pct}%`;
+					seg.style.background = appColors[app] || '#757575';
+					barContainer.appendChild(seg);
+				});
+				breakdownBars.appendChild(barContainer);
+				selectedApps.forEach((app, i) => {
+					const pct = ((appWeights[app] || 10) / totalWeight) * 100;
+					const hrs = Math.round(lifetimeHours * pct / 100);
+					const pill = document.createElement('div');
+					pill.className = 'breakdown-pill';
+					pill.innerHTML = `<span class="bp-dot" style="background:${appColors[app]}"></span><span class="bp-name">${appLabels[app]}</span><span class="bp-stat">${hrs.toLocaleString()} hrs</span>`;
+					breakdownPills.appendChild(pill);
+				});
+
+				// Opportunity
+				document.getElementById('opp-hours')!.textContent = lifetimeHours.toLocaleString();
+				const oppList = document.getElementById('opportunity-list')!;
+				oppList.innerHTML = '';
+				opportunityCosts.forEach((item) => {
+					const count = Math.floor(lifetimeHours / item.hours);
+					if (count < 1) return;
+					const el = document.createElement('div');
+					el.className = 'opp-item';
+					if (item.perUnit) {
+						el.innerHTML = `<span class="opp-emoji">${item.emoji}</span><span class="opp-text">${item.label.replace(/s$/, '')} <strong>${count}</strong> ${item.unitLabel}</span>`;
+					} else {
+						el.innerHTML = `<span class="opp-emoji">${item.emoji}</span><span class="opp-text">${item.label} <strong>${count}x</strong></span>`;
+					}
+					oppList.appendChild(el);
+				});
+
+				// Pledge
+				document.getElementById('pledge-1y')!.textContent = (365).toLocaleString();
+				document.getElementById('pledge-5y')!.textContent = (1825).toLocaleString();
+				document.getElementById('pledge-10y')!.textContent = (3650).toLocaleString();
+			}
+
+			restoreFromHash();
+		</script>
+	</body>
+</html>
+
+<style>
+	main { width: 100%; }
+
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* ============================
+	   HERO
+	   ============================ */
+	.calc-hero {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-secondary) 100%);
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.calc-hero::before {
+		content: '';
+		display: block;
+		height: 7rem;
+	}
+
+	.hero-glow {
+		position: absolute;
+		top: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 600px;
+		height: 400px;
+		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		filter: blur(60px);
+		pointer-events: none;
+	}
+
+	.text-gradient {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-subtitle {
+		font-size: 1.125rem;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-secondary);
+		line-height: 1.6;
+	}
+
+	.quiz-meta-pills {
+		display: flex;
+		gap: var(--intently-space-sm);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.meta-pill {
+		display: inline-flex;
+		align-items: center;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--intently-blue);
+		background: rgba(33, 150, 243, 0.08);
+		padding: 0.25rem 0.75rem;
+		border-radius: var(--intently-radius-full);
+		border: 1px solid rgba(33, 150, 243, 0.15);
+	}
+
+	/* ============================
+	   CALC SECTION
+	   ============================ */
+	.calc-section {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-secondary);
+	}
+
+	.calc-glass-card {
+		padding: var(--intently-space-2xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	/* Progress */
+	.progress-bar {
+		width: 100%;
+		height: 6px;
+		background: rgba(0, 0, 0, 0.06);
+		border-radius: var(--intently-radius-full);
+		overflow: hidden;
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	.progress-fill {
+		height: 100%;
+		background: linear-gradient(90deg, var(--intently-blue), var(--intently-purple));
+		border-radius: var(--intently-radius-full);
+		transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+		width: 33.33%;
+	}
+
+	/* Step common */
+	.step-label {
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: var(--intently-blue);
+		margin-bottom: var(--intently-space-sm);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+
+	.step-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+		margin: 0 0 var(--intently-space-sm);
+		line-height: 1.3;
+	}
+
+	.step-hint {
+		color: var(--intently-text-hint);
+		margin: 0 0 var(--intently-space-xl);
+		font-size: 0.875rem;
+		line-height: 1.5;
+	}
+
+	/* Slider */
+	.slider-container {
+		text-align: center;
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.slider-value-display {
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		gap: 0.5rem;
+		margin-bottom: var(--intently-space-xs);
+	}
+
+	.slider-big-number {
+		font-size: 4.5rem;
+		font-weight: 800;
+		line-height: 1;
+		background: linear-gradient(135deg, var(--intently-blue), var(--intently-purple));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.slider-unit {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+	}
+
+	.slider-weekly {
+		font-size: 0.875rem;
+		color: var(--intently-text-hint);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.glass-slider {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 100%;
+		height: 10px;
+		background: linear-gradient(
+			90deg,
+			var(--slider-color, var(--intently-green)) 0%,
+			var(--slider-color, var(--intently-green)) var(--slider-pct, 23%),
+			rgba(0, 0, 0, 0.06) var(--slider-pct, 23%),
+			rgba(0, 0, 0, 0.06) 100%
+		);
+		border-radius: var(--intently-radius-full);
+		outline: none;
+		cursor: pointer;
+	}
+
+	.glass-slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 26px;
+		height: 26px;
+		border-radius: 50%;
+		background: white;
+		border: 3px solid var(--slider-color, var(--intently-green));
+		box-shadow:
+			0 2px 8px rgba(0, 0, 0, 0.12),
+			0 0 0 4px rgba(33, 150, 243, 0.06);
+		cursor: pointer;
+		transition: box-shadow 0.2s ease, transform 0.2s ease;
+	}
+
+	.glass-slider::-webkit-slider-thumb:hover {
+		transform: scale(1.15);
+		box-shadow:
+			0 4px 16px rgba(0, 0, 0, 0.18),
+			0 0 0 6px rgba(33, 150, 243, 0.1);
+	}
+
+	.glass-slider::-moz-range-thumb {
+		width: 26px;
+		height: 26px;
+		border-radius: 50%;
+		background: white;
+		border: 3px solid var(--slider-color, var(--intently-green));
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+		cursor: pointer;
+	}
+
+	.slider-labels {
+		display: flex;
+		justify-content: space-between;
+		margin-top: var(--intently-space-sm);
+		font-size: 0.75rem;
+		color: var(--intently-text-hint);
+		font-weight: 500;
+	}
+
+	/* Age inputs */
+	.age-inputs {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--intently-space-xl);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.age-field label {
+		display: block;
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+		margin-bottom: var(--intently-space-sm);
+	}
+
+	.number-input-wrap {
+		display: flex;
+		align-items: center;
+		gap: var(--intently-space-sm);
+		background: rgba(0, 0, 0, 0.03);
+		border-radius: 16px;
+		padding: 0.375rem;
+		border: 1px solid rgba(0, 0, 0, 0.04);
+	}
+
+	.num-btn {
+		width: 44px;
+		height: 44px;
+		border-radius: 12px;
+		border: 1px solid rgba(0, 0, 0, 0.06);
+		background: rgba(255, 255, 255, 0.9);
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--intently-text-primary);
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.2s ease;
+	}
+
+	.num-btn:hover {
+		background: rgba(33, 150, 243, 0.08);
+		border-color: var(--intently-blue);
+		color: var(--intently-blue);
+	}
+
+	.num-btn:active {
+		transform: scale(0.95);
+	}
+
+	.number-input-wrap input {
+		width: 56px;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+		background: transparent;
+		border: none;
+		outline: none;
+		-moz-appearance: textfield;
+	}
+
+	.number-input-wrap input::-webkit-outer-spin-button,
+	.number-input-wrap input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	/* App grid */
+	.app-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--intently-space-sm);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.app-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.375rem;
+		padding: var(--intently-space-md) var(--intently-space-sm);
+		border-radius: 14px;
+		background: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+		border: 2px solid rgba(0, 0, 0, 0.05);
+		cursor: pointer;
+		transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+		position: relative;
+	}
+
+	@media (hover: hover) {
+		.app-card:hover {
+			transform: translateY(-2px);
+			border-color: rgba(33, 150, 243, 0.3);
+			box-shadow: 0 4px 12px rgba(33, 150, 243, 0.08);
+		}
+	}
+
+	.app-card:active {
+		transform: scale(0.97);
+	}
+
+	.app-card.selected {
+		border-color: var(--intently-blue);
+		background: rgba(33, 150, 243, 0.06);
+		box-shadow:
+			0 0 0 3px rgba(33, 150, 243, 0.12),
+			0 4px 12px rgba(33, 150, 243, 0.08);
+	}
+
+	.app-card.selected::after {
+		content: '✓';
+		position: absolute;
+		top: 5px;
+		right: 6px;
+		font-size: 0.625rem;
+		font-weight: 700;
+		color: white;
+		background: var(--intently-blue);
+		border-radius: 50%;
+		width: 18px;
+		height: 18px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 1px 4px rgba(33, 150, 243, 0.3);
+	}
+
+	.app-icon {
+		font-size: 1.75rem;
+		line-height: 1;
+	}
+
+	.app-name {
+		font-size: 0.6875rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	/* Navigation buttons */
+	.step-nav {
+		display: flex;
+		gap: var(--intently-space-md);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.next-button,
+	.back-button {
+		padding: 0.875rem 2.25rem;
+		border-radius: var(--intently-radius-full);
+		font-size: 1rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		border: none;
+		min-height: 48px;
+		font-family: inherit;
+	}
+
+	.next-button {
+		background: rgba(33, 150, 243, 0.85);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		color: white;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.25),
+			0 4px 16px rgba(33, 150, 243, 0.3);
+	}
+
+	.next-button:hover:not(:disabled) {
+		background: rgba(33, 150, 243, 0.95);
+		transform: translateY(-2px);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.3),
+			0 8px 24px rgba(33, 150, 243, 0.35);
+	}
+
+	.next-button:active:not(:disabled) {
+		transform: translateY(0);
+	}
+
+	.next-button:disabled {
+		opacity: 0.35;
+		cursor: not-allowed;
+	}
+
+	.back-button {
+		background: rgba(0, 0, 0, 0.04);
+		color: var(--intently-text-secondary);
+		border: 1px solid rgba(0, 0, 0, 0.04);
+	}
+
+	.back-button:hover {
+		background: rgba(0, 0, 0, 0.07);
+		color: var(--intently-text-primary);
+	}
+
+	/* ============================
+	   REVEAL CARDS
+	   ============================ */
+	.reveal-card {
+		text-align: center;
+		animation: revealIn 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+		padding: var(--intently-space-md) 0;
+	}
+
+	@keyframes revealIn {
+		from {
+			opacity: 0;
+			transform: translateY(24px) scale(0.98);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0) scale(1);
+		}
+	}
+
+	.reveal-overline {
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: var(--intently-blue);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.big-stat {
+		margin-bottom: var(--intently-space-lg);
+	}
+
+	.count-up {
+		font-size: 3.5rem;
+		font-weight: 800;
+		line-height: 1;
+		background: linear-gradient(135deg, var(--intently-blue), var(--intently-purple));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.big-stat-unit {
+		display: block;
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--intently-text-hint);
+		margin-top: var(--intently-space-xs);
+	}
+
+	.stat-row {
+		display: flex;
+		gap: var(--intently-space-sm);
+		justify-content: center;
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.stat-pill {
+		padding: 0.5rem 1.25rem;
+		background: rgba(0, 0, 0, 0.03);
+		border: 1px solid rgba(0, 0, 0, 0.04);
+		border-radius: var(--intently-radius-full);
+		display: flex;
+		align-items: baseline;
+		gap: 0.375rem;
+	}
+
+	.stat-pill-value {
+		font-size: 1.125rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+	}
+
+	.stat-pill-label {
+		font-size: 0.75rem;
+		color: var(--intently-text-hint);
+		font-weight: 500;
+	}
+
+	.comparison-text {
+		font-size: 1.0625rem;
+		color: var(--intently-text-secondary);
+		margin-bottom: var(--intently-space-xl);
+		line-height: 1.5;
+		font-style: italic;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.reveal-next-btn {
+		padding: 0.75rem 2.5rem;
+		border-radius: var(--intently-radius-full);
+		background: rgba(33, 150, 243, 0.08);
+		color: var(--intently-blue);
+		border: 1px solid rgba(33, 150, 243, 0.15);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		cursor: pointer;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		margin-top: var(--intently-space-lg);
+		font-family: inherit;
+	}
+
+	.reveal-next-btn:hover {
+		background: rgba(33, 150, 243, 0.15);
+		border-color: rgba(33, 150, 243, 0.25);
+		transform: translateY(-1px);
+	}
+
+	/* Breakdown */
+	.stacked-bar {
+		display: flex;
+		height: 28px;
+		border-radius: var(--intently-radius-full);
+		overflow: hidden;
+		margin-bottom: var(--intently-space-xl);
+		gap: 2px;
+		background: rgba(0, 0, 0, 0.04);
+		padding: 3px;
+	}
+
+	.bar-segment {
+		transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+		min-width: 6px;
+		border-radius: var(--intently-radius-full);
+	}
+
+	.breakdown-pills {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--intently-space-sm);
+		justify-content: center;
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.breakdown-pill {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.375rem;
+		padding: 0.4rem 0.875rem;
+		border-radius: var(--intently-radius-full);
+		background: rgba(255, 255, 255, 0.6);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+		border: 1px solid rgba(0, 0, 0, 0.05);
+		font-size: 0.8125rem;
+		animation: revealIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+	}
+
+	.bp-dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
+
+	.bp-name {
+		font-weight: 600;
+		color: var(--intently-text-primary);
+	}
+
+	.bp-stat {
+		color: var(--intently-text-hint);
+		font-size: 0.75rem;
+	}
+
+	/* Opportunity */
+	.opportunity-intro {
+		font-size: 1.0625rem;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-xl);
+		line-height: 1.5;
+	}
+
+	.opportunity-list {
+		display: grid;
+		gap: var(--intently-space-sm);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.opp-item {
+		display: flex;
+		align-items: center;
+		gap: var(--intently-space-md);
+		padding: 0.875rem var(--intently-space-md);
+		border-radius: 14px;
+		background: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+		border: 1px solid rgba(0, 0, 0, 0.04);
+		animation: slideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+		text-align: left;
+		transition: transform 0.2s ease;
+	}
+
+	.opp-item:hover {
+		transform: translateX(4px);
+	}
+
+	@keyframes slideIn {
+		from {
+			opacity: 0;
+			transform: translateX(-16px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	.opp-emoji {
+		font-size: 1.5rem;
+		flex-shrink: 0;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(0, 0, 0, 0.03);
+		border-radius: 10px;
+	}
+
+	.opp-text {
+		font-size: 0.9375rem;
+		color: var(--intently-text-primary);
+		line-height: 1.4;
+	}
+
+	.opp-text strong {
+		background: linear-gradient(135deg, var(--intently-blue), var(--intently-purple));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		font-weight: 800;
+	}
+
+	/* Pledge */
+	.pledge-intro {
+		font-size: 1.0625rem;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-xl);
+		line-height: 1.5;
+	}
+
+	.pledge-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--intently-space-md);
+		margin-bottom: var(--intently-space-xl);
+	}
+
+	.pledge-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--intently-space-xs);
+		padding: var(--intently-space-lg) var(--intently-space-md);
+		border-radius: 16px;
+		background: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+		border: 1px solid rgba(0, 0, 0, 0.04);
+	}
+
+	.pledge-period {
+		font-size: 0.6875rem;
+		font-weight: 700;
+		color: var(--intently-text-hint);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+
+	.pledge-value {
+		font-size: 1.75rem;
+		font-weight: 800;
+		background: linear-gradient(135deg, var(--intently-green), var(--intently-blue));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.pledge-unit {
+		font-size: 0.75rem;
+		color: var(--intently-text-hint);
+		font-weight: 500;
+	}
+
+	/* Share */
+	.share-section {
+		display: flex;
+		gap: var(--intently-space-sm);
+		justify-content: center;
+		margin-bottom: var(--intently-space-xl);
+		flex-wrap: wrap;
+	}
+
+	.share-btn {
+		padding: 0.625rem 1.25rem;
+		border-radius: var(--intently-radius-full);
+		font-size: 0.8125rem;
+		font-weight: 600;
+		cursor: pointer;
+		border: none;
+		transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+		min-height: 44px;
+		font-family: inherit;
+	}
+
+	.share-twitter {
+		background: #1DA1F2;
+		color: white;
+		box-shadow: 0 2px 8px rgba(29, 161, 242, 0.2);
+	}
+
+	.share-twitter:hover {
+		background: #0d8bd9;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(29, 161, 242, 0.3);
+	}
+
+	.share-copy {
+		background: rgba(0, 0, 0, 0.05);
+		color: var(--intently-text-secondary);
+		border: 1px solid rgba(0, 0, 0, 0.04);
+	}
+
+	.share-copy:hover {
+		background: rgba(0, 0, 0, 0.08);
+		color: var(--intently-text-primary);
+		transform: translateY(-1px);
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: var(--intently-space-md);
+		justify-content: center;
+		margin-bottom: var(--intently-space-lg);
+		flex-wrap: wrap;
+	}
+
+	.retake-button {
+		display: block;
+		margin: 0 auto;
+		background: none;
+		border: none;
+		color: var(--intently-text-hint);
+		font-weight: 500;
+		font-size: 0.875rem;
+		cursor: pointer;
+		text-decoration: none;
+		padding: var(--intently-space-sm);
+		transition: color var(--intently-transition-fast);
+		font-family: inherit;
+	}
+
+	.retake-button:hover {
+		color: var(--intently-blue);
+	}
+
+	/* ============================
+	   CROSS-LINKS
+	   ============================ */
+	.cross-links-card {
+		padding: var(--intently-space-xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+		margin-bottom: var(--intently-space-2xl);
+	}
+
+	.cross-links-card h3 {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-md);
+		color: var(--intently-text-primary);
+	}
+
+	.tools-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--intently-space-sm);
+	}
+
+	.tool-link {
+		display: flex;
+		align-items: center;
+		gap: var(--intently-space-md);
+		padding: var(--intently-space-md);
+		border-radius: 14px;
+		background: rgba(0, 0, 0, 0.02);
+		text-decoration: none;
+		transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+		border: 1px solid rgba(0, 0, 0, 0.03);
+	}
+
+	.tool-link:hover {
+		background: rgba(33, 150, 243, 0.05);
+		border-color: rgba(33, 150, 243, 0.12);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+	}
+
+	.tool-link-icon {
+		font-size: 1.5rem;
+	}
+
+	.tool-link-text {
+		display: flex;
+		flex-direction: column;
+		gap: 1px;
+	}
+
+	.tool-link-text strong {
+		font-size: 0.875rem;
+		color: var(--intently-text-primary);
+	}
+
+	.tool-link-text span {
+		font-size: 0.75rem;
+		color: var(--intently-text-hint);
+	}
+
+	/* ============================
+	   INFO / FAQ
+	   ============================ */
+	.info-glass-card {
+		padding: var(--intently-space-xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+	}
+
+	.info-glass-card h3 {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0 0 var(--intently-space-sm);
+		color: var(--intently-text-primary);
+	}
+
+	.info-glass-card > p {
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: 0 0 var(--intently-space-lg);
+		font-size: 0.9375rem;
+	}
+
+	.faq-glass-item {
+		background: rgba(0, 0, 0, 0.025);
+		border-radius: 12px;
+		margin-bottom: var(--intently-space-sm);
+		transition: background 0.3s ease;
+	}
+
+	.faq-glass-item[open] {
+		background: rgba(0, 0, 0, 0.045);
+	}
+
+	.faq-glass-item summary {
+		padding: var(--intently-space-md);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		color: var(--intently-text-primary);
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--intently-space-sm);
+		transition: color 0.2s ease;
+	}
+
+	.faq-glass-item summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-glass-item summary::after {
+		content: '+';
+		font-size: 1.25rem;
+		font-weight: 300;
+		color: var(--intently-text-hint);
+		flex-shrink: 0;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.04);
+		transition: all 0.3s ease;
+		line-height: 1;
+	}
+
+	.faq-glass-item[open] summary::after {
+		content: '\2212';
+		background: rgba(33, 150, 243, 0.1);
+		color: var(--intently-blue);
+	}
+
+	@media (hover: hover) {
+		.faq-glass-item summary:hover {
+			color: var(--intently-blue);
+		}
+	}
+
+	.faq-glass-item p {
+		padding: 0 var(--intently-space-md) var(--intently-space-md);
+		margin: 0;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		font-size: 0.9375rem;
+	}
+
+	.quiz-links {
+		margin-top: var(--intently-space-lg);
+		padding-top: var(--intently-space-lg);
+		border-top: 1px solid rgba(0, 0, 0, 0.06);
+	}
+
+	.quiz-links p {
+		margin: 0;
+		font-size: 0.9375rem;
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+	}
+
+	.quiz-links a {
+		color: var(--intently-blue);
+		font-weight: 600;
+		text-decoration: none;
+		transition: color var(--intently-transition-fast);
+	}
+
+	.quiz-links a:hover {
+		text-decoration: underline;
+	}
+
+	/* ============================
+	   DARK MODE
+	   ============================ */
+	@media (prefers-color-scheme: dark) {
+		.hero-glow {
+			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+		}
+
+		.meta-pill {
+			background: rgba(66, 165, 245, 0.12);
+			border-color: rgba(66, 165, 245, 0.2);
+		}
+
+		.calc-glass-card,
+		.cross-links-card,
+		.info-glass-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+
+		.progress-bar {
+			background: rgba(255, 255, 255, 0.08);
+		}
+
+		.app-card {
+			background: rgba(255, 255, 255, 0.05);
+			border-color: rgba(255, 255, 255, 0.08);
+			backdrop-filter: none;
+			-webkit-backdrop-filter: none;
+		}
+
+		.app-card.selected {
+			background: rgba(66, 165, 245, 0.1);
+			border-color: var(--intently-blue);
+		}
+
+		.number-input-wrap {
+			background: rgba(255, 255, 255, 0.05);
+			border-color: rgba(255, 255, 255, 0.06);
+		}
+
+		.num-btn {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.08);
+		}
+
+		.back-button {
+			background: rgba(255, 255, 255, 0.06);
+			border-color: rgba(255, 255, 255, 0.06);
+			color: var(--intently-text-secondary);
+		}
+
+		.stat-pill {
+			background: rgba(255, 255, 255, 0.06);
+			border-color: rgba(255, 255, 255, 0.06);
+		}
+
+		.pledge-item {
+			background: rgba(255, 255, 255, 0.05);
+			border-color: rgba(255, 255, 255, 0.06);
+			backdrop-filter: none;
+			-webkit-backdrop-filter: none;
+		}
+
+		.stacked-bar {
+			background: rgba(255, 255, 255, 0.06);
+		}
+
+		.breakdown-pill {
+			background: rgba(255, 255, 255, 0.07);
+			border-color: rgba(255, 255, 255, 0.08);
+			backdrop-filter: none;
+			-webkit-backdrop-filter: none;
+		}
+
+		.opp-item {
+			background: rgba(255, 255, 255, 0.05);
+			border-color: rgba(255, 255, 255, 0.06);
+			backdrop-filter: none;
+			-webkit-backdrop-filter: none;
+		}
+
+		.opp-emoji {
+			background: rgba(255, 255, 255, 0.06);
+		}
+
+		.share-copy {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.08);
+		}
+
+		.faq-glass-item {
+			background: rgba(255, 255, 255, 0.04);
+		}
+
+		.faq-glass-item[open] {
+			background: rgba(255, 255, 255, 0.06);
+		}
+
+		.faq-glass-item summary::after {
+			background: rgba(255, 255, 255, 0.08);
+		}
+
+		.faq-glass-item[open] summary::after {
+			background: rgba(66, 165, 245, 0.15);
+		}
+
+		.quiz-links {
+			border-top-color: rgba(255, 255, 255, 0.08);
+		}
+
+		.tool-link {
+			background: rgba(255, 255, 255, 0.04);
+			border-color: rgba(255, 255, 255, 0.04);
+		}
+
+		.tool-link:hover {
+			background: rgba(66, 165, 245, 0.08);
+			border-color: rgba(66, 165, 245, 0.15);
+		}
+
+		.glass-slider {
+			background: linear-gradient(
+				90deg,
+				var(--slider-color, var(--intently-green)) 0%,
+				var(--slider-color, var(--intently-green)) var(--slider-pct, 23%),
+				rgba(255, 255, 255, 0.08) var(--slider-pct, 23%),
+				rgba(255, 255, 255, 0.08) 100%
+			);
+		}
+
+		.glass-slider::-webkit-slider-thumb {
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	/* ============================
+	   RESPONSIVE
+	   ============================ */
+	@media (min-width: 768px) {
+		.calc-hero {
+			padding: var(--intently-space-3xl) 0;
+		}
+
+		.text-gradient {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.25rem;
+		}
+
+		.step-title {
+			font-size: 1.75rem;
+		}
+
+		.calc-glass-card {
+			padding: var(--intently-space-3xl);
+		}
+
+		.count-up {
+			font-size: 5rem;
+		}
+
+		.slider-big-number {
+			font-size: 5rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.calc-hero {
+			padding: var(--intently-space-4xl) 0;
+		}
+
+		.text-gradient {
+			font-size: 3rem;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.calc-glass-card {
+			padding: var(--intently-space-lg);
+		}
+
+		.age-inputs {
+			grid-template-columns: 1fr;
+			gap: var(--intently-space-md);
+		}
+
+		.app-grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: var(--intently-space-xs);
+		}
+
+		.app-card {
+			padding: var(--intently-space-sm) var(--intently-space-xs);
+		}
+
+		.pledge-grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: var(--intently-space-sm);
+		}
+
+		.pledge-item {
+			padding: var(--intently-space-md) var(--intently-space-sm);
+		}
+
+		.pledge-value {
+			font-size: 1.25rem;
+		}
+
+		.tools-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+
+		.info-glass-card {
+			padding: var(--intently-space-lg);
+		}
+
+		.count-up {
+			font-size: 2.75rem;
+		}
+
+		.slider-big-number {
+			font-size: 3.5rem;
+		}
+
+		.stat-row {
+			gap: var(--intently-space-xs);
+		}
+
+		.stat-pill {
+			padding: 0.375rem 0.75rem;
+		}
+
+		.stat-pill-value {
+			font-size: 1rem;
+		}
+	}
+
+	/* Reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+		.reveal-card,
+		.opp-item,
+		.breakdown-pill {
+			animation: none;
+		}
+
+		.progress-fill,
+		.bar-segment {
+			transition: none;
+		}
+
+		.glass-slider::-webkit-slider-thumb {
+			transition: none;
+		}
+
+		.opp-item:hover {
+			transform: none;
+		}
+	}
+
+	/* Focus */
+	a:focus-visible,
+	button:focus-visible,
+	input:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+</style>
