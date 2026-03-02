@@ -88,6 +88,11 @@ const effectiveAuthor = author || 'Intently Team';
 
 		{faq && <FAQSchema faqs={faq} />}
 		{howToSteps && <HowToSchema name={title} description={description} image={heroImage} steps={howToSteps} />}
+
+		<!-- Blog-specific reading font (only loaded on blog pages) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -606,7 +611,7 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.reading-note {
-		margin-bottom: var(--intently-space-md);
+		margin-bottom: var(--intently-space-xl);
 		padding: var(--intently-space-md) var(--intently-space-lg);
 		border-radius: var(--intently-radius-md);
 		background: color-mix(in srgb, var(--intently-green) 9%, transparent);
@@ -625,24 +630,37 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.article-body {
-		max-width: 74ch;
+		max-width: 66ch;
+		font-family: "Source Serif 4", "Georgia", "Times New Roman", serif;
+		font-optical-sizing: auto;
 	}
 
 	:global(.article-body > *:first-child) {
 		margin-top: 0;
 	}
 
+	:global(.article-body > p:first-child) {
+		font-size: clamp(1.12rem, 1.6vw, 1.3rem);
+		line-height: 1.75;
+		color: var(--intently-text-primary);
+	}
+
+	:global(.article-body strong) {
+		font-weight: 700;
+		color: var(--intently-text-primary);
+	}
+
 	:global(.article-body p) {
-		margin: 0 0 1.15rem;
-		font-size: clamp(1rem, 1.2vw, 1.12rem);
-		line-height: 1.85;
+		margin: 0 0 1.6rem;
+		font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+		line-height: 1.8;
 		color: var(--intently-text-primary);
 	}
 
 	:global(.article-body h2),
 	:global(.article-body h3),
 	:global(.article-body h4) {
-		margin: 2rem 0 0.8rem;
+		font-family: "Atkinson", sans-serif;
 		line-height: 1.25;
 		letter-spacing: -0.015em;
 		color: var(--intently-text-primary);
@@ -650,42 +668,48 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	:global(.article-body h2) {
+		margin: 3rem 0 1rem;
 		font-size: clamp(1.45rem, 2vw, 2rem);
 	}
 
 	:global(.article-body h3) {
+		margin: 2.5rem 0 0.85rem;
 		font-size: clamp(1.2rem, 1.5vw, 1.45rem);
 	}
 
 	:global(.article-body h4) {
+		margin: 2rem 0 0.75rem;
 		font-size: 1.1rem;
 	}
 
 	:global(.article-body ul),
 	:global(.article-body ol) {
-		margin: 0 0 1.2rem;
-		padding-left: 1.25rem;
+		margin: 0 0 1.6rem;
+		padding-left: 1.5rem;
 		color: var(--intently-text-primary);
 	}
 
 	:global(.article-body li) {
-		margin: 0.42rem 0;
+		margin: 0.6rem 0;
 		line-height: 1.75;
+		font-size: clamp(1.05rem, 1.4vw, 1.2rem);
 	}
 
 	:global(.article-body a) {
-		color: color-mix(in srgb, var(--intently-blue-dark) 82%, var(--intently-text-primary));
+		color: var(--intently-blue-dark);
 		font-weight: 600;
-		text-decoration: none;
-		box-shadow: inset 0 -0.12em 0 color-mix(in srgb, var(--intently-blue) 24%, transparent);
+		text-decoration: underline;
+		text-decoration-color: color-mix(in srgb, var(--intently-blue) 30%, transparent);
+		text-underline-offset: 0.15em;
+		text-decoration-thickness: 1.5px;
 		transition:
 			color var(--intently-transition-fast),
-			box-shadow var(--intently-transition-fast);
+			text-decoration-color var(--intently-transition-fast);
 	}
 
 	:global(.article-body a:hover) {
-		color: var(--intently-text-primary);
-		box-shadow: inset 0 -0.42em 0 color-mix(in srgb, var(--intently-blue) 18%, transparent);
+		color: var(--intently-blue);
+		text-decoration-color: var(--intently-blue);
 	}
 
 	:global(.article-body a:focus-visible) {
@@ -695,34 +719,106 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	:global(.article-body blockquote) {
-		margin: 1.8rem 0;
-		padding: var(--intently-space-md) var(--intently-space-lg);
-		border-left: 4px solid color-mix(in srgb, var(--intently-blue) 55%, transparent);
-		background: color-mix(in srgb, var(--intently-blue) 6%, transparent);
+		margin: 2.2rem 0;
+		padding: var(--intently-space-lg) var(--intently-space-xl);
+		border-left: 4px solid;
+		border-image: linear-gradient(
+			to bottom,
+			var(--intently-blue),
+			color-mix(in srgb, var(--intently-green) 70%, var(--intently-blue))
+		) 1;
+		background: color-mix(in srgb, var(--intently-blue) 5%, transparent);
 		border-radius: 0 var(--intently-radius-md) var(--intently-radius-md) 0;
 		font-style: normal;
 	}
 
+	:global(.article-body blockquote p) {
+		font-size: clamp(1.08rem, 1.5vw, 1.25rem);
+		line-height: 1.75;
+		margin-bottom: 0.8rem;
+		color: var(--intently-text-secondary);
+	}
+
+	:global(.article-body blockquote p:last-child) {
+		margin-bottom: 0;
+	}
+
 	:global(.article-body hr) {
-		margin: 2rem 0;
+		margin: 3rem auto;
 		border: 0;
-		border-top: 1px solid color-mix(in srgb, var(--intently-text-hint) 35%, transparent);
+		width: 100%;
+		max-width: 6rem;
+		height: 1px;
+		background: linear-gradient(
+			90deg,
+			transparent,
+			color-mix(in srgb, var(--intently-text-hint) 50%, transparent) 20%,
+			color-mix(in srgb, var(--intently-text-hint) 50%, transparent) 80%,
+			transparent
+		);
+	}
+
+	:global(.article-body hr::after) {
+		content: "\2022\2002\2022\2002\2022";
+		display: block;
+		text-align: center;
+		margin-top: -0.65rem;
+		font-size: 1.1rem;
+		letter-spacing: 0.15em;
+		color: var(--intently-text-hint);
 	}
 
 	:global(.article-body img) {
 		width: 100%;
 		height: auto;
-		margin: 1.5rem 0;
+		margin: 2rem 0;
 		border-radius: var(--intently-radius-md);
 		box-shadow: var(--intently-shadow-sm);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 15%, transparent);
+	}
+
+	:global(.article-body figure) {
+		margin: 2.5rem 0;
+		padding: 0;
+	}
+
+	:global(.article-body figure img) {
+		margin: 0 0 0.75rem;
+	}
+
+	:global(.article-body figcaption) {
+		font-family: "Atkinson", sans-serif;
+		font-size: 0.85rem;
+		line-height: 1.5;
+		color: var(--intently-text-secondary);
+		text-align: center;
+		font-style: italic;
 	}
 
 	:global(.article-body pre) {
-		margin: 1.5rem 0;
-		padding: var(--intently-space-md);
+		margin: 2rem 0;
+		padding: var(--intently-space-lg);
 		border-radius: var(--intently-radius-md);
 		background: color-mix(in srgb, var(--intently-bg-secondary) 85%, black 5%);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 18%, transparent);
 		overflow-x: auto;
+		font-size: 0.9rem;
+		line-height: 1.65;
+	}
+
+	:global(.article-body code) {
+		font-size: 0.88em;
+		padding: 0.15em 0.4em;
+		border-radius: 4px;
+		background: color-mix(in srgb, var(--intently-bg-secondary) 80%, var(--intently-text-hint) 10%);
+		font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
+	}
+
+	:global(.article-body pre code) {
+		font-size: inherit;
+		padding: 0;
+		border-radius: 0;
+		background: none;
 	}
 
 	:global(.article-body table) {
@@ -730,14 +826,31 @@ const effectiveAuthor = author || 'Intently Team';
 		width: 100%;
 		overflow-x: auto;
 		border-collapse: collapse;
-		margin: 1.4rem 0;
+		margin: 2rem 0;
+		font-size: 0.95rem;
 	}
 
-	:global(.article-body th),
-	:global(.article-body td) {
-		padding: 0.65rem 0.8rem;
+	:global(.article-body th) {
+		padding: 0.75rem 1rem;
 		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 28%, transparent);
 		text-align: left;
+		font-weight: 700;
+		font-family: "Atkinson", sans-serif;
+		font-size: 0.85rem;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		background: color-mix(in srgb, var(--intently-bg-secondary) 80%, var(--intently-text-hint) 8%);
+		color: var(--intently-text-secondary);
+	}
+
+	:global(.article-body td) {
+		padding: 0.75rem 1rem;
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 28%, transparent);
+		text-align: left;
+	}
+
+	:global(.article-body tbody tr:nth-child(even)) {
+		background: color-mix(in srgb, var(--intently-bg-secondary) 50%, transparent);
 	}
 
 	.related-posts {
@@ -851,6 +964,10 @@ const effectiveAuthor = author || 'Intently Team';
 			padding-right: 0.85rem;
 		}
 
+		.article-body {
+			max-width: 100%;
+		}
+
 		.hero-meta {
 			font-size: 0.8rem;
 		}
@@ -871,6 +988,38 @@ const effectiveAuthor = author || 'Intently Team';
 
 		.reading-note {
 			background: color-mix(in srgb, var(--intently-green) 12%, transparent);
+		}
+
+		.article-body {
+			letter-spacing: 0.005em;
+		}
+
+		:global(.article-body blockquote) {
+			background: color-mix(in srgb, var(--intently-blue) 8%, transparent);
+		}
+
+		:global(.article-body pre) {
+			border-color: color-mix(in srgb, var(--intently-text-hint) 25%, transparent);
+		}
+
+		:global(.article-body code) {
+			background: color-mix(in srgb, var(--intently-bg-secondary) 90%, var(--intently-text-hint) 15%);
+		}
+
+		:global(.article-body th) {
+			background: color-mix(in srgb, var(--intently-bg-secondary) 90%, var(--intently-text-hint) 10%);
+		}
+
+		:global(.article-body img) {
+			border-color: color-mix(in srgb, var(--intently-text-hint) 25%, transparent);
+		}
+
+		:global(.article-body hr::after) {
+			color: var(--intently-text-hint);
+		}
+
+		:global(.article-body a) {
+			text-decoration-color: color-mix(in srgb, var(--intently-blue) 40%, transparent);
 		}
 	}
 </style>
