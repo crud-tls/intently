@@ -127,13 +127,13 @@ const effectiveAuthor = author || 'Intently Team';
 
 			<div class="article-layout">
 				<aside class="article-sidebar" aria-label="Article tools">
-					<div class="sidebar-card toc-panel">
-						<div class="toc-panel-header">
-							<p class="sidebar-label">On this page</p>
+					<nav class="toc-panel" aria-label="Table of contents">
+						<p class="toc-label">On this page</p>
+						<div class="toc-track" id="toc-track-desktop">
+							<ol class="toc-list toc-desktop-list" id="toc-desktop"></ol>
 						</div>
-						<ol class="toc-list toc-desktop-list" id="toc-desktop"></ol>
-						<p class="toc-empty" id="toc-empty-desktop">Headings appear automatically as you scroll.</p>
-					</div>
+						<p class="toc-empty" id="toc-empty-desktop">Headings appear as you scroll.</p>
+					</nav>
 					<div class="sidebar-card sidebar-cta">
 						<h2>Take control of your attention</h2>
 						<p>Use mindful prompts to reduce autopilot scrolling without harsh app blocking.</p>
@@ -145,13 +145,13 @@ const effectiveAuthor = author || 'Intently Team';
 				</aside>
 
 				<article class="article-content">
-					<section class="toc-mobile" id="toc-mobile-shell" aria-label="On this page">
-						<div class="toc-mobile-head">
-							<p class="toc-mobile-title">On this page</p>
+					<nav class="toc-mobile" id="toc-mobile-shell" aria-label="Table of contents">
+						<p class="toc-mobile-label">On this page</p>
+						<div class="toc-track" id="toc-track-mobile">
+							<ol class="toc-list toc-mobile-list" id="toc-mobile"></ol>
 						</div>
-						<ol class="toc-list toc-mobile-list" id="toc-mobile"></ol>
-						<p class="toc-empty" id="toc-empty-mobile">Headings appear automatically as you scroll.</p>
-					</section>
+						<p class="toc-empty" id="toc-empty-mobile">Headings appear as you scroll.</p>
+					</nav>
 
 					<div class="reading-note" aria-label="Article context">
 						<p>
@@ -210,6 +210,8 @@ const effectiveAuthor = author || 'Intently Team';
 			const tocEmptyDesktop = document.getElementById('toc-empty-desktop');
 			const tocEmptyMobile = document.getElementById('toc-empty-mobile');
 			const tocMobileShell = document.getElementById('toc-mobile-shell');
+			const tocTrackDesktop = document.getElementById('toc-track-desktop');
+			const tocTrackMobile = document.getElementById('toc-track-mobile');
 
 			function slugify(text) {
 				return text
@@ -224,19 +226,33 @@ const effectiveAuthor = author || 'Intently Team';
 				? Array.from(articleBody.querySelectorAll('h2, h3'))
 				: [];
 
+			let h2Counter = 0;
+
 			function createTocItem(heading, index) {
 				if (!heading.id) {
 					heading.id = `${slugify(heading.textContent || 'section')}-${index + 1}`;
 				}
 
+				const isH3 = heading.tagName === 'H3';
 				const item = document.createElement('li');
-				item.className = heading.tagName === 'H3' ? 'toc-item toc-sub-item' : 'toc-item';
+				item.className = isH3 ? 'toc-item toc-sub-item' : 'toc-item';
 
 				const link = document.createElement('a');
 				link.href = `#${heading.id}`;
-				link.textContent = heading.textContent || 'Section';
-				item.appendChild(link);
 
+				if (!isH3) {
+					h2Counter++;
+					const num = document.createElement('span');
+					num.className = 'toc-number';
+					num.textContent = String(h2Counter).padStart(2, '0');
+					link.appendChild(num);
+				}
+
+				const text = document.createElement('span');
+				text.textContent = heading.textContent || 'Section';
+				link.appendChild(text);
+
+				item.appendChild(link);
 				return item;
 			}
 
@@ -245,6 +261,7 @@ const effectiveAuthor = author || 'Intently Team';
 					return;
 				}
 
+				h2Counter = 0;
 				listNode.innerHTML = '';
 				headings.forEach((heading, index) => {
 					listNode.appendChild(createTocItem(heading, index));
@@ -270,6 +287,35 @@ const effectiveAuthor = author || 'Intently Team';
 
 			const tocLinks = Array.from(document.querySelectorAll('.toc-list a'));
 
+			// Smooth scroll on TOC link clicks
+			tocLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const href = link.getAttribute('href');
+					if (!href) return;
+					const target = document.querySelector(href);
+					if (target) {
+						target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+						history.pushState(null, '', href);
+					}
+				});
+			});
+
+			function updateTrackPosition(activeLink) {
+				[tocTrackDesktop, tocTrackMobile].forEach((track) => {
+					if (!track) return;
+					const activeInTrack = track.querySelector('.toc-list a.active');
+					if (activeInTrack) {
+						const trackRect = track.getBoundingClientRect();
+						const linkRect = activeInTrack.getBoundingClientRect();
+						const top = linkRect.top - trackRect.top;
+						const height = linkRect.height;
+						track.style.setProperty('--toc-active-top', `${top}px`);
+						track.style.setProperty('--toc-active-height', `${height}px`);
+					}
+				});
+			}
+
 			function updateActiveHeading() {
 				if (headings.length === 0) {
 					return;
@@ -287,7 +333,14 @@ const effectiveAuthor = author || 'Intently Team';
 				tocLinks.forEach((link) => {
 					const isActive = link.getAttribute('href') === `#${activeId}`;
 					link.classList.toggle('active', isActive);
+					if (isActive) {
+						link.setAttribute('aria-current', 'true');
+					} else {
+						link.removeAttribute('aria-current');
+					}
 				});
+
+				updateTrackPosition();
 			}
 
 			function updateReadingProgress() {
@@ -459,20 +512,44 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.toc-panel {
-		background: var(--intently-bg-primary);
+		padding: 0;
 	}
 
-	.toc-panel-header {
-		margin-bottom: var(--intently-space-sm);
-	}
-
-	.sidebar-label {
-		margin: 0;
-		font-size: 0.78rem;
+	.toc-label {
+		margin: 0 0 var(--intently-space-sm);
+		font-size: 0.72rem;
 		font-weight: 700;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.08em;
 		text-transform: uppercase;
-		color: var(--intently-text-secondary);
+		color: var(--intently-text-hint);
+	}
+
+	.toc-track {
+		position: relative;
+		padding-left: 1px;
+	}
+
+	.toc-track::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		background: color-mix(in srgb, var(--intently-text-hint) 25%, transparent);
+		border-radius: 1px;
+	}
+
+	.toc-track::after {
+		content: "";
+		position: absolute;
+		left: -0.5px;
+		top: var(--toc-active-top, 0);
+		height: var(--toc-active-height, 0);
+		width: 2px;
+		background: var(--intently-blue);
+		border-radius: 2px;
+		transition: top 250ms ease, height 250ms ease;
 	}
 
 	.toc-list {
@@ -480,44 +557,64 @@ const effectiveAuthor = author || 'Intently Team';
 		padding: 0;
 		list-style: none;
 		display: grid;
-		gap: var(--intently-space-xs);
+		gap: 2px;
 	}
 
 	.toc-item a {
-		display: block;
-		padding: 0.55rem 0.75rem;
-		border-radius: var(--intently-radius-sm);
-		border-left: 3px solid transparent;
-		font-size: 0.9rem;
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+		padding: 0.4rem 0 0.4rem 1rem;
+		font-size: 0.84rem;
 		font-weight: 500;
-		line-height: 1.45;
+		line-height: 1.4;
 		text-decoration: none;
 		color: var(--intently-text-secondary);
-		transition: all var(--intently-transition-fast);
+		transition: color 150ms ease;
 	}
 
 	.toc-item a:hover {
-		background: var(--intently-bg-accent);
-		border-left-color: var(--intently-blue);
 		color: var(--intently-text-primary);
 	}
 
 	.toc-item a.active {
-		background: var(--intently-bg-accent);
-		border-left-color: var(--intently-blue);
-		color: var(--intently-text-primary);
+		color: var(--intently-blue);
 		font-weight: 600;
-		box-shadow: var(--intently-shadow-sm);
+	}
+
+	.toc-number {
+		font-size: 0.7rem;
+		font-weight: 600;
+		color: var(--intently-text-hint);
+		min-width: 1.1rem;
+		font-variant-numeric: tabular-nums;
+		flex-shrink: 0;
+	}
+
+	.toc-item a.active .toc-number {
+		color: var(--intently-blue);
 	}
 
 	.toc-sub-item a {
-		padding-left: 1.25rem;
-		font-size: 0.84rem;
+		padding-left: 2rem;
+		font-size: 0.8rem;
+		font-weight: 400;
+		color: var(--intently-text-hint);
+	}
+
+	.toc-sub-item a:hover {
+		color: var(--intently-text-secondary);
+	}
+
+	.toc-sub-item a.active {
+		color: var(--intently-blue);
+		font-weight: 500;
 	}
 
 	.toc-empty {
 		margin: var(--intently-space-sm) 0 0;
-		font-size: 0.85rem;
+		padding-left: 1rem;
+		font-size: 0.8rem;
 		line-height: 1.5;
 		color: var(--intently-text-hint);
 	}
@@ -583,31 +680,25 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.toc-mobile {
-		background: var(--intently-bg-primary);
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 24%, transparent);
-		border-radius: var(--intently-radius-lg);
-		padding: var(--intently-space-sm) var(--intently-space-md);
-		margin-bottom: var(--intently-space-md);
-		box-shadow: var(--intently-shadow-sm);
+		background: color-mix(in srgb, var(--intently-bg-secondary) 60%, transparent);
+		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 15%, transparent);
+		border-radius: var(--intently-radius-md);
+		padding: var(--intently-space-md);
+		margin-bottom: var(--intently-space-lg);
 	}
 
-	.toc-mobile-head {
-		margin-bottom: var(--intently-space-sm);
-	}
-
-	.toc-mobile-title {
-		margin: 0;
-		font-size: 0.8rem;
+	.toc-mobile-label {
+		margin: 0 0 var(--intently-space-sm);
+		font-size: 0.72rem;
 		font-weight: 700;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.08em;
 		text-transform: uppercase;
-		color: var(--intently-text-secondary);
+		color: var(--intently-text-hint);
 	}
 
-	.toc-mobile-list {
-		max-height: 13.5rem;
+	.toc-mobile .toc-list {
+		max-height: 14rem;
 		overflow-y: auto;
-		padding-right: var(--intently-space-xs);
 	}
 
 	.reading-note {
@@ -980,10 +1071,18 @@ const effectiveAuthor = author || 'Intently Team';
 	@media (prefers-color-scheme: dark) {
 		.article-hero,
 		.sidebar-card,
-		.toc-mobile,
 		.related-card,
 		.hero-image {
 			border-color: color-mix(in srgb, var(--intently-text-hint) 35%, transparent);
+		}
+
+		.toc-mobile {
+			background: color-mix(in srgb, var(--intently-bg-secondary) 50%, transparent);
+			border-color: color-mix(in srgb, var(--intently-text-hint) 25%, transparent);
+		}
+
+		.toc-track::before {
+			background: color-mix(in srgb, var(--intently-text-hint) 30%, transparent);
 		}
 
 		.reading-note {
