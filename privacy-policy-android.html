@@ -91,7 +91,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for Intently (Android)</h1>
-        <p class="updated"><strong>Last Updated:</strong> January 21, 2026</p>
+        <p class="updated"><strong>Last Updated:</strong> March 10, 2026</p>
 
         <h2>Introduction</h2>
         <p>Intently is a digital wellbeing application designed to help you build mindful social media usage habits. This privacy policy explains how Intently collects, uses, and protects your information.</p>
@@ -257,7 +257,7 @@
         </div>
 
         <h2>Permissions Explained</h2>
-        <p>Intently requires the following Android permissions to function:</p>
+        <p>Intently requires the following Android permissions to function. All permissions require explicit user grant:</p>
 
         <h3>1. Usage Access (PACKAGE_USAGE_STATS)</h3>
         <ul>
@@ -321,6 +321,19 @@
             <li><strong>User control:</strong> Sync is optional - only when you sign in. Analytics can be toggled OFF in Settings</li>
             <li><strong>Core app functionality:</strong> Works fully offline without internet (monitoring, reminders, stats)</li>
         </ul>
+
+        <h3>10. Accessibility Service (BIND_ACCESSIBILITY_SERVICE)</h3>
+        <ul>
+            <li><strong>Purpose:</strong> Detect when you navigate to Reels or Shorts sections in supported apps</li>
+            <li><strong>Supported Apps:</strong> Instagram, Facebook, YouTube, and TikTok</li>
+            <li><strong>What it accesses:</strong> Screen content to detect Reels/Shorts navigation (player views, content descriptions, tab labels)</li>
+            <li><strong>What it does NOT access:</strong> Your messages, posts, photos, passwords, or any personal content within apps</li>
+            <li><strong>User control:</strong> You must explicitly grant this permission in Android Settings → Accessibility → Intently</li>
+            <li><strong>Can be disabled:</strong> You can revoke this permission anytime; the Reels Blocking feature simply won't work without it</li>
+        </ul>
+        <div class="warning">
+            <p><strong>⚠️ Important:</strong> The Accessibility Service is ONLY used for the Reels/Shorts blocking feature. It is NOT used to read your personal content, messages, or collect any data from within other apps. The service only analyzes screen elements to determine if you've navigated to a Reels/Shorts section.</p>
+        </div>
 
         <h2>Your Rights and Control</h2>
         <h3>You Have Full Control:</h3>
@@ -407,7 +420,7 @@
         <hr>
 
         <div class="highlight">
-            <p><strong>Summary:</strong> Intently is a privacy-first app. Sign-in is optional (Google or Facebook) - all core features work fully offline. Your detailed usage data is stored locally and automatically deleted after 90 days. When you sign in, your data is encrypted and synced across devices via Supabase. We use anonymous analytics (default: ON, can be toggled OFF) to improve app quality and fix crashes. You can delete your account and all synced data anytime from Settings → Account & Sync.</p>
+            <p><strong>Summary:</strong> Intently is a privacy-first app. Sign-in is optional (Google or Facebook) - all core features work fully offline. Your detailed usage data is stored locally and automatically deleted after 90 days. When you sign in, your data is encrypted and synced across devices via Supabase. We use anonymous analytics (default: ON, can be toggled OFF) to improve app quality and fix crashes. The Reels Blocking feature uses Accessibility Service with your explicit permission to detect Reels/Shorts navigation - it does not read your personal content or messages. You can delete your account and all synced data anytime from Settings → Account & Sync.</p>
         </div>
     </div>
 </body>
