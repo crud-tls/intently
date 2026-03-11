@@ -1,0 +1,507 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/ui/Icon.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Privacy Policy - Loop (Android)`} description="Privacy Policy for Loop Android app - Task scheduling application built with privacy as a core principle. All data stored locally on your device." />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://liveintently.app" },
+				{ name: "Loop Privacy Policy", url: "https://liveintently.app/privacy-loop" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Privacy Hero -->
+			<section class="privacy-hero">
+				<div class="container">
+					<h1>Privacy Policy for Loop (Android)</h1>
+					<p class="updated"><strong>Last Updated:</strong> March 11, 2026</p>
+				</div>
+			</section>
+
+			<!-- Privacy Content -->
+			<section class="privacy-content">
+				<div class="container">
+					<div class="content-wrapper">
+						<h2>Introduction</h2>
+						<p>Loop is a task scheduling and productivity management application designed to help you organize your tasks, manage your time, and stay on top of your schedule. This privacy policy explains how Loop handles your information.</p>
+
+						<h2>Developer Information</h2>
+						<p><strong>App Name:</strong> Loop<br>
+						<strong>Developer:</strong> Sadakat<br>
+						<strong>Package:</strong> dev.sadakat.loop<br>
+						<strong>Contact Email:</strong> info@liveintently.app</p>
+
+						<h2>Our Commitment to Privacy</h2>
+						<div class="highlight">
+							<p><strong>Loop is built with privacy as a core principle. All your data is stored exclusively on your device. The app does not connect to the internet, does not use analytics, and does not track you in any way. Your data never leaves your phone.</strong></p>
+						</div>
+
+						<h2>Information Stored on Your Device</h2>
+						<p>Loop stores the following data locally on your device to provide its scheduling functionality:</p>
+
+						<h3>Tasks</h3>
+						<ul>
+							<li><strong>Task Name:</strong> The name you give to each task</li>
+							<li><strong>Duration:</strong> How long each task takes (in minutes)</li>
+							<li><strong>Scheduling Preferences:</strong> Interval type, frequency, priority level</li>
+							<li><strong>Task Color:</strong> Your chosen color for visual organization</li>
+							<li><strong>Active Status:</strong> Whether a task is currently active</li>
+						</ul>
+
+						<h3>Schedule Entries</h3>
+						<ul>
+							<li><strong>Scheduled Instances:</strong> When tasks are placed on your calendar</li>
+							<li><strong>Date and Time:</strong> Start and end times of scheduled tasks</li>
+							<li><strong>Completion Status:</strong> Whether tasks are completed or skipped</li>
+						</ul>
+
+						<h3>Time Blocks</h3>
+						<ul>
+							<li><strong>Availability Blocks:</strong> Recurring time periods you define (e.g., "Work Hours")</li>
+							<li><strong>Block Schedule:</strong> Start time, end time, and days of the week</li>
+						</ul>
+
+						<h3>User Preferences</h3>
+						<ul>
+							<li><strong>Onboarding Status:</strong> Whether you've completed the initial setup</li>
+							<li><strong>Notification Settings:</strong> Your notification and reminder preferences</li>
+							<li><strong>Scheduling Settings:</strong> Buffer time between tasks, morning preference</li>
+						</ul>
+
+						<h2>What We DON'T Collect</h2>
+						<ul class="no-collect">
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No personal information</strong> (no name, email, phone number, or account required)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No analytics or tracking</strong> (no Firebase, no Crashlytics, no third-party analytics)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No device identifiers</strong> (no IMEI, no advertising ID, no Android ID)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No location data</strong> (no GPS, no network location)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No internet traffic</strong> (the app does not use the internet at all)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No usage behavior tracking</strong> (no screen time, no app usage patterns)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No crash reports</strong> (no data is sent to any server)</li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No advertising data</strong> (no ads, no ad networks)</li>
+						</ul>
+
+						<h2>Data Storage and Security</h2>
+						<h3>Local Storage</h3>
+						<ul>
+							<li>All data is stored <strong>locally on your device</strong> using Android's Room database (SQLite)</li>
+							<li>Data is stored in the app's private storage directory, protected by the Android OS</li>
+							<li>Only Loop can access its own data — no other apps can read it</li>
+							<li>No data is transmitted over the internet</li>
+						</ul>
+
+						<h3>Data Retention</h3>
+						<ul>
+							<li>Your data persists on your device as long as the app is installed</li>
+							<li>Uninstalling Loop permanently deletes all stored data</li>
+							<li>You can clear app data from Android Settings at any time</li>
+						</ul>
+
+						<h3>Data Security</h3>
+						<ul>
+							<li>Data is stored in Android's app-specific storage (sandboxed by the Android OS)</li>
+							<li>Standard Android security protections apply</li>
+							<li>No network communication means no risk of data interception</li>
+						</ul>
+
+						<h2>Data Sharing and Third Parties</h2>
+						<div class="highlight">
+							<p><strong>Loop does not share any data with anyone. There are zero third-party services, SDKs, or libraries that collect or transmit user data.</strong></p>
+						</div>
+						<ul class="no-collect">
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No data sharing with third parties</strong></li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No advertising networks</strong></li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No analytics providers</strong></li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No data brokers</strong></li>
+							<li><strong><Icon name="X" size={16} color="var(--intently-red)" /> No cloud services</strong></li>
+						</ul>
+
+						<h2>Permissions Explained</h2>
+						<p>Loop requires only two Android permissions to function:</p>
+
+						<h3>1. Post Notifications (POST_NOTIFICATIONS)</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Send you reminders about upcoming scheduled tasks</li>
+							<li><strong>What it does:</strong> Displays notifications at the times you've configured for task reminders</li>
+							<li><strong>User control:</strong> You can grant or deny this permission when prompted (Android 13+). You can also manage it in Android Settings at any time</li>
+							<li><strong>Without this permission:</strong> The app works normally, but you won't receive task reminders</li>
+						</ul>
+
+						<h3>2. Receive Boot Completed (RECEIVE_BOOT_COMPLETED)</h3>
+						<ul>
+							<li><strong>Purpose:</strong> Re-schedule your task reminders after your device restarts</li>
+							<li><strong>What it does:</strong> When your phone reboots, Loop re-registers all pending notification alarms so you don't miss reminders</li>
+							<li><strong>User control:</strong> This is an automatic process — your reminders simply continue working after a restart</li>
+						</ul>
+
+						<div class="toggle-info">
+							<p><strong>Note:</strong> Loop does not request any dangerous or sensitive permissions. It does not access your contacts, camera, microphone, location, files, or any other personal data on your device.</p>
+						</div>
+
+						<h2>Your Rights and Control</h2>
+						<h3>You Have Full Control:</h3>
+						<ul>
+							<li><strong>Create and Edit Tasks:</strong> Add, modify, or delete any task at any time</li>
+							<li><strong>Manage Schedule:</strong> View, complete, or skip any scheduled entry</li>
+							<li><strong>Configure Time Blocks:</strong> Define your availability as you see fit</li>
+							<li><strong>Adjust Settings:</strong> Customize notifications, buffer times, and scheduling preferences</li>
+							<li><strong>Delete All Data:</strong> Uninstalling Loop permanently removes all data from your device</li>
+							<li><strong>Clear App Data:</strong> Use Android Settings to clear all app data without uninstalling</li>
+						</ul>
+
+						<h2>Children's Privacy</h2>
+						<p>Loop does not collect any personal information from anyone, including children under 13. The app stores all data locally on the device and does not transmit any data. It is suitable for users of all ages.</p>
+
+						<h2>Changes to This Privacy Policy</h2>
+						<p>We may update this privacy policy from time to time. Any changes will be reflected in:</p>
+						<ul>
+							<li>The "Last Updated" date at the top of this policy</li>
+							<li>App updates through the Google Play Store</li>
+						</ul>
+						<p>Continued use of the app after policy changes constitutes acceptance of the updated policy.</p>
+
+						<h2>Data Protection Rights (GDPR/CCPA Compliance)</h2>
+						<p>If you are in the European Union or California, you have the following rights:</p>
+						<ul>
+							<li><strong>Right to Access:</strong> All your data is visible directly within the app</li>
+							<li><strong>Right to Deletion:</strong> Uninstall the app or clear app data to delete everything</li>
+							<li><strong>Right to Portability:</strong> Not applicable (data is local-only and used exclusively within the app)</li>
+							<li><strong>Right to Rectification:</strong> Edit any task, schedule entry, or setting within the app</li>
+							<li><strong>Right to Object:</strong> No data processing occurs beyond local device storage</li>
+						</ul>
+						<div class="toggle-info">
+							<p><strong>Note:</strong> Since Loop does not collect, transmit, or process any personal data beyond your device, most data protection concerns do not apply. Your data exists solely on your phone and is under your complete control.</p>
+						</div>
+
+						<h2>Technical Implementation Details</h2>
+						<p>For transparency, here's how Loop works technically:</p>
+						<ul>
+							<li><strong>Language:</strong> Kotlin</li>
+							<li><strong>UI Framework:</strong> Jetpack Compose with Material Design 3</li>
+							<li><strong>Local Database:</strong> Room (SQLite) for persistent local storage</li>
+							<li><strong>Background Tasks:</strong> WorkManager for scheduled task processing</li>
+							<li><strong>Dependency Injection:</strong> Hilt (Dagger)</li>
+							<li><strong>Architecture:</strong> Clean Architecture with Domain/Data layers</li>
+							<li><strong>Notifications:</strong> Android NotificationManager for task reminders</li>
+							<li><strong>Boot Receiver:</strong> BroadcastReceiver to restore reminders after device restart</li>
+							<li><strong>No Network Libraries:</strong> No Retrofit, OkHttp, or any HTTP client is included</li>
+						</ul>
+
+						<h2>Contact Us</h2>
+						<p>If you have questions about this privacy policy or Loop's privacy practices:</p>
+						<p><strong>Email:</strong> info@liveintently.app<br>
+						<strong>Response Time:</strong> Within 48 hours</p>
+
+						<h2>Compliance</h2>
+						<p>This privacy policy complies with:</p>
+						<ul>
+							<li>Google Play Store Developer Policies</li>
+							<li>General Data Protection Regulation (GDPR)</li>
+							<li>California Consumer Privacy Act (CCPA)</li>
+							<li>Android app privacy best practices</li>
+						</ul>
+
+						<hr>
+
+						<div class="highlight">
+							<p><strong>Summary:</strong> Loop is a completely offline, privacy-first task scheduling app. No account is needed. All your data (tasks, schedules, time blocks, preferences) is stored exclusively on your device using a local database. The app does not connect to the internet, does not use analytics or tracking, and does not share any data with anyone. Uninstalling the app permanently deletes all data.</p>
+						</div>
+
+						<p class="back-links">
+							<a href="/terms">Terms of Service</a> |
+							<a href="/">Back to Home</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+	}
+
+	.privacy-hero {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: linear-gradient(135deg, var(--intently-blue) 0%, #00BCD4 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.privacy-hero::before {
+		content: '';
+		display: block;
+		height: 7rem;
+	}
+
+	.privacy-hero h1 {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0 var(--intently-space-md);
+		color: white;
+		line-height: 1.2;
+	}
+
+	.updated {
+		font-size: 0.875rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.9;
+		font-style: italic;
+	}
+
+	.privacy-content {
+		width: 100%;
+		padding: var(--intently-space-2xl) 0;
+		background: var(--intently-bg-primary);
+	}
+
+	.content-wrapper {
+		max-width: 800px;
+		margin: 0 auto;
+		background: var(--intently-bg-primary);
+		padding: var(--intently-space-2xl);
+		border-radius: var(--intently-radius-lg);
+		box-shadow: var(--intently-shadow-md);
+	}
+
+	.content-wrapper h2 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--intently-text-primary);
+		margin: var(--intently-space-xl) 0 var(--intently-space-md);
+		border-bottom: 2px solid var(--intently-blue);
+		padding-bottom: var(--intently-space-sm);
+	}
+
+	.content-wrapper h2:first-of-type {
+		margin-top: 0;
+	}
+
+	.content-wrapper h3 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+		margin: var(--intently-space-lg) 0 var(--intently-space-sm);
+	}
+
+	.content-wrapper h4 {
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--intently-text-secondary);
+		margin: var(--intently-space-md) 0 var(--intently-space-sm);
+	}
+
+	.content-wrapper p {
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+		margin: var(--intently-space-md) 0;
+	}
+
+	.content-wrapper ul {
+		list-style-type: none;
+		padding-left: 0;
+		margin: var(--intently-space-md) 0;
+	}
+
+	.content-wrapper ul li {
+		position: relative;
+		padding-left: 1.5rem;
+		margin-bottom: var(--intently-space-sm);
+		line-height: 1.6;
+		color: var(--intently-text-secondary);
+	}
+
+	.content-wrapper ul li:before {
+		content: "\2022";
+		color: var(--intently-blue);
+		font-weight: bold;
+		position: absolute;
+		left: 0;
+	}
+
+	.content-wrapper ul.no-collect li {
+		color: var(--intently-red);
+	}
+
+	.content-wrapper ul.no-collect li:before {
+		color: var(--intently-red);
+	}
+
+	.content-wrapper ul.collect li {
+		color: var(--intently-green);
+	}
+
+	.content-wrapper ul.collect li:before {
+		color: var(--intently-green);
+	}
+
+	.content-wrapper a {
+		color: var(--intently-blue);
+		text-decoration: none;
+		transition: color var(--intently-transition-fast);
+	}
+
+	.content-wrapper a:hover {
+		color: var(--intently-blue-dark);
+		text-decoration: underline;
+	}
+
+	.highlight {
+		background: var(--intently-bg-info);
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid var(--intently-blue-light);
+		margin: var(--intently-space-lg) 0;
+	}
+
+	.highlight p {
+		margin: 0;
+	}
+
+	.warning {
+		background: var(--intently-bg-warning);
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid var(--intently-orange-light);
+		margin: var(--intently-space-lg) 0;
+	}
+
+	.warning p {
+		margin: 0;
+	}
+
+	.success {
+		background: var(--intently-bg-success);
+		padding: var(--intently-space-xl);
+		border-radius: var(--intently-radius-lg);
+		border: 1px solid var(--intently-green-light);
+		margin: var(--intently-space-lg) 0;
+	}
+
+	.success p {
+		margin: 0;
+	}
+
+	.toggle-info {
+		background-color: var(--intently-gray-50);
+		padding: var(--intently-space-md);
+		border-radius: var(--intently-radius-sm);
+		margin: var(--intently-space-lg) 0;
+		border: 1px solid var(--intently-gray-200);
+	}
+
+	.toggle-info p {
+		margin: var(--intently-space-sm) 0;
+	}
+
+	.toggle-info p:first-child {
+		margin-top: 0;
+	}
+
+	.toggle-info p:last-child {
+		margin-bottom: 0;
+	}
+
+	.toggle-info h4 {
+		margin-top: 0;
+	}
+
+	.content-wrapper hr {
+		border: none;
+		border-top: 1px solid var(--intently-gray-200);
+		margin: var(--intently-space-xl) 0;
+	}
+
+	.back-links {
+		text-align: center;
+		margin-top: var(--intently-space-xl);
+	}
+
+	.back-links a {
+		margin: 0 var(--intently-space-sm);
+	}
+
+	.container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* Responsive - Mobile First */
+	@media (min-width: 768px) {
+		.privacy-hero {
+			padding: var(--intently-space-3xl) 0;
+		}
+
+		.privacy-hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.privacy-content {
+			padding: var(--intently-space-3xl) 0;
+		}
+
+		.content-wrapper {
+			padding: var(--intently-space-3xl);
+		}
+
+		.content-wrapper h2 {
+			font-size: 1.75rem;
+		}
+
+		.content-wrapper h3 {
+			font-size: 1.25rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.privacy-hero {
+			padding: var(--intently-space-4xl) 0;
+		}
+
+		.privacy-hero h1 {
+			font-size: 3rem;
+		}
+
+		.privacy-content {
+			padding: var(--intently-space-4xl) 0;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.container {
+			padding: 0 var(--intently-space-md);
+		}
+
+		.content-wrapper {
+			padding: var(--intently-space-lg);
+		}
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--intently-blue);
+		outline-offset: 2px;
+	}
+</style>
