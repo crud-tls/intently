@@ -1,0 +1,33 @@
+{
+	"name": "@intently/pawse-site",
+	"description": "Pawse website: pawse.liveintently.app",
+	"dependencies": {
+		"@astrojs/cloudflare": "12.6.12",
+		"@astrojs/mdx": "4.3.12",
+		"@astrojs/rss": "4.0.14",
+		"@astrojs/sitemap": "3.6.0",
+		"@lottiefiles/dotlottie-wc": "^0.8.14",
+		"astro": "5.16.2",
+		"lucide-static": "^0.563.0",
+		"markdown-it": "^14.1.1",
+		"mimetext": "^3.0.27",
+		"resend": "^6.9.1",
+		"sanitize-html": "^2.17.1",
+		"typescript": "5.9.3"
+	},
+	"devDependencies": {
+		"wrangler": "4.56.0"
+	},
+	"private": true,
+	"scripts": {
+		"astro": "astro",
+		"build": "astro build",
+		"cf-typegen": "wrangler types",
+		"check": "astro build && tsc --noEmit && wrangler deploy --dry-run",
+		"deploy": "wrangler deploy",
+		"dev": "astro dev",
+		"preview": "astro build && wrangler dev",
+		"optimize-images": "node scripts/optimize-images.mjs"
+	},
+	"type": "module"
+}
