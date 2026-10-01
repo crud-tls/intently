@@ -41,3 +41,13 @@ Store (extension privacy) link to the apex today. `docs/legacy-urls.txt` lists e
   `pawse.liveintently.app`, warm palette with Nunito and Biscuit, privacy claims rewritten
   to match the app, fake stats/ratings/testimonials removed, `/privacy/chrome`, and
   `/delete-account/confirm` (the API email linked a page that never existed).
+- [x] Phase 3: `packages/registry` + `packages/legal`. Policies written from each app's code
+  (Pawse, Pawse for Chrome, Loop, Qandeel, Mirror, PaceShift). Hisab and TwoHearts wait for
+  their code location. Pawse's privacy, Chrome privacy and terms render from the package.
+
+## Open follow-ups found along the way
+- Pawse analytics toggle: the policy no longer promises one; adding it is deferred (owner).
+- The Chrome extension still syncs through Supabase and sends tracked-site domains to Google
+  Analytics without an opt-out; the Chrome policy now says so. Consider moving its sync to the
+  Cloudflare API and adding an analytics switch before the Pawse for Chrome rename.
+- Sentry was removed from the Android app (it attached screenshots to crash reports).
