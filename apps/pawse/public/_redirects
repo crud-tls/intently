@@ -14,3 +14,10 @@
 /blog/intently-vs-opal  /blog/pawse-vs-opal  301
 /blog/intently-vs-refocus  /blog/pawse-vs-refocus  301
 /blog/intently-vs-screenzen  /blog/pawse-vs-screenzen  301
+
+# Chrome extension policy moved under /privacy; the old paths are in store listings.
+/privacy-chrome               /privacy/chrome          301
+/privacy-policy-chrome.html   /privacy/chrome          301
+/privacy-policy-chrome        /privacy/chrome          301
+# The deletion email from the API linked here before the page existed.
+/confirm-deletion             /delete-account/confirm  301

@@ -1,10 +1,10 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Icon from '../components/ui/Icon.astro';
-import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
-import { SITE_TITLE } from '../consts';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Icon from '../../components/ui/Icon.astro';
+import BreadcrumbSchema from '../../components/SEO/BreadcrumbSchema.astro';
+import { SITE_TITLE } from '../../consts';
 ---
 
 <!doctype html>
@@ -14,7 +14,7 @@ import { SITE_TITLE } from '../consts';
 		<BreadcrumbSchema
 			items={[
 				{ name: "Home", url: "https://pawse.liveintently.app" },
-				{ name: "Privacy Policy (Chrome)", url: "https://pawse.liveintently.app/privacy-chrome" }
+				{ name: "Privacy Policy (Chrome)", url: "https://pawse.liveintently.app/privacy/chrome" }
 			]}
 		/>
 	</head>
@@ -359,7 +359,6 @@ import { SITE_TITLE } from '../consts';
 						</div>
 
 						<p class="back-links">
-							<a href="/privacy-policy-chrome.html">Standalone HTML Version</a> |
 							<a href="/download">Download Extension</a> |
 							<a href="/">Back to Home</a>
 						</p>
