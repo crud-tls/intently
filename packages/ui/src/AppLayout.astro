@@ -1,0 +1,142 @@
+---
+import './base.css';
+import AppMark from './AppMark.astro';
+import { STUDIO, type App } from '@intently/registry';
+import { onColor, type SiteContent } from './site';
+
+interface Props {
+	app: App;
+	content: SiteContent;
+	title: string;
+	description: string;
+	noindex?: boolean;
+}
+
+const { app, content, title, description, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, `https://${app.host}`);
+const fullTitle = title === app.name ? `${app.name}: ${app.tagline}` : `${title} · ${app.name}`;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en" style={`--accent:${app.color};--on-accent:${onColor(app.color)}`}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="theme-color" content={app.color} />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={app.name} />
+		<meta property="og:title" content={fullTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		{noindex && <meta name="robots" content="noindex" />}
+		<script type="application/ld+json" set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'SoftwareApplication',
+			name: app.name,
+			description: app.tagline,
+			url: `https://${app.host}`,
+			operatingSystem: app.platforms.join(', '),
+			applicationCategory: 'MobileApplication',
+			author: { '@type': 'Organization', '@id': `${STUDIO.url}/#organization`, name: STUDIO.name, url: STUDIO.url },
+		})} />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="wrap bar">
+				<a href="/" class="brand"><AppMark app={app} size={30} /> <span>{app.name}</span></a>
+				<nav aria-label="Main">
+					<a href="/#features">Features</a>
+					<a href="/support">Support</a>
+					{content.legal.privacy && <a href="/privacy">Privacy</a>}
+				</nav>
+			</div>
+		</header>
+
+		<slot />
+
+		<footer class="site-footer">
+			<div class="wrap foot">
+				<p class="made"><a href={STUDIO.url}><img src={`${STUDIO.url}/logo.svg`} alt="" width="20" height="20" /> {app.name} is made by Intently</a></p>
+				<nav aria-label="Footer">
+					<a href="/support">Support</a>
+					{content.legal.privacy && <a href="/privacy">Privacy policy</a>}
+					{content.legal.terms && <a href="/terms">Terms</a>}
+					{content.accountDeletion && <a href="/delete-account">Delete your account</a>}
+					<a href={`mailto:${app.email}`}>{app.email}</a>
+				</nav>
+				<p class="muted small">&copy; {year} {STUDIO.owner}</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<style>
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background: color-mix(in srgb, var(--bg) 88%, transparent);
+		backdrop-filter: saturate(140%) blur(10px);
+		border-bottom: 1px solid var(--line);
+	}
+
+	.bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 64px;
+	}
+
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-weight: 750;
+		font-size: 1.15rem;
+		text-decoration: none;
+	}
+
+	.bar nav { display: flex; gap: 20px; }
+
+	.bar nav a, .foot nav a {
+		color: var(--text-2);
+		text-decoration: none;
+		font-weight: 550;
+	}
+
+	.bar nav a:hover, .foot nav a:hover { color: var(--text); }
+
+	.site-footer {
+		margin-top: 96px;
+		padding: 40px 0;
+		border-top: 1px solid var(--line);
+	}
+
+	.foot {
+		display: grid;
+		gap: 14px;
+	}
+
+	.made a {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		font-weight: 650;
+		text-decoration: none;
+	}
+
+	.foot nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px 22px;
+	}
+
+	.made, .small { margin: 0; }
+
+	.small { font-size: 0.9rem; }
+</style>

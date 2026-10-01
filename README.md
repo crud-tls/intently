@@ -8,9 +8,18 @@ one app's site can never break another app's privacy page.
 |---|---|---|
 | `apps/hub` | `liveintently.app` (preview: `intently-hub.fsadakathussain.workers.dev`) | `intently-hub` |
 | `apps/pawse` | `pawse.liveintently.app` (preview: `pawse-site.fsadakathussain.workers.dev`) | `pawse-site` |
+| `apps/<id>` (loop, qandeel, mirror, paceshift, twohearts, hisab) | `<id>.liveintently.app` (preview: `<id>-site.fsadakathussain.workers.dev`) | `<id>-site` |
 
 Shared packages: `packages/registry` (one record per app), `packages/legal` (each app's policies
-and the component that renders them).
+and the component that renders them), `packages/ui` (base styles and the app-site layout,
+landing, support and account-deletion sections).
+
+## Adding an app
+
+1. Add it to `packages/registry/src/apps.ts` (and its icon to `apps/hub/public/icons/`).
+2. Write its policies in `packages/legal/policies/<id>/` from what the code actually does.
+3. `node tools/create-app.mjs <id> [--accounts]`, then write `apps/<id>/src/content.ts`.
+4. `npm install`, build, deploy the preview, then add the custom domain and its email alias.
 
 More app sites arrive in later phases; see
 `docs/house-of-brands.md` for the plan, decisions and status.

@@ -1,6 +1,7 @@
 ---
 /** An app's square icon, or a monogram tile in its colour when it has no icon yet. */
 import type { App } from '@intently/registry';
+import { onColor } from './site';
 
 interface Props {
 	app: App;
@@ -13,7 +14,7 @@ const { app, size, class: className = '' } = Astro.props;
 
 {app.icon
 	? <img src={app.icon} alt="" width={size} height={size} class:list={['mark', className]} style={`--size:${size}px`} />
-	: <span class:list={['mark', 'monogram', className]} style={`--size:${size}px;--app:${app.color}`} aria-hidden="true">{app.name[0]}</span>}
+	: <span class:list={['mark', 'monogram', className]} style={`--size:${size}px;--app:${app.color};--on-app:${onColor(app.color)}`} aria-hidden="true">{app.name[0]}</span>}
 
 <style>
 	.mark {
@@ -27,7 +28,7 @@ const { app, size, class: className = '' } = Astro.props;
 
 	.monogram {
 		background: var(--app);
-		color: #fff;
+		color: var(--on-app);
 		font-weight: 800;
 		font-size: calc(var(--size) * 0.45);
 	}

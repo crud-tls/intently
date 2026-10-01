@@ -1,4 +1,4 @@
-/* Intently hub: a calm, neutral page so each app's own colour carries its card. */
+/* Shared base for the hub and every app site: calm neutrals; --accent is the site's colour. */
 :root {
 	--bg: #fbfaf7;
 	--surface: #ffffff;

@@ -58,7 +58,8 @@ disclose it to.
 
 - Original photos: deleted after analysis, or kept while *Save history* is on.
 - Account, analyses and saved styles: until you delete them. **Deleting your account** in the app
-  (Profile) removes your account, analyses, saved styles and any stored photos.
+  (Profile → Privacy → Delete account & data) removes your account, analyses, saved styles and
+  any stored photos.
 - Sign-in codes and session tokens expire and are purged daily.
 
 ## Your rights

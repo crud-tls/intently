@@ -53,6 +53,12 @@ Store (extension privacy) link to the apex today. `docs/legacy-urls.txt` lists e
   versions keep their verification until the next update moves App Links to the subdomain.
   `tools/verify-urls.mjs --preview`: 122/123 (Loop's site is phase 5).
 
+- [x] Phase 5: `packages/ui` app-site template + `tools/create-app.mjs`; static sites for Loop,
+  Qandeel, Mirror, PaceShift (with terms and account-deletion pages), TwoHearts and Hisab
+  (pitch only, no code yet). Copy is limited to what each app's code does. Legacy check:
+  123/123 on previews. The hub's logo is the original Intently mark, re-traced
+  (`tools/trace-intently-logo.py`).
+
 ## Open follow-ups found along the way
 - Pawse analytics toggle: the policy no longer promises one; adding it is deferred (owner).
 - The Chrome extension still syncs through Supabase and sends tracked-site domains to Google

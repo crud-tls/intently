@@ -1,0 +1,42 @@
+---
+import type { App } from '@intently/registry';
+import type { SiteContent } from './site';
+
+interface Props {
+	app: App;
+	content: SiteContent;
+}
+
+const { app, content } = Astro.props;
+const steps = content.accountDeletion!;
+const subject = encodeURIComponent(`Delete my ${app.name} account`);
+---
+
+<main class="wrap page">
+	<h1>Delete your {app.name} account</h1>
+	<p class="lead">You can delete your account and its data at any time.</p>
+
+	<h2>In the app</h2>
+	<p>{steps.inApp}</p>
+
+	<h2>By email</h2>
+	<p>{steps.byEmail} Write to <a href={`mailto:${app.email}?subject=${subject}`}>{app.email}</a> from the
+		address you signed in with. We confirm by email and delete everything within 30 days.</p>
+
+	<h2>What is deleted</h2>
+	<ul>{steps.whatIsDeleted.map((item) => <li>{item}</li>)}</ul>
+	{content.legal.privacy && <p class="muted">Details are in the <a href="/privacy">privacy policy</a>.</p>}
+</main>
+
+<style>
+	.page {
+		max-width: 680px;
+		padding-top: 72px;
+	}
+
+	h1 { font-size: clamp(2rem, 5vw, 3rem); }
+
+	h2 { font-size: 1.25rem; margin-top: 2em; }
+
+	.lead { font-size: 1.15rem; }
+</style>

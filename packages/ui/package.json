@@ -1,0 +1,12 @@
+{
+	"name": "@intently/ui",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Shared styles and components for the Intently hub and app sites",
+	"exports": {
+		"./base.css": "./src/base.css",
+		"./*.astro": "./src/*.astro"
+	},
+	"dependencies": { "@intently/registry": "*", "@intently/legal": "*" }
+}

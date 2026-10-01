@@ -1,0 +1,15 @@
+---
+import '@fontsource-variable/inter/wght.css';
+import AppLayout from '@intently/ui/AppLayout.astro';
+import { app } from '@intently/registry';
+import { content } from '../content';
+
+const a = app('paceshift');
+---
+
+<AppLayout app={a} content={content} title="Not found" description="This page doesn't exist." noindex>
+	<main class="wrap" style="padding-top:96px;max-width:640px">
+		<h1>Nothing here.</h1>
+		<p class="muted">That page doesn't exist. Head back to the <a href="/">{a.name} home page</a>.</p>
+	</main>
+</AppLayout>

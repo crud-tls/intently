@@ -1,0 +1,14 @@
+---
+import '@fontsource-variable/inter/wght.css';
+import AppLayout from '@intently/ui/AppLayout.astro';
+import LegalArticle from '@intently/legal/LegalArticle.astro';
+import * as policy from '@intently/legal/policies/qandeel/privacy.md';
+import { app } from '@intently/registry';
+import { content } from '../content';
+
+const a = app('qandeel');
+---
+
+<AppLayout app={a} content={content} title="Privacy policy" description={`What ${a.name} collects, why, and where it goes.`}>
+	<main style="--legal-top:3.5rem"><LegalArticle policy={policy} /></main>
+</AppLayout>
