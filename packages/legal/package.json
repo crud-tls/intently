@@ -1,0 +1,12 @@
+{
+	"name": "@intently/legal",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Privacy policies and terms for every Intently app, plus the component that renders them",
+	"exports": {
+		"./LegalArticle.astro": "./src/LegalArticle.astro",
+		"./policies/*": "./policies/*"
+	},
+	"dependencies": { "@intently/registry": "*" }
+}

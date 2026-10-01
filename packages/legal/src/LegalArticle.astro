@@ -1,0 +1,107 @@
+---
+/**
+ * Renders one policy from ../policies with the date and a contact line. Each site wraps it in
+ * its own BaseHead, Header and Footer; styling uses the site's --ds-* tokens with fallbacks.
+ */
+import type { MarkdownInstance } from 'astro';
+
+interface Props {
+	policy: MarkdownInstance<{ title: string; updated: string | Date }>;
+	/** Small links under the article, e.g. to the matching terms or other policies. */
+	links?: { label: string; href: string }[];
+}
+
+const { policy, links = [] } = Astro.props;
+const { Content, frontmatter } = policy;
+// YAML may hand over a Date or a YYYY-MM-DD string; both parse as UTC midnight.
+const updatedDate = new Date(frontmatter.updated);
+const updatedIso = updatedDate.toISOString().slice(0, 10);
+const updated = updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+---
+
+<article class="legal">
+	<header>
+		<h1>{frontmatter.title}</h1>
+		<p class="updated">Last updated: <time datetime={updatedIso}>{updated}</time></p>
+	</header>
+	<div class="legal-body">
+		<Content />
+	</div>
+	{links.length > 0 && (
+		<nav class="legal-links" aria-label="Related documents">
+			{links.map((l) => <a href={l.href}>{l.label}</a>)}
+		</nav>
+	)}
+</article>
+
+<style>
+	.legal {
+		max-width: 760px;
+		margin: 0 auto;
+		/* Clears the floating site header. */
+		padding: 8rem 1rem 4rem;
+		color: var(--ds-text-primary, #2a1e16);
+		line-height: 1.7;
+	}
+
+	header {
+		margin-bottom: 2rem;
+		padding-bottom: 1.25rem;
+		border-bottom: 2px solid var(--ds-primary-light, #ffe3cc);
+	}
+
+	h1 {
+		font-size: clamp(1.8rem, 4vw, 2.5rem);
+		margin: 0 0 0.5rem;
+	}
+
+	.updated {
+		margin: 0;
+		color: var(--ds-text-secondary, #6e5a4c);
+		font-size: 0.95rem;
+	}
+
+	.legal-body :global(h2) {
+		font-size: 1.4rem;
+		margin: 2.25rem 0 0.75rem;
+	}
+
+	.legal-body :global(h3) {
+		font-size: 1.1rem;
+		margin: 1.5rem 0 0.5rem;
+	}
+
+	.legal-body :global(a) {
+		color: var(--ds-primary, #b84e17);
+	}
+
+	.legal-body :global(ul),
+	.legal-body :global(ol) {
+		padding-left: 1.4rem;
+	}
+
+	.legal-body :global(li) {
+		margin: 0.35rem 0;
+	}
+
+	.legal-body :global(code) {
+		font-size: 0.85em;
+		padding: 0.1em 0.35em;
+		border-radius: 4px;
+		background: var(--ds-bg-secondary, #fff3e6);
+	}
+
+	.legal-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.25rem;
+		margin-top: 3rem;
+		padding-top: 1.25rem;
+		border-top: 1px solid var(--ds-gray-200, #eadfd3);
+	}
+
+	.legal-links a {
+		color: var(--ds-primary, #b84e17);
+		font-weight: 600;
+	}
+</style>
