@@ -26,6 +26,8 @@ export interface App {
 	color: string;
 	/** Square icon in the hub's public/icons/, or a monogram in the brand colour when absent. */
 	icon?: string;
+	/** Three short, true statements for the app's showcase row. */
+	highlights?: string[];
 	/** Hosts that should 301 to this app's site (old names). */
 	aliases?: string[];
 }
@@ -53,6 +55,11 @@ export const APPS: App[] = [
 		},
 		color: '#FF8A3D',
 		icon: '/icons/pawse.svg',
+		highlights: [
+			'A short, kind pause before the apps you choose',
+			'Daily limits and gentle timers, not hard blocks',
+			'Covers Reels and Shorts feeds too',
+		],
 		aliases: ['infocus.liveintently.app'],
 	},
 	{
@@ -66,6 +73,11 @@ export const APPS: App[] = [
 		stores: {},
 		color: '#195039',
 		icon: '/icons/qandeel.svg',
+		highlights: [
+			'Recitations and translations, downloaded for offline listening',
+			'Phone and Wear OS watch stay in sync',
+			'No account, no analytics, no ads',
+		],
 		aliases: ['qit.liveintently.app'],
 	},
 	{
@@ -78,6 +90,11 @@ export const APPS: App[] = [
 		platforms: ['Android'],
 		stores: {},
 		color: '#5B6CFF',
+		highlights: [
+			'Recurring tasks placed into your free time automatically',
+			'Reminders right when a task is due',
+			'Everything stays on your phone',
+		],
 	},
 	{
 		id: 'mirror',

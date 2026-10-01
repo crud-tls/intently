@@ -1,43 +1,48 @@
 ---
 import Base from '../layouts/Base.astro';
-import AppCard from '../components/AppCard.astro';
-import { APPS } from '@intently/registry';
+import Hero from '../components/Hero.astro';
+import Showcase from '../components/Showcase.astro';
+import WeekArt from '../components/WeekArt.astro';
+import { APPS, app } from '@intently/registry';
 
-const shipping = APPS.filter((a) => a.status !== 'soon');
 const soon = APPS.filter((a) => a.status === 'soon');
 ---
 
 <Base title="Intently" description="Intently is a small independent studio making calm, privacy-minded apps: Pawse, Qandeel, Loop and more.">
 	<main>
-		<section class="hero wrap">
-			<h1>Apps made with intent.</h1>
-			<p class="lead muted">We're a small, independent studio. We make calm tools that help you spend
-				your time on what matters, and we keep them honest about your data.</p>
-		</section>
+		<Hero />
 
 		<section id="apps" class="wrap" aria-labelledby="apps-title">
 			<h2 id="apps-title" class="section-title">Our apps</h2>
-			<div class="grid">
-				{shipping.map((app) => <AppCard app={app} />)}
-			</div>
+
+			<Showcase app={app('pawse')}>
+				<dotlottie-wc slot="art" src="/art/biscuit-wave.json" data-anim class="biscuit" role="img"
+					aria-label="Biscuit, the Pawse fox, waving"></dotlottie-wc>
+			</Showcase>
+			<Showcase app={app('qandeel')} flip>
+				<img slot="art" src="/icons/qandeel.svg" alt="" width="200" height="200" class="big-icon" />
+			</Showcase>
+			<Showcase app={app('loop')}>
+				<WeekArt slot="art" />
+			</Showcase>
 		</section>
 
-		<section class="wrap soon" aria-labelledby="soon-title">
+		<section class="wrap" aria-labelledby="soon-title">
 			<h2 id="soon-title" class="section-title">In the workshop</h2>
 			<ul class="soon-list">
-				{soon.map((app) => (
-					<li style={`--app:${app.color}`}>
-						<a href={`https://${app.host}`}>
+				{soon.map((a) => (
+					<li style={`--app:${a.color}`}>
+						<a href={`https://${a.host}`}>
 							<span class="dot" aria-hidden="true"></span>
-							<strong>{app.name}</strong>
-							<span class="muted">{app.tagline}</span>
+							<strong>{a.name}</strong>
+							<span class="muted">{a.tagline}</span>
 						</a>
 					</li>
 				))}
 			</ul>
 		</section>
 
-		<section class="wrap principles" aria-labelledby="how-title">
+		<section class="wrap" aria-labelledby="how-title">
 			<h2 id="how-title" class="section-title">How we build</h2>
 			<div class="three">
 				<div>
@@ -55,37 +60,39 @@ const soon = APPS.filter((a) => a.status === 'soon');
 			</div>
 		</section>
 	</main>
+
+	<script is:inline>
+		// Animations start only when the visitor hasn't asked for reduced motion; frame 0 is a finished pose.
+		if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			document.querySelectorAll('dotlottie-wc[data-anim]').forEach((el) => {
+				el.setAttribute('autoplay', '');
+				el.setAttribute('loop', '');
+			});
+		}
+	</script>
+	<script>
+		import('@lottiefiles/dotlottie-wc');
+	</script>
 </Base>
 
 <style>
-	.hero {
-		padding-top: 96px;
-		padding-bottom: 48px;
-	}
-
-	h1 {
-		font-size: clamp(2.6rem, 7vw, 4.6rem);
-		font-weight: 800;
-		max-width: 12ch;
-	}
-
-	.lead {
-		font-size: 1.2rem;
-		max-width: 40rem;
-	}
-
 	.section-title {
 		font-size: 0.85rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		color: var(--text-2);
-		margin: 56px 0 18px;
+		margin: 64px 0 20px;
 	}
 
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-		gap: 20px;
+	.biscuit {
+		display: block;
+		width: 260px;
+		height: 260px;
+	}
+
+	.big-icon {
+		border-radius: 46px;
+		box-shadow: 0 22px 48px rgb(25 80 57 / 0.35);
 	}
 
 	.soon-list {
@@ -123,7 +130,6 @@ const soon = APPS.filter((a) => a.status === 'soon');
 	.three h3 { font-size: 1.1rem; }
 
 	@media (max-width: 720px) {
-		.hero { padding-top: 56px; }
 		.three { grid-template-columns: 1fr; }
 		.soon-list a { grid-template-columns: 14px 1fr; }
 		.soon-list a .muted { grid-column: 2; }

@@ -1,0 +1,34 @@
+---
+/** An app's square icon, or a monogram tile in its colour when it has no icon yet. */
+import type { App } from '@intently/registry';
+
+interface Props {
+	app: App;
+	size: number;
+	class?: string;
+}
+
+const { app, size, class: className = '' } = Astro.props;
+---
+
+{app.icon
+	? <img src={app.icon} alt="" width={size} height={size} class:list={['mark', className]} style={`--size:${size}px`} />
+	: <span class:list={['mark', 'monogram', className]} style={`--size:${size}px;--app:${app.color}`} aria-hidden="true">{app.name[0]}</span>}
+
+<style>
+	.mark {
+		display: grid;
+		place-items: center;
+		width: var(--size);
+		height: var(--size);
+		border-radius: calc(var(--size) * 0.26);
+		box-shadow: 0 10px 24px rgb(0 0 0 / 0.12);
+	}
+
+	.monogram {
+		background: var(--app);
+		color: #fff;
+		font-weight: 800;
+		font-size: calc(var(--size) * 0.45);
+	}
+</style>
