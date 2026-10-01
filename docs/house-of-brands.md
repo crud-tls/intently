@@ -59,6 +59,34 @@ Store (extension privacy) link to the apex today. `docs/legacy-urls.txt` lists e
   123/123 on previews. The hub's logo is the original Intently mark, re-traced
   (`tools/trace-intently-logo.py`).
 
+- [x] Phase 6 prepared: `apps/redirects` (www, infocus, health, finances, qit) and
+  `tools/cutover.mjs` (dry run by default).
+- [x] Phase 7 code: intently-api `feat/pawse-domains` (on top of `fix/auth-hardening-and-sync-regression`:
+  pawse-api hostname, CORS for the Pawse site, deletion link, Apple `state=pawse`);
+  ThinkFast-Android `8fdcc30` (links, App Links, Apple state, default API URL); QIt `978eab5`.
+
+## Cutover runbook (phase 6)
+Before:
+1. Owner: add Zone DNS:Read, Email Routing Rules:Edit, Email Routing Addresses:Read to the token.
+2. Email Routing: create pawse@, qandeel@, loop@, mirror@, paceshift@, twohearts@, hisab@
+   forwarding to the owner's inbox; check support@, info@ and noreply@ still work.
+3. Owner: `npx wrangler secret put RESEND_API_KEY` in `apps/hub` and `apps/pawse`.
+4. `npm run build` and deploy every site; `node tools/verify-urls.mjs --preview` = 123/123.
+
+Switch (ask before each step):
+5. `node tools/cutover.mjs --apply --step=apps`, then check each subdomain over HTTPS.
+6. `node tools/cutover.mjs --apply --step=hub` (the apex moves off the old `intently` Worker).
+7. `node tools/cutover.mjs --apply --step=redirects`.
+8. `node tools/verify-urls.mjs` (production) = 123/123; commit the recorded routes.
+
+After:
+9. Deploy intently-api `feat/pawse-domains` (adds pawse-api.liveintently.app).
+10. Owner: add `https://pawse-api.liveintently.app/auth/apple/callback` to the Apple Service ID's
+    return URLs; set `cloudflare_api_url` in keystore.properties; release the Android build.
+11. Owner: update Play Console (Pawse privacy + deletion URLs, Loop, Qandeel) and the Chrome Web
+    Store privacy URL to the new hosts. The redirects cover them until then.
+12. After a quiet week: delete the old `intently` Worker.
+
 ## Open follow-ups found along the way
 - Pawse analytics toggle: the policy no longer promises one; adding it is deferred (owner).
 - The Chrome extension still syncs through Supabase and sends tracked-site domains to Google
