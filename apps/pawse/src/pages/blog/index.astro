@@ -313,7 +313,7 @@ const collectionItems = postsWithMeta.map((post) => ({
 <style>
 	body {
 		background:
-			radial-gradient(circle at 15% 15%, color-mix(in srgb, var(--ds-blue) 16%, transparent) 0%, transparent 35%),
+			radial-gradient(circle at 15% 15%, color-mix(in srgb, var(--ds-primary) 16%, transparent) 0%, transparent 35%),
 			radial-gradient(circle at 90% 8%, color-mix(in srgb, var(--ds-green) 14%, transparent) 0%, transparent 32%),
 			var(--ds-bg-primary);
 	}
@@ -330,7 +330,7 @@ const collectionItems = postsWithMeta.map((post) => ({
 		border-radius: var(--ds-radius-xl);
 		padding: clamp(1.5rem, 2.5vw, 2.5rem);
 		background:
-			linear-gradient(140deg, color-mix(in srgb, var(--ds-blue) 12%, transparent), transparent 50%),
+			linear-gradient(140deg, color-mix(in srgb, var(--ds-primary) 12%, transparent), transparent 50%),
 			linear-gradient(210deg, color-mix(in srgb, var(--ds-green) 10%, transparent), transparent 55%),
 			var(--ds-bg-secondary);
 		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 18%, transparent);
@@ -358,8 +358,8 @@ const collectionItems = postsWithMeta.map((post) => ({
 		margin: 0 0 var(--ds-space-sm);
 		padding: 0.3rem 0.75rem;
 		border-radius: var(--ds-radius-full);
-		background: color-mix(in srgb, var(--ds-blue) 14%, transparent);
-		color: var(--ds-blue);
+		background: color-mix(in srgb, var(--ds-primary) 14%, transparent);
+		color: var(--ds-primary);
 		font-size: 0.8rem;
 		font-weight: 700;
 		letter-spacing: 0.05em;
@@ -388,14 +388,14 @@ const collectionItems = postsWithMeta.map((post) => ({
 	}
 
 	.hero-button.primary {
-		background: var(--ds-blue);
-		color: white;
-		box-shadow: 0 10px 26px color-mix(in srgb, var(--ds-blue) 35%, transparent);
+		background: var(--ds-primary);
+		color: var(--ds-on-primary);
+		box-shadow: 0 10px 26px color-mix(in srgb, var(--ds-primary) 35%, transparent);
 	}
 
 	.hero-button.primary:hover {
 		transform: translateY(-1px);
-		background: var(--ds-blue-dark);
+		background: var(--ds-primary-dark);
 	}
 
 	.hero-button.secondary {
@@ -406,8 +406,8 @@ const collectionItems = postsWithMeta.map((post) => ({
 
 	.hero-button.secondary:hover {
 		transform: translateY(-1px);
-		border-color: color-mix(in srgb, var(--ds-blue) 45%, transparent);
-		color: var(--ds-blue);
+		border-color: color-mix(in srgb, var(--ds-primary) 45%, transparent);
+		color: var(--ds-primary);
 	}
 
 	.blog-controls {
@@ -443,7 +443,7 @@ const collectionItems = postsWithMeta.map((post) => ({
 	}
 
 	.search-field input:focus-visible {
-		outline: 2px solid color-mix(in srgb, var(--ds-blue) 70%, white);
+		outline: 2px solid color-mix(in srgb, var(--ds-primary) 70%, white);
 		outline-offset: 2px;
 	}
 
@@ -485,14 +485,14 @@ const collectionItems = postsWithMeta.map((post) => ({
 	}
 
 	.filter-chip:hover {
-		border-color: color-mix(in srgb, var(--ds-blue) 50%, transparent);
-		color: var(--ds-blue);
+		border-color: color-mix(in srgb, var(--ds-primary) 50%, transparent);
+		color: var(--ds-primary);
 	}
 
 	.filter-chip.active {
-		background: color-mix(in srgb, var(--ds-blue) 10%, transparent);
-		border-color: color-mix(in srgb, var(--ds-blue) 40%, transparent);
-		color: var(--ds-blue);
+		background: color-mix(in srgb, var(--ds-primary) 10%, transparent);
+		border-color: color-mix(in srgb, var(--ds-primary) 40%, transparent);
+		color: var(--ds-primary);
 	}
 
 	.results-summary {
@@ -579,12 +579,12 @@ const collectionItems = postsWithMeta.map((post) => ({
 		align-items: center;
 		font-weight: 700;
 		text-decoration: none;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		margin-top: var(--ds-space-xs);
 	}
 
 	.read-link:hover {
-		color: var(--ds-blue-dark);
+		color: var(--ds-primary-dark);
 	}
 
 	.blog-grid {
@@ -607,7 +607,7 @@ const collectionItems = postsWithMeta.map((post) => ({
 	.blog-card:hover {
 		transform: translateY(-2px);
 		box-shadow: var(--ds-shadow-md);
-		border-color: color-mix(in srgb, var(--ds-blue) 28%, transparent);
+		border-color: color-mix(in srgb, var(--ds-primary) 28%, transparent);
 	}
 
 	.card-media {
@@ -643,7 +643,7 @@ const collectionItems = postsWithMeta.map((post) => ({
 		padding: clamp(1.4rem, 2.4vw, 2.2rem);
 		border-radius: var(--ds-radius-xl);
 		background:
-			linear-gradient(145deg, color-mix(in srgb, var(--ds-blue) 12%, transparent), transparent 50%),
+			linear-gradient(145deg, color-mix(in srgb, var(--ds-primary) 12%, transparent), transparent 50%),
 			linear-gradient(220deg, color-mix(in srgb, var(--ds-purple) 10%, transparent), transparent 60%),
 			var(--ds-bg-secondary);
 		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 18%, transparent);
@@ -669,7 +669,7 @@ const collectionItems = postsWithMeta.map((post) => ({
 	a:focus-visible,
 	button:focus-visible,
 	input:focus-visible {
-		outline: 2px solid color-mix(in srgb, var(--ds-blue) 70%, white);
+		outline: 2px solid color-mix(in srgb, var(--ds-primary) 70%, white);
 		outline-offset: 2px;
 	}
 

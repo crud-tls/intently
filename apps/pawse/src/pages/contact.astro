@@ -280,7 +280,7 @@ const subjectOptions = [
 		transform: translateX(-50%);
 		width: 600px;
 		height: 400px;
-		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.12) 0%, transparent 70%);
 		filter: blur(60px);
 		pointer-events: none;
 	}
@@ -291,7 +291,7 @@ const subjectOptions = [
 		margin: 0 0 var(--ds-space-md);
 		letter-spacing: -0.02em;
 		line-height: 1.2;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -307,7 +307,7 @@ const subjectOptions = [
 
 	@media (prefers-color-scheme: dark) {
 		.hero-glow {
-			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+			background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.08) 0%, transparent 70%);
 		}
 	}
 
@@ -459,7 +459,7 @@ const subjectOptions = [
 
 	a:focus-visible,
 	button:focus-visible {
-		outline: 2px solid var(--ds-blue);
+		outline: 2px solid var(--ds-primary);
 		outline-offset: 2px;
 	}
 

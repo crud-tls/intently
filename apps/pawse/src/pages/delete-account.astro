@@ -339,21 +339,21 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 
 	/* Info box */
 	.info-box {
-		background: var(--ds-bg-info, #e3f2fd);
-		border-left: 4px solid var(--ds-blue);
+		background: var(--ds-bg-info, var(--ds-primary-light));
+		border-left: 4px solid var(--ds-primary);
 		padding: var(--ds-space-md);
 		border-radius: var(--ds-radius-md);
 		margin-bottom: var(--ds-space-md);
 	}
 
 	.info-box strong {
-		color: var(--ds-blue-dark);
+		color: var(--ds-primary-dark);
 		display: block;
 		margin-bottom: var(--ds-space-xs);
 	}
 
 	.info-box p {
-		color: var(--ds-blue-dark);
+		color: var(--ds-primary-dark);
 		font-size: 0.875rem;
 		margin: 0;
 	}
@@ -465,7 +465,7 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	}
 
 	.success a {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		text-decoration: none;
 	}
 

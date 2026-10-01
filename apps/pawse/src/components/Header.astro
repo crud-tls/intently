@@ -6,7 +6,8 @@ import { SITE_TITLE } from '../consts';
 <header>
 	<nav>
 		<a href="/" class="logo-link">
-			<img src="/logo.svg" alt="Pawse" class="logo" />
+			<img src="/logo.svg" alt="" class="logo" width="36" height="36" />
+			<span class="logo-word">Pawse</span>
 		</a>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
@@ -200,7 +201,16 @@ import { SITE_TITLE } from '../consts';
 	.logo-link {
 		display: flex;
 		align-items: center;
+		gap: 10px;
 		text-decoration: none;
+	}
+
+	.logo-word {
+		font-family: var(--font-heading);
+		font-weight: 900;
+		font-size: 1.4rem;
+		letter-spacing: -0.01em;
+		color: var(--ds-text-primary);
 	}
 
 	.logo {
@@ -249,13 +259,13 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.internal-links a:hover {
-		color: var(--ds-blue);
-		background: rgba(59, 130, 246, 0.08);
+		color: var(--ds-primary);
+		background: rgba(var(--ds-brand-rgb),  0.08);
 	}
 
 	.internal-links a.active {
-		color: var(--ds-blue);
-		background: rgba(59, 130, 246, 0.12);
+		color: var(--ds-primary);
+		background: rgba(var(--ds-brand-rgb),  0.12);
 		font-weight: 600;
 	}
 
@@ -265,10 +275,10 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.download-cta {
-		background: rgba(33, 150, 243, 0.85);
+		background: rgba(var(--ds-brand-rgb),  0.85);
 		backdrop-filter: blur(12px) saturate(150%);
 		-webkit-backdrop-filter: blur(12px) saturate(150%);
-		color: white !important;
+		color: var(--ds-on-brand) !important;
 		padding: 0.625rem 1.125rem !important;
 		border-radius: 0.75rem;
 		font-weight: 600;
@@ -277,20 +287,20 @@ import { SITE_TITLE } from '../consts';
 		border: 1px solid rgba(255, 255, 255, 0.25);
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.3),
-			0 2px 10px rgba(33, 150, 243, 0.25);
+			0 2px 10px rgba(var(--ds-brand-rgb),  0.25);
 		border-bottom: none;
 	}
 
 	.download-cta:hover {
-		background: rgba(33, 150, 243, 0.95);
+		background: rgba(var(--ds-brand-rgb),  0.95);
 		transform: translateY(-2px);
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.35),
-			0 6px 20px rgba(33, 150, 243, 0.35);
+			0 6px 20px rgba(var(--ds-brand-rgb),  0.35);
 	}
 
 	.download-cta.active {
-		background: rgba(25, 118, 210, 0.9);
+		background: rgba(var(--ds-primary-dark-rgb),  0.9);
 	}
 
 	/* Hamburger button - hidden on desktop */
@@ -325,7 +335,7 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.hamburger:hover span {
-		background: var(--ds-blue);
+		background: var(--ds-primary);
 	}
 
 	/* Mobile navigation drawer */
@@ -439,8 +449,8 @@ import { SITE_TITLE } from '../consts';
 
 	.tools-trigger:hover,
 	.tools-trigger[aria-expanded="true"] {
-		color: var(--ds-blue);
-		background: rgba(59, 130, 246, 0.08);
+		color: var(--ds-primary);
+		background: rgba(var(--ds-brand-rgb),  0.08);
 	}
 
 	.tools-trigger svg {
@@ -485,8 +495,8 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.tools-menu a:hover {
-		color: var(--ds-blue);
-		background: rgba(59, 130, 246, 0.08);
+		color: var(--ds-primary);
+		background: rgba(var(--ds-brand-rgb),  0.08);
 	}
 
 	/* Mobile tools section */

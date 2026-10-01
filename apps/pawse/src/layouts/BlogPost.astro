@@ -381,7 +381,7 @@ const effectiveAuthor = author || 'Pawse Team';
 <style>
 	body {
 		background:
-			radial-gradient(circle at 15% 12%, color-mix(in srgb, var(--ds-blue) 12%, transparent) 0%, transparent 30%),
+			radial-gradient(circle at 15% 12%, color-mix(in srgb, var(--ds-primary) 12%, transparent) 0%, transparent 30%),
 			radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--ds-green) 10%, transparent) 0%, transparent 28%),
 			var(--ds-bg-primary);
 	}
@@ -400,7 +400,7 @@ const effectiveAuthor = author || 'Pawse Team';
 	.reading-progress-bar {
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(90deg, var(--ds-blue), var(--ds-green));
+		background: linear-gradient(90deg, var(--ds-primary), var(--ds-green));
 		transform-origin: left center;
 		transform: scaleX(0);
 	}
@@ -415,7 +415,7 @@ const effectiveAuthor = author || 'Pawse Team';
 
 	.article-hero {
 		background:
-			linear-gradient(145deg, color-mix(in srgb, var(--ds-blue) 10%, transparent), transparent 52%),
+			linear-gradient(145deg, color-mix(in srgb, var(--ds-primary) 10%, transparent), transparent 52%),
 			linear-gradient(220deg, color-mix(in srgb, var(--ds-green) 8%, transparent), transparent 60%),
 			var(--ds-bg-secondary);
 		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 20%, transparent);
@@ -432,13 +432,13 @@ const effectiveAuthor = author || 'Pawse Team';
 		gap: 0.35rem;
 		font-size: 0.9rem;
 		font-weight: 700;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		text-decoration: none;
 		margin-bottom: var(--ds-space-xs);
 	}
 
 	.back-link:hover {
-		color: var(--ds-blue-dark);
+		color: var(--ds-primary-dark);
 	}
 
 	.hero-category {
@@ -447,7 +447,7 @@ const effectiveAuthor = author || 'Pawse Team';
 		font-weight: 700;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	.article-hero h1 {
@@ -547,7 +547,7 @@ const effectiveAuthor = author || 'Pawse Team';
 		top: var(--toc-active-top, 0);
 		height: var(--toc-active-height, 0);
 		width: 2px;
-		background: var(--ds-blue);
+		background: var(--ds-primary);
 		border-radius: 2px;
 		transition: top 250ms ease, height 250ms ease;
 	}
@@ -578,7 +578,7 @@ const effectiveAuthor = author || 'Pawse Team';
 	}
 
 	.toc-item a.active {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-weight: 600;
 	}
 
@@ -592,7 +592,7 @@ const effectiveAuthor = author || 'Pawse Team';
 	}
 
 	.toc-item a.active .toc-number {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	.toc-sub-item a {
@@ -607,7 +607,7 @@ const effectiveAuthor = author || 'Pawse Team';
 	}
 
 	.toc-sub-item a.active {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-weight: 500;
 	}
 
@@ -656,12 +656,12 @@ const effectiveAuthor = author || 'Pawse Team';
 	}
 
 	.sidebar-button.primary {
-		background: var(--ds-blue);
-		color: #fff;
+		background: var(--ds-primary);
+		color: var(--ds-on-primary);
 	}
 
 	.sidebar-button.primary:hover {
-		background: var(--ds-blue-dark);
+		background: var(--ds-primary-dark);
 	}
 
 	.sidebar-button.secondary {
@@ -671,8 +671,8 @@ const effectiveAuthor = author || 'Pawse Team';
 	}
 
 	.sidebar-button.secondary:hover {
-		border-color: color-mix(in srgb, var(--ds-blue) 45%, transparent);
-		color: var(--ds-blue);
+		border-color: color-mix(in srgb, var(--ds-primary) 45%, transparent);
+		color: var(--ds-primary);
 	}
 
 	.article-content {
@@ -787,10 +787,10 @@ const effectiveAuthor = author || 'Pawse Team';
 	}
 
 	:global(.article-body a) {
-		color: var(--ds-blue-dark);
+		color: var(--ds-primary-dark);
 		font-weight: 600;
 		text-decoration: underline;
-		text-decoration-color: color-mix(in srgb, var(--ds-blue) 30%, transparent);
+		text-decoration-color: color-mix(in srgb, var(--ds-primary) 30%, transparent);
 		text-underline-offset: 0.15em;
 		text-decoration-thickness: 1.5px;
 		transition:
@@ -799,12 +799,12 @@ const effectiveAuthor = author || 'Pawse Team';
 	}
 
 	:global(.article-body a:hover) {
-		color: var(--ds-blue);
-		text-decoration-color: var(--ds-blue);
+		color: var(--ds-primary);
+		text-decoration-color: var(--ds-primary);
 	}
 
 	:global(.article-body a:focus-visible) {
-		outline: 2px solid color-mix(in srgb, var(--ds-blue) 65%, white);
+		outline: 2px solid color-mix(in srgb, var(--ds-primary) 65%, white);
 		outline-offset: 2px;
 		border-radius: 2px;
 	}
@@ -815,10 +815,10 @@ const effectiveAuthor = author || 'Pawse Team';
 		border-left: 4px solid;
 		border-image: linear-gradient(
 			to bottom,
-			var(--ds-blue),
-			color-mix(in srgb, var(--ds-green) 70%, var(--ds-blue))
+			var(--ds-primary),
+			color-mix(in srgb, var(--ds-green) 70%, var(--ds-primary))
 		) 1;
-		background: color-mix(in srgb, var(--ds-blue) 5%, transparent);
+		background: color-mix(in srgb, var(--ds-primary) 5%, transparent);
 		border-radius: 0 var(--ds-radius-md) var(--ds-radius-md) 0;
 		font-style: normal;
 	}
@@ -1010,7 +1010,7 @@ const effectiveAuthor = author || 'Pawse Team';
 	}
 
 	.related-content h3 a:hover {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	.related-content p {
@@ -1023,7 +1023,7 @@ const effectiveAuthor = author || 'Pawse Team';
 	a:focus-visible,
 	button:focus-visible,
 	summary:focus-visible {
-		outline: 2px solid color-mix(in srgb, var(--ds-blue) 70%, white);
+		outline: 2px solid color-mix(in srgb, var(--ds-primary) 70%, white);
 		outline-offset: 2px;
 	}
 
@@ -1094,7 +1094,7 @@ const effectiveAuthor = author || 'Pawse Team';
 		}
 
 		:global(.article-body blockquote) {
-			background: color-mix(in srgb, var(--ds-blue) 8%, transparent);
+			background: color-mix(in srgb, var(--ds-primary) 8%, transparent);
 		}
 
 		:global(.article-body pre) {
@@ -1118,7 +1118,7 @@ const effectiveAuthor = author || 'Pawse Team';
 		}
 
 		:global(.article-body a) {
-			text-decoration-color: color-mix(in srgb, var(--ds-blue) 40%, transparent);
+			text-decoration-color: color-mix(in srgb, var(--ds-primary) 40%, transparent);
 		}
 	}
 </style>

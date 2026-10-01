@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Biscuit from '../components/ui/Biscuit.astro';
 ---
 
 <html lang="en">
@@ -32,7 +33,7 @@ import Footer from '../components/Footer.astro';
 				margin: 1rem 0 2rem;
 			}
 			.error-page a {
-				color: var(--ds-blue);
+				color: var(--ds-primary);
 				text-decoration: none;
 				font-weight: 600;
 			}
@@ -43,11 +44,15 @@ import Footer from '../components/Footer.astro';
 				display: flex;
 				gap: 2rem;
 			}
-		</style>
+			:global(.error-biscuit) {
+		margin: 0 auto;
+	}
+</style>
 	</head>
 	<body>
 		<Header />
 		<main class="error-page">
+			<Biscuit mood="sleepy" size={160} label="Biscuit dozing off" class="error-biscuit" />
 			<h1>404</h1>
 			<p>The page you're looking for doesn't exist or has been moved.</p>
 			<div class="error-links">

@@ -65,8 +65,8 @@
 
 /* === Pulse glow - for emphasis === */
 @keyframes pulseGlow {
-	0%, 100% { box-shadow: 0 0 20px rgba(33, 150, 243, 0.3); }
-	50% { box-shadow: 0 0 40px rgba(33, 150, 243, 0.6); }
+	0%, 100% { box-shadow: 0 0 20px rgba(var(--ds-brand-rgb),  0.3); }
+	50% { box-shadow: 0 0 40px rgba(var(--ds-brand-rgb),  0.6); }
 }
 
 /* === Mesh blob movement for gradient backgrounds === */

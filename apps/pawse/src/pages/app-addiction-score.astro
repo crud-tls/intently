@@ -107,8 +107,8 @@ const faqs = [
 									<div id="scan-name" class="scan-name"></div>
 									<div class="scan-ring" aria-hidden="true">
 										<svg viewBox="0 0 100 100">
-											<circle cx="50" cy="50" r="45" fill="none" stroke="rgba(33,150,243,0.15)" stroke-width="4" />
-											<circle cx="50" cy="50" r="45" fill="none" stroke="var(--ds-blue)" stroke-width="4"
+											<circle cx="50" cy="50" r="45" fill="none" stroke="rgba(var(--ds-brand-rgb), 0.15)" stroke-width="4" />
+											<circle cx="50" cy="50" r="45" fill="none" stroke="var(--ds-primary)" stroke-width="4"
 												stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round"
 												class="scan-progress" />
 										</svg>
@@ -771,7 +771,7 @@ const faqs = [
 		transform: translateX(-50%);
 		width: 600px;
 		height: 400px;
-		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.12) 0%, transparent 70%);
 		filter: blur(60px);
 		pointer-events: none;
 	}
@@ -782,7 +782,7 @@ const faqs = [
 		margin: 0 0 var(--ds-space-md);
 		letter-spacing: -0.02em;
 		line-height: 1.2;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -807,11 +807,11 @@ const faqs = [
 		align-items: center;
 		font-size: 0.8125rem;
 		font-weight: 600;
-		color: var(--ds-blue);
-		background: rgba(33, 150, 243, 0.08);
+		color: var(--ds-primary);
+		background: rgba(var(--ds-brand-rgb),  0.08);
 		padding: 0.25rem 0.75rem;
 		border-radius: var(--ds-radius-full);
-		border: 1px solid rgba(33, 150, 243, 0.15);
+		border: 1px solid rgba(var(--ds-brand-rgb),  0.15);
 	}
 
 	/* ============================
@@ -895,22 +895,22 @@ const faqs = [
 	}
 
 	.app-select-card.selected {
-		border-color: var(--ds-blue);
+		border-color: var(--ds-primary);
 		background: var(--ds-bg-accent);
-		box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.15);
+		box-shadow: 0 0 0 3px rgba(var(--ds-brand-rgb),  0.15);
 	}
 
 	@media (hover: hover) {
 		.app-select-card.selected:hover {
 			box-shadow:
-				0 0 0 3px rgba(33, 150, 243, 0.15),
-				0 4px 12px rgba(33, 150, 243, 0.1);
+				0 0 0 3px rgba(var(--ds-brand-rgb),  0.15),
+				0 4px 12px rgba(var(--ds-brand-rgb),  0.1);
 			transform: translateY(-1px);
 		}
 	}
 
 	.app-select-card.selected .asc-name {
-		color: var(--ds-blue-dark);
+		color: var(--ds-primary-dark);
 	}
 
 	.app-select-card.selected::after {
@@ -920,15 +920,15 @@ const faqs = [
 		right: -5px;
 		font-size: 0.625rem;
 		font-weight: 700;
-		color: white;
-		background: var(--ds-blue);
+		color: var(--ds-on-primary);
+		background: var(--ds-primary);
 		border-radius: 50%;
 		width: 20px;
 		height: 20px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		box-shadow: 0 1px 4px rgba(33, 150, 243, 0.4);
+		box-shadow: 0 1px 4px rgba(var(--ds-brand-rgb),  0.4);
 		z-index: 1;
 	}
 
@@ -960,9 +960,9 @@ const faqs = [
 		align-items: center;
 		justify-content: space-between;
 		padding: 0.625rem 0.625rem 0.625rem var(--ds-space-lg);
-		background: rgba(33, 150, 243, 0.05);
+		background: rgba(var(--ds-brand-rgb),  0.05);
 		border-radius: var(--ds-radius-full);
-		border: 1px solid rgba(33, 150, 243, 0.12);
+		border: 1px solid rgba(var(--ds-brand-rgb),  0.12);
 		animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
@@ -979,35 +979,35 @@ const faqs = [
 
 	#selected-count {
 		font-weight: 600;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-size: 0.875rem;
 	}
 
 	.analyze-btn {
 		padding: 0.75rem 2rem;
 		border-radius: var(--ds-radius-full);
-		background: rgba(33, 150, 243, 0.85);
+		background: rgba(var(--ds-brand-rgb),  0.85);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
-		color: white;
+		color: var(--ds-on-brand);
 		border: 1px solid rgba(255, 255, 255, 0.2);
 		font-weight: 600;
 		font-size: 0.9375rem;
 		cursor: pointer;
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.25),
-			0 4px 16px rgba(33, 150, 243, 0.3);
+			0 4px 16px rgba(var(--ds-brand-rgb),  0.3);
 		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 		min-height: 44px;
 		font-family: inherit;
 	}
 
 	.analyze-btn:hover {
-		background: rgba(33, 150, 243, 0.95);
+		background: rgba(var(--ds-brand-rgb),  0.95);
 		transform: translateY(-2px);
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.3),
-			0 8px 24px rgba(33, 150, 243, 0.35);
+			0 8px 24px rgba(var(--ds-brand-rgb),  0.35);
 	}
 
 	/* ============================
@@ -1102,7 +1102,7 @@ const faqs = [
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		margin-bottom: var(--ds-space-lg);
 	}
 
@@ -1163,7 +1163,7 @@ const faqs = [
 
 	.toggle-btn.active {
 		background: white;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		box-shadow:
 			0 1px 3px rgba(0, 0, 0, 0.08),
 			0 1px 2px rgba(0, 0, 0, 0.04);
@@ -1359,20 +1359,20 @@ const faqs = [
 	}
 
 	.rarity-rare {
-		border-color: var(--ds-blue);
-		background: linear-gradient(155deg, rgba(227, 242, 253, 0.5), rgba(255, 255, 255, 0.97));
+		border-color: var(--ds-primary);
+		background: linear-gradient(155deg, rgba(255, 232, 212,  0.5), rgba(255, 255, 255, 0.97));
 	}
 
 	.rarity-legendary {
 		border-color: var(--ds-purple);
 		background: linear-gradient(155deg, rgba(243, 229, 245, 0.5), rgba(255, 255, 255, 0.97));
-		box-shadow: 0 0 24px rgba(156, 39, 176, 0.08);
+		box-shadow: 0 0 24px rgba(217, 70, 122,  0.08);
 		animation: legendaryShimmer 3s ease-in-out infinite;
 	}
 
 	@keyframes legendaryShimmer {
-		0%, 100% { box-shadow: 0 0 24px rgba(156, 39, 176, 0.08); }
-		50% { box-shadow: 0 0 32px rgba(156, 39, 176, 0.15), 0 4px 16px rgba(156, 39, 176, 0.06); }
+		0%, 100% { box-shadow: 0 0 24px rgba(217, 70, 122,  0.08); }
+		50% { box-shadow: 0 0 32px rgba(217, 70, 122,  0.15), 0 4px 16px rgba(217, 70, 122,  0.06); }
 	}
 
 	.tc-rarity {
@@ -1389,7 +1389,7 @@ const faqs = [
 	}
 
 	.rarity-rare .tc-rarity {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	.tc-icon {
@@ -1417,8 +1417,8 @@ const faqs = [
 		font-weight: 600;
 		padding: 2px 8px;
 		border-radius: var(--ds-radius-full);
-		background: rgba(33, 150, 243, 0.07);
-		color: var(--ds-blue);
+		background: rgba(var(--ds-brand-rgb),  0.07);
+		color: var(--ds-primary);
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 	}
@@ -1450,7 +1450,7 @@ const faqs = [
 
 	.tc-stat-fill {
 		height: 100%;
-		background: linear-gradient(90deg, var(--ds-blue), var(--ds-purple));
+		background: linear-gradient(90deg, var(--ds-primary), var(--ds-purple));
 		border-radius: var(--ds-radius-full);
 		transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 	}
@@ -1641,7 +1641,7 @@ const faqs = [
 	}
 
 	.retake-button:hover {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	/* ============================
@@ -1686,8 +1686,8 @@ const faqs = [
 	}
 
 	.tool-link:hover {
-		background: rgba(33, 150, 243, 0.05);
-		border-color: rgba(33, 150, 243, 0.12);
+		background: rgba(var(--ds-brand-rgb),  0.05);
+		border-color: rgba(var(--ds-brand-rgb),  0.12);
 		transform: translateY(-2px);
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 	}
@@ -1789,13 +1789,13 @@ const faqs = [
 
 	.faq-glass-item[open] summary::after {
 		content: '\2212';
-		background: rgba(33, 150, 243, 0.1);
-		color: var(--ds-blue);
+		background: rgba(var(--ds-brand-rgb),  0.1);
+		color: var(--ds-primary);
 	}
 
 	@media (hover: hover) {
 		.faq-glass-item summary:hover {
-			color: var(--ds-blue);
+			color: var(--ds-primary);
 		}
 	}
 
@@ -1821,7 +1821,7 @@ const faqs = [
 	}
 
 	.quiz-links a {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-weight: 600;
 		text-decoration: none;
 		transition: color var(--ds-transition-fast);
@@ -1836,12 +1836,12 @@ const faqs = [
 	   ============================ */
 	@media (prefers-color-scheme: dark) {
 		.hero-glow {
-			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+			background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.08) 0%, transparent 70%);
 		}
 
 		.meta-pill {
-			background: rgba(66, 165, 245, 0.12);
-			border-color: rgba(66, 165, 245, 0.2);
+			background: rgba(var(--ds-brand-rgb),  0.12);
+			border-color: rgba(var(--ds-brand-rgb),  0.2);
 		}
 
 		.score-glass-card,
@@ -1866,9 +1866,9 @@ const faqs = [
 		}
 
 		.app-select-card.selected {
-			background: rgba(66, 165, 245, 0.12);
-			border-color: var(--ds-blue);
-			box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
+			background: rgba(var(--ds-brand-rgb),  0.12);
+			border-color: var(--ds-primary);
+			box-shadow: 0 0 0 3px rgba(var(--ds-brand-rgb),  0.2);
 		}
 
 		.asc-icon {
@@ -1880,12 +1880,12 @@ const faqs = [
 		}
 
 		.app-select-card.selected .asc-name {
-			color: var(--ds-blue);
+			color: var(--ds-primary);
 		}
 
 		.analyze-bar {
-			background: rgba(66, 165, 245, 0.06);
-			border-color: rgba(66, 165, 245, 0.15);
+			background: rgba(var(--ds-brand-rgb),  0.06);
+			border-color: rgba(var(--ds-brand-rgb),  0.15);
 		}
 
 		.toggle-btn.active {
@@ -1923,18 +1923,18 @@ const faqs = [
 		}
 
 		.rarity-rare {
-			background: linear-gradient(155deg, rgba(26, 35, 50, 0.7), rgba(30, 30, 30, 0.97));
+			background: linear-gradient(155deg, rgba(58, 42, 30,  0.7), rgba(30, 30, 30, 0.97));
 		}
 
 		.rarity-legendary {
 			background: linear-gradient(155deg, rgba(50, 20, 60, 0.5), rgba(30, 30, 30, 0.97));
-			box-shadow: 0 0 24px rgba(156, 39, 176, 0.12);
+			box-shadow: 0 0 24px rgba(217, 70, 122,  0.12);
 			animation-name: legendaryShimmerDark;
 		}
 
 		@keyframes legendaryShimmerDark {
-			0%, 100% { box-shadow: 0 0 24px rgba(156, 39, 176, 0.12); }
-			50% { box-shadow: 0 0 32px rgba(156, 39, 176, 0.2), 0 4px 16px rgba(156, 39, 176, 0.1); }
+			0%, 100% { box-shadow: 0 0 24px rgba(217, 70, 122,  0.12); }
+			50% { box-shadow: 0 0 32px rgba(217, 70, 122,  0.2), 0 4px 16px rgba(217, 70, 122,  0.1); }
 		}
 
 		.tc-stat-bar,
@@ -1979,7 +1979,7 @@ const faqs = [
 		}
 
 		.faq-glass-item[open] summary::after {
-			background: rgba(66, 165, 245, 0.15);
+			background: rgba(var(--ds-brand-rgb),  0.15);
 		}
 
 		.quiz-links {
@@ -1992,8 +1992,8 @@ const faqs = [
 		}
 
 		.tool-link:hover {
-			background: rgba(66, 165, 245, 0.08);
-			border-color: rgba(66, 165, 245, 0.15);
+			background: rgba(var(--ds-brand-rgb),  0.08);
+			border-color: rgba(var(--ds-brand-rgb),  0.15);
 		}
 
 		.gauge-svg path:first-of-type {
@@ -2144,7 +2144,7 @@ const faqs = [
 	/* Focus */
 	a:focus-visible,
 	button:focus-visible {
-		outline: 2px solid var(--ds-blue);
+		outline: 2px solid var(--ds-primary);
 		outline-offset: 2px;
 	}
 

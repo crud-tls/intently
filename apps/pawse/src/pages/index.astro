@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import Hero from '../components/marketing/Hero.astro';
 import PlatformCard from '../components/marketing/PlatformCard.astro';
 import Icon from '../components/ui/Icon.astro';
+import Biscuit from '../components/ui/Biscuit.astro';
 import Picture from '../components/ui/Picture.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import WebSiteSchema from '../components/SEO/WebSiteSchema.astro';
@@ -65,7 +66,7 @@ const latestPosts = allPosts
 								</div>
 								<div class="bento-hero-content">
 									<div class="bento-icon bento-icon-blue">
-										<Icon name="Clock" size={32} color="var(--ds-blue)" />
+										<Icon name="Clock" size={32} color="var(--ds-primary)" />
 									</div>
 									<h3>See Where Your Hours Go</h3>
 									<p>Most people are shocked to discover they spend 3-4 hours daily on apps they don't even enjoy. Pawse reveals the truth gently.</p>
@@ -103,9 +104,7 @@ const latestPosts = allPosts
 
 						<!-- Privacy Card: Badge Pills -->
 						<div class="bento-card bento-privacy">
-							<div class="bento-icon bento-icon-green">
-								<Icon name="ShieldCheck" size={28} color="var(--ds-green)" />
-							</div>
+							<Biscuit mood="meditate" size={96} label="Biscuit meditating" class="bento-biscuit" />
 							<h3>Your Secrets Stay Yours</h3>
 							<p>Your screen-time history stays on your phone. No account needed, and nothing syncs unless you sign in.</p>
 							<div class="privacy-badges">
@@ -374,8 +373,9 @@ const latestPosts = allPosts
 				<div class="container">
 					<div class="cta-layout">
 						<div class="cta-content">
+							<Biscuit mood="cheer" size={120} label="Biscuit cheering" class="cta-biscuit" />
 							<span class="cta-eyebrow">
-								<Icon name="Sparkles" size={16} color="var(--ds-blue)" />
+								<Icon name="Sparkles" size={16} color="var(--ds-primary)" />
 								Ready to change?
 							</span>
 							<h2 class="cta-headline">
@@ -538,7 +538,7 @@ const latestPosts = allPosts
 		transition: opacity 0.4s ease, transform 0.4s ease;
 	}
 
-	.bento-icon-blue::before { background: radial-gradient(circle, var(--ds-blue), transparent 70%); }
+	.bento-icon-blue::before { background: radial-gradient(circle, var(--ds-primary), transparent 70%); }
 	.bento-icon-purple::before { background: radial-gradient(circle, var(--ds-purple), transparent 70%); }
 	.bento-icon-orange::before { background: radial-gradient(circle, var(--ds-orange), transparent 70%); }
 	.bento-icon-green::before { background: radial-gradient(circle, var(--ds-green), transparent 70%); }
@@ -562,8 +562,8 @@ const latestPosts = allPosts
 		z-index: 0;
 		border-radius: 40px;
 		background:
-			radial-gradient(ellipse at 30% 50%, rgba(33, 150, 243, 0.08) 0%, transparent 60%),
-			radial-gradient(ellipse at 70% 50%, rgba(156, 39, 176, 0.06) 0%, transparent 60%);
+			radial-gradient(ellipse at 30% 50%, rgba(var(--ds-brand-rgb),  0.08) 0%, transparent 60%),
+			radial-gradient(ellipse at 70% 50%, rgba(217, 70, 122,  0.06) 0%, transparent 60%);
 		filter: blur(20px);
 		opacity: 0.6;
 		animation: glow-pulse 8s ease-in-out infinite;
@@ -587,7 +587,7 @@ const latestPosts = allPosts
 		font-weight: 900;
 		letter-spacing: -0.04em;
 		line-height: 1;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 50%, var(--ds-blue) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 50%, var(--ds-primary) 100%);
 		background-size: 200% 200%;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -631,7 +631,7 @@ const latestPosts = allPosts
 
 	@media (prefers-color-scheme: dark) {
 		.bento-stat-number {
-			background: linear-gradient(135deg, #42A5F5 0%, #AB47BC 50%, #42A5F5 100%);
+			background: linear-gradient(135deg, var(--ds-brand) 0%, var(--ds-purple) 50%, var(--ds-brand) 100%);
 			background-size: 200% 200%;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
@@ -641,8 +641,8 @@ const latestPosts = allPosts
 
 		.bento-glow-bg {
 			background:
-				radial-gradient(ellipse at 30% 50%, rgba(33, 150, 243, 0.04) 0%, transparent 60%),
-				radial-gradient(ellipse at 70% 50%, rgba(156, 39, 176, 0.03) 0%, transparent 60%);
+				radial-gradient(ellipse at 30% 50%, rgba(var(--ds-brand-rgb),  0.04) 0%, transparent 60%),
+				radial-gradient(ellipse at 70% 50%, rgba(217, 70, 122,  0.03) 0%, transparent 60%);
 		}
 	}
 
@@ -906,7 +906,7 @@ const latestPosts = allPosts
 		font-weight: 600;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		margin-bottom: 0.75rem;
 	}
 
@@ -996,7 +996,7 @@ const latestPosts = allPosts
 	}
 
 	.blog-title a:hover {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	.blog-description {
@@ -1011,7 +1011,7 @@ const latestPosts = allPosts
 		display: inline-flex;
 		align-items: center;
 		gap: 0.375rem;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-weight: 600;
 		text-decoration: none;
 		font-size: 0.875rem;
@@ -1021,7 +1021,7 @@ const latestPosts = allPosts
 
 	.blog-link:hover {
 		gap: 0.625rem;
-		color: var(--ds-blue-dark);
+		color: var(--ds-primary-dark);
 	}
 
 	.blog-cta {
@@ -1043,28 +1043,28 @@ const latestPosts = allPosts
 	}
 
 	.view-all-button {
-		background: rgba(33, 150, 243, 0.85);
-		color: white;
+		background: rgba(var(--ds-brand-rgb),  0.85);
+		color: var(--ds-on-brand);
 		border: 1px solid rgba(255, 255, 255, 0.25);
 		backdrop-filter: blur(12px) saturate(150%);
 		-webkit-backdrop-filter: blur(12px) saturate(150%);
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.3),
-			0 4px 16px rgba(33, 150, 243, 0.3);
+			0 4px 16px rgba(var(--ds-brand-rgb),  0.3);
 	}
 
 	.view-all-button:hover {
-		background: rgba(33, 150, 243, 0.95);
+		background: rgba(var(--ds-brand-rgb),  0.95);
 		transform: translateY(-2px);
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.35),
-			0 8px 24px rgba(33, 150, 243, 0.4);
+			0 8px 24px rgba(var(--ds-brand-rgb),  0.4);
 	}
 
 	.quiz-button {
 		background: rgba(255, 255, 255, 0.6);
-		color: var(--ds-blue);
-		border: 1px solid rgba(33, 150, 243, 0.2);
+		color: var(--ds-primary);
+		border: 1px solid rgba(var(--ds-brand-rgb),  0.2);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
 		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -1072,23 +1072,23 @@ const latestPosts = allPosts
 
 	.quiz-button:hover {
 		background: rgba(255, 255, 255, 0.85);
-		border-color: rgba(33, 150, 243, 0.4);
+		border-color: rgba(var(--ds-brand-rgb),  0.4);
 		transform: translateY(-2px);
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.5),
-			0 4px 16px rgba(33, 150, 243, 0.1);
+			0 4px 16px rgba(var(--ds-brand-rgb),  0.1);
 	}
 
 	@media (prefers-color-scheme: dark) {
 		.quiz-button {
 			background: rgba(255, 255, 255, 0.08);
-			border-color: rgba(66, 165, 245, 0.25);
-			color: var(--ds-blue);
+			border-color: rgba(var(--ds-brand-rgb),  0.25);
+			color: var(--ds-primary);
 		}
 
 		.quiz-button:hover {
 			background: rgba(255, 255, 255, 0.15);
-			border-color: rgba(66, 165, 245, 0.45);
+			border-color: rgba(var(--ds-brand-rgb),  0.45);
 		}
 	}
 
@@ -1124,7 +1124,7 @@ const latestPosts = allPosts
 		font-weight: 600;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		margin-bottom: 0.75rem;
 	}
 
@@ -1423,7 +1423,7 @@ const latestPosts = allPosts
 
 	.journey-closing em {
 		font-style: normal;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-green) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-green) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -1577,7 +1577,7 @@ const latestPosts = allPosts
 		left: 1rem;
 		font-size: 3rem;
 		line-height: 1;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		opacity: 0.12;
 		font-family: Georgia, serif;
 		pointer-events: none;
@@ -1658,7 +1658,7 @@ const latestPosts = allPosts
 	.stat-number {
 		font-size: 1.75rem;
 		font-weight: 800;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	.stat-desc {
@@ -1683,7 +1683,7 @@ const latestPosts = allPosts
 		height: 1px;
 		background: linear-gradient(90deg,
 			transparent 0%,
-			var(--ds-blue) 30%,
+			var(--ds-primary) 30%,
 			var(--ds-purple) 70%,
 			transparent 100%
 		);
@@ -1718,7 +1718,7 @@ const latestPosts = allPosts
 		gap: 0.5rem;
 		font-size: 0.875rem;
 		font-weight: 600;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		letter-spacing: 0.02em;
 		margin-bottom: var(--ds-space-md);
 	}
@@ -1734,7 +1734,7 @@ const latestPosts = allPosts
 
 	.cta-highlight {
 		display: block;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -1761,19 +1761,19 @@ const latestPosts = allPosts
 		align-items: center;
 		gap: 0.5rem;
 		padding: 1rem 2rem;
-		background: var(--ds-blue);
-		color: white;
+		background: var(--ds-primary);
+		color: var(--ds-on-primary);
 		font-weight: 700;
 		font-size: 1.0625rem;
 		border-radius: var(--ds-radius-full);
 		text-decoration: none;
-		box-shadow: 0 4px 16px rgba(33, 150, 243, 0.3);
+		box-shadow: 0 4px 16px rgba(var(--ds-brand-rgb),  0.3);
 		transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 	.cta-button-primary:hover {
 		transform: translateY(-2px);
-		box-shadow: 0 8px 28px rgba(33, 150, 243, 0.4);
+		box-shadow: 0 8px 28px rgba(var(--ds-brand-rgb),  0.4);
 		filter: brightness(1.1);
 	}
 
@@ -1809,8 +1809,8 @@ const latestPosts = allPosts
 		border: 2px solid var(--ds-gray-300);
 		background: conic-gradient(
 			from 270deg,
-			rgba(33, 150, 243, 0.1) 0deg,
-			rgba(33, 150, 243, 0.1) 30deg,
+			rgba(var(--ds-brand-rgb),  0.1) 0deg,
+			rgba(var(--ds-brand-rgb),  0.1) 30deg,
 			transparent 30deg
 		);
 	}
@@ -1820,8 +1820,8 @@ const latestPosts = allPosts
 			border-color: var(--ds-gray-400);
 			background: conic-gradient(
 				from 270deg,
-				rgba(66, 165, 245, 0.15) 0deg,
-				rgba(66, 165, 245, 0.15) 30deg,
+				rgba(var(--ds-brand-rgb),  0.15) 0deg,
+				rgba(var(--ds-brand-rgb),  0.15) 30deg,
 				transparent 30deg
 			);
 		}
@@ -1846,7 +1846,7 @@ const latestPosts = allPosts
 	.clock-minute {
 		width: 2px;
 		height: 38%;
-		background: var(--ds-blue);
+		background: var(--ds-primary);
 		transform: translateX(-50%) rotate(90deg);
 		animation: minute-tick 4s linear infinite;
 	}
@@ -1859,7 +1859,7 @@ const latestPosts = allPosts
 		width: 8px;
 		height: 8px;
 		border-radius: 50%;
-		background: var(--ds-blue);
+		background: var(--ds-primary);
 	}
 
 	.clock-highlight {
@@ -1868,8 +1868,8 @@ const latestPosts = allPosts
 		border-radius: 50%;
 		background: conic-gradient(
 			from 270deg,
-			rgba(33, 150, 243, 0.15) 0deg,
-			rgba(33, 150, 243, 0) 30deg,
+			rgba(var(--ds-brand-rgb),  0.15) 0deg,
+			rgba(var(--ds-brand-rgb),  0) 30deg,
 			transparent 30deg
 		);
 		animation: highlight-pulse 4s ease-in-out infinite;
@@ -1967,5 +1967,12 @@ const latestPosts = allPosts
 		.cta-divider {
 			display: none;
 		}
+	}
+	.bento-privacy :global(.bento-biscuit) {
+		margin: -8px 0 4px -8px;
+	}
+
+	.cta-content :global(.cta-biscuit) {
+		margin-bottom: var(--ds-space-sm);
 	}
 </style>

@@ -7,13 +7,14 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--accent: var(--ds-primary);
+	--accent-dark: var(--ds-primary-dark);
+	--black: 42, 30, 22;
+	--gray: 122, 104, 88;
+	--gray-light: 234, 223, 211;
+	--gray-dark: 58, 44, 34;
+	--gray-gradient: rgba(var(--gray-light), 50%), var(--ds-bg-primary);
+	--font-heading: "Nunito Variable", "Nunito", system-ui, sans-serif;
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
@@ -55,7 +56,7 @@ body {
 	background: var(--ds-bg-primary);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: var(--ds-text-primary);
 	font-size: 16px; /* Mobile base */
 	line-height: 1.7;
 }
@@ -80,7 +81,9 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: var(--ds-text-primary);
+	font-family: var(--font-heading);
+	font-weight: 800;
 	line-height: 1.2;
 }
 

@@ -19,7 +19,7 @@ export const BLOG_CATEGORIES: BlogCategoryMeta[] = [
 		id: 'getting-started',
 		label: 'Getting Started',
 		description: 'Foundations for better digital wellbeing habits.',
-		accentColor: 'var(--ds-blue)',
+		accentColor: 'var(--ds-primary)',
 	},
 	{
 		id: 'app-guides',
@@ -43,7 +43,7 @@ export const BLOG_CATEGORIES: BlogCategoryMeta[] = [
 		id: 'comparisons',
 		label: 'Comparisons',
 		description: 'Deep dives into tools and alternatives.',
-		accentColor: 'var(--ds-blue-dark)',
+		accentColor: 'var(--ds-primary-dark)',
 	},
 	{
 		id: 'privacy',

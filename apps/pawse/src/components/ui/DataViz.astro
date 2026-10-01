@@ -17,7 +17,7 @@ const {
 	value = 0,
 	label = '',
 	unit = '',
-	color = 'var(--ds-blue)',
+	color = 'var(--ds-primary)',
 	size = 'md'
 } = Astro.props;
 
@@ -119,14 +119,14 @@ const offset = circumference - ((value || 0) / 100) * circumference;
 	.counter-value {
 		font-size: 3rem;
 		font-weight: 800;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		line-height: 1;
 	}
 
 	.counter-unit {
 		font-size: 1.5rem;
 		font-weight: 600;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	/* Label */

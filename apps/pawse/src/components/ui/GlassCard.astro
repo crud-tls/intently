@@ -81,10 +81,10 @@ const gradients = {
 
 	/* Color-specific highlights */
 	.glass-blue .glass-highlight {
-		background: linear-gradient(180deg, rgba(33, 150, 243, 0.15) 0%, transparent 100%);
+		background: linear-gradient(180deg, rgba(var(--ds-brand-rgb),  0.15) 0%, transparent 100%);
 	}
 	.glass-purple .glass-highlight {
-		background: linear-gradient(180deg, rgba(156, 39, 176, 0.15) 0%, transparent 100%);
+		background: linear-gradient(180deg, rgba(217, 70, 122,  0.15) 0%, transparent 100%);
 	}
 	.glass-green .glass-highlight {
 		background: linear-gradient(180deg, rgba(76, 175, 80, 0.15) 0%, transparent 100%);
@@ -93,7 +93,7 @@ const gradients = {
 		background: linear-gradient(180deg, rgba(255, 152, 0, 0.15) 0%, transparent 100%);
 	}
 	.glass-teal .glass-highlight {
-		background: linear-gradient(180deg, rgba(0, 188, 212, 0.15) 0%, transparent 100%);
+		background: linear-gradient(180deg, rgba(var(--ds-brand-rgb), 0.15) 0%, transparent 100%);
 	}
 
 	/* Hover effects */
@@ -103,7 +103,7 @@ const gradients = {
 	}
 
 	.glass-card.glass-hover-glow:hover {
-		box-shadow: 0 0 30px rgba(33, 150, 243, 0.3);
+		box-shadow: 0 0 30px rgba(var(--ds-brand-rgb),  0.3);
 	}
 
 	.glass-card.glass-hover-tilt:hover {

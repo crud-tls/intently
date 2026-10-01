@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Biscuit from '../components/ui/Biscuit.astro';
 import StoreButton from '../components/ui/StoreButton.astro';
 import ScrollReveal from '../components/ui/ScrollReveal.astro';
 import ProductSchema from '../components/SEO/ProductSchema.astro';
@@ -48,6 +49,7 @@ import { SITE_TITLE } from '../consts';
 			<section class="hero">
 				<div class="hero-glow" aria-hidden="true"></div>
 				<div class="container">
+					<Biscuit mood="hop_in" size={140} loop={false} label="Biscuit hopping in" class="download-biscuit" />
 					<h1 class="text-gradient">Your Next Hour Starts Now</h1>
 					<p class="subtitle">Pawse (formerly Intently) is free. In 30 seconds, you'll have a tool that gives you back the time you've been losing. No sign-up. No credit card. No ads. Just freedom.</p>
 					<p class="hero-links">
@@ -213,7 +215,7 @@ import { SITE_TITLE } from '../consts';
 		transform: translateX(-50%);
 		width: 600px;
 		height: 400px;
-		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.12) 0%, transparent 70%);
 		filter: blur(60px);
 		pointer-events: none;
 	}
@@ -224,7 +226,7 @@ import { SITE_TITLE } from '../consts';
 		margin: 0 0 var(--ds-space-md);
 		letter-spacing: -0.02em;
 		line-height: 1.2;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -248,7 +250,7 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.hero-links a {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-weight: 600;
 		text-decoration: none;
 		border-bottom: 2px solid transparent;
@@ -256,12 +258,12 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.hero-links a:hover {
-		border-bottom-color: var(--ds-blue);
+		border-bottom-color: var(--ds-primary);
 	}
 
 	@media (prefers-color-scheme: dark) {
 		.hero-glow {
-			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+			background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.08) 0%, transparent 70%);
 		}
 	}
 
@@ -371,7 +373,7 @@ import { SITE_TITLE } from '../consts';
 		top: var(--ds-space-md);
 		right: var(--ds-space-md);
 		background: var(--ds-orange);
-		color: white;
+		color: var(--ds-on-brand);
 		padding: 0.25rem 0.75rem;
 		border-radius: var(--ds-radius-full);
 		font-size: 0.75rem;
@@ -434,7 +436,7 @@ import { SITE_TITLE } from '../consts';
 		transform: translateY(-50%);
 		width: 6px;
 		height: 6px;
-		background: var(--ds-blue);
+		background: var(--ds-primary);
 		border-radius: 50%;
 	}
 
@@ -446,7 +448,7 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	.privacy-link a {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		text-decoration: none;
 		transition: var(--ds-transition-fast);
 	}
@@ -563,8 +565,8 @@ import { SITE_TITLE } from '../consts';
 	@media (hover: hover) {
 		.link-card-glass:hover {
 			transform: scale(1.02);
-			border-color: rgba(33, 150, 243, 0.3);
-			color: var(--ds-blue);
+			border-color: rgba(var(--ds-brand-rgb),  0.3);
+			color: var(--ds-primary);
 		}
 	}
 
@@ -578,7 +580,7 @@ import { SITE_TITLE } from '../consts';
 		}
 
 		.link-card-glass:hover {
-			border-color: rgba(66, 165, 245, 0.35);
+			border-color: rgba(var(--ds-brand-rgb),  0.35);
 		}
 	}
 
@@ -661,7 +663,7 @@ import { SITE_TITLE } from '../consts';
 
 	a:focus-visible,
 	button:focus-visible {
-		outline: 2px solid var(--ds-blue);
+		outline: 2px solid var(--ds-primary);
 		outline-offset: 2px;
 	}
 
@@ -670,5 +672,8 @@ import { SITE_TITLE } from '../consts';
 		.link-card-glass {
 			transition: none;
 		}
+	}
+	.hero :global(.download-biscuit) {
+		margin: 0 auto var(--ds-space-md);
 	}
 </style>

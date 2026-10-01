@@ -19,10 +19,10 @@ interface Props {
 const { title, description, stat, statLabel, icon, size = 'medium', color = 'blue', glassLevel = 'soft' } = Astro.props;
 
 const colorDefs = {
-	blue: { primary: '#2196F3', secondary: '#64B5F6', light: 'rgba(33, 150, 243, 0.12)' },
+	blue: { primary: 'var(--ds-primary)', secondary: 'var(--ds-brand)', light: 'rgba(var(--ds-brand-rgb),  0.12)' },
 	green: { primary: '#4CAF50', secondary: '#81C784', light: 'rgba(76, 175, 80, 0.12)' },
 	orange: { primary: '#FF9800', secondary: '#FFB74D', light: 'rgba(255, 152, 0, 0.12)' },
-	purple: { primary: '#9C27B0', secondary: '#BA68C8', light: 'rgba(156, 39, 176, 0.12)' }
+	purple: { primary: 'var(--ds-purple)', secondary: '#F06B9A', light: 'rgba(217, 70, 122,  0.12)' }
 };
 const c = colorDefs[color];
 
@@ -221,7 +221,7 @@ const iconSize = size === 'hero' ? 48 : 40;
 		font-size: 2.25rem;
 		font-weight: 800;
 		letter-spacing: -0.03em;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -243,7 +243,7 @@ const iconSize = size === 'hero' ? 48 : 40;
 	}
 
 	.glass-purple .stat-value {
-		background: linear-gradient(135deg, var(--ds-purple) 0%, #6A1B9A 100%);
+		background: linear-gradient(135deg, var(--ds-purple) 0%, var(--ds-purple-dark) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -251,7 +251,7 @@ const iconSize = size === 'hero' ? 48 : 40;
 
 	@media (prefers-color-scheme: dark) {
 		.glass-blue .stat-value {
-			background: linear-gradient(135deg, #42A5F5 0%, #1976D2 100%);
+			background: linear-gradient(135deg, var(--ds-brand) 0%, var(--ds-primary-dark) 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
@@ -272,7 +272,7 @@ const iconSize = size === 'hero' ? 48 : 40;
 		}
 
 		.glass-purple .stat-value {
-			background: linear-gradient(135deg, #AB47BC 0%, #7B1FA2 100%);
+			background: linear-gradient(135deg, var(--ds-purple) 0%, var(--ds-purple-dark) 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-clip: text;

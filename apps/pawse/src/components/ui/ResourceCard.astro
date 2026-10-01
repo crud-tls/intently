@@ -28,7 +28,7 @@ const { href, title, description, tag } = Astro.props;
 	}
 
 	.resource-card:hover {
-		border-color: var(--ds-blue);
+		border-color: var(--ds-primary);
 		transform: translateY(-4px);
 		box-shadow: var(--ds-shadow-lg);
 	}
@@ -37,7 +37,7 @@ const { href, title, description, tag } = Astro.props;
 		font-size: 1.125rem;
 		font-weight: 600;
 		margin: 0 0 var(--ds-space-sm) 0;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	.resource-card p {
@@ -49,8 +49,8 @@ const { href, title, description, tag } = Astro.props;
 
 	.tag {
 		display: inline-block;
-		background: var(--ds-blue);
-		color: white;
+		background: var(--ds-primary);
+		color: var(--ds-on-primary);
 		padding: 0.25rem 0.75rem;
 		border-radius: var(--ds-radius-full);
 		font-size: 0.8125rem;

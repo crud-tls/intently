@@ -355,9 +355,9 @@ const faqs = [
 	.hero {
 		width: 100%;
 		padding: var(--ds-space-3xl) 0 var(--ds-space-2xl);
-		background: linear-gradient(135deg, var(--ds-blue) 0%, #00BCD4 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-brand) 100%);
 		text-align: center;
-		color: white;
+		color: var(--ds-on-brand);
 	}
 
 	.hero::before {
@@ -455,7 +455,7 @@ const faqs = [
 	.compare-card:hover {
 		transform: translateY(-4px);
 		box-shadow: var(--ds-shadow-lg);
-		border-color: var(--ds-blue);
+		border-color: var(--ds-primary);
 	}
 
 	.compare-card h3 {
@@ -475,7 +475,7 @@ const faqs = [
 	.card-link {
 		font-size: 0.9375rem;
 		font-weight: 600;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	.card-badge {
@@ -491,12 +491,12 @@ const faqs = [
 	}
 
 	.badge-blue {
-		background: rgba(33, 150, 243, 0.1);
-		color: var(--ds-blue);
+		background: rgba(var(--ds-brand-rgb),  0.1);
+		color: var(--ds-primary);
 	}
 
 	.badge-purple {
-		background: rgba(156, 39, 176, 0.1);
+		background: rgba(217, 70, 122,  0.1);
 		color: var(--ds-purple);
 	}
 
@@ -555,14 +555,14 @@ const faqs = [
 	}
 
 	.comparison-table .highlight {
-		background: rgba(33, 150, 243, 0.05);
-		color: var(--ds-blue);
+		background: rgba(var(--ds-brand-rgb),  0.05);
+		color: var(--ds-primary);
 		font-weight: 600;
 	}
 
 	.comparison-table thead .highlight {
-		background: rgba(33, 150, 243, 0.1);
-		color: var(--ds-blue);
+		background: rgba(var(--ds-brand-rgb),  0.1);
+		color: var(--ds-primary);
 	}
 
 	.comparison-table tbody tr:last-child td {
@@ -573,9 +573,9 @@ const faqs = [
 	.cta-section {
 		width: 100%;
 		padding: var(--ds-space-3xl) 0;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
 		text-align: center;
-		color: white;
+		color: var(--ds-on-primary);
 	}
 
 	.cta-section h2 {
@@ -625,7 +625,7 @@ const faqs = [
 	.faq-item summary::after {
 		content: "+";
 		font-size: 1.25rem;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		flex-shrink: 0;
 	}
 

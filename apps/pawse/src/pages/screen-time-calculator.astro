@@ -360,7 +360,7 @@ const howToSteps = [
 				instagram: '#E1306C', tiktok: '#00f2ea', youtube: '#FF0000',
 				x: '#1DA1F2', reddit: '#FF4500', facebook: '#1877F2',
 				snapchat: '#FFFC00', whatsapp: '#25D366', netflix: '#E50914',
-				spotify: '#1DB954', games: '#9C27B0', other: '#757575'
+				spotify: '#1DB954', games: 'var(--ds-purple)', other: '#757575'
 			};
 
 			const opportunityCosts = [
@@ -738,7 +738,7 @@ const howToSteps = [
 		transform: translateX(-50%);
 		width: 600px;
 		height: 400px;
-		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.12) 0%, transparent 70%);
 		filter: blur(60px);
 		pointer-events: none;
 	}
@@ -749,7 +749,7 @@ const howToSteps = [
 		margin: 0 0 var(--ds-space-md);
 		letter-spacing: -0.02em;
 		line-height: 1.2;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -774,11 +774,11 @@ const howToSteps = [
 		align-items: center;
 		font-size: 0.8125rem;
 		font-weight: 600;
-		color: var(--ds-blue);
-		background: rgba(33, 150, 243, 0.08);
+		color: var(--ds-primary);
+		background: rgba(var(--ds-brand-rgb),  0.08);
 		padding: 0.25rem 0.75rem;
 		border-radius: var(--ds-radius-full);
-		border: 1px solid rgba(33, 150, 243, 0.15);
+		border: 1px solid rgba(var(--ds-brand-rgb),  0.15);
 	}
 
 	/* ============================
@@ -815,7 +815,7 @@ const howToSteps = [
 
 	.progress-fill {
 		height: 100%;
-		background: linear-gradient(90deg, var(--ds-blue), var(--ds-purple));
+		background: linear-gradient(90deg, var(--ds-primary), var(--ds-purple));
 		border-radius: var(--ds-radius-full);
 		transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 		width: 33.33%;
@@ -825,7 +825,7 @@ const howToSteps = [
 	.step-label {
 		font-size: 0.75rem;
 		font-weight: 700;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		margin-bottom: var(--ds-space-sm);
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
@@ -864,7 +864,7 @@ const howToSteps = [
 		font-size: 4.5rem;
 		font-weight: 800;
 		line-height: 1;
-		background: linear-gradient(135deg, var(--ds-blue), var(--ds-purple));
+		background: linear-gradient(135deg, var(--ds-primary), var(--ds-purple));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -909,7 +909,7 @@ const howToSteps = [
 		border: 3px solid var(--slider-color, var(--ds-green));
 		box-shadow:
 			0 2px 8px rgba(0, 0, 0, 0.12),
-			0 0 0 4px rgba(33, 150, 243, 0.06);
+			0 0 0 4px rgba(var(--ds-brand-rgb),  0.06);
 		cursor: pointer;
 		transition: box-shadow 0.2s ease, transform 0.2s ease;
 	}
@@ -918,7 +918,7 @@ const howToSteps = [
 		transform: scale(1.15);
 		box-shadow:
 			0 4px 16px rgba(0, 0, 0, 0.18),
-			0 0 0 6px rgba(33, 150, 243, 0.1);
+			0 0 0 6px rgba(var(--ds-brand-rgb),  0.1);
 	}
 
 	.glass-slider::-moz-range-thumb {
@@ -983,9 +983,9 @@ const howToSteps = [
 	}
 
 	.num-btn:hover {
-		background: rgba(33, 150, 243, 0.08);
-		border-color: var(--ds-blue);
-		color: var(--ds-blue);
+		background: rgba(var(--ds-brand-rgb),  0.08);
+		border-color: var(--ds-primary);
+		color: var(--ds-primary);
 	}
 
 	.num-btn:active {
@@ -1051,22 +1051,22 @@ const howToSteps = [
 	}
 
 	.app-card.selected {
-		border-color: var(--ds-blue);
+		border-color: var(--ds-primary);
 		background: var(--ds-bg-accent);
-		box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.15);
+		box-shadow: 0 0 0 3px rgba(var(--ds-brand-rgb),  0.15);
 	}
 
 	@media (hover: hover) {
 		.app-card.selected:hover {
 			box-shadow:
-				0 0 0 3px rgba(33, 150, 243, 0.15),
-				0 4px 12px rgba(33, 150, 243, 0.1);
+				0 0 0 3px rgba(var(--ds-brand-rgb),  0.15),
+				0 4px 12px rgba(var(--ds-brand-rgb),  0.1);
 			transform: translateY(-1px);
 		}
 	}
 
 	.app-card.selected .app-name {
-		color: var(--ds-blue-dark);
+		color: var(--ds-primary-dark);
 	}
 
 	.app-card.selected::after {
@@ -1076,15 +1076,15 @@ const howToSteps = [
 		right: -5px;
 		font-size: 0.625rem;
 		font-weight: 700;
-		color: white;
-		background: var(--ds-blue);
+		color: var(--ds-on-primary);
+		background: var(--ds-primary);
 		border-radius: 50%;
 		width: 20px;
 		height: 20px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		box-shadow: 0 1px 4px rgba(33, 150, 243, 0.4);
+		box-shadow: 0 1px 4px rgba(var(--ds-brand-rgb),  0.4);
 		z-index: 1;
 	}
 
@@ -1133,22 +1133,22 @@ const howToSteps = [
 	}
 
 	.next-button {
-		background: rgba(33, 150, 243, 0.85);
+		background: rgba(var(--ds-brand-rgb),  0.85);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
-		color: white;
+		color: var(--ds-on-brand);
 		border: 1px solid rgba(255, 255, 255, 0.2);
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.25),
-			0 4px 16px rgba(33, 150, 243, 0.3);
+			0 4px 16px rgba(var(--ds-brand-rgb),  0.3);
 	}
 
 	.next-button:hover:not(:disabled) {
-		background: rgba(33, 150, 243, 0.95);
+		background: rgba(var(--ds-brand-rgb),  0.95);
 		transform: translateY(-2px);
 		box-shadow:
 			inset 0 1px 0 rgba(255, 255, 255, 0.3),
-			0 8px 24px rgba(33, 150, 243, 0.35);
+			0 8px 24px rgba(var(--ds-brand-rgb),  0.35);
 	}
 
 	.next-button:active:not(:disabled) {
@@ -1196,7 +1196,7 @@ const howToSteps = [
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		margin-bottom: var(--ds-space-xl);
 	}
 
@@ -1208,7 +1208,7 @@ const howToSteps = [
 		font-size: 3.5rem;
 		font-weight: 800;
 		line-height: 1;
-		background: linear-gradient(135deg, var(--ds-blue), var(--ds-purple));
+		background: linear-gradient(135deg, var(--ds-primary), var(--ds-purple));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -1265,9 +1265,9 @@ const howToSteps = [
 	.reveal-next-btn {
 		padding: 0.75rem 2.5rem;
 		border-radius: var(--ds-radius-full);
-		background: rgba(33, 150, 243, 0.08);
-		color: var(--ds-blue);
-		border: 1px solid rgba(33, 150, 243, 0.15);
+		background: rgba(var(--ds-brand-rgb),  0.08);
+		color: var(--ds-primary);
+		border: 1px solid rgba(var(--ds-brand-rgb),  0.15);
 		font-weight: 600;
 		font-size: 0.9375rem;
 		cursor: pointer;
@@ -1277,8 +1277,8 @@ const howToSteps = [
 	}
 
 	.reveal-next-btn:hover {
-		background: rgba(33, 150, 243, 0.15);
-		border-color: rgba(33, 150, 243, 0.25);
+		background: rgba(var(--ds-brand-rgb),  0.15);
+		border-color: rgba(var(--ds-brand-rgb),  0.25);
 		transform: translateY(-1px);
 	}
 
@@ -1402,7 +1402,7 @@ const howToSteps = [
 	}
 
 	.opp-text strong {
-		background: linear-gradient(135deg, var(--ds-blue), var(--ds-purple));
+		background: linear-gradient(135deg, var(--ds-primary), var(--ds-purple));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -1448,7 +1448,7 @@ const howToSteps = [
 	.pledge-value {
 		font-size: 1.75rem;
 		font-weight: 800;
-		background: linear-gradient(135deg, var(--ds-green), var(--ds-blue));
+		background: linear-gradient(135deg, var(--ds-green), var(--ds-primary));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -1529,7 +1529,7 @@ const howToSteps = [
 	}
 
 	.retake-button:hover {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 	}
 
 	/* ============================
@@ -1574,8 +1574,8 @@ const howToSteps = [
 	}
 
 	.tool-link:hover {
-		background: rgba(33, 150, 243, 0.05);
-		border-color: rgba(33, 150, 243, 0.12);
+		background: rgba(var(--ds-brand-rgb),  0.05);
+		border-color: rgba(var(--ds-brand-rgb),  0.12);
 		transform: translateY(-2px);
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 	}
@@ -1677,13 +1677,13 @@ const howToSteps = [
 
 	.faq-glass-item[open] summary::after {
 		content: '\2212';
-		background: rgba(33, 150, 243, 0.1);
-		color: var(--ds-blue);
+		background: rgba(var(--ds-brand-rgb),  0.1);
+		color: var(--ds-primary);
 	}
 
 	@media (hover: hover) {
 		.faq-glass-item summary:hover {
-			color: var(--ds-blue);
+			color: var(--ds-primary);
 		}
 	}
 
@@ -1709,7 +1709,7 @@ const howToSteps = [
 	}
 
 	.quiz-links a {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-weight: 600;
 		text-decoration: none;
 		transition: color var(--ds-transition-fast);
@@ -1724,12 +1724,12 @@ const howToSteps = [
 	   ============================ */
 	@media (prefers-color-scheme: dark) {
 		.hero-glow {
-			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+			background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.08) 0%, transparent 70%);
 		}
 
 		.meta-pill {
-			background: rgba(66, 165, 245, 0.12);
-			border-color: rgba(66, 165, 245, 0.2);
+			background: rgba(var(--ds-brand-rgb),  0.12);
+			border-color: rgba(var(--ds-brand-rgb),  0.2);
 		}
 
 		.calc-glass-card,
@@ -1758,13 +1758,13 @@ const howToSteps = [
 		}
 
 		.app-card.selected {
-			background: rgba(66, 165, 245, 0.12);
-			border-color: var(--ds-blue);
-			box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
+			background: rgba(var(--ds-brand-rgb),  0.12);
+			border-color: var(--ds-primary);
+			box-shadow: 0 0 0 3px rgba(var(--ds-brand-rgb),  0.2);
 		}
 
 		.app-card.selected .app-name {
-			color: var(--ds-blue);
+			color: var(--ds-primary);
 		}
 
 		.app-name {
@@ -1839,7 +1839,7 @@ const howToSteps = [
 		}
 
 		.faq-glass-item[open] summary::after {
-			background: rgba(66, 165, 245, 0.15);
+			background: rgba(var(--ds-brand-rgb),  0.15);
 		}
 
 		.quiz-links {
@@ -1852,8 +1852,8 @@ const howToSteps = [
 		}
 
 		.tool-link:hover {
-			background: rgba(66, 165, 245, 0.08);
-			border-color: rgba(66, 165, 245, 0.15);
+			background: rgba(var(--ds-brand-rgb),  0.08);
+			border-color: rgba(var(--ds-brand-rgb),  0.15);
 		}
 
 		.glass-slider {
@@ -2021,7 +2021,7 @@ const howToSteps = [
 	a:focus-visible,
 	button:focus-visible,
 	input:focus-visible {
-		outline: 2px solid var(--ds-blue);
+		outline: 2px solid var(--ds-primary);
 		outline-offset: 2px;
 	}
 

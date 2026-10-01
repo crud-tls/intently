@@ -134,7 +134,7 @@ const questions = [
 			<section class="quiz-hero">
 				<div class="hero-glow" aria-hidden="true"></div>
 				<div class="container">
-					<h1 class="text-gradient"><Icon name="Smartphone" size={32} color="var(--ds-blue)" /> Phone Addiction Quiz</h1>
+					<h1 class="text-gradient"><Icon name="Smartphone" size={32} color="var(--ds-primary)" /> Phone Addiction Quiz</h1>
 					<p class="hero-subtitle">Take this 2-minute quiz to find out if you have phone addiction</p>
 					<div class="quiz-meta-pills">
 						<span class="meta-pill">8 questions</span>
@@ -386,7 +386,7 @@ const questions = [
 		transform: translateX(-50%);
 		width: 600px;
 		height: 400px;
-		background: radial-gradient(ellipse, rgba(33, 150, 243, 0.12) 0%, transparent 70%);
+		background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.12) 0%, transparent 70%);
 		filter: blur(60px);
 		pointer-events: none;
 	}
@@ -397,7 +397,7 @@ const questions = [
 		margin: 0 0 var(--ds-space-md);
 		letter-spacing: -0.02em;
 		line-height: 1.2;
-		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -422,21 +422,21 @@ const questions = [
 		align-items: center;
 		font-size: 0.8125rem;
 		font-weight: 600;
-		color: var(--ds-blue);
-		background: rgba(33, 150, 243, 0.08);
+		color: var(--ds-primary);
+		background: rgba(var(--ds-brand-rgb),  0.08);
 		padding: 0.25rem 0.75rem;
 		border-radius: var(--ds-radius-full);
-		border: 1px solid rgba(33, 150, 243, 0.15);
+		border: 1px solid rgba(var(--ds-brand-rgb),  0.15);
 	}
 
 	@media (prefers-color-scheme: dark) {
 		.hero-glow {
-			background: radial-gradient(ellipse, rgba(66, 165, 245, 0.08) 0%, transparent 70%);
+			background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.08) 0%, transparent 70%);
 		}
 
 		.meta-pill {
-			background: rgba(66, 165, 245, 0.12);
-			border-color: rgba(66, 165, 245, 0.2);
+			background: rgba(var(--ds-brand-rgb),  0.12);
+			border-color: rgba(var(--ds-brand-rgb),  0.2);
 		}
 	}
 
@@ -491,7 +491,7 @@ const questions = [
 
 	.progress-fill {
 		height: 100%;
-		background: linear-gradient(90deg, var(--ds-blue), var(--ds-purple));
+		background: linear-gradient(90deg, var(--ds-primary), var(--ds-purple));
 		border-radius: var(--ds-radius-full);
 		transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 		width: 0%;
@@ -501,7 +501,7 @@ const questions = [
 	.question-number {
 		font-size: 0.8125rem;
 		font-weight: 600;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		margin-bottom: var(--ds-space-sm);
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
@@ -541,10 +541,10 @@ const questions = [
 	@media (hover: hover) {
 		.option-button:hover {
 			transform: scale(1.02);
-			border-color: var(--ds-blue);
-			background: rgba(33, 150, 243, 0.06);
+			border-color: var(--ds-primary);
+			background: rgba(var(--ds-brand-rgb),  0.06);
 			box-shadow:
-				0 4px 16px rgba(33, 150, 243, 0.1),
+				0 4px 16px rgba(var(--ds-brand-rgb),  0.1),
 				inset 0 1px 0 rgba(255, 255, 255, 0.5);
 		}
 	}
@@ -561,8 +561,8 @@ const questions = [
 		}
 
 		.option-button:hover {
-			background: rgba(66, 165, 245, 0.1);
-			border-color: var(--ds-blue);
+			background: rgba(var(--ds-brand-rgb),  0.1);
+			border-color: var(--ds-primary);
 		}
 	}
 
@@ -630,7 +630,7 @@ const questions = [
 	.score-display {
 		font-size: 2rem;
 		font-weight: 700;
-		background: linear-gradient(135deg, var(--ds-blue), var(--ds-purple));
+		background: linear-gradient(135deg, var(--ds-primary), var(--ds-purple));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -680,7 +680,7 @@ const questions = [
 	.retake-button {
 		background: none;
 		border: none;
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-weight: 600;
 		font-size: 0.9375rem;
 		cursor: pointer;
@@ -790,8 +790,8 @@ const questions = [
 
 	.faq-glass-item[open] summary::after {
 		content: '\2212';
-		background: rgba(33, 150, 243, 0.1);
-		color: var(--ds-blue);
+		background: rgba(var(--ds-brand-rgb),  0.1);
+		color: var(--ds-primary);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -800,13 +800,13 @@ const questions = [
 		}
 
 		.faq-glass-item[open] summary::after {
-			background: rgba(66, 165, 245, 0.15);
+			background: rgba(var(--ds-brand-rgb),  0.15);
 		}
 	}
 
 	@media (hover: hover) {
 		.faq-glass-item summary:hover {
-			color: var(--ds-blue);
+			color: var(--ds-primary);
 		}
 	}
 
@@ -835,7 +835,7 @@ const questions = [
 	}
 
 	.quiz-links a {
-		color: var(--ds-blue);
+		color: var(--ds-primary);
 		font-weight: 600;
 		text-decoration: none;
 		transition: color var(--ds-transition-fast);
@@ -900,7 +900,7 @@ const questions = [
 
 	a:focus-visible,
 	button:focus-visible {
-		outline: 2px solid var(--ds-blue);
+		outline: 2px solid var(--ds-primary);
 		outline-offset: 2px;
 	}
 
