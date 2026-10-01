@@ -37,7 +37,7 @@ Pawse's Chrome extension brings the same mindful pause approach from its Android
 
 You can always proceed. The pause isn't a block — it's an awareness checkpoint. This matters because it means you never feel restricted, which avoids the psychological reactance that makes people bypass hard blockers. The extension syncs with Pawse's philosophy: build internal awareness, not external dependence.
 
-It's lightweight, requires no account, and collects no data. The main limitation is that it's newer than some competitors and doesn't offer scheduling or time-limit features — it's purely the mindful pause.
+It's lightweight and requires no account. The main limitation is that it's newer than some competitors and doesn't offer scheduling or time-limit features — it's purely the mindful pause.
 
 **Rating: 4/5** — Best option for building lasting awareness. Free and privacy-first.
 

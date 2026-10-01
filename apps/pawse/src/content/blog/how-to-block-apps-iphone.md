@@ -165,7 +165,7 @@ Research shows that pause-based interventions lead to better long-term habit ret
 
 ### Pawse: Mindful Pauses Coming to iPhone
 
-[Pawse](/download) is a free mindful pause app currently available on Android and Chrome, with an iOS version coming soon. It lets you write custom intervention messages for each app, tracks your usage with full privacy (no data collection, no account required), and helps you build awareness rather than dependence on a blocker.
+[Pawse](/download) is a free mindful pause app currently available on Android and Chrome, with an iOS version coming soon. It lets you write custom intervention messages for each app, tracks your usage privately (history on your phone, no account required), and helps you build awareness rather than dependence on a blocker.
 
 If you're on Android or use Chrome, you can start today. For iPhone, check back — or sign up for updates at [liveintently.app](https://pawse.liveintently.app).
 

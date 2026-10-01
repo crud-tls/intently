@@ -225,7 +225,7 @@ Pawse was built for exactly this kind of behavior change:
 
 - Mindful pause screens before social media apps open, creating a moment of conscious choice
 - Detailed usage tracking with daily and weekly trends
-- Fully private -- all data stays on your device, no cloud, no account, no tracking
+- Private by design -- your usage history stays on your phone, no account needed
 - Customizable intervention messages that speak to your personal reasons for changing
 - Never blocks access -- it preserves your autonomy while building awareness
 - Works on Android, iOS, and Chrome

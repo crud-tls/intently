@@ -150,7 +150,7 @@ Willpower alone isn't enough. When you reduce screen time, fill the space with a
 
 [Pawse](/download) is designed around the insight that most problematic screen time starts with unconscious habits, not deliberate choices. By adding a mindful pause before every app launch, it turns autopilot behavior into conscious decisions.
 
-You write your own intervention messages — tied to your specific goals and reasons for changing. Usage tracking shows you patterns over time, so you can see whether your habits are actually shifting. Everything stays on your device with zero data collection.
+You write your own intervention messages — tied to your specific goals and reasons for changing. Usage tracking shows you patterns over time, so you can see whether your habits are actually shifting. Your usage history stays on your phone.
 
 It's not about restriction. It's about awareness. And awareness is the foundation of better mental health around screens.
 

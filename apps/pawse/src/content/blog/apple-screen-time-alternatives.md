@@ -107,9 +107,9 @@ Rating: 3.5/5
 
 ### What About Pawse?
 
-Pawse takes a different angle from the apps above. Instead of just a breathing exercise, it creates full-screen moments of awareness when you open distracting apps, then pairs that with usage tracking, streaks, and achievements. Everything is completely free -- no premium tier, no ads, no account required, and no data ever leaves your device.
+Pawse takes a different angle from the apps above. Instead of just a breathing exercise, it creates full-screen moments of awareness when you open distracting apps, then pairs that with usage tracking, streaks, and achievements. Everything is completely free -- no premium tier, no ads, no account required, and your usage history stays on your phone.
 
-That privacy-first model is a genuine differentiator. Most apps in this space want your usage data. Pawse doesn't collect any.
+That privacy-first model is a genuine differentiator. Most apps in this space want your usage data. Pawse keeps it on your phone unless you choose to sync.
 
 The catch for iPhone users: Pawse is currently on Android and Chrome, with iOS in development. If you're on Android or use Chrome on desktop, it's an easy recommendation. If you're on iPhone, keep it on your radar.
 

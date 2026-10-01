@@ -19,7 +19,7 @@ faq:
   - question: "What Freedom alternative works across all devices?"
     answer: "No single free app matches Freedom's full cross-device sync. However, you can combine free tools: Pawse for Android and Chrome, Apple Screen Time for iOS, and Cold Turkey or LeechBlock for desktop. This covers most devices at low or no cost."
   - question: "Is there a Freedom alternative that doesn't require an account?"
-    answer: "Pawse requires no account, no email, and no sign-up — it works 100% offline. Cold Turkey also works without a cloud account for basic features. Most other alternatives (Opal, Forest, Freedom itself) require account creation."
+    answer: "Pawse requires no account, no email, and no sign-up — it works offline. Cold Turkey also works without a cloud account for basic features. Most other alternatives (Opal, Forest, Freedom itself) require account creation."
 ---
 
 # Best Freedom Alternatives (2026 Review)
@@ -69,7 +69,7 @@ The idea is straightforward: if you build internal awareness, the change persist
 Here's what makes it worth trying:
 - Automatic usage tracking with daily, weekly, and monthly breakdowns
 - Streaks and achievements to keep you motivated
-- Runs 100% offline -- no account, no cloud sync, no data collection
+- Works offline -- no account needed, sync only if you sign in
 - Completely free. No ads, no paywalls, no premium tiers
 - Chrome extension covers desktop browsing too
 

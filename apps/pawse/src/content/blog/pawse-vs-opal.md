@@ -10,11 +10,11 @@ faq:
   - question: "Which is better: Pawse or Opal?"
     answer: "Pawse is better for most people seeking lasting behavior change and privacy. It's free, works on Android/Chrome, and uses mindful interventions proven more effective long-term. Opal is better for iOS users needing immediate blocking for short-term goals, but costs $99/year."
   - question: "Is Opal worth $99 per year?"
-    answer: "It depends on your needs. If you're an iOS user who needs strong blocking features for time-sensitive goals (exams, projects) and don't mind data collection, it may be worth it. For long-term habit change, Pawse's free mindful approach delivers better value."
+    answer: "It depends on your needs. If you're an iOS user who needs strong blocking features for time-sensitive goals (exams, projects) and don't mind an account and cloud sync, it may be worth it. For long-term habit change, Pawse's free mindful approach delivers better value."
   - question: "Can I use Pawse on iPhone?"
     answer: "iOS version is coming soon. Currently, Pawse is available for Android and Chrome. Opal is iOS-only, so if you need an iPhone solution today, Opal or One Sec are your options until Pawse launches on iOS."
   - question: "Which app is better for privacy: Pawse or Opal?"
-    answer: "Pawse is significantly better for privacy. It's 100% offline with zero data collection—no cloud, no account, no analytics. Opal requires an account and collects usage data for cloud sync and analytics."
+    answer: "Pawse is better for privacy. It works offline with no account; your usage history stays on your phone unless you sign in to sync. Opal requires an account and collects usage data for cloud sync and analytics."
   - question: "Do mindful interventions work better than app blocking?"
     answer: "Yes, according to research. Studies show mindful interventions lead to 73% better long-term results than blocking. Blocking triggers psychological reactance (wanting what you can't have), while interventions build internal motivation and lasting habits."
   - question: "Can I get Opal for free?"
@@ -33,7 +33,7 @@ Here's an honest look at how they compare across the things that matter most: ap
 |---|---|---|
 | Approach | Mindful interventions | App blocking |
 | Price | Free | $99/year |
-| Privacy | 100% offline, zero data collection | Cloud sync, collects usage data |
+| Privacy | Works offline, no account, optional sync | Cloud sync, collects usage data |
 | Platforms | Android, iOS (coming soon), Chrome | iOS only |
 | Blocking | Available, but not the focus | Core feature |
 | Streaks | Yes | Yes |
@@ -78,7 +78,7 @@ For people who need external structure -- especially during high-pressure window
 
 Both apps handle this well, honestly.
 
-Pawse gives you automatic app usage tracking with daily, weekly, and monthly summaries. You get category-based breakdowns, baseline comparisons to chart your progress, exportable reports, and home screen widgets. Everything stays on your device -- nothing gets sent anywhere.
+Pawse gives you automatic app usage tracking with daily, weekly, and monthly summaries. You get category-based breakdowns, baseline comparisons to chart your progress, exportable reports, and home screen widgets. Your history stays on your phone.
 
 Opal offers screen time tracking with detailed breakdowns, app-level insights, historical data, and genuinely nice visualizations. The trade-off: your data syncs to their cloud.
 
@@ -112,7 +112,7 @@ Pawse offers custom app limits, a focus mode, quick toggles for interventions, a
 
 This one isn't close.
 
-Pawse is 100% offline. No cloud servers, no data collection -- not even anonymous analytics. No account required. Your data never leaves your device. The privacy policy is about as short as a privacy policy can be: "We don't collect, store, or transmit any data. Period."
+Pawse works offline and needs no account. Your usage history stays on your phone; it only syncs if you sign in, and the app sends anonymous analytics and crash reports that its privacy policy lists.
 
 Opal requires an account and cloud sync. Their privacy policy includes standard SaaS data collection -- usage stats, account info, payment details -- and mentions data sharing with partners for analytics. That's not unusual for a subscription app, but it's a real difference if privacy matters to you.
 
@@ -165,7 +165,7 @@ Opal users see an average 45% screen time reduction during active focus sessions
 
 ### Go with Pawse if:
 - You want habit change that actually lasts, not just a temporary fix
-- Privacy matters to you -- you'd rather your data stay on your device
+- Privacy matters to you -- you'd rather your usage history stay on your phone
 - You respond better to awareness and choice than to hard restrictions
 - You're on Android or use Chrome
 - You want something free without hidden limitations

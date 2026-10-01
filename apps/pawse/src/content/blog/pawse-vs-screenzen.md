@@ -17,7 +17,7 @@ faq:
   - question: "Can I use Pawse or ScreenZen on iPhone?"
     answer: "ScreenZen is available on both iOS and Android. Pawse currently supports Android and Chrome, with an iOS version coming soon. If you need an iPhone solution today, ScreenZen is the available pause-based option."
   - question: "Which app is more private: Pawse or ScreenZen?"
-    answer: "Pawse is fully offline with zero data collection—no account, no cloud, no analytics. ScreenZen collects minimal data but does require some connectivity for features like streak syncing. For maximum privacy, Pawse is the clear choice."
+    answer: "Pawse works offline with no account; your usage history stays on your phone unless you sign in to sync. ScreenZen also requires some connectivity for features like streak syncing. For privacy, Pawse is a strong choice."
   - question: "What is the difference between Pawse and ScreenZen intervention styles?"
     answer: "Pawse uses fully customizable full-screen prompts with personalized messages, breathing exercises, and reflection questions. ScreenZen uses a 'take a breath' countdown approach with structured pauses. Both create friction before app use, but Pawse offers more personalization."
 ---
@@ -66,7 +66,7 @@ Neither approach is better in the abstract. If you enjoy tailoring your tools an
 
 ### Privacy
 
-This is one area with a clear difference. Pawse is 100% offline -- no internet connection required, no account, no data collection of any kind. Your usage data never leaves your device.
+This is one area with a clear difference. Pawse works offline -- no internet connection required for the pause or your stats, and no account. Your usage history stays on your phone unless you sign in to sync it.
 
 ScreenZen is privacy-conscious compared to most apps, but it's not a zero-data approach. It collects minimal data and requires some connectivity for features like streak syncing. For most people that's perfectly fine, but if absolute privacy is non-negotiable, Pawse is the only option here.
 
@@ -86,7 +86,7 @@ For the basics of what both apps do -- creating a pause before you mindlessly op
 
 Both apps track your usage and offer streak features, though with different emphasis.
 
-Pawse provides detailed, locally-stored analytics -- daily, weekly, and monthly summaries with category breakdowns and baseline comparisons. Everything stays on your device. It also offers home screen widgets for quick stats.
+Pawse provides detailed, locally-stored analytics -- daily, weekly, and monthly summaries with category breakdowns and baseline comparisons. Your history stays on your phone. It also offers home screen widgets for quick stats.
 
 ScreenZen puts more emphasis on streaks as a core motivational tool, with daily and weekly counters and mindful minutes tracking. Its analytics are solid, though some deeper insights may require the premium tier.
 
@@ -112,7 +112,7 @@ Both strategies have merit. The risk with customization is that some users never
 ### Pawse is likely the better fit if:
 
 - You want to write your own intervention messages and tailor the experience to your goals
-- Privacy is a firm requirement -- you want zero data collection and fully offline operation
+- Privacy is a firm requirement -- you want an app that works offline without an account
 - You're on Android or use Chrome and want to manage both phone apps and websites
 - You want every feature available for free, with no premium gates
 - You've found that generic prompts lose their impact on you over time

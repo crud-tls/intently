@@ -17,7 +17,7 @@ faq:
   - question: "Can Forest reduce screen time?"
     answer: "Forest helps you stay off your phone during designated focus sessions, but it does not address what happens outside those sessions. You must manually start a session each time. Pawse works automatically whenever you open tracked apps, providing always-on awareness against impulsive phone use."
   - question: "Which app is better for privacy: Pawse or Forest?"
-    answer: "Pawse is fully offline with zero data collection. No account, no cloud sync, no analytics. Forest requires an account and syncs data to the cloud for its social and cross-device features. If privacy is a priority, Pawse has the edge."
+    answer: "Pawse works offline and needs no account; your usage history stays on your phone unless you sign in to sync it. It sends only anonymous analytics and crash reports. Forest requires an account and syncs data to the cloud for its social and cross-device features. If privacy is a priority, Pawse has the edge."
   - question: "Can I use Pawse and Forest together?"
     answer: "Yes, and they complement each other well. Use Forest for dedicated Pomodoro-style focus sessions during work or study. Use Pawse as always-on awareness for the rest of your day. They cover different situations without overlapping."
 ---
@@ -74,7 +74,7 @@ Pawse isn't trying to replace Forest. It's solving a different problem: the impu
 
 **Detailed usage tracking.** Pawse automatically tracks how much time you spend in each app, giving you daily, weekly, and monthly breakdowns. Forest tracks focus session duration, but not your overall phone usage patterns.
 
-**Free and private.** Pawse is completely free with no limitations, no account required, and no data collection. Everything stays on your device.
+**Free and private.** Pawse is completely free with no limitations, no account required, and no ads. Your usage history stays on your phone.
 
 [Download Pawse Free](/download)
 
@@ -87,7 +87,7 @@ Rather than declaring a winner, it helps to be specific about what you're strugg
 - You want to reduce your overall daily screen time, not just during work hours
 - Your main problem is impulsive, mindless app opens throughout the day
 - You want something that works automatically without manual setup each time
-- Privacy matters to you -- you want zero data collection and fully offline operation
+- Privacy matters to you -- you want an app that works offline without an account
 - You're on Android or use Chrome
 - You want detailed analytics about your actual phone usage patterns
 - You've tried focus-session apps and found they didn't change your overall habits
@@ -111,7 +111,7 @@ You want always-on awareness throughout the day (Pawse) plus structured focus se
 
 **Pricing**: Pawse is free. Forest is $1.99-$3.99 one-time.
 
-**Privacy**: Pawse is 100% offline with no account and no data collection. Forest requires an account and uses cloud sync for social features.
+**Privacy**: Pawse works offline with no account; sync is optional. Forest requires an account and uses cloud sync for social features.
 
 **Platform**: Pawse is on Android and Chrome. Forest is on iOS, Android, and Chrome.
 

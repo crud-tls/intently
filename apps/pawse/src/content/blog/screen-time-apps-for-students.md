@@ -9,7 +9,7 @@ tags: ["screen time app for students", "focus app for studying", "student phone 
 heroImage: "/blog-placeholder-2.jpg"
 faq:
   - question: "What is the best free screen time app for students?"
-    answer: "Pawse is the best free screen time app for students. It creates mindful pauses before distracting apps open, tracks usage automatically, and is completely private with no data collection. Unlike paid alternatives, all features are free with no account required."
+    answer: "Pawse is the best free screen time app for students. It creates mindful pauses before distracting apps open, tracks usage automatically, and keeps your history on your phone. Unlike paid alternatives, all features are free with no account required."
   - question: "How much screen time is normal for a college student?"
     answer: "The average college student spends 8-10 hours daily on screens including academic use. Non-academic screen time averages 4-6 hours. Research suggests keeping non-academic screen time under 3-4 hours correlates with better academic performance, mental health, and sleep quality."
   - question: "How can I stop using my phone while studying?"

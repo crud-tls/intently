@@ -14,7 +14,7 @@ faq:
   - question: "How does Clearspace exercise verification work?"
     answer: "Clearspace uses your phone's camera and motion sensors to verify that you've completed a physical exercise (like pushups or squats) before unlocking an app. The idea is that physical effort creates meaningful friction. However, this requires camera access and can be impractical in public places, meetings, or quiet environments."
   - question: "Which app is more private: Pawse or Clearspace?"
-    answer: "Pawse is significantly more private. It operates entirely offline with zero data collection — no account, no cloud storage, no analytics. Clearspace requires an account, uses camera access for exercise verification, and collects usage data. If privacy is a priority, Pawse is the clear choice."
+    answer: "Pawse is more private. It works offline with no account; your usage history stays on your phone unless you sign in to sync. Clearspace requires an account, uses camera access for exercise verification, and collects usage data. If privacy is a priority, Pawse is the clear choice."
   - question: "Can I use both Pawse and Clearspace together?"
     answer: "In theory yes, but they serve the same purpose through different mechanisms, so using both would create double friction on every app open. A better approach is to try each one separately for a week or two and see which intervention style — mindful prompts or physical exercise — resonates more with your habits."
   - question: "Does physical exercise friction actually reduce screen time?"
@@ -29,7 +29,7 @@ Same goal, very different philosophies. One asks you to think. The other asks yo
 
 ## Quick Verdict
 
-Pawse is a free, fully offline mindful pause app for Android and Chrome. Clearspace is a freemium iOS app that requires physical exercise (verified by camera) to unlock apps. Choose Pawse if you want customizable prompts, complete privacy, and an app that works anywhere. Choose Clearspace if you're on iOS and find physical effort more motivating than reflection.
+Pawse is a free mindful pause app for Android and Chrome that works offline. Clearspace is a freemium iOS app that requires physical exercise (verified by camera) to unlock apps. Choose Pawse if you want customizable prompts, strong privacy, and an app that works anywhere. Choose Clearspace if you're on iOS and find physical effort more motivating than reflection.
 
 **Bottom line:** Pawse works in every context — at your desk, in bed, on the bus. Clearspace's exercise requirement is powerful when practical but becomes a barrier in situations where pushups aren't an option.
 
@@ -41,7 +41,7 @@ When you open a tracked app, Pawse displays a full-screen intervention with a me
 
 The intervention takes a few seconds. You always have the choice to continue into the app. The point is making each app launch a conscious decision rather than an unconscious habit.
 
-Everything happens on your device. No account, no internet connection, no data collection. You customize what you see, when you see it, and for how long.
+Everything happens on your device. No account, no internet connection needed. You customize what you see, when you see it, and for how long.
 
 ### Clearspace: Physical Effort as Friction
 
@@ -63,7 +63,7 @@ Many Clearspace users report that the exercise approach works great during certa
 
 ### Privacy
 
-Pawse is fully offline — no account creation, no internet connection required, no data of any kind leaving your device. Your usage patterns, your custom messages, your statistics all stay local.
+Pawse works offline — no account creation, no internet connection required. Your usage patterns, your custom messages, your statistics all stay on your phone unless you sign in to sync.
 
 Clearspace requires an account and uses your phone's camera to verify exercises. This means camera permissions, motion data, and usage information are processed by the app. For users who are privacy-conscious, this is a meaningful difference.
 
@@ -92,7 +92,7 @@ Clearspace's customization is more limited. You can choose which exercises to do
 | **Approach** | Mindful pause prompts | Physical exercise unlock |
 | **Price** | Completely free | Freemium |
 | **Platforms** | Android + Chrome | iOS only |
-| **Privacy** | Fully offline, zero data collection | Account required, camera access |
+| **Privacy** | Works offline, no account | Account required, camera access |
 | **Works anywhere** | Yes — any context | No — requires space for exercise |
 | **Custom messages** | Yes — fully personalized | No |
 | **Usage tracking** | Yes — local only | Yes — cloud-based |
@@ -104,7 +104,7 @@ Clearspace's customization is more limited. You can choose which exercises to do
 ### Choose Pawse if:
 
 - You want a free app with no limitations or premium tiers
-- Privacy matters — you want zero data collection and fully offline operation
+- Privacy matters — you want an app that works offline without an account
 - You need an intervention that works in any context (meetings, transit, bed)
 - You're on Android or want to manage website habits through Chrome
 - You prefer customizable prompts that you can evolve over time

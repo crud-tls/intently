@@ -74,7 +74,7 @@ Rating: 4/5 -- If your actual problem is compulsive app-checking rather than a l
 
 We built Pawse to sit in the space between Forest's gamification and One Sec's intervention approach. It creates full-screen moments of awareness when you open distracting apps -- not just during scheduled focus blocks, but all day. Over time, those pauses help you build an internal "wait, do I actually want to do this?" reflex that replaces the need for external timers or blockers.
 
-On top of the interventions, there are streaks, achievements, and milestone celebrations to keep you engaged. And everything runs locally on your device -- no account, no data collection, no ads.
+On top of the interventions, there are streaks, achievements, and milestone celebrations to keep you engaged. And it works offline on your device -- no account, no ads.
 
 Pricing: free. All features, no premium tier, no paywalls.
 

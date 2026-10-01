@@ -122,7 +122,7 @@ Pawse shows a full-screen pause before you open tracked apps. The pause displays
 
 **Why it works differently:** You never feel restricted. There's no wall to resent, no block to bypass. Instead, you build the internal awareness to make better choices — which eventually makes the tool itself unnecessary. That's the goal: not permanent dependence on an app, but genuine habit change.
 
-**Key features:** Custom messages per app, usage tracking and analytics, gamification with streaks, Chrome extension for websites, fully offline with zero data collection, completely free.
+**Key features:** Custom messages per app, usage tracking and analytics, gamification with streaks, Chrome extension for websites, works offline with no account, completely free.
 
 [Download Pawse free](/download)
 

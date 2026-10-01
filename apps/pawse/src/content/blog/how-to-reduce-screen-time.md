@@ -73,7 +73,7 @@ Start by installing a usage tracking app that runs quietly in the background. Fo
 - What triggers mindless scrolling
 - How you feel after extended sessions
 
-Apps like Pawse provide detailed insights while keeping all data on your device -- no cloud sync, no tracking, complete privacy. Often, the awareness alone is enough to nudge your numbers down.
+Apps like Pawse provide detailed insights while keeping your usage history on your phone -- no account needed, and nothing syncs unless you sign in. Often, the awareness alone is enough to nudge your numbers down.
 
 ### 2. Set Realistic Daily Limits (Not Arbitrary Ones)
 
@@ -176,7 +176,7 @@ Pawse is a privacy-first digital wellbeing app that combines usage tracking, min
 - Detailed tracking: See exactly where your time goes, with daily, weekly, and monthly breakdowns
 - Mindful interventions: Gentle reminders that create awareness without blocking apps
 - Flexible goals: Set realistic limits that adapt as you improve
-- Privacy-first: All data stays on your device -- no cloud, no tracking, no account required
+- Privacy-first: your usage history stays on your phone -- no account required, sync only if you sign in
 - Streak tracking: Build momentum with daily streak counts and milestone celebrations
 
 Unlike blocking apps that rely on restriction, Pawse helps you build awareness so you can make conscious choices. Over time, those mindful pauses start happening naturally.

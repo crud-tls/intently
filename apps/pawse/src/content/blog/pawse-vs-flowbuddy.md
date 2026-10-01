@@ -10,7 +10,7 @@ faq:
   - question: "Which is better: Pawse or FlowBuddy?"
     answer: "Pawse is the more capable app with customizable prompts, usage tracking, analytics, gamification, and a Chrome extension — all completely free. FlowBuddy is a minimal open-source app that provides only a breathing pause before app launches. Choose Pawse if you want a full toolkit; choose FlowBuddy if you only want the simplest possible breathing pause."
   - question: "Is FlowBuddy really open source?"
-    answer: "Yes, FlowBuddy is fully open-source with its code available on GitHub. This means anyone can inspect the code, verify privacy claims, and contribute. Pawse is not open-source but achieves strong privacy through fully offline operation with zero data collection."
+    answer: "Yes, FlowBuddy is fully open-source with its code available on GitHub. This means anyone can inspect the code, verify privacy claims, and contribute. Pawse is not open-source; it keeps your usage history on your phone, needs no account, and discloses its anonymous analytics in its privacy policy."
   - question: "What features does FlowBuddy have?"
     answer: "FlowBuddy is intentionally minimal. It provides a breathing pause animation before you open tracked apps — and that's essentially it. There's no usage tracking, no analytics, no custom messages, no gamification, and no browser extension. It does one thing simply."
   - question: "Are both Pawse and FlowBuddy free?"
@@ -46,7 +46,7 @@ Beyond the pause itself, Pawse includes:
 - **Gamification** with streaks and milestones to maintain motivation
 - **Home screen widgets** for quick stats
 - **Chrome extension** for managing website habits on desktop
-- **Fully offline operation** — no account, no data collection
+- **Works offline** — no account needed
 
 Everything is free. No premium tier, no feature gates, no subscriptions.
 
@@ -76,7 +76,7 @@ FlowBuddy offers the same breathing animation for every app. You can't customize
 
 FlowBuddy's biggest differentiator is being open-source. Anyone can read the code and verify exactly what it does. This is meaningful for users who want maximum transparency.
 
-Pawse isn't open-source, but it achieves strong privacy through a different path: it operates entirely offline with zero data collection. No account, no internet connection, no analytics — your data literally cannot leave your device because the app never connects to anything.
+Pawse isn't open-source, but it takes privacy seriously in a different way: it works offline, needs no account, and keeps your usage history on your phone unless you sign in to sync. It sends anonymous analytics and crash reports, and the privacy policy says exactly what.
 
 Both approaches achieve real privacy, just through different mechanisms.
 
@@ -95,7 +95,7 @@ Both work on Android. Only Pawse also offers a Chrome extension for managing dis
 | **Gamification** | Yes — streaks and milestones | No |
 | **Chrome extension** | Yes | No |
 | **Widgets** | Yes | No |
-| **Privacy** | Fully offline, zero data collection | Open-source, minimal data |
+| **Privacy** | Works offline, no account, optional sync | Open-source, minimal data |
 | **Platforms** | Android + Chrome (iOS soon) | Android only |
 | **Intervention types** | Multiple (prompts, breathing, goals) | Breathing animation only |
 

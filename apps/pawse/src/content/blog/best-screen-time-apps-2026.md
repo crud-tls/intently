@@ -10,13 +10,13 @@ faq:
   - question: "What is the best screen time app in 2026?"
     answer: "The best screen time app depends on your approach. For mindful awareness without hard blocking, Pawse is the top free option on Android and Chrome. For hard blocking, Freedom and Cold Turkey are the most reliable paid options. For built-in simplicity, Apple Screen Time and Google Digital Wellbeing are decent starting points."
   - question: "What is the best free screen time app?"
-    answer: "Pawse is the best fully free screen time app — it offers mindful interventions, usage tracking, gamification, and a Chrome extension at zero cost with no data collection. ScreenZen is another strong free option available on both iOS and Android with basic delay-based pauses."
+    answer: "Pawse is the best fully free screen time app — it offers mindful interventions, usage tracking, gamification, and a Chrome extension at zero cost, with no ads and no account required. ScreenZen is another strong free option available on both iOS and Android with basic delay-based pauses."
   - question: "What is the best screen time app for Android?"
-    answer: "Pawse is the best screen time app for Android. It was built natively for the platform and offers mindful interventions, comprehensive tracking, streaks, and achievements — all free and fully offline. Google Digital Wellbeing is a decent built-in option for basic time limits."
+    answer: "Pawse is the best screen time app for Android. It was built natively for the platform and offers mindful interventions, comprehensive tracking, streaks, and achievements — all free, and it works offline. Google Digital Wellbeing is a decent built-in option for basic time limits."
   - question: "Do screen time apps actually work?"
     answer: "Yes, but effectiveness varies by approach. Research shows mindful intervention apps reduce impulsive app opens by up to 57-67%. Hard blockers work short-term but have high bypass rates. The most effective apps combine awareness-building with friction, rather than relying on willpower or rigid restrictions alone."
   - question: "Are screen time apps safe for privacy?"
-    answer: "Not all of them. Many screen time apps collect and sell usage data. Look for apps that store data locally on your device, don't require accounts, and have transparent privacy policies. Pawse keeps all data on-device with zero collection. Always check what permissions a screen time app requests before installing."
+    answer: "Not all of them. Many screen time apps collect and sell usage data. Look for apps that store data locally on your device, don't require accounts, and have transparent privacy policies. Pawse keeps your usage history on your phone and never sells data. Always check what permissions a screen time app requests before installing."
   - question: "Should I use an app blocker or a mindful screen time app?"
     answer: "Mindful screen time apps build lasting habits by creating awareness, while blockers provide immediate enforcement but often lead to workarounds. For most people, starting with a mindful approach like Pawse is more sustainable. You can always add a blocker for specific high-distraction periods if needed."
 ---
@@ -47,7 +47,7 @@ Pawse creates a full-screen moment of awareness before you open distracting apps
 
 What sets Pawse apart from other pause-based tools is the full package around the core intervention. You get comprehensive usage tracking (daily, weekly, monthly breakdowns), a gamification layer with streaks and achievements that keeps you motivated past the first week, and a Chrome extension that brings the same mindful approach to desktop browsing.
 
-Everything stays on your device. No account required, no data collection, no ads. The trade-off is no iOS version yet (it's in development) and no cross-device sync.
+Your usage history stays on your phone. No account required, no ads, and nothing syncs unless you sign in. The trade-off is no iOS version yet (it's in development).
 
 **Rating: 4.5/5** — The most complete free screen time app available. The mindful approach is backed by research showing up to 67% reduction in impulsive app opens.
 
@@ -155,7 +155,7 @@ The main issue: the "one more minute" bypass completely undermines the time limi
 
 | App | Best For | Price | Privacy | Platform | Approach |
 |-----|----------|-------|---------|----------|----------|
-| **Pawse** | Overall mindful approach | Free | On-device only | Android, Chrome | Mindful pause + tracking |
+| **Pawse** | Overall mindful approach | Free | On-device history, optional sync | Android, Chrome | Mindful pause + tracking |
 | **One Sec** | Research-backed pause | ~$50/yr | Good | iOS, Android | Breathing exercise |
 | **ScreenZen** | Free iOS pause | Free | Good | iOS, Android | Countdown delay |
 | **Opal** | Premium iOS blocking | ~$100/yr | Cloud-based | iOS | App blocking + sessions |
@@ -189,7 +189,7 @@ It depends on your needs. For mindful awareness-building, Pawse is the top free 
 
 ### What is the best free screen time app?
 
-Pawse offers the most complete free package: mindful interventions, usage tracking, gamification, and a Chrome extension with zero cost and zero data collection. ScreenZen is the best free option on iOS for basic delay-based pauses.
+Pawse offers the most complete free package: mindful interventions, usage tracking, gamification, and a Chrome extension with zero cost, no ads and no account required. ScreenZen is the best free option on iOS for basic delay-based pauses.
 
 ### Do screen time apps actually reduce phone usage?
 
@@ -205,7 +205,7 @@ Often yes. Pawse is free and offers more features than many paid alternatives. T
 
 ### Can screen time apps see my private data?
 
-Some can. Many screen time apps require broad permissions and collect usage data for advertising or analytics. Always check the privacy policy. Apps like Pawse store everything on-device with no data collection. If privacy matters to you (and it should), look for apps that work offline and don't require accounts.
+Some can. Many screen time apps require broad permissions and collect usage data for advertising or analytics. Always check the privacy policy. Apps like Pawse keep your usage history on your phone and only sync if you choose to sign in. If privacy matters to you (and it should), look for apps that work offline and don't require accounts.
 
 ---
 

@@ -17,7 +17,7 @@ faq:
   - question: "Does Freedom's Locked Mode really work?"
     answer: "Yes. Freedom's Locked Mode prevents you from disabling a blocking session once it starts. You cannot access blocked sites or apps until the timer expires. This is genuinely effective for short-term productivity enforcement, though it does not teach self-regulation. Pawse takes the opposite approach: you always have a choice, which over time helps build stronger internal motivation."
   - question: "Which app is better for privacy: Pawse or Freedom?"
-    answer: "Pawse is significantly better for privacy. It works 100% offline with zero data collection -- no account, no cloud sync, no analytics. Freedom requires an account with your email, syncs data to the cloud for cross-device blocking, and collects standard usage data. This is an inherent trade-off: Freedom's cross-device features require cloud infrastructure, which means your data leaves your device."
+    answer: "Pawse is better for privacy. It works offline with no account; your usage history stays on your phone unless you choose to sign in and sync. Freedom requires an account with your email, syncs data to the cloud for cross-device blocking, and collects standard usage data. This is an inherent trade-off: Freedom's cross-device features require cloud infrastructure."
   - question: "Can I use Pawse and Freedom together?"
     answer: "Yes. Some users run Freedom during work hours for strict blocking and use Pawse during personal time for mindful habit-building. This can work, though most people find it simpler to commit to one approach."
 ---
@@ -77,7 +77,7 @@ Beyond interventions, Pawse offers detailed usage tracking -- daily, weekly, and
 
 There's also streak tracking, milestone celebrations, and achievement badges. These sound small, but building a streak creates real momentum. The app is designed to encourage you rather than punish you -- including streak recovery for days when you slip.
 
-On privacy, Pawse is 100% offline. No account, no cloud sync, no data collection of any kind. Your usage data stays on your device, period. Freedom's cross-device sync requires cloud infrastructure and an account with your email, which is a trade-off inherent to how it works.
+On privacy, Pawse works offline and needs no account. Your usage history stays on your phone; it only syncs if you sign in, and the app sends nothing but anonymous analytics and crash reports. Freedom's cross-device sync requires cloud infrastructure and an account with your email, which is a trade-off inherent to how it works.
 
 And Pawse is free. Not freemium, not free-with-ads. All features, no cost.
 
@@ -94,7 +94,7 @@ The other limitation is baked into the design itself. Pawse can't stop you if yo
 | Philosophy | Awareness and choice | Restriction and enforcement |
 | Price | Free | $40/yr or $120 lifetime |
 | Platforms | Android, Chrome (iOS coming) | iOS, Android, Windows, Mac, Chrome |
-| Privacy | Fully offline, no account | Account required, cloud sync |
+| Privacy | Works offline, no account | Account required, cloud sync |
 | Blocking | No (by design) | Yes, with Locked Mode |
 | Cross-device sync | No | Yes |
 | Usage analytics | Detailed tracking and reports | Minimal session history |

@@ -25,7 +25,7 @@ Here's a quick look at the practical differences:
 | Platforms | Android only | Android, iOS, Chrome |
 | Setup | None (pre-installed) | Quick download |
 | Data Storage | Google servers | 100% on your device |
-| Privacy | Part of your Google account | Zero data collection |
+| Privacy | Part of your Google account | No account; history on your phone |
 | Usage Tracking | Basic daily stats | Detailed trends and breakdowns |
 | App Limits | Timers (easily bypassed) | Mindful interventions |
 | Focus Mode | Simple app blocking | Scheduled interventions |
@@ -41,7 +41,7 @@ Both work offline. Neither will destroy your battery (under 2% daily in our test
 
 This one's pretty straightforward. Digital Wellbeing data is tied to your Google account and stored on Google's servers. Their privacy policy notes it may be used to "improve Google services." For a lot of people, that's fine.
 
-But screen time data can be surprisingly personal. It reveals when you're up late, which apps you turn to when you're stressed, and how your habits shift over time. If that feels like information you'd rather keep to yourself, Pawse stores everything locally on your device. There's no account to create, no cloud sync, no way for anyone -- including us -- to access your data. If you uninstall the app, the data goes with it (unless you've exported it first).
+But screen time data can be surprisingly personal. It reveals when you're up late, which apps you turn to when you're stressed, and how your habits shift over time. If that feels like information you'd rather keep to yourself, Pawse stores your usage history locally on your device. There's no account to create, and nothing syncs unless you choose to sign in. If you uninstall the app without signing in, the data goes with it (unless you've exported it first).
 
 For anyone who cares about privacy, Pawse has a clear edge here.
 

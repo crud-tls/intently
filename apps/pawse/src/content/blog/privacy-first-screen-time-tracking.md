@@ -7,7 +7,7 @@ author: "Pawse Team"
 tags: ["privacy", "screen time tracking", "data security", "digital wellbeing", "offline apps", "screen time app no account", "screen time app offline", "privacy screen time app android"]
 ---
 
-Privacy-first screen time tracking means your usage data stays on your device -- no cloud uploads, no account creation, no third-party analytics running in the background. It's a different approach from mainstream apps, many of which fund themselves by collecting and selling behavioral data. Tools like Pawse take the opposite route: you get the insights you need without handing over your habits to anyone else.
+Privacy-first screen time tracking means your usage data stays on your device -- no account creation required, and nothing uploaded unless you choose to. It's a different approach from mainstream apps, many of which fund themselves by collecting and selling behavioral data. Tools like Pawse take the opposite route: you get the insights you need without handing over your habits.
 
 ## Screen Time Data Is More Personal Than You'd Think
 
@@ -39,9 +39,9 @@ Watch out for vague language. Phrases like "we may share data with partners for 
 
 Privacy-first apps work differently at a structural level, not just at a policy level.
 
-### Everything Stays on Your Device
+### Your Usage History Stays on Your Device
 
-All usage tracking happens locally. Your data never leaves your phone, tablet, or computer. There's no account to create, no password to remember, no server that could get hacked, and no terms of service granting anyone rights to your information. It works fully offline.
+All usage tracking happens locally. There's no account to create and no password to remember, and the core features work fully offline. If an app offers sync, it should be optional and off until you sign in.
 
 ### No Hidden Analytics
 
@@ -93,7 +93,7 @@ When you're evaluating a screen time tool, these are the things worth checking.
 
 Pawse was designed from the start so that your data stays with you. Here's what that looks like in practice.
 
-There are no servers involved in tracking -- your usage data simply doesn't leave your device. There are no accounts, no usernames, no emails. The app doesn't make network requests for usage tracking, which means even Pawse's own developers have no way to see your screen time data. It's not a matter of policy; it's a matter of architecture.
+In Pawse, usage tracking happens on your phone, and there are no accounts unless you choose to sign in to sync. The app does send anonymous analytics and crash reports to help fix bugs; its privacy policy lists exactly what. Look for that kind of plain disclosure in any app you trust with your screen time.
 
 Your data is encrypted locally using your device's secure storage (Keychain on iOS, Keystore on Android), adding a layer of protection even if someone has physical access to your unlocked phone.
 
@@ -105,13 +105,13 @@ There are no third-party analytics SDKs in the app. Not Google Analytics, not Fi
 
 Privacy-first design does come with real limitations, and it's worth being upfront about them.
 
-Your data won't sync across devices. Since there's no cloud server in the middle, your phone and tablet track independently. If you need data in one place, you can export from one device and import to another, but it's a manual step.
+Without sync, your data won't follow you across devices: your phone and tablet track independently. If you want data in one place, you can export from one device and import to another, or turn on optional sync.
 
 There's no web dashboard to check your stats from a browser -- that would require server-side storage. Everything lives in the app itself, which is where most people check it anyway.
 
 AI-powered personalization is more limited, since cloud-based machine learning isn't in play. Local analytics still surface useful patterns, but you won't get the kind of heavily personalized recommendations that require sending your data off-device.
 
-And if you lose your device without exporting first, that data is gone. There's no cloud backup to recover from. Optional local backups and scheduled exports help, but it's a real trade-off that comes with keeping things private.
+And if you lose your device without exporting or syncing first, that data is gone. Optional local backups and scheduled exports help, but it's a real trade-off that comes with keeping things private.
 
 ## What's Changing in This Space
 

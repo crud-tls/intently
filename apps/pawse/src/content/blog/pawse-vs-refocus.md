@@ -43,7 +43,7 @@ This happens every time. Not after 30 minutes. Not when you hit a limit. Every s
 
 You always have the choice to continue. The intervention isn't a block; it's a pause. But that pause is often enough to break the autopilot cycle.
 
-Everything runs offline on your device. No account, no data collection, no internet required.
+Everything runs on your device and works offline. No account, no internet required.
 
 ### Refocus: Budget Your Time, Get Nudged at Limits
 
@@ -71,7 +71,7 @@ Refocus's customization centers on time budgets — how many minutes per app per
 
 ### Privacy
 
-Pawse is fully offline. No account, no internet connection, no data collection of any kind. Your usage data stays on your device and never leaves.
+Pawse works offline and needs no account. Your usage history stays on your phone unless you sign in to sync it.
 
 Refocus requires an account and collects usage data for its time tracking features. This is standard for time-budget apps, but it means your screen time data exists on external servers.
 
@@ -93,7 +93,7 @@ Refocus has an edge on mobile with both iOS and Android support. Pawse covers An
 | **When it intervenes** | Before every app open | When daily limit approached |
 | **Price** | Completely free | Freemium |
 | **Platforms** | Android + Chrome (iOS soon) | iOS + Android |
-| **Privacy** | Fully offline, zero data collection | Account required |
+| **Privacy** | Works offline, no account | Account required |
 | **Custom messages** | Yes — fully personalized | No — standard notifications |
 | **Usage tracking** | Yes — local only | Yes — cloud-based |
 | **Chrome extension** | Yes | No |
@@ -105,7 +105,7 @@ Refocus has an edge on mobile with both iOS and Android support. Pawse covers An
 
 - Your main problem is opening apps without thinking — the unconscious reflex
 - You want every app launch to be a conscious decision
-- Privacy is important — you want zero data collection and offline operation
+- Privacy is important — you want offline operation without an account
 - You want customizable interventions that speak in your own voice
 - You need a Chrome extension for website habits too
 - You want everything free with no premium gates

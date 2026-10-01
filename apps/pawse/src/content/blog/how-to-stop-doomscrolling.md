@@ -151,7 +151,7 @@ Here's what it looks like in practice:
 - A mindful pause before news and social apps
 - Scheduled boundaries during your most vulnerable times
 - Progress tracking so you can see your trends improve
-- Privacy-first: all data stays on your device, no cloud, no account needed
+- Privacy-first: your usage history stays on your phone, no account needed
 
 It's not a blocker. It doesn't punish you. It builds genuine self-awareness so you learn to catch yourself before the spiral starts.
 

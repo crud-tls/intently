@@ -11,15 +11,15 @@ faq:
   - question: "Is Opal worth $99 per year?"
     answer: "For most users, probably not. Opal's core features — app blocking and usage tracking — are available for free or at lower cost in alternatives like Pawse, ScreenZen, and Apple Screen Time. The premium may be worth it if you specifically need Opal's focus score or team features, but many people find comparable results elsewhere."
   - question: "What's the best free alternative to Opal?"
-    answer: "Pawse is a strong free option. It offers mindful interventions, usage tracking, gamification, and privacy with zero data collection. ScreenZen is another solid free choice if you prefer simple delay-based friction. Both are worth trying to see which approach suits you."
+    answer: "Pawse is a strong free option. It offers mindful interventions, usage tracking, gamification, and privacy: no account, no ads, and your usage history stays on your phone. ScreenZen is another solid free choice if you prefer simple delay-based friction. Both are worth trying to see which approach suits you."
   - question: "Can I block apps without paying for Opal?"
     answer: "Yes. Apple Screen Time (built into every iPhone) offers free app blocking. ScreenZen provides free app delays. Pawse offers free mindful interventions on Android and Chrome. Cold Turkey offers a one-time $39 purchase for powerful desktop blocking. You do not need to pay $99/year to limit app access."
   - question: "Does Opal actually reduce screen time?"
     answer: "Opal can reduce screen time in the short term through blocking. However, many users find that blocking alone does not change the underlying habit — when the block is lifted, old patterns return. Apps that combine awareness-building with friction, like Pawse or One Sec, may offer more durable results for some users."
   - question: "What Opal alternative works on Android?"
     answer: "Opal is iOS-only. For Android, Pawse is a top free option with mindful interventions. ScreenZen, Freedom, Forest, and Cold Turkey also support Android or desktop. Google Digital Wellbeing comes built-in on most Android phones."
-  - question: "Is there an Opal alternative that doesn't collect my data?"
-    answer: "Pawse operates 100% offline with zero data collection — no cloud sync, no analytics, no account required. Cold Turkey also works without a cloud account for basic use. Most other alternatives, including Opal, require accounts and collect some usage data."
+  - question: "Is there an Opal alternative that keeps my data private?"
+    answer: "Pawse works offline with no account required; your usage history stays on your phone and only syncs if you sign in. Cold Turkey also works without a cloud account for basic use. Most other alternatives, including Opal, require accounts and collect some usage data."
 ---
 
 # Best Opal Alternatives (2026 Review)
@@ -47,7 +47,7 @@ Pawse doesn't block anything. Instead, when you open a distracting app, a full-s
 
 What makes it different from Opal is the philosophy. Rather than locking you out, Pawse builds the muscle of noticing your own behavior. Over time, you start catching yourself before the pause even appears. It also includes usage tracking (daily, weekly, monthly breakdowns), streaks and achievements for motivation, and it's completely free -- no ads, no premium tier, no "upgrade to unlock" walls.
 
-The privacy angle is worth mentioning too: Pawse runs 100% offline. No account, no cloud sync, no data collection at all. For anyone wary of handing screen time data to yet another company, that's a real differentiator.
+The privacy angle is worth mentioning too: Pawse works offline and needs no account. Your usage history stays on your phone unless you choose to sync it. For anyone wary of handing screen time data to yet another company, that's a real differentiator.
 
 The honest trade-off: there's no iOS version yet (it's in development), and if you genuinely need hard blocking -- like, "physically prevent me from opening Instagram" -- this isn't that tool. It's designed for people who want to build self-control, not outsource it.
 
@@ -188,7 +188,7 @@ Need it on iPhone today? One Sec, ScreenZen, Forest, and Apple Screen Time all w
 
 Mostly a desktop problem? Cold Turkey for blocking. Pawse's Chrome extension for browser habits.
 
-Care about privacy? Pawse collects zero data and runs entirely offline. Cold Turkey doesn't require a cloud account for basic use.
+Care about privacy? Pawse needs no account and keeps your usage history on your phone. Cold Turkey doesn't require a cloud account for basic use.
 
 Want research backing? One Sec has a published Max Planck Institute study behind it. Pawse's approach is grounded in behavioral science research on habit interruption.
 

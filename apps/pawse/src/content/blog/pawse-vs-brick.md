@@ -14,7 +14,7 @@ faq:
   - question: "How does Brick's NFC device work?"
     answer: "Brick comes with a physical NFC tag (a small tile). To unlock blocked apps on your phone, you must physically tap your phone against the Brick tile. This creates a real-world barrier -- if the tile is in another room or at home, you simply cannot access your blocked apps until you go tap it."
   - question: "Can I use Pawse without internet?"
-    answer: "Yes, Pawse is 100% offline. It requires no internet connection, no account, and no cloud sync. All data stays on your device. This also means it works anywhere -- on flights, in remote areas, or whenever you're offline."
+    answer: "Yes, Pawse works offline. It needs no internet connection for the pause, tracking or stats, and no account. Your usage history stays on your device. This also means it works anywhere -- on flights, in remote areas, or whenever you're offline."
   - question: "What happens if I lose my Brick NFC tile?"
     answer: "If you lose or forget your Brick tile, you cannot unlock your blocked apps through the normal process. Brick does offer emergency override options, but losing the physical device is a real risk. Pawse, as a software solution, has no hardware dependency and works anywhere your phone goes."
   - question: "Which approach is better for long-term habit change?"
@@ -42,7 +42,7 @@ Pawse bets that awareness drives lasting change. Brick bets that environment des
 | **Type** | Software app | Physical NFC device + app |
 | **Approach** | Mindful interventions and pauses | Physical NFC tap to unlock apps |
 | **Pricing** | Free -- all features included | $59 one-time (replacement tiles cost extra) |
-| **Privacy** | 100% offline, zero data collection | Account required, standard data practices |
+| **Privacy** | Works offline, no account, optional sync | Account required, standard data practices |
 | **Platform** | Android, iOS (coming), Chrome extension | iOS and Android |
 | **Friction Type** | Psychological -- makes you pause and reflect | Physical -- makes you get up and walk |
 | **Portability** | Goes wherever your phone goes | Tied to your NFC tile's location |
@@ -90,7 +90,7 @@ $59 isn't unreasonable for a well-designed product, and there's no subscription.
 
 ### Privacy
 
-Pawse is 100% offline with zero data collection. No account, no cloud, no analytics. Your usage data stays on your device, period.
+Pawse works offline with no account. Your usage history stays on your phone unless you sign in to sync it.
 
 Brick requires an account for setup and uses connectivity for NFC authentication and sync. Their data practices aren't hostile, but they're not zero-collection either.
 
@@ -136,7 +136,7 @@ That said, starting with Pawse alone makes sense for most people. It costs nothi
 ### Pawse is probably the better fit if:
 
 - You want to build lasting self-awareness, not just block access
-- Privacy matters -- you want fully offline, zero data collection
+- Privacy matters -- you want an app that works offline without an account
 - You'd rather not spend money or depend on extra hardware
 - You need something that works everywhere without planning ahead
 - You're on Android or Chrome and want coverage across both

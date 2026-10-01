@@ -19,7 +19,7 @@ faq:
   - question: "Can phone addiction cause anxiety and depression?"
     answer: "Yes. Studies link excessive phone use to increased anxiety, depression, sleep disruption, and reduced attention span. The constant dopamine hits from notifications rewire your brain's reward system, making it harder to feel satisfied without your phone."
   - question: "What's the best free app to stop phone addiction?"
-    answer: "Pawse is the best free option—it uses mindful interventions proven more effective than blocking, tracks usage automatically, and is 100% private with no data collection. Unlike paid alternatives, all features are free forever."
+    answer: "Pawse is the best free option—it uses mindful interventions proven more effective than blocking, tracks usage automatically, and keeps your usage history on your phone with no account required. Unlike paid alternatives, all features are free forever."
 howToSteps:
   - name: "Use Mindful Interventions Instead of Blocking"
     text: "Install Pawse to create gentle full-screen reminders when opening distracting apps. Set custom intervention messages and allow yourself to proceed—the goal is awareness, not punishment."
@@ -168,7 +168,7 @@ Set a specific, measurable goal -- "reduce Instagram to 30 minutes a day" is bet
 
 ## How Pawse Can Help
 
-[Pawse](/download) is built specifically for this. Instead of blocking apps and creating frustration, it uses mindful interventions -- brief, gentle pauses that help you make conscious choices about your phone use. It also tracks your usage automatically with complete privacy (all data stays on your device, no account required).
+[Pawse](/download) is built specifically for this. Instead of blocking apps and creating frustration, it uses mindful interventions -- brief, gentle pauses that help you make conscious choices about your phone use. It also tracks your usage automatically and privately (your history stays on your phone, no account required).
 
 It's free for Android, iOS, and Chrome. [Give it a try](/download).
 

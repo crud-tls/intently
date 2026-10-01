@@ -38,7 +38,7 @@ What's refreshing is the assumption baked into this design: you're a capable adu
 
 ### Why It's Worth a Closer Look
 
-The privacy architecture is what really sets Pawse apart. Everything runs locally on your device. There's no cloud sync, no account creation, no data leaving your phone. In a category where most apps want you to create an account and hand over your usage data, this is a meaningful differentiator.
+The privacy design is what really sets Pawse apart. Your usage history is stored on your phone, there's no account to create, and sync only happens if you sign in. In a category where most apps want you to create an account and hand over your usage data, this is a meaningful differentiator.
 
 Beyond privacy, the interventions are flexible -- you can customize messages, choose between breath pauses, question prompts, or delay timers, and adjust the intensity per app. The analytics are solid too, with clean charts showing usage trends and patterns over time.
 
