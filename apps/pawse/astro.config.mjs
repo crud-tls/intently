@@ -4,9 +4,17 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
 import cloudflare from "@astrojs/cloudflare";
+import { createRequire } from "node:module";
+import { dirname, join } from "node:path";
+
+// npm workspaces hoist dependencies to the repo root, so find lucide's icons wherever npm put them.
+const lucideIcons = join(dirname(createRequire(import.meta.url).resolve("lucide-static/package.json")), "icons");
 
 // https://astro.build/config
 export default defineConfig({
+	vite: {
+		resolve: { alias: { "@lucide-icons": lucideIcons } },
+	},
 	site: "https://pawse.liveintently.app",
 	image: {
 		domains: ["pawse.liveintently.app"],

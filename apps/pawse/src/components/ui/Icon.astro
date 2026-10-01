@@ -37,14 +37,13 @@ const kebabName = name
   .toLowerCase();
 
 // Use eager import for icons to avoid dynamic import issues
-const icons = import.meta.glob('/node_modules/lucide-static/icons/*.svg', {
+const icons = import.meta.glob<string>('@lucide-icons/*.svg', {
   query: '?raw',
   import: 'default',
   eager: true
 });
 
-const iconPath = `/node_modules/lucide-static/icons/${kebabName}.svg`;
-let iconSvg = icons[iconPath] || '';
+let iconSvg = Object.entries(icons).find(([path]) => path.endsWith(`/${kebabName}.svg`))?.[1] || '';
 
 if (!iconSvg) {
   console.error(`Icon "${name}" (${kebabName}.svg) not found in lucide-static`);
