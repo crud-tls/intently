@@ -6,9 +6,13 @@ one app's site can never break another app's privacy page.
 
 | Workspace | Host | Worker |
 |---|---|---|
+| `apps/hub` | `liveintently.app` (preview: `intently-hub.fsadakathussain.workers.dev`) | `intently-hub` |
 | `apps/pawse` | `pawse.liveintently.app` (preview: `pawse-site.fsadakathussain.workers.dev`) | `pawse-site` |
 
-More apps and the `liveintently.app` hub arrive in later phases; see
+Shared packages: `packages/registry` (one record per app), `packages/legal` (each app's policies
+and the component that renders them).
+
+More app sites arrive in later phases; see
 `docs/house-of-brands.md` for the plan, decisions and status.
 
 ## Commands
@@ -23,6 +27,11 @@ npm run deploy -w @intently/pawse-site        # deploy one site (ask first: it i
 
 Node 22+ (`.nvmrc`). npm only runs the install scripts listed in `allowScripts` in the root
 `package.json`; workerd, esbuild and sharp need theirs to fetch native binaries.
+
+## Legacy URLs
+
+The hub's `public/_redirects` is generated: `node tools/hub-redirects.mjs`. Check every legacy
+URL with `node tools/verify-urls.mjs` (production) or `--preview` (workers.dev hosts).
 
 ## Rules
 - Never break a URL in `docs/legacy-urls.txt`: Play Console, the Chrome Web Store and shipped

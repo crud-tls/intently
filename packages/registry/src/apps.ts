@@ -2,7 +2,8 @@
  * Every app the Intently studio ships, in one place. The hub's app directory, each site's
  * footer and the legal pages read from here, so a new app or a changed address is one edit.
  */
-export type AppStatus = 'live' | 'soon';
+/** live: public in a store. review: submitted, listing not public yet. soon: in development. */
+export type AppStatus = 'live' | 'review' | 'soon';
 
 export interface StoreLinks {
 	play?: string;
@@ -23,6 +24,8 @@ export interface App {
 	stores: StoreLinks;
 	/** Brand colour for cards and the app's site theme. */
 	color: string;
+	/** Square icon in the hub's public/icons/, or a monogram in the brand colour when absent. */
+	icon?: string;
 	/** Hosts that should 301 to this app's site (old names). */
 	aliases?: string[];
 }
@@ -49,6 +52,7 @@ export const APPS: App[] = [
 			chrome: 'https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop',
 		},
 		color: '#FF8A3D',
+		icon: '/icons/pawse.svg',
 		aliases: ['infocus.liveintently.app'],
 	},
 	{
@@ -56,11 +60,12 @@ export const APPS: App[] = [
 		name: 'Qandeel',
 		tagline: 'The Quran on your phone and your watch, offline and in sync.',
 		host: 'qandeel.liveintently.app',
-		status: 'live',
+		status: 'review',
 		email: 'qandeel@liveintently.app',
 		platforms: ['Android', 'Wear OS'],
 		stores: {},
-		color: '#2E7D6B',
+		color: '#195039',
+		icon: '/icons/qandeel.svg',
 		aliases: ['qit.liveintently.app'],
 	},
 	{
@@ -68,7 +73,7 @@ export const APPS: App[] = [
 		name: 'Loop',
 		tagline: 'Fit recurring tasks into your week without the juggling.',
 		host: 'loop.liveintently.app',
-		status: 'live',
+		status: 'review',
 		email: 'loop@liveintently.app',
 		platforms: ['Android'],
 		stores: {},

@@ -1,0 +1,131 @@
+---
+import Base from '../layouts/Base.astro';
+import AppCard from '../components/AppCard.astro';
+import { APPS } from '@intently/registry';
+
+const shipping = APPS.filter((a) => a.status !== 'soon');
+const soon = APPS.filter((a) => a.status === 'soon');
+---
+
+<Base title="Intently" description="Intently is a small independent studio making calm, privacy-minded apps: Pawse, Qandeel, Loop and more.">
+	<main>
+		<section class="hero wrap">
+			<h1>Apps made with intent.</h1>
+			<p class="lead muted">We're a small, independent studio. We make calm tools that help you spend
+				your time on what matters, and we keep them honest about your data.</p>
+		</section>
+
+		<section id="apps" class="wrap" aria-labelledby="apps-title">
+			<h2 id="apps-title" class="section-title">Our apps</h2>
+			<div class="grid">
+				{shipping.map((app) => <AppCard app={app} />)}
+			</div>
+		</section>
+
+		<section class="wrap soon" aria-labelledby="soon-title">
+			<h2 id="soon-title" class="section-title">In the workshop</h2>
+			<ul class="soon-list">
+				{soon.map((app) => (
+					<li style={`--app:${app.color}`}>
+						<a href={`https://${app.host}`}>
+							<span class="dot" aria-hidden="true"></span>
+							<strong>{app.name}</strong>
+							<span class="muted">{app.tagline}</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</section>
+
+		<section class="wrap principles" aria-labelledby="how-title">
+			<h2 id="how-title" class="section-title">How we build</h2>
+			<div class="three">
+				<div>
+					<h3>Calm by default</h3>
+					<p class="muted">No streak guilt, no dark patterns. Our apps nudge, then get out of the way.</p>
+				</div>
+				<div>
+					<h3>Plain about data</h3>
+					<p class="muted">Each app has its own privacy policy that says exactly what leaves your device and why.</p>
+				</div>
+				<div>
+					<h3>No ads</h3>
+					<p class="muted">We don't show ads, and we never sell your data.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</Base>
+
+<style>
+	.hero {
+		padding-top: 96px;
+		padding-bottom: 48px;
+	}
+
+	h1 {
+		font-size: clamp(2.6rem, 7vw, 4.6rem);
+		font-weight: 800;
+		max-width: 12ch;
+	}
+
+	.lead {
+		font-size: 1.2rem;
+		max-width: 40rem;
+	}
+
+	.section-title {
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--text-2);
+		margin: 56px 0 18px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 20px;
+	}
+
+	.soon-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid var(--line);
+	}
+
+	.soon-list li { border-bottom: 1px solid var(--line); }
+
+	.soon-list a {
+		display: grid;
+		grid-template-columns: 14px 140px 1fr;
+		align-items: baseline;
+		gap: 14px;
+		padding: 16px 4px;
+		text-decoration: none;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: var(--app);
+		align-self: center;
+	}
+
+	.three {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 28px;
+	}
+
+	.three h3 { font-size: 1.1rem; }
+
+	@media (max-width: 720px) {
+		.hero { padding-top: 56px; }
+		.three { grid-template-columns: 1fr; }
+		.soon-list a { grid-template-columns: 14px 1fr; }
+		.soon-list a .muted { grid-column: 2; }
+	}
+</style>

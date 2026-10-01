@@ -45,6 +45,14 @@ Store (extension privacy) link to the apex today. `docs/legacy-urls.txt` lists e
   (Pawse, Pawse for Chrome, Loop, Qandeel, Mirror, PaceShift). Hisab and TwoHearts wait for
   their code location. Pawse's privacy, Chrome privacy and terms render from the package.
 
+- [x] Phase 4: hub at `intently-hub` (preview). Studio landing with app cards from the
+  registry, About, Contact (routes to each app's inbox), website privacy/terms under `/legal`.
+  The legacy layer (`tools/hub-redirects.mjs`) sends every old path to Pawse in one 301 and keeps
+  `?token=`; `/privacy`, `/terms`, `/delete-account` stay valid for the Play listing. The apex no
+  longer serves Pawse's `assetlinks.json`, so studio links don't open the Pawse app; installed
+  versions keep their verification until the next update moves App Links to the subdomain.
+  `tools/verify-urls.mjs --preview`: 122/123 (Loop's site is phase 5).
+
 ## Open follow-ups found along the way
 - Pawse analytics toggle: the policy no longer promises one; adding it is deferred (owner).
 - The Chrome extension still syncs through Supabase and sends tracked-site domains to Google

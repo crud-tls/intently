@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import LegalArticle from '@intently/legal/LegalArticle.astro';
+import * as policy from '@intently/legal/policies/intently/terms.md';
+---
+
+<Base title={policy.frontmatter.title} description="Intently website terms.">
+	<main>
+		<LegalArticle policy={policy} />
+	</main>
+</Base>

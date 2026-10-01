@@ -1,0 +1,177 @@
+---
+import '@fontsource-variable/inter/wght.css';
+import '../styles/hub.css';
+import { APPS, STUDIO } from '@intently/registry';
+
+interface Props {
+	title: string;
+	description: string;
+	noindex?: boolean;
+}
+
+const { title, description, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const fullTitle = title === STUDIO.name ? title : `${title} · ${STUDIO.name}`;
+const year = new Date().getFullYear();
+const listed = APPS.filter((a) => a.status !== 'soon');
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={STUDIO.name} />
+		<meta property="og:title" content={fullTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		{noindex && <meta name="robots" content="noindex" />}
+		<script type="application/ld+json" set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'Organization',
+			'@id': `${STUDIO.url}/#organization`,
+			name: STUDIO.name,
+			url: STUDIO.url,
+			logo: `${STUDIO.url}/favicon.svg`,
+			email: STUDIO.email,
+			founder: { '@type': 'Person', name: STUDIO.owner },
+		})} />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="wrap bar">
+				<a href="/" class="brand" aria-label="Intently home">
+					<img src="/favicon.svg" alt="" width="28" height="28" />
+					<span>Intently</span>
+				</a>
+				<nav aria-label="Main">
+					<a href="/#apps">Apps</a>
+					<a href="/about">About</a>
+					<a href="/contact">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<slot />
+
+		<footer class="site-footer">
+			<div class="wrap cols">
+				<div>
+					<p class="brand-line"><img src="/favicon.svg" alt="" width="22" height="22" /> Intently</p>
+					<p class="muted small">Apps made with intent.</p>
+				</div>
+				<div>
+					<h2 class="small-head">Apps</h2>
+					<ul>
+						{listed.map((a) => <li><a href={`https://${a.host}`}>{a.name}</a></li>)}
+					</ul>
+				</div>
+				<div>
+					<h2 class="small-head">Studio</h2>
+					<ul>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
+						<li><a href="/legal/privacy">Website privacy</a></li>
+						<li><a href="/legal/terms">Website terms</a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="wrap muted small copy">&copy; {year} {STUDIO.owner}. Each app's privacy policy lives on its own site.</p>
+		</footer>
+	</body>
+</html>
+
+<style>
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background: color-mix(in srgb, var(--bg) 88%, transparent);
+		backdrop-filter: saturate(140%) blur(10px);
+		border-bottom: 1px solid var(--line);
+	}
+
+	.bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 64px;
+	}
+
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-weight: 750;
+		font-size: 1.15rem;
+		letter-spacing: -0.02em;
+		text-decoration: none;
+	}
+
+	nav {
+		display: flex;
+		gap: 22px;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: var(--text-2);
+		font-weight: 550;
+	}
+
+	nav a:hover { color: var(--text); }
+
+	.site-footer {
+		margin-top: 96px;
+		padding: 48px 0 32px;
+		border-top: 1px solid var(--line);
+	}
+
+	.cols {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		gap: 32px;
+	}
+
+	.brand-line {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin: 0 0 4px;
+		font-weight: 700;
+	}
+
+	.small-head {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--text-2);
+		margin-bottom: 10px;
+	}
+
+	ul { list-style: none; margin: 0; padding: 0; }
+
+	li { margin: 6px 0; }
+
+	li a { text-decoration: none; }
+
+	li a:hover { text-decoration: underline; }
+
+	.small { font-size: 0.9rem; }
+
+	.copy { margin-top: 32px; }
+
+	@media (max-width: 640px) {
+		nav { gap: 14px; }
+		.cols { grid-template-columns: 1fr 1fr; }
+		.cols > div:first-child { grid-column: 1 / -1; }
+	}
+</style>

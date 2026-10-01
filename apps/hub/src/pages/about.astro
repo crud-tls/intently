@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { APPS, STUDIO } from '@intently/registry';
+---
+
+<Base title="About" description="Intently is a small independent studio making calm, privacy-minded apps.">
+	<main class="wrap prose">
+		<h1>About Intently</h1>
+		<p class="lead">Intently is a small, independent app studio. We make tools that help people spend
+			their time and attention on purpose: a pause before the scroll, a quiet place to listen to the
+			Quran, a week that fits your tasks.</p>
+		<p>Intently is run by {STUDIO.owner}, a software engineer who builds Android, iOS and web apps.
+			Every app here started as something we needed ourselves.</p>
+
+		<h2>What we believe</h2>
+		<ul>
+			<li><strong>Small and calm beats big and loud.</strong> An app should earn its place on your phone.</li>
+			<li><strong>Say plainly what happens to data.</strong> Each app's privacy policy is written from its code, not from a template.</li>
+			<li><strong>No ads, no data selling.</strong> Ever.</li>
+		</ul>
+
+		<h2>Our apps</h2>
+		<ul>
+			{APPS.map((a) => <li><a href={`https://${a.host}`}>{a.name}</a>: {a.tagline}</li>)}
+		</ul>
+
+		<p><a class="button" href="/contact">Get in touch</a></p>
+	</main>
+</Base>
+
+<style>
+	.prose {
+		max-width: 720px;
+		padding-top: 72px;
+	}
+
+	h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); }
+
+	h2 { margin-top: 2em; font-size: 1.4rem; }
+
+	.lead { font-size: 1.2rem; }
+
+	li { margin: 8px 0; }
+</style>
