@@ -13,5 +13,11 @@
     "enabled": true
   },
   "upload_source_maps": true,
-  "workers_dev": true
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "liveintently.app",
+      "custom_domain": true
+    }
+  ]
 }

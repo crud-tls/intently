@@ -65,6 +65,11 @@ Store (extension privacy) link to the apex today. `docs/legacy-urls.txt` lists e
   pawse-api hostname, CORS for the Pawse site, deletion link, Apple `state=pawse`);
   ThinkFast-Android `8fdcc30` (links, App Links, Apple state, default API URL); QIt `978eab5`.
 
+- [x] Phase 6 done 2026-10-02: app subdomains, apex → hub, redirect hosts. Production
+  `verify-urls`: 123/123. Still open: Email Routing aliases (token lacks permission),
+  `RESEND_API_KEY` on intently-hub and pawse-site, deleting the old `intently` Worker after a
+  quiet week.
+
 ## Cutover runbook (phase 6)
 Before:
 1. Owner: add Zone DNS:Read, Email Routing Rules:Edit, Email Routing Addresses:Read to the token.
