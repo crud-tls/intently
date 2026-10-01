@@ -2,7 +2,7 @@
 title: '20 Healthy Alternatives to Scrolling: What to Do Instead of Reaching for Your Phone'
 description: 'Looking for healthy alternatives to social media scrolling? Discover 20 practical things to do instead of phone scrolling, organized by what you actually need — boredom relief, connection, relaxation, stimulation, and information.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['healthy alternatives social media', 'what to do instead of scrolling', 'things to do instead of phone', 'stop scrolling', 'digital wellbeing']
 heroImage: '/blog-placeholder-4.jpg'
@@ -16,7 +16,7 @@ faq:
   - question: "Why is scrolling so addictive?"
     answer: "Scrolling exploits variable reward schedules — you never know if the next post will be interesting, funny, or boring, so your brain keeps checking. This is the same mechanism that makes slot machines addictive. Combined with infinite scroll (no natural stopping point) and algorithmic feeds optimized for engagement, your brain gets locked into a cycle of anticipation and checking."
   - question: "How long does it take to break a scrolling habit?"
-    answer: "Most people notice a significant shift within 2-3 weeks of consistently replacing scrolling with alternative activities. The urge doesn't disappear entirely, but it weakens as new habits form. Using a tool like Intently to create a pause before opening apps accelerates this process by interrupting the autopilot."
+    answer: "Most people notice a significant shift within 2-3 weeks of consistently replacing scrolling with alternative activities. The urge doesn't disappear entirely, but it weakens as new habits form. Using a tool like Pawse to create a pause before opening apps accelerates this process by interrupting the autopilot."
   - question: "What if I scroll because I'm anxious or stressed?"
     answer: "Scrolling as a stress response is common but counterproductive — research shows passive social media use typically increases anxiety rather than relieving it. Better anxiety alternatives include breathing exercises, a short walk, journaling about what's bothering you, or calling someone you trust. Address the anxiety directly rather than numbing it with your phone."
 ---
@@ -133,7 +133,7 @@ Knowing alternatives isn't enough — you need to make them easier to reach for 
 
 **Redesign your environment.** Keep a book on your nightstand instead of a charger. Put a journal on the coffee table. Leave a guitar out of its case. The easier the alternative is to access, the more likely you are to choose it.
 
-**Use friction on your phone.** Apps like [Intently](/download) create a brief pause before opening distracting apps — a moment where you can choose one of these alternatives instead. That 5-second gap between impulse and action is where the new habit gets built.
+**Use friction on your phone.** Apps like [Pawse](/download) create a brief pause before opening distracting apps — a moment where you can choose one of these alternatives instead. That 5-second gap between impulse and action is where the new habit gets built.
 
 **Don't try to replace all scrolling at once.** Pick one situation — morning scrolling, lunch break scrolling, bedtime scrolling — and introduce one alternative there. Once that feels natural (usually 2-3 weeks), tackle the next one.
 
@@ -145,7 +145,7 @@ None of these alternatives are magic. The point isn't to replace one compulsive 
 
 Over time, the scroll-first reflex weakens. Not because you're forcing it, but because your brain has rediscovered that there are better ways to meet the needs it's been trying to meet through your phone all along.
 
-Ready to build the pause that makes space for better choices? [Download Intently](/download) and start catching the autopilot before it takes over.
+Ready to build the pause that makes space for better choices? [Download Pawse](/download) and start catching the autopilot before it takes over.
 
 ---
 

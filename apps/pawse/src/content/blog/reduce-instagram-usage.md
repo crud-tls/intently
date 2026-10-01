@@ -3,7 +3,7 @@ title: "Reduce Instagram Usage Without Deleting: A Mindful Guide"
 description: "Reduce Instagram usage without deleting the app. Learn mindful strategies to cut down on Instagram, break the scrolling habit, and reclaim hours of your week while staying connected."
 pubDate: 2026-01-23
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["instagram addiction", "reduce instagram usage", "cut down on instagram", "mindful social media", "digital wellbeing"]
 heroImage: "/blog-instagram-usage.jpg"
@@ -36,9 +36,9 @@ None of this makes you weak-willed. It means the app is doing exactly what it wa
 
 Most Instagram sessions start on autopilot. Your thumb taps the icon before you've consciously decided to open anything. That's the habit loop at work, and the single most effective thing you can do is interrupt it.
 
-Intently does this by showing a gentle, full-screen prompt before you enter the app -- something like: *"Take a breath. What are you looking for right now?"* You can always proceed. The point isn't to block you; it's to give your conscious brain a chance to weigh in before the habit takes over.
+Pawse does this by showing a gentle, full-screen prompt before you enter the app -- something like: *"Take a breath. What are you looking for right now?"* You can always proceed. The point isn't to block you; it's to give your conscious brain a chance to weigh in before the habit takes over.
 
-[Download Intently](/download) for Android, iOS, or Chrome to try this yourself.
+[Download Pawse](/download) for Android, iOS, or Chrome to try this yourself.
 
 ## Make It a Little Harder to Open
 
@@ -92,7 +92,7 @@ Before you open the app, decide when you'll close it. "I'll check my close frien
 
 Here's how this plays out in practice:
 
-You wake up and reach for Instagram out of habit. Intently catches you with a gentle reminder: *"No Instagram until 9 AM -- do you want to proceed?"* You pause, realize you don't actually need it, and set the phone down.
+You wake up and reach for Instagram out of habit. Pawse catches you with a gentle reminder: *"No Instagram until 9 AM -- do you want to proceed?"* You pause, realize you don't actually need it, and set the phone down.
 
 At lunch, you decide to spend 15 minutes catching up on friends' Stories. You set a timer, open intentionally, enjoy the content, and close when the timer goes off -- even if you're mid-scroll.
 
@@ -116,9 +116,9 @@ If you see yourself more in the right column, the strategies above will help shi
 
 Willpower alone is unreliable -- especially against an app that's been optimized to hold your attention. The right tools make a real difference.
 
-Intently is built specifically for this. It adds mindful check-ins before each session, lets you customize your intervention messages, and tracks your usage without invading your privacy. It works on Android, iOS, and as a Chrome extension.
+Pawse is built specifically for this. It adds mindful check-ins before each session, lets you customize your intervention messages, and tracks your usage without invading your privacy. It works on Android, iOS, and as a Chrome extension.
 
-[Download Intently free](/download) and start building awareness around how you use Instagram.
+[Download Pawse free](/download) and start building awareness around how you use Instagram.
 
 ---
 

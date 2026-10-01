@@ -7,9 +7,9 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://liveintently.app",
+	site: "https://pawse.liveintently.app",
 	image: {
-		domains: ["liveintently.app"],
+		domains: ["pawse.liveintently.app"],
 		formats: ["avif", "webp"],
 		service: {
 			entrypoint: "astro/assets/services/sharp",
@@ -23,7 +23,7 @@ export default defineConfig({
 			lastmod: new Date(),
 			serialize(item) {
 				// Higher priority for important pages
-				if (item.url === 'https://liveintently.app/') {
+				if (item.url === 'https://pawse.liveintently.app/') {
 					item.priority = 1.0;
 					item.changefreq = 'daily';
 				} else if (

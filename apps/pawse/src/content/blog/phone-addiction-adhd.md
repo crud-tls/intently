@@ -3,7 +3,7 @@ title: "Phone Addiction and ADHD: Why You Can't Stop & What Helps"
 description: "Understand the unique connection between phone addiction and ADHD. Learn why standard screen time advice fails for ADHD brains and discover ADHD-friendly strategies that actually work."
 pubDate: 2026-02-01
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["phone addiction adhd", "screen time adhd", "adhd phone addiction", "adhd dopamine", "digital wellbeing adhd", "adhd screen time tips"]
 heroImage: "/blog-placeholder-4.jpg"
@@ -68,11 +68,11 @@ These strategies are designed around ADHD neurology rather than against it.
 
 This is the single most effective approach for ADHD phone addiction. Instead of blocking apps (which triggers frustration and workarounds), you add a brief moment of awareness before they open.
 
-Intently's approach works well for ADHD specifically because it doesn't block anything. You can always proceed. The gentle pause activates your conscious mind without triggering the emotional dysregulation that hard blocks cause. The message is compassionate, not punitive: *"Take a breath. Do you still want to open this?"*
+Pawse's approach works well for ADHD specifically because it doesn't block anything. You can always proceed. The gentle pause activates your conscious mind without triggering the emotional dysregulation that hard blocks cause. The message is compassionate, not punitive: *"Take a breath. Do you still want to open this?"*
 
 The core problem isn't that you consciously choose to spend three hours scrolling. It's that the behavior happens automatically, without any conscious involvement. A mindful pause inserts a tiny window of awareness into that automatic loop -- and that's often all the ADHD brain needs to make a different choice.
 
-[Download Intently](/download) and set it up for the apps that capture your hyperfocus most.
+[Download Pawse](/download) and set it up for the apps that capture your hyperfocus most.
 
 ### Design Your Environment So You Don't Need Self-Control
 
@@ -134,7 +134,7 @@ Time blindness is a core ADHD challenge. You can't trust your internal sense of 
 
 ### 3. Rotate Your Friction Strategies (Novelty Matters)
 
-ADHD brains habituate to stimuli faster than neurotypical brains. A screen time intervention that works brilliantly for two weeks may stop working entirely by week three. Plan for this. Rotate between different [mindful intervention](/blog/mindful-tech-interventions-vs-blocking) messages in Intently, switch up your phone's home screen layout, change your wallpaper to something that reminds you of your goals. Novelty keeps the friction effective.
+ADHD brains habituate to stimuli faster than neurotypical brains. A screen time intervention that works brilliantly for two weeks may stop working entirely by week three. Plan for this. Rotate between different [mindful intervention](/blog/mindful-tech-interventions-vs-blocking) messages in Pawse, switch up your phone's home screen layout, change your wallpaper to something that reminds you of your goals. Novelty keeps the friction effective.
 
 ### 4. Replace Phone Stimulation, Don't Just Remove It
 
@@ -142,7 +142,7 @@ ADHD brains need stimulation — that's non-negotiable neurology. If you remove 
 
 ### 5. Use Shorter Focus Blocks with Phone Rewards
 
-Instead of trying to stay off your phone for hours (which fights ADHD's need for frequent reward), use short blocks: 15-20 minutes of focused work, then a 5-minute intentional phone break. This works with your dopamine cycle instead of against it. As the habit builds, you can gradually extend the focus blocks. Apps like Intently can help make even the break intentional rather than a scrolling free-for-all.
+Instead of trying to stay off your phone for hours (which fights ADHD's need for frequent reward), use short blocks: 15-20 minutes of focused work, then a 5-minute intentional phone break. This works with your dopamine cycle instead of against it. As the habit builds, you can gradually extend the focus blocks. Apps like Pawse can help make even the break intentional rather than a scrolling free-for-all.
 
 ### 6. Create Physical Distance at Key Moments
 
@@ -160,7 +160,7 @@ The goal isn't eliminating phone use -- it's shifting the balance from compulsiv
 
 ## Getting Started
 
-Start with one strategy. Environmental design -- putting your phone in another room during focus time -- is usually the easiest first step because it doesn't require any willpower. Add mindful interventions with [Intently](/download) as your second step. Then layer in the others as you find what works for your specific brain.
+Start with one strategy. Environmental design -- putting your phone in another room during focus time -- is usually the easiest first step because it doesn't require any willpower. Add mindful interventions with [Pawse](/download) as your second step. Then layer in the others as you find what works for your specific brain.
 
 Progress won't be linear. Some days will be harder than others. That's expected, and that's okay. What matters is the overall trend, not any single day.
 

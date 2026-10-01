@@ -3,7 +3,7 @@ title: "Be More Productive Without Deleting Social Media"
 description: "Be more productive without deleting social media. Learn how to use social media mindfully, avoid distraction, and maintain connections while maximizing your productivity."
 pubDate: 2026-01-23
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["productive without deleting social media", "mindful social media use", "social media productivity", "work focus", "digital wellbeing"]
 heroImage: "/blog-productivity-social.jpg"
@@ -42,13 +42,13 @@ Outside of those hours, social media is fine. You don't need to be "on" all day 
 
 Most social media breaks during work aren't deliberate. You're stuck on a problem, your attention drifts, and before you've consciously decided anything, you're three minutes into your Twitter feed.
 
-Intently creates a brief prompt before social media apps open:
+Pawse creates a brief prompt before social media apps open:
 
 > *"You're in the middle of something. Is now the right time, or can this wait until your next break?"*
 
 You can always proceed. But that moment of awareness is often enough to redirect you. It catches the automatic reach -- the one you weren't even planning to make.
 
-[Download Intently](/download) to add this to your workday.
+[Download Pawse](/download) to add this to your workday.
 
 ## Schedule Your Social Media -- Don't Sprinkle It
 
@@ -138,14 +138,14 @@ Presence isn't just about being a better friend or partner (though it helps). It
 
 ## Tools for the Approach
 
-Intently helps keep social media in its place during work:
+Pawse helps keep social media in its place during work:
 
 - Mindful prompts before each social media open
 - Custom messages you write yourself
 - Usage tracking to spot patterns
 - Works on Android, iOS, and Chrome
 
-[Download Intently free](/download) and try it for a week.
+[Download Pawse free](/download) and try it for a week.
 
 You don't have to choose between being connected and being productive. You just have to stop letting social media decide when it gets your attention and start deciding for yourself.
 

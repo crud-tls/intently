@@ -2,7 +2,7 @@
 title: 'What Is Doomscrolling? Definition, Psychology, and How to Stop'
 description: 'Doomscrolling is the compulsive habit of endlessly scrolling through negative news and social media. Learn what doomscrolling means, why it is addictive, its health effects, and evidence-based strategies to stop.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['what is doomscrolling', 'doomscrolling meaning', 'doomscrolling definition', 'stop doomscrolling', 'digital wellbeing']
 heroImage: '/blog-placeholder-5.jpg'
@@ -14,7 +14,7 @@ faq:
   - question: "Is doomscrolling bad for your mental health?"
     answer: "Yes. Research links excessive consumption of negative news content to increased anxiety, depression, stress, sleep disruption, and feelings of helplessness. A 2020 study found that people who consumed more than 2 hours of COVID news daily reported significantly higher anxiety and depression scores. Doomscrolling rarely makes you feel more informed — it makes you feel more anxious."
   - question: "How do I stop doomscrolling?"
-    answer: "Set specific times for news consumption (2-3 times daily, 10-15 minutes each). Use a mindful intervention app like Intently that creates a pause before opening news and social media apps. Curate your feeds to reduce negativity. Replace evening doomscrolling with a specific alternative activity. Turn off news notifications entirely."
+    answer: "Set specific times for news consumption (2-3 times daily, 10-15 minutes each). Use a mindful intervention app like Pawse that creates a pause before opening news and social media apps. Curate your feeds to reduce negativity. Replace evening doomscrolling with a specific alternative activity. Turn off news notifications entirely."
   - question: "When did the term doomscrolling originate?"
     answer: "The term doomscrolling gained widespread use in early 2020 during the COVID-19 pandemic, though scattered uses appeared on social media as early as 2018. Financial analyst and Twitter user @Depressing_Feed is often credited with popularizing the term. It was named one of the Oxford English Dictionary's Words of the Year candidates in 2020."
   - question: "Is doomscrolling the same as phone addiction?"
@@ -83,7 +83,7 @@ Choose 2-3 specific times per day to check news (morning, lunch, evening). Set a
 
 ### 2. Use a Mindful Intervention
 
-Install [Intently](/download) and flag your news and social media apps. The brief pause before opening creates a moment where you can ask: "Am I checking this intentionally, or am I falling into the scroll?" That awareness alone often breaks the cycle.
+Install [Pawse](/download) and flag your news and social media apps. The brief pause before opening creates a moment where you can ask: "Am I checking this intentionally, or am I falling into the scroll?" That awareness alone often breaks the cycle.
 
 ### 3. Curate Ruthlessly
 
@@ -113,7 +113,7 @@ Doomscrolling feels productive, but it's the opposite of productive. It increase
 
 The solution isn't ignorance — it's intentionality. Set boundaries around your information consumption, recognize when scrolling stops being useful, and give yourself permission to disengage from the feed without feeling irresponsible.
 
-Ready to break the doomscrolling cycle? [Download Intently](/download) to create a mindful pause before your news and social media apps.
+Ready to break the doomscrolling cycle? [Download Pawse](/download) to create a mindful pause before your news and social media apps.
 
 ---
 

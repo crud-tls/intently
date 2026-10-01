@@ -2,7 +2,7 @@
 title: "How to Block Apps on iPhone: Complete Guide (2026)"
 description: "Learn how to block apps on iPhone using Screen Time, Shortcuts, and third-party tools. Step-by-step instructions plus why mindful alternatives may work better long-term for lasting digital wellbeing."
 pubDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["block apps iphone", "how to block apps on iphone", "restrict apps ios", "screen time iphone", "app blocker iphone", "digital wellbeing"]
 heroImage: "/blog-placeholder-3.jpg"
@@ -163,11 +163,11 @@ The difference is subtle but significant:
 
 Research shows that pause-based interventions lead to better long-term habit retention because they build internal motivation rather than relying on external restriction. You're developing the skill of catching yourself — a skill that transfers beyond any single app.
 
-### Intently: Mindful Pauses Coming to iPhone
+### Pawse: Mindful Pauses Coming to iPhone
 
-[Intently](/download) is a free mindful pause app currently available on Android and Chrome, with an iOS version coming soon. It lets you write custom intervention messages for each app, tracks your usage with full privacy (no data collection, no account required), and helps you build awareness rather than dependence on a blocker.
+[Pawse](/download) is a free mindful pause app currently available on Android and Chrome, with an iOS version coming soon. It lets you write custom intervention messages for each app, tracks your usage with full privacy (no data collection, no account required), and helps you build awareness rather than dependence on a blocker.
 
-If you're on Android or use Chrome, you can start today. For iPhone, check back — or sign up for updates at [liveintently.app](https://liveintently.app).
+If you're on Android or use Chrome, you can start today. For iPhone, check back — or sign up for updates at [liveintently.app](https://pawse.liveintently.app).
 
 In the meantime, the best iPhone alternatives for a mindful approach are One Sec and ScreenZen, both of which offer pause-based interventions on iOS today.
 
@@ -210,4 +210,4 @@ The goal isn't a phone you can't use. It's a phone you use on purpose.
 - [Mindful Tech Interventions vs App Blocking: What Works Better](/blog/mindful-tech-interventions-vs-blocking)
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
 - [Screen Time for Parents: The Complete Family Guide](/blog/screen-time-for-parents)
-- [Intently vs Opal: Free Mindful Pause vs Premium iOS Blocker](/blog/intently-vs-opal)
+- [Pawse vs Opal: Free Mindful Pause vs Premium iOS Blocker](/blog/pawse-vs-opal)

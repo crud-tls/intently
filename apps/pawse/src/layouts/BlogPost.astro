@@ -46,11 +46,11 @@ const {
 	relatedPosts = [],
 } = Astro.props;
 const { currentPath } = Astro.url;
-const postUrl = `https://liveintently.app${currentPath}`;
+const postUrl = `https://pawse.liveintently.app${currentPath}`;
 
 // Use frontmatter values with fallbacks
 const effectiveTags = tags && tags.length > 0 ? tags : ['digital wellbeing', 'screen time', 'mindful tech'];
-const effectiveAuthor = author || 'Intently Team';
+const effectiveAuthor = author || 'Pawse Team';
 ---
 
 <html lang="en">
@@ -80,8 +80,8 @@ const effectiveAuthor = author || 'Intently Team';
 		/>
 		<BreadcrumbSchema
 			items={[
-				{ name: 'Home', url: 'https://liveintently.app' },
-				{ name: 'Blog', url: 'https://liveintently.app/blog' },
+				{ name: 'Home', url: 'https://pawse.liveintently.app' },
+				{ name: 'Blog', url: 'https://pawse.liveintently.app/blog' },
 				{ name: title, url: postUrl },
 			]}
 		/>
@@ -118,7 +118,7 @@ const effectiveAuthor = author || 'Intently Team';
 							width={1020}
 							height={510}
 							src={heroImage}
-							alt={heroImageAlt || `${title} - Intently blog post illustration`}
+							alt={heroImageAlt || `${title} - Pawse blog post illustration`}
 							fetchpriority="high"
 						/>
 					</div>
@@ -381,9 +381,9 @@ const effectiveAuthor = author || 'Intently Team';
 <style>
 	body {
 		background:
-			radial-gradient(circle at 15% 12%, color-mix(in srgb, var(--intently-blue) 12%, transparent) 0%, transparent 30%),
-			radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--intently-green) 10%, transparent) 0%, transparent 28%),
-			var(--intently-bg-primary);
+			radial-gradient(circle at 15% 12%, color-mix(in srgb, var(--ds-blue) 12%, transparent) 0%, transparent 30%),
+			radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--ds-green) 10%, transparent) 0%, transparent 28%),
+			var(--ds-bg-primary);
 	}
 
 	.reading-progress {
@@ -400,7 +400,7 @@ const effectiveAuthor = author || 'Intently Team';
 	.reading-progress-bar {
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(90deg, var(--intently-blue), var(--intently-green));
+		background: linear-gradient(90deg, var(--ds-blue), var(--ds-green));
 		transform-origin: left center;
 		transform: scaleX(0);
 	}
@@ -408,22 +408,22 @@ const effectiveAuthor = author || 'Intently Team';
 	.article-shell {
 		max-width: 1220px;
 		margin: 0 auto;
-		padding: 9rem var(--intently-space-md) var(--intently-space-4xl);
+		padding: 9rem var(--ds-space-md) var(--ds-space-4xl);
 		display: grid;
-		gap: var(--intently-space-xl);
+		gap: var(--ds-space-xl);
 	}
 
 	.article-hero {
 		background:
-			linear-gradient(145deg, color-mix(in srgb, var(--intently-blue) 10%, transparent), transparent 52%),
-			linear-gradient(220deg, color-mix(in srgb, var(--intently-green) 8%, transparent), transparent 60%),
-			var(--intently-bg-secondary);
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 20%, transparent);
-		border-radius: var(--intently-radius-xl);
+			linear-gradient(145deg, color-mix(in srgb, var(--ds-blue) 10%, transparent), transparent 52%),
+			linear-gradient(220deg, color-mix(in srgb, var(--ds-green) 8%, transparent), transparent 60%),
+			var(--ds-bg-secondary);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 20%, transparent);
+		border-radius: var(--ds-radius-xl);
 		padding: clamp(1.4rem, 2.5vw, 2.4rem);
 		display: grid;
-		gap: var(--intently-space-sm);
-		box-shadow: var(--intently-shadow-sm);
+		gap: var(--ds-space-sm);
+		box-shadow: var(--ds-shadow-sm);
 	}
 
 	.back-link {
@@ -432,13 +432,13 @@ const effectiveAuthor = author || 'Intently Team';
 		gap: 0.35rem;
 		font-size: 0.9rem;
 		font-weight: 700;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		text-decoration: none;
-		margin-bottom: var(--intently-space-xs);
+		margin-bottom: var(--ds-space-xs);
 	}
 
 	.back-link:hover {
-		color: var(--intently-blue-dark);
+		color: var(--ds-blue-dark);
 	}
 
 	.hero-category {
@@ -447,7 +447,7 @@ const effectiveAuthor = author || 'Intently Team';
 		font-weight: 700;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	.article-hero h1 {
@@ -462,7 +462,7 @@ const effectiveAuthor = author || 'Intently Team';
 		max-width: 70ch;
 		font-size: clamp(1rem, 1.4vw, 1.2rem);
 		line-height: 1.7;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.hero-meta {
@@ -470,7 +470,7 @@ const effectiveAuthor = author || 'Intently Team';
 		flex-wrap: wrap;
 		gap: 0.55rem 0.85rem;
 		font-size: 0.86rem;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.hero-meta span {
@@ -480,11 +480,11 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.hero-image {
-		margin-top: var(--intently-space-sm);
-		border-radius: var(--intently-radius-lg);
+		margin-top: var(--ds-space-sm);
+		border-radius: var(--ds-radius-lg);
 		overflow: hidden;
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 20%, transparent);
-		box-shadow: var(--intently-shadow-md);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 20%, transparent);
+		box-shadow: var(--ds-shadow-md);
 	}
 
 	.hero-image img {
@@ -496,7 +496,7 @@ const effectiveAuthor = author || 'Intently Team';
 
 	.article-layout {
 		display: grid;
-		gap: var(--intently-space-lg);
+		gap: var(--ds-space-lg);
 	}
 
 	.article-sidebar {
@@ -504,11 +504,11 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.sidebar-card {
-		background: var(--intently-bg-primary);
-		border-radius: var(--intently-radius-lg);
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 20%, transparent);
-		padding: var(--intently-space-md);
-		box-shadow: var(--intently-shadow-sm);
+		background: var(--ds-bg-primary);
+		border-radius: var(--ds-radius-lg);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 20%, transparent);
+		padding: var(--ds-space-md);
+		box-shadow: var(--ds-shadow-sm);
 	}
 
 	.toc-panel {
@@ -516,12 +516,12 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.toc-label {
-		margin: 0 0 var(--intently-space-sm);
+		margin: 0 0 var(--ds-space-sm);
 		font-size: 0.72rem;
 		font-weight: 700;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 	}
 
 	.toc-track {
@@ -536,7 +536,7 @@ const effectiveAuthor = author || 'Intently Team';
 		top: 0;
 		bottom: 0;
 		width: 1px;
-		background: color-mix(in srgb, var(--intently-text-hint) 25%, transparent);
+		background: color-mix(in srgb, var(--ds-text-hint) 25%, transparent);
 		border-radius: 1px;
 	}
 
@@ -547,7 +547,7 @@ const effectiveAuthor = author || 'Intently Team';
 		top: var(--toc-active-top, 0);
 		height: var(--toc-active-height, 0);
 		width: 2px;
-		background: var(--intently-blue);
+		background: var(--ds-blue);
 		border-radius: 2px;
 		transition: top 250ms ease, height 250ms ease;
 	}
@@ -569,59 +569,59 @@ const effectiveAuthor = author || 'Intently Team';
 		font-weight: 500;
 		line-height: 1.4;
 		text-decoration: none;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		transition: color 150ms ease;
 	}
 
 	.toc-item a:hover {
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.toc-item a.active {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		font-weight: 600;
 	}
 
 	.toc-number {
 		font-size: 0.7rem;
 		font-weight: 600;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		min-width: 1.1rem;
 		font-variant-numeric: tabular-nums;
 		flex-shrink: 0;
 	}
 
 	.toc-item a.active .toc-number {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	.toc-sub-item a {
 		padding-left: 2rem;
 		font-size: 0.8rem;
 		font-weight: 400;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 	}
 
 	.toc-sub-item a:hover {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.toc-sub-item a.active {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		font-weight: 500;
 	}
 
 	.toc-empty {
-		margin: var(--intently-space-sm) 0 0;
+		margin: var(--ds-space-sm) 0 0;
 		padding-left: 1rem;
 		font-size: 0.8rem;
 		line-height: 1.5;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 	}
 
 	.sidebar-cta {
 		display: grid;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 	}
 
 	.sidebar-cta h2 {
@@ -634,7 +634,7 @@ const effectiveAuthor = author || 'Intently Team';
 		margin: 0;
 		font-size: 0.9rem;
 		line-height: 1.6;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.sidebar-cta-actions {
@@ -656,23 +656,23 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.sidebar-button.primary {
-		background: var(--intently-blue);
+		background: var(--ds-blue);
 		color: #fff;
 	}
 
 	.sidebar-button.primary:hover {
-		background: var(--intently-blue-dark);
+		background: var(--ds-blue-dark);
 	}
 
 	.sidebar-button.secondary {
-		background: var(--intently-bg-primary);
-		color: var(--intently-text-primary);
-		border-color: color-mix(in srgb, var(--intently-text-hint) 30%, transparent);
+		background: var(--ds-bg-primary);
+		color: var(--ds-text-primary);
+		border-color: color-mix(in srgb, var(--ds-text-hint) 30%, transparent);
 	}
 
 	.sidebar-button.secondary:hover {
-		border-color: color-mix(in srgb, var(--intently-blue) 45%, transparent);
-		color: var(--intently-blue);
+		border-color: color-mix(in srgb, var(--ds-blue) 45%, transparent);
+		color: var(--ds-blue);
 	}
 
 	.article-content {
@@ -680,20 +680,20 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.toc-mobile {
-		background: color-mix(in srgb, var(--intently-bg-secondary) 60%, transparent);
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 15%, transparent);
-		border-radius: var(--intently-radius-md);
-		padding: var(--intently-space-md);
-		margin-bottom: var(--intently-space-lg);
+		background: color-mix(in srgb, var(--ds-bg-secondary) 60%, transparent);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 15%, transparent);
+		border-radius: var(--ds-radius-md);
+		padding: var(--ds-space-md);
+		margin-bottom: var(--ds-space-lg);
 	}
 
 	.toc-mobile-label {
-		margin: 0 0 var(--intently-space-sm);
+		margin: 0 0 var(--ds-space-sm);
 		font-size: 0.72rem;
 		font-weight: 700;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 	}
 
 	.toc-mobile .toc-list {
@@ -702,22 +702,22 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	.reading-note {
-		margin-bottom: var(--intently-space-xl);
-		padding: var(--intently-space-md) var(--intently-space-lg);
-		border-radius: var(--intently-radius-md);
-		background: color-mix(in srgb, var(--intently-green) 9%, transparent);
-		border: 1px solid color-mix(in srgb, var(--intently-green) 26%, transparent);
+		margin-bottom: var(--ds-space-xl);
+		padding: var(--ds-space-md) var(--ds-space-lg);
+		border-radius: var(--ds-radius-md);
+		background: color-mix(in srgb, var(--ds-green) 9%, transparent);
+		border: 1px solid color-mix(in srgb, var(--ds-green) 26%, transparent);
 	}
 
 	.reading-note p {
 		margin: 0;
 		font-size: 0.95rem;
 		line-height: 1.6;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.reading-note strong {
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.article-body {
@@ -733,19 +733,19 @@ const effectiveAuthor = author || 'Intently Team';
 	:global(.article-body > p:first-child) {
 		font-size: clamp(1.12rem, 1.6vw, 1.3rem);
 		line-height: 1.75;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	:global(.article-body strong) {
 		font-weight: 700;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	:global(.article-body p) {
 		margin: 0 0 1.6rem;
 		font-size: clamp(1.05rem, 1.4vw, 1.2rem);
 		line-height: 1.8;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	:global(.article-body h2),
@@ -754,7 +754,7 @@ const effectiveAuthor = author || 'Intently Team';
 		font-family: "Atkinson", sans-serif;
 		line-height: 1.25;
 		letter-spacing: -0.015em;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		scroll-margin-top: 7.5rem;
 	}
 
@@ -777,7 +777,7 @@ const effectiveAuthor = author || 'Intently Team';
 	:global(.article-body ol) {
 		margin: 0 0 1.6rem;
 		padding-left: 1.5rem;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	:global(.article-body li) {
@@ -787,39 +787,39 @@ const effectiveAuthor = author || 'Intently Team';
 	}
 
 	:global(.article-body a) {
-		color: var(--intently-blue-dark);
+		color: var(--ds-blue-dark);
 		font-weight: 600;
 		text-decoration: underline;
-		text-decoration-color: color-mix(in srgb, var(--intently-blue) 30%, transparent);
+		text-decoration-color: color-mix(in srgb, var(--ds-blue) 30%, transparent);
 		text-underline-offset: 0.15em;
 		text-decoration-thickness: 1.5px;
 		transition:
-			color var(--intently-transition-fast),
-			text-decoration-color var(--intently-transition-fast);
+			color var(--ds-transition-fast),
+			text-decoration-color var(--ds-transition-fast);
 	}
 
 	:global(.article-body a:hover) {
-		color: var(--intently-blue);
-		text-decoration-color: var(--intently-blue);
+		color: var(--ds-blue);
+		text-decoration-color: var(--ds-blue);
 	}
 
 	:global(.article-body a:focus-visible) {
-		outline: 2px solid color-mix(in srgb, var(--intently-blue) 65%, white);
+		outline: 2px solid color-mix(in srgb, var(--ds-blue) 65%, white);
 		outline-offset: 2px;
 		border-radius: 2px;
 	}
 
 	:global(.article-body blockquote) {
 		margin: 2.2rem 0;
-		padding: var(--intently-space-lg) var(--intently-space-xl);
+		padding: var(--ds-space-lg) var(--ds-space-xl);
 		border-left: 4px solid;
 		border-image: linear-gradient(
 			to bottom,
-			var(--intently-blue),
-			color-mix(in srgb, var(--intently-green) 70%, var(--intently-blue))
+			var(--ds-blue),
+			color-mix(in srgb, var(--ds-green) 70%, var(--ds-blue))
 		) 1;
-		background: color-mix(in srgb, var(--intently-blue) 5%, transparent);
-		border-radius: 0 var(--intently-radius-md) var(--intently-radius-md) 0;
+		background: color-mix(in srgb, var(--ds-blue) 5%, transparent);
+		border-radius: 0 var(--ds-radius-md) var(--ds-radius-md) 0;
 		font-style: normal;
 	}
 
@@ -827,7 +827,7 @@ const effectiveAuthor = author || 'Intently Team';
 		font-size: clamp(1.08rem, 1.5vw, 1.25rem);
 		line-height: 1.75;
 		margin-bottom: 0.8rem;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	:global(.article-body blockquote p:last-child) {
@@ -843,8 +843,8 @@ const effectiveAuthor = author || 'Intently Team';
 		background: linear-gradient(
 			90deg,
 			transparent,
-			color-mix(in srgb, var(--intently-text-hint) 50%, transparent) 20%,
-			color-mix(in srgb, var(--intently-text-hint) 50%, transparent) 80%,
+			color-mix(in srgb, var(--ds-text-hint) 50%, transparent) 20%,
+			color-mix(in srgb, var(--ds-text-hint) 50%, transparent) 80%,
 			transparent
 		);
 	}
@@ -856,16 +856,16 @@ const effectiveAuthor = author || 'Intently Team';
 		margin-top: -0.65rem;
 		font-size: 1.1rem;
 		letter-spacing: 0.15em;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 	}
 
 	:global(.article-body img) {
 		width: 100%;
 		height: auto;
 		margin: 2rem 0;
-		border-radius: var(--intently-radius-md);
-		box-shadow: var(--intently-shadow-sm);
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 15%, transparent);
+		border-radius: var(--ds-radius-md);
+		box-shadow: var(--ds-shadow-sm);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 15%, transparent);
 	}
 
 	:global(.article-body figure) {
@@ -881,17 +881,17 @@ const effectiveAuthor = author || 'Intently Team';
 		font-family: "Atkinson", sans-serif;
 		font-size: 0.85rem;
 		line-height: 1.5;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		text-align: center;
 		font-style: italic;
 	}
 
 	:global(.article-body pre) {
 		margin: 2rem 0;
-		padding: var(--intently-space-lg);
-		border-radius: var(--intently-radius-md);
-		background: color-mix(in srgb, var(--intently-bg-secondary) 85%, black 5%);
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 18%, transparent);
+		padding: var(--ds-space-lg);
+		border-radius: var(--ds-radius-md);
+		background: color-mix(in srgb, var(--ds-bg-secondary) 85%, black 5%);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 18%, transparent);
 		overflow-x: auto;
 		font-size: 0.9rem;
 		line-height: 1.65;
@@ -901,7 +901,7 @@ const effectiveAuthor = author || 'Intently Team';
 		font-size: 0.88em;
 		padding: 0.15em 0.4em;
 		border-radius: 4px;
-		background: color-mix(in srgb, var(--intently-bg-secondary) 80%, var(--intently-text-hint) 10%);
+		background: color-mix(in srgb, var(--ds-bg-secondary) 80%, var(--ds-text-hint) 10%);
 		font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
 	}
 
@@ -923,31 +923,31 @@ const effectiveAuthor = author || 'Intently Team';
 
 	:global(.article-body th) {
 		padding: 0.75rem 1rem;
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 28%, transparent);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 28%, transparent);
 		text-align: left;
 		font-weight: 700;
 		font-family: "Atkinson", sans-serif;
 		font-size: 0.85rem;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
-		background: color-mix(in srgb, var(--intently-bg-secondary) 80%, var(--intently-text-hint) 8%);
-		color: var(--intently-text-secondary);
+		background: color-mix(in srgb, var(--ds-bg-secondary) 80%, var(--ds-text-hint) 8%);
+		color: var(--ds-text-secondary);
 	}
 
 	:global(.article-body td) {
 		padding: 0.75rem 1rem;
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 28%, transparent);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 28%, transparent);
 		text-align: left;
 	}
 
 	:global(.article-body tbody tr:nth-child(even)) {
-		background: color-mix(in srgb, var(--intently-bg-secondary) 50%, transparent);
+		background: color-mix(in srgb, var(--ds-bg-secondary) 50%, transparent);
 	}
 
 	.related-posts {
-		margin-top: var(--intently-space-3xl);
+		margin-top: var(--ds-space-3xl);
 		display: grid;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 	}
 
 	.related-posts h2 {
@@ -958,17 +958,17 @@ const effectiveAuthor = author || 'Intently Team';
 	.related-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 	}
 
 	.related-card {
 		display: grid;
 		grid-template-rows: auto 1fr;
-		border: 1px solid color-mix(in srgb, var(--intently-text-hint) 22%, transparent);
-		border-radius: var(--intently-radius-lg);
+		border: 1px solid color-mix(in srgb, var(--ds-text-hint) 22%, transparent);
+		border-radius: var(--ds-radius-lg);
 		overflow: hidden;
-		background: var(--intently-bg-primary);
-		box-shadow: var(--intently-shadow-sm);
+		background: var(--ds-bg-primary);
+		box-shadow: var(--ds-shadow-sm);
 	}
 
 	.related-image-link {
@@ -985,8 +985,8 @@ const effectiveAuthor = author || 'Intently Team';
 
 	.related-content {
 		display: grid;
-		gap: var(--intently-space-xs);
-		padding: var(--intently-space-md);
+		gap: var(--ds-space-xs);
+		padding: var(--ds-space-md);
 	}
 
 	.related-meta {
@@ -995,7 +995,7 @@ const effectiveAuthor = author || 'Intently Team';
 		flex-wrap: wrap;
 		gap: 0.5rem 0.75rem;
 		font-size: 0.78rem;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.related-content h3 {
@@ -1006,16 +1006,16 @@ const effectiveAuthor = author || 'Intently Team';
 
 	.related-content h3 a {
 		text-decoration: none;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.related-content h3 a:hover {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	.related-content p {
 		margin: 0;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		font-size: 0.93rem;
 		line-height: 1.55;
 	}
@@ -1023,7 +1023,7 @@ const effectiveAuthor = author || 'Intently Team';
 	a:focus-visible,
 	button:focus-visible,
 	summary:focus-visible {
-		outline: 2px solid color-mix(in srgb, var(--intently-blue) 70%, white);
+		outline: 2px solid color-mix(in srgb, var(--ds-blue) 70%, white);
 		outline-offset: 2px;
 	}
 
@@ -1035,7 +1035,7 @@ const effectiveAuthor = author || 'Intently Team';
 
 		.article-sidebar {
 			display: grid;
-			gap: var(--intently-space-md);
+			gap: var(--ds-space-md);
 			position: sticky;
 			top: 7.2rem;
 		}
@@ -1064,7 +1064,7 @@ const effectiveAuthor = author || 'Intently Team';
 		}
 
 		.reading-note {
-			padding: var(--intently-space-sm) var(--intently-space-md);
+			padding: var(--ds-space-sm) var(--ds-space-md);
 		}
 	}
 
@@ -1073,20 +1073,20 @@ const effectiveAuthor = author || 'Intently Team';
 		.sidebar-card,
 		.related-card,
 		.hero-image {
-			border-color: color-mix(in srgb, var(--intently-text-hint) 35%, transparent);
+			border-color: color-mix(in srgb, var(--ds-text-hint) 35%, transparent);
 		}
 
 		.toc-mobile {
-			background: color-mix(in srgb, var(--intently-bg-secondary) 50%, transparent);
-			border-color: color-mix(in srgb, var(--intently-text-hint) 25%, transparent);
+			background: color-mix(in srgb, var(--ds-bg-secondary) 50%, transparent);
+			border-color: color-mix(in srgb, var(--ds-text-hint) 25%, transparent);
 		}
 
 		.toc-track::before {
-			background: color-mix(in srgb, var(--intently-text-hint) 30%, transparent);
+			background: color-mix(in srgb, var(--ds-text-hint) 30%, transparent);
 		}
 
 		.reading-note {
-			background: color-mix(in srgb, var(--intently-green) 12%, transparent);
+			background: color-mix(in srgb, var(--ds-green) 12%, transparent);
 		}
 
 		.article-body {
@@ -1094,31 +1094,31 @@ const effectiveAuthor = author || 'Intently Team';
 		}
 
 		:global(.article-body blockquote) {
-			background: color-mix(in srgb, var(--intently-blue) 8%, transparent);
+			background: color-mix(in srgb, var(--ds-blue) 8%, transparent);
 		}
 
 		:global(.article-body pre) {
-			border-color: color-mix(in srgb, var(--intently-text-hint) 25%, transparent);
+			border-color: color-mix(in srgb, var(--ds-text-hint) 25%, transparent);
 		}
 
 		:global(.article-body code) {
-			background: color-mix(in srgb, var(--intently-bg-secondary) 90%, var(--intently-text-hint) 15%);
+			background: color-mix(in srgb, var(--ds-bg-secondary) 90%, var(--ds-text-hint) 15%);
 		}
 
 		:global(.article-body th) {
-			background: color-mix(in srgb, var(--intently-bg-secondary) 90%, var(--intently-text-hint) 10%);
+			background: color-mix(in srgb, var(--ds-bg-secondary) 90%, var(--ds-text-hint) 10%);
 		}
 
 		:global(.article-body img) {
-			border-color: color-mix(in srgb, var(--intently-text-hint) 25%, transparent);
+			border-color: color-mix(in srgb, var(--ds-text-hint) 25%, transparent);
 		}
 
 		:global(.article-body hr::after) {
-			color: var(--intently-text-hint);
+			color: var(--ds-text-hint);
 		}
 
 		:global(.article-body a) {
-			text-decoration-color: color-mix(in srgb, var(--intently-blue) 40%, transparent);
+			text-decoration-color: color-mix(in srgb, var(--ds-blue) 40%, transparent);
 		}
 	}
 </style>

@@ -18,49 +18,49 @@ const { href, title, description, tag } = Astro.props;
 <style>
 	.resource-card {
 		display: block;
-		background: var(--intently-bg-primary);
-		border: 2px solid var(--intently-gray-200);
-		border-radius: var(--intently-radius-md);
-		padding: var(--intently-space-xl);
+		background: var(--ds-bg-primary);
+		border: 2px solid var(--ds-gray-200);
+		border-radius: var(--ds-radius-md);
+		padding: var(--ds-space-xl);
 		text-decoration: none;
 		color: inherit;
-		transition: all var(--intently-transition-normal);
+		transition: all var(--ds-transition-normal);
 	}
 
 	.resource-card:hover {
-		border-color: var(--intently-blue);
+		border-color: var(--ds-blue);
 		transform: translateY(-4px);
-		box-shadow: var(--intently-shadow-lg);
+		box-shadow: var(--ds-shadow-lg);
 	}
 
 	.resource-card h3 {
 		font-size: 1.125rem;
 		font-weight: 600;
-		margin: 0 0 var(--intently-space-sm) 0;
-		color: var(--intently-blue);
+		margin: 0 0 var(--ds-space-sm) 0;
+		color: var(--ds-blue);
 	}
 
 	.resource-card p {
 		margin: 0;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		line-height: 1.6;
 		font-size: 0.9375rem;
 	}
 
 	.tag {
 		display: inline-block;
-		background: var(--intently-blue);
+		background: var(--ds-blue);
 		color: white;
 		padding: 0.25rem 0.75rem;
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		font-size: 0.8125rem;
 		font-weight: 500;
-		margin-top: var(--intently-space-md);
+		margin-top: var(--ds-space-md);
 	}
 
 	@media (max-width: 767px) {
 		.resource-card {
-			padding: var(--intently-space-lg);
+			padding: var(--ds-space-lg);
 		}
 	}
 </style>

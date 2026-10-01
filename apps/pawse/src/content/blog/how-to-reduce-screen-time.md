@@ -3,7 +3,7 @@ title: "How to Reduce Screen Time: 10 Science-Backed Strategies"
 description: "Discover proven strategies to reduce screen time with these expert tips on app usage tracking, mindful interventions, and building healthy digital habits. Transform your relationship with technology today."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-5.jpg"
-author: "Intently Team"
+author: "Pawse Team"
 tags: ["screen time", "digital habits", "mindful tech", "productivity", "self-improvement"]
 faq:
   - question: "How long does it take to reduce screen time?"
@@ -30,7 +30,7 @@ howToSteps:
   - name: "Turn Off All Non-Essential Notifications"
     text: "Keep only calls, messages from important contacts, and calendar alerts. Disable social media, news, promotional emails, and app suggestions."
   - name: "Use Mindful Interventions, Not Hard Blocks"
-    text: "Use apps like Intently that create moments of awareness before opening distracting apps, rather than blocking them entirely. Research shows mindful interventions reduce unconscious app opens by 67%."
+    text: "Use apps like Pawse that create moments of awareness before opening distracting apps, rather than blocking them entirely. Research shows mindful interventions reduce unconscious app opens by 67%."
   - name: "Build Replacement Habits"
     text: "For every hour of reduced screen time, plan an alternative activity. Replace morning scrolling with a walk, evening YouTube with reading, and idle phone checking with breathing exercises."
   - name: "Charge Your Phone Outside the Bedroom"
@@ -41,7 +41,7 @@ howToSteps:
     text: "Check your usage data weekly, celebrate reductions, identify remaining problem areas, and adjust your strategies. Consistent review keeps you accountable and motivated."
 ---
 
-To reduce screen time effectively, start by tracking your current usage to understand your habits, then set realistic daily limits for distracting apps. Enable grayscale mode to make your phone less appealing, create phone-free zones in your home, and build replacement habits like reading or exercise. Apps like Intently help by providing mindful interventions rather than restrictive blocking, creating lasting behavior change.
+To reduce screen time effectively, start by tracking your current usage to understand your habits, then set realistic daily limits for distracting apps. Enable grayscale mode to make your phone less appealing, create phone-free zones in your home, and build replacement habits like reading or exercise. Apps like Pawse help by providing mindful interventions rather than restrictive blocking, creating lasting behavior change.
 
 ## Why Screen Time Matters More Than Ever
 
@@ -73,7 +73,7 @@ Start by installing a usage tracking app that runs quietly in the background. Fo
 - What triggers mindless scrolling
 - How you feel after extended sessions
 
-Apps like Intently provide detailed insights while keeping all data on your device -- no cloud sync, no tracking, complete privacy. Often, the awareness alone is enough to nudge your numbers down.
+Apps like Pawse provide detailed insights while keeping all data on your device -- no cloud sync, no tracking, complete privacy. Often, the awareness alone is enough to nudge your numbers down.
 
 ### 2. Set Realistic Daily Limits (Not Arbitrary Ones)
 
@@ -125,7 +125,7 @@ The first couple of days you might feel some FOMO. After that, most people descr
 
 Blocking apps completely feels like punishment, and people tend to find workarounds fast. A better approach is creating a moment of pause -- just enough space to make a conscious choice.
 
-This is where Intently comes in. Instead of preventing access to Instagram, it shows a gentle full-screen reminder: "You wanted to use Instagram less. Take a breath. Do you still want to open this?" You can always proceed, but that brief pause is often enough to break the autopilot loop.
+This is where Pawse comes in. Instead of preventing access to Instagram, it shows a gentle full-screen reminder: "You wanted to use Instagram less. Take a breath. Do you still want to open this?" You can always proceed, but that brief pause is often enough to break the autopilot loop.
 
 The difference between a mindful nudge and a hard block is huge. One builds self-awareness over time; the other just builds frustration.
 
@@ -167,11 +167,11 @@ When you're eating out with friends, everyone puts their phone face-down in a st
 
 It's simple, a bit silly, and it works. Turning screen time reduction into a social thing makes it way more sustainable than going it alone. Plus, you actually end up having a real conversation.
 
-## How Intently Helps You Reduce Screen Time
+## How Pawse Helps You Reduce Screen Time
 
-These strategies work well on their own, but they're even better together -- and that's where Intently fits in.
+These strategies work well on their own, but they're even better together -- and that's where Pawse fits in.
 
-Intently is a privacy-first digital wellbeing app that combines usage tracking, mindful interventions, goal setting, and analytics in one place. Here's how it supports the strategies above:
+Pawse is a privacy-first digital wellbeing app that combines usage tracking, mindful interventions, goal setting, and analytics in one place. Here's how it supports the strategies above:
 
 - Detailed tracking: See exactly where your time goes, with daily, weekly, and monthly breakdowns
 - Mindful interventions: Gentle reminders that create awareness without blocking apps
@@ -179,7 +179,7 @@ Intently is a privacy-first digital wellbeing app that combines usage tracking, 
 - Privacy-first: All data stays on your device -- no cloud, no tracking, no account required
 - Streak tracking: Build momentum with daily streak counts and milestone celebrations
 
-Unlike blocking apps that rely on restriction, Intently helps you build awareness so you can make conscious choices. Over time, those mindful pauses start happening naturally.
+Unlike blocking apps that rely on restriction, Pawse helps you build awareness so you can make conscious choices. Over time, those mindful pauses start happening naturally.
 
 ## Measuring Your Progress
 
@@ -245,7 +245,7 @@ Pick one strategy from this list and try it for a week. If it clicks, add anothe
 
 And give yourself some grace along the way. You're pushing back against systems that entire teams of engineers built to keep you engaged. The fact that you're thinking about it at all puts you ahead of most people.
 
-Ready to take control of your screen time? [Download Intently](/download) today and start building healthier digital habits with privacy-first, mindful interventions that actually work.
+Ready to take control of your screen time? [Download Pawse](/download) today and start building healthier digital habits with privacy-first, mindful interventions that actually work.
 
 ---
 

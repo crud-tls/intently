@@ -37,7 +37,7 @@ import Icon from '../ui/Icon.astro';
 		</div>
 
 		<div class="download-card">
-			<h3>Download Intently</h3>
+			<h3>Download Pawse</h3>
 			<a href="/download" class="download-button">Download Free</a>
 		</div>
 	</div>
@@ -55,13 +55,13 @@ import Icon from '../ui/Icon.astro';
 		width: 56px;
 		min-height: 56px;
 		padding: 1rem;
-		background: var(--intently-blue);
+		background: var(--ds-blue);
 		border: none;
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		cursor: pointer;
 		z-index: 101;
-		box-shadow: var(--intently-shadow-lg);
-		transition: all var(--intently-transition-fast);
+		box-shadow: var(--ds-shadow-lg);
+		transition: all var(--ds-transition-fast);
 	}
 
 	.sidebar-toggle span {
@@ -75,11 +75,11 @@ import Icon from '../ui/Icon.astro';
 
 	.sidebar-toggle:hover {
 		transform: scale(1.05);
-		background: var(--intently-blue-dark);
+		background: var(--ds-blue-dark);
 	}
 
 	.sidebar-toggle:focus-visible {
-		outline: 2px solid var(--intently-blue);
+		outline: 2px solid var(--ds-blue);
 		outline-offset: 2px;
 	}
 
@@ -98,28 +98,28 @@ import Icon from '../ui/Icon.astro';
 
 	/* Sidebar - desktop sticky, mobile drawer */
 	.blog-sidebar {
-		background: var(--intently-bg-primary);
-		border-radius: var(--intently-radius-md);
-		box-shadow: var(--intently-shadow-sm);
+		background: var(--ds-bg-primary);
+		border-radius: var(--ds-radius-md);
+		box-shadow: var(--ds-shadow-sm);
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-lg);
+		gap: var(--ds-space-lg);
 	}
 
 	/* Featured CTAs */
 	.featured-ctas {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-md);
-		padding: var(--intently-space-lg);
+		gap: var(--ds-space-md);
+		padding: var(--ds-space-lg);
 	}
 
 	.quiz-card {
-		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
 		color: white;
 		text-align: center;
-		padding: var(--intently-space-lg);
-		border-radius: var(--intently-radius-md);
+		padding: var(--ds-space-lg);
+		border-radius: var(--ds-radius-md);
 	}
 
 	.quiz-card h3 {
@@ -130,7 +130,7 @@ import Icon from '../ui/Icon.astro';
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: var(--intently-space-xs);
+		gap: var(--ds-space-xs);
 	}
 
 	.quiz-card p {
@@ -143,19 +143,19 @@ import Icon from '../ui/Icon.astro';
 	.quiz-button {
 		display: inline-block;
 		background: white;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		padding: 0.625rem 1.25rem;
-		border-radius: var(--intently-radius-sm);
+		border-radius: var(--ds-radius-sm);
 		text-decoration: none;
 		font-weight: 600;
 		font-size: 0.875rem;
-		margin-top: var(--intently-space-md);
-		transition: transform var(--intently-transition-fast), box-shadow var(--intently-transition-fast);
+		margin-top: var(--ds-space-md);
+		transition: transform var(--ds-transition-fast), box-shadow var(--ds-transition-fast);
 	}
 
 	.quiz-button:hover {
 		transform: translateY(-2px);
-		box-shadow: var(--intently-shadow-md);
+		box-shadow: var(--ds-shadow-md);
 	}
 
 	.quiz-button:focus-visible {
@@ -164,11 +164,11 @@ import Icon from '../ui/Icon.astro';
 	}
 
 	.download-card {
-		background: var(--intently-green);
+		background: var(--ds-green);
 		color: white;
 		text-align: center;
-		padding: var(--intently-space-lg);
-		border-radius: var(--intently-radius-md);
+		padding: var(--ds-space-lg);
+		border-radius: var(--ds-radius-md);
 	}
 
 	.download-card h3 {
@@ -188,19 +188,19 @@ import Icon from '../ui/Icon.astro';
 	.download-button {
 		display: inline-block;
 		background: white;
-		color: var(--intently-green);
+		color: var(--ds-green);
 		padding: 0.625rem 1.25rem;
-		border-radius: var(--intently-radius-sm);
+		border-radius: var(--ds-radius-sm);
 		text-decoration: none;
 		font-weight: 600;
 		font-size: 0.875rem;
-		margin-top: var(--intently-space-md);
-		transition: transform var(--intently-transition-fast), box-shadow var(--intently-transition-fast);
+		margin-top: var(--ds-space-md);
+		transition: transform var(--ds-transition-fast), box-shadow var(--ds-transition-fast);
 	}
 
 	.download-button:hover {
 		transform: translateY(-2px);
-		box-shadow: var(--intently-shadow-md);
+		box-shadow: var(--ds-shadow-md);
 	}
 
 	.download-button:focus-visible {
@@ -212,8 +212,8 @@ import Icon from '../ui/Icon.astro';
 	.sidebar-nav {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-xs);
-		padding: var(--intently-space-lg) var(--intently-space-lg) 0;
+		gap: var(--ds-space-xs);
+		padding: var(--ds-space-lg) var(--ds-space-lg) 0;
 	}
 
 	.nav-heading {
@@ -221,39 +221,39 @@ import Icon from '../ui/Icon.astro';
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
-		color: var(--intently-text-primary);
-		margin: 0 0 var(--intently-space-sm) 0;
+		color: var(--ds-text-primary);
+		margin: 0 0 var(--ds-space-sm) 0;
 	}
 
 	.sidebar-link {
-		padding: var(--intently-space-md);
-		color: var(--intently-text-secondary);
+		padding: var(--ds-space-md);
+		color: var(--ds-text-secondary);
 		text-decoration: none;
-		border-radius: var(--intently-radius-sm);
+		border-radius: var(--ds-radius-sm);
 		border-left: 4px solid transparent;
-		transition: all var(--intently-transition-fast);
+		transition: all var(--ds-transition-fast);
 		font-weight: 500;
 		font-size: 0.9375rem;
 	}
 
 	.sidebar-link:hover {
-		color: var(--intently-blue);
-		background: var(--intently-bg-accent);
-		border-left-color: var(--intently-blue);
+		color: var(--ds-blue);
+		background: var(--ds-bg-accent);
+		border-left-color: var(--ds-blue);
 	}
 
 	.sidebar-link:focus-visible {
-		outline: 2px solid var(--intently-blue);
+		outline: 2px solid var(--ds-blue);
 		outline-offset: 2px;
 	}
 
 	.sidebar-link.active {
-		color: var(--intently-blue);
-		background: var(--intently-bg-accent);
-		border-left-color: var(--intently-blue);
+		color: var(--ds-blue);
+		background: var(--ds-bg-accent);
+		border-left-color: var(--ds-blue);
 		border-left-width: 4px;
 		font-weight: 600;
-		box-shadow: var(--intently-shadow-sm);
+		box-shadow: var(--ds-shadow-sm);
 	}
 
 	/* Desktop: sticky sidebar */
@@ -285,7 +285,7 @@ import Icon from '../ui/Icon.astro';
 			transform: translateX(-100%);
 			transition: transform 0.3s ease;
 			z-index: 99;
-			background: var(--intently-bg-primary);
+			background: var(--ds-bg-primary);
 			box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
 			padding-top: 2rem;
 			overflow-y: auto;

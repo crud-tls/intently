@@ -2,7 +2,7 @@
 title: "Screen Time and Mental Health: What Research Actually Shows"
 description: "Explore what research says about screen time and mental health. Understand the links between screen time, depression, anxiety, and sleep — and learn practical strategies to build healthier digital habits."
 pubDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["screen time mental health", "screen time depression", "screen time anxiety", "digital wellbeing", "phone addiction mental health", "screen time effects"]
 heroImage: "/blog-placeholder-about.jpg"
@@ -18,7 +18,7 @@ faq:
   - question: "What type of screen time is worst for mental health?"
     answer: "Passive social media scrolling is consistently identified as the most harmful form. This includes mindlessly browsing feeds, watching others' highlight reels, and consuming negative news. Active screen use — video calls with friends, creative projects, learning new skills — can actually support mental health. The distinction between passive and active use matters more than total hours."
   - question: "Can reducing screen time improve mental health?"
-    answer: "Yes. Multiple studies show that reducing recreational screen time by even 30-60 minutes per day leads to measurable improvements in mood, sleep quality, and anxiety levels within 1-2 weeks. The key is reducing passive, mindless use while maintaining beneficial screen activities. Tools like Intently help by creating awareness around unconscious phone use without requiring complete abstinence."
+    answer: "Yes. Multiple studies show that reducing recreational screen time by even 30-60 minutes per day leads to measurable improvements in mood, sleep quality, and anxiety levels within 1-2 weeks. The key is reducing passive, mindless use while maintaining beneficial screen activities. Tools like Pawse help by creating awareness around unconscious phone use without requiring complete abstinence."
 ---
 
 # Screen Time and Mental Health: What the Research Actually Shows
@@ -132,7 +132,7 @@ Create a digital sunset 60 minutes before bed. Charge your phone outside the bed
 
 ### 3. Add Friction to Mindless Use
 
-Apps like [Intently](/download) create a brief pause before opening distracting apps. That moment of awareness is often enough to interrupt the autopilot reflex and let you make a conscious choice. You don't need to block apps entirely — just slow down the unconscious launches.
+Apps like [Pawse](/download) create a brief pause before opening distracting apps. That moment of awareness is often enough to interrupt the autopilot reflex and let you make a conscious choice. You don't need to block apps entirely — just slow down the unconscious launches.
 
 ### 4. Create Phone-Free Windows
 
@@ -146,9 +146,9 @@ Unfollow accounts that trigger comparison or negativity. Mute keywords that caus
 
 Willpower alone isn't enough. When you reduce screen time, fill the space with activities that genuinely satisfy the needs your phone was addressing — social connection, stimulation, relaxation, information. Without alternatives, the vacuum pulls you back.
 
-## How Intently Helps
+## How Pawse Helps
 
-[Intently](/download) is designed around the insight that most problematic screen time starts with unconscious habits, not deliberate choices. By adding a mindful pause before every app launch, it turns autopilot behavior into conscious decisions.
+[Pawse](/download) is designed around the insight that most problematic screen time starts with unconscious habits, not deliberate choices. By adding a mindful pause before every app launch, it turns autopilot behavior into conscious decisions.
 
 You write your own intervention messages — tied to your specific goals and reasons for changing. Usage tracking shows you patterns over time, so you can see whether your habits are actually shifting. Everything stays on your device with zero data collection.
 
@@ -166,7 +166,7 @@ Screen time isn't inherently bad. It's a tool, and like any tool, its effects de
 
 You don't need to go off the grid. You need to use screens deliberately rather than letting them use you. Start with one change — protecting your sleep, adding a pause before social media, or auditing your passive consumption — and build from there.
 
-[Download Intently free](/download) to start building awareness around your screen time habits.
+[Download Pawse free](/download) to start building awareness around your screen time habits.
 
 ---
 

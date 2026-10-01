@@ -3,7 +3,7 @@ title: 'How to Stop Phone Addiction: 15 Expert Strategies That Actually Work'
 description: 'Break free from phone addiction with these 15 science-backed strategies. From mindful interventions to behavioral changes, learn proven methods to reduce screen time and reclaim your life.'
 pubDate: 2026-01-16
 updatedDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['phone addiction', 'screen time', 'digital wellbeing', 'productivity', 'mental health', 'behavioral science']
 heroImage: '/blog-phone-addiction-stop.jpg'
@@ -19,10 +19,10 @@ faq:
   - question: "Can phone addiction cause anxiety and depression?"
     answer: "Yes. Studies link excessive phone use to increased anxiety, depression, sleep disruption, and reduced attention span. The constant dopamine hits from notifications rewire your brain's reward system, making it harder to feel satisfied without your phone."
   - question: "What's the best free app to stop phone addiction?"
-    answer: "Intently is the best free option—it uses mindful interventions proven more effective than blocking, tracks usage automatically, and is 100% private with no data collection. Unlike paid alternatives, all features are free forever."
+    answer: "Pawse is the best free option—it uses mindful interventions proven more effective than blocking, tracks usage automatically, and is 100% private with no data collection. Unlike paid alternatives, all features are free forever."
 howToSteps:
   - name: "Use Mindful Interventions Instead of Blocking"
-    text: "Install Intently to create gentle full-screen reminders when opening distracting apps. Set custom intervention messages and allow yourself to proceed—the goal is awareness, not punishment."
+    text: "Install Pawse to create gentle full-screen reminders when opening distracting apps. Set custom intervention messages and allow yourself to proceed—the goal is awareness, not punishment."
   - name: "Track Your Usage Without Judgment"
     text: "Use automatic usage tracking to see real data about your phone habits. Review weekly summaries, identify peak usage times, and notice which apps consume the most time."
   - name: "Set Realistic Daily Limits"
@@ -70,13 +70,13 @@ None of this is accidental. Once you see these patterns for what they are, it ge
 
 ### 1. Use Mindful Interventions Instead of Blocking
 
-This is our biggest recommendation, and yes, we're biased -- [Intently](/download) is built around this idea. But the research backs it up: app blocking tends to trigger psychological reactance (the more you're told you can't do something, the more you want to). Mindful interventions work differently. They insert a brief pause -- a full-screen reminder that asks something like "Do you really need Instagram right now?" -- and then let you decide.
+This is our biggest recommendation, and yes, we're biased -- [Pawse](/download) is built around this idea. But the research backs it up: app blocking tends to trigger psychological reactance (the more you're told you can't do something, the more you want to). Mindful interventions work differently. They insert a brief pause -- a full-screen reminder that asks something like "Do you really need Instagram right now?" -- and then let you decide.
 
 That moment of reflection is often enough to break the autopilot loop. You can still open the app if you want to. The point isn't restriction; it's awareness.
 
 ### 2. Track Your Usage (Without Beating Yourself Up)
 
-Most people vastly underestimate how much they use their phones. Seeing the actual numbers can be a wake-up call, but try to approach it as data collection, not self-judgment. Use Intently's automatic tracking or your phone's built-in screen time tools. Review once a week. Look for patterns: which apps eat the most time? When during the day are you most prone to mindless scrolling? What emotions tend to precede a pickup?
+Most people vastly underestimate how much they use their phones. Seeing the actual numbers can be a wake-up call, but try to approach it as data collection, not self-judgment. Use Pawse's automatic tracking or your phone's built-in screen time tools. Review once a week. Look for patterns: which apps eat the most time? When during the day are you most prone to mindless scrolling? What emotions tend to precede a pickup?
 
 That last question is the most important one. If you notice you always reach for your phone when you're anxious or bored, that's the real issue to address.
 
@@ -166,9 +166,9 @@ If you're just getting started, we'd suggest: mindful interventions (#1), usage 
 
 Set a specific, measurable goal -- "reduce Instagram to 30 minutes a day" is better than "use my phone less." Track your progress weekly. Adjust as you go. And when you slip up (you will), don't spiral into self-criticism. Just start again the next day.
 
-## How Intently Can Help
+## How Pawse Can Help
 
-[Intently](/download) is built specifically for this. Instead of blocking apps and creating frustration, it uses mindful interventions -- brief, gentle pauses that help you make conscious choices about your phone use. It also tracks your usage automatically with complete privacy (all data stays on your device, no account required).
+[Pawse](/download) is built specifically for this. Instead of blocking apps and creating frustration, it uses mindful interventions -- brief, gentle pauses that help you make conscious choices about your phone use. It also tracks your usage automatically with complete privacy (all data stays on your device, no account required).
 
 It's free for Android, iOS, and Chrome. [Give it a try](/download).
 
@@ -184,4 +184,4 @@ It's free for Android, iOS, and Chrome. [Give it a try](/download).
 
 ---
 
-*Have questions or want to share your success story? Email us at support@liveintently.app*
+*Have questions or want to share your success story? Email us at pawse@liveintently.app*

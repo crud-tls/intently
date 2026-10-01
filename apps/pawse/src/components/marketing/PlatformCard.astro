@@ -59,8 +59,8 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 	.platform-card {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-md);
-		padding: var(--intently-space-xl);
+		gap: var(--ds-space-md);
+		padding: var(--ds-space-xl);
 		background: rgba(255, 255, 255, 0.7);
 		backdrop-filter: blur(20px) saturate(160%);
 		-webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -109,7 +109,7 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 	.platform-header {
 		display: flex;
 		align-items: center;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 	}
 
 	.platform-icon {
@@ -120,8 +120,8 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 		justify-content: center;
 		background: rgba(255, 255, 255, 0.6);
 		border: 1px solid rgba(0, 0, 0, 0.05);
-		border-radius: var(--intently-radius-md);
-		color: var(--intently-text-primary);
+		border-radius: var(--ds-radius-md);
+		color: var(--ds-text-primary);
 		flex-shrink: 0;
 	}
 
@@ -147,23 +147,23 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 		font-size: 1.25rem;
 		font-weight: 700;
 		margin: 0;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.coming-soon {
 		font-size: 0.75rem;
 		font-weight: 600;
 		color: white;
-		background: var(--intently-orange);
+		background: var(--ds-orange);
 		padding: 0.125rem 0.5rem;
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		display: inline-block;
 	}
 
 	.platform-description {
 		font-size: 1rem;
 		line-height: 1.6;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		margin: 0;
 	}
 
@@ -178,7 +178,7 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 
 	.platform-features li {
 		font-size: 0.9375rem;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		padding-left: 1.5rem;
 		position: relative;
 	}
@@ -187,22 +187,22 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 		content: "✓";
 		position: absolute;
 		left: 0;
-		color: var(--intently-green);
+		color: var(--ds-green);
 		font-weight: 700;
 	}
 
 	.platform-cta {
 		margin-top: auto;
-		padding-top: var(--intently-space-md);
+		padding-top: var(--ds-space-md);
 	}
 
 	.notify-btn {
 		width: 100%;
 		padding: 0.75rem 1.5rem;
-		background: var(--intently-bg-secondary);
-		color: var(--intently-text-primary);
-		border: 1px solid var(--intently-gray-300);
-		border-radius: var(--intently-radius-md);
+		background: var(--ds-bg-secondary);
+		color: var(--ds-text-primary);
+		border: 1px solid var(--ds-gray-300);
+		border-radius: var(--ds-radius-md);
 		font-weight: 600;
 		cursor: not-allowed;
 		font-size: 1rem;
@@ -212,7 +212,7 @@ const { platform, title, description, features, downloadUrl, storeType, availabl
 	/* Mobile: optimize spacing and sizing */
 	@media (max-width: 767px) {
 		.platform-card {
-			padding: var(--intently-space-lg);
+			padding: var(--ds-space-lg);
 		}
 
 		.platform-header {

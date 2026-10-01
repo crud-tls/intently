@@ -2,7 +2,7 @@
 title: 'Digital Detox Benefits: What Actually Happens When You Unplug'
 description: 'What happens when you stop using your phone for 30 days? Explore the research-backed benefits of a digital detox — from better sleep and mood to improved focus and relationships — with a realistic week-by-week timeline.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['digital detox benefits', 'digital detox results', 'what happens when you stop using phone', 'screen time reduction', 'digital wellbeing']
 heroImage: '/blog-placeholder-5.jpg'
@@ -18,7 +18,7 @@ faq:
   - question: "Will I experience withdrawal symptoms during a digital detox?"
     answer: "Many people do. Common experiences include restlessness, phantom vibrations, anxiety about missing messages, boredom, and an urge to reach for your phone. These symptoms typically peak in the first 2-3 days and significantly diminish within a week. They're a sign that your brain had adapted to constant stimulation and is recalibrating."
   - question: "How do I maintain digital detox benefits long-term?"
-    answer: "The key is transitioning from a temporary detox to ongoing digital wellbeing practices: use a mindful intervention app like Intently, keep phone-free zones and routines, maintain the hobbies you picked up during the detox, do weekly check-ins on your screen time data, and address relapses quickly before old patterns fully re-establish."
+    answer: "The key is transitioning from a temporary detox to ongoing digital wellbeing practices: use a mindful intervention app like Pawse, keep phone-free zones and routines, maintain the hobbies you picked up during the detox, do weekly check-ins on your screen time data, and address relapses quickly before old patterns fully re-establish."
 ---
 
 # Digital Detox Benefits: What Actually Happens When You Unplug
@@ -149,13 +149,13 @@ The benefits described here don't require giving up your phone entirely. The big
 
 You can keep using your phone for calls, messages, maps, music, and intentional purposes while still experiencing most of these benefits. The goal is intentional use, not elimination.
 
-Tools like [Intently](/download) help by creating a moment of awareness before you open distracting apps — catching the autopilot scrolling while leaving intentional use untouched.
+Tools like [Pawse](/download) help by creating a moment of awareness before you open distracting apps — catching the autopilot scrolling while leaving intentional use untouched.
 
 ## Making Benefits Last
 
 The biggest risk after a digital detox is the slow slide back to old habits. A few practices that protect your gains:
 
-- **Keep tracking**: Weekly screen time check-ins with [Intently](/download) catch drift early.
+- **Keep tracking**: Weekly screen time check-ins with [Pawse](/download) catch drift early.
 - **Maintain your rituals**: The phone-free morning, the screen-free hour before bed, the no-phone meals. These are your foundation.
 - **Keep your replacement activities**: The book on the nightstand, the hobby you picked up, the walking habit. Remove these and the phone fills the gap.
 - **Address relapses quickly**: A bad week happens. A bad month becomes a re-established old habit. If you notice your screen time climbing, course-correct immediately rather than waiting.
@@ -165,7 +165,7 @@ For a structured approach to building these habits, check out our [30-Day Digita
 
 ---
 
-Ready to experience the benefits yourself? [Download Intently](/download) to start with awareness and mindful interventions — the sustainable path to lasting digital wellbeing.
+Ready to experience the benefits yourself? [Download Pawse](/download) to start with awareness and mindful interventions — the sustainable path to lasting digital wellbeing.
 
 ---
 

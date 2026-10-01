@@ -14,11 +14,11 @@ const { variant = 'glass', color = 'blue', hover = 'lift', class: className = ''
 
 // Get gradient for color
 const gradients = {
-	blue: 'var(--intently-gradient-blue)',
-	purple: 'var(--intently-gradient-purple)',
-	green: 'var(--intently-gradient-teal)',
-	orange: 'var(--intently-gradient-sunset)',
-	teal: 'var(--intently-gradient-teal)'
+	blue: 'var(--ds-gradient-blue)',
+	purple: 'var(--ds-gradient-purple)',
+	green: 'var(--ds-gradient-teal)',
+	orange: 'var(--ds-gradient-sunset)',
+	teal: 'var(--ds-gradient-teal)'
 };
 ---
 
@@ -32,14 +32,14 @@ const gradients = {
 <style>
 	.glass-card {
 		position: relative;
-		background: var(--intently-glass-bg);
-		backdrop-filter: var(--intently-glass-blur);
-		-webkit-backdrop-filter: var(--intently-glass-blur);
-		border: 1px solid var(--intently-glass-border);
-		border-radius: var(--intently-radius-xl);
-		padding: var(--intently-space-xl);
+		background: var(--ds-glass-bg);
+		backdrop-filter: var(--ds-glass-blur);
+		-webkit-backdrop-filter: var(--ds-glass-blur);
+		border: 1px solid var(--ds-glass-border);
+		border-radius: var(--ds-radius-xl);
+		padding: var(--ds-space-xl);
 		overflow: hidden;
-		transition: all var(--intently-float-duration) ease;
+		transition: all var(--ds-float-duration) ease;
 	}
 
 	.glass-highlight {
@@ -54,30 +54,30 @@ const gradients = {
 
 	/* Glass variant */
 	.glass-glass {
-		background: var(--intently-glass-bg);
-		backdrop-filter: var(--intently-glass-blur);
-		-webkit-backdrop-filter: var(--intently-glass-blur);
-		border: 1px solid var(--intently-glass-border);
+		background: var(--ds-glass-bg);
+		backdrop-filter: var(--ds-glass-blur);
+		-webkit-backdrop-filter: var(--ds-glass-blur);
+		border: 1px solid var(--ds-glass-border);
 	}
 
 	/* Solid variant */
 	.glass-solid {
-		background: var(--intently-bg-primary);
-		border: 1px solid var(--intently-gray-200);
+		background: var(--ds-bg-primary);
+		border: 1px solid var(--ds-gray-200);
 	}
 
 	/* Gradient variant */
 	.glass-gradient {
-		background: var(--intently-gradient-blue);
+		background: var(--ds-gradient-blue);
 		border: none;
 		color: white;
 	}
 
-	.glass-gradient.glass-blue { background: var(--intently-gradient-blue); }
-	.glass-gradient.glass-purple { background: var(--intently-gradient-purple); }
-	.glass-gradient.glass-green { background: var(--intently-gradient-teal); }
-	.glass-gradient.glass-orange { background: var(--intently-gradient-sunset); }
-	.glass-gradient.glass-teal { background: var(--intently-gradient-teal); }
+	.glass-gradient.glass-blue { background: var(--ds-gradient-blue); }
+	.glass-gradient.glass-purple { background: var(--ds-gradient-purple); }
+	.glass-gradient.glass-green { background: var(--ds-gradient-teal); }
+	.glass-gradient.glass-orange { background: var(--ds-gradient-sunset); }
+	.glass-gradient.glass-teal { background: var(--ds-gradient-teal); }
 
 	/* Color-specific highlights */
 	.glass-blue .glass-highlight {
@@ -98,8 +98,8 @@ const gradients = {
 
 	/* Hover effects */
 	.glass-card.glass-hover-lift:hover {
-		transform: translateY(var(--intently-float-y));
-		box-shadow: var(--intently-glass-shadow);
+		transform: translateY(var(--ds-float-y));
+		box-shadow: var(--ds-glass-shadow);
 	}
 
 	.glass-card.glass-hover-glow:hover {
@@ -108,7 +108,7 @@ const gradients = {
 
 	.glass-card.glass-hover-tilt:hover {
 		transform: perspective(1000px) rotateX(2deg) rotateY(2deg) translateY(-4px);
-		box-shadow: var(--intently-glass-shadow);
+		box-shadow: var(--ds-glass-shadow);
 	}
 
 	/* Content styling for gradient cards */

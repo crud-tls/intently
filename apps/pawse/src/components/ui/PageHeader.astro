@@ -16,9 +16,9 @@ const { title, description } = Astro.props;
 
 <style>
 	.page-header {
-		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
 		color: white;
-		padding: var(--intently-space-4xl) var(--intently-space-md);
+		padding: var(--ds-space-4xl) var(--ds-space-md);
 		text-align: center;
 	}
 
@@ -29,7 +29,7 @@ const { title, description } = Astro.props;
 
 	.page-header h1 {
 		font-size: 2rem;
-		margin-bottom: var(--intently-space-md);
+		margin-bottom: var(--ds-space-md);
 		font-weight: 700;
 	}
 
@@ -41,7 +41,7 @@ const { title, description } = Astro.props;
 
 	@media (min-width: 768px) {
 		.page-header {
-			padding: var(--intently-space-4xl) var(--intently-space-xl);
+			padding: var(--ds-space-4xl) var(--ds-space-xl);
 		}
 
 		.page-header h1 {

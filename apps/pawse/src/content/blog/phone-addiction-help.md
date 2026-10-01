@@ -2,7 +2,7 @@
 title: "Phone Addiction Help Without Deleting Apps: A Complete Guide"
 description: "Get phone addiction help without deleting apps. Learn gentle, effective strategies to reduce phone use, break addiction patterns, and build a healthier relationship with technology."
 pubDate: 2026-01-23
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["phone addiction help", "reduce phone use moderately", "phone addiction recovery", "digital wellbeing", "mindful tech use"]
 heroImage: "/blog-phone-addiction-help.jpg"
@@ -39,7 +39,7 @@ The better path is building conscious use rather than enforcing abstinence.
 
 ## Start by Understanding Your Patterns
 
-Before changing anything, spend a week just paying attention. Check your built-in screen time data or use [Intently](/download) to track which apps you use most, when your peak usage happens, and what tends to trigger it.
+Before changing anything, spend a week just paying attention. Check your built-in screen time data or use [Pawse](/download) to track which apps you use most, when your peak usage happens, and what tends to trigger it.
 
 Most people find patterns they didn't expect. Maybe you barely touch your phone in the morning but lose an hour every evening. Maybe you always reach for it when a specific emotion hits -- boredom, anxiety, loneliness, procrastination. Take our [Phone Addiction Quiz](/quiz) for a structured way to map these patterns.
 
@@ -49,11 +49,11 @@ Once you know your triggers, you can target interventions where they'll actually
 
 This is the single most effective change for most people. Instead of blocking apps, you add a brief pause before they open.
 
-Intently shows a gentle prompt when you launch a tracked app -- something you've written yourself, like *"What are you hoping to get from this right now?"* You can always proceed. The prompt just creates a gap between impulse and action.
+Pawse shows a gentle prompt when you launch a tracked app -- something you've written yourself, like *"What are you hoping to get from this right now?"* You can always proceed. The prompt just creates a gap between impulse and action.
 
 That gap matters because most phone sessions start unconsciously. You don't decide to spend 45 minutes on Reddit -- your thumb navigates there on autopilot while your conscious mind is somewhere else. A brief moment of awareness interrupts the autopilot and gives you an actual choice.
 
-[Download Intently](/download) free for Android, iOS, and Chrome.
+[Download Pawse](/download) free for Android, iOS, and Chrome.
 
 ## Set Goals That Don't Set You Up to Fail
 
@@ -115,7 +115,7 @@ Resources like Psychology Today's therapist finder, BetterHelp, and SMART Recove
 
 ## A Realistic Timeline
 
-Week 1: Track your patterns. Install Intently. Don't try to change anything yet -- just observe.
+Week 1: Track your patterns. Install Pawse. Don't try to change anything yet -- just observe.
 
 Week 2: Set your first small reduction goal. Start using mindful interventions.
 
@@ -129,7 +129,7 @@ Setbacks are part of the process, not a sign of failure. If you have a bad day, 
 
 ## Getting Started
 
-[Download Intently](/download) -- it's free, private, and takes about two minutes to set up. You'll get mindful prompts before each app use, usage tracking to see your patterns, and the ability to customize everything to your specific goals.
+[Download Pawse](/download) -- it's free, private, and takes about two minutes to set up. You'll get mindful prompts before each app use, usage tracking to see your patterns, and the ability to customize everything to your specific goals.
 
 Phone addiction isn't a character flaw. It's a natural response to software designed to capture your attention. The path forward isn't about having more discipline -- it's about building enough awareness to make real choices about how you spend your time.
 

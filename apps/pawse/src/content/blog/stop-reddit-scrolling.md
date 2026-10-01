@@ -3,7 +3,7 @@ title: "Stop Reddit Scrolling: How to Use Reddit Without Losing Hours"
 description: "Learn how to stop mindless Reddit scrolling with 5 proven strategies. Understand why Reddit is uniquely addictive, recognize the signs of Reddit addiction, and regain control of your time while keeping the communities you value."
 pubDate: 2026-02-01
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["stop reddit scrolling", "reddit addiction", "reduce reddit usage", "mindful reddit", "digital wellbeing", "stop scrolling"]
 heroImage: "/blog-placeholder-5.jpg"
@@ -11,18 +11,18 @@ faq:
   - question: "Why is Reddit so addictive?"
     answer: "Reddit combines several addictive design elements: infinite scroll, variable rewards (you never know what interesting post is next), community belonging (subreddits create identity attachment), content diversity (endless novelty), and the upvote system (social validation). Unlike platforms optimized for one content type, Reddit offers everything — news, humor, advice, stories, debates — making it harder to leave."
   - question: "How do I stop mindlessly scrolling Reddit?"
-    answer: "The most effective approach is using mindful interventions like Intently's Chrome extension, which creates a pause before Reddit loads. Combine this with replacing your front-page habit with direct subreddit visits, setting specific Reddit time windows, and using old.reddit.com which has a less addictive interface. Don't delete Reddit — build conscious usage habits instead."
+    answer: "The most effective approach is using mindful interventions like Pawse's Chrome extension, which creates a pause before Reddit loads. Combine this with replacing your front-page habit with direct subreddit visits, setting specific Reddit time windows, and using old.reddit.com which has a less addictive interface. Don't delete Reddit — build conscious usage habits instead."
   - question: "Is Reddit more addictive than other social media?"
     answer: "Reddit is uniquely addictive because of its content diversity and community structure. While Instagram hooks you with images and TikTok with videos, Reddit hooks you with virtually everything: discussions, news, stories, memes, advice, and niche interests. This variety means there's always something new and interesting, making it harder to reach a natural stopping point."
   - question: "How much time on Reddit is too much?"
     answer: "There's no universal threshold, but if Reddit consistently causes you to miss obligations, lose sleep, neglect relationships, or feel worse after using it, your usage has become problematic. Most people benefit from limiting Reddit to 30-60 minutes per day of intentional use, rather than hours of mindless front-page browsing."
   - question: "Should I delete my Reddit account to stop scrolling?"
-    answer: "Probably not. Deleting your account eliminates access to valuable communities and information. A better approach is shifting from passive browsing (endless front-page scrolling) to active use (visiting specific subreddits for specific purposes). Tools like Intently help you build this distinction by creating awareness before each Reddit session."
-  - question: "Does the Intently Chrome extension work for Reddit?"
-    answer: "Yes. Intently's Chrome extension creates a mindful pause when you navigate to Reddit or other distracting websites. It shows a customizable prompt asking if you intentionally want to visit the site, catching the automatic habit of typing 'reddit.com' when bored. This is especially effective for desktop Reddit users."
+    answer: "Probably not. Deleting your account eliminates access to valuable communities and information. A better approach is shifting from passive browsing (endless front-page scrolling) to active use (visiting specific subreddits for specific purposes). Tools like Pawse help you build this distinction by creating awareness before each Reddit session."
+  - question: "Does the Pawse Chrome extension work for Reddit?"
+    answer: "Yes. Pawse's Chrome extension creates a mindful pause when you navigate to Reddit or other distracting websites. It shows a customizable prompt asking if you intentionally want to visit the site, catching the automatic habit of typing 'reddit.com' when bored. This is especially effective for desktop Reddit users."
 howToSteps:
   - name: "Use Mindful Interventions Before Reddit"
-    text: "Install Intently (Android app and Chrome extension) to create a pause before Reddit opens. The prompt catches automatic browsing and gives you a moment to decide if you actually want to use Reddit right now."
+    text: "Install Pawse (Android app and Chrome extension) to create a pause before Reddit opens. The prompt catches automatic browsing and gives you a moment to decide if you actually want to use Reddit right now."
   - name: "Replace Front-Page Browsing with Direct Subreddit Visits"
     text: "Stop browsing the front page or r/all. Instead, go directly to 2-3 specific subreddits you value. This eliminates the infinite novelty that makes Reddit addictive and focuses your time on content that matters to you."
   - name: "Set Specific Reddit Windows"
@@ -51,9 +51,9 @@ And then there's the unpredictability. A post might have 5 upvotes or 5,000. A c
 
 Once you're on the front page, the variable rewards kick in and pulling away gets much harder. The most effective intervention happens before you start scrolling.
 
-**On your phone:** Install [Intently](/download) and add Reddit to your tracked apps. Every time you tap the Reddit icon, you'll see a brief prompt asking if this is an intentional visit.
+**On your phone:** Install [Pawse](/download) and add Reddit to your tracked apps. Every time you tap the Reddit icon, you'll see a brief prompt asking if this is an intentional visit.
 
-**On your computer:** Intently's Chrome extension catches the automatic "bored → type reddit.com → scroll" habit that most desktop users have. A pause screen appears before the page loads, giving you a moment to decide.
+**On your computer:** Pawse's Chrome extension catches the automatic "bored → type reddit.com → scroll" habit that most desktop users have. A pause screen appears before the page loads, giving you a moment to decide.
 
 Most Reddit sessions start unconsciously. You don't plan to spend 90 minutes there -- you plan to "quickly check," and 90 minutes later you realize what happened. The pause interrupts that autopilot.
 
@@ -73,7 +73,7 @@ Instead of Reddit being available whenever you're bored, pick specific times:
 - 20 minutes in the evening after you've finished what you need to do
 - 30 minutes on weekend mornings with coffee
 
-Set a timer before opening. When it goes off, close Reddit immediately. If you catch yourself reaching for it outside your windows, that's a sign the habit is still running on autopilot -- exactly what Intently is designed to catch.
+Set a timer before opening. When it goes off, close Reddit immediately. If you catch yourself reaching for it outside your windows, that's a sign the habit is still running on autopilot -- exactly what Pawse is designed to catch.
 
 ## Switch to a Less Addictive Interface
 
@@ -91,7 +91,7 @@ The formula is simple: "When I feel [trigger], instead of opening Reddit, I'll [
 
 ## Take Action
 
-1. [Download Intently](/download) -- set up the app and Chrome extension for Reddit
+1. [Download Pawse](/download) -- set up the app and Chrome extension for Reddit
 2. Bookmark 3-5 specific subreddits and delete your front-page bookmark
 3. Decide when you'll use Reddit and for how long
 4. Switch to old.reddit.com

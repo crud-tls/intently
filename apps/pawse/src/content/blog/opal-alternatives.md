@@ -1,25 +1,25 @@
 ---
 title: 'Best Opal Alternatives 2026: Free & Paid Screen Time Apps Compared'
-description: 'Looking for an Opal alternative? Compare the top screen time apps including Intently, One Sec, ScreenZen, and more. Find the best free and paid options to reduce screen time in 2026.'
+description: 'Looking for an Opal alternative? Compare the top screen time apps including Pawse, One Sec, ScreenZen, and more. Find the best free and paid options to reduce screen time in 2026.'
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'App Comparisons'
 tags: ['opal alternatives', 'opal alternative free', 'best opal alternative', 'screen time', 'app blockers', 'digital wellbeing']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: "Is Opal worth $99 per year?"
-    answer: "For most users, probably not. Opal's core features — app blocking and usage tracking — are available for free or at lower cost in alternatives like Intently, ScreenZen, and Apple Screen Time. The premium may be worth it if you specifically need Opal's focus score or team features, but many people find comparable results elsewhere."
+    answer: "For most users, probably not. Opal's core features — app blocking and usage tracking — are available for free or at lower cost in alternatives like Pawse, ScreenZen, and Apple Screen Time. The premium may be worth it if you specifically need Opal's focus score or team features, but many people find comparable results elsewhere."
   - question: "What's the best free alternative to Opal?"
-    answer: "Intently is a strong free option. It offers mindful interventions, usage tracking, gamification, and privacy with zero data collection. ScreenZen is another solid free choice if you prefer simple delay-based friction. Both are worth trying to see which approach suits you."
+    answer: "Pawse is a strong free option. It offers mindful interventions, usage tracking, gamification, and privacy with zero data collection. ScreenZen is another solid free choice if you prefer simple delay-based friction. Both are worth trying to see which approach suits you."
   - question: "Can I block apps without paying for Opal?"
-    answer: "Yes. Apple Screen Time (built into every iPhone) offers free app blocking. ScreenZen provides free app delays. Intently offers free mindful interventions on Android and Chrome. Cold Turkey offers a one-time $39 purchase for powerful desktop blocking. You do not need to pay $99/year to limit app access."
+    answer: "Yes. Apple Screen Time (built into every iPhone) offers free app blocking. ScreenZen provides free app delays. Pawse offers free mindful interventions on Android and Chrome. Cold Turkey offers a one-time $39 purchase for powerful desktop blocking. You do not need to pay $99/year to limit app access."
   - question: "Does Opal actually reduce screen time?"
-    answer: "Opal can reduce screen time in the short term through blocking. However, many users find that blocking alone does not change the underlying habit — when the block is lifted, old patterns return. Apps that combine awareness-building with friction, like Intently or One Sec, may offer more durable results for some users."
+    answer: "Opal can reduce screen time in the short term through blocking. However, many users find that blocking alone does not change the underlying habit — when the block is lifted, old patterns return. Apps that combine awareness-building with friction, like Pawse or One Sec, may offer more durable results for some users."
   - question: "What Opal alternative works on Android?"
-    answer: "Opal is iOS-only. For Android, Intently is a top free option with mindful interventions. ScreenZen, Freedom, Forest, and Cold Turkey also support Android or desktop. Google Digital Wellbeing comes built-in on most Android phones."
+    answer: "Opal is iOS-only. For Android, Pawse is a top free option with mindful interventions. ScreenZen, Freedom, Forest, and Cold Turkey also support Android or desktop. Google Digital Wellbeing comes built-in on most Android phones."
   - question: "Is there an Opal alternative that doesn't collect my data?"
-    answer: "Intently operates 100% offline with zero data collection — no cloud sync, no analytics, no account required. Cold Turkey also works without a cloud account for basic use. Most other alternatives, including Opal, require accounts and collect some usage data."
+    answer: "Pawse operates 100% offline with zero data collection — no cloud sync, no analytics, no account required. Cold Turkey also works without a cloud account for basic use. Most other alternatives, including Opal, require accounts and collect some usage data."
 ---
 
 # Best Opal Alternatives (2026 Review)
@@ -39,21 +39,21 @@ The complaints we see most often:
 - Requires an account and collects usage data
 - No desktop support for browser habits
 
-## Intently -- Mindful Interventions, Not Blocking
+## Pawse -- Mindful Interventions, Not Blocking
 
 Platform: Android, Chrome | Price: Free
 
-Intently doesn't block anything. Instead, when you open a distracting app, a full-screen pause appears -- a moment to ask yourself, "Do I actually want to do this right now?" It sounds simple, and it is, but that tiny gap between impulse and action turns out to be powerful.
+Pawse doesn't block anything. Instead, when you open a distracting app, a full-screen pause appears -- a moment to ask yourself, "Do I actually want to do this right now?" It sounds simple, and it is, but that tiny gap between impulse and action turns out to be powerful.
 
-What makes it different from Opal is the philosophy. Rather than locking you out, Intently builds the muscle of noticing your own behavior. Over time, you start catching yourself before the pause even appears. It also includes usage tracking (daily, weekly, monthly breakdowns), streaks and achievements for motivation, and it's completely free -- no ads, no premium tier, no "upgrade to unlock" walls.
+What makes it different from Opal is the philosophy. Rather than locking you out, Pawse builds the muscle of noticing your own behavior. Over time, you start catching yourself before the pause even appears. It also includes usage tracking (daily, weekly, monthly breakdowns), streaks and achievements for motivation, and it's completely free -- no ads, no premium tier, no "upgrade to unlock" walls.
 
-The privacy angle is worth mentioning too: Intently runs 100% offline. No account, no cloud sync, no data collection at all. For anyone wary of handing screen time data to yet another company, that's a real differentiator.
+The privacy angle is worth mentioning too: Pawse runs 100% offline. No account, no cloud sync, no data collection at all. For anyone wary of handing screen time data to yet another company, that's a real differentiator.
 
 The honest trade-off: there's no iOS version yet (it's in development), and if you genuinely need hard blocking -- like, "physically prevent me from opening Instagram" -- this isn't that tool. It's designed for people who want to build self-control, not outsource it.
 
 Rating: 4/5
 
-[Try Intently for free](/download)
+[Try Pawse for free](/download)
 
 ---
 
@@ -100,7 +100,7 @@ If you need to lock yourself out of distracting websites while working on your c
 
 It's a one-time $39 purchase (no subscription), and it doesn't require an account for basic use. The scheduling features are solid, letting you set recurring blocks with built-in breaks.
 
-The obvious gap: Cold Turkey is desktop-only. It can't touch your phone habits. If phone screen time is your main concern, you'll need to pair it with something like Intently or One Sec. It also won't teach you anything about why you're reaching for distractions -- it just makes them unavailable. For deep-focus work sessions, though, nothing else comes close.
+The obvious gap: Cold Turkey is desktop-only. It can't touch your phone habits. If phone screen time is your main concern, you'll need to pair it with something like Pawse or One Sec. It also won't teach you anything about why you're reaching for distractions -- it just makes them unavailable. For deep-focus work sessions, though, nothing else comes close.
 
 Rating: 4/5
 
@@ -170,7 +170,7 @@ Refocus combines time-limit-based usage management with mindful reminders. Set a
 
 The cross-platform support is a plus -- it works on both iOS and Android -- and the free tier is genuinely useful without aggressive upselling. The approach sits between hard blocking and pure mindful intervention: you get structure from the time limits plus awareness from the reminders.
 
-Where it falls short is depth. The analytics are basic compared to Intently or ActionDash, and the reminder system can start to feel routine after a few weeks. It's a solid middle-ground option for people who want some structure without the rigidity of a hard blocker.
+Where it falls short is depth. The analytics are basic compared to Pawse or ActionDash, and the reminder system can start to feel routine after a few weeks. It's a solid middle-ground option for people who want some structure without the rigidity of a hard blocker.
 
 Rating: 3.5/5
 
@@ -180,17 +180,17 @@ Rating: 3.5/5
 
 Here's how to narrow it down quickly:
 
-On a budget? Intently, ScreenZen, and Apple Screen Time are all free. Forest is a couple of bucks.
+On a budget? Pawse, ScreenZen, and Apple Screen Time are all free. Forest is a couple of bucks.
 
-Want to build awareness, not just block things? Intently (mindful pauses), One Sec (breathing exercises), and ScreenZen (delays) all take a friction-based approach rather than hard blocking.
+Want to build awareness, not just block things? Pawse (mindful pauses), One Sec (breathing exercises), and ScreenZen (delays) all take a friction-based approach rather than hard blocking.
 
-Need it on iPhone today? One Sec, ScreenZen, Forest, and Apple Screen Time all work on iOS now. Intently's iOS version isn't out yet.
+Need it on iPhone today? One Sec, ScreenZen, Forest, and Apple Screen Time all work on iOS now. Pawse's iOS version isn't out yet.
 
-Mostly a desktop problem? Cold Turkey for blocking. Intently's Chrome extension for browser habits.
+Mostly a desktop problem? Cold Turkey for blocking. Pawse's Chrome extension for browser habits.
 
-Care about privacy? Intently collects zero data and runs entirely offline. Cold Turkey doesn't require a cloud account for basic use.
+Care about privacy? Pawse collects zero data and runs entirely offline. Cold Turkey doesn't require a cloud account for basic use.
 
-Want research backing? One Sec has a published Max Planck Institute study behind it. Intently's approach is grounded in behavioral science research on habit interruption.
+Want research backing? One Sec has a published Max Planck Institute study behind it. Pawse's approach is grounded in behavioral science research on habit interruption.
 
 ---
 
@@ -202,11 +202,11 @@ Honestly, for most people, no. The core features -- blocking and usage tracking 
 
 **Does blocking apps actually reduce screen time long-term?**
 
-It can help short-term, but blocking alone rarely changes the underlying habit. When the restriction lifts, most people go right back to old patterns. Approaches that build self-awareness tend to produce more lasting change -- which is why tools like Intently and One Sec focus on friction and reflection rather than hard locks.
+It can help short-term, but blocking alone rarely changes the underlying habit. When the restriction lifts, most people go right back to old patterns. Approaches that build self-awareness tend to produce more lasting change -- which is why tools like Pawse and One Sec focus on friction and reflection rather than hard locks.
 
 **What works on Android?**
 
-Opal is iOS-only, so if you're on Android, your best free option is Intently (mindful interventions plus tracking). ScreenZen, Forest, and Freedom also support Android. Google Digital Wellbeing comes built into most Android phones, though it's pretty basic.
+Opal is iOS-only, so if you're on Android, your best free option is Pawse (mindful interventions plus tracking). ScreenZen, Forest, and Freedom also support Android. Google Digital Wellbeing comes built into most Android phones, though it's pretty basic.
 
 **How do I switch from Opal?**
 
@@ -233,4 +233,4 @@ Not sure what kind of phone user you are? Take our quick quiz to assess your hab
 
 ---
 
-*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

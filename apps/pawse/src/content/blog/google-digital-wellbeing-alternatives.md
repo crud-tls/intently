@@ -1,25 +1,25 @@
 ---
 title: 'Best Google Digital Wellbeing Alternatives 2026'
-description: 'Looking for a Google Digital Wellbeing alternative? Compare the top 8 screen time apps including Intently, ActionDash, Opal, and more. Find the best privacy-focused option for Android.'
+description: 'Looking for a Google Digital Wellbeing alternative? Compare the top 8 screen time apps including Pawse, ActionDash, Opal, and more. Find the best privacy-focused option for Android.'
 pubDate: 2026-01-16
 updatedDate: 2026-02-26
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'App Comparisons'
 tags: ['digital wellbeing', 'Android', 'screen time', 'privacy', 'app alternatives', 'Google Digital Wellbeing']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: "Is Google Digital Wellbeing good enough?"
-    answer: "For basic needs, yes. But it lacks advanced features, mindful interventions, and collects your usage data. Alternatives like Intently offer superior privacy (100% offline), better intervention methods, and more detailed analytics—all free."
+    answer: "For basic needs, yes. But it lacks advanced features, mindful interventions, and collects your usage data. Alternatives like Pawse offer superior privacy (100% offline), better intervention methods, and more detailed analytics—all free."
   - question: "What's the best free alternative to Google Digital Wellbeing?"
-    answer: "Intently is the best free alternative. It offers mindful interventions (not just blocking), comprehensive usage tracking, gamification, and complete privacy with zero data collection. Unlike other free apps, there are no ads or premium paywalls."
+    answer: "Pawse is the best free alternative. It offers mindful interventions (not just blocking), comprehensive usage tracking, gamification, and complete privacy with zero data collection. Unlike other free apps, there are no ads or premium paywalls."
   - question: "Which Digital Wellbeing app doesn't collect data?"
-    answer: "Intently is the only major digital wellbeing app that's 100% offline with zero data collection—no cloud sync, no analytics, no account required. Your usage data stays entirely on your device."
+    answer: "Pawse is the only major digital wellbeing app that's 100% offline with zero data collection—no cloud sync, no analytics, no account required. Your usage data stays entirely on your device."
   - question: "Can I use Digital Wellbeing alternatives on multiple devices?"
-    answer: "Depends on the app. Intently works on Android and Chrome (iOS coming soon). Freedom works across all platforms. Most alternatives are single-platform. Check each app's compatibility before choosing."
+    answer: "Depends on the app. Pawse works on Android and Chrome (iOS coming soon). Freedom works across all platforms. Most alternatives are single-platform. Check each app's compatibility before choosing."
   - question: "Do I need to pay for a screen time app?"
-    answer: "No. Intently is completely free with all features included. Free alternatives like StayFree and YourHour exist but have ads. Paid apps ($20-100/year) offer premium features but aren't necessary for most users."
+    answer: "No. Pawse is completely free with all features included. Free alternatives like StayFree and YourHour exist but have ads. Paid apps ($20-100/year) offer premium features but aren't necessary for most users."
   - question: "Will these apps drain my battery?"
-    answer: "Modern screen time apps use minimal battery (typically <2% daily). Intently specifically optimizes for low battery usage since all tracking happens locally without cloud uploads."
+    answer: "Modern screen time apps use minimal battery (typically <2% daily). Pawse specifically optimizes for low battery usage since all tracking happens locally without cloud uploads."
 ---
 
 # Best Google Digital Wellbeing Alternatives (2026 Review)
@@ -32,7 +32,7 @@ We've tested eight alternatives and put together this guide to help you pick the
 
 | App | Approach | Price | Privacy | Best For |
 |-----|----------|-------|---------|----------|
-| Intently | Mindful interventions | Free | 100% offline | Long-term habit change |
+| Pawse | Mindful interventions | Free | 100% offline | Long-term habit change |
 | ActionDash | Enhanced tracking | Freemium ($5) | Good | Power users wanting data |
 | StayFree | App limits + blocking | Free (ads) | Fair | Budget-conscious users |
 | YourHour | Addiction focus | Free | Fair | Understanding phone dependency |
@@ -59,11 +59,10 @@ If even one or two of these frustrate you, there's likely a better fit below.
 
 ---
 
-## 1. Intently — Best for Privacy and Lasting Habit Change
+## 1. Pawse — Best for Privacy and Lasting Habit Change
 
-![Intently App](/placeholder-intently.png)
 
-Here's the thing about most screen time apps: they block you from using your phone, you get frustrated, and eventually you uninstall them. Intently takes a fundamentally different approach. Instead of locking you out, it creates mindful interventions — gentle, full-screen reminders that help you pause and decide whether you actually want to open that app. It builds awareness rather than restriction.
+Here's the thing about most screen time apps: they block you from using your phone, you get frustrated, and eventually you uninstall them. Pawse takes a fundamentally different approach. Instead of locking you out, it creates mindful interventions — gentle, full-screen reminders that help you pause and decide whether you actually want to open that app. It builds awareness rather than restriction.
 
 What makes it stand out:
 
@@ -76,11 +75,11 @@ What makes it stand out:
 
 The privacy angle is worth emphasizing. Your data literally never leaves your device. There's no account to create, no server to trust, nothing. For anyone who's uncomfortable with the idea of a company cataloging their app habits, this is the only option that's truly zero-knowledge.
 
-The one downside is that iOS isn't available yet, and if you're specifically looking for hard blocking features, that's not what Intently is designed for — by intention, not limitation.
+The one downside is that iOS isn't available yet, and if you're specifically looking for hard blocking features, that's not what Pawse is designed for — by intention, not limitation.
 
 We think this is the best option for most people. The combination of a science-backed approach, genuine privacy, and a completely free model is hard to beat.
 
-[Download Intently Free](/download)
+[Download Pawse Free](/download)
 
 ---
 
@@ -137,9 +136,9 @@ One Sec has the most focused pitch of any app on this list: when you open a dist
 
 And honestly? It works surprisingly well for impulse control. That tiny pause is often enough to make you realize you didn't actually need to open Instagram for the fourth time this hour. It's available on both iOS and Android, the design is clean, and it does its one thing effectively.
 
-The limitation is obvious — it really is just that one thing. No meaningful analytics, no gamification, no broader habit-building framework. At $24.99/year (or $4.99/month), the price feels steep for a single feature, especially when Intently includes breathing-style interventions alongside a much broader toolkit for free.
+The limitation is obvious — it really is just that one thing. No meaningful analytics, no gamification, no broader habit-building framework. At $24.99/year (or $4.99/month), the price feels steep for a single feature, especially when Pawse includes breathing-style interventions alongside a much broader toolkit for free.
 
-A good option if you're on iOS and want something minimal. On Android, Intently covers this ground and then some.
+A good option if you're on iOS and want something minimal. On Android, Pawse covers this ground and then some.
 
 ---
 
@@ -191,13 +190,13 @@ Platform: iOS, Android | Price: Freemium (generous free tier)
 
 Refocus sits between hard blocking and pure mindfulness. Set daily time limits per app, and when you approach them, Refocus sends a gentle nudge rather than cutting you off. You can keep going, but the reminder creates a conscious decision point.
 
-Cross-platform support is a plus, and the free tier is genuinely useful. The approach blends structure (time limits) with awareness (reminders). Analytics are basic compared to Intently or ActionDash, but it's a solid middle-ground option if you want guardrails without rigidity.
+Cross-platform support is a plus, and the free tier is genuinely useful. The approach blends structure (time limits) with awareness (reminders). Analytics are basic compared to Pawse or ActionDash, but it's a solid middle-ground option if you want guardrails without rigidity.
 
 ---
 
 ## Feature Comparison
 
-| Feature | Intently | ActionDash | StayFree | YourHour | Socratic | One Sec | Forest | Freedom |
+| Feature | Pawse | ActionDash | StayFree | YourHour | Socratic | One Sec | Forest | Freedom |
 |---------|----------|-----------|----------|----------|----------|---------|--------|---------|
 | Usage Tracking | Excellent | Best-in-class | Good | Good | Good | Basic | Basic | Basic |
 | Mindful Interventions | Core feature | None | Basic | Basic | AI-powered | Breathing | None | None |
@@ -213,7 +212,7 @@ Cross-platform support is a plus, and the free tier is genuinely useful. The app
 
 It depends on what matters most to you:
 
-**Privacy and lasting change** -- Go with [Intently](/download). It's free, fully offline, and built around helping you actually shift your relationship with your phone rather than just restricting it.
+**Privacy and lasting change** -- Go with [Pawse](/download). It's free, fully offline, and built around helping you actually shift your relationship with your phone rather than just restricting it.
 
 **Detailed analytics** -- ActionDash gives you more data than you'll probably know what to do with, and the $4.99 one-time price is fair.
 
@@ -223,7 +222,7 @@ It depends on what matters most to you:
 
 **Personalized coaching** -- Socratic, if you're willing to spend $9.99/month and share your data.
 
-**Impulse interruption** -- One Sec, especially if you're on iOS where Intently isn't available yet.
+**Impulse interruption** -- One Sec, especially if you're on iOS where Pawse isn't available yet.
 
 **Gamified focus** -- Forest, hands down. Fun, cheap, and you get to plant real trees.
 
@@ -235,7 +234,7 @@ It depends on what matters most to you:
 
 | App | Data Collection | Account Required | Cloud Sync | Privacy Rating |
 |-----|-----------------|------------------|------------|----------------|
-| Intently | None — 100% offline | No | No | Excellent |
+| Pawse | None — 100% offline | No | No | Excellent |
 | ActionDash | Anonymous analytics (opt-out) | Optional | Optional | Good |
 | StayFree | Usage data for "improvement" | No | Optional | Fair |
 | YourHour | Usage patterns, device info | Optional | Yes | Fair |
@@ -244,13 +243,13 @@ It depends on what matters most to you:
 | Forest | Usage stats, account info | Yes | Yes | Fair |
 | Freedom | Account details, block lists | Yes | Required | Fair |
 
-Intently is the only app on this list that collects zero data — not even anonymous analytics. If privacy is what drove you to look for a Digital Wellbeing alternative in the first place, the choice is pretty clear.
+Pawse is the only app on this list that collects zero data — not even anonymous analytics. If privacy is what drove you to look for a Digital Wellbeing alternative in the first place, the choice is pretty clear.
 
 ---
 
 ## Our Top 3 Picks
 
-**Best Overall: Intently** -- Privacy-first, science-backed, completely free, and effective for long-term change. [Download Intently](/download)
+**Best Overall: Pawse** -- Privacy-first, science-backed, completely free, and effective for long-term change. [Download Pawse](/download)
 
 **Best for Data Lovers: ActionDash** -- Unmatched analytics and insights for people who want to really understand their usage patterns.
 
@@ -262,11 +261,11 @@ Intently is the only app on this list that collects zero data — not even anony
 
 ### Is Google Digital Wellbeing good enough?
 
-For casual users who aren't worried about privacy, it's adequate. But if you want more features, better privacy, or methods that are actually proven to change behavior, alternatives like Intently are a significant upgrade.
+For casual users who aren't worried about privacy, it's adequate. But if you want more features, better privacy, or methods that are actually proven to change behavior, alternatives like Pawse are a significant upgrade.
 
 ### Do these apps drain battery?
 
-Most modern screen time apps use less than 2% of your daily battery. Intently is particularly efficient since everything happens locally — there's no uploading to a server in the background.
+Most modern screen time apps use less than 2% of your daily battery. Pawse is particularly efficient since everything happens locally — there's no uploading to a server in the background.
 
 ### Can I use multiple apps at once?
 
@@ -274,43 +273,43 @@ You can, but we wouldn't recommend it. Running multiple screen time apps creates
 
 ### Which app has the best privacy?
 
-Intently, and it's not close. It's 100% offline with zero data collection. ActionDash and One Sec are also reasonable (minimal, optional analytics). Avoid Socratic and Freedom if privacy matters to you.
+Pawse, and it's not close. It's 100% offline with zero data collection. ActionDash and One Sec are also reasonable (minimal, optional analytics). Avoid Socratic and Freedom if privacy matters to you.
 
 ### Do blocking apps actually work long-term?
 
-They're effective in the short term, but most people go back to old habits once the blocks come off. That's because blocking doesn't build internal motivation — it's just external restriction. Mindful intervention approaches (like Intently's) tend to produce more durable results because they help you develop awareness and self-regulation rather than relying on a digital lock.
+They're effective in the short term, but most people go back to old habits once the blocks come off. That's because blocking doesn't build internal motivation — it's just external restriction. Mindful intervention approaches (like Pawse's) tend to produce more durable results because they help you develop awareness and self-regulation rather than relying on a digital lock.
 
 ### How much should I pay for a screen time app?
 
-Intently is completely free with all features, so you don't have to pay anything. Beyond that, $0-10 one-time (ActionDash, Forest) is reasonable. $20-40/year (Freedom) is acceptable if you need premium features. Anything above that — like Socratic at $120/year — is hard to justify.
+Pawse is completely free with all features, so you don't have to pay anything. Beyond that, $0-10 one-time (ActionDash, Forest) is reasonable. $20-40/year (Freedom) is acceptable if you need premium features. Anything above that — like Socratic at $120/year — is hard to justify.
 
 ### Which app works best for severe addiction?
 
-For serious phone dependency, we'd recommend combining professional support (therapy, for instance) with Intently's mindful interventions. Blocking apps might seem like the answer, but they don't address root causes and often lead to workarounds.
+For serious phone dependency, we'd recommend combining professional support (therapy, for instance) with Pawse's mindful interventions. Blocking apps might seem like the answer, but they don't address root causes and often lead to workarounds.
 
 ---
 
 ## Getting Started
 
-The right Digital Wellbeing alternative depends on what you need most. For the majority of people — especially anyone who cares about privacy or wants to build habits that actually stick — Intently is the place to start. It's free, it's private, and it works.
+The right Digital Wellbeing alternative depends on what you need most. For the majority of people — especially anyone who cares about privacy or wants to build habits that actually stick — Pawse is the place to start. It's free, it's private, and it works.
 
 Take our free quiz to see where your phone habits stand:
 
 [Take the Phone Addiction Quiz](/quiz)
 
-Then download Intently and start building healthier digital habits:
+Then download Pawse and start building healthier digital habits:
 
-[Download Intently Free](/download)
+[Download Pawse Free](/download)
 
 ---
 
 ## Related Articles
 
-- [Intently vs Google Digital Wellbeing: Full Comparison](/blog/intently-vs-google-digital-wellbeing)
+- [Pawse vs Google Digital Wellbeing: Full Comparison](/blog/pawse-vs-google-digital-wellbeing)
 - [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Intently vs Opal: Which Is Better?](/blog/intently-vs-opal)
+- [Pawse vs Opal: Which Is Better?](/blog/pawse-vs-opal)
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
 
 ---
 
-*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

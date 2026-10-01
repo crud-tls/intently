@@ -17,7 +17,7 @@ const {
 	value = 0,
 	label = '',
 	unit = '',
-	color = 'var(--intently-blue)',
+	color = 'var(--ds-blue)',
 	size = 'md'
 } = Astro.props;
 
@@ -40,7 +40,7 @@ const offset = circumference - ((value || 0) / 100) * circumference;
 				cy="50"
 				r="45"
 				fill="none"
-				stroke="var(--intently-gray-200)"
+				stroke="var(--ds-gray-200)"
 				stroke-width="8"
 			/>
 			<circle
@@ -85,7 +85,7 @@ const offset = circumference - ((value || 0) / 100) * circumference;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 	}
 
 	/* Circular progress */
@@ -106,7 +106,7 @@ const offset = circumference - ((value || 0) / 100) * circumference;
 	.dataviz-value {
 		font-size: 1.25rem;
 		font-weight: 700;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	/* Counter */
@@ -119,19 +119,19 @@ const offset = circumference - ((value || 0) / 100) * circumference;
 	.counter-value {
 		font-size: 3rem;
 		font-weight: 800;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		line-height: 1;
 	}
 
 	.counter-unit {
 		font-size: 1.5rem;
 		font-weight: 600;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	/* Label */
 	.dataviz-label {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		font-weight: 500;
 		text-align: center;
 		font-size: 0.9375rem;
@@ -176,7 +176,7 @@ const offset = circumference - ((value || 0) / 100) * circumference;
 	/* Dark mode */
 	@media (prefers-color-scheme: dark) {
 		.dataviz-circle circle:first-child {
-			stroke: var(--intently-gray-700);
+			stroke: var(--ds-gray-700);
 		}
 	}
 

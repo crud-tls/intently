@@ -21,11 +21,11 @@ const subjectOptions = [
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Contact Us - Get in Touch | Intently" description="Have questions, feedback, or need support? We'd love to hear from you. Send us a message and we'll get back to you as soon as possible." />
+		<BaseHead title="Contact Us - Get in Touch | Pawse" description="Have questions, feedback, or need support? We'd love to hear from you. Send us a message and we'll get back to you as soon as possible." />
 		<BreadcrumbSchema
 			items={[
-				{ name: "Home", url: "https://liveintently.app" },
-				{ name: "Contact", url: "https://liveintently.app/contact" }
+				{ name: "Home", url: "https://pawse.liveintently.app" },
+				{ name: "Contact", url: "https://pawse.liveintently.app/contact" }
 			]}
 		/>
 	</head>
@@ -260,8 +260,8 @@ const subjectOptions = [
 	   ============================ */
 	.contact-hero {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-secondary) 100%);
+		padding: var(--ds-space-2xl) 0;
+		background: linear-gradient(180deg, var(--ds-bg-accent) 0%, var(--ds-bg-secondary) 100%);
 		text-align: center;
 		position: relative;
 		overflow: hidden;
@@ -288,10 +288,10 @@ const subjectOptions = [
 	.text-gradient {
 		font-size: 2rem;
 		font-weight: 800;
-		margin: 0 0 var(--intently-space-md);
+		margin: 0 0 var(--ds-space-md);
 		letter-spacing: -0.02em;
 		line-height: 1.2;
-		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -301,7 +301,7 @@ const subjectOptions = [
 		font-size: 1.125rem;
 		max-width: 700px;
 		margin: 0 auto;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		line-height: 1.6;
 	}
 
@@ -316,15 +316,15 @@ const subjectOptions = [
 	   ============================ */
 	.contact-form-section {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
 		min-height: 60vh;
 	}
 
 	.contact-content {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: var(--intently-space-xl);
+		gap: var(--ds-space-xl);
 		max-width: 1000px;
 		margin: 0 auto;
 		align-items: start;
@@ -332,7 +332,7 @@ const subjectOptions = [
 
 	/* Glass form card */
 	.form-glass-card {
-		padding: var(--intently-space-2xl);
+		padding: var(--ds-space-2xl);
 		background: rgba(255, 255, 255, 0.75);
 		backdrop-filter: blur(20px) saturate(160%);
 		-webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -356,7 +356,7 @@ const subjectOptions = [
 	.contact-form {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 	}
 
 	.submit-btn-wrapper {
@@ -369,8 +369,8 @@ const subjectOptions = [
 
 	/* Form status messages */
 	.form-status {
-		padding: var(--intently-space-md);
-		border-radius: var(--intently-radius-md);
+		padding: var(--ds-space-md);
+		border-radius: var(--ds-radius-md);
 		font-size: 0.9375rem;
 		display: none;
 	}
@@ -380,15 +380,15 @@ const subjectOptions = [
 	}
 
 	.form-status.success {
-		background: var(--intently-bg-success);
-		color: var(--intently-green-dark);
-		border: 1px solid var(--intently-green-light);
+		background: var(--ds-bg-success);
+		color: var(--ds-green-dark);
+		border: 1px solid var(--ds-green-light);
 	}
 
 	.form-status.error {
-		background: var(--intently-bg-error);
-		color: var(--intently-red-dark);
-		border: 1px solid var(--intently-red-light);
+		background: var(--ds-bg-error);
+		color: var(--ds-red-dark);
+		border: 1px solid var(--ds-red-light);
 	}
 
 	/* Contact Animation */
@@ -414,7 +414,7 @@ const subjectOptions = [
 	@media (min-width: 768px) {
 		.contact-hero,
 		.contact-form-section {
-			padding: var(--intently-space-3xl) 0;
+			padding: var(--ds-space-3xl) 0;
 		}
 
 		.text-gradient {
@@ -434,7 +434,7 @@ const subjectOptions = [
 	@media (min-width: 1024px) {
 		.contact-hero,
 		.contact-form-section {
-			padding: var(--intently-space-4xl) 0;
+			padding: var(--ds-space-4xl) 0;
 		}
 
 		.text-gradient {
@@ -449,7 +449,7 @@ const subjectOptions = [
 
 	@media (max-width: 767px) {
 		.form-glass-card {
-			padding: var(--intently-space-lg);
+			padding: var(--ds-space-lg);
 		}
 	}
 
@@ -459,7 +459,7 @@ const subjectOptions = [
 
 	a:focus-visible,
 	button:focus-visible {
-		outline: 2px solid var(--intently-blue);
+		outline: 2px solid var(--ds-blue);
 		outline-offset: 2px;
 	}
 

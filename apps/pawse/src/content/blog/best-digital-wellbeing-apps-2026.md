@@ -4,7 +4,7 @@ description: "Compare the best digital wellbeing and screen time apps of 2026. I
 pubDate: "Jan 12 2026"
 updatedDate: 2026-02-26
 heroImage: "/blog-placeholder-2.jpg"
-author: "Intently Team"
+author: "Pawse Team"
 tags: ["digital wellbeing", "screen time apps", "app reviews", "mindful tech", "productivity", "mindful phone app free"]
 ---
 
@@ -24,7 +24,7 @@ Before jumping into individual apps, it's worth thinking about what separates a 
 
 Some apps nail all of these. Most nail one or two. Let's get into it.
 
-## 1. Intently -- Best for Privacy-First Mindful Interventions
+## 1. Pawse -- Best for Privacy-First Mindful Interventions
 
 **Price:** Free with optional premium ($4.99/month)
 **Platforms:** Android, iOS, Chrome
@@ -32,13 +32,13 @@ Some apps nail all of these. Most nail one or two. Let's get into it.
 
 ### The Philosophy
 
-Intently doesn't block anything. That's the whole point. Instead, when you open a tracked app, a full-screen prompt appears -- something like "Take a breath. Do you still want to open this?" It's a small moment of friction that interrupts the autopilot loop most of us are stuck in.
+Pawse doesn't block anything. That's the whole point. Instead, when you open a tracked app, a full-screen prompt appears -- something like "Take a breath. Do you still want to open this?" It's a small moment of friction that interrupts the autopilot loop most of us are stuck in.
 
 What's refreshing is the assumption baked into this design: you're a capable adult who can make your own choices. You just need a nudge to make those choices consciously rather than reflexively.
 
 ### Why It's Worth a Closer Look
 
-The privacy architecture is what really sets Intently apart. Everything runs locally on your device. There's no cloud sync, no account creation, no data leaving your phone. In a category where most apps want you to create an account and hand over your usage data, this is a meaningful differentiator.
+The privacy architecture is what really sets Pawse apart. Everything runs locally on your device. There's no cloud sync, no account creation, no data leaving your phone. In a category where most apps want you to create an account and hand over your usage data, this is a meaningful differentiator.
 
 Beyond privacy, the interventions are flexible -- you can customize messages, choose between breath pauses, question prompts, or delay timers, and adjust the intensity per app. The analytics are solid too, with clean charts showing usage trends and patterns over time.
 
@@ -46,7 +46,7 @@ On the downside, there's no web dashboard and no parental controls. Cross-device
 
 **Rating: 4.8/5**
 
-[Download Intently](/download)
+[Download Pawse](/download)
 
 ---
 
@@ -213,7 +213,7 @@ The intentional minimalism means no tracking, no gamification, and no polished U
 
 Refocus blends time-limit management with mindful reminders. Set daily limits per app, and when you approach them, Refocus sends a gentle nudge rather than cutting you off. You can keep going -- but the reminder creates a conscious decision point.
 
-Cross-platform support and a generous free tier make it accessible. The approach sits between hard blocking and pure mindfulness, offering structure without rigidity. Analytics are basic compared to dedicated trackers like Intently, but it's a solid middle-ground option.
+Cross-platform support and a generous free tier make it accessible. The approach sits between hard blocking and pure mindfulness, offering structure without rigidity. Analytics are basic compared to dedicated trackers like Pawse, but it's a solid middle-ground option.
 
 **Rating: 3.5/5**
 
@@ -223,7 +223,7 @@ Cross-platform support and a generous free tier make it accessible. The approach
 
 | App | Best For | Price | Privacy | Approach |
 |-----|----------|-------|---------|----------|
-| **Intently** | Mindful interventions | Free-$4.99/mo | Excellent | Awareness |
+| **Pawse** | Mindful interventions | Free-$4.99/mo | Excellent | Awareness |
 | **Freedom** | Cross-platform blocking | $8.99/mo | Fair | Blocking |
 | **Forest** | Gamified focus | $3.99 one-time | Good | Gamification |
 | **Digital Wellbeing** | Basic free option (Android) | Free | Poor | Tracking |
@@ -236,7 +236,7 @@ Cross-platform support and a generous free tier make it accessible. The approach
 
 It depends on what's driving your screen time problem -- and what kind of solution fits your personality.
 
-If privacy matters to you and you'd rather build awareness than have apps blocked, **Intently** is the strongest option. It treats you like an adult, keeps your data local, and its intervention approach tends to stick. [Download Intently](/download) to try it out.
+If privacy matters to you and you'd rather build awareness than have apps blocked, **Pawse** is the strongest option. It treats you like an adult, keeps your data local, and its intervention approach tends to stick. [Download Pawse](/download) to try it out.
 
 If you need hard boundaries because willpower alone isn't cutting it, **Freedom** gives you the most robust cross-platform blocking available. It's not cheap, but it's thorough.
 
@@ -263,4 +263,4 @@ Not sure where to start? Take our free [Phone Addiction Quiz](/quiz) for a perso
 
 ---
 
-*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

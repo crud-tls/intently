@@ -1,8 +1,8 @@
 ---
 title: 'The Science of Friction: Why a 3-Second Pause Changes Everything'
-description: 'Why does a brief pause before opening an app reduce screen time by over 50%? Explore the behavioral science behind friction, nudge theory, and choice architecture — and how Intently uses it to change phone habits.'
+description: 'Why does a brief pause before opening an app reduce screen time by over 50%? Explore the behavioral science behind friction, nudge theory, and choice architecture — and how Pawse uses it to change phone habits.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['friction behavior change', 'nudge theory phone', 'science of friction screen time', 'choice architecture', 'behavioral science']
 heroImage: '/blog-placeholder-5.jpg'
@@ -15,8 +15,8 @@ faq:
     answer: "Nudge theory, developed by Richard Thaler and Cass Sunstein, proposes that subtle changes in how choices are presented (choice architecture) can significantly influence decisions without restricting options. A nudge preserves freedom of choice while steering behavior toward better outcomes. Mindful phone interventions are a classic example of a nudge in action."
   - question: "Why is friction more effective than blocking apps?"
     answer: "Blocking removes choice entirely, which triggers psychological reactance — a well-documented urge to do the exact thing that's been restricted. Friction preserves your autonomy while creating a moment of awareness. Because you can still proceed, there's no reactance. But the brief pause is enough to interrupt autopilot behavior in most cases."
-  - question: "How does Intently use friction to change phone habits?"
-    answer: "Intently creates a full-screen mindful intervention when you open a flagged app — a brief pause that asks you to take a breath and consider whether you really want to proceed. You can always open the app. The friction is just enough to shift you from automatic to intentional, without feeling punitive or restrictive."
+  - question: "How does Pawse use friction to change phone habits?"
+    answer: "Pawse creates a full-screen mindful intervention when you open a flagged app — a brief pause that asks you to take a breath and consider whether you really want to proceed. You can always open the app. The friction is just enough to shift you from automatic to intentional, without feeling punitive or restrictive."
   - question: "Does friction work for other habits besides phone use?"
     answer: "Yes. Friction is used across many domains: placing healthier food at eye level in cafeterias increases healthy eating by 25%, adding a confirmation step before large purchases reduces impulse buying, and opt-out organ donation (where you have to actively choose not to donate) dramatically increases donation rates. The principle is universal — small barriers change behavior at scale."
 ---
@@ -25,7 +25,7 @@ faq:
 
 Here's something counterintuitive: one of the most powerful forces in behavior change isn't motivation, willpower, or education. It's friction — the tiny obstacles between you and an action. Add a few seconds of friction to a behavior, and you can cut it in half. Remove friction from a better behavior, and adoption skyrockets.
 
-This principle is the foundation of how apps like Intently work. A brief pause before opening Instagram doesn't sound like it should matter. Three seconds? That's nothing. But the research says otherwise — and understanding why changes how you think about your phone habits, your environment, and how change actually happens.
+This principle is the foundation of how apps like Pawse work. A brief pause before opening Instagram doesn't sound like it should matter. Three seconds? That's nothing. But the research says otherwise — and understanding why changes how you think about your phone habits, your environment, and how change actually happens.
 
 ## What Friction Is (and Why It's So Powerful)
 
@@ -97,9 +97,9 @@ Research on interruption timing suggests there's an optimal window for behavior-
 
 The 3-second mark is where awareness kicks in without annoyance. It's the minimum effective dose — just enough friction to create a moment of choice.
 
-## Intently's Design Philosophy
+## Pawse's Design Philosophy
 
-Intently is built around this science. When you tap a flagged app, a full-screen intervention appears — not a block, not a countdown, but a moment of mindful awareness.
+Pawse is built around this science. When you tap a flagged app, a full-screen intervention appears — not a block, not a countdown, but a moment of mindful awareness.
 
 The design choices are deliberate:
 
@@ -132,7 +132,7 @@ You're not fighting yourself. You're fighting billions of dollars of friction en
 
 Adding friction back — one small pause at a time — levels the playing field. It doesn't require superhuman willpower. It just requires a 3-second gap between impulse and action. And that gap, as the research consistently shows, changes everything.
 
-Ready to add the right kind of friction to your phone habits? [Download Intently](/download) and discover what a moment of awareness can do.
+Ready to add the right kind of friction to your phone habits? [Download Pawse](/download) and discover what a moment of awareness can do.
 
 ---
 

@@ -3,7 +3,7 @@ title: "Social Media Addiction Signs: 10 Warning Signs You Need to Know"
 description: "Wondering if you're addicted to social media? Discover the 10 warning signs of social media addiction, understand the science behind compulsive use, and learn what steps to take if you recognize yourself in these symptoms."
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["social media addiction signs", "am I addicted to social media", "social media addiction symptoms", "phone addiction signs", "digital wellbeing", "social media habits"]
 heroImage: "/blog-placeholder-5.jpg"
@@ -19,7 +19,7 @@ faq:
   - question: "What causes social media addiction?"
     answer: "Social media addiction results from the interaction between platform design (variable rewards, infinite scroll, social validation, algorithmic personalization) and individual vulnerability factors (loneliness, anxiety, low self-esteem, ADHD, depression). The platforms are engineered to maximize engagement, and some people are neurologically more susceptible to these design patterns."
   - question: "Can social media addiction be cured?"
-    answer: "Yes. Unlike substance addiction where complete abstinence is often necessary, social media addiction can typically be resolved through mindful use practices, environmental design, and addressing underlying psychological needs. Most people do not need to quit social media entirely—they need to shift from compulsive to intentional use. Tools like Intently and strategies like those in this article support that transition."
+    answer: "Yes. Unlike substance addiction where complete abstinence is often necessary, social media addiction can typically be resolved through mindful use practices, environmental design, and addressing underlying psychological needs. Most people do not need to quit social media entirely—they need to shift from compulsive to intentional use. Tools like Pawse and strategies like those in this article support that transition."
 ---
 
 # Social Media Addiction Signs: 10 Warning Signs You Need to Know
@@ -141,7 +141,7 @@ Count how many of those 10 signs ring true for you:
 |-------|-------|---------------|-------------------|
 | **0-2** | Healthy range | Your social media use is probably fine | Keep being intentional; check in periodically |
 | **3-4** | Early warning | Patterns are forming but aren't deeply wired yet | Start with the strategies below -- this is the best time to act |
-| **5-7** | Problem use | Your relationship with social media needs active intervention | Implement several strategies from this article; try a tool like [Intently](/download) |
+| **5-7** | Problem use | Your relationship with social media needs active intervention | Implement several strategies from this article; try a tool like [Pawse](/download) |
 | **8-10** | Addiction-level | Significant behavioral addiction pattern | Use strategies below and seriously consider professional help |
 
 For a more detailed, personalized look at your habits, take our free [Phone Addiction Quiz](/quiz) -- it evaluates your specific patterns and gives you tailored recommendations.
@@ -159,16 +159,16 @@ Self-compassion -- not self-punishment -- is what actually drives change. If you
 Most people underestimate their social media time by about 50%. Before changing anything, get the real numbers:
 
 - Check your phone's built-in screen time data (iPhone: Settings > Screen Time; Android: Settings > Digital Wellbeing)
-- Install Intently for detailed, privacy-first tracking across all your social media apps
+- Install Pawse for detailed, privacy-first tracking across all your social media apps
 - Record a full week of usage without trying to change anything
 
 Seeing your actual numbers is often the thing that turns vague worry into real motivation.
 
 ### Step 3: Set Up Mindful Interventions
 
-[Download Intently](/download) and configure it for whatever apps give you the most trouble. It shows a gentle pause screen before each app opens -- just a moment that asks, "Do you actually want to do this right now?"
+[Download Pawse](/download) and configure it for whatever apps give you the most trouble. It shows a gentle pause screen before each app opens -- just a moment that asks, "Do you actually want to do this right now?"
 
-That single question is surprisingly powerful. Intently doesn't block or restrict anything. It just interrupts the autopilot. And for compulsive behavior that runs on autopilot, that interruption changes the equation.
+That single question is surprisingly powerful. Pawse doesn't block or restrict anything. It just interrupts the autopilot. And for compulsive behavior that runs on autopilot, that interruption changes the equation.
 
 ### Step 4: Change Your Environment
 
@@ -219,9 +219,9 @@ Check your usage data once a week:
 
 A 20% reduction in the first month is genuinely great progress. A 50% reduction over three months is life-changing. You're not going for perfection -- you're going for a better trajectory.
 
-## How Intently Helps
+## How Pawse Helps
 
-Intently was built for exactly this kind of behavior change:
+Pawse was built for exactly this kind of behavior change:
 
 - Mindful pause screens before social media apps open, creating a moment of conscious choice
 - Detailed usage tracking with daily and weekly trends
@@ -230,9 +230,9 @@ Intently was built for exactly this kind of behavior change:
 - Never blocks access -- it preserves your autonomy while building awareness
 - Works on Android, iOS, and Chrome
 
-Unlike blockers that just trigger frustration (and creative workarounds), Intently builds real self-awareness. Over time, you internalize the pause and don't need the prompt anymore. That's lasting change.
+Unlike blockers that just trigger frustration (and creative workarounds), Pawse builds real self-awareness. Over time, you internalize the pause and don't need the prompt anymore. That's lasting change.
 
-[Download Intently](/download) and start using social media on your terms.
+[Download Pawse](/download) and start using social media on your terms.
 
 ## When to Seek Professional Help
 
@@ -264,13 +264,13 @@ They're related but not the same. Phone addiction covers compulsive use of any p
 It's a combination of how the platforms are designed (variable rewards, infinite scroll, social validation, algorithmic personalization) and individual factors (loneliness, anxiety, low self-esteem, ADHD, depression). The platforms are built to maximize engagement, and some people are more neurologically susceptible to those design patterns.
 
 **Can social media addiction be cured?**
-Yes. Unlike substance addiction, you don't usually need to quit entirely. Most people can shift from compulsive use to intentional use through mindful habits, environmental changes, and addressing the needs that social media was filling. Tools like Intently support that shift.
+Yes. Unlike substance addiction, you don't usually need to quit entirely. Most people can shift from compulsive use to intentional use through mindful habits, environmental changes, and addressing the needs that social media was filling. Tools like Pawse support that shift.
 
 ## Moving Forward
 
 If you recognized yourself in several of these signs, here's what matters most: you noticed. That awareness is the foundation everything else builds on. You're not broken, and you're not weak. You're dealing with platforms engineered by some of the smartest people in tech to capture exactly this level of engagement.
 
-The way out isn't about punishment or going cold turkey. It's about building awareness, making intentional choices, and being patient with yourself. Start with our [Phone Addiction Quiz](/quiz) for a personalized picture of your habits, then [download Intently](/download) to start building the mindful habits that make real change possible.
+The way out isn't about punishment or going cold turkey. It's about building awareness, making intentional choices, and being patient with yourself. Start with our [Phone Addiction Quiz](/quiz) for a personalized picture of your habits, then [download Pawse](/download) to start building the mindful habits that make real change possible.
 
 You deserve to use technology on your terms.
 

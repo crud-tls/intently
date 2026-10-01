@@ -1,14 +1,14 @@
 ---
 title: 'Best StayFocusd Alternatives 2026: Chrome Extensions to Block Distractions'
-description: 'Looking for a StayFocusd alternative? Compare the top Chrome extensions for blocking distracting websites — including Intently, LeechBlock, Cold Turkey, Freedom, and BlockSite. Free and paid options reviewed.'
+description: 'Looking for a StayFocusd alternative? Compare the top Chrome extensions for blocking distracting websites — including Pawse, LeechBlock, Cold Turkey, Freedom, and BlockSite. Free and paid options reviewed.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'App Comparisons'
 tags: ['stayfocusd alternative', 'stayfocusd alternatives 2026', 'chrome blocker alternative', 'focus chrome extension', 'block distracting websites']
 heroImage: '/blog-placeholder-3.jpg'
 faq:
   - question: "What is the best free alternative to StayFocusd?"
-    answer: "LeechBlock is the closest free alternative to StayFocusd for schedule-based blocking, with more flexible rules. For a fundamentally different approach, Intently's Chrome extension creates mindful pauses before distracting sites — building awareness rather than enforcing blocks. Both are free and privacy-friendly."
+    answer: "LeechBlock is the closest free alternative to StayFocusd for schedule-based blocking, with more flexible rules. For a fundamentally different approach, Pawse's Chrome extension creates mindful pauses before distracting sites — building awareness rather than enforcing blocks. Both are free and privacy-friendly."
   - question: "Is StayFocusd still being updated?"
     answer: "StayFocusd has been around since 2011 and receives periodic updates, but the interface and feature set feel dated compared to newer alternatives. It still works reliably for its core function (daily time limits with the Nuclear Option), but users looking for modern design, better customization, or mindful approaches may prefer alternatives."
   - question: "What is the Nuclear Option in StayFocusd?"
@@ -16,9 +16,9 @@ faq:
   - question: "Can Chrome extensions really block distracting websites?"
     answer: "Yes, but with limitations. Chrome extensions can block websites within Chrome, but they don't block access through other browsers, apps, or incognito mode (unless specifically configured). For truly comprehensive blocking, cross-device tools like Freedom or Cold Turkey's desktop app are more robust. Chrome extensions are best for people whose primary distraction happens in the browser."
   - question: "Is blocking or mindful awareness better for focus?"
-    answer: "Research suggests mindful awareness approaches build more sustainable habits because they develop internal self-regulation. Blocking provides stronger immediate enforcement but doesn't change the underlying urge. The most effective strategy for many people is mindful awareness for daily use (Intently) with blocking reserved for specific high-distraction periods (StayFocusd Nuclear Option, Cold Turkey)."
+    answer: "Research suggests mindful awareness approaches build more sustainable habits because they develop internal self-regulation. Blocking provides stronger immediate enforcement but doesn't change the underlying urge. The most effective strategy for many people is mindful awareness for daily use (Pawse) with blocking reserved for specific high-distraction periods (StayFocusd Nuclear Option, Cold Turkey)."
   - question: "Do Chrome focus extensions work in incognito mode?"
-    answer: "By default, Chrome extensions don't run in incognito mode. Most blocking extensions (StayFocusd, LeechBlock, BlockSite) can be enabled for incognito through Chrome's extension settings. Intently also supports incognito when enabled. Always configure this if you want comprehensive coverage, as incognito is a common bypass route."
+    answer: "By default, Chrome extensions don't run in incognito mode. Most blocking extensions (StayFocusd, LeechBlock, BlockSite) can be enabled for incognito through Chrome's extension settings. Pawse also supports incognito when enabled. Always configure this if you want comprehensive coverage, as incognito is a common bypass route."
 ---
 
 # Best StayFocusd Alternatives (2026 Review)
@@ -29,19 +29,19 @@ But the extension is showing its age. The interface hasn't had a major refresh i
 
 ## The Alternatives
 
-### Intently Chrome Extension — Mindful Awareness, Not Blocking
+### Pawse for Chrome — Mindful Awareness, Not Blocking
 
 **Price**: Free | **Approach**: Mindful pause before sites load
 
-Intently takes a fundamentally different approach from StayFocusd. Instead of blocking sites after a time limit, it creates a brief moment of awareness before the site loads — a full-screen prompt that asks you to take a breath and decide whether you really want to be there.
+Pawse takes a fundamentally different approach from StayFocusd. Instead of blocking sites after a time limit, it creates a brief moment of awareness before the site loads — a full-screen prompt that asks you to take a breath and decide whether you really want to be there.
 
-This matters because StayFocusd's blocking doesn't change the underlying habit. When your daily limit resets at midnight, old patterns are right where you left them. Intently builds awareness that persists because each pause is a practice rep for conscious decision-making.
+This matters because StayFocusd's blocking doesn't change the underlying habit. When your daily limit resets at midnight, old patterns are right where you left them. Pawse builds awareness that persists because each pause is a practice rep for conscious decision-making.
 
 There's no time limit, no scheduling, no Nuclear Option. It's purely about creating a moment of choice at the decision point. For people who want to build lasting self-regulation rather than outsource willpower to a blocker, this is the right tool.
 
 Rating: 4/5 — Best for building lasting habits. Free, lightweight, and privacy-first. Different philosophy than StayFocusd.
 
-[Add Intently to Chrome](/download)
+[Add Pawse to Chrome](/download)
 
 ---
 
@@ -117,7 +117,7 @@ This isn't a single extension but a combination approach that's worth considerin
 
 This is philosophically different from both blocking and pausing. You can still use these platforms for their legitimate purposes — you just can't lose yourself in the algorithmic feed. For people who need social media for work or connection but waste hours in the feed, this combination is transformative.
 
-Rating: 4/5 — The smartest approach for people who need platforms but not the feed. Pairs well with Intently.
+Rating: 4/5 — The smartest approach for people who need platforms but not the feed. Pairs well with Pawse.
 
 ---
 
@@ -126,7 +126,7 @@ Rating: 4/5 — The smartest approach for people who need platforms but not the 
 | Extension | Approach | Price | Enforcement | Best For |
 |-----------|----------|-------|-------------|----------|
 | **StayFocusd** | Daily time limits | Free | Strong (Nuclear Option) | Simple daily limits |
-| **Intently** | Mindful pause | Free | Soft (awareness-based) | Building lasting habits |
+| **Pawse** | Mindful pause | Free | Soft (awareness-based) | Building lasting habits |
 | **LeechBlock** | Flexible rules | Free | Moderate | Complex scheduling needs |
 | **Cold Turkey** | Unbreakable blocking | $39 once | Maximum | Absolute enforcement |
 | **Freedom** | Cross-device blocking | ~$40/yr | Strong | Multi-device consistency |
@@ -140,7 +140,7 @@ Rating: 4/5 — The smartest approach for people who need platforms but not the 
 - **Zero cost**: Completely free with no premium tier.
 - **Simplicity**: For basic daily time limits, setup takes 5 minutes.
 
-The reasons to explore alternatives: more flexible rules (LeechBlock), stronger enforcement (Cold Turkey), cross-device coverage (Freedom), awareness-building instead of blocking (Intently), or surgical feed removal (News Feed Eradicator + Unhook).
+The reasons to explore alternatives: more flexible rules (LeechBlock), stronger enforcement (Cold Turkey), cross-device coverage (Freedom), awareness-building instead of blocking (Pawse), or surgical feed removal (News Feed Eradicator + Unhook).
 
 ---
 
@@ -150,21 +150,21 @@ The reasons to explore alternatives: more flexible rules (LeechBlock), stronger 
 
 **Want StayFocusd but stronger**: Cold Turkey's desktop app + Chrome component is genuinely unbreakable.
 
-**Want something fundamentally different**: Intently builds awareness and self-regulation instead of enforcing restrictions. Better for lasting change.
+**Want something fundamentally different**: Pawse builds awareness and self-regulation instead of enforcing restrictions. Better for lasting change.
 
 **Want to keep sites but remove feeds**: News Feed Eradicator + Unhook YouTube surgically remove the addictive parts.
 
 **Want cross-device coverage**: Freedom blocks across all devices and browsers.
 
-The best approach for many people combines tools: Intently for daily mindful awareness, plus News Feed Eradicator for social media, with StayFocusd's Nuclear Option or Cold Turkey reserved for when you need guaranteed enforcement during critical work periods.
+The best approach for many people combines tools: Pawse for daily mindful awareness, plus News Feed Eradicator for social media, with StayFocusd's Nuclear Option or Cold Turkey reserved for when you need guaranteed enforcement during critical work periods.
 
 ---
 
 ## Frequently Asked Questions
 
-### Can I use StayFocusd and Intently together?
+### Can I use StayFocusd and Pawse together?
 
-Yes. They take different approaches (blocking vs. awareness) that complement each other. Use StayFocusd's time limits or Nuclear Option for specific enforcement periods, and Intently's mindful pauses for the rest of your browsing.
+Yes. They take different approaches (blocking vs. awareness) that complement each other. Use StayFocusd's time limits or Nuclear Option for specific enforcement periods, and Pawse's mindful pauses for the rest of your browsing.
 
 ### What happens when StayFocusd's daily limit resets?
 
@@ -176,13 +176,13 @@ On desktop, effectively yes. You cannot disable it during an active block by any
 
 ### Which is better for students?
 
-For studying: Cold Turkey or StayFocusd's Nuclear Option during study sessions provides guaranteed enforcement. For building long-term habits: Intently builds the self-regulation skills that will serve you beyond school. Ideally, use both — enforcement during study blocks, awareness the rest of the time.
+For studying: Cold Turkey or StayFocusd's Nuclear Option during study sessions provides guaranteed enforcement. For building long-term habits: Pawse builds the self-regulation skills that will serve you beyond school. Ideally, use both — enforcement during study blocks, awareness the rest of the time.
 
 ---
 
 ## Getting Started
 
-If StayFocusd has been working for you, keep it for the Nuclear Option during critical focus periods. Add [Intently's Chrome extension](/download) for daily awareness-building — the mindful pause approach complements StayFocusd's enforcement perfectly.
+If StayFocusd has been working for you, keep it for the Nuclear Option during critical focus periods. Add [Pawse's Chrome extension](/download) for daily awareness-building — the mindful pause approach complements StayFocusd's enforcement perfectly.
 
 [Take the Phone Habit Quiz](/quiz)
 
@@ -198,4 +198,4 @@ If StayFocusd has been working for you, keep it for the Nuclear Option during cr
 
 ---
 
-*Last updated: February 28, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 28, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

@@ -17,18 +17,18 @@ const { title, description, buttonText, buttonLink } = Astro.props;
 
 <style>
 	.cta-box {
-		background: var(--intently-blue);
+		background: var(--ds-blue);
 		color: white;
-		padding: var(--intently-space-2xl);
-		border-radius: var(--intently-radius-md);
+		padding: var(--ds-space-2xl);
+		border-radius: var(--ds-radius-md);
 		text-align: center;
-		margin: var(--intently-space-3xl) 0;
+		margin: var(--ds-space-3xl) 0;
 	}
 
 	.cta-box h3 {
 		font-size: 1.5rem;
 		font-weight: 600;
-		margin-bottom: var(--intently-space-md);
+		margin-bottom: var(--ds-space-md);
 		color: white;
 	}
 
@@ -42,17 +42,17 @@ const { title, description, buttonText, buttonLink } = Astro.props;
 	.cta-button {
 		display: inline-block;
 		background: white;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		padding: 0.75rem 2rem;
-		border-radius: var(--intently-radius-sm);
+		border-radius: var(--ds-radius-sm);
 		text-decoration: none;
 		font-weight: 600;
-		margin-top: var(--intently-space-lg);
-		transition: transform var(--intently-transition-fast), box-shadow var(--intently-transition-fast);
+		margin-top: var(--ds-space-lg);
+		transition: transform var(--ds-transition-fast), box-shadow var(--ds-transition-fast);
 	}
 
 	.cta-button:hover {
 		transform: translateY(-2px);
-		box-shadow: var(--intently-shadow-md);
+		box-shadow: var(--ds-shadow-md);
 	}
 </style>

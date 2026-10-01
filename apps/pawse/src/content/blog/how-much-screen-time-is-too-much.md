@@ -3,7 +3,7 @@ title: "How Much Screen Time Is Too Much? What Research Actually Says"
 description: "Wondering how much screen time is too much? Explore what research actually says about healthy screen time limits for adults, teens, and children, and learn how to find your personal balance."
 pubDate: 2026-02-01
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["how much screen time is too much", "screen time recommendations", "healthy screen time", "screen time limits", "digital wellbeing"]
 heroImage: "/blog-placeholder-3.jpg"
@@ -19,7 +19,7 @@ faq:
   - question: "Should I count work screen time toward my daily total?"
     answer: "It depends on your goals. For physical health concerns like eye strain, all screen time counts. For mental health and digital wellbeing purposes, non-work screen time is more relevant since you often have less control over work requirements. Track both but focus on reducing discretionary screen time first."
   - question: "How do I find my personal screen time sweet spot?"
-    answer: "Track your usage and mood for two weeks using an app like Intently. Note how you feel at different usage levels. Most people find a clear threshold where additional screen time stops adding value and starts causing negative effects. This personal threshold is more useful than any general guideline."
+    answer: "Track your usage and mood for two weeks using an app like Pawse. Note how you feel at different usage levels. Most people find a clear threshold where additional screen time stops adding value and starts causing negative effects. This personal threshold is more useful than any general guideline."
 ---
 
 # How Much Screen Time Is Too Much? What Research Actually Says
@@ -66,11 +66,11 @@ If several of these feel familiar, it's worth taking a closer look at your habit
 
 Since everyone's threshold is different, the most useful thing you can do is run a simple experiment on yourself.
 
-Start by tracking your current usage honestly for a week. Use a privacy-first app like [Intently](/download) that keeps your data on your device. Pay attention to your total time, which apps eat the most of it, when your heaviest use happens, and -- this part is important -- how you actually feel at different usage levels. Most people are surprised by how much they underestimate their real numbers.
+Start by tracking your current usage honestly for a week. Use a privacy-first app like [Pawse](/download) that keeps your data on your device. Pay attention to your total time, which apps eat the most of it, when your heaviest use happens, and -- this part is important -- how you actually feel at different usage levels. Most people are surprised by how much they underestimate their real numbers.
 
 Then, for two weeks, try cutting your recreational screen time by about 25%. Rate your mood, energy, sleep, and focus each day, even just on a quick 1-10 scale. Compare those ratings to your baseline week. Most people notice real improvements in sleep and focus within the first several days.
 
-From there, adjust up or down until you land on the amount that lets you feel your best. For most adults, that tends to be somewhere in the 1.5 to 3.5 hour range for recreational use, but yours might be different. Once you know your number, tools like [Intently's mindful interventions](/blog/mindful-tech-interventions-vs-blocking) can help you stick to it -- not by hard-blocking apps, but by creating a moment of awareness before you open them. That pause is often all it takes.
+From there, adjust up or down until you land on the amount that lets you feel your best. For most adults, that tends to be somewhere in the 1.5 to 3.5 hour range for recreational use, but yours might be different. Once you know your number, tools like [Pawse's mindful interventions](/blog/mindful-tech-interventions-vs-blocking) can help you stick to it -- not by hard-blocking apps, but by creating a moment of awareness before you open them. That pause is often all it takes.
 
 ## What About Specific Activities?
 
@@ -96,7 +96,7 @@ There isn't a magic number of screen time hours that works for everyone. What th
 
 The goal isn't to cut screens out of your life -- that's not realistic and it's not necessary. The goal is to use them on your terms, in ways that actually add something to your day instead of quietly draining it.
 
-Ready to find out where you stand? [Download Intently](/download) to start tracking your usage privately, and use mindful interventions to stay in the zone that feels right for you.
+Ready to find out where you stand? [Download Pawse](/download) to start tracking your usage privately, and use mindful interventions to stay in the zone that feels right for you.
 
 ---
 

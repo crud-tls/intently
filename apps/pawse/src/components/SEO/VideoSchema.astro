@@ -36,7 +36,7 @@ const videoSchema = {
   "@type": "VideoObject",
   "name": name,
   "description": description,
-  "thumbnailUrl": thumbnailUrl.startsWith('http') ? thumbnailUrl : `https://liveintently.app${thumbnailUrl}`,
+  "thumbnailUrl": thumbnailUrl.startsWith('http') ? thumbnailUrl : `https://pawse.liveintently.app${thumbnailUrl}`,
   "uploadDate": uploadDate,
   "duration": duration,
   "contentUrl": contentUrl,
@@ -46,10 +46,10 @@ const videoSchema = {
   "expires": expires,
   "publisher": {
     "@type": "Organization",
-    "name": "Intently",
+    "name": "Pawse",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://liveintently.app/favicon.svg"
+      "url": "https://pawse.liveintently.app/favicon.svg"
     }
   }
 };

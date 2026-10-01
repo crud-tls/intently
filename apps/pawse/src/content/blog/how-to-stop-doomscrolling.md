@@ -3,7 +3,7 @@ title: "How to Stop Doomscrolling: 7 Science-Backed Strategies That Work"
 description: "Learn how to stop doomscrolling with 7 proven strategies backed by behavioral psychology. Understand why doomscrolling is addictive and how mindful interventions break the cycle for good."
 pubDate: 2026-02-01
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["stop doomscrolling", "how to stop doomscrolling", "doomscrolling addiction", "negative news scrolling", "digital wellbeing", "mindful phone use"]
 heroImage: "/blog-placeholder-3.jpg"
@@ -18,13 +18,13 @@ faq:
     answer: "Yes. While all mindless scrolling can be harmful, doomscrolling specifically activates the brain's threat-detection system, triggering fight-or-flight responses to content that poses no immediate danger. This chronic stress activation is more damaging than passive entertainment scrolling because it keeps your nervous system in a heightened alert state."
   - question: "What time of day is doomscrolling most harmful?"
     answer: "Doomscrolling is most harmful at night before bed and first thing in the morning. Nighttime doomscrolling disrupts sleep by activating stress hormones and suppressing melatonin. Morning doomscrolling sets a negative emotional tone for the entire day, priming your brain to seek out more negative information."
-  - question: "Can Intently help me stop doomscrolling?"
-    answer: "Yes. Intently creates a mindful pause before you open news apps and social media, giving you a moment to consciously decide whether scrolling serves you right now. This brief intervention breaks the automatic habit loop that drives doomscrolling, and many users report significantly fewer unconscious app opens."
+  - question: "Can Pawse help me stop doomscrolling?"
+    answer: "Yes. Pawse creates a mindful pause before you open news apps and social media, giving you a moment to consciously decide whether scrolling serves you right now. This brief intervention breaks the automatic habit loop that drives doomscrolling, and many users report significantly fewer unconscious app opens."
 howToSteps:
   - name: "Recognize Your Doomscrolling Triggers"
-    text: "Track when and why you doomscroll for one week. Common triggers include anxiety, boredom, loneliness, and the transition between tasks. Use a simple journal or Intently's usage tracking to identify your personal patterns and peak doomscrolling times."
+    text: "Track when and why you doomscroll for one week. Common triggers include anxiety, boredom, loneliness, and the transition between tasks. Use a simple journal or Pawse's usage tracking to identify your personal patterns and peak doomscrolling times."
   - name: "Set Up Mindful Interventions on News and Social Apps"
-    text: "Install Intently and configure mindful pause screens for your most-used news and social media apps. The gentle reminder before each open activates conscious decision-making, breaking the automatic reach-and-scroll habit that drives doomscrolling."
+    text: "Install Pawse and configure mindful pause screens for your most-used news and social media apps. The gentle reminder before each open activates conscious decision-making, breaking the automatic reach-and-scroll habit that drives doomscrolling."
   - name: "Create Scheduled News Check-Ins"
     text: "Replace continuous news monitoring with two or three scheduled check-ins per day, each lasting no more than 15 minutes. Choose specific times like 8 AM, 12 PM, and 6 PM. Outside these windows, news apps remain closed."
   - name: "Curate Your Information Diet"
@@ -79,19 +79,19 @@ This isn't just a time sink. It takes a real toll.
 
 Before you try to fix the habit, spend a week just watching it. Track when you doomscroll (morning? bedtime? lunch break?), where you are, what triggered it (boredom, anxiety, a notification), how long you scrolled, and how you felt before and after.
 
-A simple notes app works, or you can use Intently's usage tracking. Most people find two or three triggers that account for the vast majority of their scrolling. Once you see the pattern, the rest of these strategies become much easier to aim.
+A simple notes app works, or you can use Pawse's usage tracking. Most people find two or three triggers that account for the vast majority of their scrolling. Once you see the pattern, the rest of these strategies become much easier to aim.
 
 ### 2. Interrupt the Autopilot
 
 Doomscrolling thrives on automatic behavior -- you tap the app before you've even thought about it. The most effective counter is a moment of conscious awareness right at that point of entry.
 
-Intently does exactly this. When you tap a news or social media app, it shows a gentle, full-screen pause:
+Pawse does exactly this. When you tap a news or social media app, it shows a gentle, full-screen pause:
 
 > *"Take a breath. You wanted to spend less time on news today. Do you still want to open this?"*
 
 You can always proceed. The point isn't to block anything -- it's to give your rational brain a chance to weigh in before habit takes over. That brief pause is enough to ask yourself: "Am I opening this for a reason, or am I about to spiral?"
 
-[Download Intently](/download) and set it up on your go-to doomscrolling apps: Twitter/X, Reddit, news apps, Facebook.
+[Download Pawse](/download) and set it up on your go-to doomscrolling apps: Twitter/X, Reddit, news apps, Facebook.
 
 ### 3. Schedule Your News
 
@@ -103,7 +103,7 @@ Replace the all-day drip feed with two or three intentional check-ins:
 4. When the timer's up, close the app
 5. Outside those windows, news apps stay closed
 
-You'll still be informed. You'll just get there in a fraction of the time, without the compulsive background hum. You can use Intently's scheduling features to set stronger interventions outside your designated windows.
+You'll still be informed. You'll just get there in a fraction of the time, without the compulsive background hum. You can use Pawse's scheduling features to set stronger interventions outside your designated windows.
 
 ### 4. Clean Up Your Feeds
 
@@ -141,9 +141,9 @@ This is the single highest-impact change for most people. Build a wind-down rout
 
 Over time, your brain starts associating these cues with calm and sleep, making the routine easier to stick with. For more on this, read our full guide on [how to stop scrolling at night](/blog/stop-scrolling-at-night).
 
-## How Intently Helps
+## How Pawse Helps
 
-Doomscrolling runs on autopilot. Intently interrupts that autopilot at exactly the right moment -- the split second between tapping the app and entering the feed. That's all it takes to shift from reactive habit to conscious choice.
+Doomscrolling runs on autopilot. Pawse interrupts that autopilot at exactly the right moment -- the split second between tapping the app and entering the feed. That's all it takes to shift from reactive habit to conscious choice.
 
 Here's what it looks like in practice:
 
@@ -155,7 +155,7 @@ Here's what it looks like in practice:
 
 It's not a blocker. It doesn't punish you. It builds genuine self-awareness so you learn to catch yourself before the spiral starts.
 
-[Download Intently](/download) and start breaking the cycle today.
+[Download Pawse](/download) and start breaking the cycle today.
 
 ## When to Get Professional Support
 
@@ -169,7 +169,7 @@ You can be well-informed and mentally healthy at the same time. It just requires
 
 Pick one strategy from this list and try it for a week. If it helps, layer in another. Gradual momentum beats a dramatic overhaul every time.
 
-Ready to start? [Download Intently](/download) and build mindful digital habits that actually stick.
+Ready to start? [Download Pawse](/download) and build mindful digital habits that actually stick.
 
 ---
 

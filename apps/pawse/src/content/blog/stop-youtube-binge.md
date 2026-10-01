@@ -3,7 +3,7 @@ title: "How to Stop YouTube Binge Watching: Mindful Strategies That Work"
 description: "Stop YouTube binge watching with proven strategies. Learn how to break the autoplay cycle, watch intentionally, and reclaim hours of your week while still enjoying content you love."
 pubDate: 2026-01-23
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["youtube addiction", "stop youtube binge", "reduce youtube usage", "mindful streaming", "digital wellbeing"]
 heroImage: "/blog-youtube-binge.jpg"
@@ -55,13 +55,13 @@ Without a preset limit, every individual video feels like a valid reason to cont
 
 ## Add a Mindful Pause
 
-Intently can show you a brief prompt before YouTube opens:
+Pawse can show you a brief prompt before YouTube opens:
 
 > *"Take a breath. How long do you want to spend on YouTube? Is now the right time?"*
 
 You can always proceed. But that moment of awareness turns an automatic habit into a deliberate choice. It's the difference between drifting into a three-hour session and deciding to watch for 20 minutes.
 
-[Download Intently](/download) to add this to your YouTube routine.
+[Download Pawse](/download) to add this to your YouTube routine.
 
 ## Use Watch Lists Instead of the Homepage
 
@@ -88,14 +88,14 @@ Have something specific to do next. Read a chapter. Go for a walk. Start a task 
 
 ## Tools That Help
 
-Intently supports intentional YouTube habits:
+Pawse supports intentional YouTube habits:
 
 - Mindful prompts before each session
 - Custom reminders you write yourself
 - Usage tracking to see your patterns
 - Works on Android, iOS, and Chrome
 
-[Download Intently free](/download) and take control of your YouTube time.
+[Download Pawse free](/download) and take control of your YouTube time.
 
 ---
 

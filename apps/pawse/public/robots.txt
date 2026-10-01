@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://liveintently.app/sitemap-index.xml
+Sitemap: https://pawse.liveintently.app/sitemap-index.xml

@@ -32,14 +32,14 @@ const faqs = [
 <html lang="en">
 	<head>
 		<BaseHead
-			title="App Addiction Score: How Toxic Are Your Apps? (Free Test) | Intently"
+			title="App Addiction Score: How Toxic Are Your Apps? (Free Test) | Pawse"
 			description="Get your free digital toxicity report. See how addictive your apps really are with FDA-style nutrition labels and RPG trading cards. Science-backed scoring across 6 addiction factors. 100% private."
 		/>
 		<FAQSchema faqs={faqs} />
 		<BreadcrumbSchema
 			items={[
-				{ name: "Home", url: "https://liveintently.app" },
-				{ name: "App Addiction Score", url: "https://liveintently.app/app-addiction-score" }
+				{ name: "Home", url: "https://pawse.liveintently.app" },
+				{ name: "App Addiction Score", url: "https://pawse.liveintently.app/app-addiction-score" }
 			]}
 		/>
 	</head>
@@ -108,7 +108,7 @@ const faqs = [
 									<div class="scan-ring" aria-hidden="true">
 										<svg viewBox="0 0 100 100">
 											<circle cx="50" cy="50" r="45" fill="none" stroke="rgba(33,150,243,0.15)" stroke-width="4" />
-											<circle cx="50" cy="50" r="45" fill="none" stroke="var(--intently-blue)" stroke-width="4"
+											<circle cx="50" cy="50" r="45" fill="none" stroke="var(--ds-blue)" stroke-width="4"
 												stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round"
 												class="scan-progress" />
 										</svg>
@@ -126,9 +126,9 @@ const faqs = [
 										<svg viewBox="0 0 200 120" class="gauge-svg" aria-label="Toxicity score gauge">
 											<defs>
 												<linearGradient id="gauge-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-													<stop offset="0%" stop-color="var(--intently-green)" />
-													<stop offset="40%" stop-color="var(--intently-orange)" />
-													<stop offset="100%" stop-color="var(--intently-red)" />
+													<stop offset="0%" stop-color="var(--ds-green)" />
+													<stop offset="40%" stop-color="var(--ds-orange)" />
+													<stop offset="100%" stop-color="var(--ds-red)" />
 												</linearGradient>
 											</defs>
 											<!-- Background arc -->
@@ -173,7 +173,7 @@ const faqs = [
 								</div>
 
 								<div class="cta-buttons">
-									<Button href="/download" variant="primary" size="lg">Try Intently Free</Button>
+									<Button href="/download" variant="primary" size="lg">Try Pawse Free</Button>
 									<Button href="/screen-time-calculator" variant="secondary" size="lg">Calculate Your Screen Time</Button>
 								</div>
 
@@ -220,7 +220,7 @@ const faqs = [
 							))}
 
 							<div class="quiz-links">
-								<p>Explore the <a href="/blog/psychology-of-app-addiction">psychology of app addiction</a>, learn about <a href="/blog/mindful-tech-interventions-vs-blocking">mindful interventions vs blocking</a>, or <a href="/download">download Intently free</a>.</p>
+								<p>Explore the <a href="/blog/psychology-of-app-addiction">psychology of app addiction</a>, learn about <a href="/blog/mindful-tech-interventions-vs-blocking">mindful interventions vs blocking</a>, or <a href="/download">download Pawse free</a>.</p>
 							</div>
 						</div>
 					</ScrollReveal>
@@ -319,7 +319,7 @@ const faqs = [
 			};
 
 			const factorTips: Record<string, string> = {
-				infiniteScroll: 'Set a timer before opening apps with infinite feeds. Intently can create a mindful pause before you start scrolling.',
+				infiniteScroll: 'Set a timer before opening apps with infinite feeds. Pawse can create a mindful pause before you start scrolling.',
 				variableRewards: 'Turn off like counts and follower notifications. The unpredictability of rewards is what makes them addictive.',
 				notifications: 'Disable all non-essential notifications. Keep only messages from real people, not engagement bait.',
 				autoplay: 'Turn off autoplay in every app that has it. Make the next video a conscious choice, not a default.',
@@ -346,10 +346,10 @@ const faqs = [
 			}
 
 			function getLevel(score: number): { label: string; color: string } {
-				if (score >= 76) return { label: 'Critical', color: 'var(--intently-red)' };
-				if (score >= 51) return { label: 'High', color: 'var(--intently-orange)' };
-				if (score >= 26) return { label: 'Moderate', color: 'var(--intently-orange)' };
-				return { label: 'Low', color: 'var(--intently-green)' };
+				if (score >= 76) return { label: 'Critical', color: 'var(--ds-red)' };
+				if (score >= 51) return { label: 'High', color: 'var(--ds-orange)' };
+				if (score >= 26) return { label: 'Moderate', color: 'var(--ds-orange)' };
+				return { label: 'Low', color: 'var(--ds-green)' };
 			}
 
 			function getIntensity(val: number): string {
@@ -751,8 +751,8 @@ const faqs = [
 	   ============================ */
 	.score-hero {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-secondary) 100%);
+		padding: var(--ds-space-2xl) 0;
+		background: linear-gradient(180deg, var(--ds-bg-accent) 0%, var(--ds-bg-secondary) 100%);
 		text-align: center;
 		position: relative;
 		overflow: hidden;
@@ -779,10 +779,10 @@ const faqs = [
 	.text-gradient {
 		font-size: 2rem;
 		font-weight: 800;
-		margin: 0 0 var(--intently-space-md);
+		margin: 0 0 var(--ds-space-md);
 		letter-spacing: -0.02em;
 		line-height: 1.2;
-		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -790,14 +790,14 @@ const faqs = [
 
 	.hero-subtitle {
 		font-size: 1.125rem;
-		margin: 0 0 var(--intently-space-md);
-		color: var(--intently-text-secondary);
+		margin: 0 0 var(--ds-space-md);
+		color: var(--ds-text-secondary);
 		line-height: 1.6;
 	}
 
 	.quiz-meta-pills {
 		display: flex;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 		justify-content: center;
 		flex-wrap: wrap;
 	}
@@ -807,10 +807,10 @@ const faqs = [
 		align-items: center;
 		font-size: 0.8125rem;
 		font-weight: 600;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		background: rgba(33, 150, 243, 0.08);
 		padding: 0.25rem 0.75rem;
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		border: 1px solid rgba(33, 150, 243, 0.15);
 	}
 
@@ -819,12 +819,12 @@ const faqs = [
 	   ============================ */
 	.score-section {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
 	}
 
 	.score-glass-card {
-		padding: var(--intently-space-2xl);
+		padding: var(--ds-space-2xl);
 		background: rgba(255, 255, 255, 0.75);
 		backdrop-filter: blur(20px) saturate(160%);
 		-webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -833,21 +833,21 @@ const faqs = [
 			inset 0 1px 0 rgba(255, 255, 255, 0.9),
 			0 4px 20px rgba(0, 0, 0, 0.06);
 		border-radius: 24px;
-		margin-bottom: var(--intently-space-2xl);
+		margin-bottom: var(--ds-space-2xl);
 	}
 
 	/* Phase common */
 	.phase-title {
 		font-size: 1.5rem;
 		font-weight: 700;
-		color: var(--intently-text-primary);
-		margin: 0 0 var(--intently-space-sm);
+		color: var(--ds-text-primary);
+		margin: 0 0 var(--ds-space-sm);
 		text-align: center;
 	}
 
 	.phase-hint {
-		color: var(--intently-text-hint);
-		margin: 0 0 var(--intently-space-xl);
+		color: var(--ds-text-hint);
+		margin: 0 0 var(--ds-space-xl);
 		text-align: center;
 		font-size: 0.875rem;
 	}
@@ -858,8 +858,8 @@ const faqs = [
 	.app-select-grid {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: var(--intently-space-sm);
-		margin-bottom: var(--intently-space-xl);
+		gap: var(--ds-space-sm);
+		margin-bottom: var(--ds-space-xl);
 	}
 
 	.app-select-card {
@@ -869,9 +869,9 @@ const faqs = [
 		justify-content: center;
 		gap: 0.625rem;
 		padding: 1rem 0.5rem 0.75rem;
-		border-radius: var(--intently-radius-lg);
-		background: var(--intently-bg-primary);
-		border: 1.5px solid var(--intently-gray-200);
+		border-radius: var(--ds-radius-lg);
+		background: var(--ds-bg-primary);
+		border: 1.5px solid var(--ds-gray-200);
 		cursor: pointer;
 		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 		position: relative;
@@ -884,7 +884,7 @@ const faqs = [
 
 	@media (hover: hover) {
 		.app-select-card:hover {
-			border-color: var(--intently-gray-300);
+			border-color: var(--ds-gray-300);
 			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 			transform: translateY(-1px);
 		}
@@ -895,8 +895,8 @@ const faqs = [
 	}
 
 	.app-select-card.selected {
-		border-color: var(--intently-blue);
-		background: var(--intently-bg-accent);
+		border-color: var(--ds-blue);
+		background: var(--ds-bg-accent);
 		box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.15);
 	}
 
@@ -910,7 +910,7 @@ const faqs = [
 	}
 
 	.app-select-card.selected .asc-name {
-		color: var(--intently-blue-dark);
+		color: var(--ds-blue-dark);
 	}
 
 	.app-select-card.selected::after {
@@ -921,7 +921,7 @@ const faqs = [
 		font-size: 0.625rem;
 		font-weight: 700;
 		color: white;
-		background: var(--intently-blue);
+		background: var(--ds-blue);
 		border-radius: 50%;
 		width: 20px;
 		height: 20px;
@@ -948,7 +948,7 @@ const faqs = [
 	.asc-name {
 		font-size: 0.6875rem;
 		font-weight: 600;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		text-align: center;
 		line-height: 1.2;
 		transition: color 0.2s ease;
@@ -959,9 +959,9 @@ const faqs = [
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0.625rem 0.625rem 0.625rem var(--intently-space-lg);
+		padding: 0.625rem 0.625rem 0.625rem var(--ds-space-lg);
 		background: rgba(33, 150, 243, 0.05);
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		border: 1px solid rgba(33, 150, 243, 0.12);
 		animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 	}
@@ -979,13 +979,13 @@ const faqs = [
 
 	#selected-count {
 		font-weight: 600;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		font-size: 0.875rem;
 	}
 
 	.analyze-btn {
 		padding: 0.75rem 2rem;
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		background: rgba(33, 150, 243, 0.85);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
@@ -1017,7 +1017,7 @@ const faqs = [
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: var(--intently-space-4xl) 0;
+		padding: var(--ds-space-4xl) 0;
 		position: relative;
 		min-height: 280px;
 		justify-content: center;
@@ -1026,22 +1026,22 @@ const faqs = [
 	.scan-label {
 		font-size: 0.75rem;
 		font-weight: 700;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
-		margin-bottom: var(--intently-space-2xl);
+		margin-bottom: var(--ds-space-2xl);
 	}
 
 	.scan-icon {
 		font-size: 3.5rem;
-		margin-bottom: var(--intently-space-sm);
+		margin-bottom: var(--ds-space-sm);
 		z-index: 1;
 	}
 
 	.scan-name {
 		font-size: 1.125rem;
 		font-weight: 700;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		z-index: 1;
 	}
 
@@ -1082,7 +1082,7 @@ const faqs = [
 	   ============================ */
 	.gauge-section {
 		text-align: center;
-		margin-bottom: var(--intently-space-2xl);
+		margin-bottom: var(--ds-space-2xl);
 		animation: revealIn 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
@@ -1102,14 +1102,14 @@ const faqs = [
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
-		color: var(--intently-blue);
-		margin-bottom: var(--intently-space-lg);
+		color: var(--ds-blue);
+		margin-bottom: var(--ds-space-lg);
 	}
 
 	.gauge-container {
 		max-width: 260px;
 		margin: 0 auto;
-		padding: var(--intently-space-lg);
+		padding: var(--ds-space-lg);
 		background: rgba(0, 0, 0, 0.02);
 		border-radius: 20px;
 		border: 1px solid rgba(0, 0, 0, 0.03);
@@ -1138,10 +1138,10 @@ const faqs = [
 		display: flex;
 		justify-content: center;
 		gap: 2px;
-		margin-bottom: var(--intently-space-xl);
+		margin-bottom: var(--ds-space-xl);
 		padding: 3px;
 		background: rgba(0, 0, 0, 0.04);
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		width: fit-content;
 		margin-left: auto;
 		margin-right: auto;
@@ -1149,12 +1149,12 @@ const faqs = [
 
 	.toggle-btn {
 		padding: 0.5rem 1.25rem;
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		background: transparent;
 		border: none;
 		font-size: 0.8125rem;
 		font-weight: 600;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		cursor: pointer;
 		transition: all 0.25s ease;
 		min-height: 40px;
@@ -1163,14 +1163,14 @@ const faqs = [
 
 	.toggle-btn.active {
 		background: white;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		box-shadow:
 			0 1px 3px rgba(0, 0, 0, 0.08),
 			0 1px 2px rgba(0, 0, 0, 0.04);
 	}
 
 	.toggle-btn:not(.active):hover {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	/* ============================
@@ -1178,8 +1178,8 @@ const faqs = [
 	   ============================ */
 	.cards-view {
 		display: grid;
-		gap: var(--intently-space-md);
-		margin-bottom: var(--intently-space-xl);
+		gap: var(--ds-space-md);
+		margin-bottom: var(--ds-space-xl);
 	}
 
 	.nutrition-card {
@@ -1196,7 +1196,7 @@ const faqs = [
 	}
 
 	.nut-header {
-		padding: var(--intently-space-md) var(--intently-space-md) 0.75rem;
+		padding: var(--ds-space-md) var(--ds-space-md) 0.75rem;
 		border-bottom: 3px solid;
 		background: rgba(0, 0, 0, 0.025);
 	}
@@ -1206,18 +1206,18 @@ const faqs = [
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 	}
 
 	.nut-app {
 		font-size: 1.0625rem;
 		font-weight: 700;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		margin-top: 0.25rem;
 	}
 
 	.nut-body {
-		padding: 0.75rem var(--intently-space-md) var(--intently-space-md);
+		padding: 0.75rem var(--ds-space-md) var(--ds-space-md);
 	}
 
 	.nut-score-row,
@@ -1231,27 +1231,27 @@ const faqs = [
 	.nut-score-row {
 		font-weight: 700;
 		font-size: 0.9375rem;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.nut-serving {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		font-size: 0.8125rem;
 	}
 
 	.nut-divider {
 		height: 2px;
-		background: var(--intently-text-primary);
+		background: var(--ds-text-primary);
 		margin: 0.5rem 0;
 	}
 
 	.nut-table-header {
 		display: grid;
 		grid-template-columns: 1fr 50px 45px;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 		font-size: 0.6875rem;
 		font-weight: 700;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		text-transform: uppercase;
 		padding: 0.3rem 0;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1260,7 +1260,7 @@ const faqs = [
 	.nut-row {
 		display: grid;
 		grid-template-columns: 1fr 50px 45px;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 		padding: 0.35rem 0;
 		font-size: 0.8125rem;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.04);
@@ -1268,7 +1268,7 @@ const faqs = [
 	}
 
 	.nut-factor {
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		font-weight: 500;
 	}
 
@@ -1281,22 +1281,22 @@ const faqs = [
 	}
 
 	.nut-high {
-		color: var(--intently-red);
+		color: var(--ds-red);
 		background: rgba(244, 67, 54, 0.08);
 	}
 
 	.nut-med {
-		color: var(--intently-orange);
+		color: var(--ds-orange);
 		background: rgba(255, 152, 0, 0.08);
 	}
 
 	.nut-low {
-		color: var(--intently-green);
+		color: var(--ds-green);
 		background: rgba(76, 175, 80, 0.08);
 	}
 
 	.nut-pct {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		text-align: right;
 		font-size: 0.8125rem;
 	}
@@ -1310,24 +1310,24 @@ const faqs = [
 	}
 
 	.fomo-severe {
-		color: var(--intently-red);
+		color: var(--ds-red);
 	}
 
 	.fomo-high {
-		color: var(--intently-orange);
+		color: var(--ds-orange);
 	}
 
 	.fomo-moderate {
-		color: var(--intently-orange);
+		color: var(--ds-orange);
 	}
 
 	.fomo-low {
-		color: var(--intently-green);
+		color: var(--ds-green);
 	}
 
 	.nut-footnote {
 		font-size: 0.625rem;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		font-style: italic;
 		margin-top: 0.25rem;
 	}
@@ -1337,7 +1337,7 @@ const faqs = [
 	   ============================ */
 	.trading-card {
 		border-radius: 16px;
-		padding: var(--intently-space-xl) var(--intently-space-lg);
+		padding: var(--ds-space-xl) var(--ds-space-lg);
 		text-align: center;
 		position: relative;
 		overflow: hidden;
@@ -1351,20 +1351,20 @@ const faqs = [
 	}
 
 	.rarity-common {
-		border-color: var(--intently-gray-300);
+		border-color: var(--ds-gray-300);
 	}
 
 	.rarity-uncommon {
-		border-color: var(--intently-green);
+		border-color: var(--ds-green);
 	}
 
 	.rarity-rare {
-		border-color: var(--intently-blue);
+		border-color: var(--ds-blue);
 		background: linear-gradient(155deg, rgba(227, 242, 253, 0.5), rgba(255, 255, 255, 0.97));
 	}
 
 	.rarity-legendary {
-		border-color: var(--intently-purple);
+		border-color: var(--ds-purple);
 		background: linear-gradient(155deg, rgba(243, 229, 245, 0.5), rgba(255, 255, 255, 0.97));
 		box-shadow: 0 0 24px rgba(156, 39, 176, 0.08);
 		animation: legendaryShimmer 3s ease-in-out infinite;
@@ -1380,27 +1380,27 @@ const faqs = [
 		font-weight: 800;
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
-		margin-bottom: var(--intently-space-md);
-		color: var(--intently-text-hint);
+		margin-bottom: var(--ds-space-md);
+		color: var(--ds-text-hint);
 	}
 
 	.rarity-legendary .tc-rarity {
-		color: var(--intently-purple);
+		color: var(--ds-purple);
 	}
 
 	.rarity-rare .tc-rarity {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	.tc-icon {
 		font-size: 2.5rem;
-		margin-bottom: var(--intently-space-xs);
+		margin-bottom: var(--ds-space-xs);
 	}
 
 	.tc-name {
 		font-size: 1.125rem;
 		font-weight: 800;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		margin-bottom: 0.375rem;
 	}
 
@@ -1408,7 +1408,7 @@ const faqs = [
 		display: flex;
 		gap: 0.25rem;
 		justify-content: center;
-		margin-bottom: var(--intently-space-lg);
+		margin-bottom: var(--ds-space-lg);
 		flex-wrap: wrap;
 	}
 
@@ -1416,9 +1416,9 @@ const faqs = [
 		font-size: 0.625rem;
 		font-weight: 600;
 		padding: 2px 8px;
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		background: rgba(33, 150, 243, 0.07);
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 	}
@@ -1431,48 +1431,48 @@ const faqs = [
 		display: grid;
 		grid-template-columns: 100px 1fr 36px;
 		align-items: center;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 		margin-bottom: 0.5rem;
 	}
 
 	.tc-stat-label {
 		font-size: 0.6875rem;
 		font-weight: 600;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 	}
 
 	.tc-stat-bar {
 		height: 6px;
 		background: rgba(0, 0, 0, 0.05);
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		overflow: hidden;
 	}
 
 	.tc-stat-fill {
 		height: 100%;
-		background: linear-gradient(90deg, var(--intently-blue), var(--intently-purple));
-		border-radius: var(--intently-radius-full);
+		background: linear-gradient(90deg, var(--ds-blue), var(--ds-purple));
+		border-radius: var(--ds-radius-full);
 		transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 	.tc-escape .tc-stat-fill,
 	.tc-escape-fill {
-		background: linear-gradient(90deg, var(--intently-red), var(--intently-orange));
+		background: linear-gradient(90deg, var(--ds-red), var(--ds-orange));
 	}
 
 	.tc-stat-val {
 		font-size: 0.6875rem;
 		font-weight: 700;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		text-align: right;
 	}
 
 	.tc-score {
 		font-size: 0.75rem;
 		font-weight: 700;
-		color: var(--intently-text-hint);
-		margin-top: var(--intently-space-md);
-		padding-top: var(--intently-space-sm);
+		color: var(--ds-text-hint);
+		margin-top: var(--ds-space-md);
+		padding-top: var(--ds-space-sm);
 		border-top: 1px solid rgba(0, 0, 0, 0.05);
 	}
 
@@ -1480,8 +1480,8 @@ const faqs = [
 	   RISK FACTORS
 	   ============================ */
 	.risk-section {
-		margin-bottom: var(--intently-space-xl);
-		padding: var(--intently-space-lg);
+		margin-bottom: var(--ds-space-xl);
+		padding: var(--ds-space-lg);
 		background: rgba(0, 0, 0, 0.02);
 		border-radius: 16px;
 		border: 1px solid rgba(0, 0, 0, 0.03);
@@ -1490,8 +1490,8 @@ const faqs = [
 	.risk-title {
 		font-size: 1rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-lg);
-		color: var(--intently-text-primary);
+		margin: 0 0 var(--ds-space-lg);
+		color: var(--ds-text-primary);
 		text-align: center;
 	}
 
@@ -1508,33 +1508,33 @@ const faqs = [
 		display: grid;
 		grid-template-columns: 130px 1fr 44px;
 		align-items: center;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 	}
 
 	.risk-label {
 		font-size: 0.8125rem;
 		font-weight: 600;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.risk-bar {
 		height: 8px;
 		background: rgba(0, 0, 0, 0.05);
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		overflow: hidden;
 	}
 
 	.risk-bar-fill {
 		height: 100%;
-		background: linear-gradient(90deg, var(--intently-orange), var(--intently-red));
-		border-radius: var(--intently-radius-full);
+		background: linear-gradient(90deg, var(--ds-orange), var(--ds-red));
+		border-radius: var(--ds-radius-full);
 		transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 	.risk-score {
 		font-size: 0.8125rem;
 		font-weight: 700;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		text-align: right;
 	}
 
@@ -1542,34 +1542,34 @@ const faqs = [
 	   RECOMMENDATIONS
 	   ============================ */
 	.recs-section {
-		margin-bottom: var(--intently-space-xl);
+		margin-bottom: var(--ds-space-xl);
 	}
 
 	.recs-title {
 		font-size: 1rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-md);
-		color: var(--intently-text-primary);
+		margin: 0 0 var(--ds-space-md);
+		color: var(--ds-text-primary);
 		text-align: center;
 	}
 
 	.recs-list {
 		display: grid;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 	}
 
 	.rec-item {
 		display: flex;
 		align-items: flex-start;
-		gap: var(--intently-space-sm);
-		padding: 0.875rem var(--intently-space-md);
+		gap: var(--ds-space-sm);
+		padding: 0.875rem var(--ds-space-md);
 		border-radius: 14px;
 		background: rgba(76, 175, 80, 0.03);
 		border: 1px solid rgba(76, 175, 80, 0.08);
 	}
 
 	.rec-check {
-		color: var(--intently-green);
+		color: var(--ds-green);
 		font-weight: 700;
 		flex-shrink: 0;
 		font-size: 1rem;
@@ -1577,7 +1577,7 @@ const faqs = [
 	}
 
 	.rec-text {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		line-height: 1.5;
 		font-size: 0.875rem;
 	}
@@ -1587,15 +1587,15 @@ const faqs = [
 	   ============================ */
 	.share-section {
 		display: flex;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 		justify-content: center;
-		margin-bottom: var(--intently-space-xl);
+		margin-bottom: var(--ds-space-xl);
 		flex-wrap: wrap;
 	}
 
 	.share-btn {
 		padding: 0.625rem 1.25rem;
-		border-radius: var(--intently-radius-full);
+		border-radius: var(--ds-radius-full);
 		font-size: 0.8125rem;
 		font-weight: 600;
 		cursor: pointer;
@@ -1607,21 +1607,21 @@ const faqs = [
 
 	.share-copy {
 		background: rgba(0, 0, 0, 0.05);
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		border: 1px solid rgba(0, 0, 0, 0.04);
 	}
 
 	.share-copy:hover {
 		background: rgba(0, 0, 0, 0.08);
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		transform: translateY(-1px);
 	}
 
 	.cta-buttons {
 		display: flex;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 		justify-content: center;
-		margin-bottom: var(--intently-space-lg);
+		margin-bottom: var(--ds-space-lg);
 		flex-wrap: wrap;
 	}
 
@@ -1630,25 +1630,25 @@ const faqs = [
 		margin: 0 auto;
 		background: none;
 		border: none;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		font-weight: 500;
 		font-size: 0.875rem;
 		cursor: pointer;
 		text-decoration: none;
-		padding: var(--intently-space-sm);
-		transition: color var(--intently-transition-fast);
+		padding: var(--ds-space-sm);
+		transition: color var(--ds-transition-fast);
 		font-family: inherit;
 	}
 
 	.retake-button:hover {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	/* ============================
 	   CROSS-LINKS
 	   ============================ */
 	.cross-links-card {
-		padding: var(--intently-space-xl);
+		padding: var(--ds-space-xl);
 		background: rgba(255, 255, 255, 0.75);
 		backdrop-filter: blur(20px) saturate(160%);
 		-webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -1657,27 +1657,27 @@ const faqs = [
 			inset 0 1px 0 rgba(255, 255, 255, 0.9),
 			0 4px 20px rgba(0, 0, 0, 0.06);
 		border-radius: 24px;
-		margin-bottom: var(--intently-space-2xl);
+		margin-bottom: var(--ds-space-2xl);
 	}
 
 	.cross-links-card h3 {
 		font-size: 1rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-md);
-		color: var(--intently-text-primary);
+		margin: 0 0 var(--ds-space-md);
+		color: var(--ds-text-primary);
 	}
 
 	.tools-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 	}
 
 	.tool-link {
 		display: flex;
 		align-items: center;
-		gap: var(--intently-space-md);
-		padding: var(--intently-space-md);
+		gap: var(--ds-space-md);
+		padding: var(--ds-space-md);
 		border-radius: 14px;
 		background: rgba(0, 0, 0, 0.02);
 		text-decoration: none;
@@ -1704,19 +1704,19 @@ const faqs = [
 
 	.tool-link-text strong {
 		font-size: 0.875rem;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.tool-link-text span {
 		font-size: 0.75rem;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 	}
 
 	/* ============================
 	   INFO / FAQ
 	   ============================ */
 	.info-glass-card {
-		padding: var(--intently-space-xl);
+		padding: var(--ds-space-xl);
 		background: rgba(255, 255, 255, 0.75);
 		backdrop-filter: blur(20px) saturate(160%);
 		-webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -1730,21 +1730,21 @@ const faqs = [
 	.info-glass-card h3 {
 		font-size: 1rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-sm);
-		color: var(--intently-text-primary);
+		margin: 0 0 var(--ds-space-sm);
+		color: var(--ds-text-primary);
 	}
 
 	.info-glass-card > p {
 		line-height: 1.6;
-		color: var(--intently-text-secondary);
-		margin: 0 0 var(--intently-space-lg);
+		color: var(--ds-text-secondary);
+		margin: 0 0 var(--ds-space-lg);
 		font-size: 0.9375rem;
 	}
 
 	.faq-glass-item {
 		background: rgba(0, 0, 0, 0.025);
 		border-radius: 12px;
-		margin-bottom: var(--intently-space-sm);
+		margin-bottom: var(--ds-space-sm);
 		transition: background 0.3s ease;
 	}
 
@@ -1753,16 +1753,16 @@ const faqs = [
 	}
 
 	.faq-glass-item summary {
-		padding: var(--intently-space-md);
+		padding: var(--ds-space-md);
 		font-weight: 600;
 		font-size: 0.9375rem;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		cursor: pointer;
 		list-style: none;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 		transition: color 0.2s ease;
 	}
 
@@ -1774,7 +1774,7 @@ const faqs = [
 		content: '+';
 		font-size: 1.25rem;
 		font-weight: 300;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		flex-shrink: 0;
 		width: 24px;
 		height: 24px;
@@ -1790,26 +1790,26 @@ const faqs = [
 	.faq-glass-item[open] summary::after {
 		content: '\2212';
 		background: rgba(33, 150, 243, 0.1);
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	@media (hover: hover) {
 		.faq-glass-item summary:hover {
-			color: var(--intently-blue);
+			color: var(--ds-blue);
 		}
 	}
 
 	.faq-glass-item p {
-		padding: 0 var(--intently-space-md) var(--intently-space-md);
+		padding: 0 var(--ds-space-md) var(--ds-space-md);
 		margin: 0;
 		line-height: 1.6;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		font-size: 0.9375rem;
 	}
 
 	.quiz-links {
-		margin-top: var(--intently-space-lg);
-		padding-top: var(--intently-space-lg);
+		margin-top: var(--ds-space-lg);
+		padding-top: var(--ds-space-lg);
 		border-top: 1px solid rgba(0, 0, 0, 0.06);
 	}
 
@@ -1817,14 +1817,14 @@ const faqs = [
 		margin: 0;
 		font-size: 0.9375rem;
 		line-height: 1.6;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.quiz-links a {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		font-weight: 600;
 		text-decoration: none;
-		transition: color var(--intently-transition-fast);
+		transition: color var(--ds-transition-fast);
 	}
 
 	.quiz-links a:hover {
@@ -1867,7 +1867,7 @@ const faqs = [
 
 		.app-select-card.selected {
 			background: rgba(66, 165, 245, 0.12);
-			border-color: var(--intently-blue);
+			border-color: var(--ds-blue);
 			box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2);
 		}
 
@@ -1876,11 +1876,11 @@ const faqs = [
 		}
 
 		.asc-name {
-			color: var(--intently-text-secondary);
+			color: var(--ds-text-secondary);
 		}
 
 		.app-select-card.selected .asc-name {
-			color: var(--intently-blue);
+			color: var(--ds-blue);
 		}
 
 		.analyze-bar {
@@ -2006,7 +2006,7 @@ const faqs = [
 	   ============================ */
 	@media (min-width: 768px) {
 		.score-hero {
-			padding: var(--intently-space-3xl) 0;
+			padding: var(--ds-space-3xl) 0;
 		}
 
 		.text-gradient {
@@ -2022,7 +2022,7 @@ const faqs = [
 		}
 
 		.score-glass-card {
-			padding: var(--intently-space-3xl);
+			padding: var(--ds-space-3xl);
 		}
 
 		.cards-view {
@@ -2032,7 +2032,7 @@ const faqs = [
 
 	@media (min-width: 1024px) {
 		.score-hero {
-			padding: var(--intently-space-4xl) 0;
+			padding: var(--ds-space-4xl) 0;
 		}
 
 		.text-gradient {
@@ -2042,12 +2042,12 @@ const faqs = [
 
 	@media (max-width: 767px) {
 		.score-glass-card {
-			padding: var(--intently-space-lg);
+			padding: var(--ds-space-lg);
 		}
 
 		.app-select-grid {
 			grid-template-columns: repeat(3, 1fr);
-			gap: var(--intently-space-xs);
+			gap: var(--ds-space-xs);
 		}
 
 		.app-select-card {
@@ -2079,20 +2079,20 @@ const faqs = [
 		}
 
 		.info-glass-card {
-			padding: var(--intently-space-lg);
+			padding: var(--ds-space-lg);
 		}
 
 		.analyze-bar {
 			flex-direction: column;
-			gap: var(--intently-space-sm);
+			gap: var(--ds-space-sm);
 			text-align: center;
 			border-radius: 16px;
-			padding: var(--intently-space-md);
+			padding: var(--ds-space-md);
 		}
 
 		.risk-bar-wrap {
 			grid-template-columns: 95px 1fr 38px;
-			gap: var(--intently-space-sm);
+			gap: var(--ds-space-sm);
 		}
 
 		.risk-label {
@@ -2144,7 +2144,7 @@ const faqs = [
 	/* Focus */
 	a:focus-visible,
 	button:focus-visible {
-		outline: 2px solid var(--intently-blue);
+		outline: 2px solid var(--ds-blue);
 		outline-offset: 2px;
 	}
 

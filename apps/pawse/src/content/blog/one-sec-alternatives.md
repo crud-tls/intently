@@ -1,25 +1,25 @@
 ---
 title: 'Best One Sec Alternatives 2026: Pause Before Scrolling'
-description: 'Looking for a One Sec alternative? Compare the top mindful pause apps including Intently, ScreenZen, and ClearSpace. Find free options for Android and iOS that add a moment of awareness before opening distracting apps.'
+description: 'Looking for a One Sec alternative? Compare the top mindful pause apps including Pawse, ScreenZen, and ClearSpace. Find free options for Android and iOS that add a moment of awareness before opening distracting apps.'
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'App Comparisons'
 tags: ['one sec alternatives', 'one sec alternative android', 'one sec alternative free', 'screen time', 'mindful pause', 'digital wellbeing', 'free one sec alternative android']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: "Is there a free version of One Sec?"
-    answer: "One Sec has a limited free tier, but most useful features require the paid subscription (~$50/year). For a free alternative with similar mindful pause functionality, Intently offers full-screen interventions, usage tracking, and gamification at zero cost on Android and Chrome. ScreenZen offers free delay-based pauses on both iOS and Android."
+    answer: "One Sec has a limited free tier, but most useful features require the paid subscription (~$50/year). For a free alternative with similar mindful pause functionality, Pawse offers full-screen interventions, usage tracking, and gamification at zero cost on Android and Chrome. ScreenZen offers free delay-based pauses on both iOS and Android."
   - question: "What's the best One Sec alternative for Android?"
-    answer: "Intently is a strong One Sec alternative for Android. It was built for Android from the ground up and offers mindful interventions, comprehensive tracking, gamification, and offline privacy — all completely free. ScreenZen is another good free option available on Android."
+    answer: "Pawse is a strong One Sec alternative for Android. It was built for Android from the ground up and offers mindful interventions, comprehensive tracking, gamification, and offline privacy — all completely free. ScreenZen is another good free option available on Android."
   - question: "Does One Sec work on Android?"
-    answer: "One Sec has added Android support, but it was designed primarily for iOS and the Android experience may be more limited in some areas. For a full Android-native mindful pause experience, Intently was purpose-built for Android."
+    answer: "One Sec has added Android support, but it was designed primarily for iOS and the Android experience may be more limited in some areas. For a full Android-native mindful pause experience, Pawse was purpose-built for Android."
   - question: "What app pauses you before opening social media?"
-    answer: "Several apps add a pause before social media: Intently (free, mindful interventions on Android/Chrome), One Sec (paid, breathing exercise on iOS/Android), ScreenZen (free, countdown delay on iOS/Android), and ClearSpace (freemium, visual pause on iOS). Each takes a slightly different approach to the same core idea."
+    answer: "Several apps add a pause before social media: Pawse (free, mindful interventions on Android/Chrome), One Sec (paid, breathing exercise on iOS/Android), ScreenZen (free, countdown delay on iOS/Android), and ClearSpace (freemium, visual pause on iOS). Each takes a slightly different approach to the same core idea."
   - question: "Is the One Sec pause approach effective?"
     answer: "Yes. One Sec has a real study conducted with the Max Planck Institute showing a 57% reduction in app opens. The broader research on pause-based interventions supports this approach — creating a moment of awareness between impulse and action helps many people make more intentional choices."
   - question: "Can I get One Sec features without paying?"
-    answer: "You can get similar pause-based features for free. Intently provides mindful interventions, usage tracking, and gamification at no cost (Android + Chrome). ScreenZen offers free delay-based pauses on iOS and Android. The main trade-off is that these are different implementations of the same core idea — not exact One Sec replicas."
+    answer: "You can get similar pause-based features for free. Pawse provides mindful interventions, usage tracking, and gamification at no cost (Android + Chrome). ScreenZen offers free delay-based pauses on iOS and Android. The main trade-off is that these are different implementations of the same core idea — not exact One Sec replicas."
 ---
 
 # Best One Sec Alternatives (2026 Review)
@@ -42,11 +42,11 @@ You don't need to lock yourself out of apps. You just need a moment to ask: "Do 
 
 ## The Alternatives
 
-### Intently — The Full Toolkit, Zero Cost
+### Pawse — The Full Toolkit, Zero Cost
 
 **Platform**: Android, Chrome | **Price**: Free
 
-If One Sec is a scalpel — one focused intervention — Intently is more of a Swiss Army knife. It wraps full-screen mindful interventions in a broader system that includes usage tracking, streaks, achievements, and a Chrome extension for desktop habits. All free, no ads, no account required.
+If One Sec is a scalpel — one focused intervention — Pawse is more of a Swiss Army knife. It wraps full-screen mindful interventions in a broader system that includes usage tracking, streaks, achievements, and a Chrome extension for desktop habits. All free, no ads, no account required.
 
 The tracking is what sets it apart from One Sec. You get daily, weekly, and monthly breakdowns of your app usage, so you can actually see whether your habits are changing over time. The gamification layer (streaks and achievements) helps keep you motivated past the first week, which is where most people drop off with these tools.
 
@@ -54,7 +54,7 @@ Everything runs offline and stays on your device — no cloud sync, no data coll
 
 Rating: 4/5 — The most full-featured free option in this space. The iOS gap is the main limitation.
 
-[Try Intently for free](/download)
+[Try Pawse for free](/download)
 
 ---
 
@@ -139,13 +139,13 @@ The reasons to explore alternatives mostly come down to price (~$50/year for a s
 
 This really depends on two things: what phone you use and how much structure you want.
 
-On Android, Intently is the standout. You get mindful interventions, usage tracking, gamification, and a Chrome extension — all free. It's the most well-rounded option regardless of platform, and it won't cost you anything.
+On Android, Pawse is the standout. You get mindful interventions, usage tracking, gamification, and a Chrome extension — all free. It's the most well-rounded option regardless of platform, and it won't cost you anything.
 
 On iOS with a budget of zero, ScreenZen is your best bet for basic pause friction. If you're willing to pay, ClearSpace offers a more visually engaging breathing-pause experience, and One Sec itself remains solid if you want the research-backed original.
 
 If your issue is more about sustained focus than impulsive app-checking, Forest is the right tool — it's just solving a different problem.
 
-And if you want the broadest set of tools around the pause concept — tracking, gamification, desktop coverage — Intently covers the most ground, with the caveat that iOS support isn't here yet.
+And if you want the broadest set of tools around the pause concept — tracking, gamification, desktop coverage — Pawse covers the most ground, with the caveat that iOS support isn't here yet.
 
 ---
 
@@ -153,13 +153,13 @@ And if you want the broadest set of tools around the pause concept — tracking,
 
 ### Is there a free version of One Sec?
 
-One Sec has a limited free tier, but the full feature set requires a subscription (~$50/year). Intently and ScreenZen both offer free alternatives with different takes on the same pause-based approach.
+One Sec has a limited free tier, but the full feature set requires a subscription (~$50/year). Pawse and ScreenZen both offer free alternatives with different takes on the same pause-based approach.
 
 ### Do pause-before-scrolling apps actually work?
 
 Yes. One Sec's Max Planck study showed a 57% reduction in app opens, and the behavioral science literature broadly supports the idea that interrupting automatic behaviors with a moment of awareness reduces their frequency. Most users report becoming noticeably more conscious of their phone habits within the first couple of weeks.
 
-### Can I use One Sec and Intently together?
+### Can I use One Sec and Pawse together?
 
 You can, but running multiple intervention apps tends to create conflicting pauses and "intervention fatigue." We'd recommend picking one and sticking with it for at least 30 days to see real results.
 
@@ -173,13 +173,13 @@ Most research and user experience points to 5-15 seconds as the sweet spot. Too 
 
 ### What's the best One Sec alternative for Android?
 
-Intently is the most comprehensive free option for Android, with mindful interventions, tracking, and gamification. ScreenZen is another solid free choice if you prefer simpler delay-based friction.
+Pawse is the most comprehensive free option for Android, with mindful interventions, tracking, and gamification. ScreenZen is another solid free choice if you prefer simpler delay-based friction.
 
 ---
 
 ## Getting Started
 
-If you're curious about the pause-based approach, the fastest way to find out is to just try one. Grab Intently (Android/Chrome) or ScreenZen (iOS/Android) — both are free — and use it for a couple of weeks. You'll know pretty quickly whether it changes your relationship with your apps.
+If you're curious about the pause-based approach, the fastest way to find out is to just try one. Grab Pawse (Android/Chrome) or ScreenZen (iOS/Android) — both are free — and use it for a couple of weeks. You'll know pretty quickly whether it changes your relationship with your apps.
 
 [Take the Phone Habit Quiz](/quiz)
 
@@ -194,4 +194,4 @@ If you're curious about the pause-based approach, the fastest way to find out is
 
 ---
 
-*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

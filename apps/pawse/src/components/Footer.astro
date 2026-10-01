@@ -5,7 +5,7 @@ const today = new Date();
 <footer>
 	<div class="footer-content">
 		<div class="footer-brand">
-			<img src="/logo.svg" alt="Intently" class="footer-logo" />
+			<img src="/logo.svg" alt="Pawse" class="footer-logo" />
 			<p>Build healthier digital habits through mindful interventions.</p>
 		</div>
 		<div class="footer-links">
@@ -34,7 +34,7 @@ const today = new Date();
 		</div>
 	</div>
 	<div class="footer-bottom">
-		<p>&copy; {today.getFullYear()} Intently. All rights reserved.</p>
+		<p>&copy; {today.getFullYear()} Pawse. All rights reserved.</p>
 		<div class="footer-badges">
 			<span class="privacy-badge">
 				<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
@@ -54,9 +54,9 @@ const today = new Date();
 
 <style>
 	footer {
-		padding: var(--intently-space-3xl) 1rem var(--intently-space-xl);
-		background: var(--intently-gray-50);
-		color: var(--intently-text-secondary);
+		padding: var(--ds-space-3xl) 1rem var(--ds-space-xl);
+		background: var(--ds-gray-50);
+		color: var(--ds-text-secondary);
 	}
 
 	.footer-content {
@@ -64,15 +64,15 @@ const today = new Date();
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 2fr 3fr;
-		gap: var(--intently-space-3xl);
-		margin-bottom: var(--intently-space-2xl);
+		gap: var(--ds-space-3xl);
+		margin-bottom: var(--ds-space-2xl);
 	}
 
 	.footer-logo {
 		height: 36px;
 		width: auto;
 		display: block;
-		margin: 0 0 var(--intently-space-sm) 0;
+		margin: 0 0 var(--ds-space-sm) 0;
 	}
 
 	.footer-brand p {
@@ -84,7 +84,7 @@ const today = new Date();
 	.footer-links {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: var(--intently-space-xl);
+		gap: var(--ds-space-xl);
 	}
 
 	.footer-section h4 {
@@ -92,32 +92,32 @@ const today = new Date();
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
-		color: var(--intently-text-primary);
-		margin: 0 0 var(--intently-space-md) 0;
+		color: var(--ds-text-primary);
+		margin: 0 0 var(--ds-space-md) 0;
 	}
 
 	.footer-section a {
 		display: block;
 		text-decoration: none;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		padding: 0.25rem 0;
-		transition: color var(--intently-transition-fast);
+		transition: color var(--ds-transition-fast);
 	}
 
 	.footer-section a:hover {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	.footer-bottom {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding-top: var(--intently-space-xl);
-		border-top: 1px solid var(--intently-gray-200);
+		padding-top: var(--ds-space-xl);
+		border-top: 1px solid var(--ds-gray-200);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 	}
 
 	.footer-bottom p {
@@ -127,7 +127,7 @@ const today = new Date();
 
 	.footer-badges {
 		display: flex;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 	}
 
 	.footer-badges span {
@@ -139,17 +139,17 @@ const today = new Date();
 	}
 
 	.privacy-badge {
-		color: var(--intently-green);
+		color: var(--ds-green);
 	}
 
 	.offline-badge {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	@media (max-width: 767px) {
 		.footer-content {
 			grid-template-columns: 1fr;
-			gap: var(--intently-space-xl);
+			gap: var(--ds-space-xl);
 		}
 
 		.footer-links {

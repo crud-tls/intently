@@ -3,7 +3,7 @@ title: 'Best Forest App Alternatives 2026: Top Focus & Wellness Apps'
 description: 'Looking for a Forest app alternative? Explore the best focus and gamification apps for reducing screen time, from social tree-growing to mindful interventions, with honest reviews of each approach.'
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'App Comparisons'
 tags: ['forest app alternatives', 'forest alternative free', 'apps like forest', 'focus apps', 'screen time', 'digital wellbeing']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
@@ -11,13 +11,13 @@ faq:
   - question: "Is the Forest app worth it?"
     answer: "Yes, for what it does. Forest is one of the best gamified focus timers available, with charming design and the meaningful bonus of planting real trees. At $1.99-$3.99, it is excellent value. The limitation is that it only works during active focus sessions -- it cannot help with compulsive phone-checking habits outside of focused work time."
   - question: "What's the best free alternative to Forest?"
-    answer: "It depends on what you want. If you want gamification with always-on habit tracking, Intently is free on Android and Chrome (iOS coming soon). If you want a Forest-like tree-growing experience with social features, Flora is free to start. If you want gentle awareness nudges, ScreenZen is free on both iOS and Android."
+    answer: "It depends on what you want. If you want gamification with always-on habit tracking, Pawse is free on Android and Chrome (iOS coming soon). If you want a Forest-like tree-growing experience with social features, Flora is free to start. If you want gentle awareness nudges, ScreenZen is free on both iOS and Android."
   - question: "Does Forest actually help with phone addiction?"
-    answer: "Forest helps with focused work sessions but does not address phone addiction directly. It only works when you actively start a timer -- it cannot intervene when you mindlessly pick up your phone. For compulsive phone use, apps that provide always-on interventions (like One Sec or Intently) are better suited."
+    answer: "Forest helps with focused work sessions but does not address phone addiction directly. It only works when you actively start a timer -- it cannot intervene when you mindlessly pick up your phone. For compulsive phone use, apps that provide always-on interventions (like One Sec or Pawse) are better suited."
   - question: "Can I plant real trees with Forest alternatives?"
     answer: "Forest partners with Trees for the Future and has funded over 2 million real trees. Flora also offers real tree planting through partner organizations. Most other alternatives focus on digital habit change rather than environmental impact."
   - question: "Which Forest alternative works on both iPhone and Android?"
-    answer: "One Sec, Flora, Freedom, and ScreenZen all work on both iOS and Android. Intently currently works on Android and Chrome, with iOS coming soon. Opal is iOS-only."
+    answer: "One Sec, Flora, Freedom, and ScreenZen all work on both iOS and Android. Pawse currently works on Android and Chrome, with iOS coming soon. Opal is iOS-only."
   - question: "Do I actually need more than a focus timer?"
     answer: "If you only struggle during work or study sessions, a focus timer like Forest may be all you need. But if you find yourself compulsively checking your phone throughout the day, opening apps without thinking, or losing hours to scrolling outside of work, you likely need a tool that works beyond timed sessions."
 ---
@@ -70,9 +70,9 @@ Pricing runs around $50 lifetime or $25/year, which is steep for a single-purpos
 
 Rating: 4/5 -- If your actual problem is compulsive app-checking rather than a lack of focus sessions, One Sec is more relevant to you than Forest ever was. The price is the main sticking point.
 
-## Intently -- Free, Always-On, and Gamified
+## Pawse -- Free, Always-On, and Gamified
 
-We built Intently to sit in the space between Forest's gamification and One Sec's intervention approach. It creates full-screen moments of awareness when you open distracting apps -- not just during scheduled focus blocks, but all day. Over time, those pauses help you build an internal "wait, do I actually want to do this?" reflex that replaces the need for external timers or blockers.
+We built Pawse to sit in the space between Forest's gamification and One Sec's intervention approach. It creates full-screen moments of awareness when you open distracting apps -- not just during scheduled focus blocks, but all day. Over time, those pauses help you build an internal "wait, do I actually want to do this?" reflex that replaces the need for external timers or blockers.
 
 On top of the interventions, there are streaks, achievements, and milestone celebrations to keep you engaged. And everything runs locally on your device -- no account, no data collection, no ads.
 
@@ -82,7 +82,7 @@ The honest limitations: it's Android and Chrome only right now (iOS is in develo
 
 Rating: 4/5 -- The strongest free option if you want Forest-style motivation applied to your whole day, not just timed sessions.
 
-[Download Intently Free](/download)
+[Download Pawse Free](/download)
 
 ## Opal -- The Hard Blocker for iPhone
 
@@ -144,7 +144,7 @@ The right alternative depends entirely on what's not working for you about Fores
 
 If the core experience is fine but you wish it were more social, Flora is the natural next step. Same concept, better group features.
 
-If your real problem isn't focus sessions but the 50 times a day you reach for your phone without thinking, One Sec or Intently will help more than any focus timer can. One Sec is the proven option with published research behind it; Intently is free and adds gamification to keep things engaging (Android and Chrome now, iOS coming soon).
+If your real problem isn't focus sessions but the 50 times a day you reach for your phone without thinking, One Sec or Pawse will help more than any focus timer can. One Sec is the proven option with published research behind it; Pawse is free and adds gamification to keep things engaging (Android and Chrome now, iOS coming soon).
 
 If gentle approaches haven't been enough and you need your phone to actively stop you, Opal is the most polished hard blocker on iPhone -- though it'll cost you $99/year.
 
@@ -156,7 +156,7 @@ This is worth mentioning: you don't have to pick one or the other. Forest is gen
 
 Some combinations that work well together:
 
-- Forest + Intently: Forest for study/work sprints, Intently for always-on mindful interventions the rest of the day
+- Forest + Pawse: Forest for study/work sprints, Pawse for always-on mindful interventions the rest of the day
 - Forest + One Sec: Forest for focus blocks, One Sec for breaking the autopilot when you reach for social media
 - Forest + ScreenZen: Forest for timed focus, ScreenZen for passive habit awareness in between
 
@@ -172,7 +172,7 @@ Yes. Forest remains one of the best gamified focus timers available. At $1.99-$3
 
 ### What's the best free alternative to Forest?
 
-It depends on what you need. Intently is the best free option for combining gamification with always-on habit tracking (Android and Chrome, iOS coming soon). Flora is free to start and offers the most Forest-like experience with social features. ScreenZen is free on both iOS and Android for gentle awareness nudges.
+It depends on what you need. Pawse is the best free option for combining gamification with always-on habit tracking (Android and Chrome, iOS coming soon). Flora is free to start and offers the most Forest-like experience with social features. ScreenZen is free on both iOS and Android for gentle awareness nudges.
 
 ### Do any Forest alternatives let you plant real trees?
 
@@ -180,15 +180,15 @@ Flora offers real tree planting through partner organizations, similar to Forest
 
 ### Can I use Forest and another app together?
 
-Yes, and many users do. Forest is best for structured focus sessions (studying, deep work), while apps like Intently or One Sec handle always-on screen time management. The two approaches complement each other well -- Forest for when you sit down to focus, and a mindful-intervention app for the rest of your day.
+Yes, and many users do. Forest is best for structured focus sessions (studying, deep work), while apps like Pawse or One Sec handle always-on screen time management. The two approaches complement each other well -- Forest for when you sit down to focus, and a mindful-intervention app for the rest of your day.
 
 ### Which alternative is best for students?
 
-Flora is great for group study sessions with classmates. Intently is best for building overall phone discipline throughout the day (free, Android and Chrome). Opal works well for strict focus blocks during study time on iPhone. For students on a budget, Forest itself ($1.99-$3.99) combined with a free tool like Intently or ScreenZen covers most needs.
+Flora is great for group study sessions with classmates. Pawse is best for building overall phone discipline throughout the day (free, Android and Chrome). Opal works well for strict focus blocks during study time on iPhone. For students on a budget, Forest itself ($1.99-$3.99) combined with a free tool like Pawse or ScreenZen covers most needs.
 
 ### Do I actually need more than a focus timer?
 
-If you only struggle during work or study sessions, a focus timer like Forest may be enough. But if you find yourself compulsively checking your phone throughout the day, opening apps without thinking, or losing hours to scrolling outside of work, you need a tool that works beyond timed sessions -- something like One Sec, Intently, or ScreenZen that runs whenever your phone is on.
+If you only struggle during work or study sessions, a focus timer like Forest may be enough. But if you find yourself compulsively checking your phone throughout the day, opening apps without thinking, or losing hours to scrolling outside of work, you need a tool that works beyond timed sessions -- something like One Sec, Pawse, or ScreenZen that runs whenever your phone is on.
 
 ---
 
@@ -196,13 +196,13 @@ If you only struggle during work or study sessions, a focus timer like Forest ma
 
 - Want Forest with social accountability? Try Flora
 - Need to break compulsive app-checking? Try One Sec
-- Want free gamification for all-day habits? Try [Intently](/download) (Android and Chrome, iOS coming soon)
+- Want free gamification for all-day habits? Try [Pawse](/download) (Android and Chrome, iOS coming soon)
 - Need hard blocking on iPhone? Try Opal
 - Prefer the gentlest possible nudge? Try ScreenZen
 
 Forest is a great app. If it's doing the job for you, stick with it. These alternatives are for the gaps it doesn't cover.
 
-[Download Intently Free](/download)
+[Download Pawse Free](/download)
 
 ---
 
@@ -211,8 +211,8 @@ Forest is a great app. If it's doing the job for you, stick with it. These alter
 - [Best Apple Screen Time Alternatives](/blog/apple-screen-time-alternatives)
 - [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
 - [How to Reduce Screen Time](/blog/how-to-reduce-screen-time)
-- [Intently vs Forest](/blog/intently-vs-forest)
+- [Pawse vs Forest](/blog/pawse-vs-forest)
 
 ---
 
-*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

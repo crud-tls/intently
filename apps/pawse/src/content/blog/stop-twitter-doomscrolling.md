@@ -3,7 +3,7 @@ title: "How to Break the Twitter/X Doomscrolling Cycle: Strategies That Work"
 description: "Stop Twitter/X doomscrolling with proven strategies. Learn how to break the cycle, protect your mental health, and use the platform intentionally without getting sucked in."
 pubDate: 2026-01-23
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["twitter doomscrolling", "break twitter addiction", "stop doomscrolling", "twitter mental health", "digital wellbeing"]
 heroImage: "/blog-twitter-doomscroll.jpg"
@@ -58,9 +58,9 @@ When you leave notifications on, every buzz trains your brain to associate Twitt
 
 Most doomscrolling starts without a conscious decision. You're between tasks, a little bored, a little anxious -- and suddenly you're 20 minutes into a thread about something that's ruining your mood.
 
-Intently puts a brief pause screen between you and the app -- just a moment to notice what you're doing and decide if this is actually what you want right now. You can always continue. But that half-second of awareness is often enough to short-circuit the autopilot.
+Pawse puts a brief pause screen between you and the app -- just a moment to notice what you're doing and decide if this is actually what you want right now. You can always continue. But that half-second of awareness is often enough to short-circuit the autopilot.
 
-[Download Intently](/download) to try this on Twitter and any other apps that tend to pull you in.
+[Download Pawse](/download) to try this on Twitter and any other apps that tend to pull you in.
 
 ### 3. Set specific times to check -- and stick to the clock
 
@@ -122,20 +122,20 @@ Here's a realistic picture of what a healthy Twitter habit can look like:
 
 ## Tools That Help
 
-Intently supports the strategies above by creating a moment of awareness before you open Twitter or any other app that tends to pull you into autopilot scrolling.
+Pawse supports the strategies above by creating a moment of awareness before you open Twitter or any other app that tends to pull you into autopilot scrolling.
 
 - Gentle pause screens before each session
 - Custom reminders tied to your goals
 - Usage tracking so you can see your patterns over time
 - Available on Android, iOS, and Chrome
 
-[Download Intently](/download) and start building a Twitter habit that works for you instead of against you.
+[Download Pawse](/download) and start building a Twitter habit that works for you instead of against you.
 
 ## The Bottom Line
 
 Twitter doesn't have to be a source of constant background stress. The platform has real value -- for news, professional networking, niche communities, and genuinely funny people. But it takes active effort to get the good parts without absorbing the bad.
 
-Start small. Turn off notifications today. Add a pause with Intently. Pick your checking windows. Clean up your feed this weekend. You don't need to overhaul everything at once -- even one or two changes will make a noticeable difference within a week.
+Start small. Turn off notifications today. Add a pause with Pawse. Pick your checking windows. Clean up your feed this weekend. You don't need to overhaul everything at once -- even one or two changes will make a noticeable difference within a week.
 
 Your feed should work for you. Right now, there's a good chance it's the other way around.
 

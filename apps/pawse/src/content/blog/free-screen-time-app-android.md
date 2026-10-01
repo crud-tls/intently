@@ -2,23 +2,23 @@
 title: "Best Free Screen Time Apps for Android 2026: Privacy-First Options"
 description: "Compare the best free screen time apps for Android. From privacy-first tools with no account required to built-in options, find the right free app for managing your screen time without subscriptions."
 pubDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "App Comparisons"
 tags: ["free screen time app android", "best android screen time app", "privacy screen time app", "screen time app no account", "screen time app offline", "digital wellbeing android"]
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: "What is the best free screen time app for Android?"
-    answer: "Intently is the best free screen time app for Android if you value privacy and mindful interventions. It offers customizable pause prompts, usage tracking, analytics, and a Chrome extension — all completely free with no account required and zero data collection. Google Digital Wellbeing is the best built-in option for basic time management."
+    answer: "Pawse is the best free screen time app for Android if you value privacy and mindful interventions. It offers customizable pause prompts, usage tracking, analytics, and a Chrome extension — all completely free with no account required and zero data collection. Google Digital Wellbeing is the best built-in option for basic time management."
   - question: "Is there a screen time app that works offline with no account?"
-    answer: "Yes. Intently works entirely offline with no account creation, no internet connection, and no data collection. All your usage data stays on your device. This makes it the most private screen time app available for Android. FlowBuddy is another option that works offline."
+    answer: "Yes. Pawse works entirely offline with no account creation, no internet connection, and no data collection. All your usage data stays on your device. This makes it the most private screen time app available for Android. FlowBuddy is another option that works offline."
   - question: "Is Google Digital Wellbeing good enough?"
-    answer: "Google Digital Wellbeing provides basic screen time stats, app timers, and Wind Down mode. It's adequate for simple monitoring but lacks customizable interventions, detailed analytics, and mindful pause features. If you want to actively change habits rather than just track time, a dedicated app like Intently adds meaningful value."
+    answer: "Google Digital Wellbeing provides basic screen time stats, app timers, and Wind Down mode. It's adequate for simple monitoring but lacks customizable interventions, detailed analytics, and mindful pause features. If you want to actively change habits rather than just track time, a dedicated app like Pawse adds meaningful value."
   - question: "Are free screen time apps as good as paid ones?"
-    answer: "Some free apps match or exceed paid alternatives. Intently, for example, offers features comparable to paid apps like One Sec — custom interventions, usage tracking, analytics — at no cost. The key is finding one that matches your approach (blocking, time limits, mindful pauses) rather than assuming paid means better."
+    answer: "Some free apps match or exceed paid alternatives. Pawse, for example, offers features comparable to paid apps like One Sec — custom interventions, usage tracking, analytics — at no cost. The key is finding one that matches your approach (blocking, time limits, mindful pauses) rather than assuming paid means better."
   - question: "Which free Android screen time app is most private?"
-    answer: "Intently is the most private option. It operates fully offline, requires no account, collects zero data, and never connects to the internet. Your usage statistics never leave your device. FlowBuddy is also privacy-respecting as an open-source app. Most other free apps collect at least some analytics data."
+    answer: "Pawse is the most private option. It operates fully offline, requires no account, collects zero data, and never connects to the internet. Your usage statistics never leave your device. FlowBuddy is also privacy-respecting as an open-source app. Most other free apps collect at least some analytics data."
   - question: "Can free screen time apps actually reduce phone usage?"
-    answer: "Yes. Research shows that mindful pause apps can reduce unconscious phone pickups by 30-60%. The key is choosing an approach that works for your habits. Blocking apps work through restriction, time-limit apps work through budgeting, and mindful pause apps like Intently work through awareness. Free apps are just as effective as paid ones when they match your needs."
+    answer: "Yes. Research shows that mindful pause apps can reduce unconscious phone pickups by 30-60%. The key is choosing an approach that works for your habits. Blocking apps work through restriction, time-limit apps work through budgeting, and mindful pause apps like Pawse work through awareness. Free apps are just as effective as paid ones when they match your needs."
 ---
 
 # Best Free Screen Time Apps for Android: Privacy-First Options
@@ -38,13 +38,13 @@ Before comparing options, here's what separates a good free screen time app from
 
 With those criteria in mind, here are the best options.
 
-## 1. Intently — Best Overall Free Option
+## 1. Pawse — Best Overall Free Option
 
 **Price:** Completely free, no premium tier
 **Privacy:** Fully offline, no account, zero data collection
 **Platforms:** Android + Chrome extension
 
-Intently takes a mindful approach to screen time. Instead of blocking apps or setting rigid time limits, it creates a brief pause before you open tracked apps. You see a full-screen message — one you've written yourself — that gives you a moment to decide consciously whether to proceed.
+Pawse takes a mindful approach to screen time. Instead of blocking apps or setting rigid time limits, it creates a brief pause before you open tracked apps. You see a full-screen message — one you've written yourself — that gives you a moment to decide consciously whether to proceed.
 
 ### What makes it stand out:
 
@@ -59,7 +59,7 @@ Every feature is available for free. No premium tier, no trial period, no featur
 
 **Best for:** Users who want a full-featured, privacy-first screen time toolkit that changes habits through awareness rather than restriction.
 
-[Download Intently free](/download)
+[Download Pawse free](/download)
 
 ## 2. Google Digital Wellbeing — Best Built-In Option
 
@@ -157,7 +157,7 @@ ActionDash extends the built-in Digital Wellbeing experience with more detailed 
 
 ## Comparison Table
 
-| Feature | Intently | Digital Wellbeing | StayFree | FlowBuddy | ActionDash |
+| Feature | Pawse | Digital Wellbeing | StayFree | FlowBuddy | ActionDash |
 |---------|----------|-------------------|----------|-----------|------------|
 | **Price** | Free | Free (built-in) | Freemium | Free | Freemium |
 | **Mindful pauses** | Yes — custom | No | No | Yes — breathing | No |
@@ -171,7 +171,7 @@ ActionDash extends the built-in Digital Wellbeing experience with more detailed 
 
 ## How to Choose
 
-**Want to change habits through awareness?** Choose Intently. The mindful pause approach catches unconscious app opens and turns them into conscious decisions.
+**Want to change habits through awareness?** Choose Pawse. The mindful pause approach catches unconscious app opens and turns them into conscious decisions.
 
 **Want basic monitoring without installing anything?** Use Google Digital Wellbeing. It's already on your phone and covers the basics.
 
@@ -179,7 +179,7 @@ ActionDash extends the built-in Digital Wellbeing experience with more detailed 
 
 **Want the simplest possible intervention?** FlowBuddy adds a breathing pause and nothing else.
 
-**Want maximum privacy?** Intently is the only option that operates fully offline with zero data collection and no account. FlowBuddy's open-source approach is the runner-up.
+**Want maximum privacy?** Pawse is the only option that operates fully offline with zero data collection and no account. FlowBuddy's open-source approach is the runner-up.
 
 ## Why Privacy Matters in Screen Time Apps
 
@@ -187,22 +187,22 @@ It's worth pausing on the privacy question. Screen time apps, by nature, know in
 
 Some free screen time apps monetize by collecting and selling this behavioral data. Others show targeted ads based on your usage patterns. The irony of a screen time app that profits from your data should give you pause.
 
-Apps like Intently take a different approach: everything stays on your device. No account creation means no profile to build. No internet connection means no data to transmit. You get the insights you need without giving up the information you'd rather keep private.
+Apps like Pawse take a different approach: everything stays on your device. No account creation means no profile to build. No internet connection means no data to transmit. You get the insights you need without giving up the information you'd rather keep private.
 
 When choosing a free screen time app, check: Does it require an account? Does it need internet access? What does its privacy policy actually say? The best free apps are the ones that stay free because they don't need your data to sustain themselves.
 
 ## Getting Started
 
-The best screen time app is the one you'll actually use consistently. If you're unsure, start with Intently — it's free, private, and gives you the most tools to work with. Set it up for your two or three most distracting apps, give it a week, and see whether the pauses change your behavior.
+The best screen time app is the one you'll actually use consistently. If you're unsure, start with Pawse — it's free, private, and gives you the most tools to work with. Set it up for your two or three most distracting apps, give it a week, and see whether the pauses change your behavior.
 
-[Download Intently for Android, iOS & Chrome](/download)
+[Download Pawse for Android, iOS & Chrome](/download)
 
 ---
 
 ## Related Articles
 
-- [Intently vs FlowBuddy: Full-Featured Free vs Minimal Open-Source](/blog/intently-vs-flowbuddy)
+- [Pawse vs FlowBuddy: Full-Featured Free vs Minimal Open-Source](/blog/pawse-vs-flowbuddy)
 - [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking)
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Intently vs Google Digital Wellbeing](/blog/intently-vs-google-digital-wellbeing)
+- [Pawse vs Google Digital Wellbeing](/blog/pawse-vs-google-digital-wellbeing)
 - [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives)

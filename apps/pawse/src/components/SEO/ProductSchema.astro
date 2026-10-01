@@ -33,7 +33,8 @@ const platformNames = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": `Intently - ${platformNames[platform]}`,
+  "name": `Pawse - ${platformNames[platform]}`,
+  "alternateName": "Intently",
   "description": description,
   "applicationCategory": "HealthApplication",
   "url": downloadUrl,
@@ -53,6 +54,7 @@ const productSchema = {
   } : {}),
   "author": {
     "@type": "Organization",
+    "@id": "https://liveintently.app/#organization",
     "name": "Intently",
     "url": "https://liveintently.app"
   },

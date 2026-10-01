@@ -2,7 +2,7 @@
 title: "Instagram Reels Addiction: Breaking the Endless Scroll Cycle"
 description: "Struggling to stop watching Instagram Reels? Learn why Reels are so addictive, how they differ from regular Instagram use, and 5 proven strategies to break the endless scroll cycle and reclaim your time."
 pubDate: 2026-02-01
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["instagram reels addiction", "stop watching reels", "instagram reels addictive", "instagram addiction", "digital wellbeing", "reduce instagram usage"]
 heroImage: "/blog-placeholder-1.jpg"
@@ -16,7 +16,7 @@ faq:
   - question: "Can Instagram Reels affect my mental health?"
     answer: "Yes. Meta's own leaked internal research from 2021 found that Instagram made body image issues worse for 32% of teen girls. Reels amplify this with full-screen, highly produced aspirational content. Research links excessive Reels use to increased comparison anxiety, reduced self-esteem, sleep disruption, and feelings of inadequacy."
   - question: "How do I stop watching Instagram Reels without deleting Instagram?"
-    answer: "Focus on redefining what Instagram is FOR in your life. Curate aggressively: mute Reels-heavy accounts, use the 'Not Interested' button, avoid the Explore page, and stick to Stories and DMs for genuine social connection. Use a tool like Intently to add a pause before the app opens, giving you a moment to set your intention."
+    answer: "Focus on redefining what Instagram is FOR in your life. Curate aggressively: mute Reels-heavy accounts, use the 'Not Interested' button, avoid the Explore page, and stick to Stories and DMs for genuine social connection. Use a tool like Pawse to add a pause before the app opens, giving you a moment to set your intention."
   - question: "Does Instagram deliberately make Reels addictive?"
     answer: "Yes. Meta has invested billions in Reels as their primary growth and engagement feature. Leaked internal documents from 2021 showed Meta was aware of Instagram's negative effects on teen mental health yet continued optimizing for engagement metrics. The Reels algorithm is designed to maximize watch time through personalization, autoplay, and variable rewards."
 howToSteps:
@@ -28,8 +28,8 @@ howToSteps:
     text: "Use Instagram primarily for its social features: watching close friends' Stories and exchanging DMs. These have natural endpoints (Stories run out, conversations conclude) and maintain the genuine human connection that drew you to Instagram in the first place, without the infinite scroll of Reels."
   - name: "Avoid the Explore Page"
     text: "The Explore page is where Instagram's recommendation algorithm is most aggressive with Reels content. Treat it as off-limits. If you need to find a specific account, use the search bar directly rather than browsing Explore."
-  - name: "Use Intently to Pause Before Opening Instagram"
-    text: "Install Intently to display a brief pause screen before Instagram opens. This moment of friction prompts the question 'What am I here for?' and interrupts the automatic habit of opening Instagram and drifting into Reels without a purpose."
+  - name: "Use Pawse to Pause Before Opening Instagram"
+    text: "Install Pawse to display a brief pause screen before Instagram opens. This moment of friction prompts the question 'What am I here for?' and interrupts the automatic habit of opening Instagram and drifting into Reels without a purpose."
 ---
 
 # Instagram Reels Addiction: Breaking the Endless Scroll Cycle
@@ -80,7 +80,7 @@ This sounds simple, but it's the most important step. If someone asked you "why 
 
 Reels almost never makes the list.
 
-That gap between why you have Instagram and what you actually do on it is where the problem lives. Once you name it, you'll start catching yourself mid-drift. A tool like [Intently](/download) can help here -- it shows a brief pause screen before Instagram opens, prompting you to check in on your intention before the feed takes over.
+That gap between why you have Instagram and what you actually do on it is where the problem lives. Once you name it, you'll start catching yourself mid-drift. A tool like [Pawse](/download) can help here -- it shows a brief pause screen before Instagram opens, prompting you to check in on your intention before the feed takes over.
 
 ### Train the algorithm (it's more trainable than you think)
 
@@ -125,7 +125,7 @@ The average Instagram user spends 30-40 minutes per day on the app, with Reels t
 Yes. Internal research reportedly leaked during the 2021 Facebook Papers suggested Instagram worsened body image issues for a significant number of teen users. Reels amplifies this with full-screen aspirational content. Excessive use has been linked to comparison anxiety, lower self-esteem, identity confusion, and sleep disruption.
 
 **How do I stop watching Reels without deleting Instagram?**
-Redefine what Instagram is for in your life. Stick to Stories and DMs for genuine social interaction. Curate your feed to reduce comparison triggers. Avoid the Explore page. Use "Not Interested" on algorithmically injected Reels. Add a mindful pause before opening the app with a tool like Intently.
+Redefine what Instagram is for in your life. Stick to Stories and DMs for genuine social interaction. Curate your feed to reduce comparison triggers. Avoid the Explore page. Use "Not Interested" on algorithmically injected Reels. Add a mindful pause before opening the app with a tool like Pawse.
 
 **Does Instagram deliberately make Reels addictive?**
 Meta has invested billions in Reels as their primary engagement driver. Leaked documents from 2021 indicated Meta was aware of negative mental health effects yet continued optimizing for engagement. The Reels algorithm is built to maximize watch time.
@@ -136,7 +136,7 @@ Instagram doesn't have to be a source of comparison anxiety and lost hours. It c
 
 The shift starts with an honest look at how you're actually using the app versus how you want to be using it. From there, it's about small, deliberate changes -- curating your feed, sticking to Stories and DMs, skipping the Explore page. And when you catch yourself deep in a Reels session, don't beat yourself up. Just notice what you were feeling before you started scrolling. That's useful information.
 
-Ready to start using Instagram on your terms? [Download Intently](/download) to add a moment of intention before every Instagram session.
+Ready to start using Instagram on your terms? [Download Pawse](/download) to add a moment of intention before every Instagram session.
 
 ---
 

@@ -3,12 +3,12 @@ interface Props {
 	author?: string;
 }
 
-const { author = 'Intently Team' } = Astro.props;
+const { author = 'Pawse Team' } = Astro.props;
 
-const isTeam = author === 'Intently Team';
+const isTeam = author === 'Pawse Team';
 const descriptionText = isTeam
-	? `Written by the <strong>Intently Team</strong>, experts in digital wellbeing and behavioral psychology. We're building privacy-first tools to help people develop healthier relationships with technology. Our mission is to empower mindful tech usage through compassionate interventions, not restrictive blocking.`
-	: `Written by <strong>${author}</strong>, contributing to the Intently blog on digital wellbeing, screen time management, and building healthier relationships with technology.`;
+	? `Written by the <strong>Pawse Team</strong>, experts in digital wellbeing and behavioral psychology. We're building privacy-first tools to help people develop healthier relationships with technology. Our mission is to empower mindful tech usage through compassionate interventions, not restrictive blocking.`
+	: `Written by <strong>${author}</strong>, contributing to the Pawse blog on digital wellbeing, screen time management, and building healthier relationships with technology.`;
 ---
 
 <div class="author-bio">
@@ -24,29 +24,29 @@ const descriptionText = isTeam
 		</div>
 	</div>
 	<p class="author-description" set:html={descriptionText} />
-	<a href="/about" class="author-link">Learn more about Intently →</a>
+	<a href="/about" class="author-link">Learn more about Pawse →</a>
 </div>
 
 <style>
 .author-bio {
-	margin-top: var(--intently-space-3xl);
-	padding: var(--intently-space-2xl);
-	background: var(--intently-bg-secondary);
-	border-radius: var(--intently-radius-lg);
-	border: 1px solid var(--intently-gray-200);
+	margin-top: var(--ds-space-3xl);
+	padding: var(--ds-space-2xl);
+	background: var(--ds-bg-secondary);
+	border-radius: var(--ds-radius-lg);
+	border: 1px solid var(--ds-gray-200);
 }
 
 .author-header {
 	display: flex;
 	align-items: center;
-	gap: var(--intently-space-lg);
-	margin-bottom: var(--intently-space-lg);
+	gap: var(--ds-space-lg);
+	margin-bottom: var(--ds-space-lg);
 }
 
 .author-avatar {
 	width: 64px;
 	height: 64px;
-	background: var(--intently-blue);
+	background: var(--ds-blue);
 	color: white;
 	border-radius: 50%;
 	display: flex;
@@ -58,8 +58,8 @@ const descriptionText = isTeam
 .author-info h3 {
 	font-size: 1rem;
 	font-weight: 600;
-	margin: 0 0 var(--intently-space-xs);
-	color: var(--intently-text-secondary);
+	margin: 0 0 var(--ds-space-xs);
+	color: var(--ds-text-secondary);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
@@ -68,38 +68,38 @@ const descriptionText = isTeam
 	font-size: 1.25rem;
 	font-weight: 700;
 	margin: 0;
-	color: var(--intently-text-primary);
+	color: var(--ds-text-primary);
 }
 
 .author-description {
 	line-height: 1.7;
-	margin: 0 0 var(--intently-space-lg);
-	color: var(--intently-text-secondary);
+	margin: 0 0 var(--ds-space-lg);
+	color: var(--ds-text-secondary);
 	font-size: 1rem;
 }
 
 .author-description strong {
-	color: var(--intently-text-primary);
+	color: var(--ds-text-primary);
 	font-weight: 600;
 }
 
 .author-link {
 	display: inline-flex;
 	align-items: center;
-	color: var(--intently-blue);
+	color: var(--ds-blue);
 	font-weight: 600;
 	text-decoration: none;
 	border-bottom: 2px solid transparent;
-	transition: var(--intently-transition-normal);
+	transition: var(--ds-transition-normal);
 }
 
 .author-link:hover {
-	border-bottom-color: var(--intently-blue);
+	border-bottom-color: var(--ds-blue);
 }
 
 @media (max-width: 767px) {
 	.author-bio {
-		padding: var(--intently-space-xl);
+		padding: var(--ds-space-xl);
 	}
 
 	.author-header {

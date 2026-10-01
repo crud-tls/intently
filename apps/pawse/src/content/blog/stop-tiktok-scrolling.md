@@ -3,7 +3,7 @@ title: "Stop Scrolling TikTok Without Deleting: 5 Strategies"
 description: "Stop scrolling TikTok without deleting the app. Learn 5 mindful strategies to reduce TikTok usage, break the addiction cycle, and reclaim your time while staying connected."
 pubDate: 2026-01-23
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["tiktok addiction", "stop scrolling tiktok", "reduce tiktok usage", "mindful social media", "digital wellbeing"]
 heroImage: "/blog-tiktok-scrolling.jpg"
@@ -43,13 +43,13 @@ It's the same basic psychology behind slot machines: unpredictable rewards deliv
 
 The most effective change you can make is adding friction before TikTok opens. Most sessions start without any conscious decision -- your thumb navigates there on autopilot.
 
-Intently shows a gentle, full-screen prompt when you tap TikTok:
+Pawse shows a gentle, full-screen prompt when you tap TikTok:
 
 > *"Take a breath. You wanted to spend less time on TikTok today. Do you still want to open it?"*
 
 You can always proceed. But that brief pause activates the decision-making part of your brain before the habit takes over. Many people find they close the app more often than they expect -- not because they were forced to, but because they realized they didn't actually want to scroll.
 
-[Download Intently](/download) for Android, iOS, or Chrome.
+[Download Pawse](/download) for Android, iOS, or Chrome.
 
 ## Make It Harder to Open
 
@@ -95,14 +95,14 @@ This is genuinely hard at first. It gets easier.
 
 ## Tools That Help
 
-Intently is built for exactly this kind of habit change:
+Pawse is built for exactly this kind of habit change:
 
 - Gentle full-screen reminders before each TikTok session
 - Custom intervention messages you write yourself
 - Automatic usage tracking so you can see patterns
 - Works on Android, iOS, and Chrome
 
-[Download Intently free](/download) and start building awareness around your TikTok use.
+[Download Pawse free](/download) and start building awareness around your TikTok use.
 
 You don't have to quit TikTok to take back your time. You just have to make every session a conscious choice instead of an automatic one.
 

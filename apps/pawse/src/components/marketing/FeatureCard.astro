@@ -16,11 +16,11 @@ const { icon, title, description, color = 'blue' } = Astro.props;
 
 // Map color to actual color value for the icon
 const colorMap = {
-	blue: 'var(--intently-blue)',
-	green: 'var(--intently-green)',
-	orange: 'var(--intently-orange)',
-	red: 'var(--intently-red)',
-	purple: 'var(--intently-purple)'
+	blue: 'var(--ds-blue)',
+	green: 'var(--ds-green)',
+	orange: 'var(--ds-orange)',
+	red: 'var(--ds-red)',
+	purple: 'var(--ds-purple)'
 };
 const iconColor = colorMap[color];
 ---
@@ -37,67 +37,67 @@ const iconColor = colorMap[color];
 	.feature-card {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-md);
-		padding: var(--intently-space-xl);
-		background: var(--intently-bg-primary);
-		border-radius: var(--intently-radius-lg);
-		box-shadow: var(--intently-shadow-md);
-		transition: all var(--intently-transition-normal);
+		gap: var(--ds-space-md);
+		padding: var(--ds-space-xl);
+		background: var(--ds-bg-primary);
+		border-radius: var(--ds-radius-lg);
+		box-shadow: var(--ds-shadow-md);
+		transition: all var(--ds-transition-normal);
 		height: 100%;
 	}
 
 	.feature-card:hover {
 		transform: translateY(-4px);
-		box-shadow: var(--intently-shadow-lg);
+		box-shadow: var(--ds-shadow-lg);
 	}
 
 	.feature-icon {
 		width: 56px;
 		height: 56px;
-		border-radius: var(--intently-radius-md);
+		border-radius: var(--ds-radius-md);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
 	.feature-icon-blue {
-		background-color: rgba(33, 150, 243, 0.15); /* var(--intently-blue) with 15% opacity */
+		background-color: rgba(33, 150, 243, 0.15); /* var(--ds-blue) with 15% opacity */
 	}
 
 	.feature-icon-green {
-		background-color: rgba(76, 175, 80, 0.15); /* var(--intently-green) with 15% opacity */
+		background-color: rgba(76, 175, 80, 0.15); /* var(--ds-green) with 15% opacity */
 	}
 
 	.feature-icon-orange {
-		background-color: rgba(255, 152, 0, 0.15); /* var(--intently-orange) with 15% opacity */
+		background-color: rgba(255, 152, 0, 0.15); /* var(--ds-orange) with 15% opacity */
 	}
 
 	.feature-icon-red {
-		background-color: rgba(244, 67, 54, 0.15); /* var(--intently-red) with 15% opacity */
+		background-color: rgba(244, 67, 54, 0.15); /* var(--ds-red) with 15% opacity */
 	}
 
 	.feature-icon-purple {
-		background-color: rgba(156, 39, 176, 0.15); /* var(--intently-purple) with 15% opacity */
+		background-color: rgba(156, 39, 176, 0.15); /* var(--ds-purple) with 15% opacity */
 	}
 
 	.feature-title {
 		font-size: 1.25rem;
 		font-weight: 700;
 		margin: 0;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.feature-description {
 		font-size: 1rem;
 		line-height: 1.6;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		margin: 0;
 	}
 
 	/* Mobile: optimize spacing and sizing */
 	@media (max-width: 767px) {
 		.feature-card {
-			padding: var(--intently-space-lg);
+			padding: var(--ds-space-lg);
 		}
 
 		.feature-icon {

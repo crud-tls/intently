@@ -3,7 +3,7 @@ title: 'Best Apple Screen Time Alternatives 2026 for iPhone'
 description: 'Looking for an Apple Screen Time alternative? Understand what Screen Time does well, where it falls short, and which third-party apps actually help iPhone users build better phone habits.'
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'App Comparisons'
 tags: ['apple screen time alternatives', 'screen time alternative iphone', 'better than screen time', 'iPhone', 'screen time', 'digital wellbeing']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
@@ -11,7 +11,7 @@ faq:
   - question: "Is Apple Screen Time good enough for managing phone habits?"
     answer: "For basic time limits and parental controls, yes. But Screen Time is easy to bypass, lacks mindful interventions, and offers minimal insights into why you pick up your phone. Third-party alternatives use different approaches -- breathing exercises, mindful pauses, hard blocks -- that can be more effective for adults trying to change habits."
   - question: "What's the best free alternative to Apple Screen Time?"
-    answer: "Intently is a strong free option offering mindful interventions, usage tracking, and gamification with complete privacy. It currently works on Android and Chrome, with iOS coming soon. On iPhone right now, ScreenZen offers a free awareness-based approach."
+    answer: "Pawse is a strong free option offering mindful interventions, usage tracking, and gamification with complete privacy. It currently works on Android and Chrome, with iOS coming soon. On iPhone right now, ScreenZen offers a free awareness-based approach."
   - question: "Why is Apple Screen Time so easy to bypass?"
     answer: "Screen Time relies on a simple 4-digit passcode and includes an 'Ignore Limit' button built right into the notification. Users can also bypass it by deleting and reinstalling apps, changing time zones, or using iMessage workarounds. It was designed primarily as a parental tool, not an adult habit-change tool."
   - question: "Can I replace Screen Time with a third-party app on iPhone?"
@@ -105,17 +105,17 @@ It's worth watching. If you want a mindful-pause app but prefer a freemium model
 
 Rating: 3.5/5
 
-### What About Intently?
+### What About Pawse?
 
-Intently takes a different angle from the apps above. Instead of just a breathing exercise, it creates full-screen moments of awareness when you open distracting apps, then pairs that with usage tracking, streaks, and achievements. Everything is completely free -- no premium tier, no ads, no account required, and no data ever leaves your device.
+Pawse takes a different angle from the apps above. Instead of just a breathing exercise, it creates full-screen moments of awareness when you open distracting apps, then pairs that with usage tracking, streaks, and achievements. Everything is completely free -- no premium tier, no ads, no account required, and no data ever leaves your device.
 
-That privacy-first model is a genuine differentiator. Most apps in this space want your usage data. Intently doesn't collect any.
+That privacy-first model is a genuine differentiator. Most apps in this space want your usage data. Pawse doesn't collect any.
 
-The catch for iPhone users: Intently is currently on Android and Chrome, with iOS in development. If you're on Android or use Chrome on desktop, it's an easy recommendation. If you're on iPhone, keep it on your radar.
+The catch for iPhone users: Pawse is currently on Android and Chrome, with iOS in development. If you're on Android or use Chrome on desktop, it's an easy recommendation. If you're on iPhone, keep it on your radar.
 
 Rating: 4/5
 
-[Download Intently Free](/download)
+[Download Pawse Free](/download)
 
 ## Hard Blockers
 
@@ -177,7 +177,7 @@ If you need unbreakable focus blocks for work or studying, Opal or Freedom can d
 
 If you want to understand your habits before committing to restrictions, ScreenZen gives you awareness without getting in the way.
 
-If you want something free and comprehensive, Intently combines mindful interventions with tracking and gamification at no cost -- though it's currently Android and Chrome only, with iOS on the way.
+If you want something free and comprehensive, Pawse combines mindful interventions with tracking and gamification at no cost -- though it's currently Android and Chrome only, with iOS on the way.
 
 If you use a mix of Apple, Windows, and Android devices, Freedom is the only option that covers all of them.
 
@@ -204,11 +204,11 @@ It was designed primarily as a parental control tool. The "Ignore Limit" button 
 
 ### Do I need to pay for a better Screen Time alternative?
 
-Not necessarily. Intently is completely free with all features included (Android and Chrome, iOS coming soon). ScreenZen is also free on both iOS and Android. Paid options like One Sec (~$50), Opal ($99/year), and Freedom ($120/year) offer specific capabilities, but plenty of people get results without spending anything.
+Not necessarily. Pawse is completely free with all features included (Android and Chrome, iOS coming soon). ScreenZen is also free on both iOS and Android. Paid options like One Sec (~$50), Opal ($99/year), and Freedom ($120/year) offer specific capabilities, but plenty of people get results without spending anything.
 
 ### Which alternative works best on iPhone right now?
 
-For a proven mindful-pause experience, One Sec is the strongest option on iOS, backed by actual research. ClearSpace offers a freemium alternative in the same category. Opal is the most effective hard blocker. ScreenZen is the best free awareness tool. Intently is coming to iOS soon and is already a top pick on Android and Chrome.
+For a proven mindful-pause experience, One Sec is the strongest option on iOS, backed by actual research. ClearSpace offers a freemium alternative in the same category. Opal is the most effective hard blocker. ScreenZen is the best free awareness tool. Pawse is coming to iOS soon and is already a top pick on Android and Chrome.
 
 ### Can I use these alongside Apple Screen Time?
 
@@ -223,11 +223,11 @@ The best Screen Time alternative depends on what isn't working for you right now
 - Keep tapping "Ignore Limit"? Try One Sec or ClearSpace for mindful pauses.
 - Need focus sessions for work? Try Opal or Freedom for hard blocking.
 - Want free awareness on iPhone? Try ScreenZen for lightweight nudges.
-- Want a free, all-in-one tool? Try [Intently](/download) on Android or Chrome (iOS coming soon).
+- Want a free, all-in-one tool? Try [Pawse](/download) on Android or Chrome (iOS coming soon).
 
 Whatever you choose, the goal is the same: building a relationship with your phone that you actually feel good about.
 
-[Download Intently Free](/download)
+[Download Pawse Free](/download)
 
 ---
 
@@ -235,9 +235,9 @@ Whatever you choose, the goal is the same: building a relationship with your pho
 
 - [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
 - [How to Reduce Screen Time](/blog/how-to-reduce-screen-time)
-- [Intently vs One Sec](/blog/intently-vs-one-sec)
-- [Intently vs Freedom](/blog/intently-vs-freedom)
+- [Pawse vs One Sec](/blog/pawse-vs-one-sec)
+- [Pawse vs Freedom](/blog/pawse-vs-freedom)
 
 ---
 
-*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 26, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

@@ -13,14 +13,14 @@ const features = [
 	{
 		icon: "BarChart3",
 		title: "Finally See the Truth",
-		description: "You tell yourself it's only 20 minutes. The data tells a different story. Intently shows you exactly where your time goes—without judgment.",
+		description: "You tell yourself it's only 20 minutes. The data tells a different story. Pawse shows you exactly where your time goes—without judgment.",
 		details: ["Daily time summaries", "Per-app usage breakdown", "Weekly and monthly trends", "Category-based grouping"],
 		color: "blue"
 	},
 	{
 		icon: "Target",
 		title: "Set Boundaries You Actually Keep",
-		description: "Choose how much time feels right for each app. When you're getting close, Intently lets you know. No locking, no lectures—just a gentle heads-up.",
+		description: "Choose how much time feels right for each app. When you're getting close, Pawse lets you know. No locking, no lectures—just a gentle heads-up.",
 		details: ["Custom time limits per app", "Visual progress rings", "Goal achievement celebrations", "Flexible limit adjustments"],
 		color: "green"
 	},
@@ -34,7 +34,7 @@ const features = [
 	{
 		icon: "Trophy",
 		title: "Celebrate Every Win (Even the Small Ones)",
-		description: "Day 1 feels small. Day 7 feels like something. Day 30 feels like you're becoming someone new. Intently tracks your streaks because lasting change deserves recognition.",
+		description: "Day 1 feels small. Day 7 feels like something. Day 30 feels like you're becoming someone new. Pawse tracks your streaks because lasting change deserves recognition.",
 		details: ["Daily streak tracking", "Milestone celebrations", "Achievement badges", "Streak recovery options"],
 		color: "orange"
 	},
@@ -70,43 +70,43 @@ const features = [
 
 const featureFAQs = [
 	{
-		question: "How does Intently track app usage?",
-		answer: "Intently runs locally on your device, monitoring which apps you use and how long you spend in each one. All data stays on your phone - we never collect or send anything to our servers. This approach gives you complete privacy while providing accurate usage insights."
+		question: "How does Pawse track app usage?",
+		answer: "Pawse runs locally on your device, monitoring which apps you use and how long you spend in each one. All data stays on your phone - we never collect or send anything to our servers. This approach gives you complete privacy while providing accurate usage insights."
 	},
 	{
-		question: "Is Intently better than other screen time apps?",
-		answer: "Unlike blocking-based solutions that use shame and restriction, Intently uses psychology-backed mindful interventions. Instead of preventing app access, we create moments of awareness so you can make conscious choices about your time. Studies show this compassionate approach leads to more lasting behavior change."
+		question: "Is Pawse better than other screen time apps?",
+		answer: "Unlike blocking-based solutions that use shame and restriction, Pawse uses psychology-backed mindful interventions. Instead of preventing app access, we create moments of awareness so you can make conscious choices about your time. Studies show this compassionate approach leads to more lasting behavior change."
 	},
 	{
-		question: "Does Intently work offline?",
-		answer: "Yes, Intently is 100% offline-first. All tracking, analytics, and interventions happen on your device. You don't need an account, internet connection, or cloud sync. Your data belongs entirely to you."
+		question: "Does Pawse work offline?",
+		answer: "Yes, Pawse is 100% offline-first. All tracking, analytics, and interventions happen on your device. You don't need an account, internet connection, or cloud sync. Your data belongs entirely to you."
 	},
 	{
-		question: "Can I use Intently on multiple devices?",
-		answer: "Intently works independently on each device (Android, iOS, Chrome). Currently, data doesn't sync between devices, keeping everything local and private. Each device maintains its own usage history and settings."
+		question: "Can I use Pawse on multiple devices?",
+		answer: "Pawse works independently on each device (Android, iOS, Chrome). Currently, data doesn't sync between devices, keeping everything local and private. Each device maintains its own usage history and settings."
 	},
 	{
-		question: "What makes Intently privacy-first?",
-		answer: "Intently stores zero data in the cloud. No servers, no analytics, no advertising networks, no tracking. You don't need to create an account. We make money through optional premium features on-device, not through selling your data."
+		question: "What makes Pawse privacy-first?",
+		answer: "Pawse stores zero data in the cloud. No servers, no analytics, no advertising networks, no tracking. You don't need to create an account. We make money through optional premium features on-device, not through selling your data."
 	}
 ];
 
 const colorMap: Record<string, string> = {
-	blue: 'var(--intently-blue)',
-	green: 'var(--intently-green)',
-	orange: 'var(--intently-orange)',
-	purple: 'var(--intently-purple)'
+	blue: 'var(--ds-blue)',
+	green: 'var(--ds-green)',
+	orange: 'var(--ds-orange)',
+	purple: 'var(--ds-purple)'
 };
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="How Intently Works | Mindful Screen Time Features" description="Usage tracking that opens your eyes. Interventions that feel like a deep breath. Streaks that build quiet pride. See how Intently helps 12,000+ people choose presence over scrolling." />
+		<BaseHead title="How Pawse Works | Mindful Screen Time Features" description="Usage tracking that opens your eyes. Interventions that feel like a deep breath. Streaks that build quiet pride. See how Pawse helps 12,000+ people choose presence over scrolling." />
 		<BreadcrumbSchema
 			items={[
-				{ name: "Home", url: "https://liveintently.app" },
-				{ name: "Features", url: "https://liveintently.app/features" }
+				{ name: "Home", url: "https://pawse.liveintently.app" },
+				{ name: "Features", url: "https://pawse.liveintently.app/features" }
 			]}
 		/>
 	</head>
@@ -119,22 +119,22 @@ const colorMap: Record<string, string> = {
 				<div class="hero-glow" aria-hidden="true"></div>
 				<div class="container">
 					<h1 class="text-gradient">Everything You Need to Take Back Control</h1>
-					<p class="hero-subtitle">Intently uses behavioral science—not shame—to help you become the person who puts their phone down and doesn't think twice about it.</p>
+					<p class="hero-subtitle">Pawse uses behavioral science—not shame—to help you become the person who puts their phone down and doesn't think twice about it.</p>
 				</div>
 			</section>
 
-			<!-- What is Intently - Glass Intro -->
+			<!-- What is Pawse - Glass Intro -->
 			<section class="intro-section">
 				<div class="container">
 					<ScrollReveal animation="fadeUp">
-						<h2>What is Intently?</h2>
+						<h2>What is Pawse?</h2>
 						<div class="glass-intro-card">
 							<p class="direct-answer">
-								Intently is a <strong>privacy-first digital wellbeing app</strong> that helps you build healthier relationships with technology. Instead of blocking apps, it uses <strong>mindful interventions</strong> to create moments of awareness, helping you make conscious choices about screen time. All data stays on your device—no account, no tracking, 100% offline.
+								Pawse is a <strong>privacy-first digital wellbeing app</strong> that helps you build healthier relationships with technology. Instead of blocking apps, it uses <strong>mindful interventions</strong> to create moments of awareness, helping you make conscious choices about screen time. All data stays on your device—no account, no tracking, 100% offline.
 							</p>
 						</div>
 						<p class="intro-links">
-							Learn more about <a href="/privacy">our privacy-first approach</a> or <a href="/download">download Intently today</a> to start building healthier digital habits.
+							Learn more about <a href="/privacy">our privacy-first approach</a> or <a href="/download">download Pawse today</a> to start building healthier digital habits.
 						</p>
 					</ScrollReveal>
 				</div>
@@ -172,7 +172,7 @@ const colorMap: Record<string, string> = {
 			<section class="how-it-works">
 				<div class="container">
 					<ScrollReveal animation="fadeUp">
-						<h2 class="section-title">How Intently Works</h2>
+						<h2 class="section-title">How Pawse Works</h2>
 					</ScrollReveal>
 
 					<ScrollReveal animation="fadeUp">
@@ -186,7 +186,7 @@ const colorMap: Record<string, string> = {
 							</div>
 							<div class="step-glass-card">
 								<h3>Notice</h3>
-								<p>Intently quietly observes which apps pull you in. Within a day, you'll see exactly where your time goes.</p>
+								<p>Pawse quietly observes which apps pull you in. Within a day, you'll see exactly where your time goes.</p>
 							</div>
 						</div>
 
@@ -280,8 +280,8 @@ const colorMap: Record<string, string> = {
 	   ============================ */
 	.features-hero {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-secondary) 100%);
+		padding: var(--ds-space-2xl) 0;
+		background: linear-gradient(180deg, var(--ds-bg-accent) 0%, var(--ds-bg-secondary) 100%);
 		text-align: center;
 		position: relative;
 		overflow: hidden;
@@ -308,10 +308,10 @@ const colorMap: Record<string, string> = {
 	.text-gradient {
 		font-size: 2rem;
 		font-weight: 800;
-		margin: 0 0 var(--intently-space-md);
+		margin: 0 0 var(--ds-space-md);
 		letter-spacing: -0.02em;
 		line-height: 1.2;
-		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -321,7 +321,7 @@ const colorMap: Record<string, string> = {
 		font-size: 1.25rem;
 		max-width: 700px;
 		margin: 0 auto;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		line-height: 1.6;
 	}
 
@@ -336,22 +336,22 @@ const colorMap: Record<string, string> = {
 	   ============================ */
 	.intro-section {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
 		text-align: center;
 	}
 
 	.intro-section h2 {
 		font-size: 2rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-lg);
-		color: var(--intently-text-primary);
+		margin: 0 0 var(--ds-space-lg);
+		color: var(--ds-text-primary);
 	}
 
 	.glass-intro-card {
 		max-width: 800px;
 		margin: 0 auto;
-		padding: var(--intently-space-2xl);
+		padding: var(--ds-space-2xl);
 		background: rgba(255, 255, 255, 0.75);
 		backdrop-filter: blur(20px) saturate(160%);
 		-webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -365,32 +365,32 @@ const colorMap: Record<string, string> = {
 	.direct-answer {
 		font-size: 1.125rem;
 		line-height: 1.75;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		margin: 0;
 	}
 
 	.direct-answer strong {
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		font-weight: 600;
 	}
 
 	.intro-links {
 		font-size: 1rem;
 		max-width: 800px;
-		margin: var(--intently-space-lg) auto 0;
-		color: var(--intently-text-secondary);
+		margin: var(--ds-space-lg) auto 0;
+		color: var(--ds-text-secondary);
 	}
 
 	.intro-links a {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		font-weight: 600;
 		text-decoration: none;
 		border-bottom: 2px solid transparent;
-		transition: var(--intently-transition-normal);
+		transition: var(--ds-transition-normal);
 	}
 
 	.intro-links a:hover {
-		border-bottom-color: var(--intently-blue);
+		border-bottom-color: var(--ds-blue);
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -408,16 +408,16 @@ const colorMap: Record<string, string> = {
 	   ============================ */
 	.bento-section {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
 	}
 
 	.section-title {
 		font-size: 2rem;
 		font-weight: 700;
 		text-align: center;
-		margin: 0 0 var(--intently-space-2xl);
-		color: var(--intently-text-primary);
+		margin: 0 0 var(--ds-space-2xl);
+		color: var(--ds-text-primary);
 	}
 
 	.bento-grid {
@@ -483,8 +483,8 @@ const colorMap: Record<string, string> = {
 	.bento-feature-header {
 		display: flex;
 		align-items: flex-start;
-		gap: var(--intently-space-md);
-		margin-bottom: var(--intently-space-md);
+		gap: var(--ds-space-md);
+		margin-bottom: var(--ds-space-md);
 	}
 
 	/* Icon with glow */
@@ -507,24 +507,24 @@ const colorMap: Record<string, string> = {
 		transition: opacity 0.4s ease, transform 0.4s ease;
 	}
 
-	.bento-icon-blue::before { background: radial-gradient(circle, var(--intently-blue), transparent 70%); }
-	.bento-icon-green::before { background: radial-gradient(circle, var(--intently-green), transparent 70%); }
-	.bento-icon-purple::before { background: radial-gradient(circle, var(--intently-purple), transparent 70%); }
-	.bento-icon-orange::before { background: radial-gradient(circle, var(--intently-orange), transparent 70%); }
+	.bento-icon-blue::before { background: radial-gradient(circle, var(--ds-blue), transparent 70%); }
+	.bento-icon-green::before { background: radial-gradient(circle, var(--ds-green), transparent 70%); }
+	.bento-icon-purple::before { background: radial-gradient(circle, var(--ds-purple), transparent 70%); }
+	.bento-icon-orange::before { background: radial-gradient(circle, var(--ds-orange), transparent 70%); }
 
 	.bento-feature-header h3 {
 		font-size: 1.125rem;
 		font-weight: 700;
 		margin: 0.5rem 0 0;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		line-height: 1.3;
 		letter-spacing: -0.01em;
 	}
 
 	.bento-description {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		line-height: 1.6;
-		margin: 0 0 var(--intently-space-md);
+		margin: 0 0 var(--ds-space-md);
 		font-size: 0.9375rem;
 	}
 
@@ -538,7 +538,7 @@ const colorMap: Record<string, string> = {
 		padding: 0.25rem 0 0.25rem 1.25rem;
 		position: relative;
 		font-size: 0.875rem;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		line-height: 1.5;
 	}
 
@@ -550,7 +550,7 @@ const colorMap: Record<string, string> = {
 		transform: translateY(-50%);
 		width: 6px;
 		height: 6px;
-		background: var(--intently-blue);
+		background: var(--ds-blue);
 		border-radius: 50%;
 	}
 
@@ -559,8 +559,8 @@ const colorMap: Record<string, string> = {
 	   ============================ */
 	.how-it-works {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0 var(--intently-space-4xl);
-		background: var(--intently-bg-primary);
+		padding: var(--ds-space-2xl) 0 var(--ds-space-4xl);
+		background: var(--ds-bg-primary);
 	}
 
 	.steps-timeline {
@@ -570,8 +570,8 @@ const colorMap: Record<string, string> = {
 
 	.timeline-step {
 		display: flex;
-		gap: var(--intently-space-lg);
-		margin-bottom: var(--intently-space-xl);
+		gap: var(--ds-space-lg);
+		margin-bottom: var(--ds-space-xl);
 		align-items: flex-start;
 	}
 
@@ -599,9 +599,9 @@ const colorMap: Record<string, string> = {
 		z-index: 2;
 	}
 
-	.step-marker.step-1 { background: var(--intently-blue); }
-	.step-marker.step-2 { background: var(--intently-purple); }
-	.step-marker.step-3 { background: var(--intently-green); }
+	.step-marker.step-1 { background: var(--ds-blue); }
+	.step-marker.step-2 { background: var(--ds-purple); }
+	.step-marker.step-3 { background: var(--ds-green); }
 
 	.step-number {
 		color: white;
@@ -611,8 +611,8 @@ const colorMap: Record<string, string> = {
 
 	.timeline-connector {
 		width: 3px;
-		height: calc(100% + var(--intently-space-xl) - 48px);
-		background: linear-gradient(180deg, var(--intently-blue) 0%, var(--intently-purple) 50%, var(--intently-green) 100%);
+		height: calc(100% + var(--ds-space-xl) - 48px);
+		background: linear-gradient(180deg, var(--ds-blue) 0%, var(--ds-purple) 50%, var(--ds-green) 100%);
 		position: absolute;
 		top: 48px;
 		left: 50%;
@@ -625,7 +625,7 @@ const colorMap: Record<string, string> = {
 	/* Glass card for step content */
 	.step-glass-card {
 		flex: 1;
-		padding: var(--intently-space-lg) var(--intently-space-xl);
+		padding: var(--ds-space-lg) var(--ds-space-xl);
 		background: rgba(255, 255, 255, 0.75);
 		backdrop-filter: blur(20px) saturate(160%);
 		-webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -656,12 +656,12 @@ const colorMap: Record<string, string> = {
 	.step-glass-card h3 {
 		font-size: 1.25rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-sm);
-		color: var(--intently-text-primary);
+		margin: 0 0 var(--ds-space-sm);
+		color: var(--ds-text-primary);
 	}
 
 	.step-glass-card p {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		line-height: 1.6;
 		margin: 0;
 		font-size: 0.9375rem;
@@ -672,14 +672,14 @@ const colorMap: Record<string, string> = {
 	   ============================ */
 	.faq-section {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
 	}
 
 	.faq-list {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 		max-width: 900px;
 		margin: 0 auto;
 	}
@@ -723,11 +723,11 @@ const colorMap: Record<string, string> = {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: var(--intently-space-md);
-		padding: var(--intently-space-lg) var(--intently-space-xl);
+		gap: var(--ds-space-md);
+		padding: var(--ds-space-lg) var(--ds-space-xl);
 		font-size: 1.125rem;
 		font-weight: 700;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		cursor: pointer;
 		list-style: none;
 		user-select: none;
@@ -742,7 +742,7 @@ const colorMap: Record<string, string> = {
 		content: '+';
 		font-size: 1.5rem;
 		font-weight: 300;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		flex-shrink: 0;
 		width: 28px;
 		height: 28px;
@@ -758,7 +758,7 @@ const colorMap: Record<string, string> = {
 	.faq-glass-card[open] summary::after {
 		content: '\2212';
 		background: rgba(33, 150, 243, 0.1);
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		transform: rotate(180deg);
 	}
 
@@ -774,19 +774,19 @@ const colorMap: Record<string, string> = {
 
 	@media (hover: hover) {
 		.faq-glass-card summary:hover {
-			color: var(--intently-blue);
+			color: var(--ds-blue);
 		}
 
 		.faq-glass-card summary:hover::after {
 			background: rgba(33, 150, 243, 0.1);
-			color: var(--intently-blue);
+			color: var(--ds-blue);
 		}
 	}
 
 	.faq-glass-card p {
 		margin: 0;
-		padding: 0 var(--intently-space-xl) var(--intently-space-lg);
-		color: var(--intently-text-secondary);
+		padding: 0 var(--ds-space-xl) var(--ds-space-lg);
+		color: var(--ds-text-secondary);
 		line-height: 1.7;
 		font-size: 0.9375rem;
 	}
@@ -796,8 +796,8 @@ const colorMap: Record<string, string> = {
 	   ============================ */
 	.cta-section {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-primary);
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-primary);
 		text-align: center;
 		position: relative;
 	}
@@ -811,9 +811,9 @@ const colorMap: Record<string, string> = {
 		background: linear-gradient(
 			90deg,
 			transparent 0%,
-			var(--intently-blue) 30%,
-			var(--intently-purple) 50%,
-			var(--intently-green) 70%,
+			var(--ds-blue) 30%,
+			var(--ds-purple) 50%,
+			var(--ds-green) 70%,
 			transparent 100%
 		);
 		opacity: 0.3;
@@ -822,7 +822,7 @@ const colorMap: Record<string, string> = {
 	.cta-glass {
 		max-width: 700px;
 		margin: 0 auto;
-		padding: var(--intently-space-2xl);
+		padding: var(--ds-space-2xl);
 		background: rgba(255, 255, 255, 0.75);
 		backdrop-filter: blur(20px) saturate(160%);
 		-webkit-backdrop-filter: blur(20px) saturate(160%);
@@ -850,20 +850,20 @@ const colorMap: Record<string, string> = {
 	.cta-glass h2 {
 		font-size: 2.5rem;
 		font-weight: 700;
-		margin: 0 0 var(--intently-space-md);
-		color: var(--intently-text-primary);
+		margin: 0 0 var(--ds-space-md);
+		color: var(--ds-text-primary);
 	}
 
 	.cta-glass p {
 		font-size: 1.125rem;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		max-width: 600px;
-		margin: 0 auto var(--intently-space-xl);
+		margin: 0 auto var(--ds-space-xl);
 	}
 
 	.cta-buttons {
 		display: flex;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 		justify-content: center;
 		flex-wrap: wrap;
 	}
@@ -878,7 +878,7 @@ const colorMap: Record<string, string> = {
 		.bento-section,
 		.faq-section,
 		.cta-section {
-			padding: var(--intently-space-3xl) 0;
+			padding: var(--ds-space-3xl) 0;
 		}
 
 		.text-gradient {
@@ -914,7 +914,7 @@ const colorMap: Record<string, string> = {
 		}
 
 		.timeline-step {
-			gap: var(--intently-space-md);
+			gap: var(--ds-space-md);
 		}
 	}
 
@@ -924,7 +924,7 @@ const colorMap: Record<string, string> = {
 		.bento-section,
 		.faq-section,
 		.cta-section {
-			padding: var(--intently-space-4xl) 0;
+			padding: var(--ds-space-4xl) 0;
 		}
 
 		.text-gradient {
@@ -961,7 +961,7 @@ const colorMap: Record<string, string> = {
 		}
 
 		.glass-intro-card {
-			padding: var(--intently-space-lg);
+			padding: var(--ds-space-lg);
 		}
 
 		.direct-answer {
@@ -983,13 +983,13 @@ const colorMap: Record<string, string> = {
 		}
 
 		.cta-glass {
-			padding: var(--intently-space-xl) var(--intently-space-md);
+			padding: var(--ds-space-xl) var(--ds-space-md);
 			border-radius: 0;
 		}
 
 		.cta-buttons {
 			flex-direction: column;
-			gap: var(--intently-space-md);
+			gap: var(--ds-space-md);
 		}
 
 		.timeline-connector {
@@ -997,7 +997,7 @@ const colorMap: Record<string, string> = {
 		}
 
 		.step-glass-card {
-			padding: var(--intently-space-md);
+			padding: var(--ds-space-md);
 		}
 
 		.cta-divider {
@@ -1027,7 +1027,7 @@ const colorMap: Record<string, string> = {
 
 	a:focus-visible,
 	button:focus-visible {
-		outline: 2px solid var(--intently-blue);
+		outline: 2px solid var(--ds-blue);
 		outline-offset: 2px;
 	}
 

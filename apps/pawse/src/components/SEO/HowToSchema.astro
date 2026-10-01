@@ -39,7 +39,7 @@ const howToSchema = {
   "@type": "HowTo",
   "name": name,
   "description": description,
-  "image": image ? `https://liveintently.app${image}` : undefined,
+  "image": image ? `https://pawse.liveintently.app${image}` : undefined,
   "estimatedCost": estimatedCost,
   "totalTime": totalTime,
   ...(supplies.length > 0 ? { "supply": supplies.map(item => ({ "@type": "HowToSupply", "name": item })) } : {}),
@@ -49,7 +49,7 @@ const howToSchema = {
     "position": index + 1,
     "name": step.name,
     "text": step.text,
-    "image": step.image ? `https://liveintently.app${step.image}` : undefined,
+    "image": step.image ? `https://pawse.liveintently.app${step.image}` : undefined,
     "url": step.url
   }))
 };

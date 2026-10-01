@@ -4,7 +4,7 @@ description: "Understand the psychological mechanisms behind app addiction—var
 pubDate: "Jan 12 2026"
 updatedDate: 2026-02-28
 heroImage: "/blog-placeholder-5.jpg"
-author: "Intently Team"
+author: "Pawse Team"
 tags: ["phone addiction", "psychology", "dopamine", "social media addiction", "behavior change"]
 faq:
   - question: "Is phone addiction real?"
@@ -162,7 +162,7 @@ Just "trying harder" doesn't cut it.
 
 You can't change behavior you're not aware of. The first step is making the unconscious conscious.
 
-Mindful interventions (used by apps like [Intently](/download)) create a gap between impulse and action. Before opening Instagram, you see: "Take a breath. Do you still want to open this?"
+Mindful interventions (used by apps like [Pawse](/download)) create a gap between impulse and action. Before opening Instagram, you see: "Take a breath. Do you still want to open this?"
 
 That pause activates your prefrontal cortex -- the rational, decision-making part of your brain. You shift from automatic response to conscious choice.
 
@@ -186,7 +186,7 @@ Make app access harder:
 - Log out after each session (entering passwords creates friction)
 - Move apps off your home screen (requires search to access)
 - Enable grayscale (removes visual appeal)
-- Use app blockers during focus time (Freedom, Opal, Intently)
+- Use app blockers during focus time (Freedom, Opal, Pawse)
 
 Each friction point gives your prefrontal cortex a chance to override the automatic habit.
 
@@ -300,7 +300,7 @@ Behavior change is messy. Each time you catch yourself mindlessly scrolling and 
 
 ### Use Tools That Work With You
 
-Apps like [Intently](/download) use mindful interventions rather than shame-based blocking. They respect your autonomy while creating awareness. This approach aligns with motivation research -- autonomy support creates lasting change, while controlling strategies create resistance.
+Apps like [Pawse](/download) use mindful interventions rather than shame-based blocking. They respect your autonomy while creating awareness. This approach aligns with motivation research -- autonomy support creates lasting change, while controlling strategies create resistance.
 
 ## FAQ: App Addiction
 
@@ -326,9 +326,9 @@ The brain patterns are similar, though substances cause additional physical dama
 
 App addiction can feel insurmountable because so much of it happens below conscious awareness. But once you understand the mechanics -- the variable rewards, the friction manipulation, the dopamine loops -- they lose some of their power over you.
 
-Pick one strategy from this article and try it this week. Maybe it's turning off notifications, or installing Intently for mindful interventions, or keeping your phone out of your bedroom. Small, concrete changes add up.
+Pick one strategy from this article and try it this week. Maybe it's turning off notifications, or installing Pawse for mindful interventions, or keeping your phone out of your bedroom. Small, concrete changes add up.
 
-Ready to break free from app addiction with psychology-backed, compassionate tools? [Download Intently](/download) and start building healthier digital habits today.
+Ready to break free from app addiction with psychology-backed, compassionate tools? [Download Pawse](/download) and start building healthier digital habits today.
 
 ---
 

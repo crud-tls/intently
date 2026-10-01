@@ -1,24 +1,24 @@
 ---
 title: "Best App Blocker 2026: Blockers vs Mindful Alternatives Compared"
-description: "Compare the best app blockers for Android and iPhone in 2026. From hard blockers like Freedom and Cold Turkey to mindful alternatives like Intently, find the right approach for your screen time goals."
+description: "Compare the best app blockers for Android and iPhone in 2026. From hard blockers like Freedom and Cold Turkey to mindful alternatives like Pawse, find the right approach for your screen time goals."
 pubDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "App Comparisons"
 tags: ["best app blocker", "app blocker 2026", "block apps phone", "app blocker comparison", "digital wellbeing", "screen time app"]
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: "What is the best app blocker in 2026?"
-    answer: "It depends on your approach. Freedom is the best traditional blocker for cross-platform use. Opal is the best iOS-focused blocker. But research increasingly shows that mindful alternatives like Intently — which create a pause rather than a block — produce better long-term results because they build internal motivation instead of relying on external restriction."
+    answer: "It depends on your approach. Freedom is the best traditional blocker for cross-platform use. Opal is the best iOS-focused blocker. But research increasingly shows that mindful alternatives like Pawse — which create a pause rather than a block — produce better long-term results because they build internal motivation instead of relying on external restriction."
   - question: "Do app blockers actually work?"
-    answer: "App blockers work short-term for many users but have a high abandonment rate. Studies show most people disable or bypass blockers within weeks. The problem is psychological reactance — being told you can't access something increases the urge to access it. Mindful pause apps like Intently avoid this by keeping the choice in your hands."
+    answer: "App blockers work short-term for many users but have a high abandonment rate. Studies show most people disable or bypass blockers within weeks. The problem is psychological reactance — being told you can't access something increases the urge to access it. Mindful pause apps like Pawse avoid this by keeping the choice in your hands."
   - question: "What is the best free app blocker for Android?"
-    answer: "Google Digital Wellbeing (built-in) offers basic app timers for free. For a more effective free approach, Intently provides mindful pause interventions with full customization and privacy — also completely free. Traditional blockers like Freedom require subscriptions for full functionality."
+    answer: "Google Digital Wellbeing (built-in) offers basic app timers for free. For a more effective free approach, Pawse provides mindful pause interventions with full customization and privacy — also completely free. Traditional blockers like Freedom require subscriptions for full functionality."
   - question: "What is the best app blocker for iPhone?"
-    answer: "Apple Screen Time is the best free built-in option. Opal is the best premium third-party blocker for iOS. For a mindful alternative, One Sec and ScreenZen offer pause-based approaches on iOS. Intently's iOS version is coming soon."
+    answer: "Apple Screen Time is the best free built-in option. Opal is the best premium third-party blocker for iOS. For a mindful alternative, One Sec and ScreenZen offer pause-based approaches on iOS. Pawse's iOS version is coming soon."
   - question: "Why do app blockers stop working over time?"
     answer: "App blockers trigger 'psychological reactance' — the harder something is to access, the more you want it. Users find workarounds (disabling the blocker, using a different device, accessing websites through browsers). Blockers also don't address the underlying habit; they just suppress it. When the block is removed, the behavior returns unchanged."
   - question: "Are mindful screen time apps better than blockers?"
-    answer: "For long-term behavior change, yes. Mindful apps like Intently create a moment of awareness before opening apps, helping you build internal decision-making rather than relying on external restriction. You still have the choice to proceed, but that choice becomes conscious. Over time, this builds the self-awareness that makes the tool unnecessary — which blockers rarely achieve."
+    answer: "For long-term behavior change, yes. Mindful apps like Pawse create a moment of awareness before opening apps, helping you build internal decision-making rather than relying on external restriction. You still have the choice to proceed, but that choice becomes conscious. Over time, this builds the self-awareness that makes the tool unnecessary — which blockers rarely achieve."
 ---
 
 # Best App Blocker 2026: Should You Block or Go Mindful?
@@ -113,18 +113,18 @@ Sometimes you genuinely need to check the app you've blocked. A friend messages 
 
 A growing category of apps takes a fundamentally different approach. Instead of blocking apps, they create a brief pause — a moment of awareness before the app opens. You always have the choice to proceed. The intervention isn't a wall; it's a mirror.
 
-### Intently — Best Free Mindful Alternative
+### Pawse — Best Free Mindful Alternative
 
 **Platforms:** Android + Chrome (iOS coming soon)
 **Price:** Completely free
 
-Intently shows a full-screen pause before you open tracked apps. The pause displays a message you've written yourself — tied to your actual goals and reasons for changing. You reflect for a moment and then make a conscious choice.
+Pawse shows a full-screen pause before you open tracked apps. The pause displays a message you've written yourself — tied to your actual goals and reasons for changing. You reflect for a moment and then make a conscious choice.
 
 **Why it works differently:** You never feel restricted. There's no wall to resent, no block to bypass. Instead, you build the internal awareness to make better choices — which eventually makes the tool itself unnecessary. That's the goal: not permanent dependence on an app, but genuine habit change.
 
 **Key features:** Custom messages per app, usage tracking and analytics, gamification with streaks, Chrome extension for websites, fully offline with zero data collection, completely free.
 
-[Download Intently free](/download)
+[Download Pawse free](/download)
 
 ### One Sec
 
@@ -134,7 +134,7 @@ Intently shows a full-screen pause before you open tracked apps. The pause displ
 One Sec shows a breathing exercise before opening selected apps. The pause creates a natural moment to reconsider. Premium adds tracking and analytics.
 
 **Strengths:** Cross-platform, research-backed breathing intervention
-**Weaknesses:** Best features require subscription, less customizable than Intently
+**Weaknesses:** Best features require subscription, less customizable than Pawse
 
 ### ScreenZen
 
@@ -183,13 +183,13 @@ ScreenZen uses a "take a breath" countdown before app launches. Simple, consiste
 
 ## Getting Started
 
-If you're new to screen time management, start with the mindful approach. It's less disruptive, more sustainable, and gives you data about your actual habits that pure blocking never provides. [Intently](/download) is free and takes about two minutes to set up.
+If you're new to screen time management, start with the mindful approach. It's less disruptive, more sustainable, and gives you data about your actual habits that pure blocking never provides. [Pawse](/download) is free and takes about two minutes to set up.
 
 If you've tried mindful approaches and genuinely need hard restriction for specific contexts, Freedom or Opal are solid options. Just go in knowing that the block is a temporary tool, not a permanent solution.
 
 The goal isn't to fight your phone forever. It's to build the awareness that makes the fight unnecessary.
 
-[Download Intently for Android, iOS & Chrome](/download)
+[Download Pawse for Android, iOS & Chrome](/download)
 
 ---
 
@@ -198,6 +198,6 @@ The goal isn't to fight your phone forever. It's to build the awareness that mak
 - [Mindful Tech Interventions vs App Blocking: What Works Better](/blog/mindful-tech-interventions-vs-blocking)
 - [How to Block Apps on iPhone: Complete Guide](/blog/how-to-block-apps-iphone)
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Intently vs Freedom: Free Mindful Pause vs Subscription Blocker](/blog/intently-vs-freedom)
-- [Intently vs Opal: Free Mindful Pause vs Premium iOS Blocker](/blog/intently-vs-opal)
+- [Pawse vs Freedom: Free Mindful Pause vs Subscription Blocker](/blog/pawse-vs-freedom)
+- [Pawse vs Opal: Free Mindful Pause vs Premium iOS Blocker](/blog/pawse-vs-opal)
 - [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)

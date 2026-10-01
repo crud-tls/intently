@@ -2,7 +2,7 @@
 title: 'Phone Addiction and Anxiety: The Cycle and How to Break It'
 description: 'Is your phone making you anxious? Explore the research-backed connection between phone addiction and anxiety — from notification stress and FOMO to sleep disruption and social comparison — and learn practical strategies to break the cycle.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['phone addiction anxiety', 'screen time anxiety', 'phone causing anxiety', 'FOMO', 'notification stress', 'digital wellbeing']
 heroImage: '/blog-placeholder-4.jpg'
@@ -104,7 +104,7 @@ This single change reduces the number of times your nervous system spikes each d
 
 ### 2. Track the Connection
 
-For one week, rate your anxiety on a 1-10 scale three times daily (morning, afternoon, evening) alongside your screen time data from [Intently](/download). Look for patterns. Most people discover clear correlations: anxiety spikes after social media sessions, anxiety decreases on lower-phone days, anxiety is worst when phone use happens close to bedtime.
+For one week, rate your anxiety on a 1-10 scale three times daily (morning, afternoon, evening) alongside your screen time data from [Pawse](/download). Look for patterns. Most people discover clear correlations: anxiety spikes after social media sessions, anxiety decreases on lower-phone days, anxiety is worst when phone use happens close to bedtime.
 
 Seeing the data makes the abstract connection concrete and personal.
 
@@ -118,7 +118,7 @@ Two buffer zones have the biggest impact on anxiety:
 
 ### 4. Use Mindful Interventions
 
-Install [Intently](/download) and set it to trigger on your anxiety-driving apps. When you reach for Instagram or Twitter in an anxious moment, the brief pause creates space to ask: "Am I checking this to feel better, or am I going to feel worse?"
+Install [Pawse](/download) and set it to trigger on your anxiety-driving apps. When you reach for Instagram or Twitter in an anxious moment, the brief pause creates space to ask: "Am I checking this to feel better, or am I going to feel worse?"
 
 That moment of awareness is often enough to break the cycle. You don't need to be blocked — you just need to be conscious of what you're doing and why.
 
@@ -173,7 +173,7 @@ Your phone isn't the only source of anxiety in your life, but for many people it
 
 Breaking the cycle doesn't require eliminating your phone. It requires understanding the specific ways your phone affects your anxiety and making targeted changes: turning off notifications, creating buffer zones, curating your feeds, and building awareness around when and why you reach for your phone.
 
-Ready to start? [Download Intently](/download) to build awareness around your phone habits and create mindful pauses before anxiety-driving apps.
+Ready to start? [Download Pawse](/download) to build awareness around your phone habits and create mindful pauses before anxiety-driving apps.
 
 ---
 

@@ -11,11 +11,11 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Delete Your Account | Intently" description="Permanently delete your Intently account and all associated data. This action cannot be undone." noindex={true} />
+		<BaseHead title="Delete Your Account | Pawse" description="Permanently delete your Pawse account and all associated data. This action cannot be undone." noindex={true} />
 		<BreadcrumbSchema
 			items={[
-				{ name: "Home", url: "https://liveintently.app" },
-				{ name: "Delete Account", url: "https://liveintently.app/delete-account" }
+				{ name: "Home", url: "https://pawse.liveintently.app" },
+				{ name: "Delete Account", url: "https://pawse.liveintently.app/delete-account" }
 			]}
 		/>
 	</head>
@@ -230,8 +230,8 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	/* Hero */
 	.delete-hero {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: linear-gradient(135deg, var(--intently-red) 0%, #D32F2F 100%);
+		padding: var(--ds-space-2xl) 0;
+		background: linear-gradient(135deg, var(--ds-red) 0%, #D32F2F 100%);
 		color: white;
 		text-align: center;
 	}
@@ -245,7 +245,7 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	.delete-hero h1 {
 		font-size: 2rem;
 		font-weight: 800;
-		margin: 0 0 var(--intently-space-md);
+		margin: 0 0 var(--ds-space-md);
 		color: white;
 	}
 
@@ -261,8 +261,8 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	/* Form section */
 	.delete-form-section {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: var(--intently-bg-secondary);
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
 		min-height: 60vh;
 	}
 
@@ -278,42 +278,42 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	.delete-form {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 	}
 
 	/* Warning box */
 	.warning-box {
-		background: var(--intently-bg-error);
-		border-left: 4px solid var(--intently-red);
-		padding: var(--intently-space-md);
-		border-radius: var(--intently-radius-md);
-		margin-bottom: var(--intently-space-md);
+		background: var(--ds-bg-error);
+		border-left: 4px solid var(--ds-red);
+		padding: var(--ds-space-md);
+		border-radius: var(--ds-radius-md);
+		margin-bottom: var(--ds-space-md);
 	}
 
 	.warning-box strong {
-		color: var(--intently-red-dark);
+		color: var(--ds-red-dark);
 		display: block;
-		margin-bottom: var(--intently-space-xs);
+		margin-bottom: var(--ds-space-xs);
 	}
 
 	.warning-box p {
-		color: var(--intently-red-dark);
+		color: var(--ds-red-dark);
 		font-size: 0.875rem;
 		margin: 0;
 	}
 
 	/* What will be deleted */
 	.will-delete {
-		background: var(--intently-bg-error);
-		padding: var(--intently-space-md);
-		border-radius: var(--intently-radius-md);
-		margin-bottom: var(--intently-space-md);
+		background: var(--ds-bg-error);
+		padding: var(--ds-space-md);
+		border-radius: var(--ds-radius-md);
+		margin-bottom: var(--ds-space-md);
 	}
 
 	.will-delete h3 {
-		color: var(--intently-red-dark);
+		color: var(--ds-red-dark);
 		font-size: 1rem;
-		margin-bottom: var(--intently-space-sm);
+		margin-bottom: var(--ds-space-sm);
 	}
 
 	.will-delete ul {
@@ -323,37 +323,37 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	}
 
 	.will-delete li {
-		padding: var(--intently-space-xs) 0;
-		color: var(--intently-text-secondary);
+		padding: var(--ds-space-xs) 0;
+		color: var(--ds-text-secondary);
 		font-size: 0.875rem;
 		display: flex;
 		align-items: center;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 	}
 
 	.will-delete li::before {
 		content: "\2713";
-		color: var(--intently-red);
+		color: var(--ds-red);
 		font-weight: bold;
 	}
 
 	/* Info box */
 	.info-box {
-		background: var(--intently-bg-info, #e3f2fd);
-		border-left: 4px solid var(--intently-blue);
-		padding: var(--intently-space-md);
-		border-radius: var(--intently-radius-md);
-		margin-bottom: var(--intently-space-md);
+		background: var(--ds-bg-info, #e3f2fd);
+		border-left: 4px solid var(--ds-blue);
+		padding: var(--ds-space-md);
+		border-radius: var(--ds-radius-md);
+		margin-bottom: var(--ds-space-md);
 	}
 
 	.info-box strong {
-		color: var(--intently-blue-dark);
+		color: var(--ds-blue-dark);
 		display: block;
-		margin-bottom: var(--intently-space-xs);
+		margin-bottom: var(--ds-space-xs);
 	}
 
 	.info-box p {
-		color: var(--intently-blue-dark);
+		color: var(--ds-blue-dark);
 		font-size: 0.875rem;
 		margin: 0;
 	}
@@ -362,7 +362,7 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	.checkbox-group {
 		display: flex;
 		align-items: flex-start;
-		gap: var(--intently-space-sm);
+		gap: var(--ds-space-sm);
 	}
 
 	.checkbox-group input[type="checkbox"] {
@@ -370,14 +370,14 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 		height: 20px;
 		margin-top: 2px;
 		cursor: pointer;
-		accent-color: var(--intently-red);
+		accent-color: var(--ds-red);
 		flex-shrink: 0;
 	}
 
 	.checkbox-group label {
 		flex: 1;
 		font-size: 0.875rem;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		cursor: pointer;
 		line-height: 1.5;
 	}
@@ -385,26 +385,26 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	/* Delete button override */
 	.delete-btn :global(.btn) {
 		width: 100%;
-		background: var(--intently-red);
-		border-color: var(--intently-red);
+		background: var(--ds-red);
+		border-color: var(--ds-red);
 	}
 
 	.delete-btn :global(.btn:hover) {
-		background: var(--intently-red-dark, #C62828);
-		border-color: var(--intently-red-dark, #C62828);
+		background: var(--ds-red-dark, #C62828);
+		border-color: var(--ds-red-dark, #C62828);
 	}
 
 	.delete-btn :global(.btn:disabled) {
-		background: var(--intently-gray-400);
-		border-color: var(--intently-gray-400);
+		background: var(--ds-gray-400);
+		border-color: var(--ds-gray-400);
 		cursor: not-allowed;
 		transform: none;
 	}
 
 	/* Form status */
 	.form-status {
-		padding: var(--intently-space-md);
-		border-radius: var(--intently-radius-md);
+		padding: var(--ds-space-md);
+		border-radius: var(--ds-radius-md);
 		font-size: 0.9375rem;
 		display: none;
 	}
@@ -414,15 +414,15 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	}
 
 	.form-status.success {
-		background: var(--intently-bg-success);
-		color: var(--intently-green-dark);
-		border: 1px solid var(--intently-green-light);
+		background: var(--ds-bg-success);
+		color: var(--ds-green-dark);
+		border: 1px solid var(--ds-green-light);
 	}
 
 	.form-status.error {
-		background: var(--intently-bg-error);
-		color: var(--intently-red-dark);
-		border: 1px solid var(--intently-red-light);
+		background: var(--ds-bg-error);
+		color: var(--ds-red-dark);
+		border: 1px solid var(--ds-red-light);
 	}
 
 	/* Success state */
@@ -433,18 +433,18 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 
 	.success {
 		text-align: center;
-		padding: var(--intently-space-xl) var(--intently-space-md);
+		padding: var(--ds-space-xl) var(--ds-space-md);
 	}
 
 	.success-icon {
 		width: 80px;
 		height: 80px;
-		background: var(--intently-green);
+		background: var(--ds-green);
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin: 0 auto var(--intently-space-lg);
+		margin: 0 auto var(--ds-space-lg);
 	}
 
 	.success-icon::after {
@@ -454,18 +454,18 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	}
 
 	.success h2 {
-		color: var(--intently-text-primary);
-		margin-bottom: var(--intently-space-md);
+		color: var(--ds-text-primary);
+		margin-bottom: var(--ds-space-md);
 	}
 
 	.success p {
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		line-height: 1.8;
-		margin-bottom: var(--intently-space-sm);
+		margin-bottom: var(--ds-space-sm);
 	}
 
 	.success a {
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		text-decoration: none;
 	}
 
@@ -483,7 +483,7 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	@media (min-width: 768px) {
 		.delete-hero,
 		.delete-form-section {
-			padding: var(--intently-space-3xl) 0;
+			padding: var(--ds-space-3xl) 0;
 		}
 
 		.delete-hero h1 {
@@ -498,7 +498,7 @@ import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
 	@media (min-width: 1024px) {
 		.delete-hero,
 		.delete-form-section {
-			padding: var(--intently-space-4xl) 0;
+			padding: var(--ds-space-4xl) 0;
 		}
 
 		.delete-hero h1 {

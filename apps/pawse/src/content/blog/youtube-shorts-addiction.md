@@ -2,7 +2,7 @@
 title: "YouTube Shorts Addiction: How to Stop the Vertical Video Loop"
 description: "Struggling with YouTube Shorts addiction? Learn why short-form vertical video is so addictive, how it damages your attention span, and 5 proven strategies to break the endless scroll cycle."
 pubDate: 2026-02-01
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["youtube shorts addiction", "stop youtube shorts", "youtube shorts addictive", "short form video addiction", "digital wellbeing", "reduce youtube usage"]
 heroImage: "/blog-placeholder-2.jpg"
@@ -14,7 +14,7 @@ faq:
   - question: "How does YouTube Shorts affect attention span?"
     answer: "Regular consumption of sub-60-second content trains your brain to expect stimulation every few seconds. Over time, this makes it harder to focus on longer content like articles, books, lectures, or conversations. Research suggests that heavy short-form video users experience measurable decreases in sustained attention within weeks of daily use."
   - question: "Can I disable YouTube Shorts?"
-    answer: "YouTube does not offer a built-in way to completely disable Shorts. However, you can reduce exposure by using browser extensions like Unhook or Hide YouTube Shorts that remove the Shorts shelf from the homepage, using the 'Not Interested' button on Shorts you encounter, and using mindful intervention tools like Intently to create awareness before opening YouTube."
+    answer: "YouTube does not offer a built-in way to completely disable Shorts. However, you can reduce exposure by using browser extensions like Unhook or Hide YouTube Shorts that remove the Shorts shelf from the homepage, using the 'Not Interested' button on Shorts you encounter, and using mindful intervention tools like Pawse to create awareness before opening YouTube."
   - question: "How much YouTube Shorts is too much?"
     answer: "If you regularly spend more than 15-20 minutes on Shorts per session, lose track of time while watching, open YouTube for a specific purpose but end up in Shorts instead, or feel restless or guilty after watching, your usage has likely crossed from entertainment into compulsive behavior."
   - question: "What's the best way to stop watching YouTube Shorts?"
@@ -28,8 +28,8 @@ howToSteps:
     text: "Before every YouTube session, answer one question: What am I here to watch? If you cannot name a specific video, creator, or topic, do not open YouTube. This prevents Shorts from hijacking sessions that started without a clear purpose."
   - name: "Retrain Your Attention with Long-Form Content"
     text: "Gradually rebuild your capacity for sustained focus by replacing Shorts time with progressively longer videos. Start with 10-minute videos in Week 1 and work up to 30-plus-minute content by Week 4. Your brain will recalibrate to appreciate deeper material."
-  - name: "Use Intently to Catch the Automatic Open"
-    text: "Set up Intently to display a brief pause screen before YouTube opens on your phone. This interrupts the automatic habit loop and prompts the question 'What are you here to watch?' before you ever see the Shorts shelf on the homepage."
+  - name: "Use Pawse to Catch the Automatic Open"
+    text: "Set up Pawse to display a brief pause screen before YouTube opens on your phone. This interrupts the automatic habit loop and prompts the question 'What are you here to watch?' before you ever see the Shorts shelf on the homepage."
 ---
 
 # YouTube Shorts Addiction: How to Stop the Vertical Video Loop
@@ -94,7 +94,7 @@ If you've got an answer -- "the new video from [creator]" or "a tutorial on cond
 
 If you don't have an answer, that's your signal. The absence of intent is exactly when Shorts takes over. An aimless YouTube open almost always ends up in the Shorts feed, because the homepage is designed to catch wandering attention.
 
-[Intently](/download) can help here. It shows a brief pause screen before YouTube opens on your phone, giving you a moment to check in with yourself before the homepage loads. That half-second of friction catches a surprising number of autopilot opens.
+[Pawse](/download) can help here. It shows a brief pause screen before YouTube opens on your phone, giving you a moment to check in with yourself before the homepage loads. That half-second of friction catches a surprising number of autopilot opens.
 
 ### Rebuild Your Attention Span Gradually
 
@@ -122,7 +122,7 @@ A Shorts habit that resists multiple interventions could be part of a broader pa
 
 ## Getting Started
 
-You don't need to do all of this at once. If you're on desktop, install a browser extension today -- it takes a minute and makes an immediate difference. If your Shorts problem is mostly on your phone, try [Intently](/download) to add a pause before YouTube opens, and start using the Subscriptions tab as your default.
+You don't need to do all of this at once. If you're on desktop, install a browser extension today -- it takes a minute and makes an immediate difference. If your Shorts problem is mostly on your phone, try [Pawse](/download) to add a pause before YouTube opens, and start using the Subscriptions tab as your default.
 
 Small structural changes beat willpower every time. The goal isn't to quit YouTube -- it's to use it on your terms.
 

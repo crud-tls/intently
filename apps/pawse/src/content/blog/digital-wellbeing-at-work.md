@@ -2,19 +2,19 @@
 title: 'Digital Wellbeing at Work: How to Stay Focused Without Blocking Everything'
 description: 'Struggling with phone distraction at work? Learn practical strategies for digital wellbeing in the workplace — from managing notifications to handling Slack fatigue, without going cold turkey on technology.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['digital wellbeing at work', 'workplace phone addiction', 'focus at work without blocking apps', 'work productivity', 'notification management']
 heroImage: '/blog-placeholder-5.jpg'
 faq:
   - question: "How do I stop checking my phone at work?"
-    answer: "Start with environmental design: keep your phone in a drawer or bag during focus periods, not on your desk. Turn off all non-essential notifications. Use a mindful intervention app like Intently that creates a brief pause before opening distracting apps — this catches the automatic reach without requiring constant willpower. Schedule 2-3 intentional phone breaks instead of checking reactively."
+    answer: "Start with environmental design: keep your phone in a drawer or bag during focus periods, not on your desk. Turn off all non-essential notifications. Use a mindful intervention app like Pawse that creates a brief pause before opening distracting apps — this catches the automatic reach without requiring constant willpower. Schedule 2-3 intentional phone breaks instead of checking reactively."
   - question: "Is phone use at work a sign of addiction or just a bad habit?"
     answer: "Usually it's a habit, not addiction. Work is cognitively demanding, and your brain naturally seeks micro-breaks. Phone checking becomes the default micro-break because it's always available and instantly rewarding. The distinction matters: if phone use is seriously interfering with your job performance or you can't stop despite wanting to, it may warrant more attention."
   - question: "How do I manage Slack and Teams notifications without missing important messages?"
     answer: "Set notification schedules so alerts only come through during work hours. Use priority contacts or channels so truly urgent messages get through while everything else waits. Batch-check messages at set intervals (every 30-60 minutes) instead of responding in real-time. Most messages are not as urgent as they feel."
   - question: "Should I use an app blocker during work hours?"
-    answer: "Hard blockers can help during specific deep-focus sessions, but they don't build the self-regulation skills you need long-term. A better approach is mindful interventions (like Intently) during work hours, which create awareness without restriction. Reserve hard blocking for high-stakes deadlines when you truly need zero distractions."
+    answer: "Hard blockers can help during specific deep-focus sessions, but they don't build the self-regulation skills you need long-term. A better approach is mindful interventions (like Pawse) during work hours, which create awareness without restriction. Reserve hard blocking for high-stakes deadlines when you truly need zero distractions."
   - question: "How can I tell if my phone use at work signals burnout?"
     answer: "If you're reaching for your phone more than usual, struggling to focus on tasks you normally handle fine, and feeling emotionally exhausted, those are burnout signals — not just phone addiction. Increased phone use during burnout is often a coping mechanism for cognitive fatigue. Address the underlying workload and stress before blaming the phone."
   - question: "What should employers do about workplace phone distraction?"
@@ -67,7 +67,7 @@ This single change can cut your daily phone pickups in half. Most things that fe
 
 ### 3. Mindful Interventions for Work Hours
 
-Install [Intently](/download) and set it to trigger on your most distracting apps. When you absent-mindedly tap Instagram during a work break, you'll get a brief pause: "You're at work. Is this what you want to be doing right now?"
+Install [Pawse](/download) and set it to trigger on your most distracting apps. When you absent-mindedly tap Instagram during a work break, you'll get a brief pause: "You're at work. Is this what you want to be doing right now?"
 
 You can always proceed — it's not a block. But that moment of awareness catches the autopilot reach and gives you a genuine choice. Most people find they put the phone down about half the time, not because they're forced to, but because they realize they didn't actually want to scroll.
 
@@ -142,7 +142,7 @@ Whether or not your employer supports it, you can set your own framework:
 2. **Use separate profiles** for work and personal browsing
 3. **Turn off work notifications** outside those hours — Slack, email, all of it
 4. **Take a real lunch break** away from all screens
-5. **Track your personal phone use** during work with [Intently](/download) so "quick breaks" don't silently become 30-minute scrolls
+5. **Track your personal phone use** during work with [Pawse](/download) so "quick breaks" don't silently become 30-minute scrolls
 6. **End your workday** with a clear ritual — close the laptop, put work apps on silent, and be done
 
 The goal isn't zero phone use at work. It's intentional phone use — where every pickup has a reason, and you're choosing to be there rather than being pulled there by habit.

@@ -8,9 +8,9 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { Resend } from 'resend';
 
-const DESTINATION_EMAIL = 'support@liveintently.app';
+const DESTINATION_EMAIL = 'pawse@liveintently.app';
 const FROM_EMAIL = 'noreply@liveintently.app';
-const FROM_NAME = 'Intently Contact Form';
+const FROM_NAME = 'Pawse Contact Form';
 
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
@@ -56,7 +56,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
       to: [DESTINATION_EMAIL],
       replyTo: email,
       subject: `Contact Form: ${subject}`,
-      text: `New contact form submission:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}\n\n---\nSent from the Intently contact form at liveintently.app`,
+      text: `New contact form submission:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}\n\n---\nSent from the Pawse contact form at liveintently.app`,
     });
 
     if (error) {

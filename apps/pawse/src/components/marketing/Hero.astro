@@ -2,7 +2,7 @@
 /**
  * Hero Section Component
  * Main hero section for the home page
- * Shows accurate Intently app UI mockup
+ * Shows accurate Pawse app UI mockup
  */
 import Button from '../ui/Button.astro';
 import Icon from '../ui/Icon.astro';
@@ -15,7 +15,7 @@ import Icon from '../ui/Icon.astro';
 				Your Time Is Slipping Away. <span class="text-gradient">Take It Back.</span>
 			</h1>
 			<p class="hero-subtitle">
-				Intently creates a gentle moment of awareness before you open distracting apps—so you can choose what actually matters. No guilt. No blocking. No data collected. Ever.
+				Pawse creates a gentle moment of awareness before you open distracting apps—so you can choose what actually matters. No guilt. No blocking. No data collected. Ever.
 			</p>
 			<div class="hero-ctas">
 				<Button href="/download" variant="primary" size="lg">
@@ -40,13 +40,13 @@ import Icon from '../ui/Icon.astro';
 				</span>
 			</div>
 		</div>
-		<div class="hero-visual" role="img" aria-label="Intently app showing daily screen time of 3h 24m, a 7-day streak, and tracked apps including Facebook, Instagram, and Twitter with usage progress bars">
+		<div class="hero-visual" role="img" aria-label="Pawse app showing daily screen time of 3h 24m, a 7-day streak, and tracked apps including Facebook, Instagram, and Twitter with usage progress bars">
 			<div class="phone-frame">
 				<div class="phone-notch"></div>
 				<div class="phone-screen">
 					<!-- App Top Bar -->
 					<div class="app-top-bar">
-						<span class="app-title">Intently</span>
+						<span class="app-title">Pawse</span>
 						<div class="refresh-icon">
 							<svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
 								<path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
@@ -64,9 +64,9 @@ import Icon from '../ui/Icon.astro';
 							<div class="progress-section">
 								<div class="circular-progress">
 									<svg viewBox="0 0 100 100">
-										<circle cx="50" cy="50" r="42" fill="none" stroke="var(--intently-blue-light)" stroke-width="10"/>
-										<circle cx="50" cy="50" r="42" fill="none" stroke="var(--intently-blue)" stroke-width="10" stroke-dasharray="264" stroke-dashoffset="79" stroke-linecap="round" transform="rotate(-90 50 50)"/>
-										<text x="50" y="54" text-anchor="middle" font-size="22" font-weight="700" fill="var(--intently-blue)">70%</text>
+										<circle cx="50" cy="50" r="42" fill="none" stroke="var(--ds-blue-light)" stroke-width="10"/>
+										<circle cx="50" cy="50" r="42" fill="none" stroke="var(--ds-blue)" stroke-width="10" stroke-dasharray="264" stroke-dashoffset="79" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+										<text x="50" y="54" text-anchor="middle" font-size="22" font-weight="700" fill="var(--ds-blue)">70%</text>
 									</svg>
 								</div>
 								<div class="goal-label">of daily goal</div>
@@ -93,7 +93,7 @@ import Icon from '../ui/Icon.astro';
 									<div class="metric-label">Sessions</div>
 								</div>
 								<div class="metric">
-									<div class="metric-icon"><Icon name="Flame" size={16} color="var(--intently-orange)" /></div>
+									<div class="metric-icon"><Icon name="Flame" size={16} color="var(--ds-orange)" /></div>
 									<div class="metric-value">7</div>
 									<div class="metric-label">Streak</div>
 								</div>
@@ -129,7 +129,7 @@ import Icon from '../ui/Icon.astro';
 								<div class="app-limit">Daily limit: 1h</div>
 							</div>
 							<div class="app-progress">
-								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--intently-orange)" /> 7</div>
+								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--ds-orange)" /> 7</div>
 								<div class="progress-bar">
 									<div class="progress-fill orange"></div>
 								</div>
@@ -149,7 +149,7 @@ import Icon from '../ui/Icon.astro';
 								<div class="app-limit">Daily limit: 30m</div>
 							</div>
 							<div class="app-progress">
-								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--intently-orange)" /> 5</div>
+								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--ds-orange)" /> 5</div>
 								<div class="progress-bar">
 									<div class="progress-fill green"></div>
 								</div>
@@ -169,7 +169,7 @@ import Icon from '../ui/Icon.astro';
 								<div class="app-limit">Daily limit: 45m</div>
 							</div>
 							<div class="app-progress">
-								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--intently-orange)" /> 3</div>
+								<div class="streak-badge-small"><Icon name="Flame" size={10} color="var(--ds-orange)" /> 3</div>
 								<div class="progress-bar">
 									<div class="progress-fill red"></div>
 								</div>
@@ -205,8 +205,8 @@ import Icon from '../ui/Icon.astro';
 <style>
 	.hero {
 		width: 100%;
-		padding: var(--intently-space-2xl) 0;
-		background: linear-gradient(180deg, var(--intently-bg-accent) 0%, var(--intently-bg-primary) 100%);
+		padding: var(--ds-space-2xl) 0;
+		background: linear-gradient(180deg, var(--ds-bg-accent) 0%, var(--ds-bg-primary) 100%);
 	}
 
 	/* Add spacer at top for fixed header */
@@ -222,7 +222,7 @@ import Icon from '../ui/Icon.astro';
 		padding: 0 1rem;
 		display: grid;
 		grid-template-columns: 1fr; /* Mobile: single column */
-		gap: var(--intently-space-xl);
+		gap: var(--ds-space-xl);
 		align-items: center;
 		text-align: center; /* Mobile: centered */
 	}
@@ -238,7 +238,7 @@ import Icon from '../ui/Icon.astro';
 	.hero-content {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-xl);
+		gap: var(--ds-space-xl);
 	}
 
 	.hero-title {
@@ -246,11 +246,11 @@ import Icon from '../ui/Icon.astro';
 		font-weight: 800;
 		line-height: 1.2;
 		margin: 0;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.text-gradient {
-		background: linear-gradient(135deg, var(--intently-blue) 0%, var(--intently-purple) 100%);
+		background: linear-gradient(135deg, var(--ds-blue) 0%, var(--ds-purple) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -259,20 +259,20 @@ import Icon from '../ui/Icon.astro';
 	.hero-subtitle {
 		font-size: 1rem; /* Mobile: smaller subtitle */
 		line-height: 1.6;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		margin: 0;
 	}
 
 	.hero-ctas {
 		display: flex;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 
 	.hero-badges {
 		display: flex;
-		gap: var(--intently-space-md);
+		gap: var(--ds-space-md);
 		flex-wrap: wrap;
 	}
 
@@ -281,12 +281,12 @@ import Icon from '../ui/Icon.astro';
 		align-items: center;
 		gap: 0.5rem;
 		padding: 0.5rem 1rem;
-		background-color: var(--intently-bg-primary);
-		border-radius: var(--intently-radius-full);
+		background-color: var(--ds-bg-primary);
+		border-radius: var(--ds-radius-full);
 		font-size: 0.875rem;
 		font-weight: 600;
-		color: var(--intently-text-primary);
-		box-shadow: var(--intently-shadow-sm);
+		color: var(--ds-text-primary);
+		box-shadow: var(--ds-shadow-sm);
 	}
 
 	/* Phone Mockup */
@@ -298,10 +298,10 @@ import Icon from '../ui/Icon.astro';
 	.phone-frame {
 		width: 300px;
 		height: 600px;
-		background: var(--intently-gray-900);
+		background: var(--ds-gray-900);
 		border-radius: 44px;
 		padding: 12px;
-		box-shadow: var(--intently-shadow-xl), 0 0 0 1px rgba(0,0,0,0.1);
+		box-shadow: var(--ds-shadow-xl), 0 0 0 1px rgba(0,0,0,0.1);
 		position: relative;
 	}
 
@@ -312,7 +312,7 @@ import Icon from '../ui/Icon.astro';
 		transform: translateX(-50%);
 		width: 120px;
 		height: 28px;
-		background: var(--intently-gray-900);
+		background: var(--ds-gray-900);
 		border-radius: 0 0 20px 20px;
 		z-index: 10;
 	}
@@ -320,7 +320,7 @@ import Icon from '../ui/Icon.astro';
 	.phone-screen {
 		width: 100%;
 		height: 100%;
-		background: var(--intently-bg-secondary);
+		background: var(--ds-bg-secondary);
 		border-radius: 36px;
 		overflow: hidden;
 		display: flex;
@@ -333,14 +333,14 @@ import Icon from '../ui/Icon.astro';
 		justify-content: space-between;
 		align-items: center;
 		padding: 40px 16px 12px;
-		background: var(--intently-bg-primary);
-		border-bottom: 1px solid var(--intently-gray-200);
+		background: var(--ds-bg-primary);
+		border-bottom: 1px solid var(--ds-gray-200);
 	}
 
 	.app-title {
 		font-size: 20px;
 		font-weight: 600;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.refresh-icon {
@@ -349,30 +349,30 @@ import Icon from '../ui/Icon.astro';
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: var(--intently-gray-100);
+		background: var(--ds-gray-100);
 		border-radius: 50%;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	/* Today at a Glance Card */
 	.glance-card {
-		background: var(--intently-bg-primary);
+		background: var(--ds-bg-primary);
 		margin: 12px;
 		padding: 16px;
 		border-radius: 16px;
-		box-shadow: var(--intently-shadow-sm);
+		box-shadow: var(--ds-shadow-sm);
 	}
 
 	.greeting {
 		font-size: 22px;
 		font-weight: 700;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		margin-bottom: 2px;
 	}
 
 	.greeting-sub {
 		font-size: 14px;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		margin-bottom: 16px;
 	}
 
@@ -400,7 +400,7 @@ import Icon from '../ui/Icon.astro';
 
 	.goal-label {
 		font-size: 12px;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		margin-top: 4px;
 	}
 
@@ -423,20 +423,20 @@ import Icon from '../ui/Icon.astro';
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: var(--intently-gray-100);
+		background: var(--ds-gray-100);
 		border-radius: 50%;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 	}
 
 	.metric-value {
 		font-size: 14px;
 		font-weight: 700;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.metric-label {
 		font-size: 11px;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.monitoring-status {
@@ -444,23 +444,23 @@ import Icon from '../ui/Icon.astro';
 		align-items: center;
 		justify-content: space-between;
 		padding-top: 12px;
-		border-top: 1px solid var(--intently-gray-200);
+		border-top: 1px solid var(--ds-gray-200);
 	}
 
 	.status-indicator {
 		width: 8px;
 		height: 8px;
 		border-radius: 50%;
-		background: var(--intently-gray-300);
+		background: var(--ds-gray-300);
 	}
 
 	.status-indicator.active {
-		background: var(--intently-green);
+		background: var(--ds-green);
 	}
 
 	.status-text {
 		font-size: 13px;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		flex: 1;
 		margin-left: 8px;
 	}
@@ -468,7 +468,7 @@ import Icon from '../ui/Icon.astro';
 	.status-toggle {
 		width: 44px;
 		height: 24px;
-		background: var(--intently-bg-info);
+		background: var(--ds-bg-info);
 		border-radius: 12px;
 		position: relative;
 	}
@@ -479,7 +479,7 @@ import Icon from '../ui/Icon.astro';
 		top: 2px;
 		width: 20px;
 		height: 20px;
-		background: var(--intently-blue);
+		background: var(--ds-blue);
 		border-radius: 50%;
 	}
 
@@ -501,24 +501,24 @@ import Icon from '../ui/Icon.astro';
 	.section-title {
 		font-size: 16px;
 		font-weight: 600;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.manage-btn {
 		font-size: 13px;
-		color: var(--intently-blue);
+		color: var(--ds-blue);
 		font-weight: 500;
 	}
 
 	.app-card {
-		background: var(--intently-bg-primary);
+		background: var(--ds-bg-primary);
 		border-radius: 12px;
 		padding: 12px;
 		margin-bottom: 10px;
 		display: flex;
 		align-items: center;
 		gap: 12px;
-		box-shadow: var(--intently-shadow-sm);
+		box-shadow: var(--ds-shadow-sm);
 	}
 
 	.app-icon {
@@ -539,13 +539,13 @@ import Icon from '../ui/Icon.astro';
 	.app-name {
 		font-size: 14px;
 		font-weight: 600;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 		margin-bottom: 2px;
 	}
 
 	.app-limit {
 		font-size: 12px;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 	}
 
 	.app-progress {
@@ -558,7 +558,7 @@ import Icon from '../ui/Icon.astro';
 
 	.streak-badge-small {
 		font-size: 10px;
-		background: var(--intently-orange-light);
+		background: var(--ds-orange-light);
 		padding: 2px 6px;
 		border-radius: 10px;
 		font-weight: 600;
@@ -567,7 +567,7 @@ import Icon from '../ui/Icon.astro';
 	.progress-bar {
 		width: 60px;
 		height: 6px;
-		background: var(--intently-gray-200);
+		background: var(--ds-gray-200);
 		border-radius: 3px;
 		overflow: hidden;
 	}
@@ -579,22 +579,22 @@ import Icon from '../ui/Icon.astro';
 
 	.progress-fill.green {
 		width: 40%;
-		background: var(--intently-green);
+		background: var(--ds-green);
 	}
 
 	.progress-fill.orange {
 		width: 75%;
-		background: var(--intently-orange);
+		background: var(--ds-orange);
 	}
 
 	.progress-fill.red {
 		width: 100%;
-		background: var(--intently-red);
+		background: var(--ds-red);
 	}
 
 	.app-time {
 		font-size: 11px;
-		color: var(--intently-text-secondary);
+		color: var(--ds-text-secondary);
 		font-weight: 500;
 	}
 
@@ -605,8 +605,8 @@ import Icon from '../ui/Icon.astro';
 		align-items: center;
 		padding: 8px 16px;
 		padding-bottom: 20px;
-		background: var(--intently-bg-primary);
-		border-top: 1px solid var(--intently-gray-200);
+		background: var(--ds-bg-primary);
+		border-top: 1px solid var(--ds-gray-200);
 	}
 
 	.nav-item {
@@ -615,13 +615,13 @@ import Icon from '../ui/Icon.astro';
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: var(--intently-text-hint);
+		color: var(--ds-text-hint);
 		border-radius: 24px;
 	}
 
 	.nav-item.active {
-		background: var(--intently-bg-info);
-		color: var(--intently-blue);
+		background: var(--ds-bg-info);
+		color: var(--ds-blue);
 		border-radius: 16px;
 	}
 
@@ -629,7 +629,7 @@ import Icon from '../ui/Icon.astro';
 	/* Tablet: larger fonts and spacing */
 	@media (min-width: 768px) {
 		.hero {
-			padding: var(--intently-space-3xl) 0;
+			padding: var(--ds-space-3xl) 0;
 		}
 
 		.hero-title {
@@ -641,7 +641,7 @@ import Icon from '../ui/Icon.astro';
 		}
 
 		.hero-container {
-			gap: var(--intently-space-2xl);
+			gap: var(--ds-space-2xl);
 		}
 
 		/* Phone frame responsive sizing */
@@ -656,13 +656,13 @@ import Icon from '../ui/Icon.astro';
 	/* Desktop: two columns, largest fonts */
 	@media (min-width: 1024px) {
 		.hero {
-			padding: var(--intently-space-4xl) 0;
+			padding: var(--ds-space-4xl) 0;
 		}
 
 		.hero-container {
 			grid-template-columns: 1fr 1fr;
 			text-align: left;
-			gap: var(--intently-space-3xl);
+			gap: var(--ds-space-3xl);
 		}
 
 		.hero-badges {

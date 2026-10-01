@@ -18,7 +18,7 @@ const {
   description,
   publishedAt,
   modifiedAt,
-  author = "Intently Team",
+  author = "Pawse Team",
   authorType = 'Organization',
   image,
   url,
@@ -30,10 +30,10 @@ const {
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "@id": url || `https://liveintently.app/blog/${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+  "@id": url || `https://pawse.liveintently.app/blog/${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
   "headline": title,
   "description": description,
-  "image": image ? `https://liveintently.app${image}` : "https://liveintently.app/blog-placeholder-1.jpg",
+  "image": image ? `https://pawse.liveintently.app${image}` : "https://pawse.liveintently.app/blog-placeholder-1.jpg",
   "datePublished": publishedAt.toISOString(),
   "dateModified": (modifiedAt || publishedAt).toISOString(),
   "author": {
@@ -42,16 +42,16 @@ const blogSchema = {
   },
   "publisher": {
     "@type": "Organization",
-    "@id": "https://liveintently.app/#organization",
-    "name": "Intently",
+    "@id": "https://pawse.liveintently.app/#organization",
+    "name": "Pawse",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://liveintently.app/logo.png"
+      "url": "https://pawse.liveintently.app/logo.png"
     }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": url || `https://liveintently.app/blog/${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+    "@id": url || `https://pawse.liveintently.app/blog/${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
   },
   "articleSection": section,
   "keywords": tags.join(', '),

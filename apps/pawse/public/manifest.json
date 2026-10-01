@@ -1,6 +1,6 @@
 {
-  "name": "Intently - Mindful Screen Time & Digital Wellbeing",
-  "short_name": "Intently",
+  "name": "Pawse - Mindful Screen Time & Digital Wellbeing",
+  "short_name": "Pawse",
   "description": "Build healthier digital habits through mindful interventions. Privacy-first, 100% offline screen time tracking and digital wellbeing app.",
   "start_url": "/",
   "display": "standalone",
@@ -17,14 +17,14 @@
       "sizes": "1020x510",
       "type": "image/jpeg",
       "form_factor": "wide",
-      "label": "Intently home screen"
+      "label": "Pawse home screen"
     },
     {
       "src": "/blog-placeholder-1.jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "form_factor": "narrow",
-      "label": "Intently mobile view"
+      "label": "Pawse mobile view"
     }
   ],
   "icons": [
@@ -58,14 +58,14 @@
     {
       "name": "Download App",
       "short_name": "Download",
-      "description": "Download Intently for your device",
+      "description": "Download Pawse for your device",
       "url": "/download",
       "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
     },
     {
       "name": "About",
       "short_name": "About",
-      "description": "Learn about Intently's mission",
+      "description": "Learn about Pawse's mission",
       "url": "/about",
       "icons": [{ "src": "/logo.png", "sizes": "96x96" }]
     }

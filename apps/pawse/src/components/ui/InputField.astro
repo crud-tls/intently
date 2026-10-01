@@ -106,49 +106,49 @@ const inputClasses = `input-field-input ${error ? 'input-field-input-error' : ''
 	.input-field-group {
 		display: flex;
 		flex-direction: column;
-		gap: var(--intently-space-xs);
+		gap: var(--ds-space-xs);
 	}
 
 	.input-field-group label {
 		font-weight: 600;
 		font-size: 0.9375rem;
-		color: var(--intently-text-primary);
+		color: var(--ds-text-primary);
 	}
 
 	.input-field-required {
-		color: var(--intently-red);
+		color: var(--ds-red);
 		margin-left: 0.125rem;
 	}
 
 	.input-field-input {
-		padding: var(--intently-space-sm) var(--intently-space-md);
-		border: 2px solid var(--intently-gray-200);
-		border-radius: var(--intently-radius-md);
+		padding: var(--ds-space-sm) var(--ds-space-md);
+		border: 2px solid var(--ds-gray-200);
+		border-radius: var(--ds-radius-md);
 		font-size: 1rem;
 		font-family: inherit;
-		background: var(--intently-bg-primary);
-		color: var(--intently-text-primary);
-		transition: border-color var(--intently-transition-fast);
+		background: var(--ds-bg-primary);
+		color: var(--ds-text-primary);
+		transition: border-color var(--ds-transition-fast);
 		min-height: 44px;
 	}
 
 	.input-field-input::placeholder {
-		color: var(--intently-gray-400);
+		color: var(--ds-gray-400);
 	}
 
 	.input-field-input:focus {
 		outline: none;
-		border-color: var(--intently-blue);
+		border-color: var(--ds-blue);
 	}
 
 	.input-field-input-error {
-		border-color: var(--intently-red);
-		background-color: var(--intently-bg-error);
+		border-color: var(--ds-red);
+		background-color: var(--ds-bg-error);
 	}
 
 	.input-field-error {
 		font-size: 0.875rem;
-		color: var(--intently-red);
+		color: var(--ds-red);
 		min-height: 1.25em;
 		display: block;
 	}
@@ -162,23 +162,23 @@ const inputClasses = `input-field-input ${error ? 'input-field-input-error' : ''
 
 	/* Focus styles for accessibility */
 	.input-field-input:focus-visible {
-		outline: 2px solid var(--intently-blue);
+		outline: 2px solid var(--ds-blue);
 		outline-offset: 2px;
 	}
 
 	/* Dark mode adjustments */
 	@media (prefers-color-scheme: dark) {
 		.input-field-input {
-			background: var(--intently-bg-secondary);
-			border-color: var(--intently-gray-700);
+			background: var(--ds-bg-secondary);
+			border-color: var(--ds-gray-700);
 		}
 
 		.input-field-input::placeholder {
-			color: var(--intently-gray-500);
+			color: var(--ds-gray-500);
 		}
 
 		.input-field-input-error {
-			background-color: var(--intently-bg-error);
+			background-color: var(--ds-bg-error);
 		}
 	}
 </style>

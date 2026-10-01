@@ -3,11 +3,11 @@ title: "Privacy-First Screen Time Tracking: Keep Your Data Private"
 description: "Learn why privacy matters in screen time tracking and how to choose apps that keep your data secure. Discover the best privacy-first alternatives to data-harvesting apps."
 pubDate: "Jan 12 2026"
 heroImage: "/blog-placeholder-3.jpg"
-author: "Intently Team"
+author: "Pawse Team"
 tags: ["privacy", "screen time tracking", "data security", "digital wellbeing", "offline apps", "screen time app no account", "screen time app offline", "privacy screen time app android"]
 ---
 
-Privacy-first screen time tracking means your usage data stays on your device -- no cloud uploads, no account creation, no third-party analytics running in the background. It's a different approach from mainstream apps, many of which fund themselves by collecting and selling behavioral data. Tools like Intently take the opposite route: you get the insights you need without handing over your habits to anyone else.
+Privacy-first screen time tracking means your usage data stays on your device -- no cloud uploads, no account creation, no third-party analytics running in the background. It's a different approach from mainstream apps, many of which fund themselves by collecting and selling behavioral data. Tools like Pawse take the opposite route: you get the insights you need without handing over your habits to anyone else.
 
 ## Screen Time Data Is More Personal Than You'd Think
 
@@ -61,15 +61,15 @@ Here's how some common categories break down when you compare mainstream and pri
 
 ### Screen Time Tracking
 
-On the mainstream side, you've got apps like RescueTime (requires an account, uses cloud storage and analytics) and QualityTime (includes ads and analytics). Privacy-respecting alternatives include Intently, which stores everything locally with no account required; ActivityWatch, which is open-source with local storage; and your phone's built-in tools (Screen Time on iOS, Digital Wellbeing on Android) with analytics sharing turned off.
+On the mainstream side, you've got apps like RescueTime (requires an account, uses cloud storage and analytics) and QualityTime (includes ads and analytics). Privacy-respecting alternatives include Pawse, which stores everything locally with no account required; ActivityWatch, which is open-source with local storage; and your phone's built-in tools (Screen Time on iOS, Digital Wellbeing on Android) with analytics sharing turned off.
 
 ### Website Blocking
 
-Freedom and Cold Turkey are well-known but both push you toward cloud accounts. For local-only options, SelfControl (Mac, open-source) and LeechBlock (browser extension, local storage) are solid. The [Intently Chrome Extension](/download) also handles this with local storage and no account.
+Freedom and Cold Turkey are well-known but both push you toward cloud accounts. For local-only options, SelfControl (Mac, open-source) and LeechBlock (browser extension, local storage) are solid. The [Pawse for Chrome](/download) also handles this with local storage and no account.
 
 ### Habit Tracking
 
-Habitica is fun but requires an account, and Streaks syncs to iCloud by default. On the privacy-first side, Loop Habit Tracker (Android, open-source) and Intently's built-in streak feature both keep data local.
+Habitica is fun but requires an account, and Streaks syncs to iCloud by default. On the privacy-first side, Loop Habit Tracker (Android, open-source) and Pawse's built-in streak feature both keep data local.
 
 ## Questions to Ask Before Choosing a Screen Time App
 
@@ -89,15 +89,15 @@ When you're evaluating a screen time tool, these are the things worth checking.
 
 **Is the privacy policy actually readable?** Watch for vague references to "partners" and "legitimate interests." A straightforward privacy-first app will say something clear: "We don't collect, store, or transmit any personal data."
 
-## How Intently Handles Privacy
+## How Pawse Handles Privacy
 
-Intently was designed from the start so that your data stays with you. Here's what that looks like in practice.
+Pawse was designed from the start so that your data stays with you. Here's what that looks like in practice.
 
-There are no servers involved in tracking -- your usage data simply doesn't leave your device. There are no accounts, no usernames, no emails. The app doesn't make network requests for usage tracking, which means even Intently's own developers have no way to see your screen time data. It's not a matter of policy; it's a matter of architecture.
+There are no servers involved in tracking -- your usage data simply doesn't leave your device. There are no accounts, no usernames, no emails. The app doesn't make network requests for usage tracking, which means even Pawse's own developers have no way to see your screen time data. It's not a matter of policy; it's a matter of architecture.
 
 Your data is encrypted locally using your device's secure storage (Keychain on iOS, Keystore on Android), adding a layer of protection even if someone has physical access to your unlocked phone.
 
-Permission-wise, Intently requests only what it needs: usage access for tracking, and optionally notification access if you want intervention reminders. That's it -- no location, contacts, camera, or microphone.
+Permission-wise, Pawse requests only what it needs: usage access for tracking, and optionally notification access if you want intervention reminders. That's it -- no location, contacts, camera, or microphone.
 
 There are no third-party analytics SDKs in the app. Not Google Analytics, not Firebase, not Mixpanel. And you can export your full usage history to CSV or JSON whenever you want. It's your data -- analyze it, delete it, or share it on your own terms.
 
@@ -134,7 +134,7 @@ Use the app's export feature to save backups to your own cloud storage (iCloud, 
 Honestly, yes. But convenience and privacy are often in tension. It comes down to what matters more to you and how sensitive you consider your usage data.
 
 **Do privacy-first apps cost more?**
-Not necessarily. Intently offers a free tier and affordable premium pricing. Privacy doesn't have to come at a premium.
+Not necessarily. Pawse offers a free tier and affordable premium pricing. Privacy doesn't have to come at a premium.
 
 **Can employers or parents get around privacy-first apps?**
 Not easily. Since data is locally encrypted and the app doesn't communicate with any external server, there's no central database to query. That said, device-level monitoring tools (MDM software, parental controls) can still track usage at the operating system level.
@@ -145,7 +145,7 @@ Your screen time habits are personal. They reflect your routines, your worries, 
 
 When you're picking a screen time app, it's worth asking a simple question: who benefits from my data? If the answer is anyone other than you, a privacy-first alternative is worth a look.
 
-Want to track your screen time without being tracked yourself? [Download Intently](/download) -- private, offline, and built to keep your data where it belongs.
+Want to track your screen time without being tracked yourself? [Download Pawse](/download) -- private, offline, and built to keep your data where it belongs.
 
 ---
 

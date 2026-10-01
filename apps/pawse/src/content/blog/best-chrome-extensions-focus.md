@@ -1,24 +1,24 @@
 ---
 title: 'Best Chrome Extensions for Focus 2026: Block Distractions and Stay Productive'
-description: 'Looking for the best Chrome extensions to block social media and stay focused? Compare Intently, StayFocusd, LeechBlock, News Feed Eradicator, Unhook YouTube, and more in our 2026 roundup.'
+description: 'Looking for the best Chrome extensions to block social media and stay focused? Compare Pawse, StayFocusd, LeechBlock, News Feed Eradicator, Unhook YouTube, and more in our 2026 roundup.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'App Comparisons'
 tags: ['best chrome extensions focus 2026', 'chrome extension block social media', 'chrome extension reduce distractions', 'productivity extensions', 'focus chrome']
 heroImage: '/blog-placeholder-3.jpg'
 faq:
   - question: "What is the best Chrome extension for blocking distracting websites?"
-    answer: "It depends on your approach. For mindful awareness without hard blocking, Intently's Chrome extension creates a pause before distracting sites. For hard blocking, StayFocusd and LeechBlock are the most reliable free options. For targeted feed removal, News Feed Eradicator and Unhook YouTube surgically remove the addictive parts while keeping the useful features."
+    answer: "It depends on your approach. For mindful awareness without hard blocking, Pawse's Chrome extension creates a pause before distracting sites. For hard blocking, StayFocusd and LeechBlock are the most reliable free options. For targeted feed removal, News Feed Eradicator and Unhook YouTube surgically remove the addictive parts while keeping the useful features."
   - question: "Can Chrome extensions actually help you focus?"
     answer: "Yes. Research shows that adding any form of friction to distracting websites reduces usage significantly. Chrome extensions that block sites, add pauses, or remove addictive feeds all create that friction. The key is choosing an approach that matches your needs — some people need hard enforcement, others do better with gentle awareness."
   - question: "Is there a free Chrome extension to block social media?"
-    answer: "Several good ones exist. Intently (mindful pause), StayFocusd (time-based blocking), LeechBlock (schedule-based blocking), and BlockSite (simple URL blocking) are all free. News Feed Eradicator is also free and takes a surgical approach — removing the infinite scroll feed while keeping messaging and profiles."
+    answer: "Several good ones exist. Pawse (mindful pause), StayFocusd (time-based blocking), LeechBlock (schedule-based blocking), and BlockSite (simple URL blocking) are all free. News Feed Eradicator is also free and takes a surgical approach — removing the infinite scroll feed while keeping messaging and profiles."
   - question: "What's the difference between blocking and mindful Chrome extensions?"
-    answer: "Blocking extensions prevent access to websites entirely during set times or after time limits. Mindful extensions (like Intently) create a brief pause before the site loads, giving you a moment to decide whether you really want to visit. Research suggests mindful approaches build more sustainable habits, while blocking provides stronger immediate enforcement."
+    answer: "Blocking extensions prevent access to websites entirely during set times or after time limits. Mindful extensions (like Pawse) create a brief pause before the site loads, giving you a moment to decide whether you really want to visit. Research suggests mindful approaches build more sustainable habits, while blocking provides stronger immediate enforcement."
   - question: "Do Chrome focus extensions slow down your browser?"
-    answer: "Most focus extensions have minimal performance impact. Extensions like Intently, News Feed Eradicator, and Unhook YouTube are lightweight. Heavier extensions like Freedom (which routes traffic through a VPN for blocking) can have a minor speed impact. Always check the extension's permissions — some request more access than they need."
+    answer: "Most focus extensions have minimal performance impact. Extensions like Pawse, News Feed Eradicator, and Unhook YouTube are lightweight. Heavier extensions like Freedom (which routes traffic through a VPN for blocking) can have a minor speed impact. Always check the extension's permissions — some request more access than they need."
   - question: "Can I use multiple Chrome focus extensions together?"
-    answer: "You can, but be selective. A good combination is one awareness tool (like Intently for mindful pauses) plus one or two surgical tools (like News Feed Eradicator for social media feeds and Unhook YouTube for recommendations). Running multiple blocking extensions simultaneously can create conflicts. Start with one and add others only if needed."
+    answer: "You can, but be selective. A good combination is one awareness tool (like Pawse for mindful pauses) plus one or two surgical tools (like News Feed Eradicator for social media feeds and Unhook YouTube for recommendations). Running multiple blocking extensions simultaneously can create conflicts. Start with one and add others only if needed."
 ---
 
 # Best Chrome Extensions for Focus 2026: Stay Productive Without Willpower
@@ -29,19 +29,19 @@ Chrome extensions can help — but they take wildly different approaches. Some b
 
 ## The Extensions
 
-### Intently — Mindful Pause Before Distracting Sites
+### Pawse — Mindful Pause Before Distracting Sites
 
 **Price**: Free | **Approach**: Mindful intervention
 
-Intently's Chrome extension brings the same mindful pause approach from its Android app to your browser. When you navigate to a flagged site (social media, news, Reddit, whatever you've chosen), a full-screen intervention appears — a brief moment to take a breath and decide whether you actually want to be there.
+Pawse's Chrome extension brings the same mindful pause approach from its Android app to your browser. When you navigate to a flagged site (social media, news, Reddit, whatever you've chosen), a full-screen intervention appears — a brief moment to take a breath and decide whether you actually want to be there.
 
-You can always proceed. The pause isn't a block — it's an awareness checkpoint. This matters because it means you never feel restricted, which avoids the psychological reactance that makes people bypass hard blockers. The extension syncs with Intently's philosophy: build internal awareness, not external dependence.
+You can always proceed. The pause isn't a block — it's an awareness checkpoint. This matters because it means you never feel restricted, which avoids the psychological reactance that makes people bypass hard blockers. The extension syncs with Pawse's philosophy: build internal awareness, not external dependence.
 
 It's lightweight, requires no account, and collects no data. The main limitation is that it's newer than some competitors and doesn't offer scheduling or time-limit features — it's purely the mindful pause.
 
 **Rating: 4/5** — Best option for building lasting awareness. Free and privacy-first.
 
-[Add Intently to Chrome](/download)
+[Add Pawse to Chrome](/download)
 
 ---
 
@@ -83,7 +83,7 @@ This is brilliant because it targets the specific feature that drives compulsive
 
 The limitations: it's a cat-and-mouse game with platform redesigns (sometimes the feed returns after a site update until the extension is updated), and it doesn't cover all platforms equally well. Facebook and Twitter coverage is solid. Other platforms vary.
 
-**Rating: 4/5** — The smartest approach for people who need social media but not the feed. Pairs perfectly with a mindful tool like Intently.
+**Rating: 4/5** — The smartest approach for people who need social media but not the feed. Pairs perfectly with a mindful tool like Pawse.
 
 ---
 
@@ -143,7 +143,7 @@ The free version covers basic blocking with a limited number of sites. The premi
 
 | Extension | Approach | Price | Best For |
 |-----------|----------|-------|----------|
-| **Intently** | Mindful pause | Free | Building lasting awareness |
+| **Pawse** | Mindful pause | Free | Building lasting awareness |
 | **StayFocusd** | Time limits | Free | Daily time allowances |
 | **LeechBlock** | Schedule blocking | Free | Complex custom rules |
 | **News Feed Eradicator** | Feed removal | Free | Keeping social media without the feed |
@@ -154,7 +154,7 @@ The free version covers basic blocking with a limited number of sites. The premi
 
 ## Which Should You Choose?
 
-**For building lasting habits**: Start with Intently. The mindful pause approach builds self-regulation that persists even when you stop using the extension.
+**For building lasting habits**: Start with Pawse. The mindful pause approach builds self-regulation that persists even when you stop using the extension.
 
 **For surgical precision**: News Feed Eradicator + Unhook YouTube is a powerful combination. You keep the useful parts of social media and YouTube while removing the parts designed to trap you.
 
@@ -162,7 +162,7 @@ The free version covers basic blocking with a limited number of sites. The premi
 
 **For complete coverage**: Freedom blocks across all devices. Pair it with a mindful tool for the times when you're not in a blocked session.
 
-Most people do best with a combination: one awareness tool (Intently) plus one or two targeted tools (News Feed Eradicator, Unhook YouTube) for the specific platforms that waste the most time.
+Most people do best with a combination: one awareness tool (Pawse) plus one or two targeted tools (News Feed Eradicator, Unhook YouTube) for the specific platforms that waste the most time.
 
 ---
 
@@ -170,7 +170,7 @@ Most people do best with a combination: one awareness tool (Intently) plus one o
 
 ### What's the best free Chrome extension for focus?
 
-Intently is the best free option for building lasting awareness. For hard blocking, StayFocusd and LeechBlock are both free and reliable. News Feed Eradicator and Unhook YouTube are free surgical tools that target specific addictive features.
+Pawse is the best free option for building lasting awareness. For hard blocking, StayFocusd and LeechBlock are both free and reliable. News Feed Eradicator and Unhook YouTube are free surgical tools that target specific addictive features.
 
 ### Do Chrome blocking extensions actually reduce screen time?
 
@@ -188,7 +188,7 @@ If your issue is specifically the infinite scroll and algorithmic feed, surgical
 
 ## Getting Started
 
-Pick one extension from this list and try it for two weeks. If you're unsure where to start, [Intently's Chrome extension](/download) is free, lightweight, and privacy-first — and the mindful pause approach builds habits that last.
+Pick one extension from this list and try it for two weeks. If you're unsure where to start, [Pawse's Chrome extension](/download) is free, lightweight, and privacy-first — and the mindful pause approach builds habits that last.
 
 [Take the Phone Habit Quiz](/quiz)
 
@@ -204,4 +204,4 @@ Pick one extension from this list and try it for two weeks. If you're unsure whe
 
 ---
 
-*Last updated: February 28, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 28, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

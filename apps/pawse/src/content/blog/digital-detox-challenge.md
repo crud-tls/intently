@@ -3,7 +3,7 @@ title: "30-Day Digital Detox Challenge: Step-by-Step Guide"
 description: "Take the 30-day digital detox challenge with weekly themes, daily mini-challenges, and proven strategies. Transform your phone habits step by step without going cold turkey."
 pubDate: 2026-02-01
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["digital detox challenge", "30 day digital detox", "digital detox guide", "screen time challenge", "digital wellbeing"]
 heroImage: "/blog-placeholder-4.jpg"
@@ -19,16 +19,16 @@ faq:
   - question: "Is this challenge suitable for teenagers?"
     answer: "Yes, with some modifications. Teenagers may need adjusted social media goals since peer connection is developmentally important. Parents can do the challenge alongside their teens for accountability. The awareness-building and replacement habit strategies are effective for all ages."
   - question: "What tools do I need for this challenge?"
-    answer: "You need a screen time tracking app (we recommend Intently for its privacy-first approach), a journal or notes app for reflections, and optionally an alarm clock if you currently use your phone. No special equipment or subscriptions are required."
+    answer: "You need a screen time tracking app (we recommend Pawse for its privacy-first approach), a journal or notes app for reflections, and optionally an alarm clock if you currently use your phone. No special equipment or subscriptions are required."
 howToSteps:
   - name: "Week 1: Awareness - Track and Understand Your Habits"
-    text: "Install Intently and track your screen time without trying to change anything. Record which apps you use most, when you reach for your phone, and what triggers drive your usage. Complete daily awareness exercises like noting each phone pickup and journaling about your screen time patterns."
+    text: "Install Pawse and track your screen time without trying to change anything. Record which apps you use most, when you reach for your phone, and what triggers drive your usage. Complete daily awareness exercises like noting each phone pickup and journaling about your screen time patterns."
   - name: "Week 2: Reduction - Set Boundaries and Cut Back"
     text: "Using your Week 1 data, set specific daily limits for your top 3 most-used recreational apps. Reduce usage by 25% from your baseline. Enable mindful interventions, turn off non-essential notifications, and create phone-free zones in your home. Practice the 10-minute delay rule before opening distracting apps."
   - name: "Week 3: Replacement - Build New Habits"
     text: "For every 30 minutes of reduced screen time, introduce an alternative activity: reading, exercise, a creative hobby, or face-to-face socializing. Use habit stacking to attach new behaviors to existing routines. Practice the morning phone-free protocol and evening wind-down without screens."
   - name: "Week 4: Maintenance - Lock In Your New Normal"
-    text: "Review your full month of data and identify what worked best. Create a sustainable personal phone use plan with realistic daily limits, scheduled screen-free times, and go-to replacement activities. Set up ongoing tracking with Intently and establish a weekly review habit to maintain your progress long-term."
+    text: "Review your full month of data and identify what worked best. Create a sustainable personal phone use plan with realistic daily limits, scheduled screen-free times, and go-to replacement activities. Set up ongoing tracking with Pawse and establish a weekly review habit to maintain your progress long-term."
 ---
 
 # 30-Day Digital Detox Challenge: A Practical Guide to Healthier Phone Use
@@ -62,7 +62,7 @@ Each week builds on the last, which is what makes this more sustainable than a w
 
 You'll need a few things:
 
-- A tracking app -- [Download Intently](/download) for privacy-first screen time tracking with mindful interventions
+- A tracking app -- [Download Pawse](/download) for privacy-first screen time tracking with mindful interventions
 - Something to jot notes in (a notebook, a notes app, whatever works)
 - An alarm clock, if your phone currently wakes you up
 - Some patience with yourself
@@ -75,13 +75,13 @@ The whole point of this week is observation. Don't try to cut back yet -- just w
 
 This might sound like a waste of time, but it's the most important part. Most people are genuinely surprised by their own data. And the act of paying attention, on its own, tends to shift behavior a bit.
 
-**Day 1:** Download [Intently](/download), set it up for your most-used apps, and screenshot your current daily average as your baseline. That's it.
+**Day 1:** Download [Pawse](/download), set it up for your most-used apps, and screenshot your current daily average as your baseline. That's it.
 
 **Day 2:** Try to notice every time you pick up your phone today. At the end of the day, guess your total pickups and check it against the data. Most people are way off.
 
 **Day 3:** Start tracking your triggers. Each time you reach for your phone, ask: was that boredom? Anxiety? A notification? Or did I actually need something? A simple tally works fine.
 
-**Day 4:** Look at your app breakdown in Intently. Sort your apps mentally into "actually useful," "sometimes enjoyable," and "why am I even on this?" Be honest.
+**Day 4:** Look at your app breakdown in Pawse. Sort your apps mentally into "actually useful," "sometimes enjoyable," and "why am I even on this?" Be honest.
 
 **Day 5:** After any phone session longer than 10 minutes today, notice how you feel afterward. Energized? Neutral? A little drained? Some apps consistently leave people feeling worse, and it's worth knowing which ones do that for you.
 
@@ -93,7 +93,7 @@ This might sound like a waste of time, but it's the most important part. Most pe
 
 Now that you have real data, you can make targeted changes instead of guessing. The goal this week isn't dramatic -- it's about introducing friction and boundaries where they'll matter most.
 
-**Day 8:** Set up [Intently's mindful interventions](/blog/mindful-tech-interventions-vs-blocking) for your top 3 problem apps. These are gentle pauses that ask if you really want to open the app right now. They're surprisingly effective because most phone use is automatic, not deliberate.
+**Day 8:** Set up [Pawse's mindful interventions](/blog/mindful-tech-interventions-vs-blocking) for your top 3 problem apps. These are gentle pauses that ask if you really want to open the app right now. They're surprisingly effective because most phone use is automatic, not deliberate.
 
 **Day 9:** Do a notification purge. Go through every app and turn off anything that isn't truly important. Keep calls, messages from people who matter, and calendar reminders. Kill everything else. You'll be amazed at how much quieter your day gets.
 
@@ -101,7 +101,7 @@ Now that you have real data, you can make targeted changes instead of guessing. 
 
 **Day 11:** Pick at least two spots in your home where phones aren't allowed. The dining table and the bedroom are the classics. Charge your phone somewhere else.
 
-**Day 12:** Set a screen time goal that's about 25% below your Week 1 average. If you were at 6 hours, aim for 4.5. Use Intently to check in during the day. If you don't hit it, that's fine -- just notice where the time went.
+**Day 12:** Set a screen time goal that's about 25% below your Week 1 average. If you were at 6 hours, aim for 4.5. Use Pawse to check in during the day. If you don't hit it, that's fine -- just notice where the time went.
 
 **Day 13:** Set specific windows for social media. Instead of checking throughout the day, try twice: once around lunch, once in the evening. No social media in the first or last hour of your day.
 
@@ -133,13 +133,13 @@ The final stretch is less about new experiments and more about figuring out what
 
 **Days 22-23: Build your plan.** Write down what you want your daily phone use to look like going forward. What's your target screen time? Which boundaries are non-negotiable (morning routine, phone-free zones, evening cutoff)? What are your go-to replacement activities? Also think honestly about when you're most likely to slip -- weekends, stressful days, lonely evenings -- and have a specific backup plan for those moments.
 
-**Days 24-25: Set up your environment.** Share your results with someone who cares. Set a weekly calendar reminder to check your Intently data. Reorganize your home screen so only essential apps are front and center -- move social media and entertainment apps into folders on the last page. Remove anything you haven't opened in two weeks.
+**Days 24-25: Set up your environment.** Share your results with someone who cares. Set a weekly calendar reminder to check your Pawse data. Reorganize your home screen so only essential apps are front and center -- move social media and entertainment apps into folders on the last page. Remove anything you haven't opened in two weeks.
 
 **Days 26-27: Stress test it.** Apply everything you've built on a full weekend day (weekends are harder because there's less structure). Notice how you handle stress or boredom without defaulting to your phone. This is the real test of whether your new habits hold up outside the challenge structure.
 
 **Day 28:** Read back through whatever notes or journal entries you've kept this month. The contrast between Week 1 and now is usually the most motivating part of the whole challenge.
 
-**Days 29-30: Wrap up.** Finalize your Intently settings with the intervention preferences that worked best. Set up a monthly check-in with yourself to recalibrate. And on Day 30 -- compare your baseline to your current data and do something good with the time you've reclaimed. A meal with someone you love, a long walk, a project you've been putting off. Something that reminds you what the extra time is actually for.
+**Days 29-30: Wrap up.** Finalize your Pawse settings with the intervention preferences that worked best. Set up a monthly check-in with yourself to recalibrate. And on Day 30 -- compare your baseline to your current data and do something good with the time you've reclaimed. A meal with someone you love, a long walk, a project you've been putting off. Something that reminds you what the extra time is actually for.
 
 ## Honest Tips for Getting Through This
 
@@ -147,7 +147,7 @@ The final stretch is less about new experiments and more about figuring out what
 
 **You will slip up.** A day of heavy scrolling doesn't undo two weeks of progress. Notice it, figure out what triggered it, and move on. Self-criticism makes this harder, not easier. This is consistent with [how mindful approaches to phone habits work](/blog/phone-addiction-help) -- compassion beats shame every time.
 
-**Track consistently.** Having objective data removes a lot of the guesswork and self-deception. [Intently's privacy-first tracking](/blog/privacy-first-screen-time-tracking) gives you real numbers without compromising your personal information.
+**Track consistently.** Having objective data removes a lot of the guesswork and self-deception. [Pawse's privacy-first tracking](/blog/privacy-first-screen-time-tracking) gives you real numbers without compromising your personal information.
 
 **Replace, don't just remove.** Every chunk of screen time you cut should be filled with something you actually like. If this whole thing feels like punishment, something's off. The point is a better daily life, not a more spartan one.
 
@@ -155,7 +155,7 @@ The final stretch is less about new experiments and more about figuring out what
 
 The challenge gives you a structure, but after it ends, you need a lighter version to maintain what you've built. A few things that help:
 
-- A quick 5-minute review of your Intently data each Sunday
+- A quick 5-minute review of your Pawse data each Sunday
 - Keeping mindful interventions active for your trigger apps
 - Monthly check-ins where you adjust goals based on what's actually happening
 - Staying engaged with the hobbies and habits you picked up during the challenge
@@ -168,7 +168,7 @@ After 30 days, the goal isn't some austere, phone-free existence. You'll still u
 
 That sense of choosing -- that's what this whole thing is about.
 
-Ready to start? [Download Intently](/download) and begin Day 1.
+Ready to start? [Download Pawse](/download) and begin Day 1.
 
 ---
 

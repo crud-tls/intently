@@ -2,7 +2,7 @@
 title: 'Is Your Attention Span Shrinking? How to Rebuild Focus in the Age of Phones'
 description: 'Feeling like your phone ruined your attention span? Explore the research on shrinking attention, task-switching costs, and deep work — plus practical strategies to rebuild your focus.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['attention span shrinking', 'rebuild focus', 'phone ruined attention span', 'deep work', 'focus', 'digital wellbeing']
 heroImage: '/blog-placeholder-4.jpg'
@@ -14,7 +14,7 @@ faq:
   - question: "How long does it take to rebuild your attention span?"
     answer: "Most people notice improvements within 2-3 weeks of consistent practice (daily reading, single-tasking, reduced phone checking). Significant rewiring takes 2-3 months. The key is progressive training — start with 10-15 minutes of focused work and gradually extend, similar to building physical endurance."
   - question: "What is the best way to rebuild focus?"
-    answer: "Start with single-tasking: do one thing at a time with your phone out of sight. Practice reading physical books for progressively longer periods. Use the Pomodoro technique (25 minutes of focus, 5-minute break) and gradually extend the focus intervals. Reduce notification interruptions and use mindful intervention tools like Intently to catch autopilot phone checking."
+    answer: "Start with single-tasking: do one thing at a time with your phone out of sight. Practice reading physical books for progressively longer periods. Use the Pomodoro technique (25 minutes of focus, 5-minute break) and gradually extend the focus intervals. Reduce notification interruptions and use mindful intervention tools like Pawse to catch autopilot phone checking."
   - question: "Does multitasking actually hurt productivity?"
     answer: "Yes. Research from Stanford shows that heavy multitaskers perform worse at filtering irrelevant information, switching between tasks, and maintaining working memory. What we call multitasking is actually rapid task-switching, and each switch costs 15-25 minutes of refocusing time. People who think they're good at multitasking are often the worst at it."
   - question: "Can meditation help rebuild attention span?"
@@ -132,7 +132,7 @@ Your environment determines your behavior more than your intentions. For focus s
 
 ### 5. Use Mindful Interventions
 
-Install [Intently](/download) on your phone and Chrome browser. When you reflexively reach for a distracting app during a focus period, the brief pause interrupts the autopilot and gives you a chance to redirect. You're not blocked — you're just given a moment to notice what you're doing.
+Install [Pawse](/download) on your phone and Chrome browser. When you reflexively reach for a distracting app during a focus period, the brief pause interrupts the autopilot and gives you a chance to redirect. You're not blocked — you're just given a moment to notice what you're doing.
 
 Over time, these moments of awareness compound. You start catching the impulse before your hand even reaches your phone.
 
@@ -163,7 +163,7 @@ Your attention span isn't permanently damaged. Your brain adapted to an environm
 
 The key is creating the conditions for that readaptation: reducing digital interruptions, practicing sustained attention daily, and being patient with yourself as your brain relearns a skill it hasn't used much lately.
 
-Ready to start rebuilding? [Download Intently](/download) to reduce the autopilot phone checks that fragment your focus throughout the day.
+Ready to start rebuilding? [Download Pawse](/download) to reduce the autopilot phone checks that fragment your focus throughout the day.
 
 ---
 

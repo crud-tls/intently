@@ -1,24 +1,24 @@
 ---
 title: 'Best ScreenZen Alternatives 2026: Apps That Add Friction Before Scrolling'
-description: 'Looking for a ScreenZen alternative? Compare the top delay and mindful pause apps including Intently, One Sec, FlowBuddy, Opal, and Freedom. Find the best free and paid options for Android and iOS.'
+description: 'Looking for a ScreenZen alternative? Compare the top delay and mindful pause apps including Pawse, One Sec, FlowBuddy, Opal, and Freedom. Find the best free and paid options for Android and iOS.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'App Comparisons'
 tags: ['screenzen alternative', 'screenzen alternatives 2026', 'apps like screenzen', 'screen time', 'mindful pause', 'digital wellbeing']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: "What is the best free alternative to ScreenZen?"
-    answer: "Intently is the best free ScreenZen alternative on Android, offering mindful interventions, usage tracking, gamification, and a Chrome extension — all at zero cost with no data collection. On iOS, One Sec has a limited free tier, but most features require a paid subscription."
+    answer: "Pawse is the best free ScreenZen alternative on Android, offering mindful interventions, usage tracking, gamification, and a Chrome extension — all at zero cost with no data collection. On iOS, One Sec has a limited free tier, but most features require a paid subscription."
   - question: "Is ScreenZen free?"
-    answer: "Yes, ScreenZen's core features are free on both iOS and Android. It offers a simple countdown delay before apps open. However, some advanced features may require in-app purchases. For a free alternative with more features (tracking, gamification, Chrome extension), Intently is worth comparing."
+    answer: "Yes, ScreenZen's core features are free on both iOS and Android. It offers a simple countdown delay before apps open. However, some advanced features may require in-app purchases. For a free alternative with more features (tracking, gamification, Chrome extension), Pawse is worth comparing."
   - question: "What apps are like ScreenZen?"
-    answer: "Apps similar to ScreenZen include Intently (mindful pause with tracking, free on Android/Chrome), One Sec (breathing exercise pause, paid on iOS/Android), FlowBuddy (open-source breathing pause, free on Android), Opal (premium blocking with visual pauses, iOS), and ClearSpace (visual breathing pause, iOS). Each takes a slightly different approach to the same core idea of adding friction before app opens."
+    answer: "Apps similar to ScreenZen include Pawse (mindful pause with tracking, free on Android/Chrome), One Sec (breathing exercise pause, paid on iOS/Android), FlowBuddy (open-source breathing pause, free on Android), Opal (premium blocking with visual pauses, iOS), and ClearSpace (visual breathing pause, iOS). Each takes a slightly different approach to the same core idea of adding friction before app opens."
   - question: "Does ScreenZen work on iPhone?"
     answer: "Yes, ScreenZen is available on both iOS and Android. It's one of the few free pause-based tools on iPhone. However, due to iOS limitations, the implementation may differ from the Android version. For iOS users wanting more features, One Sec and ClearSpace are dedicated iOS alternatives worth considering."
   - question: "Is a countdown delay effective for reducing screen time?"
     answer: "Research supports friction-based approaches in general — any pause between impulse and action reduces automatic behavior. However, a plain countdown may become routine over time, as users can zone out during the wait. Mindful interventions (breathing exercises or reflective prompts) tend to maintain effectiveness longer because they engage active awareness, not just patience."
-  - question: "Can I use ScreenZen and Intently together?"
-    answer: "You could, but running multiple intervention apps simultaneously often creates overlapping pauses and intervention fatigue. We recommend picking one and using it consistently for at least 30 days. If ScreenZen's countdown delay isn't enough, switching to Intently's mindful intervention approach (which engages awareness more actively) is a better strategy than stacking both."
+  - question: "Can I use ScreenZen and Pawse together?"
+    answer: "You could, but running multiple intervention apps simultaneously often creates overlapping pauses and intervention fatigue. We recommend picking one and using it consistently for at least 30 days. If ScreenZen's countdown delay isn't enough, switching to Pawse's mindful intervention approach (which engages awareness more actively) is a better strategy than stacking both."
 ---
 
 # Best ScreenZen Alternatives (2026 Review)
@@ -37,19 +37,19 @@ ScreenZen uses temporal friction (waiting). Other apps use cognitive friction (b
 
 ## The Alternatives
 
-### Intently — Full Toolkit, Mindful Approach
+### Pawse — Full Toolkit, Mindful Approach
 
 **Platform**: Android, Chrome | **Price**: Free
 
-Where ScreenZen gives you a countdown, Intently gives you a moment of mindful awareness — a full-screen intervention that asks you to take a breath and consciously decide whether to proceed. The distinction matters: a countdown runs out on its own, but a mindful prompt requires you to actively engage with the question "Do I actually want to do this?"
+Where ScreenZen gives you a countdown, Pawse gives you a moment of mindful awareness — a full-screen intervention that asks you to take a breath and consciously decide whether to proceed. The distinction matters: a countdown runs out on its own, but a mindful prompt requires you to actively engage with the question "Do I actually want to do this?"
 
-Beyond the core intervention, Intently includes comprehensive usage tracking (daily, weekly, monthly breakdowns), a gamification system with streaks and achievements that sustains motivation past the first week, and a Chrome extension for desktop habits. Everything stays on your device — no account, no cloud, no data collection.
+Beyond the core intervention, Pawse includes comprehensive usage tracking (daily, weekly, monthly breakdowns), a gamification system with streaks and achievements that sustains motivation past the first week, and a Chrome extension for desktop habits. Everything stays on your device — no account, no cloud, no data collection.
 
 The main limitation is no iOS version yet (it's in development). If you're on Android or Chrome, it's the most full-featured free option in this space.
 
 Rating: 4/5 — The most complete free alternative. Mindful interventions engage awareness more actively than a countdown.
 
-[Try Intently for free](/download)
+[Try Pawse for free](/download)
 
 ---
 
@@ -118,7 +118,7 @@ Rating: 3/5 — Decent starting point. Not enough for serious habit change.
 | App | Approach | Price | Platform | Tracking | Best For |
 |-----|----------|-------|----------|----------|----------|
 | **ScreenZen** | Countdown delay | Free | iOS, Android | Minimal | Simple friction |
-| **Intently** | Mindful pause | Free | Android, Chrome | Comprehensive | Full toolkit, free |
+| **Pawse** | Mindful pause | Free | Android, Chrome | Comprehensive | Full toolkit, free |
 | **One Sec** | Breathing exercise | ~$50/yr | iOS, Android | Basic | Research-backed pause |
 | **FlowBuddy** | Breathing exercise | Free | Android | None | Open-source simplicity |
 | **Opal** | Blocking + visual pause | ~$100/yr | iOS | Good | Premium iOS solution |
@@ -138,7 +138,7 @@ The reasons to explore alternatives come down to: wanting more depth (tracking, 
 
 ## Picking the Right One
 
-**On Android, wanting more features**: Intently is the clear choice. You get mindful interventions, tracking, gamification, and Chrome coverage — all free.
+**On Android, wanting more features**: Pawse is the clear choice. You get mindful interventions, tracking, gamification, and Chrome coverage — all free.
 
 **On iOS, budget of zero**: ScreenZen itself is still the best free option. ClearSpace's free tier is worth checking too.
 
@@ -154,11 +154,11 @@ The reasons to explore alternatives come down to: wanting more depth (tracking, 
 
 ### Is a countdown delay enough to reduce screen time?
 
-For many people, yes — especially in the first few weeks. The research supports friction-based approaches in general. Over time, some users find plain countdowns become routine. If that happens, switching to a mindful intervention (like Intently) that engages active awareness tends to maintain effectiveness longer.
+For many people, yes — especially in the first few weeks. The research supports friction-based approaches in general. Over time, some users find plain countdowns become routine. If that happens, switching to a mindful intervention (like Pawse) that engages active awareness tends to maintain effectiveness longer.
 
-### Can I switch from ScreenZen to Intently easily?
+### Can I switch from ScreenZen to Pawse easily?
 
-Yes. Install Intently, configure it for your distraction apps, and disable ScreenZen. There's no data migration needed. Most users notice the difference in approach immediately — the mindful prompt engages your attention more actively than waiting out a countdown.
+Yes. Install Pawse, configure it for your distraction apps, and disable ScreenZen. There's no data migration needed. Most users notice the difference in approach immediately — the mindful prompt engages your attention more actively than waiting out a countdown.
 
 ### Which approach is better: countdown or breathing exercise?
 
@@ -168,7 +168,7 @@ Both reduce impulsive app opens. Breathing exercises add a physiological calming
 
 ## Getting Started
 
-If ScreenZen's simplicity has been working for you, consider whether you need more. If the delays are becoming routine and you want to go deeper, [Intently](/download) is the natural next step — same core philosophy (friction before apps), but with mindful awareness, tracking, and gamification layered on top.
+If ScreenZen's simplicity has been working for you, consider whether you need more. If the delays are becoming routine and you want to go deeper, [Pawse](/download) is the natural next step — same core philosophy (friction before apps), but with mindful awareness, tracking, and gamification layered on top.
 
 [Take the Phone Habit Quiz](/quiz)
 
@@ -184,4 +184,4 @@ If ScreenZen's simplicity has been working for you, consider whether you need mo
 
 ---
 
-*Last updated: February 28, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at support@liveintently.app*
+*Last updated: February 28, 2026. We regularly review and update this guide to ensure accuracy. Have a suggestion or correction? Email us at pawse@liveintently.app*

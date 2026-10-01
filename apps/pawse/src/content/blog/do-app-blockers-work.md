@@ -2,7 +2,7 @@
 title: 'Do App Blockers Actually Work? What the Research Says'
 description: 'Are screen time apps and app blockers worth it? An evidence-based analysis of blocking vs. mindful interventions, including bypass rates, psychological reactance, and what actually creates lasting behavior change.'
 pubDate: 2026-02-28
-author: 'Intently Team'
+author: 'Pawse Team'
 section: 'Digital Wellbeing'
 tags: ['do app blockers actually work', 'are screen time apps worth it', 'app blocker effectiveness', 'screen time apps', 'digital wellbeing']
 heroImage: '/blog-placeholder-3.jpg'
@@ -12,11 +12,11 @@ faq:
   - question: "Why do people bypass app blockers?"
     answer: "Psychological reactance — when people feel their freedom is restricted, they want the restricted thing more. This is a well-documented phenomenon in behavioral psychology. Common bypasses include using browser versions of blocked apps, switching to unblocked devices, disabling the blocker during 'emergencies,' and reinstalling apps. The more restrictive the blocker, the stronger the urge to get around it."
   - question: "Are mindful intervention apps better than app blockers?"
-    answer: "Research suggests yes, for long-term behavior change. Mindful interventions (like the pause-before-opening approach used by Intently and One Sec) reduce impulsive app opens by 50-67% while building internal awareness and self-regulation. Because they preserve your autonomy — you can always proceed — they avoid triggering the reactance that undermines blockers."
+    answer: "Research suggests yes, for long-term behavior change. Mindful interventions (like the pause-before-opening approach used by Pawse and One Sec) reduce impulsive app opens by 50-67% while building internal awareness and self-regulation. Because they preserve your autonomy — you can always proceed — they avoid triggering the reactance that undermines blockers."
   - question: "Should I use an app blocker or a mindful screen time app?"
     answer: "For most people, mindful interventions are the better starting point because they build lasting self-awareness. Blockers can be useful as a supplement during specific high-distraction periods (deadlines, exams) where you need absolute enforcement. The most effective approach for many people is combining both: mindful interventions for daily use, blocking for critical focus sessions."
   - question: "Are screen time apps worth paying for?"
-    answer: "It depends on the app. Some of the best screen time tools are free — Intently offers mindful interventions, tracking, and gamification at no cost. Paid options like Freedom and One Sec offer specific features (cross-device blocking, research-backed breathing exercises) that justify their cost for some users. Don't pay for features you can get for free."
+    answer: "It depends on the app. Some of the best screen time tools are free — Pawse offers mindful interventions, tracking, and gamification at no cost. Paid options like Freedom and One Sec offer specific features (cross-device blocking, research-backed breathing exercises) that justify their cost for some users. Don't pay for features you can get for free."
   - question: "What's the most effective way to reduce screen time?"
     answer: "The research points to a combination of approaches: awareness and tracking (understanding your patterns), mindful interventions (interrupting autopilot behavior), environmental design (keeping your phone out of sight during focus time), and habit replacement (filling the gap with better alternatives). No single tool or approach works for everyone, but mindful awareness consistently shows the best long-term outcomes."
 ---
@@ -127,10 +127,10 @@ The problem isn't blockers themselves — it's treating them as a complete solut
 The evidence points toward a layered strategy:
 
 ### 1. Awareness First
-Track your actual usage with a privacy-first tool like [Intently](/download). Most people underestimate their screen time by 50%. You can't change patterns you can't see.
+Track your actual usage with a privacy-first tool like [Pawse](/download). Most people underestimate their screen time by 50%. You can't change patterns you can't see.
 
 ### 2. Mindful Interventions for Daily Use
-Use pause-based interventions on your most distracting apps. This builds the awareness and self-regulation skills that create lasting change. Intently, One Sec, and ScreenZen all take variations of this approach.
+Use pause-based interventions on your most distracting apps. This builds the awareness and self-regulation skills that create lasting change. Pawse, One Sec, and ScreenZen all take variations of this approach.
 
 ### 3. Environmental Design
 Keep your phone out of sight during focus time. Turn off non-essential notifications. Charge your phone outside the bedroom. These changes reduce the number of decisions you need to make.
@@ -149,7 +149,7 @@ Mindful interventions take a different path — building awareness and self-regu
 
 The best approach for most people isn't choosing between blocking and mindfulness — it's leading with mindfulness and using blocking strategically for specific situations where you need it.
 
-Ready to try the mindful approach? [Download Intently](/download) and experience the difference a moment of awareness makes.
+Ready to try the mindful approach? [Download Pawse](/download) and experience the difference a moment of awareness makes.
 
 ---
 

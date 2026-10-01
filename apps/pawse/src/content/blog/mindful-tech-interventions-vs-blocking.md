@@ -4,7 +4,7 @@ description: "Discover why mindful interventions create sustainable digital well
 pubDate: "Jan 12 2026"
 updatedDate: 2026-02-28
 heroImage: "/blog-placeholder-about.jpg"
-author: "Intently Team"
+author: "Pawse Team"
 tags: ["mindful interventions", "app blocking", "behavior change", "digital wellbeing", "psychology", "gentle screen time app", "awareness not blocking phone app"]
 ---
 
@@ -97,9 +97,9 @@ Customization helps a lot. People respond differently to questions, quotes, brea
 
 A breathing component adds real value here. Even a prompt like "Notice your breath for 5 seconds" activates the parasympathetic nervous system, counteracting the arousal of the phone-checking impulse. It physiologically calms you while creating mental space for a decision.
 
-## How Intently Handles This
+## How Pawse Handles This
 
-[Intently](/download) is built around these principles. When you open a tracked app, you see a full-screen intervention -- calming visual design, a simple message like "Take a breath. You wanted to use Instagram less," and a proceed button. Your choice, always.
+[Pawse](/download) is built around these principles. When you open a tracked app, you see a full-screen intervention -- calming visual design, a simple message like "Take a breath. You wanted to use Instagram less," and a proceed button. Your choice, always.
 
 No timer you can't override. No shame. Just awareness.
 
@@ -154,7 +154,7 @@ Mindful interventions are less effective for severe cases. If your usage meets c
 That's useful information. You might need to customize the message or duration, or it might mean you're not ready to change right now -- which is an honest and valid place to be.
 
 **Do I need an app for this?**
-Not necessarily. Apps like [Intently](/download) provide consistent, automatic interventions, which is easier than relying on self-discipline alone. Self-directed techniques (like the STOP method) build the same skills but require more effort upfront. Many people start with an app and gradually shift to self-directed practice.
+Not necessarily. Apps like [Pawse](/download) provide consistent, automatic interventions, which is easier than relying on self-discipline alone. Self-directed techniques (like the STOP method) build the same skills but require more effort upfront. Many people start with an app and gradually shift to self-directed practice.
 
 **How is this different from just "trying harder"?**
 Trying harder relies on willpower, which is a limited resource. Interventions create external cues that trigger internal awareness. You're designing your environment to support the behavior you want instead of depending on constant vigilance.
@@ -165,7 +165,7 @@ The difference between blocking and mindful interventions mirrors the difference
 
 Mindful approaches take longer to show results. They don't promise a dramatic first-week drop. But they offer something blocking can't: sustainable change rooted in self-awareness and autonomy. You don't need to be controlled -- you need to be reminded of who you want to be, then trusted to choose accordingly.
 
-Ready to try it? [Download Intently](/download) and see what happens when an app respects your autonomy instead of fighting it.
+Ready to try it? [Download Pawse](/download) and see what happens when an app respects your autonomy instead of fighting it.
 
 ---
 

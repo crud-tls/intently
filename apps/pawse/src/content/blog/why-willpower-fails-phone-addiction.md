@@ -2,7 +2,7 @@
 title: "Why Willpower Fails: The Science of Phone Addiction"
 description: "Discover why willpower alone can't beat phone addiction. Learn the neuroscience behind dopamine loops, habit formation, and psychological reactance — and the science-backed strategies that actually work."
 pubDate: 2026-02-01
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["why can't I stop scrolling", "phone addiction why", "willpower phone addiction", "dopamine phone addiction", "phone addiction science", "behavioral psychology"]
 heroImage: "/blog-placeholder-1.jpg"
@@ -14,7 +14,7 @@ faq:
   - question: "Why doesn't deleting apps work long-term?"
     answer: "Deleting apps triggers psychological reactance — the more you're told you can't have something, the more you want it. Most people reinstall deleted apps within 1-2 weeks. Deletion also doesn't address the underlying habit loop or the emotional needs that phone use fulfills. Mindful interventions work better because they build awareness without restriction."
   - question: "What works better than willpower for phone addiction?"
-    answer: "Three approaches backed by research: (1) Environmental design — making phone use harder through friction (phone in another room, apps off home screen), (2) Mindful interventions — creating awareness at the moment of impulse (Intently's approach), and (3) Habit replacement — substituting phone checking with specific alternative behaviors."
+    answer: "Three approaches backed by research: (1) Environmental design — making phone use harder through friction (phone in another room, apps off home screen), (2) Mindful interventions — creating awareness at the moment of impulse (Pawse's approach), and (3) Habit replacement — substituting phone checking with specific alternative behaviors."
   - question: "How long does it take to break phone addiction?"
     answer: "Most people see significant improvement within 2-4 weeks of consistent intervention use. Full habit rewiring typically takes 60-90 days. The timeline varies based on severity, but the key factor is consistency: daily mindful intervention practice rewires the automatic behavior loop faster than occasional willpower exertion."
   - question: "Why do app blockers stop working after a while?"
@@ -75,7 +75,7 @@ If willpower can't win, what can? Three approaches consistently outperform the "
 
 ### Mindful Interventions
 
-Instead of relying on willpower to resist the urge, a mindful intervention creates a moment of awareness right when the impulse fires. When you open a tracked app, Intently shows a gentle prompt:
+Instead of relying on willpower to resist the urge, a mindful intervention creates a moment of awareness right when the impulse fires. When you open a tracked app, Pawse shows a gentle prompt:
 
 *"Take a breath. You wanted to scroll less today. Do you still want to open this?"*
 
@@ -83,7 +83,7 @@ You can always proceed. The intervention activates your conscious mind at exactl
 
 This works where willpower doesn't because it's consistent (no depletion at 11 PM), it respects your autonomy (no reactance), and it builds a skill over time. Research on mindful interventions suggests they lead to sustained reductions in screen time because users develop internal awareness rather than depending on external restriction.
 
-[Download Intently Free →](/download)
+[Download Pawse Free →](/download)
 
 ### Environmental Design
 
@@ -107,17 +107,17 @@ This works because you're redirecting the urge rather than fighting it. The crav
 
 ## Putting It Together
 
-**Week 1:** [Download Intently](/download) and set it up for your top 3 distracting apps. Don't try to change anything yet -- just observe the prompts and your choices. Review your usage data at the end of the week.
+**Week 1:** [Download Pawse](/download) and set it up for your top 3 distracting apps. Don't try to change anything yet -- just observe the prompts and your choices. Review your usage data at the end of the week.
 
 **Week 2:** Redesign your environment. Move social media apps to a folder on your second screen. Turn off non-essential notifications. Charge your phone outside your bedroom.
 
 **Week 3:** Identify your top 3 scrolling triggers and choose a specific replacement behavior for each one.
 
-**Week 4:** Review your Intently analytics. Adjust your intervention messages based on what resonates. Take our [Phone Addiction Quiz](/quiz) to measure your progress.
+**Week 4:** Review your Pawse analytics. Adjust your intervention messages based on what resonates. Take our [Phone Addiction Quiz](/quiz) to measure your progress.
 
 The common thread across all of these is that none of them ask you to "try harder." They work with your brain's wiring instead of against it.
 
-[Download Intently Free →](/download) | [Take the Phone Addiction Quiz →](/quiz)
+[Download Pawse Free →](/download) | [Take the Phone Addiction Quiz →](/quiz)
 
 ---
 

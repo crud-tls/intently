@@ -16,16 +16,13 @@ interface Props {
 }
 
 const {
-  name = "Intently",
+  name = "Pawse",
   description = "Build healthier digital habits through mindful interventions. Privacy-first, 100% offline screen time tracking and digital wellbeing app.",
-  url = "https://liveintently.app",
-  logo = "https://liveintently.app/logo.png",
+  url = "https://pawse.liveintently.app",
+  logo = "https://pawse.liveintently.app/logo.png",
   foundingDate = "2024-01-01",
-  contactEmail = "support@liveintently.app",
-  socialLinks = [
-    "https://twitter.com/intently_app",
-    "https://github.com/intently"
-  ]
+  contactEmail = "pawse@liveintently.app",
+  socialLinks = []
 } = Astro.props;
 
 const profilePageSchema = {
@@ -35,6 +32,7 @@ const profilePageSchema = {
   "mainEntity": {
     "@type": "Organization",
     "name": name,
+    "alternateName": "Intently",
     "description": description,
     "url": url,
     "logo": {

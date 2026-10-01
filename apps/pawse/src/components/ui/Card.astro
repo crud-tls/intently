@@ -26,42 +26,42 @@ const classes = `card card-${variant} ${hover ? 'card-hover' : ''} ${className}`
 
 <style>
 	.card {
-		background-color: var(--intently-bg-primary);
-		border-radius: var(--intently-radius-lg);
-		padding: var(--intently-space-xl);
-		transition: all var(--intently-transition-normal);
+		background-color: var(--ds-bg-primary);
+		border-radius: var(--ds-radius-lg);
+		padding: var(--ds-space-xl);
+		transition: all var(--ds-transition-normal);
 	}
 
 	/* Default - flat card */
 	.card-default {
-		background-color: var(--intently-bg-primary);
+		background-color: var(--ds-bg-primary);
 	}
 
 	/* Elevated - with shadow */
 	.card-elevated {
-		box-shadow: var(--intently-shadow-md);
+		box-shadow: var(--ds-shadow-md);
 	}
 
 	/* Outlined - with border */
 	.card-outlined {
-		border: 1px solid var(--intently-gray-200);
+		border: 1px solid var(--ds-gray-200);
 	}
 
 	/* Hover effect */
 	.card-hover:hover {
 		transform: translateY(-2px);
-		box-shadow: var(--intently-shadow-lg);
+		box-shadow: var(--ds-shadow-lg);
 	}
 
 	/* No hover for cards that shouldn't lift */
 	.card-outlined:not(.card-hover):hover {
-		border-color: var(--intently-gray-300);
+		border-color: var(--ds-gray-300);
 	}
 
 	/* Mobile: reduce padding */
 	@media (max-width: 767px) {
 		.card {
-			padding: var(--intently-space-lg);
+			padding: var(--ds-space-lg);
 		}
 	}
 </style>

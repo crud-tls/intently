@@ -3,7 +3,7 @@ title: "How to Stop Mindless Scrolling at Night: A Sleep-Saving Guide"
 description: "Stop scrolling at night and protect your sleep. Learn why bedtime scrolling destroys rest and how to break the habit with proven strategies for better sleep and mornings."
 pubDate: 2026-01-23
 updatedDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["stop scrolling at night", "phone addiction before bed", "sleep hygiene", "digital wellbeing", "screen time at night"]
 heroImage: "/blog-night-scrolling.jpg"
@@ -90,13 +90,13 @@ It can help to keep a short list somewhere visible as a reminder, especially in 
 
 If keeping your phone in another room isn't realistic for you right now, mindful interventions can bridge the gap. The idea is to create a moment of awareness before you autopilot into scrolling.
 
-Intently does this by showing a gentle reminder when you try to use your phone after your set wind-down time:
+Pawse does this by showing a gentle reminder when you try to use your phone after your set wind-down time:
 
 > *"Take a breath. It's past your digital sunset time. Your sleep is more important than this app. Do you still want to proceed?"*
 
 You can always continue -- it's not a blocker. But that brief pause is often enough to snap you out of the automatic behavior and let you make a conscious choice instead.
 
-[Download Intently](/download) to add mindful interventions to your nighttime routine.
+[Download Pawse](/download) to add mindful interventions to your nighttime routine.
 
 ## Build a Bedtime Routine
 
@@ -152,7 +152,7 @@ That's actually okay. Boredom at bedtime is your brain experiencing stillness, w
 
 ### "I've tried this before and it didn't stick"
 
-You're not alone on that one. Willpower by itself tends to fail because it doesn't change the environment. Combine a few strategies: charge your phone in another room, use Intently's time-based interventions, keep a written routine visible, and start small. Even 30 minutes phone-free before bed is a real starting point -- you can build from there.
+You're not alone on that one. Willpower by itself tends to fail because it doesn't change the environment. Combine a few strategies: charge your phone in another room, use Pawse's time-based interventions, keep a written routine visible, and start small. Even 30 minutes phone-free before bed is a real starting point -- you can build from there.
 
 ## What to Expect
 

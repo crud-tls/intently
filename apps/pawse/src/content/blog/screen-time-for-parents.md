@@ -2,7 +2,7 @@
 title: "Screen Time for Parents: The Complete Family Guide (2026)"
 description: "A practical guide to managing screen time for the whole family. Age-specific guidelines, built-in parental controls, family rules that work, and why modeling good phone habits matters most."
 pubDate: 2026-02-28
-author: "Intently Team"
+author: "Pawse Team"
 section: "Digital Wellbeing"
 tags: ["screen time for parents", "kids screen time", "family screen time rules", "parental controls screen time", "digital wellbeing families", "children screen time guidelines"]
 heroImage: "/blog-placeholder-about.jpg"
@@ -18,7 +18,7 @@ faq:
   - question: "Should I track my kids' phone usage?"
     answer: "Age-appropriate monitoring is reasonable. For younger children (under 12), active oversight is standard and expected. For teens, gradually shift from monitoring to mentoring — discuss what healthy usage looks like and give increasing autonomy. Overly invasive surveillance of teens can damage trust and backfire. The goal is building their internal judgment, not permanent external control."
   - question: "How do I manage my own screen time as a parent?"
-    answer: "Children model what they see, not what they're told. If you're on your phone constantly, screen time rules feel hypocritical. Start by creating phone-free family times (meals, bedtime routines, outings), charge your phone outside the bedroom, and use a mindful pause app like Intently to build awareness of your own habits. Your behavior sets the baseline for the whole family."
+    answer: "Children model what they see, not what they're told. If you're on your phone constantly, screen time rules feel hypocritical. Start by creating phone-free family times (meals, bedtime routines, outings), charge your phone outside the bedroom, and use a mindful pause app like Pawse to build awareness of your own habits. Your behavior sets the baseline for the whole family."
 ---
 
 # Screen Time for Parents: A Practical Family Guide
@@ -173,7 +173,7 @@ Setting screen time rules for your kids while maintaining heavy phone use yourse
 
 **Create phone-free times for yourself.** If your kids can't have phones at dinner, neither can you. If devices charge outside bedrooms, yours does too. Shared rules build family culture.
 
-**Use a mindful pause app.** Tools like [Intently](/download) add a brief pause before you open distracting apps — giving you a moment to decide consciously whether you want to check Instagram or be present with your family. It's a small intervention that makes a real difference, especially during after-school hours and evenings.
+**Use a mindful pause app.** Tools like [Pawse](/download) add a brief pause before you open distracting apps — giving you a moment to decide consciously whether you want to check Instagram or be present with your family. It's a small intervention that makes a real difference, especially during after-school hours and evenings.
 
 **Narrate your choices.** Let your kids see you making deliberate screen decisions. "I'm going to check my email now, and then my phone goes away for dinner." This shows them that intentional use is a skill adults practice too.
 
@@ -215,7 +215,7 @@ If you're in the "Time to Act" category, consider consulting your pediatrician o
 - Focus modes and Do Not Disturb scheduling
 
 ### For Parents: Building Your Own Habits
-- **[Intently](/download)** — Free mindful pause app. Add awareness before opening distracting apps. Custom messages, usage tracking, fully offline and private. Available on Android and Chrome, with iOS coming soon.
+- **[Pawse](/download)** — Free mindful pause app. Add awareness before opening distracting apps. Custom messages, usage tracking, fully offline and private. Available on Android and Chrome, with iOS coming soon.
 - **Phone-free charging station** — A central spot where all family devices charge overnight
 - **Grayscale mode** — Makes your phone less visually stimulating (Settings > Accessibility > Display)
 
@@ -236,7 +236,7 @@ You don't need to overhaul everything at once. Pick one change:
 
 Small, consistent changes compound over time. Your family's relationship with screens won't transform overnight, but it will shift — one phone-free dinner at a time.
 
-[Download Intently free](/download) to start building better screen time habits for yourself — because the best thing you can do for your kids' screen time is manage your own.
+[Download Pawse free](/download) to start building better screen time habits for yourself — because the best thing you can do for your kids' screen time is manage your own.
 
 ---
 
