@@ -1,0 +1,6 @@
+{
+  "name": "intently-redirects",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-10-08",
+  "workers_dev": true
+}
