@@ -37,3 +37,7 @@ Store (extension privacy) link to the apex today. `docs/legacy-urls.txt` lists e
 - [x] Phase 1: site moved to `apps/pawse` unchanged; preview at
   `https://pawse-site.fsadakathussain.workers.dev` serves all 123 legacy paths identically.
   Shared `packages/ui` is extracted in phase 4, when the hub is its second user.
+- [x] Phase 2: Pawse rebrand on the preview. Name, slugs (`pawse-vs-*` with 301s), canonical host
+  `pawse.liveintently.app`, warm palette with Nunito and Biscuit, privacy claims rewritten
+  to match the app, fake stats/ratings/testimonials removed, `/privacy/chrome`, and
+  `/delete-account/confirm` (the API email linked a page that never existed).
