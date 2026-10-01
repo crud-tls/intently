@@ -51,7 +51,8 @@ for (const [step, pairs] of Object.entries(STEPS)) {
 		if (apply && was !== service) {
 			await call(`/accounts/${account}/workers/domains`, {
 				method: 'PUT',
-				body: JSON.stringify({ hostname, service, zone_id: zone.id, environment: 'production' }),
+				// Taking a hostname from another Worker (the old site) has to be explicit.
+				body: JSON.stringify({ hostname, service, zone_id: zone.id, environment: 'production', override_existing_origin: was !== '(none)' }),
 			});
 			console.log(`  attached`);
 		}
