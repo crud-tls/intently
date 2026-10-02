@@ -27,6 +27,10 @@ python3 -m venv /tmp/v
 ## The splash
 
 `apps/hub/src/components/Splash.astro` plays on the home page once per browser session (never
-with reduced motion or without JavaScript). It plays the Lottie if its player is ready within
-250 ms (usually on repeat visits, when it's cached), otherwise the CSS-animated SVG (same motion), waits for the page to load (4 s cap), then moves the logo
-onto the hero logo and fades away. Click, tap or Esc skips it.
+with reduced motion or without JavaScript). The Lottie plays through lottie-web's SVG-only player
+(about 47 KB compressed). It is served from the site and preloaded at high priority in the page
+head with `art/intently-logo.json`, so it plays on a cold first visit too: from about 0.3 s on a
+normal connection, and about 1.4 s at 1.5 Mbps. The controller is inline script, so it doesn't
+wait for the page's bundle. If the player hasn't arrived within 3 s, the CSS-animated SVG plays
+the same motion. After the animation and the page load (6 s cap), the logo moves onto the hero
+logo and the overlay fades. Click, tap or Esc skips it.

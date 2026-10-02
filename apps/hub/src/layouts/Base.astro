@@ -2,6 +2,7 @@
 import '@fontsource-variable/inter/wght.css';
 import '@intently/ui/base.css';
 import { APPS, STUDIO } from '@intently/registry';
+import lottiePlayer from 'lottie-web/build/player/lottie_light.min.js?url';
 
 interface Props {
 	title: string;
@@ -32,6 +33,8 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 				} catch (e) {}
 			</script>
 		)}
+		{splash && <link rel="preload" href={lottiePlayer} as="script" fetchpriority="high" />}
+		{splash && <link rel="preload" href="/art/intently-logo.json" as="fetch" crossorigin="anonymous" fetchpriority="high" />}
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{fullTitle}</title>
 		<meta name="description" content={description} />

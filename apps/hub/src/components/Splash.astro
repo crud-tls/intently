@@ -5,109 +5,130 @@
  * and never with reduced motion; Base.astro's head script decides by adding html.splashing
  * before the first paint, so without JS (or on later visits) the page just renders.
  *
- * The Lottie version plays when its player is ready within 250 ms; otherwise the same motion runs as
- * the self-contained CSS-animated SVG, so the stage is never empty.
+ * The Lottie plays through lottie-web's small SVG player, served from this site and preloaded
+ * in the head with the animation, so it is ready on a cold first visit. Everything here is
+ * inline script: it must not wait for the page's module bundle. If the player still isn't there
+ * after 3 s, the same motion runs as the CSS-animated SVG.
  */
 import animatedLogo from '../../public/brand/intently-logo-animated.svg?raw';
+import lottiePlayer from 'lottie-web/build/player/lottie_light.min.js?url';
+
+const animationUrl = '/art/intently-logo.json';
 ---
 
 <div class="splash" aria-hidden="true">
 	<div class="stage">
 		<div class="css-logo" set:html={animatedLogo} />
-		<dotlottie-wc class="lottie" src="/art/intently-logo.json"></dotlottie-wc>
+		<div class="lottie"></div>
 	</div>
 </div>
 
-<script is:inline>
-	// Runs as soon as the markup is parsed, before the page's module bundle arrives: if the Lottie
-	// hasn't started within 250 ms, the CSS version starts so the stage is never empty.
-	setTimeout(function () {
-		var stage = document.querySelector('.splash .stage');
-		if (stage && !stage.classList.contains('use-lottie')) {
-			stage.dataset.cssStart = String(Date.now());
-			stage.classList.add('use-css');
-		}
-	}, 250);
-</script>
+<script is:inline async fetchpriority="high" id="splash-player" src={lottiePlayer}></script>
+<script is:inline define:vars={{ animationUrl }}>
+	(function () {
+		var root = document.documentElement;
+		var splash = document.querySelector('.splash');
+		if (!root.classList.contains('splashing') || !splash) return;
 
-<script>
-	const root = document.documentElement;
-	const splash = document.querySelector<HTMLElement>('.splash');
+		var stage = splash.querySelector('.stage');
+		var box = stage.querySelector('.lottie');
+		var mode = null;
+		var animationEnded = false;
+		var pageLoaded = document.readyState === 'complete';
+		var finished = false;
 
-	if (root.classList.contains('splashing') && splash) {
-		const stage = splash.querySelector<HTMLElement>('.stage')!;
-		const player = stage.querySelector<HTMLElement & { dotLottie?: any }>('dotlottie-wc')!;
-		const target = document.querySelector<HTMLElement>('[data-splash-target]');
-
-		let mode: 'lottie' | 'css' | null = null;
-		let animationDone!: () => void;
-		const animation = new Promise<void>((resolve) => (animationDone = resolve));
-		const pageLoaded = new Promise<void>((resolve) =>
-			document.readyState === 'complete' ? resolve() : addEventListener('load', () => resolve(), { once: true }),
-		);
-
-		const useCss = () => {
-			if (mode === 'lottie') return;
-			mode = 'css';
-			stage.classList.add('use-css');
-			const started = Number(stage.dataset.cssStart ?? Date.now());
-			setTimeout(animationDone, Math.max(0, 1400 - (Date.now() - started)));
-		};
-
-		// The inline script above may already have started the CSS version while this bundle loaded.
-		if (stage.classList.contains('use-css')) useCss();
-		const lottieDeadline = setTimeout(useCss, 250);
-		import('@lottiefiles/dotlottie-wc').then(async () => {
-			await customElements.whenDefined('dotlottie-wc');
-			for (let i = 0; i < 30 && !player.dotLottie; i++) await new Promise((r) => setTimeout(r, 10));
-			const lottie = player.dotLottie;
-			if (!lottie || mode) return;
-			const start = () => {
-				if (mode || stage.classList.contains('use-css')) return;
-				mode = 'lottie';
-				clearTimeout(lottieDeadline);
-				stage.classList.add('use-lottie');
-				lottie.addEventListener('complete', () => animationDone());
-				lottie.play();
-			};
-			if (lottie.isLoaded) start();
-			else lottie.addEventListener('load', start);
-			lottie.addEventListener('loadError', useCss);
-		}, useCss);
-
-		let finished = false;
-		const finish = () => {
+		function finish() {
 			if (finished) return;
 			finished = true;
-			const from = stage.getBoundingClientRect();
-			const to = target?.getBoundingClientRect();
+			var from = stage.getBoundingClientRect();
+			var target = document.querySelector('[data-splash-target]');
+			var to = target && target.getBoundingClientRect();
 			splash.classList.add('leaving');
 			if (to && to.width > 0) {
 				// FLIP: move the stage onto the hero logo, which has the same geometry.
-				const dx = to.left + to.width / 2 - (from.left + from.width / 2);
-				const dy = to.top + to.height / 2 - (from.top + from.height / 2);
-				stage.style.transform = `translate(${dx}px, ${dy}px) scale(${to.width / from.width})`;
+				var dx = to.left + to.width / 2 - (from.left + from.width / 2);
+				var dy = to.top + to.height / 2 - (from.top + from.height / 2);
+				stage.style.transform = 'translate(' + dx + 'px, ' + dy + 'px) scale(' + to.width / from.width + ')';
 			}
-			setTimeout(() => {
+			setTimeout(function () {
 				root.classList.remove('splashing');
 				splash.remove();
 				try {
 					sessionStorage.setItem('introSeen', '1');
-				} catch {
+				} catch (e) {
 					/* private mode: the splash simply shows again next time */
 				}
 			}, 650);
-		};
+		}
 
-		Promise.all([animation, pageLoaded]).then(finish);
-		setTimeout(finish, 4000);
-		const skip = () => {
-			animationDone();
+		function maybeFinish() {
+			if (animationEnded && pageLoaded) finish();
+		}
+
+		function animationDone() {
+			animationEnded = true;
+			maybeFinish();
+		}
+
+		function useCss() {
+			if (mode) return;
+			mode = 'css';
+			stage.classList.add('use-css');
+			setTimeout(animationDone, 1400);
+		}
+
+		// Preloaded in the head, so this resolves from the cache.
+		var animation = fetch(animationUrl).then(function (r) {
+			if (!r.ok) throw new Error('animation ' + r.status);
+			return r.json();
+		});
+
+		function useLottie() {
+			if (mode || !window.lottie) return;
+			animation.then(function (data) {
+				if (mode) return;
+				mode = 'lottie';
+				var player = window.lottie.loadAnimation({
+					container: box,
+					renderer: 'svg',
+					loop: false,
+					autoplay: false,
+					animationData: data,
+				});
+				stage.classList.add('use-lottie');
+				player.addEventListener('complete', animationDone);
+				player.play();
+			}, useCss);
+		}
+
+		var script = document.getElementById('splash-player');
+		if (window.lottie) useLottie();
+		else {
+			script.addEventListener('load', useLottie);
+			script.addEventListener('error', useCss);
+		}
+		// The Lottie is the splash; the CSS twin is only for a player that fails or crawls in.
+		setTimeout(useCss, 3000);
+
+		addEventListener('load', function () {
+			pageLoaded = true;
+			maybeFinish();
+		});
+		// Never hold the page for long, whatever happens to the animation or the load event.
+		setTimeout(function () {
+			animationEnded = pageLoaded = true;
 			finish();
-		};
+		}, 6000);
+
+		function skip() {
+			animationEnded = pageLoaded = true;
+			finish();
+		}
 		splash.addEventListener('click', skip);
-		addEventListener('keydown', (e) => e.key === 'Escape' && skip(), { once: true });
-	}
+		addEventListener('keydown', function (e) {
+			if (e.key === 'Escape') skip();
+		});
+	})();
 </script>
 
 <style>
@@ -154,6 +175,16 @@ import animatedLogo from '../../public/brand/intently-logo-animated.svg?raw';
 		height: 100%;
 	}
 
+	/* The Lottie canvas is 600x1000 with the logo landing in its bottom-centre 400x400, so the
+	   player overhangs the stage (in stage units: 50 each side, 300 above) to show the whole fall. */
+	.stage > .lottie {
+		inset: auto;
+		left: -25%;
+		top: -150%;
+		width: 150%;
+		height: 250%;
+	}
+
 	.css-logo,
 	.lottie {
 		visibility: hidden;
@@ -168,16 +199,6 @@ import animatedLogo from '../../public/brand/intently-logo-animated.svg?raw';
 	.stage:not(.use-css) .css-logo :global(#mark),
 	.stage:not(.use-css) .css-logo :global(#head) {
 		animation-play-state: paused;
-	}
-
-	/* The Lottie canvas is 600x1000 with the logo landing in its bottom-centre 400x400, so the
-	   player overhangs the stage (in stage units: 50 each side, 300 above) to show the whole fall. */
-	.stage > .lottie {
-		inset: auto;
-		left: -25%;
-		top: -150%;
-		width: 150%;
-		height: 250%;
 	}
 
 	.css-logo :global(svg) {
