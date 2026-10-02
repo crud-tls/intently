@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
+import Splash from '../components/Splash.astro';
 import Showcase from '../components/Showcase.astro';
 import WeekArt from '../components/WeekArt.astro';
 import { APPS, app } from '@intently/registry';
@@ -8,7 +9,8 @@ import { APPS, app } from '@intently/registry';
 const soon = APPS.filter((a) => a.status === 'soon');
 ---
 
-<Base title="Intently" description="Intently is a small independent studio making calm, privacy-minded apps: Pawse, Qandeel, Loop and more.">
+<Base splash title="Intently" description="Intently is a small independent studio making calm, privacy-minded apps: Pawse, Qandeel, Loop and more.">
+	<Splash />
 	<main>
 		<Hero />
 

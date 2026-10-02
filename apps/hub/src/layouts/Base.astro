@@ -7,9 +7,11 @@ interface Props {
 	title: string;
 	description: string;
 	noindex?: boolean;
+	/** Play the logo splash (home page only; once per session, never with reduced motion). */
+	splash?: boolean;
 }
 
-const { title, description, noindex = false } = Astro.props;
+const { title, description, noindex = false, splash = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = title === STUDIO.name ? title : `${title} · ${STUDIO.name}`;
 const year = new Date().getFullYear();
@@ -20,6 +22,16 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		{splash && (
+			<script is:inline>
+				// Decide before the first paint, so the page never flashes under the splash.
+				try {
+					if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !sessionStorage.getItem('introSeen')) {
+						document.documentElement.classList.add('splashing');
+					}
+				} catch (e) {}
+			</script>
+		)}
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{fullTitle}</title>
 		<meta name="description" content={description} />
@@ -49,7 +61,7 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 		<header class="site-header">
 			<div class="wrap bar">
 				<a href="/" class="brand" aria-label="Intently home">
-					<img src="/favicon.svg" alt="" width="28" height="28" />
+					<img src="/brand/intently-logo.svg" alt="" width="28" height="28" />
 					<span>Intently</span>
 				</a>
 				<nav aria-label="Main">
@@ -65,7 +77,7 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 		<footer class="site-footer">
 			<div class="wrap cols">
 				<div>
-					<p class="brand-line"><img src="/favicon.svg" alt="" width="22" height="22" /> Intently</p>
+					<p class="brand-line"><img src="/brand/intently-logo.svg" alt="" width="22" height="22" /> Intently</p>
 					<p class="muted small">Apps made with intent.</p>
 				</div>
 				<div>
