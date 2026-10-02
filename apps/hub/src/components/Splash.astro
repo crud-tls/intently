@@ -5,7 +5,7 @@
  * and never with reduced motion; Base.astro's head script decides by adding html.splashing
  * before the first paint, so without JS (or on later visits) the page just renders.
  *
- * The Lottie version plays when its player is ready quickly; otherwise the same motion runs as
+ * The Lottie version plays when its player is ready within 250 ms; otherwise the same motion runs as
  * the self-contained CSS-animated SVG, so the stage is never empty.
  */
 import animatedLogo from '../../public/brand/intently-logo-animated.svg?raw';
@@ -17,6 +17,18 @@ import animatedLogo from '../../public/brand/intently-logo-animated.svg?raw';
 		<dotlottie-wc class="lottie" src="/art/intently-logo.json"></dotlottie-wc>
 	</div>
 </div>
+
+<script is:inline>
+	// Runs as soon as the markup is parsed, before the page's module bundle arrives: if the Lottie
+	// hasn't started within 250 ms, the CSS version starts so the stage is never empty.
+	setTimeout(function () {
+		var stage = document.querySelector('.splash .stage');
+		if (stage && !stage.classList.contains('use-lottie')) {
+			stage.dataset.cssStart = String(Date.now());
+			stage.classList.add('use-css');
+		}
+	}, 250);
+</script>
 
 <script>
 	const root = document.documentElement;
@@ -35,21 +47,23 @@ import animatedLogo from '../../public/brand/intently-logo-animated.svg?raw';
 		);
 
 		const useCss = () => {
-			if (mode) return;
+			if (mode === 'lottie') return;
 			mode = 'css';
 			stage.classList.add('use-css');
-			setTimeout(animationDone, 1400);
+			const started = Number(stage.dataset.cssStart ?? Date.now());
+			setTimeout(animationDone, Math.max(0, 1400 - (Date.now() - started)));
 		};
 
-		// The Lottie gets a short head start; after that the CSS version takes the stage.
-		const lottieDeadline = setTimeout(useCss, 450);
+		// The inline script above may already have started the CSS version while this bundle loaded.
+		if (stage.classList.contains('use-css')) useCss();
+		const lottieDeadline = setTimeout(useCss, 250);
 		import('@lottiefiles/dotlottie-wc').then(async () => {
 			await customElements.whenDefined('dotlottie-wc');
 			for (let i = 0; i < 30 && !player.dotLottie; i++) await new Promise((r) => setTimeout(r, 10));
 			const lottie = player.dotLottie;
 			if (!lottie || mode) return;
 			const start = () => {
-				if (mode) return;
+				if (mode || stage.classList.contains('use-css')) return;
 				mode = 'lottie';
 				clearTimeout(lottieDeadline);
 				stage.classList.add('use-lottie');

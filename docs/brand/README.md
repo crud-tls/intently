@@ -28,5 +28,5 @@ python3 -m venv /tmp/v
 
 `apps/hub/src/components/Splash.astro` plays on the home page once per browser session (never
 with reduced motion or without JavaScript). It plays the Lottie if its player is ready within
-450 ms, otherwise the CSS-animated SVG, waits for the page to load (4 s cap), then moves the logo
+250 ms (usually on repeat visits, when it's cached), otherwise the CSS-animated SVG (same motion), waits for the page to load (4 s cap), then moves the logo
 onto the hero logo and fades away. Click, tap or Esc skips it.
