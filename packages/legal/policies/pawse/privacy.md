@@ -5,7 +5,8 @@ updated: 2026-10-02
 
 Pawse (formerly Intently) helps you notice and cut back on compulsive app use by showing a short
 pause before the apps you choose. This policy explains what the Android app collects, why, and
-where it goes. The Chrome extension has [its own policy](/privacy/chrome).
+where it goes. The [iPhone and iPad app](/privacy/ios) and the [Chrome extension](/privacy/chrome)
+have their own policies.
 
 **Developer:** MD Sadakat Hussain Fahad, publishing as Intently ·
 **Contact:** [pawse@liveintently.app](mailto:pawse@liveintently.app)
