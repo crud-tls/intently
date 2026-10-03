@@ -8,13 +8,15 @@ interface Props {
 }
 
 const { app, content } = Astro.props;
+// Android apps ask for the Android version; iOS-only apps for the iOS version.
+const deviceHint = app.platforms.includes('Android') ? 'phone model and Android version' : 'iPhone or iPad model and iOS version';
 ---
 
 <main class="wrap page">
 	<h1>{app.name} support</h1>
 	<p class="lead">Questions, bug reports or ideas? Email us at <a href={`mailto:${app.email}`}>{app.email}</a>.
 		We usually reply within two days.</p>
-	<p class="muted">Please include your phone model and Android version if something isn't working.</p>
+	<p class="muted">Please include your {deviceHint} if something isn't working.</p>
 	{content.faq.length > 0 && <p><a href="/#faq-title">Common questions</a></p>}
 	{content.accountDeletion && <p>Want to delete your account? <a href="/delete-account">Here's how</a>.</p>}
 	{content.legal.privacy && <p>How we handle your data: <a href="/privacy">privacy policy</a>.</p>}

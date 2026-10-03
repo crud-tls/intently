@@ -63,6 +63,24 @@ export const APPS: App[] = [
 		aliases: ['infocus.liveintently.app'],
 	},
 	{
+		id: 'respite',
+		name: 'Respite',
+		tagline: 'A short pause before the apps that eat your day.',
+		host: 'respite.liveintently.app',
+		status: 'review',
+		// No per-app inbox yet (Email Routing needs a token scope); the studio inbox works today.
+		email: 'support@liveintently.app',
+		platforms: ['iOS'],
+		stores: {},
+		color: '#FF8A3D',
+		icon: '/icons/respite.svg',
+		highlights: [
+			'A short, kind pause before the apps you choose',
+			'Daily limits and an app lock that refreshes at midnight',
+			"Built on Apple's Screen Time; app names never leave your iPhone",
+		],
+	},
+	{
 		id: 'qandeel',
 		name: 'Qandeel',
 		tagline: 'The Quran on your phone and your watch, offline and in sync.',

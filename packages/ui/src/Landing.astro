@@ -10,13 +10,15 @@ interface Props {
 
 const { app, content } = Astro.props;
 const notifySubject = encodeURIComponent(`Tell me when ${app.name} launches`);
+// The store the app is waiting on: Google Play for Android apps, the App Store for iOS-only ones.
+const reviewStore = app.platforms.includes('Android') ? 'Google Play' : 'the App Store';
 ---
 
 <main>
 	<section class="hero">
 		<div class="wrap grid">
 			<div>
-				{app.status !== 'live' && <p class="badge">{app.status === 'review' ? 'On Google Play soon' : 'Coming soon'}</p>}
+				{app.status !== 'live' && <p class="badge">{app.status === 'review' ? `On ${reviewStore} soon` : 'Coming soon'}</p>}
 				<h1>{content.headline}</h1>
 				<p class="lead">{content.subhead}</p>
 				<p class="ctas">

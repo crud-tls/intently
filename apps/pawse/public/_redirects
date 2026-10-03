@@ -21,3 +21,7 @@
 /privacy-policy-chrome        /privacy/chrome          301
 # The deletion email from the API linked here before the page existed.
 /confirm-deletion             /delete-account/confirm  301
+
+# The iPhone app is now Respite, with its own site.
+/privacy/ios     https://respite.liveintently.app/privacy/   301
+/privacy/ios/    https://respite.liveintently.app/privacy/   301
