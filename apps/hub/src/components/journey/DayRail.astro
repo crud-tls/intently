@@ -1,0 +1,101 @@
+---
+/**
+ * The day at a glance: seven lights down the right edge of the home page, one per chapter. It is a
+ * plain list of links; the motion layer lights each one as its chapter passes and marks the
+ * current one with aria-current.
+ */
+import { CHAPTERS } from '../../data/chapters.ts';
+---
+
+<nav class="rail" aria-label="Chapters of the day">
+	<ol>
+		{CHAPTERS.map((c) => (
+			<li style={`--light:${c.light}`}>
+				<a href={`#${c.id}`} data-rail={c.id}>
+					<span class="dot" aria-hidden="true"></span>
+					<span class="label"><span class="clock">{c.clock}</span> {c.name}</span>
+				</a>
+			</li>
+		))}
+	</ol>
+</nav>
+
+<style>
+	.rail {
+		position: fixed;
+		right: 18px;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 5;
+		padding: 14px 8px;
+		border-radius: 999px;
+		background: rgb(10 15 44 / 0.32);
+		backdrop-filter: blur(8px);
+	}
+
+	ol {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 6px;
+	}
+
+	a {
+		position: relative;
+		display: grid;
+		place-items: center;
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		text-decoration: none;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: color-mix(in srgb, var(--light) 55%, #ffffff);
+		box-shadow: 0 0 0 2px rgb(255 255 255 / 0.18);
+		transition: transform 300ms var(--ease-out), box-shadow 300ms ease;
+	}
+
+	a[aria-current] .dot,
+	a:hover .dot,
+	a:focus-visible .dot {
+		transform: scale(1.35);
+		box-shadow: 0 0 0 3px rgb(255 255 255 / 0.25), 0 0 14px var(--light);
+	}
+
+	.label {
+		position: absolute;
+		right: 40px;
+		white-space: nowrap;
+		padding: 4px 12px;
+		border-radius: 999px;
+		background: rgb(10 15 44 / 0.78);
+		color: #f3efe8;
+		font-size: 0.85rem;
+		font-weight: 600;
+		opacity: 0;
+		transform: translateX(6px);
+		pointer-events: none;
+		transition: opacity 200ms ease, transform 200ms var(--ease-out);
+	}
+
+	.clock {
+		font-weight: 450;
+		opacity: 0.75;
+		font-variant-numeric: tabular-nums;
+	}
+
+	a:hover .label,
+	a:focus-visible .label {
+		opacity: 1;
+		transform: none;
+	}
+
+	@media (max-width: 1180px) {
+		.rail { display: none; }
+	}
+</style>

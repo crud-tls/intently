@@ -53,6 +53,8 @@ const animationUrl = '/art/intently-logo.json';
 			setTimeout(function () {
 				root.classList.remove('splashing');
 				splash.remove();
+				// The motion layer waits for this before it touches the hero logo.
+				document.dispatchEvent(new Event('intently:splash-done'));
 				try {
 					sessionStorage.setItem('introSeen', '1');
 				} catch (e) {

@@ -1,0 +1,54 @@
+---
+/**
+ * Morning: a phone, and a cloud of notifications crowding the figure beside it. The notices are
+ * generic on purpose (no real app names or logos). Each has data-n so motion can scatter them.
+ */
+// [x, y, width, rotation, dot colour]
+const NOTICES: [number, number, number, number, string][] = [
+	[36, 70, 150, -8, '#FF6B6B'], [210, 40, 140, 6, '#7C5CFF'], [250, 120, 128, -4, '#2EB67D'],
+	[20, 168, 132, 5, '#FFA62B'], [236, 210, 150, 9, '#3DA5F4'], [44, 262, 120, -10, '#E84393'],
+	[262, 300, 118, -6, '#FF6B6B'], [16, 350, 146, 7, '#2EB67D'], [120, 404, 136, 4, '#7C5CFF'],
+];
+---
+
+<svg class="attention-art" viewBox="0 0 400 480" role="img" aria-label="A phone surrounded by a crowd of notifications, with a small figure standing beside it.">
+	<defs>
+		<linearGradient id="aa-screen" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#FFFFFF" />
+			<stop style="stop-color:var(--glow)" offset="1" />
+		</linearGradient>
+		<radialGradient id="aa-beam" cx="0.42" cy="0.4" r="0.42">
+			<stop style="stop-color:var(--glow)" offset="0" stop-opacity="0.9" />
+			<stop style="stop-color:var(--glow)" offset="1" stop-opacity="0" />
+		</radialGradient>
+	</defs>
+	<rect class="beam" width="400" height="480" fill="url(#aa-beam)" />
+	<g class="phone">
+		<rect style="fill:var(--ink)" x="140" y="110" width="124" height="246" rx="26" />
+		<rect x="149" y="121" width="106" height="224" rx="19" fill="url(#aa-screen)" />
+		<rect style="fill:var(--ink)" x="186" y="128" width="32" height="8" rx="4" />
+	</g>
+	<g class="notices">
+		{NOTICES.map(([x, y, w, r, dot], i) => (
+			<g class="notice" data-n={i} transform={`translate(${x} ${y}) rotate(${r} ${w / 2} 20)`}>
+				<rect style="stroke:var(--ink)" width={w} height="40" rx="14" fill="#FFFFFF" stroke-opacity="0.14" />
+				<circle cx="20" cy="20" r="8" fill={dot} />
+				<rect style="fill:var(--ink)" x="36" y="12" width={w * 0.5} height="6" rx="3" fill-opacity="0.7" />
+				<rect style="fill:var(--ink)" x="36" y="23" width={w * 0.34} height="5" rx="2.5" fill-opacity="0.3" />
+			</g>
+		))}
+	</g>
+	<use href="#im" x="292" y="392" width="84" height="84" class="walker" />
+</svg>
+
+<style>
+	.attention-art {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.notice rect:first-child {
+		filter: drop-shadow(0 6px 10px rgb(17 32 43 / 0.12));
+	}
+</style>

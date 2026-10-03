@@ -1,0 +1,40 @@
+---
+/** One small thing to try today. */
+interface Props {
+	heading: string;
+	body: string[];
+}
+
+const { heading, body } = Astro.props;
+---
+
+<section class="practice" aria-labelledby="practice-title">
+	<p class="kicker">A practice for today</p>
+	<h2 id="practice-title" class="display">{heading}</h2>
+	{body.map((p) => <p class="lede">{p}</p>)}
+</section>
+
+<style>
+	.practice {
+		position: relative;
+		padding: clamp(28px, 5vw, 56px);
+		border-radius: 36px;
+		background: color-mix(in srgb, var(--light) 16%, var(--sky-bottom));
+		border: 1px solid color-mix(in srgb, var(--light) 45%, transparent);
+	}
+
+	.kicker {
+		margin: 0 0 10px;
+		font-weight: 650;
+		color: var(--text-2);
+	}
+
+	h2 {
+		font-size: clamp(2rem, 4vw, 3rem);
+		margin: 0 0 1.2rem;
+	}
+
+	.lede { margin: 0 0 0.8rem; }
+
+	.lede:last-child { margin-bottom: 0; }
+</style>

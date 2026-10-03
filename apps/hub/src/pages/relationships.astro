@@ -1,0 +1,11 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import TailEnd from '../components/feel/TailEnd.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('relationships');
+---
+
+<Chapter chapter={c}>
+	<TailEnd slot="feel" caption={c.feel.example} />
+</Chapter>

@@ -1,0 +1,63 @@
+---
+/** Time: a whole life as weeks, 52 to a row and one row per year, the lived ones filled in. */
+import FeelFrame from './FeelFrame.astro';
+import { lifeWeeks, weeksLived } from '../../scripts/lib/math.ts';
+
+interface Props {
+	caption: string;
+	age?: number;
+	life?: number;
+}
+
+const { caption, age = 30, life = 80 } = Astro.props;
+const COLS = 52;
+const P = 10;
+const rows = Math.ceil(lifeWeeks(life) / COLS);
+const lived = weeksLived(age);
+const full = Math.floor(lived / COLS);
+const rest = lived % COLS;
+const left = 34;
+const W = left + COLS * P;
+const H = rows * P;
+---
+
+<FeelFrame caption={caption}>
+	<svg class="weeks" viewBox={`0 0 ${W} ${H + 4}`} role="img" aria-label={`${lifeWeeks(life).toLocaleString('en')} weeks in an ${life}-year life, ${lived.toLocaleString('en')} of them filled in for someone aged ${age}.`}>
+		<defs>
+			<pattern id="lw-lived" width={P} height={P} patternUnits="userSpaceOnUse" x={left} y="0">
+				<rect x="1" y="1" width={P - 2} height={P - 2} rx="2" style="fill:var(--ink)" fill-opacity="0.8" />
+			</pattern>
+			<pattern id="lw-ahead" width={P} height={P} patternUnits="userSpaceOnUse" x={left} y="0">
+				<rect x="1" y="1" width={P - 2} height={P - 2} rx="2" style="fill:var(--ink)" fill-opacity="0.12" />
+			</pattern>
+		</defs>
+		{Array.from({ length: Math.ceil(rows / 10) }, (_, d) => (
+			<text x={left - 8} y={d * 10 * P + P - 1.5} text-anchor="end" class="age">{d * 10}</text>
+		))}
+		<rect x={left} y="0" width={COLS * P} height={H} fill="url(#lw-ahead)" />
+		<rect x={left} y="0" width={COLS * P} height={full * P} fill="url(#lw-lived)" data-lived />
+		<rect x={left} y={full * P} width={rest * P} height={P} fill="url(#lw-lived)" data-lived-rest />
+		<circle cx={left + rest * P + P / 2} cy={full * P + P / 2} r={P * 0.55} class="now" data-now />
+	</svg>
+</FeelFrame>
+
+<style>
+	.weeks {
+		display: block;
+		width: 100%;
+		max-width: 620px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.age {
+		font: 600 8px var(--sans);
+		fill: var(--text-2);
+	}
+
+	.now {
+		fill: var(--light);
+		stroke: var(--ink);
+		stroke-width: 1.5;
+	}
+</style>

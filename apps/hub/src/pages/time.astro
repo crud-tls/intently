@@ -1,0 +1,11 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import LifeInWeeks from '../components/feel/LifeInWeeks.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('time');
+---
+
+<Chapter chapter={c}>
+	<LifeInWeeks slot="feel" caption={c.feel.example} />
+</Chapter>

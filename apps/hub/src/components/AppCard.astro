@@ -1,0 +1,88 @@
+---
+/** An app, presented as the tool for one part of life: what it is, what's true about it, where to get it. */
+import AppMark from '@intently/ui/AppMark.astro';
+import type { App } from '@intently/registry';
+import { siteUrl, statusLabel, stores } from '../data/apps.ts';
+
+interface Props {
+	app: App;
+}
+
+const { app } = Astro.props;
+const status = statusLabel(app);
+const links = stores(app);
+---
+
+<article class="app-card" style={`--app:${app.color}`} aria-labelledby={`app-${app.id}`}>
+	<AppMark app={app} size={72} />
+	<div class="text">
+		<h3 id={`app-${app.id}`} class="display">{app.name}</h3>
+		<p class="tagline">{app.tagline}</p>
+		{app.highlights && (
+			<ul>
+				{app.highlights.map((h) => <li>{h}</li>)}
+			</ul>
+		)}
+		<p class="actions">
+			{links.map((l) => <a class="button" href={l.href}>{l.label}</a>)}
+			{status && <span class="pill">{status}</span>}
+			<a class="step" href={siteUrl(app)}>Visit the {app.name} site</a>
+		</p>
+		<p class="platforms">{app.platforms.join(', ')}</p>
+	</div>
+</article>
+
+<style>
+	.app-card {
+		display: grid;
+		grid-template-columns: 72px 1fr;
+		gap: 24px;
+		padding: 28px 0;
+		border-top: 1px solid var(--line);
+	}
+
+	h3 {
+		font-size: clamp(1.8rem, 3vw, 2.3rem);
+		margin: 0 0 4px;
+	}
+
+	.tagline {
+		font-size: 1.1rem;
+		color: var(--text-2);
+		margin: 0 0 14px;
+	}
+
+	ul {
+		margin: 0 0 20px;
+		padding-left: 1.1rem;
+	}
+
+	li { margin: 4px 0; }
+
+	li::marker { color: var(--app); }
+
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 12px 18px;
+		margin: 0;
+	}
+
+	.pill {
+		padding: 6px 14px;
+		border-radius: 999px;
+		border: 1px solid var(--line);
+		font-size: 0.92rem;
+	}
+
+	.platforms {
+		margin: 14px 0 0;
+		font-size: 0.9rem;
+		color: var(--text-2);
+	}
+
+	@media (max-width: 560px) {
+		.app-card { grid-template-columns: 1fr; gap: 16px; }
+	}
+</style>

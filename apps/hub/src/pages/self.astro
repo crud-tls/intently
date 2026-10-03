@@ -1,0 +1,11 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import BecomingMirror from '../components/feel/BecomingMirror.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('self');
+---
+
+<Chapter chapter={c}>
+	<BecomingMirror slot="feel" caption={c.feel.example} />
+</Chapter>

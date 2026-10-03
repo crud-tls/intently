@@ -1,0 +1,78 @@
+---
+/**
+ * Night: a lantern hangs in the dark, lit from inside, with a thin crescent and a few stars.
+ * Its glass carries eight-pointed stars, the same geometry as Qandeel's icon. `lit` (0..1) sets
+ * how bright the flame is; the Faith page drives it while the visitor holds the lantern.
+ */
+interface Props {
+	lit?: number;
+}
+
+const { lit = 1 } = Astro.props;
+// [x, y, r]
+const STARS: [number, number, number][] = [
+	[40, 60, 1.6], [88, 140, 1.1], [330, 50, 1.4], [360, 170, 1.8], [300, 110, 1], [60, 260, 1.2],
+	[350, 300, 1.1], [24, 380, 1.5], [380, 410, 1.2], [130, 30, 1],
+];
+// Eight-pointed stars on the glass: [x, y, size]
+const OCTAS: [number, number, number][] = [[200, 250, 13], [178, 296, 8], [222, 296, 8], [200, 334, 9]];
+---
+
+<svg class="faith-art" viewBox="0 0 400 480" role="img" aria-label="A lantern glowing in the dark, with a thin crescent moon and a few stars." style={`--lit:${lit}`}>
+	<defs>
+		<radialGradient id="fa-glow" cx="0.5" cy="0.5" r="0.5">
+			<stop style="stop-color:var(--glow)" offset="0" stop-opacity="0.75" />
+			<stop style="stop-color:var(--glow)" offset="0.5" stop-opacity="0.2" />
+			<stop style="stop-color:var(--glow)" offset="1" stop-opacity="0" />
+		</radialGradient>
+		<radialGradient id="fa-flame" cx="0.5" cy="0.6" r="0.5">
+			<stop offset="0" stop-color="#FFF7E0" />
+			<stop style="stop-color:var(--glow)" offset="0.5" />
+			<stop offset="1" stop-color="#C46A10" stop-opacity="0.8" />
+		</radialGradient>
+		<clipPath id="fa-glass">
+			<path d="M164 214 L236 214 L254 290 L232 362 L168 362 L146 290 Z" />
+		</clipPath>
+	</defs>
+	<g style="fill:var(--ink)" class="stars">
+		{STARS.map(([x, y, r]) => <circle cx={x} cy={y} r={r} />)}
+	</g>
+	<path style="fill:var(--ink)" class="moon" d="M334 64 a34 34 0 1 0 22 60 a28 28 0 1 1 -22 -60 Z" fill-opacity="0.85" />
+	<circle class="halo" cx="200" cy="290" r="190" fill="url(#fa-glow)" />
+	<line style="stroke:var(--ink2)" x1="200" y1="0" x2="200" y2="168" stroke-width="2" stroke-dasharray="5 4" />
+	<g class="lantern">
+		<circle style="stroke:var(--accent)" cx="200" cy="168" r="8" fill="none" stroke-width="3" />
+		<path style="fill:var(--accent)" d="M176 196 C 176 182, 188 176, 200 176 C 212 176, 224 182, 224 196 Z" />
+		<rect style="fill:var(--accent)" x="158" y="196" width="84" height="18" rx="5" />
+		<path d="M164 214 L236 214 L254 290 L232 362 L168 362 L146 290 Z" fill="#2A1C08" />
+		<g clip-path="url(#fa-glass)">
+			<ellipse class="flame" cx="200" cy="300" rx="64" ry="86" fill="url(#fa-flame)" />
+			<g fill="#2A1C08" fill-opacity="0.55">
+				{OCTAS.map(([x, y, s]) => (
+					<g transform={`translate(${x} ${y})`}>
+						<rect x={-s} y={-s} width={s * 2} height={s * 2} />
+						<rect x={-s} y={-s} width={s * 2} height={s * 2} transform="rotate(45)" />
+					</g>
+				))}
+			</g>
+		</g>
+		<path style="stroke:var(--accent)" d="M164 214 L236 214 L254 290 L232 362 L168 362 L146 290 Z" fill="none" stroke-width="5" stroke-linejoin="round" />
+		<path style="stroke:var(--accent)" d="M200 214 L200 362 M146 290 L254 290" stroke-width="3" stroke-opacity="0.8" />
+		<rect style="fill:var(--accent)" x="162" y="362" width="76" height="14" rx="5" />
+		<path style="fill:var(--accent)" d="M184 376 L216 376 L200 404 Z" />
+	</g>
+</svg>
+
+<style>
+	.faith-art {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.halo,
+	.flame {
+		opacity: var(--lit);
+		transition: opacity 600ms ease;
+	}
+</style>

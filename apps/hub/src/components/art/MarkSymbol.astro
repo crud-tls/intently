@@ -1,0 +1,18 @@
+---
+/**
+ * The Intently mark as an inline <symbol>, once per page, so scenes can draw the figure as a
+ * character with <use href="#im">. Colours come from --intently-light / --intently-dark, which
+ * inherit into the symbol, so a scene can tint it (a silhouette at dusk, a glow at night).
+ * Ids are prefixed: the splash inlines the animated logo, which uses the plain ones.
+ */
+import logo from '../../../public/brand/intently-logo.svg?raw';
+
+const inner = logo
+	.replace(/^[\s\S]*?<\/title>/, '')
+	.replace(/<\/svg>\s*$/, '')
+	.replace(/id="/g, 'id="im-');
+---
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+	<symbol id="im" viewBox="0 0 400 400" set:html={inner} />
+</svg>

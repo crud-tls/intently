@@ -1,0 +1,11 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import NoiseAndPause from '../components/feel/NoiseAndPause.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('attention');
+---
+
+<Chapter chapter={c}>
+	<NoiseAndPause slot="feel" caption={c.feel.example} />
+</Chapter>

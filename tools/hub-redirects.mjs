@@ -1,7 +1,7 @@
 // Generates apps/hub/public/_redirects from docs/legacy-urls.txt: every path the old
 // liveintently.app served either stays on the hub or gets one 301 to its new home.
 // Run after editing the legacy list or the rules below:  node tools/hub-redirects.mjs
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const PAWSE = 'https://pawse.liveintently.app';
 
@@ -50,6 +50,18 @@ rule('/blog', `${PAWSE}/blog`);
 lines.push(`/blog/*  ${PAWSE}/blog/:splat  301`);
 lines.push(`/blog-*  ${PAWSE}/blog-:splat  301`);
 lines.push(`/rss.xml  ${PAWSE}/rss.xml  301`);
+
+// A redirect must never shadow a page the hub serves (Cloudflare applies _redirects first).
+const pagesDir = new URL('../apps/hub/src/pages/', import.meta.url);
+const hubPages = readdirSync(pagesDir, { recursive: true })
+	.filter((f) => f.endsWith('.astro') && !f.startsWith('api'))
+	.map((f) => '/' + f.replace(/\.astro$/, '').replace(/(^|\/)index$/, ''))
+	.map((p) => (p.length > 1 ? p.replace(/\/$/, '') : p));
+for (const line of lines.filter((l) => l.startsWith('/'))) {
+	const from = line.split(/\s+/)[0].replace(/\/$/, '').replace(/\*$/, '') || '/';
+	const clash = hubPages.find((p) => p !== '/' && (from === p || from.startsWith(p + '/')));
+	if (clash) throw new Error(`_redirects rule "${line}" would shadow the hub page ${clash}`);
+}
 
 writeFileSync(new URL('../apps/hub/public/_redirects', import.meta.url), [...new Set(lines)].join('\n') + '\n');
 console.log(`wrote ${lines.length - 4} rules`);

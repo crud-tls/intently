@@ -1,0 +1,46 @@
+---
+/**
+ * The frame around a "feel it" moment. Without JavaScript (and until the interactive loads) it shows
+ * a worked example with its caption; interactives add their controls in the "controls" slot, which
+ * only appears when scripts run.
+ */
+interface Props {
+	caption: string;
+	/** Faith and Self pages: a darker, quieter frame. */
+	tone?: 'light' | 'dark';
+}
+
+const { caption, tone = 'light' } = Astro.props;
+---
+
+<figure class:list={['feel-frame', tone]}>
+	<div class="controls needs-js"><slot name="controls" /></div>
+	<div class="stage"><slot /></div>
+	<figcaption>{caption}</figcaption>
+</figure>
+
+<style>
+	.feel-frame {
+		margin: 28px 0 0;
+		padding: clamp(24px, 4vw, 48px);
+		border-radius: 36px;
+		background: color-mix(in srgb, var(--sky-bottom) 70%, #ffffff 30%);
+		border: 1px solid var(--line);
+	}
+
+	.feel-frame.dark {
+		background: color-mix(in srgb, var(--sky-top) 70%, #000000 30%);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.feel-frame.light { background: color-mix(in srgb, var(--sky-bottom) 88%, #ffffff 12%); }
+	}
+
+	.controls:empty { display: none; }
+
+	figcaption {
+		margin-top: 24px;
+		color: var(--text-2);
+		max-width: var(--measure);
+	}
+</style>

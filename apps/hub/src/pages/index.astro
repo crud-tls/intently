@@ -1,139 +1,25 @@
 ---
 import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
 import Splash from '../components/Splash.astro';
-import Showcase from '../components/Showcase.astro';
-import WeekArt from '../components/WeekArt.astro';
-import { APPS, app } from '@intently/registry';
+import Prologue from '../components/journey/Prologue.astro';
+import ChapterScene from '../components/journey/ChapterScene.astro';
+import DayRail from '../components/journey/DayRail.astro';
+import Finale from '../components/journey/Finale.astro';
+import { CHAPTERS } from '../data/chapters.ts';
 
-const soon = APPS.filter((a) => a.status === 'soon');
+// The day runs from the night before (the prologue) to the night after (the finale).
+const skies = ['night' as const, ...CHAPTERS.map((c) => c.sky), 'night' as const];
 ---
 
-<Base splash title="Intently" description="Intently is a small independent studio making calm, privacy-minded apps: Pawse, Qandeel, Loop and more.">
+<Base splash sky="night" title="Intently"
+	description="Most days just happen. Intently makes calm, private apps for living them on purpose: your time, attention, health, money, people, self and faith.">
 	<Splash />
-	<main>
-		<Hero />
-
-		<section id="apps" class="wrap" aria-labelledby="apps-title">
-			<h2 id="apps-title" class="section-title">Our apps</h2>
-
-			<Showcase app={app('pawse')}>
-				<dotlottie-wc slot="art" src="/art/biscuit-wave.json" data-anim class="biscuit" role="img"
-					aria-label="Biscuit, the Pawse fox, waving"></dotlottie-wc>
-			</Showcase>
-			<Showcase app={app('qandeel')} flip>
-				<img slot="art" src="/icons/qandeel.svg" alt="" width="200" height="200" class="big-icon" />
-			</Showcase>
-			<Showcase app={app('loop')}>
-				<WeekArt slot="art" />
-			</Showcase>
-		</section>
-
-		<section class="wrap" aria-labelledby="soon-title">
-			<h2 id="soon-title" class="section-title">In the workshop</h2>
-			<ul class="soon-list">
-				{soon.map((a) => (
-					<li style={`--app:${a.color}`}>
-						<a href={`https://${a.host}`}>
-							<span class="dot" aria-hidden="true"></span>
-							<strong>{a.name}</strong>
-							<span class="muted">{a.tagline}</span>
-						</a>
-					</li>
-				))}
-			</ul>
-		</section>
-
-		<section class="wrap" aria-labelledby="how-title">
-			<h2 id="how-title" class="section-title">How we build</h2>
-			<div class="three">
-				<div>
-					<h3>Calm by default</h3>
-					<p class="muted">No streak guilt, no dark patterns. Our apps nudge, then get out of the way.</p>
-				</div>
-				<div>
-					<h3>Plain about data</h3>
-					<p class="muted">Each app has its own privacy policy that says exactly what leaves your device and why.</p>
-				</div>
-				<div>
-					<h3>No ads</h3>
-					<p class="muted">We don't show ads, and we never sell your data.</p>
-				</div>
-			</div>
-		</section>
+	<DayRail />
+	<main class="journey">
+		<Prologue />
+		{CHAPTERS.map((c, i) => (
+			<ChapterScene chapter={c} prev={skies[i]} next={skies[i + 2]} flip={i % 2 === 1} />
+		))}
+		<Finale />
 	</main>
-
-	<script is:inline>
-		// Animations start only when the visitor hasn't asked for reduced motion; frame 0 is a finished pose.
-		if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
-			document.querySelectorAll('dotlottie-wc[data-anim]').forEach((el) => {
-				el.setAttribute('autoplay', '');
-				el.setAttribute('loop', '');
-			});
-		}
-	</script>
-	<script>
-		import('@lottiefiles/dotlottie-wc');
-	</script>
 </Base>
-
-<style>
-	.section-title {
-		font-size: 0.85rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: var(--text-2);
-		margin: 64px 0 20px;
-	}
-
-	.biscuit {
-		display: block;
-		width: 260px;
-		height: 260px;
-	}
-
-	.big-icon {
-		border-radius: 46px;
-		box-shadow: 0 22px 48px rgb(25 80 57 / 0.35);
-	}
-
-	.soon-list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		border-top: 1px solid var(--line);
-	}
-
-	.soon-list li { border-bottom: 1px solid var(--line); }
-
-	.soon-list a {
-		display: grid;
-		grid-template-columns: 14px 140px 1fr;
-		align-items: baseline;
-		gap: 14px;
-		padding: 16px 4px;
-		text-decoration: none;
-	}
-
-	.dot {
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
-		background: var(--app);
-		align-self: center;
-	}
-
-	.three {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 28px;
-	}
-
-	.three h3 { font-size: 1.1rem; }
-
-	@media (max-width: 720px) {
-		.three { grid-template-columns: 1fr; }
-		.soon-list a { grid-template-columns: 14px 1fr; }
-		.soon-list a .muted { grid-column: 2; }
-	}
-</style>

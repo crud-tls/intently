@@ -1,0 +1,44 @@
+---
+/**
+ * Numbers that grow as they add up: each line is a step further (a day, a year, a life) and a size
+ * larger. Values carry data-tally keys so an interactive can update them in place.
+ */
+interface Props {
+	lines: { key: string; value: string; unit: string }[];
+}
+
+const { lines } = Astro.props;
+---
+
+<div class="tally" aria-live="polite">
+	{lines.map((l, i) => (
+		<p style={`--step:${i}`}><span class="value" data-tally={l.key}>{l.value}</span> <span class="unit">{l.unit}</span></p>
+	))}
+</div>
+
+<style>
+	.tally {
+		margin: 0;
+		display: grid;
+		gap: 0.2em;
+	}
+
+	p {
+		margin: 0;
+		font-family: var(--serif);
+		font-variation-settings: "SOFT" 100;
+		font-size: calc(1.2rem + var(--step) * 0.75rem);
+		line-height: 1.15;
+		letter-spacing: -0.02em;
+	}
+
+	.value {
+		font-variant-numeric: tabular-nums lining-nums;
+		font-weight: 560;
+	}
+
+	.unit {
+		color: var(--text-2);
+		font-weight: 400;
+	}
+</style>

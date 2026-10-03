@@ -1,0 +1,11 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import BreathPace from '../components/feel/BreathPace.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('health');
+---
+
+<Chapter chapter={c}>
+	<BreathPace slot="feel" caption={c.feel.example} />
+</Chapter>

@@ -1,0 +1,11 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import LanternVerse from '../components/feel/LanternVerse.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('faith');
+---
+
+<Chapter chapter={c}>
+	<LanternVerse slot="feel" caption={c.feel.example} verse={c.verse!} />
+</Chapter>

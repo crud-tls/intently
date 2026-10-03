@@ -1,0 +1,267 @@
+---
+/**
+ * Night again. The seven lights of the day sit on the Intently figure (the head is the last one,
+ * faith); the visitor picks where to begin. Below, the app family, one row per light.
+ */
+import AppMark from '@intently/ui/AppMark.astro';
+import { CHAPTERS, type ChapterId } from '../../data/chapters.ts';
+import { band } from '../../data/sky.ts';
+import { siteUrl, statusLabel } from '../../data/apps.ts';
+
+// Where each light sits on the figure (400-unit frame), and which side its name goes.
+const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
+	time: [62, 300, 'left'],
+	attention: [44, 205, 'left'],
+	health: [88, 118, 'left'],
+	wealth: [176, 62, 'top'],
+	faith: [251, 51, 'top'],
+	relationships: [322, 140, 'right'],
+	self: [356, 262, 'right'],
+};
+const style = `--band:${band('lantern', 'night', 'night')}`;
+---
+
+<section class="finale" data-sky="night" style={style} aria-labelledby="begin-title">
+	<div class="wrap begin">
+		<h2 id="begin-title" class="display">Where will you begin?</h2>
+		<p class="lede">You don't have to fix seven things. Choose one light and start there.</p>
+		<div class="constellation">
+			<svg class="figure" viewBox="0 0 400 400" aria-hidden="true"><use href="#im" width="400" height="400" /></svg>
+			<ol class="lights">
+				{CHAPTERS.map((c) => {
+					const [x, y, side] = SPOTS[c.id];
+					return (
+						<li class={side} style={`--x:${x / 4}%;--y:${y / 4}%;--light:${c.light}`}>
+							<a href={c.path} data-light={c.id}>
+								<span class="star" aria-hidden="true"></span>
+								<span class="name">{c.name}</span>
+							</a>
+						</li>
+					);
+				})}
+			</ol>
+		</div>
+	</div>
+
+	<div class="wrap family" id="apps">
+		<h2 class="display">Seven lights, one life.</h2>
+		<p class="intro">We're a small, independent studio, and each of our apps looks after one of these lights.
+			They're calm by default, with no streak guilt and no dark patterns. Each one says plainly what leaves your
+			device and why. None of them shows ads, and we never sell your data.</p>
+		<ul class="rows">
+			{CHAPTERS.map((c) => (
+				<li style={`--light:${c.light}`}>
+					<a class="aspect" href={c.path}><span class="star" aria-hidden="true"></span>{c.name}</a>
+					<div class="apps">
+						{c.apps.map((a) => {
+							const status = statusLabel(a);
+							return (
+								<a class="app" href={siteUrl(a)}>
+									<AppMark app={a} size={48} />
+									<span class="text">
+										<strong>{a.name}</strong>
+										<span class="tagline">{a.tagline}</span>
+									</span>
+									<span class:list={['status', { live: !status }]}>{status ?? a.platforms.join(', ')}</span>
+								</a>
+							);
+						})}
+					</div>
+				</li>
+			))}
+		</ul>
+	</div>
+</section>
+
+<style>
+	.finale {
+		position: relative;
+		padding: 18vh 0 10vh;
+		background: var(--band);
+	}
+
+	:global(html.sky-live) .finale { background: none; }
+
+	.begin {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: clamp(2.4rem, 5.4vw, 4.4rem);
+		margin: 0 0 1rem;
+	}
+
+	.begin .lede {
+		margin: 0 auto;
+		color: var(--ink2);
+	}
+
+	.constellation {
+		position: relative;
+		width: min(100%, 460px);
+		aspect-ratio: 1;
+		margin: 56px auto 0;
+	}
+
+	.figure {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		--intently-light: color-mix(in srgb, var(--ink) 6%, transparent);
+		--intently-dark: color-mix(in srgb, var(--ink) 9%, transparent);
+	}
+
+	.lights {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.lights li {
+		position: absolute;
+		left: var(--x);
+		top: var(--y);
+	}
+
+	.lights a {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		transform: translate(-50%, -50%);
+		padding: 8px;
+		color: var(--ink);
+		text-decoration: none;
+		font-weight: 600;
+		white-space: nowrap;
+	}
+
+	.lights .left a { flex-direction: row-reverse; transform: translate(calc(-100% + 19px), -50%); }
+
+	.lights .right a { transform: translate(-19px, -50%); }
+
+	.lights .top a { flex-direction: column-reverse; transform: translate(-50%, calc(-100% + 19px)); gap: 4px; }
+
+	.star {
+		flex: none;
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		background: radial-gradient(circle, #fff 0 22%, var(--light) 45%, transparent 72%);
+		box-shadow: 0 0 22px color-mix(in srgb, var(--light) 70%, transparent);
+		transition: transform 300ms var(--ease-out);
+	}
+
+	.lights a:hover .star,
+	.lights a:focus-visible .star {
+		transform: scale(1.4);
+	}
+
+	.lights a:hover .name { text-decoration: underline; text-underline-offset: 0.25em; }
+
+	.family {
+		margin-top: 18vh;
+		max-width: 900px;
+	}
+
+	.intro {
+		max-width: var(--measure);
+		color: var(--ink2);
+		margin: 0 0 40px;
+	}
+
+	.rows {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid var(--line);
+	}
+
+	.rows > li {
+		display: grid;
+		grid-template-columns: 170px 1fr;
+		gap: 20px;
+		padding: 22px 0;
+		border-bottom: 1px solid var(--line);
+	}
+
+	.aspect {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		align-self: center;
+		font-family: var(--serif);
+		font-variation-settings: "SOFT" 100;
+		font-size: 1.35rem;
+		text-decoration: none;
+	}
+
+	.aspect .star { width: 18px; height: 18px; }
+
+	.aspect:hover { text-decoration: underline; text-underline-offset: 0.25em; }
+
+	.apps {
+		display: grid;
+		gap: 14px;
+	}
+
+	.app {
+		display: grid;
+		grid-template-columns: 48px 1fr auto;
+		align-items: center;
+		gap: 16px;
+		text-decoration: none;
+	}
+
+	.text {
+		display: grid;
+		line-height: 1.35;
+	}
+
+	.text strong { font-size: 1.05rem; }
+
+	.app:hover strong { text-decoration: underline; text-underline-offset: 0.2em; }
+
+	.tagline {
+		color: var(--ink2);
+		font-size: 0.95rem;
+	}
+
+	.status {
+		font-size: 0.85rem;
+		padding: 4px 12px;
+		border-radius: 999px;
+		border: 1px solid var(--line);
+		color: var(--ink2);
+		white-space: nowrap;
+	}
+
+	.status.live {
+		border-color: color-mix(in srgb, var(--light) 60%, transparent);
+		color: var(--ink);
+	}
+
+	/* Too narrow for names around the figure: the lights become a simple list. */
+	@media (max-width: 560px) {
+		.constellation { aspect-ratio: auto; width: auto; margin-top: 36px; }
+		.figure { display: none; }
+		.lights { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px; }
+		.lights li { position: static; }
+		.lights a,
+		.lights .left a,
+		.lights .right a,
+		.lights .top a {
+			position: static;
+			transform: none;
+			flex-direction: row;
+			gap: 8px;
+			padding: 8px 14px 8px 8px;
+			border: 1px solid var(--line);
+			border-radius: 999px;
+		}
+		.rows > li { grid-template-columns: 1fr; gap: 12px; }
+		.app { grid-template-columns: 44px 1fr; }
+		.status { grid-column: 2; justify-self: start; }
+	}
+</style>

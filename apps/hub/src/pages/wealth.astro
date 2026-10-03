@@ -1,0 +1,11 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import SmallLeak from '../components/feel/SmallLeak.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('wealth');
+---
+
+<Chapter chapter={c}>
+	<SmallLeak slot="feel" caption={c.feel.example} />
+</Chapter>

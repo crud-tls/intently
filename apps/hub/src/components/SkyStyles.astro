@@ -1,0 +1,15 @@
+---
+/**
+ * The custom properties for every sky, generated from src/data/sky.ts so the palette lives in one
+ * place. Any element with data-sky="…" (the page, a home scene) gets that sky's colours, and the
+ * shared tokens (--bg, --text, --text-2, --accent) follow, so base.css components adapt.
+ */
+import { SKY_KEYS, SKY, dimmed, skyVars } from '../data/sky.ts';
+
+const light = SKY_KEYS.map((k) => `html[data-sky="${k}"],[data-sky="${k}"]{${skyVars(SKY[k])}}`).join('');
+const dark = SKY_KEYS.filter((k) => SKY[k].bright)
+	.map((k) => `html[data-sky="${k}"],[data-sky="${k}"]{${skyVars(dimmed(k))}}`).join('');
+const css = `${light}@media (prefers-color-scheme: dark){${dark}}`;
+---
+
+<style is:inline set:html={css}></style>

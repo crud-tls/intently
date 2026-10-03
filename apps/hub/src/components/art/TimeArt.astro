@@ -1,0 +1,53 @@
+---
+/**
+ * Dawn: a whole life as a frame of weeks (52 across, 80 down) with the sun coming up behind it.
+ * Drawn with patterns, not 4,160 rects. `lived` is in weeks; the week after it glows.
+ */
+interface Props {
+	lived?: number;
+}
+
+const { lived = 30 * 52 + 20 } = Astro.props;
+const COLS = 52;
+const ROWS = 80;
+const P = 6; // pitch of one week
+const full = Math.floor(lived / COLS);
+const rest = lived % COLS;
+const W = COLS * P;
+const H = ROWS * P;
+const x0 = (400 - W) / 2;
+const y0 = 20;
+---
+
+<svg class="time-art" viewBox="0 0 400 548" role="img" aria-label="A frame of about four thousand small squares, one for each week of an eighty-year life, with the sun rising behind it.">
+	<defs>
+		<radialGradient id="ta-sun" cx="0.5" cy="0.5" r="0.5">
+			<stop offset="0" stop-color="#FFF4DA" />
+			<stop style="stop-color:var(--glow)" offset="0.45" />
+			<stop style="stop-color:var(--glow)" offset="1" stop-opacity="0" />
+		</radialGradient>
+		<pattern id="ta-lived" width={P} height={P} patternUnits="userSpaceOnUse" x={x0} y={y0}>
+			<rect style="fill:var(--ink)" x="0.7" y="0.7" width={P - 1.4} height={P - 1.4} rx="1.2" fill-opacity="0.62" />
+		</pattern>
+		<pattern id="ta-ahead" width={P} height={P} patternUnits="userSpaceOnUse" x={x0} y={y0}>
+			<rect style="fill:var(--ink)" x="0.7" y="0.7" width={P - 1.4} height={P - 1.4} rx="1.2" fill-opacity="0.13" />
+		</pattern>
+	</defs>
+	<circle class="sun" cx="300" cy="430" r="190" fill="url(#ta-sun)" />
+	<rect x={x0} y={y0} width={W} height={H} fill="url(#ta-ahead)" />
+	<g class="lived">
+		<rect x={x0} y={y0} width={W} height={full * P} fill="url(#ta-lived)" />
+		<rect x={x0} y={y0 + full * P} width={rest * P} height={P} fill="url(#ta-lived)" />
+	</g>
+	<circle style="fill:var(--glow);stroke:var(--ink)" class="now" cx={x0 + rest * P + P / 2} cy={y0 + full * P + P / 2} r="5" stroke-width="1.2" />
+	<use href="#im" x={x0 + W - 22} y={y0 + H - 6} width="44" height="44" class="walker" />
+</svg>
+
+<style>
+	.time-art {
+		display: block;
+		width: 100%;
+		height: auto;
+		overflow: visible;
+	}
+</style>

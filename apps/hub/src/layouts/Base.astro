@@ -1,8 +1,14 @@
 ---
 import '@fontsource-variable/inter/wght.css';
+import '@fontsource-variable/fraunces/soft.css';
 import '@intently/ui/base.css';
+import '../styles/tokens.css';
 import { APPS, STUDIO } from '@intently/registry';
 import lottiePlayer from 'lottie-web/build/player/lottie_light.min.js?url';
+import SkyStyles from '../components/SkyStyles.astro';
+import MarkSymbol from '../components/art/MarkSymbol.astro';
+import { CHAPTERS } from '../data/chapters.ts';
+import { SKY, type SkyKey } from '../data/sky.ts';
 
 interface Props {
 	title: string;
@@ -10,9 +16,13 @@ interface Props {
 	noindex?: boolean;
 	/** Play the logo splash (home page only; once per session, never with reduced motion). */
 	splash?: boolean;
+	/** The page happens under this sky (src/data/sky.ts); its header floats over it. */
+	sky?: SkyKey;
+	/** Extra JSON-LD for this page, after the Organization. */
+	schema?: object[];
 }
 
-const { title, description, noindex = false, splash = false } = Astro.props;
+const { title, description, noindex = false, splash = false, sky, schema = [] } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = title === STUDIO.name ? title : `${title} · ${STUDIO.name}`;
 const year = new Date().getFullYear();
@@ -20,9 +30,10 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-sky={sky}>
 	<head>
 		<meta charset="utf-8" />
+		<script is:inline>document.documentElement.classList.add('js');</script>
 		{splash && (
 			<script is:inline>
 				// Decide before the first paint, so the page never flashes under the splash.
@@ -41,8 +52,12 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 		<link rel="canonical" href={canonical} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
-		<meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)" />
+		{sky
+			? <meta name="theme-color" content={SKY[sky].top} />
+			: <>
+				<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
+				<meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)" />
+			</>}
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content={STUDIO.name} />
 		<meta property="og:title" content={fullTitle} />
@@ -59,9 +74,12 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 			email: STUDIO.email,
 			founder: { '@type': 'Person', name: STUDIO.owner },
 		})} />
+		{schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+		<SkyStyles />
 	</head>
 	<body>
-		<header class="site-header">
+		<MarkSymbol />
+		<header class:list={['site-header', { overlay: sky }]}>
 			<div class="wrap bar">
 				<a href="/" class="brand" aria-label="Intently home">
 					<img src="/brand/intently-logo.svg" alt="" width="28" height="28" />
@@ -69,8 +87,8 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 				</a>
 				<nav aria-label="Main">
 					<a href="/#apps">Apps</a>
-					<a href="/about">About</a>
-					<a href="/contact">Contact</a>
+					<a href="/about/">About</a>
+					<a href="/contact/">Contact</a>
 				</nav>
 			</div>
 		</header>
@@ -81,7 +99,13 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 			<div class="wrap cols">
 				<div>
 					<p class="brand-line"><img src="/brand/intently-logo.svg" alt="" width="22" height="22" /> Intently</p>
-					<p class="muted small">Apps made with intent.</p>
+					<p class="muted small">Calm apps for living each part of the day on purpose.</p>
+				</div>
+				<div>
+					<h2 class="small-head">The day</h2>
+					<ul>
+						{CHAPTERS.map((c) => <li><a href={c.path}>{c.name}</a></li>)}
+					</ul>
 				</div>
 				<div>
 					<h2 class="small-head">Apps</h2>
@@ -92,10 +116,10 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 				<div>
 					<h2 class="small-head">Studio</h2>
 					<ul>
-						<li><a href="/about">About</a></li>
-						<li><a href="/contact">Contact</a></li>
-						<li><a href="/legal/privacy">Website privacy</a></li>
-						<li><a href="/legal/terms">Website terms</a></li>
+						<li><a href="/about/">About</a></li>
+						<li><a href="/contact/">Contact</a></li>
+						<li><a href="/legal/privacy/">Website privacy</a></li>
+						<li><a href="/legal/terms/">Website terms</a></li>
 					</ul>
 				</div>
 			</div>
@@ -112,6 +136,15 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 		background: color-mix(in srgb, var(--bg) 88%, transparent);
 		backdrop-filter: saturate(140%) blur(10px);
 		border-bottom: 1px solid var(--line);
+	}
+
+	/* Over a sky, the header is part of the picture: no bar, and it scrolls away with the page. */
+	.site-header.overlay {
+		position: absolute;
+		inset: 0 0 auto;
+		background: none;
+		backdrop-filter: none;
+		border-bottom: 0;
 	}
 
 	.bar {
@@ -152,7 +185,7 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 
 	.cols {
 		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
 		gap: 32px;
 	}
 
@@ -165,10 +198,9 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 	}
 
 	.small-head {
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: var(--text-2);
+		font-size: 0.95rem;
+		font-weight: 650;
+		letter-spacing: 0;
 		margin-bottom: 10px;
 	}
 
