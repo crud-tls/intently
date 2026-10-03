@@ -202,3 +202,6 @@ dist
 .astro/
 seo-audit/
 seo-audit/*
+# Playwright
+apps/hub/test-results/
+apps/hub/playwright-report/

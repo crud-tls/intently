@@ -272,7 +272,6 @@ void main() {
 
 export const POINTS_VS = `#version 300 es
 in vec2 aStar;
-in vec2 aGrid;
 in vec2 aMark;
 in float aSeed;
 uniform vec2 uRes;
@@ -284,10 +283,20 @@ uniform float uGridMix;
 uniform float uMarkMix;
 uniform float uTime;
 uniform float uSize;
+// Weeks: how many there are (years x 52), how many are lived, which one is now.
+uniform int uTotal;
+uniform float uLived;
+uniform float uYears;
 out float vAlpha;
+out float vLived;
+out float vNow;
 void main() {
+	int id = gl_VertexID;
+	if (id >= uTotal) { gl_Position = vec4(2.0, 2.0, 0.0, 1.0); gl_PointSize = 0.0; return; }
+	// One column per year, one row per week.
+	vec2 cell = vec2(float(id / 52) / max(uYears - 1.0, 1.0), float(id % 52) / 51.0);
 	vec2 star = vec2((aStar.x - 0.5) * uVisW, aStar.y * 620.0);
-	vec2 grid = uGridRect.xy + aGrid * uGridRect.zw;
+	vec2 grid = uGridRect.xy + cell * uGridRect.zw;
 	vec2 mark = uMarkRect.xy + aMark * uMarkRect.zw;
 	float g = smoothstep(aSeed * 0.45, aSeed * 0.45 + 0.55, uGridMix);
 	float m = smoothstep(aSeed * 0.45, aSeed * 0.45 + 0.55, uMarkMix);
@@ -295,7 +304,10 @@ void main() {
 	p += vec2(sin(uTime * 0.7 + aSeed * 40.0), cos(uTime * 0.6 + aSeed * 31.0)) * 1.5 * (1.0 - max(g, m));
 	vec2 px = vec2(p.x * uScale + uRes.x * 0.5, p.y * uScale);
 	gl_Position = vec4(px.x / uRes.x * 2.0 - 1.0, 1.0 - px.y / uRes.y * 2.0, 0.0, 1.0);
-	gl_PointSize = uSize * (0.8 + aSeed * 0.5);
+	float fid = float(id);
+	vLived = clamp(uLived - fid, 0.0, 1.0);
+	vNow = 1.0 - clamp(abs(fid - floor(uLived)) , 0.0, 1.0);
+	gl_PointSize = uSize * (0.8 + aSeed * 0.5) * (1.0 + vNow * 1.6);
 	vAlpha = 0.55 + 0.45 * sin(uTime * (0.8 + aSeed * 1.7) + aSeed * 60.0);
 }
 `;
@@ -304,12 +316,50 @@ export const POINTS_FS = `#version 300 es
 precision highp float;
 uniform float uAlpha;
 uniform vec3 uColor;
+uniform vec3 uLivedColor;
+uniform float uLivedOn;
+uniform float uTime;
+in float vAlpha;
+in float vLived;
+in float vNow;
+out vec4 outColor;
+void main() {
+	float d = length(gl_PointCoord - 0.5) * 2.0;
+	float soft = smoothstep(1.0, 0.2, d);
+	// Without a lived count every star looks alike; with one, weeks ahead are dimmer.
+	float ahead = mix(1.0, 0.38, uLivedOn * (1.0 - vLived));
+	vec3 c = mix(uColor, uLivedColor, uLivedOn * vLived);
+	float pulse = vNow * uLivedOn * (0.6 + 0.4 * sin(uTime * 4.0));
+	float a = soft * uAlpha * (0.6 + 0.4 * vAlpha) * ahead + pulse * soft;
+	outColor = vec4(mix(c, vec3(1.0, 0.85, 0.55), pulse) * a, a);
+}
+`;
+
+/** Free-placed glowing dots (visits ahead, small acts): x, y, size (units), alpha per dot. */
+export const DOTS_VS = `#version 300 es
+in vec4 aDot;
+uniform vec2 uRes;
+uniform float uScale;
+out float vAlpha;
+void main() {
+	vec2 px = vec2(aDot.x * uScale + uRes.x * 0.5, aDot.y * uScale);
+	gl_Position = vec4(px.x / uRes.x * 2.0 - 1.0, 1.0 - px.y / uRes.y * 2.0, 0.0, 1.0);
+	gl_PointSize = aDot.z * uScale;
+	vAlpha = aDot.w;
+}
+`;
+
+export const DOTS_FS = `#version 300 es
+precision highp float;
+uniform vec3 uColor;
 in float vAlpha;
 out vec4 outColor;
 void main() {
 	float d = length(gl_PointCoord - 0.5) * 2.0;
-	float a = smoothstep(1.0, 0.2, d) * uAlpha * (0.6 + 0.4 * vAlpha);
-	outColor = vec4(uColor * a, a);
+	float core = smoothstep(0.45, 0.25, d);
+	float halo = smoothstep(1.0, 0.0, d) * 0.45;
+	float a = (core + halo) * vAlpha;
+	outColor = vec4(mix(uColor, vec3(1.0), core * 0.5) * a, a);
 }
 `;
 

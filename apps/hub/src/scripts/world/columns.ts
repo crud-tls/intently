@@ -2,10 +2,15 @@
  * The live world's terrain, prepared on the CPU each time the camera moves: the ridge height of all
  * four layers under every screen column, and the pines near the screen. The shader only looks
  * these up, so the hills are the same as the static landscapes' (same functions, src/world/terrain.ts).
+ *
+ * Ridges are sampled on a fixed world grid (every STEP units along each layer) and cached, so a
+ * moving camera only computes the few samples it hasn't seen yet; pines are cached per cell.
  */
-import { LAYERS, ridge, treeAt, shoreY } from '../../world/terrain.ts';
+import { LAYERS, ridge, treeAt, shoreY, type Tree } from '../../world/terrain.ts';
 
 export const TREE_SLOTS = 256;
+const STEP = 2;
+const CACHE_LIMIT = 40000;
 
 export interface Lake {
 	/** Screen-relative units (0 = centre), and the water line in units from the top. */
@@ -24,6 +29,37 @@ export interface Columns {
 }
 
 const TREE_LAYERS = [1, 2] as const;
+const ridgeCache = LAYERS.map(() => new Map<number, number>());
+const treeCache = LAYERS.map(() => new Map<number, Tree | null>());
+
+/** Ridge y (units) of layer l at layer-world x (units), from cached grid samples. */
+export function ridgeAt(l: number, wx: number): number {
+	const cache = ridgeCache[l];
+	if (cache.size > CACHE_LIMIT) cache.clear();
+	const f = wx / STEP;
+	const k = Math.floor(f);
+	const sample = (i: number) => {
+		let v = cache.get(i);
+		if (v === undefined) {
+			v = ridge(LAYERS[l], (i * STEP) / 1600) * 1000;
+			cache.set(i, v);
+		}
+		return v;
+	};
+	const a = sample(k);
+	return a + (sample(k + 1) - a) * (f - k);
+}
+
+function treeCached(l: number, c: number): Tree | null {
+	const cache = treeCache[l];
+	if (cache.size > CACHE_LIMIT) cache.clear();
+	let t = cache.get(c);
+	if (t === undefined) {
+		t = treeAt(LAYERS[l], c);
+		cache.set(c, t);
+	}
+	return t;
+}
 
 /** `cols` columns spanning `visW` units around the camera at `cam`. */
 export function computeColumns(cols: number, visW: number, cam: number, lake: Lake | null, out?: Columns): Columns {
@@ -34,8 +70,7 @@ export function computeColumns(cols: number, visW: number, cam: number, lake: La
 	for (let i = 0; i < cols; i++) {
 		const xr = ((i + 0.5) / cols - 0.5) * visW;
 		for (let l = 0; l < 4; l++) {
-			const L = LAYERS[l];
-			let y = ridge(L, (cam * L.parallax + xr) / 1600) * 1000;
+			let y = ridgeAt(l, cam * LAYERS[l].parallax + xr);
 			if (l === 3 && lake) y = shoreY(y, xr, lake.a, lake.b, lake.level);
 			ridges[i * 4 + l] = y;
 		}
@@ -48,7 +83,7 @@ export function computeColumns(cols: number, visW: number, cam: number, lake: La
 		const first = Math.floor((cam * L.parallax - visW / 2 - 60) / 1600 / cell);
 		firstCell[row] = first;
 		for (let k = 0; k < TREE_SLOTS; k++) {
-			const t = treeAt(L, first + k);
+			const t = treeCached(l, first + k);
 			if (!t) continue;
 			const o = (row * TREE_SLOTS + k) * 4;
 			const h = t.h * 1000;
@@ -64,8 +99,7 @@ export function computeColumns(cols: number, visW: number, cam: number, lake: La
 
 /** The ridge of one layer at a screen x, for standing things on the ground. */
 export function groundAt(layer: number, xr: number, cam: number, lake: Lake | null): number {
-	const L = LAYERS[layer];
-	let y = ridge(L, (cam * L.parallax + xr) / 1600) * 1000;
+	let y = ridgeAt(layer, cam * LAYERS[layer].parallax + xr);
 	if (layer === 3 && lake) y = shoreY(y, xr, lake.a, lake.b, lake.level);
 	return y;
 }

@@ -26,7 +26,10 @@ export interface Placement {
 	/** Height in units. */
 	size: number;
 	flip?: boolean;
+	/** Rotation in degrees, for things in the air (a notification). */
 	tilt?: number;
+	/** Lean in degrees, top forward (+) or back: a shear about the base, so feet stay on the ground. */
+	lean?: number;
 	lit?: boolean;
 }
 
@@ -93,7 +96,7 @@ export const SCENES: Scene[] = [
 	{
 		id: 'health', sky: 'noon', cam: 3, words: 'left',
 		props: [
-			{ kind: 'figure', fx: 0.64, layer: 3, size: 84, tilt: -10 },
+			{ kind: 'figure', fx: 0.64, layer: 3, size: 84, lean: 10 },
 			{ kind: 'bird', fx: 0.74, y: 0.3, size: 12 },
 			{ kind: 'bird', fx: 0.71, y: 0.33, size: 9 },
 			{ kind: 'bird', fx: 0.77, y: 0.34, size: 10 },

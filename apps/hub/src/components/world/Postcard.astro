@@ -75,6 +75,9 @@ const style = after ? `--after:${after}` : undefined;
 
 	:global(html.world-live) .postcard { background: none; }
 
+	/* While the live world is deciding, only the first landscape is fetched. */
+	:global(html.world-pending) .postcard:not(:first-child) .land { display: none; }
+
 	.words {
 		position: relative;
 		z-index: 2;

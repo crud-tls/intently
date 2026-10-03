@@ -9,7 +9,7 @@ import { mix } from '../scripts/lib/color.ts';
 import { seeded } from '../scripts/lib/random.ts';
 import { LAYERS, ridge, treeAt, pineHalfWidth, shoreY, LAKE_EDGE, type Layer } from './terrain.ts';
 import { SPACING, VARIANTS, type Placement, type Scene, type Variant } from './scenes.ts';
-import { propLook, BLUE } from './props.ts';
+import { propLook, baseHalfWidth, restY, BLUE } from './props.ts';
 
 const H = 1000;
 const r1 = (n: number) => Math.round(n * 10) / 10;
@@ -135,7 +135,16 @@ function clouds(c: Ctx): string {
 function at(c: Ctx, p: Placement): { x: number; y: number } {
 	const x = fxToX(c, p.fx) + (p.dx ?? 0);
 	if (p.layer === undefined) return { x, y: (p.y ?? 0.5) * H };
-	return { x, y: groundY(c, p.layer, x) - (p.y ?? 0) };
+	const layer = p.layer;
+	return { x, y: restY((gx) => groundY(c, layer, gx), x, baseHalfWidth(p.kind, p.size)) - (p.y ?? 0) };
+}
+
+/** Where a scene's prop stands in a postcard (for tests: grounded things must touch the ground). */
+export function propAnchor(scene: Scene, variant: Variant, index: number): { x: number; y: number; ground: (x: number) => number } {
+	const { width: W, visible } = VARIANTS[variant];
+	const c: Ctx = { s: SKY[scene.sky], scene, W, vis: visible, cx: W / 2, id: 'test' };
+	const p = scene.props[index];
+	return { ...at(c, p), ground: (gx) => groundY(c, p.layer ?? 3, gx) };
 }
 
 function prop(c: Ctx, p: Placement, index: number): string {
@@ -158,7 +167,8 @@ function prop(c: Ctx, p: Placement, index: number): string {
 		: '';
 	const flip = p.flip ? ' scale(-1 1)' : '';
 	const tilt = p.tilt ? ` rotate(${p.tilt})` : '';
-	return `<g transform="translate(${r1(x)} ${r1(y)})${tilt}${flip}">${glow}${look.body}${drops}</g>`;
+	const lean = p.lean ? ` skewX(${-p.lean})` : '';
+	return `<g transform="translate(${r1(x)} ${r1(y)})${tilt}${lean}${flip}">${glow}${look.body}${drops}</g>`;
 }
 
 function propsOn(c: Ctx, layer: number | undefined): string {

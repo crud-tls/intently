@@ -6,7 +6,7 @@
 import { computeColumns, TREE_SLOTS, type Columns } from './columns.ts';
 import { LAYERS } from '../../world/terrain.ts';
 import { hexToRgb } from '../lib/color.ts';
-import { FULLSCREEN_VS, LANDSCAPE_FS, SPRITE_VS, SPRITE_FS, POINTS_VS, POINTS_FS, GRAIN_FS } from './shaders.ts';
+import { FULLSCREEN_VS, LANDSCAPE_FS, SPRITE_VS, SPRITE_FS, POINTS_VS, POINTS_FS, DOTS_VS, DOTS_FS, GRAIN_FS } from './shaders.ts';
 import type { Frame, SpriteDraw } from './timeline.ts';
 
 type Uniforms = Record<string, WebGLUniformLocation | null>;
@@ -36,12 +36,15 @@ function compile(gl: WebGL2RenderingContext, vs: string, fs: string): { prog: We
 
 const rgb = (hex: string) => hexToRgb(hex);
 
+/** Stars that can become weeks or the mark; up to 100 years of weeks. */
 export interface PointCloud {
 	star: Float32Array;
-	grid: Float32Array;
 	mark: Float32Array;
 	seed: Float32Array;
 }
+
+export const MAX_POINTS = 100 * 52;
+const MAX_DOTS = 2048;
 
 export class Renderer {
 	gl: WebGL2RenderingContext;
@@ -49,6 +52,9 @@ export class Renderer {
 	private sprite: ReturnType<typeof compile>;
 	private pts: ReturnType<typeof compile>;
 	private grain: ReturnType<typeof compile>;
+	private dots: ReturnType<typeof compile>;
+	private dotsVao: WebGLVertexArrayObject;
+	private dotsBuf: WebGLBuffer;
 	private quad: WebGLVertexArrayObject;
 	private spriteVao: WebGLVertexArrayObject;
 	private spriteBuf: WebGLBuffer;
@@ -60,6 +66,8 @@ export class Renderer {
 	private atlasTex: WebGLTexture;
 	private columns: Columns | null = null;
 	private columnsKey = '';
+	private ridgeCols = 0;
+	private treesAllocated = false;
 	dpr = 1;
 
 	constructor(private canvas: HTMLCanvasElement, atlas: HTMLCanvasElement, points: PointCloud) {
@@ -70,6 +78,7 @@ export class Renderer {
 		this.sprite = compile(gl, SPRITE_VS, SPRITE_FS);
 		this.pts = compile(gl, POINTS_VS, POINTS_FS);
 		this.grain = compile(gl, FULLSCREEN_VS, GRAIN_FS);
+		this.dots = compile(gl, DOTS_VS, DOTS_FS);
 
 		// One triangle that covers the screen.
 		this.quad = gl.createVertexArray()!;
@@ -112,9 +121,18 @@ export class Renderer {
 			gl.vertexAttribPointer(loc, size, gl.FLOAT, false, 0, 0);
 		};
 		buf('aStar', points.star, 2);
-		buf('aGrid', points.grid, 2);
 		buf('aMark', points.mark, 2);
 		buf('aSeed', points.seed, 1);
+
+		// Dots: one vec4 each, refilled when they change.
+		this.dotsVao = gl.createVertexArray()!;
+		gl.bindVertexArray(this.dotsVao);
+		this.dotsBuf = gl.createBuffer()!;
+		gl.bindBuffer(gl.ARRAY_BUFFER, this.dotsBuf);
+		gl.bufferData(gl.ARRAY_BUFFER, MAX_DOTS * 16, gl.DYNAMIC_DRAW);
+		const dl = gl.getAttribLocation(this.dots.prog, 'aDot');
+		gl.enableVertexAttribArray(dl);
+		gl.vertexAttribPointer(dl, 4, gl.FLOAT, false, 0, 0);
 		gl.bindVertexArray(null);
 
 		const tex = () => {
@@ -157,10 +175,17 @@ export class Renderer {
 		if (key === this.columnsKey) return;
 		this.columnsKey = key;
 		this.columns = computeColumns(cols, frame.visW, frame.cam, frame.lake, this.columns ?? undefined);
+		// Allocate once per size, then update in place.
 		gl.bindTexture(gl.TEXTURE_2D, this.ridgeTex);
-		gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA16F, cols, 1, 0, gl.RGBA, gl.FLOAT, this.columns.ridges);
+		if (this.ridgeCols !== cols) {
+			gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA16F, cols, 1, 0, gl.RGBA, gl.FLOAT, this.columns.ridges);
+			this.ridgeCols = cols;
+		} else gl.texSubImage2D(gl.TEXTURE_2D, 0, 0, 0, cols, 1, gl.RGBA, gl.FLOAT, this.columns.ridges);
 		gl.bindTexture(gl.TEXTURE_2D, this.treeTex);
-		gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA32F, TREE_SLOTS, 2, 0, gl.RGBA, gl.FLOAT, this.columns.trees);
+		if (!this.treesAllocated) {
+			gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA32F, TREE_SLOTS, 2, 0, gl.RGBA, gl.FLOAT, this.columns.trees);
+			this.treesAllocated = true;
+		} else gl.texSubImage2D(gl.TEXTURE_2D, 0, 0, 0, TREE_SLOTS, 2, gl.RGBA, gl.FLOAT, this.columns.trees);
 	}
 
 	render(frame: Frame, time: number) {
@@ -230,6 +255,7 @@ export class Renderer {
 		pass(1);
 		this.drawSprites(frame.sprites.filter((d) => !d.front), scale, W, H);
 		pass(2);
+		this.drawDots(frame, scale, W, H);
 		this.drawSprites(frame.sprites.filter((d) => d.front), scale, W, H);
 
 		// Grain, multiplied in at 2x.
@@ -257,12 +283,33 @@ export class Renderer {
 		gl.uniform1f(P.u.uMarkMix, p.markMix);
 		gl.uniform1f(P.u.uTime, time);
 		gl.uniform1f(P.u.uAlpha, p.alpha);
-		const gridSize = (p.grid[2] / 80) * 0.62;
+		const gridSize = (p.grid[2] / (p.total / 52)) * 0.62;
 		const markSize = (p.mark[2] / 160) * 1.1;
 		gl.uniform1f(P.u.uSize, Math.max(1.5, (gridSize + (markSize - gridSize) * p.markMix) * scale));
 		gl.uniform3f(P.u.uColor, 1, 0.95, 0.85);
+		gl.uniform3f(P.u.uLivedColor, 1, 0.83, 0.6);
+		gl.uniform1f(P.u.uLivedOn, p.livedOn);
+		gl.uniform1i(P.u.uTotal, Math.min(p.total, this.pointCount));
+		gl.uniform1f(P.u.uLived, p.lived);
+		gl.uniform1f(P.u.uYears, p.total / 52);
 		gl.bindVertexArray(this.pointsVao);
-		gl.drawArrays(gl.POINTS, 0, this.pointCount);
+		gl.drawArrays(gl.POINTS, 0, Math.min(p.total, this.pointCount));
+	}
+
+	private drawDots(frame: Frame, scale: number, W: number, H: number) {
+		const dots = frame.dots;
+		if (!dots || dots.length === 0) return;
+		const gl = this.gl;
+		const D = this.dots;
+		const n = Math.min(dots.length / 4, MAX_DOTS);
+		gl.useProgram(D.prog);
+		gl.uniform2f(D.u.uRes, W, H);
+		gl.uniform1f(D.u.uScale, scale);
+		gl.uniform3fv(D.u.uColor, frame.dotColor ?? [1, 0.85, 0.55]);
+		gl.bindVertexArray(this.dotsVao);
+		gl.bindBuffer(gl.ARRAY_BUFFER, this.dotsBuf);
+		gl.bufferSubData(gl.ARRAY_BUFFER, 0, dots, 0, n * 4);
+		gl.drawArrays(gl.POINTS, 0, n);
 	}
 
 	private drawSprites(list: SpriteDraw[], scale: number, W: number, H: number) {
@@ -277,9 +324,11 @@ export class Renderer {
 			const a = ((s.tilt ?? 0) * Math.PI) / 180;
 			const cos = Math.cos(a);
 			const sin = Math.sin(a);
+			// Lean shears about the base (y = 0), so whatever stands on the ground stays on it.
+			const shear = Math.tan(((s.lean ?? 0) * Math.PI) / 180);
 			const corner = (cx: number, cy: number, u: number, v: number) => {
-				const px = cx * sx;
 				const py = cy * sy;
+				const px = cx * sx - shear * py;
 				d.set([s.x + px * cos - py * sin, s.y + px * sin + py * cos, u, v, ...(s.tint ?? [0, 0, 0, 0]), s.alpha, s.blur ?? 0], n);
 				n += 10;
 			};

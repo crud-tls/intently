@@ -20,9 +20,11 @@ interface Props {
 	sky?: SkyKey;
 	/** Extra JSON-LD for this page, after the Organization. */
 	schema?: object[];
+	/** The page may run the live world: hold back the static landscapes until it decides. */
+	world?: boolean;
 }
 
-const { title, description, noindex = false, splash = false, sky, schema = [] } = Astro.props;
+const { title, description, noindex = false, splash = false, sky, schema = [], world = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = title === STUDIO.name ? title : `${title} · ${STUDIO.name}`;
 const year = new Date().getFullYear();
@@ -34,6 +36,20 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 	<head>
 		<meta charset="utf-8" />
 		<script is:inline>document.documentElement.classList.add('js');</script>
+		{world && (
+			<script is:inline>
+				// Where the live world will likely run, don't fetch the static landscapes it replaces.
+				// src/scripts/world/boot.ts clears this as soon as it runs or falls back.
+				try {
+					var c = navigator.connection;
+					if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !(c && c.saveData) &&
+						new URLSearchParams(location.search).get('world') !== 'static' && 'WebGL2RenderingContext' in window) {
+						document.documentElement.classList.add('world-pending');
+						setTimeout(function () { document.documentElement.classList.remove('world-pending'); }, 10000);
+					}
+				} catch (e) {}
+			</script>
+		)}
 		{splash && (
 			<script is:inline>
 				// Decide before the first paint, so the page never flashes under the splash.

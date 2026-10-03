@@ -15,6 +15,7 @@ export interface Sprite {
 	/** Bounds in units, relative to the anchor. */
 	box: [number, number, number, number];
 	glow?: Glow;
+	kind: PropKind;
 }
 
 /** Atlas key for a prop: scene id + its index in that scene. */
@@ -24,7 +25,7 @@ const PX_PER_UNIT = 3;
 const PAD = 4;
 
 export async function buildAtlas(markInner: string): Promise<{ canvas: HTMLCanvasElement; sprites: Map<string, Sprite> }> {
-	const entries: { key: string; svg: string; box: [number, number, number, number]; glow?: Glow }[] = [];
+	const entries: { key: string; kind: PropKind; svg: string; box: [number, number, number, number]; glow?: Glow }[] = [];
 	const add = (key: string, kind: PropKind, scene: (typeof SCENES)[number], size: number, layer: number, lit?: boolean, variant = 0) => {
 		const look = propLook(kind, {
 			size,
@@ -40,7 +41,7 @@ export async function buildAtlas(markInner: string): Promise<{ canvas: HTMLCanva
 		const w = x1 - x0;
 		const h = y1 - y0;
 		const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${Math.ceil(w * PX_PER_UNIT)}" height="${Math.ceil(h * PX_PER_UNIT)}" viewBox="${x0} ${y0} ${w} ${h}">${look.body}</svg>`;
-		entries.push({ key, svg, box: look.box, glow: look.glow });
+		entries.push({ key, kind, svg, box: look.box, glow: look.glow });
 	};
 
 	for (const scene of SCENES) {
@@ -93,6 +94,7 @@ export async function buildAtlas(markInner: string): Promise<{ canvas: HTMLCanva
 			v1: (at[i].y + img.height) / H,
 			box: e.box,
 			glow: e.glow,
+			kind: e.kind,
 		});
 	});
 	return { canvas, sprites };

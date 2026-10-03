@@ -32,7 +32,12 @@ npm run dev:pawse                             # local dev server for one site
 npm run build                                 # build every site
 npm run check                                 # build + type-check + wrangler dry-run, every site
 npm run deploy -w @intently/pawse-site        # deploy one site (ask first: it is production)
+npm test -w @intently/hub-site                # hub unit tests (terrain, timeline, palettes, maths…)
+npm run test:e2e -w @intently/hub-site        # hub end-to-end: desktop Chrome/Safari, Android, iPhone, iPad
 ```
+
+The hub's end-to-end tests need Playwright's browsers once: `npx playwright install chromium webkit`
+(in `apps/hub`). They build the site and run it under `wrangler dev`, so redirects are the real ones.
 
 Node 22+ (`.nvmrc`). npm only runs the install scripts listed in `allowScripts` in the root
 `package.json`; workerd, esbuild and sharp need theirs to fetch native binaries.

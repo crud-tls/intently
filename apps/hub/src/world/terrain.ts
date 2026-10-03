@@ -69,9 +69,14 @@ export function fbm(x: number, seed: number, octaves: number, ridged: number): n
 	return sum / norm;
 }
 
-/** The ridge line of a layer at layer-x: y of the top of the land. */
+/**
+ * The ridge line of a layer at layer-x: y of the top of the land. The tallest peaks are softly
+ * capped, so the far range never climbs into the top 40% of the sky, where words sit.
+ */
 export function ridge(layer: Layer, x: number): number {
-	return layer.base - (fbm(x * layer.freq, layer.seed, layer.octaves, layer.ridged) - 0.35) * layer.amp * 2;
+	const h = fbm(x * layer.freq, layer.seed, layer.octaves, layer.ridged) - 0.35;
+	const capped = h < 0.2 ? h : 0.2 + (h - 0.2) * 0.4;
+	return layer.base - capped * layer.amp * 2;
 }
 
 export interface Tree {

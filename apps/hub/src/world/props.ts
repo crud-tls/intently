@@ -36,6 +36,27 @@ export interface PropOptions {
 	mark: (x: number, y: number, size: number, style: string) => string;
 }
 
+/**
+ * Half the width of what touches the ground (the figure's feet, a tent's hem), in units. A grounded
+ * prop rests on the lowest ground under that base, so on a slope it never floats; the uphill side
+ * meets the ground a little early instead, which reads as standing on it.
+ */
+export function baseHalfWidth(kind: PropKind, size: number): number {
+	switch (kind) {
+		case 'figure': return size * 0.25;
+		case 'tent': return size * 0.72;
+		case 'house': return size * 0.58;
+		case 'spring': return size * 0.55;
+		case 'fire': return size * 0.3;
+		default: return 0;
+	}
+}
+
+/** The y a prop with this base rests at: the lowest of the ground under its middle and its two ends. */
+export function restY(ground: (x: number) => number, x: number, half: number): number {
+	return half > 0 ? Math.max(ground(x - half), ground(x), ground(x + half)) : ground(x);
+}
+
 export const WARM = '#FFB25C';
 export const BLUE = '#8CC8FF';
 
