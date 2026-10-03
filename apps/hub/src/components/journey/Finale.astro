@@ -5,8 +5,15 @@
  */
 import AppMark from '@intently/ui/AppMark.astro';
 import { CHAPTERS, type ChapterId } from '../../data/chapters.ts';
-import { band } from '../../data/sky.ts';
+import Postcard from '../world/Postcard.astro';
 import { siteUrl, statusLabel } from '../../data/apps.ts';
+
+interface Props {
+	/** The ground colour of the scene above it. */
+	after: string;
+}
+
+const { after } = Astro.props;
 
 // Where each light sits on the figure (400-unit frame), and which side its name goes.
 const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
@@ -18,11 +25,10 @@ const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
 	relationships: [322, 140, 'right'],
 	self: [356, 262, 'right'],
 };
-const style = `--band:${band('lantern', 'night', 'night')}`;
 ---
 
-<section class="finale" data-sky="night" style={style} aria-labelledby="begin-title">
-	<div class="wrap begin">
+<Postcard id="finale" after={after} label="begin-title">
+	<div class="begin">
 		<h2 id="begin-title" class="display">Where will you begin?</h2>
 		<p class="lede">You don't have to fix seven things. Choose one light and start there.</p>
 		<div class="constellation">
@@ -42,9 +48,11 @@ const style = `--band:${band('lantern', 'night', 'night')}`;
 			</ol>
 		</div>
 	</div>
+</Postcard>
 
+<section class="family-wrap" aria-labelledby="apps-title">
 	<div class="wrap family" id="apps">
-		<h2 class="display">Seven lights, one life.</h2>
+		<h2 id="apps-title" class="display">Seven lights, one life.</h2>
 		<p class="intro">We're a small, independent studio, and each of our apps looks after one of these lights.
 			They're calm by default, with no streak guilt and no dark patterns. Each one says plainly what leaves your
 			device and why. None of them shows ads, and we never sell your data.</p>
@@ -74,16 +82,16 @@ const style = `--band:${band('lantern', 'night', 'night')}`;
 </section>
 
 <style>
-	.finale {
-		position: relative;
-		padding: 18vh 0 10vh;
-		background: var(--band);
-	}
-
-	:global(html.sky-live) .finale { background: none; }
-
 	.begin {
 		text-align: center;
+		max-width: none !important;
+	}
+
+	.family-wrap {
+		position: relative;
+		padding: 12vh 0 4vh;
+		background: var(--soil);
+		color: var(--soil-ink);
 	}
 
 	h2 {
@@ -98,9 +106,10 @@ const style = `--band:${band('lantern', 'night', 'night')}`;
 
 	.constellation {
 		position: relative;
-		width: min(100%, 460px);
+		width: min(100%, 360px, 42svh);
 		aspect-ratio: 1;
-		margin: 56px auto 0;
+		margin: 28px auto 0;
+		text-shadow: none;
 	}
 
 	.figure {
@@ -161,13 +170,12 @@ const style = `--band:${band('lantern', 'night', 'night')}`;
 	.lights a:hover .name { text-decoration: underline; text-underline-offset: 0.25em; }
 
 	.family {
-		margin-top: 18vh;
 		max-width: 900px;
 	}
 
 	.intro {
 		max-width: var(--measure);
-		color: var(--ink2);
+		color: var(--soil-ink2);
 		margin: 0 0 40px;
 	}
 
@@ -224,7 +232,7 @@ const style = `--band:${band('lantern', 'night', 'night')}`;
 	.app:hover strong { text-decoration: underline; text-underline-offset: 0.2em; }
 
 	.tagline {
-		color: var(--ink2);
+		color: var(--soil-ink2);
 		font-size: 0.95rem;
 	}
 
@@ -233,13 +241,13 @@ const style = `--band:${band('lantern', 'night', 'night')}`;
 		padding: 4px 12px;
 		border-radius: 999px;
 		border: 1px solid var(--line);
-		color: var(--ink2);
+		color: var(--soil-ink2);
 		white-space: nowrap;
 	}
 
 	.status.live {
 		border-color: color-mix(in srgb, var(--light) 60%, transparent);
-		color: var(--ink);
+		color: var(--soil-ink);
 	}
 
 	/* Too narrow for names around the figure: the lights become a simple list. */
@@ -257,8 +265,9 @@ const style = `--band:${band('lantern', 'night', 'night')}`;
 			flex-direction: row;
 			gap: 8px;
 			padding: 8px 14px 8px 8px;
-			border: 1px solid var(--line);
+			border: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
 			border-radius: 999px;
+			background: color-mix(in srgb, var(--sky-top) 72%, transparent);
 		}
 		.rows > li { grid-template-columns: 1fr; gap: 12px; }
 		.app { grid-template-columns: 44px 1fr; }

@@ -6,7 +6,7 @@ import '../styles/tokens.css';
 import { APPS, STUDIO } from '@intently/registry';
 import lottiePlayer from 'lottie-web/build/player/lottie_light.min.js?url';
 import SkyStyles from '../components/SkyStyles.astro';
-import MarkSymbol from '../components/art/MarkSymbol.astro';
+import MarkSymbol from '../components/MarkSymbol.astro';
 import { CHAPTERS } from '../data/chapters.ts';
 import { SKY, type SkyKey } from '../data/sky.ts';
 
@@ -79,7 +79,7 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 	</head>
 	<body>
 		<MarkSymbol />
-		<header class:list={['site-header', { overlay: sky }]}>
+		<header class:list={['site-header', { overlay: sky, 'sky-words': sky }]}>
 			<div class="wrap bar">
 				<a href="/" class="brand" aria-label="Intently home">
 					<img src="/brand/intently-logo.svg" alt="" width="28" height="28" />

@@ -1,0 +1,71 @@
+---
+/** One chapter on the home page: a landscape at its hour, with the thought written in its sky. */
+import AppMark from '@intently/ui/AppMark.astro';
+import Postcard from '../world/Postcard.astro';
+import type { Chapter } from '../../data/chapters.ts';
+import { siteUrl } from '../../data/apps.ts';
+
+interface Props {
+	chapter: Chapter;
+	/** The ground colour of the scene above it. */
+	after: string;
+}
+
+const { chapter: c, after } = Astro.props;
+const many = c.apps.length > 1;
+---
+
+<Postcard id={c.id} after={after} label={`${c.id}-title`}>
+	<div class="moment" style={`--light:${c.light}`} data-moment={c.id}>
+		<p class="when"><span class="light" aria-hidden="true"></span><span>{c.clock}</span><strong>{c.name}</strong></p>
+		<h2 id={`${c.id}-title`} class="display">{c.title}</h2>
+		<p class="body">{c.home}</p>
+		<p class="go"><a class="button" href={c.path}>{c.deeper}</a></p>
+		<p class="app-hint">
+			<span class="marks" aria-hidden="true">{c.apps.map((a) => <AppMark app={a} size={28} />)}</span>
+			<span>{many ? 'Our apps for this' : 'Our app for this'}:
+				{c.apps.map((a, i) => (
+					<>{i > 0 && ' and '}<a href={siteUrl(a)}>{a.name}</a></>
+				))}
+			</span>
+		</p>
+	</div>
+</Postcard>
+
+<style>
+	h2 {
+		font-size: clamp(2.3rem, 5vw, 4.2rem);
+		margin: 0 0 1.1rem;
+	}
+
+	.body {
+		font-size: clamp(1.05rem, 1.35vw, 1.2rem);
+		line-height: 1.6;
+		margin: 0;
+		text-wrap: pretty;
+	}
+
+	.go { margin: 1.6rem 0 1.2rem; }
+
+	.app-hint {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin: 0;
+		font-size: 0.95rem;
+		color: var(--ink2);
+	}
+
+	.app-hint a {
+		color: var(--ink);
+		font-weight: 650;
+	}
+
+	.marks { display: flex; }
+
+	.marks :global(.mark + .mark) { margin-left: -8px; }
+
+	@media (max-width: 640px) {
+		.app-hint { font-size: 0.9rem; }
+	}
+</style>

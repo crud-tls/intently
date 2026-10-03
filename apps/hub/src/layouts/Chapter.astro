@@ -5,7 +5,7 @@
  * chapter's sky.
  */
 import Base from './Base.astro';
-import SceneArt from '../components/art/SceneArt.astro';
+import Postcard from '../components/world/Postcard.astro';
 import Reflection from '../components/Reflection.astro';
 import Practice from '../components/Practice.astro';
 import AppCard from '../components/AppCard.astro';
@@ -45,16 +45,14 @@ const isLast = c.id === 'faith';
 
 <Base title={c.meta.title} description={c.meta.description} sky={c.sky} schema={schema}>
 	<main class="chapter" data-chapter={c.id} style={`--light:${c.light}`}>
-		<header class="hero">
-			<div class="wrap hero-grid">
-				<div class="copy">
-					<p class="when"><span class="light" aria-hidden="true"></span><span>{c.clock}</span><strong>{c.name}</strong></p>
-					<h1 class="display">{c.title}</h1>
-					{c.lede.map((p) => <p class="lede">{p}</p>)}
-				</div>
-				<div class="art"><SceneArt id={c.id} /></div>
-			</div>
-		</header>
+		<Postcard id={c.id} as="header" eager class="hero">
+			<p class="when"><span class="light" aria-hidden="true"></span><span>{c.clock}</span><strong>{c.name}</strong></p>
+			<h1 class="display">{c.title}</h1>
+		</Postcard>
+
+		<div class="wrap intro">
+			{c.lede.map((p) => <p class="lede">{p}</p>)}
+		</div>
 
 		<section class="wrap feel" aria-labelledby="feel-title">
 			<h2 id="feel-title" class="display">{c.feel.heading}</h2>
@@ -96,36 +94,19 @@ const isLast = c.id === 'faith';
 </Base>
 
 <style>
-	.hero {
-		position: relative;
-		padding: 136px 0 72px;
-		background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
-	}
-
-	.hero-grid {
-		display: grid;
-		grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-		gap: clamp(32px, 6vw, 80px);
-		align-items: center;
-	}
-
-	.when strong {
-		color: var(--ink);
-		font-weight: 650;
-	}
-
 	h1 {
-		font-size: clamp(2.8rem, 6.4vw, 5.4rem);
-		margin: 0 0 1.6rem;
+		font-size: clamp(2.8rem, 6.4vw, 5.6rem);
+		margin: 0;
 	}
 
-	.art {
-		width: min(100%, 420px);
-		justify-self: center;
+	.intro {
+		padding-top: 56px;
 	}
+
+	.intro .lede { margin: 0 0 1rem; }
 
 	.feel {
-		padding-top: 72px;
+		padding-top: 40px;
 	}
 
 	.feel > h2,
@@ -176,7 +157,8 @@ const isLast = c.id === 'faith';
 		padding: 28px;
 		border-radius: 30px;
 		text-decoration: none;
-		background: linear-gradient(180deg, var(--sky-top), var(--sky-bottom));
+		background: linear-gradient(180deg, var(--sky-top), var(--sky-upper));
+		color: var(--ink);
 		transition: transform 300ms var(--ease-out);
 	}
 
@@ -184,7 +166,9 @@ const isLast = c.id === 'faith';
 
 	.day .next { text-align: right; justify-items: end; }
 
-	.day .when { margin: 0; }
+	.day .when { margin: 0; color: var(--ink2); }
+
+	.day .when strong { color: var(--ink); }
 
 	.dir {
 		font-weight: 650;
@@ -196,9 +180,6 @@ const isLast = c.id === 'faith';
 	}
 
 	@media (max-width: 820px) {
-		.hero { padding-top: 104px; }
-		.hero-grid { grid-template-columns: 1fr; }
-		.art { width: min(72%, 320px); order: -1; }
 		.day { grid-template-columns: 1fr; }
 		.day .next { text-align: left; justify-items: start; }
 	}

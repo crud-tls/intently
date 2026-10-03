@@ -19,8 +19,8 @@ export interface Chapter {
 	/** This aspect's light: its star in the night sky and its accents. */
 	light: string;
 	title: string;
-	/** The home page's short version. */
-	home: string[];
+	/** The home page's one-paragraph version, read over the landscape. */
+	home: string;
 	/** The link from the home page to the chapter page: says what the visitor will do there. */
 	deeper: string;
 	meta: { title: string; description: string };
@@ -50,10 +50,7 @@ export const CHAPTERS: Chapter[] = [
 		clock: '5:50 am',
 		light: '#FFB077',
 		title: 'You get about four thousand weeks.',
-		home: [
-			"If you live to eighty, that's roughly four thousand Mondays. It sounds like plenty until you see them all at once.",
-			"Intention can't give you more weeks. It decides what goes into the ones you have.",
-		],
+		home: "If you live to eighty, that's about four thousand Mondays. Intention can't add more of them. It decides what goes into the ones you have.",
 		deeper: 'Count your weeks',
 		meta: {
 			title: 'Your life in weeks',
@@ -94,10 +91,7 @@ export const CHAPTERS: Chapter[] = [
 		clock: '7:10 am',
 		light: '#7FC8FF',
 		title: 'Whatever holds your attention holds your day.',
-		home: [
-			"Before your feet touch the floor, a dozen apps have already asked for you. None of them is evil. They're just very good at asking.",
-			"Your attention is where your life actually happens. It's worth choosing where it goes.",
-		],
+		home: "Before your feet touch the floor, a dozen apps have asked for you. Your attention is where your life actually happens. It's worth choosing where it goes.",
 		deeper: 'Clear the noise',
 		meta: {
 			title: 'Your attention',
@@ -138,10 +132,7 @@ export const CHAPTERS: Chapter[] = [
 		clock: '12:40 pm',
 		light: '#FFE58A',
 		title: 'Your body is listening to every ordinary day.',
-		home: [
-			"Health is rarely one big decision. It's the stairs, the walk after lunch, the glass of water, the night you go to bed on time.",
-			"Small, repeated, slightly boring. That's the good news: you can start at lunch.",
-		],
+		home: "Health is rarely one big decision. It's the stairs, the walk after lunch, the night you go to bed on time. Small, repeated, slightly boring, and you can start at lunch.",
 		deeper: 'Breathe and find your pace',
 		meta: {
 			title: 'Your health',
@@ -182,10 +173,7 @@ export const CHAPTERS: Chapter[] = [
 		clock: '3:30 pm',
 		light: '#FFCB6B',
 		title: 'Money mostly leaves in small amounts.',
-		home: [
-			'Nobody decides to spend a month of rent on delivery fees and forgotten subscriptions. It happens a little at a time, on days you were thinking about something else.',
-			"Being intentional with money isn't about having less. It's knowing where it goes, so it goes where you mean it to.",
-		],
+		home: 'Nobody decides to spend a month of rent on delivery fees. It leaks out a little at a time. Knowing where it goes lets it go where you mean it to.',
 		deeper: 'Watch a small amount add up',
 		meta: {
 			title: 'Your money',
@@ -226,10 +214,7 @@ export const CHAPTERS: Chapter[] = [
 		clock: '6:40 pm',
 		light: '#FF8E8E',
 		title: 'The people you love are not a someday.',
-		home: [
-			"We treat time with the people we love as if it will always be there. There's always next weekend, the next holiday, next summer.",
-			"There isn't always. That's not a reason to be sad. It's a reason to call tonight.",
-		],
+		home: "There's always next weekend, the next holiday, next summer. Until there isn't. That's not a reason to be sad. It's a reason to call tonight.",
 		deeper: 'See the time you have together',
 		meta: {
 			title: 'Your people',
@@ -270,10 +255,7 @@ export const CHAPTERS: Chapter[] = [
 		clock: '8:15 pm',
 		light: '#C9B8FF',
 		title: "You're becoming someone, either way.",
-		home: [
-			'Every day leaves a small mark on who you are: how you rest, how you speak, how you carry yourself into a room.',
-			"You don't need a new you. You need to notice the one you are already shaping.",
-		],
+		home: "Every day leaves a small mark on who you are. You don't need a new you. You need to notice the one you're already shaping.",
 		deeper: "Meet who you're becoming",
 		meta: {
 			title: 'Yourself',
@@ -311,10 +293,7 @@ export const CHAPTERS: Chapter[] = [
 		clock: '10:30 pm',
 		light: '#F2B84B',
 		title: 'Every heart needs somewhere to rest.',
-		home: [
-			'At the end of the day, something in us wants to come home. Some find it in prayer, some in silence, some in words they have loved all their lives.',
-			'For many of us it is the Quran: a lantern carried through the dark, one verse at a time.',
-		],
+		home: "At the end of the day, something in us wants to come home. For many of us it's the Quran: a lantern carried through the dark, one verse at a time.",
 		deeper: 'Light the lantern',
 		meta: {
 			title: 'Your heart',

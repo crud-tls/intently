@@ -25,10 +25,10 @@ const H = rows * P;
 	<svg class="weeks" viewBox={`0 0 ${W} ${H + 4}`} role="img" aria-label={`${lifeWeeks(life).toLocaleString('en')} weeks in an ${life}-year life, ${lived.toLocaleString('en')} of them filled in for someone aged ${age}.`}>
 		<defs>
 			<pattern id="lw-lived" width={P} height={P} patternUnits="userSpaceOnUse" x={left} y="0">
-				<rect x="1" y="1" width={P - 2} height={P - 2} rx="2" style="fill:var(--ink)" fill-opacity="0.8" />
+				<rect x="1" y="1" width={P - 2} height={P - 2} rx="2" style="fill:var(--text)" fill-opacity="0.8" />
 			</pattern>
 			<pattern id="lw-ahead" width={P} height={P} patternUnits="userSpaceOnUse" x={left} y="0">
-				<rect x="1" y="1" width={P - 2} height={P - 2} rx="2" style="fill:var(--ink)" fill-opacity="0.12" />
+				<rect x="1" y="1" width={P - 2} height={P - 2} rx="2" style="fill:var(--text)" fill-opacity="0.12" />
 			</pattern>
 		</defs>
 		{Array.from({ length: Math.ceil(rows / 10) }, (_, d) => (
@@ -57,7 +57,7 @@ const H = rows * P;
 
 	.now {
 		fill: var(--light);
-		stroke: var(--ink);
+		stroke: var(--text);
 		stroke-width: 1.5;
 	}
 </style>

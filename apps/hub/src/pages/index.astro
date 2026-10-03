@@ -2,13 +2,14 @@
 import Base from '../layouts/Base.astro';
 import Splash from '../components/Splash.astro';
 import Prologue from '../components/journey/Prologue.astro';
-import ChapterScene from '../components/journey/ChapterScene.astro';
+import Moment from '../components/journey/Moment.astro';
 import DayRail from '../components/journey/DayRail.astro';
 import Finale from '../components/journey/Finale.astro';
 import { CHAPTERS } from '../data/chapters.ts';
+import { SKY } from '../data/sky.ts';
 
-// The day runs from the night before (the prologue) to the night after (the finale).
-const skies = ['night' as const, ...CHAPTERS.map((c) => c.sky), 'night' as const];
+// Each scene's ground meets the next scene's sky.
+const groundAbove = [SKY.night, ...CHAPTERS.map((c) => SKY[c.sky])].map((s) => s.ground[3]);
 ---
 
 <Base splash sky="night" title="Intently"
@@ -17,9 +18,43 @@ const skies = ['night' as const, ...CHAPTERS.map((c) => c.sky), 'night' as const
 	<DayRail />
 	<main class="journey">
 		<Prologue />
-		{CHAPTERS.map((c, i) => (
-			<ChapterScene chapter={c} prev={skies[i]} next={skies[i + 2]} flip={i % 2 === 1} />
-		))}
-		<Finale />
+		{CHAPTERS.map((c, i) => <Moment chapter={c} after={groundAbove[i]} />)}
+		<Finale after={groundAbove[CHAPTERS.length]} />
 	</main>
+
+	<script>
+		// The live world (src/scripts/world) replaces the static landscapes where it can run.
+		import('../scripts/world/boot.ts').then((m) => m.start());
+	</script>
 </Base>
+
+<style is:global>
+	/* The live world: one canvas behind the page; scenes get room to unfold and their words wait. */
+	canvas.world {
+		position: fixed;
+		inset: 0;
+		width: 100vw;
+		height: 100lvh;
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	.journey,
+	html.world-live .site-footer {
+		position: relative;
+		z-index: 1;
+	}
+
+	html.world-live .site-footer { background: var(--soil); }
+
+	html.world-live .postcard { min-height: 175svh; }
+
+	html.world-live .postcard .words {
+		position: sticky;
+		top: 0;
+		padding-bottom: 8svh;
+		will-change: opacity;
+	}
+
+	html.world-live .constellation .figure { visibility: hidden; }
+</style>

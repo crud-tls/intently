@@ -24,16 +24,12 @@ const { caption, tone = 'light' } = Astro.props;
 		margin: 28px 0 0;
 		padding: clamp(24px, 4vw, 48px);
 		border-radius: 36px;
-		background: color-mix(in srgb, var(--sky-bottom) 70%, #ffffff 30%);
+		background: color-mix(in srgb, var(--soil) 93%, var(--soil-ink) 7%);
 		border: 1px solid var(--line);
 	}
 
 	.feel-frame.dark {
-		background: color-mix(in srgb, var(--sky-top) 70%, #000000 30%);
-	}
-
-	@media (prefers-color-scheme: dark) {
-		.feel-frame.light { background: color-mix(in srgb, var(--sky-bottom) 88%, #ffffff 12%); }
+		background: color-mix(in srgb, var(--soil) 70%, #000000 30%);
 	}
 
 	.controls:empty { display: none; }
