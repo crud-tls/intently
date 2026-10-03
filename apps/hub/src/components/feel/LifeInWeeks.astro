@@ -34,7 +34,7 @@ const H = rows * P;
 		{Array.from({ length: Math.ceil(rows / 10) }, (_, d) => (
 			<text x={left - 8} y={d * 10 * P + P - 1.5} text-anchor="end" class="age">{d * 10}</text>
 		))}
-		<rect x={left} y="0" width={COLS * P} height={H} fill="url(#lw-ahead)" />
+		<rect x={left} y="0" width={COLS * P} height={H} fill="url(#lw-ahead)" data-ahead />
 		<rect x={left} y="0" width={COLS * P} height={full * P} fill="url(#lw-lived)" data-lived />
 		<rect x={left} y={full * P} width={rest * P} height={P} fill="url(#lw-lived)" data-lived-rest />
 		<circle cx={left + rest * P + P / 2} cy={full * P + P / 2} r={P * 0.55} class="now" data-now />

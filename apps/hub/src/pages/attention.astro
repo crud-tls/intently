@@ -1,11 +1,20 @@
 ---
 import Chapter from '../layouts/Chapter.astro';
 import NoiseAndPause from '../components/feel/NoiseAndPause.astro';
+import AttentionLive from '../components/feel/live/AttentionLive.astro';
 import { chapter } from '../data/chapters.ts';
 
 const c = chapter('attention');
 ---
 
 <Chapter chapter={c}>
+	<AttentionLive slot="live" />
 	<NoiseAndPause slot="feel" caption={c.feel.example} />
 </Chapter>
+
+<script>
+	import { startChapter } from '../scripts/world/chapter.ts';
+	import { mountAttention } from '../scripts/feel/attention.ts';
+
+	startChapter('attention', mountAttention(document));
+</script>

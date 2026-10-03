@@ -48,13 +48,14 @@ const isLast = c.id === 'faith';
 		<Postcard id={c.id} as="header" eager class="hero">
 			<p class="when"><span class="light" aria-hidden="true"></span><span>{c.clock}</span><strong>{c.name}</strong></p>
 			<h1 class="display">{c.title}</h1>
+			<slot name="live" />
 		</Postcard>
 
 		<div class="wrap intro">
 			{c.lede.map((p) => <p class="lede">{p}</p>)}
 		</div>
 
-		<section class="wrap feel" aria-labelledby="feel-title">
+		<section class="wrap feel" aria-labelledby="feel-title" data-still-feel>
 			<h2 id="feel-title" class="display">{c.feel.heading}</h2>
 			<slot name="feel" />
 			{c.feel.assumptions.length > 0 && (
@@ -95,9 +96,54 @@ const isLast = c.id === 'faith';
 
 <style>
 	h1 {
-		font-size: clamp(2.8rem, 6.4vw, 5.6rem);
+		font-size: clamp(2.3rem, 4.6vw, 4.2rem);
 		margin: 0;
 	}
+
+	/* The hands-on part sits on a soft piece of its own sky, so it stays readable over the far hills. */
+	:global(.hero .feel-live) {
+		padding: 18px 20px 16px;
+		border-radius: 24px;
+		background: color-mix(in srgb, var(--sky-top) 64%, transparent);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+	}
+
+	/* The land needs about a third of the hero; the interactive takes the rest of the sky. */
+	:global(html .hero.postcard .words:has(.feel-live)) { padding-bottom: 34svh; }
+
+	/* With an interactive, wide heroes have two columns (the thought, then the hands-on part), so
+	   everything sits in the sky above the land. Specific enough to beat the postcard's alignment. */
+	@media (min-width: 1024px) {
+		:global(html .hero.postcard .words:has(.feel-live)) {
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 27rem);
+			column-gap: 5vw;
+			align-items: start;
+		}
+
+		:global(html .hero.postcard .words:has(.feel-live) > *) { max-width: none; margin-inline: 0; grid-column: 1; }
+
+		:global(html .hero.postcard .words:has(.feel-live) > .feel-live) {
+			grid-column: 2;
+			grid-row: 1 / span 3;
+			margin-top: 0;
+		}
+	}
+
+	/* The live hero: the world draws behind the words; its interactive replaces the still example. */
+	:global(.hero > canvas.hero-world) {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	:global(html.hero-live .hero .land) { display: none; }
+
+	:global(html.hero-live [data-still-feel]) { display: none; }
 
 	.intro {
 		padding-top: 56px;

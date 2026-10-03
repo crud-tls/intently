@@ -31,8 +31,9 @@ test('the live world starts, or the static landscapes stand in cleanly', async (
 	expect(errors).toEqual([]);
 });
 
+// Headless browsers draw the world in software (no GPU), so a full journey is slow: allow it time.
 test('walks through the whole day and back, with the right light and words at every hour', async ({ page }) => {
-	test.setTimeout(120_000);
+	test.setTimeout(240_000);
 	const errors = collectErrors(page);
 	await page.goto('/');
 	test.skip(!(await waitForWorld(page)), 'no WebGL2 in this browser');
@@ -62,7 +63,7 @@ test('walks through the whole day and back, with the right light and words at ev
 });
 
 test('real scrolling to the end and back up keeps the world alive (wheel, or touch on phones)', async ({ page }, info) => {
-	test.setTimeout(120_000);
+	test.setTimeout(240_000);
 	const errors = collectErrors(page);
 	await page.goto('/');
 	test.skip(!(await waitForWorld(page)), 'no WebGL2 in this browser');

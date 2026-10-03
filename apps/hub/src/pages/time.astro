@@ -1,11 +1,20 @@
 ---
 import Chapter from '../layouts/Chapter.astro';
 import LifeInWeeks from '../components/feel/LifeInWeeks.astro';
+import TimeLive from '../components/feel/live/TimeLive.astro';
 import { chapter } from '../data/chapters.ts';
 
 const c = chapter('time');
 ---
 
 <Chapter chapter={c}>
+	<TimeLive slot="live" />
 	<LifeInWeeks slot="feel" caption={c.feel.example} />
 </Chapter>
+
+<script>
+	import { startChapter } from '../scripts/world/chapter.ts';
+	import { mountTime } from '../scripts/feel/time.ts';
+
+	startChapter('time', mountTime(document));
+</script>
