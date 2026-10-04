@@ -38,9 +38,12 @@ for (const c of CHAPTERS) {
 
 test('the faith verse is marked up as Arabic, right to left, with its translation and source', async ({ page }) => {
 	await page.goto('/faith/');
-	const verse = page.locator('.verse .arabic');
-	await expect(verse).toHaveAttribute('lang', 'ar');
-	await expect(verse).toHaveAttribute('dir', 'rtl');
-	await expect(page.locator('.verse footer')).toContainText('Saheeh International');
-	await expect(page.locator('.verse footer')).toContainText('13:28');
+	// Twice on the page: risen in the live hero, and in the still example for when it can't run.
+	for (const where of ['[data-feel="faith"]', '[data-still-feel]']) {
+		const arabic = page.locator(`${where} .verse .arabic`);
+		await expect(arabic).toHaveAttribute('lang', 'ar');
+		await expect(arabic).toHaveAttribute('dir', 'rtl');
+		await expect(page.locator(`${where} .verse footer`)).toContainText('Saheeh International');
+		await expect(page.locator(`${where} .verse footer`)).toContainText('13:28');
+	}
 });

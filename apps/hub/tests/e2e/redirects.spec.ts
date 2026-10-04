@@ -56,3 +56,10 @@ test('chapter pages and landscapes are served, not redirected', async ({ request
 		}
 	}
 });
+
+test('pages carry the policy that keeps what you type on the page', async ({ request }) => {
+	for (const path of ['/', '/time/', '/wealth/', '/contact/']) {
+		const res = await request.get(path);
+		expect(res.headers()['content-security-policy'], path).toContain("connect-src 'self'");
+	}
+});

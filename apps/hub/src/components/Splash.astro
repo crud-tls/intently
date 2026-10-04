@@ -5,13 +5,12 @@
  * and never with reduced motion; Base.astro's head script decides by adding html.splashing
  * before the first paint, so without JS (or on later visits) the page just renders.
  *
- * The Lottie plays through lottie-web's small SVG player, served from this site and preloaded
- * in the head with the animation, so it is ready on a cold first visit. Everything here is
- * inline script: it must not wait for the page's module bundle. If the player still isn't there
- * after 3 s, the same motion runs as the CSS-animated SVG.
+ * The Lottie plays through lottie-web's small SVG player, served from this site and requested
+ * in the head (only on visits that show the splash) with the animation, so it is ready on a cold
+ * first visit. Everything here is inline script: it must not wait for the page's module bundle.
+ * If the player still isn't there after 3 s, the same motion runs as the CSS-animated SVG.
  */
 import animatedLogo from '../../public/brand/intently-logo-animated.svg?raw';
-import lottiePlayer from 'lottie-web/build/player/lottie_light.min.js?url';
 
 const animationUrl = '/art/intently-logo.json';
 ---
@@ -23,7 +22,6 @@ const animationUrl = '/art/intently-logo.json';
 	</div>
 </div>
 
-<script is:inline async fetchpriority="high" id="splash-player" src={lottiePlayer}></script>
 <script is:inline define:vars={{ animationUrl }}>
 	(function () {
 		var root = document.documentElement;
@@ -103,12 +101,13 @@ const animationUrl = '/art/intently-logo.json';
 			}, useCss);
 		}
 
+		// Base.astro's head script added the player only for a visit that shows the splash.
 		var script = document.getElementById('splash-player');
 		if (window.lottie) useLottie();
-		else {
+		else if (script) {
 			script.addEventListener('load', useLottie);
 			script.addEventListener('error', useCss);
-		}
+		} else useCss();
 		// The Lottie is the splash; the CSS twin is only for a player that fails or crawls in.
 		setTimeout(useCss, 3000);
 

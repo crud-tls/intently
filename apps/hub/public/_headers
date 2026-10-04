@@ -1,0 +1,6 @@
+# The chapter pages promise that nothing you type leaves the page: the browser enforces it. Pages
+# may only talk to this site (the contact form posts to /api/contact); everything else is blocked.
+/*
+  Content-Security-Policy: connect-src 'self'; object-src 'none'; base-uri 'self'
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff

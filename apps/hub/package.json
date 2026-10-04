@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",
-		"check": "astro build && tsc --noEmit && node --test 'src/**/*.test.ts' && wrangler deploy --dry-run",
+		"check": "astro check && astro build && tsc --noEmit && node --test 'src/**/*.test.ts' && wrangler deploy --dry-run",
 		"deploy": "wrangler deploy",
 		"cf-typegen": "wrangler types",
 		"test": "node --test 'src/**/*.test.ts'",
@@ -29,6 +29,7 @@
 		"typescript": "5.9.3"
 	},
 	"devDependencies": {
+		"@astrojs/check": "^0.9.10",
 		"@axe-core/playwright": "^4.13.0",
 		"@playwright/test": "^1.63.0",
 		"wrangler": "4.56.0"

@@ -36,10 +36,11 @@ test('titles and descriptions are unique', async ({ page }) => {
 	}
 });
 
-test('the 404 page answers with 404 and a way back', async ({ page }) => {
+test('the 404 page answers with 404 and a way back to every hour', async ({ page }) => {
 	const res = await page.goto('/no-such-page');
 	expect(res?.status()).toBe(404);
-	await expect(page.getByRole('link', { name: /home page/i })).toBeVisible();
+	await expect(page.getByRole('link', { name: 'beginning' })).toHaveAttribute('href', '/');
+	for (const c of CHAPTERS) await expect(page.locator(`.hours a[href="${c.path}"]`)).toBeVisible();
 });
 
 test('header and footer links lead somewhere real', async ({ page, request }) => {

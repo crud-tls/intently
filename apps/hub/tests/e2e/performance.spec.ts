@@ -40,3 +40,26 @@ test('with the live world running, landscapes further down are never downloaded'
 	// The first scenes may be fetched before the world starts; nothing past them.
 	expect(svgs.filter((u) => !/\/world\/(prologue|time)-/.test(u))).toEqual([]);
 });
+
+test('the splash player is only downloaded by a visit that shows the splash', async ({ browser }, info) => {
+	const fresh = await browser.newContext({ ...info.project.use, reducedMotion: 'no-preference' });
+	const page = await fresh.newPage();
+	const lottie: string[] = [];
+	page.on('request', (r) => /lottie|intently-logo\.json/.test(r.url()) && lottie.push(r.url()));
+	await page.goto('/');
+	expect(lottie.length, 'first visit: the splash needs its player').toBeGreaterThan(0);
+	await expect(page.locator('html')).not.toHaveClass(/splashing/, { timeout: 10_000 });
+	lottie.length = 0;
+	await page.reload();
+	await page.waitForLoadState('networkidle');
+	expect(lottie, 'repeat visit: no splash, no player').toEqual([]);
+	await fresh.close();
+
+	const calm = await browser.newContext({ ...info.project.use, reducedMotion: 'reduce' });
+	const p2 = await calm.newPage();
+	p2.on('request', (r) => /lottie|intently-logo\.json/.test(r.url()) && lottie.push(r.url()));
+	await p2.goto('/');
+	await p2.waitForLoadState('networkidle');
+	expect(lottie, 'reduced motion: no splash, no player').toEqual([]);
+	await calm.close();
+});

@@ -51,17 +51,24 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 			</script>
 		)}
 		{splash && (
-			<script is:inline>
-				// Decide before the first paint, so the page never flashes under the splash.
+			<script is:inline define:vars={{ player: lottiePlayer, animation: '/art/intently-logo.json' }}>
+				// Decide before the first paint, so the page never flashes under the splash. Only a visit
+				// that will see the splash fetches its player and animation (high priority, so it plays
+				// on a cold first visit too).
 				try {
 					if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !sessionStorage.getItem('introSeen')) {
 						document.documentElement.classList.add('splashing');
+						var head = document.head;
+						var a = document.createElement('link');
+						a.rel = 'preload'; a.as = 'fetch'; a.href = animation; a.crossOrigin = 'anonymous'; a.setAttribute('fetchpriority', 'high');
+						head.appendChild(a);
+						var p = document.createElement('script');
+						p.src = player; p.async = true; p.id = 'splash-player'; p.setAttribute('fetchpriority', 'high');
+						head.appendChild(p);
 					}
 				} catch (e) {}
 			</script>
 		)}
-		{splash && <link rel="preload" href={lottiePlayer} as="script" fetchpriority="high" />}
-		{splash && <link rel="preload" href="/art/intently-logo.json" as="fetch" crossorigin="anonymous" fetchpriority="high" />}
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{fullTitle}</title>
 		<meta name="description" content={description} />
@@ -69,7 +76,7 @@ const listed = APPS.filter((a) => a.status !== 'soon');
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		{sky
-			? <meta name="theme-color" content={SKY[sky].top} />
+			? <meta name="theme-color" content={SKY[sky].zenith} />
 			: <>
 				<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
 				<meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)" />
