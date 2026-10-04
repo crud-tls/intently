@@ -5,6 +5,7 @@
  */
 import { hoursPerYear, wakingDays } from '../lib/math.ts';
 import type { Feel } from '../world/chapter.ts';
+import { holdButton } from './hold.ts';
 
 const BREATH = 4;
 const fmt = (n: number) => Math.floor(n).toLocaleString('en');
@@ -17,47 +18,25 @@ export function mountAttention(doc: Document): Feel {
 	const hours = root.querySelector<HTMLInputElement>('[data-hours]')!;
 	const out = (k: string) => root.querySelector<HTMLElement>(`[data-out="${k}"]`)!;
 
-	// noise: 1 a crowded morning, 0 quiet. breath: 0..1 through one slow breath.
+	// noise: 1 a crowded morning, 0 quiet; the breath fills over four seconds and fades if let go early.
 	let noise = 1;
-	let breath = 0;
-	let holding = false;
-	let guided = false;
-	let pressedAt = 0;
 	let say = '';
-
 	const setCue = (text: string) => {
 		if (text !== say) cue.textContent = say = text;
 	};
-	const begin = () => {
-		holding = true;
-		pressedAt = performance.now();
-		button.setAttribute('aria-pressed', 'true');
-	};
-	const end = () => {
-		if (!holding) return;
-		holding = false;
-		button.setAttribute('aria-pressed', 'false');
-		// Letting go in the last moments of the breath still counts as a whole one.
-		if (breath > 0.9) breath = 1;
-		// A tap rather than a hold: breathe for them.
-		if (performance.now() - pressedAt < 300) guided = true;
-	};
-	button.addEventListener('pointerdown', (e) => {
-		button.setPointerCapture(e.pointerId);
-		begin();
+	const breath = holdButton(button, BREATH, {
+		decay: 6,
+		onFrame: (h) => {
+			noise = 1 - h.level;
+			setCue(
+				h.level >= 1 ? 'There. That is the gap between the urge and the tap.'
+				: h.active ? (h.level < 0.5 ? 'Breathe in…' : '…and out.')
+				: h.level > 0 ? 'Hold for one slow breath, or tap to be guided.'
+				: '',
+			);
+			root.dataset.calm = String(Math.round(h.level * 100));
+		},
 	});
-	button.addEventListener('pointerup', end);
-	button.addEventListener('pointercancel', end);
-	button.addEventListener('keydown', (e) => {
-		if ((e.key === ' ' || e.key === 'Enter') && !e.repeat) {
-			e.preventDefault();
-			begin();
-		}
-	});
-	button.addEventListener('keyup', (e) => {
-		if (e.key === ' ' || e.key === 'Enter') end();
-	});
-	button.addEventListener('contextmenu', (e) => e.preventDefault());
 
 	const updateHours = () => {
 		const h = +hours.value;
@@ -73,30 +52,8 @@ export function mountAttention(doc: Document): Feel {
 	hours.addEventListener('input', updateHours);
 	updateHours();
 
-	// The breath runs on its own clock, so it works with or without the live world.
-	let last = performance.now();
-	const step = (now: number) => {
-		// Real time (a breath takes four seconds however slowly frames come), but not across a hidden tab.
-		const dt = Math.min(0.5, (now - last) / 1000);
-		last = now;
-		if (holding || guided) {
-			breath = Math.min(1, breath + dt / BREATH);
-			if (breath >= 1) guided = false;
-		} else if (breath > 0 && breath < 1) breath = Math.max(0, breath - dt / 6);
-		setCue(
-			breath >= 1 ? 'There. That is the gap between the urge and the tap.'
-			: holding || guided ? (breath < 0.5 ? 'Breathe in…' : '…and out.')
-			: breath > 0 ? 'Hold for one slow breath, or tap to be guided.'
-			: '',
-		);
-		noise = 1 - breath;
-		root.dataset.calm = String(Math.round((1 - noise) * 100));
-		requestAnimationFrame(step);
-	};
-	requestAnimationFrame(step);
-
 	return {
-		busy: () => holding || guided || (breath > 0 && breath < 1),
+		busy: () => breath.active || (breath.level > 0 && breath.level < 1),
 		patch(frame, { time, sprites }) {
 			const wild = noise * noise;
 			for (const d of frame.sprites) {

@@ -1,11 +1,20 @@
 ---
 import Chapter from '../layouts/Chapter.astro';
 import LanternVerse from '../components/feel/LanternVerse.astro';
+import FaithLive from '../components/feel/live/FaithLive.astro';
 import { chapter } from '../data/chapters.ts';
 
 const c = chapter('faith');
 ---
 
 <Chapter chapter={c}>
+	<FaithLive slot="live" intro={c.feel.intro} verse={c.verse!} />
 	<LanternVerse slot="feel" caption={c.feel.example} verse={c.verse!} />
 </Chapter>
+
+<script>
+	import { startChapter } from '../scripts/world/chapter.ts';
+	import { mountFaith } from '../scripts/feel/faith.ts';
+
+	startChapter('faith', mountFaith(document));
+</script>

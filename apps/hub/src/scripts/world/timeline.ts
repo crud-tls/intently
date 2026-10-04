@@ -4,7 +4,7 @@
  * renderer draws for a frame is decided here: the light, the camera, where the walker is, which
  * props are on screen and what they're doing.
  */
-import { SKY, blendSky, type Sky } from '../../data/sky.ts';
+import { SKY, blendSky, isNarrow, NARROW_MOON_Y, type Sky } from '../../data/sky.ts';
 import { LAYERS, LAKE_EDGE } from '../../world/terrain.ts';
 import { SCENES, SPACING, type Placement } from '../../world/scenes.ts';
 import { groundAt, type Lake } from './columns.ts';
@@ -117,6 +117,7 @@ export interface TimelineInput {
 
 export function frameAt({ u, visW, time, velocity, sprites, markRect }: TimelineInput): Frame {
 	const sky = skyAt(u);
+	if (isNarrow(visW)) sky.moon = { ...sky.moon, y: Math.min(sky.moon.y, NARROW_MOON_Y) };
 	const cam = u * SPACING;
 	const half = visW / 2 + 260;
 	const out: SpriteDraw[] = [];

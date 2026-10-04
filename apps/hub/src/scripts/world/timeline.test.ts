@@ -102,3 +102,11 @@ test('regression: after the lake, the walker is back on the land, not held at pl
 		assert.ok(f.lake === null || w.y > f.lake.level - 6 + 1, `walker at ${w.y} is on the land, not the planks (${f.lake?.level})`);
 	}
 });
+
+test('on a phone the moon rides above the words', () => {
+	for (const u of [0, 6, 7, 8]) {
+		const f = at(u, { visW: 460 });
+		if (f.sky.moon.show > 0) assert.ok(f.sky.moon.y <= 0.1, `moon at ${f.sky.moon.y} on a phone at u=${u}`);
+	}
+	assert.ok(at(7).sky.moon.y > 0.15, 'wide screens keep the composed moon');
+});

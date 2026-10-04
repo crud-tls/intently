@@ -131,6 +131,13 @@ export function skyVars(s: Sky): string {
 	].join(';');
 }
 
+/**
+ * On narrow screens the words fill the width of the sky, so a bright moon would sit behind the
+ * title: it rides higher there, between the header and the words.
+ */
+export const NARROW_MOON_Y = 0.095;
+export const isNarrow = (visibleWidth: number) => visibleWidth < 800;
+
 /** Blend two skies (the live renderer does the same, frame by frame). */
 export function blendSky(a: Sky, b: Sky, t: number): Sky {
 	const c = (x: string, y: string) => mix(x, y, t);

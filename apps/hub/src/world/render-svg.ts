@@ -4,7 +4,7 @@
  * files by src/pages/world/[file].svg.ts. The live renderer draws the same world from the same
  * terrain maths, palettes and scenes.
  */
-import { SKY, SKY_STOPS, type Sky } from '../data/sky.ts';
+import { SKY, SKY_STOPS, isNarrow, NARROW_MOON_Y, type Sky } from '../data/sky.ts';
 import { mix } from '../scripts/lib/color.ts';
 import { seeded } from '../scripts/lib/random.ts';
 import { LAYERS, ridge, treeAt, pineHalfWidth, shoreY, LAKE_EDGE, type Layer } from './terrain.ts';
@@ -221,7 +221,8 @@ function boardwalk(c: Ctx, x0: number, x1: number, level: number): string {
 /** The SVG for one scene, composed for a wide screen or a tall phone. */
 export function renderScene(scene: Scene, variant: Variant, markInner: string): string {
 	const { width: W, visible } = VARIANTS[variant];
-	const s = SKY[scene.sky];
+	const base = SKY[scene.sky];
+	const s = isNarrow(visible) ? { ...base, moon: { ...base.moon, y: Math.min(base.moon.y, NARROW_MOON_Y) } } : base;
 	const id = `${scene.id}-${variant}`;
 	const c: Ctx = { s, scene, W, vis: visible, cx: W / 2, id };
 	const [, upperAt, horizonAt] = SKY_STOPS;

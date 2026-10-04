@@ -1,0 +1,52 @@
+---
+/** Relationships, live: the visits ahead light the path towards the sun (src/scripts/feel/relationships.ts). */
+import { visitsLeft } from '../../../scripts/lib/math.ts';
+
+interface Props {
+	/** The chapter's own invitation (src/data/chapters.ts: feel.intro). */
+	intro: string;
+}
+
+const { intro } = Astro.props;
+const AGE = 60;
+const PER = 4;
+---
+
+<div class="feel-live needs-js" data-feel="relationships">
+	<p class="ask">{intro}</p>
+	<div class="fields">
+		<label class="field">
+			<span>Their age <output data-out="age">{AGE}</output></span>
+			<input type="range" min="20" max="100" step="1" value={AGE} data-their-age />
+		</label>
+		<label class="field">
+			<span>Visits a year <output data-out="per">{PER}</output></span>
+			<input type="range" min="1" max="24" step="1" value={PER} data-per-year />
+		</label>
+	</div>
+	<p class="readout" aria-live="polite">
+		<span data-some>About <strong data-out="visits">{visitsLeft(AGE, PER)}</strong> more visits.</span>
+		<span data-none hidden>Past eighty-five, every visit from here is a gift.</span>
+	</p>
+	<p class="assume">They live to about eighty-five, and you keep seeing them as often as now: assumptions, not predictions.
+		If the person you thought of is no longer here, we're sorry. You're welcome to skip this one.</p>
+	<p class="sample"><span>A question for tonight</span> What is a small thing I do that makes you feel cared for?</p>
+</div>
+
+<style>
+	.sample {
+		margin: 1rem 0 0;
+		font-family: var(--serif);
+		font-variation-settings: "SOFT" 100;
+		font-size: 1.1rem;
+		line-height: 1.35;
+	}
+
+	.sample span {
+		display: block;
+		font-family: var(--sans);
+		font-size: 0.8rem;
+		font-weight: 600;
+		color: var(--ink2);
+	}
+</style>

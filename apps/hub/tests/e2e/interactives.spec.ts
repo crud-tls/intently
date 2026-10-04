@@ -3,7 +3,7 @@
  * live hero draws them where it can, and without it the still example below follows the controls.
  */
 import { test, expect } from '@playwright/test';
-import { hoursPerYear, lifeWeeks, wakingDays, weeksLived } from '../../src/scripts/lib/math.ts';
+import { hoursPerYear, lifeWeeks, visitsLeft, wakingDays, weeksLived } from '../../src/scripts/lib/math.ts';
 import { collectErrors, isChromium, skipSplash } from './helpers.ts';
 
 const fmt = (n: number) => Math.floor(n).toLocaleString('en');
@@ -125,5 +125,73 @@ test.describe('attention', () => {
 			await expect(page.locator('[data-out="year"]')).toHaveText(fmt(hoursPerYear(h)));
 			await expect(page.locator('[data-out="days"]')).toHaveText(fmt(wakingDays(hoursPerYear(h))));
 		}
+	});
+});
+
+test.describe('faith', () => {
+	test('holding the lantern lights the night and raises the verse', async ({ page }, info) => {
+		await page.emulateMedia({ reducedMotion: 'no-preference' });
+		const errors = collectErrors(page);
+		await page.goto('/faith/');
+		const feel = page.locator('[data-feel="faith"]');
+		const button = page.locator('[data-lantern]');
+		await button.scrollIntoViewIfNeeded();
+		const box = (await button.boundingBox())!;
+		await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+		await page.mouse.down();
+		await expect(page.locator('[data-feel="faith"] [data-cue]')).toHaveText('Slowly…');
+		await expect.poll(async () => +(await feel.getAttribute('data-light'))!, { timeout: 12_000 }).toBeGreaterThanOrEqual(100);
+		await page.mouse.up();
+		await expect(page.locator('[data-feel="faith"] [data-cue]')).toHaveText('Stay as long as you like.');
+		// It doesn't fade when you let go.
+		await page.waitForTimeout(1500);
+		expect(+(await feel.getAttribute('data-light'))!).toBe(100);
+		if (isChromium(info)) {
+			await expect.poll(() => heroFrames(page)).toBeGreaterThan(3);
+			const verse = page.locator('[data-feel="faith"] [data-verse]');
+			await expect(verse).toBeVisible();
+			await expect.poll(() => verse.evaluate((el) => +getComputedStyle(el).opacity)).toBeGreaterThan(0.95);
+			await expect(verse.locator('.arabic')).toHaveAttribute('lang', 'ar');
+		}
+		expect(errors).toEqual([]);
+	});
+
+	test('a tap lets the lantern brighten on its own', async ({ page }) => {
+		await page.goto('/faith/');
+		await page.locator('[data-lantern]').click();
+		await expect.poll(async () => +(await page.locator('[data-feel="faith"]').getAttribute('data-light'))!, { timeout: 12_000 }).toBeGreaterThanOrEqual(100);
+	});
+
+	test('without the live world the verse is still there, below', async ({ page }) => {
+		await page.emulateMedia({ reducedMotion: 'reduce' });
+		await page.goto('/faith/');
+		await expect(page.locator('[data-still-feel] .verse .arabic')).toBeVisible();
+		await expect(page.locator('[data-feel="faith"] [data-verse]')).toBeHidden();
+	});
+});
+
+test.describe('relationships', () => {
+	test('the visits ahead follow their age and how often you see them', async ({ page }, info) => {
+		await page.emulateMedia({ reducedMotion: 'no-preference' });
+		const errors = collectErrors(page);
+		await page.goto('/relationships/');
+		for (const [age, per] of [[60, 4], [72, 12], [30, 1], [90, 6]]) {
+			await setRange(page, '[data-their-age]', age);
+			await setRange(page, '[data-per-year]', per);
+			const n = visitsLeft(age, per);
+			await expect(page.locator('[data-feel="relationships"]')).toHaveAttribute('data-visits', String(n));
+			if (n > 0) await expect(page.locator('[data-out="visits"]')).toHaveText(n.toLocaleString('en'));
+			else await expect(page.locator('[data-none]')).toBeVisible();
+		}
+		if (isChromium(info)) await expect.poll(() => heroFrames(page)).toBeGreaterThan(3);
+		expect(errors).toEqual([]);
+	});
+
+	test('without the live world, the still dots are one per visit', async ({ page }) => {
+		await page.emulateMedia({ reducedMotion: 'reduce' });
+		await page.goto('/relationships/');
+		await setRange(page, '[data-their-age]', 75);
+		await setRange(page, '[data-per-year]', 6);
+		await expect(page.locator('.feel svg.visits circle')).toHaveCount(visitsLeft(75, 6));
 	});
 });

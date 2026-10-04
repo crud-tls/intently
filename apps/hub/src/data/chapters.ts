@@ -61,7 +61,7 @@ export const CHAPTERS: Chapter[] = [
 		],
 		feel: {
 			heading: 'Your life in weeks',
-			intro: 'Each square is one week. Type your age and watch the weeks you have lived fill in.',
+			intro: 'Each light is one week of a life. Move the sliders and watch the weeks you have lived fill in.',
 			example: 'A life at thirty: each square is a week, and the filled ones are already lived.',
 			assumptions: [
 				'An eighty-year life, as an example, not a prediction.',
@@ -102,7 +102,7 @@ export const CHAPTERS: Chapter[] = [
 		],
 		feel: {
 			heading: 'Hold to breathe',
-			intro: 'This box gets noisy, the way a morning does. Hold the button, or hold the space bar, for one slow breath. Then tell it how long you spend on your phone each day.',
+			intro: 'The morning is loud. Before you look, take one slow breath.',
 			example: 'At four hours a day, a phone takes 1,460 hours a year: about 91 full waking days.',
 			assumptions: [
 				'A waking day is sixteen hours.',
@@ -225,7 +225,7 @@ export const CHAPTERS: Chapter[] = [
 		],
 		feel: {
 			heading: 'The visits ahead',
-			intro: "Think of someone you love who doesn't live with you. Tell us their age and how often you see them, and we'll draw the visits ahead. If the person you thought of is no longer here, we're sorry. You're welcome to skip this one.",
+			intro: "Think of someone you love who doesn't live with you. Their age and how often you see them light the visits ahead along the path.",
 			example: 'Someone who is sixty, seen four times a year: about a hundred more visits. Each dot is one.',
 			assumptions: [
 				'They live to about eighty-five. An assumption, not a prediction.',
@@ -305,7 +305,7 @@ export const CHAPTERS: Chapter[] = [
 		],
 		feel: {
 			heading: 'Light the lantern',
-			intro: 'Hold the lantern, or press the button a few times, and let it brighten slowly. Stay as long as you like.',
+			intro: 'Whatever your tradition, take a still minute. Hold the lantern and let it brighten slowly.',
 			example: 'A lantern, lit, and a verse to sit with.',
 			assumptions: [],
 		},
