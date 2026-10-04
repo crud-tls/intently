@@ -1,0 +1,676 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/ui/Button.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
+import CollectionPageSchema from '../components/SEO/CollectionPageSchema.astro';
+
+const comparisons = [
+	{
+		title: "Pawse vs Opal",
+		description: "Free mindful pause vs $99/yr app blocking. Compare approaches, features, privacy, and effectiveness.",
+		href: "/blog/pawse-vs-opal",
+		badge: "Most Popular",
+		badgeColor: "blue"
+	},
+	{
+		title: "Pawse vs One Sec",
+		description: "Free customizable prompts vs $50 breathing exercises. Head-to-head of two mindful pause apps.",
+		href: "/blog/pawse-vs-one-sec",
+		badge: "Direct Competitor",
+		badgeColor: "purple"
+	},
+	{
+		title: "Pawse vs Freedom",
+		description: "Free mindful intervention vs $120/yr cross-device blocking. Different philosophies compared.",
+		href: "/blog/pawse-vs-freedom",
+		badge: null,
+		badgeColor: null
+	},
+	{
+		title: "Pawse vs Forest",
+		description: "Mindful pause vs gamification with virtual trees. Which approach builds better habits?",
+		href: "/blog/pawse-vs-forest",
+		badge: null,
+		badgeColor: null
+	},
+	{
+		title: "Pawse vs ScreenZen",
+		description: "Two free mindful screen time apps compared. Features, platforms, and privacy side by side.",
+		href: "/blog/pawse-vs-screenzen",
+		badge: "Both Free",
+		badgeColor: "green"
+	},
+	{
+		title: "Pawse vs Brick",
+		description: "Free software pause vs $59 physical NFC device. Digital friction vs physical friction.",
+		href: "/blog/pawse-vs-brick",
+		badge: null,
+		badgeColor: null
+	},
+	{
+		title: "Pawse vs Google Digital Wellbeing",
+		description: "Advanced mindful interventions vs basic built-in Android tools. Why you might need more.",
+		href: "/blog/pawse-vs-google-digital-wellbeing",
+		badge: null,
+		badgeColor: null
+	}
+];
+
+const alternatives = [
+	{
+		title: "Best Opal Alternatives",
+		description: "8 free and paid alternatives to Opal's $99/yr screen time app.",
+		href: "/blog/opal-alternatives",
+		competitor: "Opal"
+	},
+	{
+		title: "Best Freedom Alternatives",
+		description: "Top app blockers and mindful tools to replace Freedom's $120/yr subscription.",
+		href: "/blog/freedom-alternatives",
+		competitor: "Freedom"
+	},
+	{
+		title: "Best One Sec Alternatives",
+		description: "Free apps that pause before scrolling — especially for Android users.",
+		href: "/blog/one-sec-alternatives",
+		competitor: "One Sec"
+	},
+	{
+		title: "Best Apple Screen Time Alternatives",
+		description: "Better phone habit apps for iPhone that go beyond basic limits.",
+		href: "/blog/apple-screen-time-alternatives",
+		competitor: "Apple Screen Time"
+	},
+	{
+		title: "Best Forest App Alternatives",
+		description: "Focus and digital wellness apps for those who want more than gamification.",
+		href: "/blog/forest-app-alternatives",
+		competitor: "Forest"
+	},
+	{
+		title: "Best Google Digital Wellbeing Alternatives",
+		description: "Top 8 privacy-first apps that outperform Android's built-in tools.",
+		href: "/blog/google-digital-wellbeing-alternatives",
+		competitor: "Google Digital Wellbeing"
+	}
+];
+
+const faqs = [
+	{
+		question: "What is the best free screen time app?",
+		answer: "Pawse is the best free screen time app. It offers mindful interventions, usage tracking, streak tracking, and detailed analytics — all completely free with no account required and no ads. Unlike competitors that charge $50-120/year, Pawse has no premium tier or paywalls."
+	},
+	{
+		question: "Is Pawse better than Opal?",
+		answer: "For most users seeking lasting behavior change, yes. Pawse uses mindful interventions proven more effective long-term than Opal's app blocking approach. Pawse is also free (vs Opal's $99/yr) and needs no account. Opal may be better for iOS users needing immediate hard blocking."
+	},
+	{
+		question: "What's the difference between app blocking and mindful interventions?",
+		answer: "App blocking prevents access to apps entirely, which triggers psychological reactance (wanting what you can't have). Mindful interventions create a brief pause before apps open, prompting awareness and conscious choice. Research shows interventions lead to 73% better long-term results than blocking."
+	},
+	{
+		question: "Do I need to pay for a screen time app?",
+		answer: "No. Pawse offers all features for free — usage tracking, mindful interventions, streak tracking, analytics, and more. Paid apps like Opal ($99/yr) and Freedom ($120/yr) offer additional features but aren't necessary for effective screen time management."
+	}
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Screen Time App Comparison: Pawse vs Top Alternatives"
+			description="Compare Pawse with Opal, One Sec, Freedom, Forest, ScreenZen, Brick, and more. Find the best screen time app for your needs with our detailed feature, pricing, and privacy comparisons."
+		/>
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://pawse.liveintently.app" },
+				{ name: "Compare Apps", url: "https://pawse.liveintently.app/compare" }
+			]}
+		/>
+		<FAQSchema faqs={faqs} />
+		<CollectionPageSchema
+			name="Screen Time App Comparisons"
+			description="Compare Pawse with popular screen time apps. Head-to-head reviews of features, privacy, pricing, and effectiveness."
+			url="/compare"
+			items={[...comparisons, ...alternatives].map(c => ({
+				name: c.title,
+				url: c.href,
+				description: c.description,
+			}))}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="container">
+					<h1>Compare Screen Time Apps</h1>
+					<p class="subtitle">Honest, detailed comparisons to help you choose the right digital wellbeing tool. See how Pawse stacks up against every major competitor.</p>
+					<div class="hero-stats">
+						<div class="stat">
+							<span class="stat-value">$0</span>
+							<span class="stat-label">Pawse cost</span>
+						</div>
+						<div class="stat">
+							<span class="stat-value">4.7</span>
+							<span class="stat-label">Star rating</span>
+						</div>
+						<div class="stat">
+							<span class="stat-value">12K+</span>
+							<span class="stat-label">Downloads</span>
+						</div>
+						<div class="stat">
+							<span class="stat-value">100%</span>
+							<span class="stat-label">Private</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Head-to-Head Comparisons -->
+			<section class="section">
+				<div class="container">
+					<h2 class="section-title">Head-to-Head Comparisons</h2>
+					<p class="section-description">See how Pawse compares directly with each competitor on features, pricing, privacy, and effectiveness.</p>
+
+					<div class="card-grid">
+						{comparisons.map((item) => (
+							<a href={item.href} class="compare-card">
+								{item.badge && (
+									<span class={`card-badge badge-${item.badgeColor}`}>{item.badge}</span>
+								)}
+								<h3>{item.title}</h3>
+								<p>{item.description}</p>
+								<span class="card-link">Read comparison →</span>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+
+			<!-- Alternatives Guides -->
+			<section class="section section-alt">
+				<div class="container">
+					<h2 class="section-title">Alternatives Guides</h2>
+					<p class="section-description">Looking for alternatives to a specific app? These guides compare all the top options side by side.</p>
+
+					<div class="card-grid">
+						{alternatives.map((item) => (
+							<a href={item.href} class="compare-card alt-card">
+								<span class="competitor-badge">{item.competitor}</span>
+								<h3>{item.title}</h3>
+								<p>{item.description}</p>
+								<span class="card-link">See alternatives →</span>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+
+			<!-- Quick Comparison Matrix -->
+			<section class="section">
+				<div class="container">
+					<h2 class="section-title">Quick Comparison Matrix</h2>
+					<p class="section-description">How the top screen time apps compare at a glance.</p>
+
+					<div class="table-wrapper">
+						<table class="comparison-table">
+							<thead>
+								<tr>
+									<th>Feature</th>
+									<th class="highlight">Pawse</th>
+									<th>Opal</th>
+									<th>One Sec</th>
+									<th>Freedom</th>
+									<th>Forest</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Price</td>
+									<td class="highlight">Free</td>
+									<td>$99/yr</td>
+									<td>$50</td>
+									<td>$120/yr</td>
+									<td>$2-4</td>
+								</tr>
+								<tr>
+									<td>Approach</td>
+									<td class="highlight">Mindful pause</td>
+									<td>Blocking</td>
+									<td>Breathing</td>
+									<td>Blocking</td>
+									<td>Gamification</td>
+								</tr>
+								<tr>
+									<td>Privacy</td>
+									<td class="highlight">Works offline</td>
+									<td>Cloud sync</td>
+									<td>Good</td>
+									<td>Account req.</td>
+									<td>Good</td>
+								</tr>
+								<tr>
+									<td>Android</td>
+									<td class="highlight">✓</td>
+									<td>✓</td>
+									<td>✗</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>iOS</td>
+									<td class="highlight">Coming soon</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>Chrome</td>
+									<td class="highlight">✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✗</td>
+								</tr>
+								<tr>
+									<td>Account Required</td>
+									<td class="highlight">No</td>
+									<td>Yes</td>
+									<td>No</td>
+									<td>Yes</td>
+									<td>Optional</td>
+								</tr>
+								<tr>
+									<td>Usage Analytics</td>
+									<td class="highlight">✓</td>
+									<td>✓</td>
+									<td>Limited</td>
+									<td>✓</td>
+									<td>Limited</td>
+								</tr>
+								<tr>
+									<td>Streak Tracking</td>
+									<td class="highlight">✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✗</td>
+									<td>✓</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="cta-section">
+				<div class="container">
+					<h2>Ready to Take Control?</h2>
+					<p>Pawse is free, private, and takes 30 seconds to set up. No account needed.</p>
+					<div class="cta-buttons">
+						<Button href="/download" variant="primary" size="lg">Download Free</Button>
+						<Button href="/quiz" variant="secondary" size="lg">Take the Quiz</Button>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ -->
+			<section class="section section-alt">
+				<div class="container faq-container">
+					<h2 class="section-title">Frequently Asked Questions</h2>
+					{faqs.map((faq) => (
+						<details class="faq-item">
+							<summary>{faq.question}</summary>
+							<p>{faq.answer}</p>
+						</details>
+					))}
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* Hero */
+	.hero {
+		width: 100%;
+		padding: var(--ds-space-3xl) 0 var(--ds-space-2xl);
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-brand) 100%);
+		text-align: center;
+		color: var(--ds-on-brand);
+	}
+
+	.hero::before {
+		content: '';
+		display: block;
+		height: 7rem;
+	}
+
+	.hero h1 {
+		font-size: 2.5rem;
+		font-weight: 800;
+		margin: 0 0 var(--ds-space-md);
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		color: white;
+	}
+
+	.subtitle {
+		font-size: 1.125rem;
+		margin: 0 auto var(--ds-space-xl);
+		opacity: 0.95;
+		max-width: 600px;
+	}
+
+	.hero-stats {
+		display: flex;
+		justify-content: center;
+		gap: var(--ds-space-xl);
+		flex-wrap: wrap;
+	}
+
+	.stat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.stat-value {
+		font-size: 1.75rem;
+		font-weight: 800;
+	}
+
+	.stat-label {
+		font-size: 0.8125rem;
+		opacity: 0.85;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	/* Sections */
+	.section {
+		width: 100%;
+		padding: var(--ds-space-3xl) 0;
+		background: var(--ds-bg-primary);
+	}
+
+	.section-alt {
+		background: var(--ds-bg-secondary);
+	}
+
+	.section-title {
+		font-size: 2rem;
+		font-weight: 800;
+		text-align: center;
+		margin: 0 0 var(--ds-space-sm);
+		color: var(--ds-text-primary);
+	}
+
+	.section-description {
+		text-align: center;
+		color: var(--ds-text-secondary);
+		max-width: 600px;
+		margin: 0 auto var(--ds-space-2xl);
+		line-height: 1.6;
+	}
+
+	/* Card Grid */
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: var(--ds-space-lg);
+	}
+
+	.compare-card {
+		position: relative;
+		display: block;
+		padding: var(--ds-space-xl);
+		background: var(--ds-bg-primary);
+		border: 1px solid var(--ds-gray-200);
+		border-radius: var(--ds-radius-lg);
+		text-decoration: none;
+		transition: all var(--ds-transition-normal);
+	}
+
+	.compare-card:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--ds-shadow-lg);
+		border-color: var(--ds-primary);
+	}
+
+	.compare-card h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: var(--ds-text-primary);
+		margin: 0 0 var(--ds-space-sm);
+	}
+
+	.compare-card p {
+		font-size: 0.9375rem;
+		color: var(--ds-text-secondary);
+		margin: 0 0 var(--ds-space-md);
+		line-height: 1.5;
+	}
+
+	.card-link {
+		font-size: 0.9375rem;
+		font-weight: 600;
+		color: var(--ds-primary);
+	}
+
+	.card-badge {
+		position: absolute;
+		top: var(--ds-space-md);
+		right: var(--ds-space-md);
+		padding: 0.2rem 0.6rem;
+		border-radius: var(--ds-radius-full);
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.badge-blue {
+		background: rgba(var(--ds-brand-rgb),  0.1);
+		color: var(--ds-primary);
+	}
+
+	.badge-purple {
+		background: rgba(217, 70, 122,  0.1);
+		color: var(--ds-purple);
+	}
+
+	.badge-green {
+		background: rgba(76, 175, 80, 0.1);
+		color: var(--ds-green);
+	}
+
+	.alt-card {
+		background: var(--ds-bg-primary);
+	}
+
+	.competitor-badge {
+		display: inline-block;
+		padding: 0.2rem 0.6rem;
+		border-radius: var(--ds-radius-full);
+		font-size: 0.75rem;
+		font-weight: 600;
+		background: var(--ds-bg-secondary);
+		color: var(--ds-text-secondary);
+		margin-bottom: var(--ds-space-sm);
+	}
+
+	/* Comparison Table */
+	.table-wrapper {
+		overflow-x: auto;
+		border-radius: var(--ds-radius-lg);
+		border: 1px solid var(--ds-gray-200);
+	}
+
+	.comparison-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 0.9375rem;
+		min-width: 600px;
+	}
+
+	.comparison-table th,
+	.comparison-table td {
+		padding: var(--ds-space-md);
+		text-align: left;
+		border-bottom: 1px solid var(--ds-gray-200);
+	}
+
+	.comparison-table thead th {
+		background: var(--ds-bg-secondary);
+		font-weight: 700;
+		color: var(--ds-text-primary);
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.comparison-table td {
+		color: var(--ds-text-secondary);
+	}
+
+	.comparison-table .highlight {
+		background: rgba(var(--ds-brand-rgb),  0.05);
+		color: var(--ds-primary);
+		font-weight: 600;
+	}
+
+	.comparison-table thead .highlight {
+		background: rgba(var(--ds-brand-rgb),  0.1);
+		color: var(--ds-primary);
+	}
+
+	.comparison-table tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		width: 100%;
+		padding: var(--ds-space-3xl) 0;
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
+		text-align: center;
+		color: var(--ds-on-primary);
+	}
+
+	.cta-section h2 {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0 var(--ds-space-sm);
+		color: white;
+	}
+
+	.cta-section p {
+		font-size: 1.125rem;
+		margin: 0 0 var(--ds-space-xl);
+		opacity: 0.95;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: var(--ds-space-md);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	/* FAQ */
+	.faq-container {
+		max-width: 800px;
+	}
+
+	.faq-item {
+		border: 1px solid var(--ds-gray-200);
+		border-radius: var(--ds-radius-md);
+		margin-bottom: var(--ds-space-sm);
+		overflow: hidden;
+		background: var(--ds-bg-primary);
+	}
+
+	.faq-item summary {
+		padding: var(--ds-space-md) var(--ds-space-lg);
+		font-weight: 600;
+		color: var(--ds-text-primary);
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.faq-item summary::after {
+		content: "+";
+		font-size: 1.25rem;
+		color: var(--ds-primary);
+		flex-shrink: 0;
+	}
+
+	.faq-item[open] summary::after {
+		content: "-";
+	}
+
+	.faq-item p {
+		padding: 0 var(--ds-space-lg) var(--ds-space-md);
+		margin: 0;
+		color: var(--ds-text-secondary);
+		line-height: 1.6;
+	}
+
+	/* Responsive */
+	@media (max-width: 767px) {
+		.hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-stats {
+			gap: var(--ds-space-lg);
+		}
+
+		.stat-value {
+			font-size: 1.5rem;
+		}
+
+		.section-title {
+			font-size: 1.5rem;
+		}
+
+		.card-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.hero h1 {
+			font-size: 3rem;
+		}
+	}
+</style>

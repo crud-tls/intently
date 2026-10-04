@@ -1,0 +1,63 @@
+---
+/**
+ * ProfilePage Schema for About/Organization Pages
+ * Enhanced representation for organization and about pages
+ * Usage: Add to the about page to provide detailed organization information
+ */
+
+interface Props {
+  name?: string;
+  description?: string;
+  url?: string;
+  logo?: string;
+  foundingDate?: string;
+  contactEmail?: string;
+  socialLinks?: string[];
+}
+
+const {
+  name = "Pawse",
+  description = "Build healthier digital habits through mindful interventions. Privacy-first screen time tracking and digital wellbeing app that works offline, with no account required.",
+  url = "https://pawse.liveintently.app",
+  logo = "https://pawse.liveintently.app/logo.png",
+  foundingDate = "2024-01-01",
+  contactEmail = "pawse@liveintently.app",
+  socialLinks = []
+} = Astro.props;
+
+const profilePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "dateCreated": foundingDate,
+  "mainEntity": {
+    "@type": "Organization",
+    "name": name,
+    "alternateName": "Intently",
+    "description": description,
+    "url": url,
+    "logo": {
+      "@type": "ImageObject",
+      "url": logo
+    },
+    "foundingDate": foundingDate,
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": contactEmail
+    },
+    "sameAs": socialLinks,
+    "knowsAbout": [
+      "Digital Wellbeing",
+      "Screen Time Management",
+      "Mindful Interventions",
+      "Mindful Technology",
+      "Privacy-First Design",
+      "Offline-First Applications",
+      "Behavioral Change"
+    ],
+    "slogan": "Build healthier digital habits"
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(profilePageSchema)} />

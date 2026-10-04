@@ -1,0 +1,11 @@
+---
+/**
+ * The custom properties for every time of day, generated from src/data/sky.ts so the palette lives
+ * in one place. Any element with data-sky="…" (a page, a scene) gets that hour's colours.
+ */
+import { SKY_KEYS, SKY, skyVars } from '../data/sky.ts';
+
+const css = SKY_KEYS.map((k) => `html[data-sky="${k}"],[data-sky="${k}"]{${skyVars(SKY[k])}}`).join('');
+---
+
+<style is:inline set:html={css}></style>

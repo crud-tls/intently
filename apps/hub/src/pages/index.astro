@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import Splash from '../components/Splash.astro';
+import Prologue from '../components/journey/Prologue.astro';
+import Moment from '../components/journey/Moment.astro';
+import DayRail from '../components/journey/DayRail.astro';
+import Finale from '../components/journey/Finale.astro';
+import { CHAPTERS } from '../data/chapters.ts';
+import { SKY } from '../data/sky.ts';
+
+// Each scene's ground meets the next scene's sky.
+const groundAbove = [SKY.night, ...CHAPTERS.map((c) => SKY[c.sky])].map((s) => s.ground[3]);
+---
+
+<Base splash world sky="night" title="Intently"
+	description="Most days just happen. Intently makes calm, private apps for living them on purpose: your time, attention, health, money, people, self and faith.">
+	<Splash />
+	<DayRail />
+	<main class="journey">
+		<Prologue />
+		{CHAPTERS.map((c, i) => <Moment chapter={c} after={groundAbove[i]} />)}
+		<Finale after={groundAbove[CHAPTERS.length]} />
+	</main>
+
+	<script>
+		// The live world (src/scripts/world) replaces the static landscapes where it can run.
+		import('../scripts/world/boot.ts').then((m) => m.start());
+	</script>
+</Base>
+
+<style is:global>
+	/* The live world: one canvas behind the page; scenes get room to unfold and their words wait. */
+	canvas.world {
+		position: fixed;
+		inset: 0;
+		width: 100vw;
+		height: 100lvh;
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	.journey,
+	html.world-live .site-footer {
+		position: relative;
+		z-index: 1;
+	}
+
+	html.world-live .site-footer { background: var(--soil); }
+
+	html.world-live .postcard { min-height: 175svh; }
+
+	html.world-live .postcard .words {
+		position: sticky;
+		top: 0;
+		padding-bottom: 8svh;
+		will-change: opacity;
+	}
+
+	html.world-live .constellation .figure { visibility: hidden; }
+</style>

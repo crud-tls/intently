@@ -1,0 +1,28 @@
+---
+/** Health, live: breathe with the sun; everyday steps as marathons on the hills (src/scripts/feel/health.ts). */
+import { kmPerYear, marathons, STRIDE_M } from '../../../scripts/lib/math.ts';
+
+interface Props {
+	/** The chapter's own invitation (src/data/chapters.ts: feel.intro). */
+	intro: string;
+}
+
+const { intro } = Astro.props;
+const STEPS = 6000;
+---
+
+<div class="feel-live needs-js" data-feel="health">
+	<p class="ask">{intro}</p>
+	<button type="button" class="button" data-pace aria-pressed="false">Breathe with the sun</button>
+	<p class="cue" data-cue aria-live="polite"></p>
+	<label class="field">
+		<span>Steps a day <output data-out="steps">{STEPS.toLocaleString('en')}</output></span>
+		<input type="range" min="0" max="20000" step="500" value={STEPS} data-steps />
+	</label>
+	<p class="readout" aria-live="polite">
+		About <strong data-out="day">{((STEPS * STRIDE_M) / 1000).toLocaleString('en', { maximumFractionDigits: 1 })}</strong> km a day,
+		<strong data-out="year">{Math.round(kmPerYear(STEPS)).toLocaleString('en')}</strong> km a year: the length of
+		<strong data-out="marathons">{Math.round(marathons(kmPerYear(STEPS)))}</strong> marathons, just from living.
+	</p>
+	<p class="assume">A step is about 0.75 m; yours may be longer or shorter. A marathon is 42.195 km.</p>
+</div>

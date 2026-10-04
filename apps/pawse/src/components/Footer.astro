@@ -1,0 +1,165 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<div class="footer-content">
+		<div class="footer-brand">
+			<img src="/logo.svg" alt="Pawse" class="footer-logo" width="40" height="40" />
+			<p>Build healthier digital habits through mindful interventions.</p>
+		</div>
+		<div class="footer-links">
+			<div class="footer-section">
+				<h4>Product</h4>
+				<a href="/features">Features</a>
+				<a href="/download">Download</a>
+				<a href="/privacy">Privacy</a>
+				<a href="/terms">Terms</a>
+			</div>
+			<div class="footer-section">
+				<h4>Resources</h4>
+				<a href="/blog">Blog & Resources</a>
+				<a href="/blog#getting-started">Getting Started</a>
+				<a href="/blog#comparisons">App Comparisons</a>
+				<a href="/compare">Compare Screen Time Apps</a>
+				<a href="/quiz">Phone Addiction Quiz</a>
+				<a href="/screen-time-calculator">Screen Time Calculator</a>
+				<a href="/app-addiction-score">App Addiction Score</a>
+			</div>
+			<div class="footer-section">
+				<h4>Company</h4>
+				<a href="/about">About</a>
+				<a href="/contact">Contact</a>
+				<a href="https://liveintently.app">More apps from Intently</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>&copy; {today.getFullYear()} <a href="https://liveintently.app">Intently</a>. Pawse (formerly Intently) is made by the Intently studio.</p>
+		<div class="footer-badges">
+			<span class="privacy-badge">
+				<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+					<path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+				</svg>
+				Privacy-First
+			</span>
+			<span class="offline-badge">
+				<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+				</svg>
+				Works offline
+			</span>
+		</div>
+	</div>
+</footer>
+
+<style>
+	footer {
+		padding: var(--ds-space-3xl) 1rem var(--ds-space-xl);
+		background: var(--ds-gray-50);
+		color: var(--ds-text-secondary);
+	}
+
+	.footer-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		gap: var(--ds-space-3xl);
+		margin-bottom: var(--ds-space-2xl);
+	}
+
+	.footer-logo {
+		height: 36px;
+		width: auto;
+		display: block;
+		margin: 0 0 var(--ds-space-sm) 0;
+	}
+
+	.footer-brand p {
+		margin: 0;
+		max-width: 300px;
+		line-height: 1.6;
+	}
+
+	.footer-links {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--ds-space-xl);
+	}
+
+	.footer-section h4 {
+		font-size: 0.875rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--ds-text-primary);
+		margin: 0 0 var(--ds-space-md) 0;
+	}
+
+	.footer-section a {
+		display: block;
+		text-decoration: none;
+		color: var(--ds-text-secondary);
+		padding: 0.25rem 0;
+		transition: color var(--ds-transition-fast);
+	}
+
+	.footer-section a:hover {
+		color: var(--ds-primary);
+	}
+
+	.footer-bottom {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-top: var(--ds-space-xl);
+		border-top: 1px solid var(--ds-gray-200);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: var(--ds-space-md);
+	}
+
+	.footer-bottom p {
+		margin: 0;
+		font-size: 0.875rem;
+	}
+
+	.footer-badges {
+		display: flex;
+		gap: var(--ds-space-md);
+	}
+
+	.footer-badges span {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.375rem;
+		font-size: 0.8125rem;
+		font-weight: 500;
+	}
+
+	.privacy-badge {
+		color: var(--ds-green);
+	}
+
+	.offline-badge {
+		color: var(--ds-primary);
+	}
+
+	@media (max-width: 767px) {
+		.footer-content {
+			grid-template-columns: 1fr;
+			gap: var(--ds-space-xl);
+		}
+
+		.footer-links {
+			grid-template-columns: 1fr;
+		}
+
+		.footer-bottom {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+</style>

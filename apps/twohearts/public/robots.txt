@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://twohearts.liveintently.app/sitemap-index.xml

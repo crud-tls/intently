@@ -1,0 +1,28 @@
+{
+  "name": "intently-redirects",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-10-08",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "www.liveintently.app",
+      "custom_domain": true
+    },
+    {
+      "pattern": "health.liveintently.app",
+      "custom_domain": true
+    },
+    {
+      "pattern": "finances.liveintently.app",
+      "custom_domain": true
+    },
+    {
+      "pattern": "infocus.liveintently.app",
+      "custom_domain": true
+    },
+    {
+      "pattern": "qit.liveintently.app",
+      "custom_domain": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+---
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://liveintently.app/#organization",
+  "name": "Intently",
+  "url": "https://liveintently.app",
+  "logo": "https://liveintently.app/logo.png",
+  "description": "Intently is an independent studio making calm, privacy-minded apps, including Pawse.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "support@liveintently.app"
+  },
+  "foundingDate": "2024-01-01"
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />

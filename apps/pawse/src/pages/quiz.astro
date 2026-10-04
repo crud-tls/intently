@@ -1,0 +1,917 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/ui/Button.astro';
+import Icon from '../components/ui/Icon.astro';
+import ScrollReveal from '../components/ui/ScrollReveal.astro';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+
+const quizFaqs = [
+	{
+		question: "How do I know if I'm addicted to my phone?",
+		answer: "Signs of phone addiction include checking your phone within 5 minutes of waking, feeling anxious without it, failed attempts to reduce usage, phone use interfering with work or relationships, and mindlessly scrolling for hours. Take this free quiz to get a personalized assessment of your phone habits."
+	},
+	{
+		question: "Is this phone addiction test accurate?",
+		answer: "This quiz is based on behavioral science research and assesses 8 key areas of phone dependency. While not a clinical diagnosis, it provides a reliable indication of your relationship with your phone and personalized recommendations for improvement."
+	},
+	{
+		question: "What should I do if I score high on the phone addiction quiz?",
+		answer: "A high score indicates significant phone dependency. Start by downloading Pawse (free, no account needed) to create mindful pauses before opening distracting apps. Set daily time limits, create phone-free zones, and consider speaking with a therapist about digital dependency."
+	},
+	{
+		question: "How much screen time is considered phone addiction?",
+		answer: "While there's no universal threshold, research suggests more than 4-6 hours of non-work screen time daily, combined with compulsive checking behavior and failed reduction attempts, indicates problematic phone use. This quiz evaluates multiple factors beyond just screen time hours."
+	}
+];
+
+const questions = [
+	{
+		id: 1,
+		question: "How often do you check your phone first thing in the morning?",
+		options: [
+			{ text: "Within 5 minutes of waking up", score: 3 },
+			{ text: "Within 30 minutes", score: 2 },
+			{ text: "After my morning routine", score: 1 },
+			{ text: "I don't check it in the morning", score: 0 }
+		]
+	},
+	{
+		id: 2,
+		question: "How many hours per day do you spend on your phone?",
+		options: [
+			{ text: "More than 6 hours", score: 3 },
+			{ text: "4-6 hours", score: 2 },
+			{ text: "2-4 hours", score: 1 },
+			{ text: "Less than 2 hours", score: 0 }
+		]
+	},
+	{
+		id: 3,
+		question: "Do you feel anxious when you can't access your phone?",
+		options: [
+			{ text: "Very anxious - I panic", score: 3 },
+			{ text: "Somewhat anxious", score: 2 },
+			{ text: "A little uncomfortable", score: 1 },
+			{ text: "Not anxious at all", score: 0 }
+		]
+	},
+	{
+		id: 4,
+		question: "How often do you use your phone while spending time with others?",
+		options: [
+			{ text: "Constantly checking", score: 3 },
+			{ text: "Frequently", score: 2 },
+			{ text: "Occasionally", score: 1 },
+			{ text: "Rarely or never", score: 0 }
+		]
+	},
+	{
+		id: 5,
+		question: "Have you tried to reduce your phone usage but failed?",
+		options: [
+			{ text: "Many times - I always fail", score: 3 },
+			{ text: "A few times with limited success", score: 2 },
+			{ text: "Once or twice", score: 1 },
+			{ text: "I haven't tried", score: 0 }
+		]
+	},
+	{
+		id: 6,
+		question: "Do you reach for your phone when you're bored?",
+		options: [
+			{ text: "Always - it's automatic", score: 3 },
+			{ text: "Most of the time", score: 2 },
+			{ text: "Sometimes", score: 1 },
+			{ text: "Rarely", score: 0 }
+		]
+	},
+	{
+		id: 7,
+		question: "Does phone usage interfere with your work or studies?",
+		options: [
+			{ text: "Severely - I can't focus", score: 3 },
+			{ text: "Moderately - it's distracting", score: 2 },
+			{ text: "Slightly", score: 1 },
+			{ text: "Not at all", score: 0 }
+		]
+	},
+	{
+		id: 8,
+		question: "How often do you mindlessly scroll social media?",
+		options: [
+			{ text: "Multiple times daily for hours", score: 3 },
+			{ text: "Once or twice daily", score: 2 },
+			{ text: "A few times per week", score: 1 },
+			{ text: "Rarely", score: 0 }
+		]
+	}
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Phone Addiction Test: Am I Addicted to My Phone? (Free Quiz) | Pawse"
+			description="Take this free phone addiction quiz to find out if you're addicted to your phone. Answer 8 science-backed questions and get a personalized screen time assessment with actionable recommendations. 100% private — no data stored."
+		/>
+		<FAQSchema faqs={quizFaqs} />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://pawse.liveintently.app" },
+				{ name: "Phone Addiction Quiz", url: "https://pawse.liveintently.app/quiz" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<!-- Quiz Hero - Glass -->
+			<section class="quiz-hero">
+				<div class="hero-glow" aria-hidden="true"></div>
+				<div class="container">
+					<h1 class="text-gradient"><Icon name="Smartphone" size={32} color="var(--ds-primary)" /> Phone Addiction Quiz</h1>
+					<p class="hero-subtitle">Take this 2-minute quiz to find out if you have phone addiction</p>
+					<div class="quiz-meta-pills">
+						<span class="meta-pill">8 questions</span>
+						<span class="meta-pill">Science-backed</span>
+						<span class="meta-pill">100% confidential</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- Quiz Container -->
+			<section class="quiz-section">
+				<div class="container">
+					<ScrollReveal animation="fadeUp">
+						<div class="quiz-glass-card">
+							<div id="quiz-progress" class="progress-bar">
+								<div id="progress-fill" class="progress-fill"></div>
+							</div>
+
+							<div id="quiz-questions">
+								{questions.map((q, index) => (
+									<div class="question-slide" data-question={index + 1} style={index === 0 ? '' : 'display: none;'}>
+										<div class="question-number">Question {index + 1} of {questions.length}</div>
+										<h2 class="question-text">{q.question}</h2>
+										<div class="options-grid">
+											{q.options.map((option) => (
+												<button
+													class="option-button"
+													data-score={option.score}
+													data-question={q.id}
+												>
+													{option.text}
+												</button>
+											))}
+										</div>
+									</div>
+								))}
+							</div>
+
+							<!-- Results Section (hidden initially) -->
+							<div id="quiz-results" style="display: none;">
+								<div class="results-content">
+									<div class="result-icon-wrapper">
+										<span id="icon-severe" class="result-level-icon" style="display: none;"><Icon name="Circle" size={24} color="var(--ds-red)" /></span>
+										<span id="icon-moderate" class="result-level-icon" style="display: none;"><Icon name="Circle" size={24} color="var(--ds-orange)" /></span>
+										<span id="icon-mild" class="result-level-icon" style="display: none;"><Icon name="Circle" size={24} color="var(--ds-green)" /></span>
+										<span id="icon-healthy" class="result-level-icon" style="display: none;"><Icon name="CheckCircle2" size={24} color="var(--ds-green)" /></span>
+									</div>
+									<h2 id="result-title" class="result-title"></h2>
+									<p id="result-description" class="result-description"></p>
+
+									<div class="result-score-card">
+										<h3>Your Score</h3>
+										<div id="result-score" class="score-display"></div>
+									</div>
+
+									<div class="recommendations">
+										<h3>Recommended Actions</h3>
+										<ul id="recommendations-list" class="recommendations-list"></ul>
+									</div>
+
+									<div class="cta-buttons">
+										<Button href="/download" variant="primary" size="lg">Try Pawse Free</Button>
+										<Button href="/blog" variant="secondary" size="lg">Learn More</Button>
+									</div>
+
+									<button id="retake-quiz" class="retake-button">Retake Quiz</button>
+								</div>
+							</div>
+						</div>
+					</ScrollReveal>
+
+					<!-- Info Section -->
+					<ScrollReveal animation="fadeUp">
+						<div class="info-glass-card">
+							<h3>Why Take This Quiz?</h3>
+							<p>This phone addiction assessment is based on behavioral science research and helps you understand your relationship with technology. Your results are private and never stored.</p>
+
+							<h3>What Happens Next?</h3>
+							<p>Based on your score, you'll receive personalized recommendations to improve your digital wellbeing. Whether you need gentle reminders or more structured support, we'll guide you toward healthier habits.</p>
+
+							<h3>Frequently Asked Questions</h3>
+							{quizFaqs.map((faq) => (
+								<details class="faq-glass-item">
+									<summary>{faq.question}</summary>
+									<p>{faq.answer}</p>
+								</details>
+							))}
+
+							<div class="quiz-links">
+								<p>Want to learn more? Read our guides on <a href="/blog/how-to-stop-phone-addiction">how to stop phone addiction</a> or <a href="/blog/how-to-reduce-screen-time">how to reduce screen time</a>. Ready to take action? <a href="/download">Download Pawse free</a>.</p>
+								<p style="margin-top: var(--ds-space-md);">Try our other tools: <a href="/screen-time-calculator">Screen Time Calculator</a> or <a href="/app-addiction-score">App Addiction Score</a>.</p>
+							</div>
+						</div>
+					</ScrollReveal>
+				</div>
+			</section>
+		</main>
+
+		<Footer />
+
+		<script>
+			let currentQuestion = 1;
+			let totalScore = 0;
+			const totalQuestions = 8;
+
+			document.querySelectorAll('.option-button').forEach(button => {
+				button.addEventListener('click', function() {
+					const score = parseInt(this.dataset.score);
+					totalScore += score;
+
+					const progress = (currentQuestion / totalQuestions) * 100;
+					document.getElementById('progress-fill')!.style.width = `${progress}%`;
+
+					if (currentQuestion < totalQuestions) {
+						document.querySelector(`[data-question="${currentQuestion}"]`)!.setAttribute('style', 'display: none;');
+						currentQuestion++;
+						document.querySelector(`[data-question="${currentQuestion}"]`)!.setAttribute('style', '');
+					} else {
+						showResults();
+					}
+				});
+			});
+
+			function showResults() {
+				document.getElementById('quiz-questions')!.style.display = 'none';
+				document.getElementById('quiz-results')!.style.display = 'block';
+
+				let level, title, description, recommendations;
+
+				if (totalScore >= 18) {
+					level = 'severe';
+					title = 'Severe Phone Addiction';
+					description = 'Your phone usage is significantly impacting your daily life. You likely experience anxiety without your phone and struggle to focus on other activities. Professional support combined with digital wellbeing tools could help.';
+					recommendations = [
+						'Download Pawse to create mindful interventions',
+						'Set strict daily time limits for social media apps',
+						'Consider a digital detox (24-48 hours without phone)',
+						'Talk to a therapist about phone dependency',
+						'Use grayscale mode to reduce phone appeal'
+					];
+				} else if (totalScore >= 12) {
+					level = 'moderate';
+					title = 'Moderate Phone Addiction';
+					description = 'You show clear signs of phone dependency that occasionally interfere with daily activities. You recognize the issue but find it challenging to change habits. With the right tools and strategies, you can regain control.';
+					recommendations = [
+						'Use Pawse\'s mindful interventions to build awareness',
+						'Set app time limits (start with 30 min reduction)',
+						'Create phone-free zones (bedroom, dining table)',
+						'Replace scrolling with alternative activities',
+						'Track your usage to identify trigger times'
+					];
+				} else if (totalScore >= 6) {
+					level = 'mild';
+					title = 'Mild Phone Dependency';
+					description = 'You have a relatively healthy relationship with your phone but show some habits worth addressing. You occasionally reach for your phone mindlessly. Small adjustments can help you maintain balanced usage.';
+					recommendations = [
+						'Use Pawse to track usage patterns',
+						'Set mindful reminders for your most-used apps',
+						'Implement "no phone" during specific activities',
+						'Practice intentional phone checking',
+						'Celebrate your mindful choices'
+					];
+				} else {
+					level = 'healthy';
+					title = 'Healthy Phone Usage';
+					description = 'Congratulations! You have a balanced relationship with your phone. You use it intentionally and rarely feel controlled by it. Continue your mindful approach to maintain this healthy relationship.';
+					recommendations = [
+						'Maintain your current habits',
+						'Use Pawse to track and celebrate progress',
+						'Be mindful of gradual usage creep',
+						'Share your strategies with others',
+						'Stay informed about digital wellbeing'
+					];
+				}
+
+				document.getElementById('result-title')!.textContent = title;
+				document.getElementById('result-description')!.textContent = description;
+				document.getElementById('result-score')!.textContent = `${totalScore} out of 24`;
+
+				['severe', 'moderate', 'mild', 'healthy'].forEach(l => {
+					const icon = document.getElementById(`icon-${l}`);
+					if (icon) {
+						icon.style.display = l === level ? 'inline-flex' : 'none';
+					}
+				});
+
+				const recList = document.getElementById('recommendations-list')!;
+				recommendations.forEach((rec: string) => {
+					const li = document.createElement('li');
+					li.innerHTML = `<span class="rec-icon">&#10003;</span>${rec}`;
+					recList.appendChild(li);
+				});
+			}
+
+			document.getElementById('retake-quiz')?.addEventListener('click', function() {
+				currentQuestion = 1;
+				totalScore = 0;
+				document.getElementById('progress-fill')!.style.width = '0%';
+				document.getElementById('recommendations-list')!.innerHTML = '';
+
+				document.getElementById('quiz-questions')!.style.display = 'block';
+				document.getElementById('quiz-results')!.style.display = 'none';
+
+				document.querySelectorAll('.question-slide').forEach((slide, index) => {
+					if (index === 0) {
+						slide.setAttribute('style', '');
+					} else {
+						slide.setAttribute('style', 'display: none;');
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
+
+<style>
+	main {
+		width: 100%;
+	}
+
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* ============================
+	   HERO - Glass
+	   ============================ */
+	.quiz-hero {
+		width: 100%;
+		padding: var(--ds-space-2xl) 0;
+		background: linear-gradient(180deg, var(--ds-bg-accent) 0%, var(--ds-bg-secondary) 100%);
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.quiz-hero::before {
+		content: '';
+		display: block;
+		height: 7rem;
+	}
+
+	.hero-glow {
+		position: absolute;
+		top: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 600px;
+		height: 400px;
+		background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.12) 0%, transparent 70%);
+		filter: blur(60px);
+		pointer-events: none;
+	}
+
+	.text-gradient {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0 var(--ds-space-md);
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		background: linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-purple) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-subtitle {
+		font-size: 1.125rem;
+		margin: 0 0 var(--ds-space-md);
+		color: var(--ds-text-secondary);
+		line-height: 1.6;
+	}
+
+	.quiz-meta-pills {
+		display: flex;
+		gap: var(--ds-space-sm);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.meta-pill {
+		display: inline-flex;
+		align-items: center;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--ds-primary);
+		background: rgba(var(--ds-brand-rgb),  0.08);
+		padding: 0.25rem 0.75rem;
+		border-radius: var(--ds-radius-full);
+		border: 1px solid rgba(var(--ds-brand-rgb),  0.15);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.hero-glow {
+			background: radial-gradient(ellipse, rgba(var(--ds-brand-rgb),  0.08) 0%, transparent 70%);
+		}
+
+		.meta-pill {
+			background: rgba(var(--ds-brand-rgb),  0.12);
+			border-color: rgba(var(--ds-brand-rgb),  0.2);
+		}
+	}
+
+	/* ============================
+	   QUIZ SECTION
+	   ============================ */
+	.quiz-section {
+		width: 100%;
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
+	}
+
+	/* Glass quiz card */
+	.quiz-glass-card {
+		padding: var(--ds-space-2xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+		margin-bottom: var(--ds-space-2xl);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.quiz-glass-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	/* Progress bar */
+	.progress-bar {
+		width: 100%;
+		height: 8px;
+		background: rgba(0, 0, 0, 0.06);
+		border-radius: var(--ds-radius-full);
+		overflow: hidden;
+		margin-bottom: var(--ds-space-2xl);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.progress-bar {
+			background: rgba(255, 255, 255, 0.08);
+		}
+	}
+
+	.progress-fill {
+		height: 100%;
+		background: linear-gradient(90deg, var(--ds-primary), var(--ds-purple));
+		border-radius: var(--ds-radius-full);
+		transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		width: 0%;
+	}
+
+	/* Question styles */
+	.question-number {
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--ds-primary);
+		margin-bottom: var(--ds-space-sm);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+
+	.question-text {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--ds-text-primary);
+		margin: 0 0 var(--ds-space-xl);
+		line-height: 1.3;
+	}
+
+	.options-grid {
+		display: grid;
+		gap: var(--ds-space-md);
+	}
+
+	/* Glass option pills */
+	.option-button {
+		width: 100%;
+		padding: var(--ds-space-md) var(--ds-space-lg);
+		background: rgba(255, 255, 255, 0.6);
+		backdrop-filter: blur(12px) saturate(140%);
+		-webkit-backdrop-filter: blur(12px) saturate(140%);
+		border: 2px solid rgba(255, 255, 255, 0.7);
+		border-radius: 16px;
+		font-size: 1rem;
+		font-weight: 500;
+		color: var(--ds-text-primary);
+		text-align: left;
+		cursor: pointer;
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+	}
+
+	@media (hover: hover) {
+		.option-button:hover {
+			transform: scale(1.02);
+			border-color: var(--ds-primary);
+			background: rgba(var(--ds-brand-rgb),  0.06);
+			box-shadow:
+				0 4px 16px rgba(var(--ds-brand-rgb),  0.1),
+				inset 0 1px 0 rgba(255, 255, 255, 0.5);
+		}
+	}
+
+	.option-button:active {
+		transform: scale(0.98);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.option-button {
+			background: rgba(255, 255, 255, 0.06);
+			border-color: rgba(255, 255, 255, 0.1);
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.option-button:hover {
+			background: rgba(var(--ds-brand-rgb),  0.1);
+			border-color: var(--ds-primary);
+		}
+	}
+
+	/* ============================
+	   RESULTS
+	   ============================ */
+	.results-content {
+		text-align: center;
+	}
+
+	.result-icon-wrapper {
+		margin-bottom: var(--ds-space-md);
+	}
+
+	.result-level-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.04);
+	}
+
+	.result-title {
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin: 0 0 var(--ds-space-md);
+		color: var(--ds-text-primary);
+	}
+
+	.result-description {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: var(--ds-text-secondary);
+		margin: 0 0 var(--ds-space-xl);
+	}
+
+	.result-score-card {
+		padding: var(--ds-space-lg);
+		background: rgba(0, 0, 0, 0.03);
+		border-radius: 16px;
+		margin-bottom: var(--ds-space-xl);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.result-score-card {
+			background: rgba(255, 255, 255, 0.06);
+		}
+
+		.result-level-icon {
+			background: rgba(255, 255, 255, 0.08);
+		}
+	}
+
+	.result-score-card h3 {
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--ds-text-secondary);
+		margin: 0 0 var(--ds-space-sm);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+
+	.score-display {
+		font-size: 2rem;
+		font-weight: 700;
+		background: linear-gradient(135deg, var(--ds-primary), var(--ds-purple));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.recommendations {
+		text-align: left;
+		margin-bottom: var(--ds-space-xl);
+	}
+
+	.recommendations h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0 0 var(--ds-space-md);
+		color: var(--ds-text-primary);
+	}
+
+	.recommendations-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.recommendations-list li {
+		padding: var(--ds-space-sm) 0;
+		display: flex;
+		align-items: flex-start;
+		gap: var(--ds-space-sm);
+		line-height: 1.5;
+		color: var(--ds-text-secondary);
+	}
+
+	.rec-icon {
+		color: var(--ds-green);
+		font-weight: 700;
+		flex-shrink: 0;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: var(--ds-space-md);
+		justify-content: center;
+		margin-bottom: var(--ds-space-xl);
+		flex-wrap: wrap;
+	}
+
+	.retake-button {
+		background: none;
+		border: none;
+		color: var(--ds-primary);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		cursor: pointer;
+		text-decoration: underline;
+		padding: var(--ds-space-sm);
+		transition: color var(--ds-transition-fast);
+	}
+
+	.retake-button:hover {
+		color: var(--ds-purple);
+	}
+
+	/* ============================
+	   INFO SECTION - Glass
+	   ============================ */
+	.info-glass-card {
+		padding: var(--ds-space-xl);
+		background: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px) saturate(160%);
+		-webkit-backdrop-filter: blur(20px) saturate(160%);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.9),
+			0 4px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.info-glass-card {
+			background: rgba(30, 30, 30, 0.75);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 255, 255, 0.1),
+				0 4px 20px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	.info-glass-card h3 {
+		font-size: 1.125rem;
+		font-weight: 700;
+		margin: 0 0 var(--ds-space-sm);
+		color: var(--ds-text-primary);
+	}
+
+	.info-glass-card > p {
+		line-height: 1.6;
+		color: var(--ds-text-secondary);
+		margin: 0 0 var(--ds-space-lg);
+	}
+
+	/* Glass FAQ accordion */
+	.faq-glass-item {
+		background: rgba(0, 0, 0, 0.03);
+		border-radius: 12px;
+		margin-bottom: var(--ds-space-sm);
+		transition: all 0.3s ease;
+	}
+
+	.faq-glass-item[open] {
+		background: rgba(0, 0, 0, 0.05);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.faq-glass-item {
+			background: rgba(255, 255, 255, 0.04);
+		}
+
+		.faq-glass-item[open] {
+			background: rgba(255, 255, 255, 0.07);
+		}
+	}
+
+	.faq-glass-item summary {
+		padding: var(--ds-space-md);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		color: var(--ds-text-primary);
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--ds-space-sm);
+		transition: color 0.2s ease;
+	}
+
+	.faq-glass-item summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-glass-item summary::after {
+		content: '+';
+		font-size: 1.25rem;
+		font-weight: 300;
+		color: var(--ds-text-hint);
+		flex-shrink: 0;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.04);
+		transition: all 0.3s ease;
+		line-height: 1;
+	}
+
+	.faq-glass-item[open] summary::after {
+		content: '\2212';
+		background: rgba(var(--ds-brand-rgb),  0.1);
+		color: var(--ds-primary);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.faq-glass-item summary::after {
+			background: rgba(255, 255, 255, 0.08);
+		}
+
+		.faq-glass-item[open] summary::after {
+			background: rgba(var(--ds-brand-rgb),  0.15);
+		}
+	}
+
+	@media (hover: hover) {
+		.faq-glass-item summary:hover {
+			color: var(--ds-primary);
+		}
+	}
+
+	.faq-glass-item p {
+		padding: 0 var(--ds-space-md) var(--ds-space-md);
+		margin: 0;
+		line-height: 1.6;
+		color: var(--ds-text-secondary);
+		font-size: 0.9375rem;
+	}
+
+	.quiz-links {
+		margin-top: var(--ds-space-lg);
+		padding-top: var(--ds-space-lg);
+		border-top: 1px solid rgba(0, 0, 0, 0.06);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.quiz-links {
+			border-top-color: rgba(255, 255, 255, 0.08);
+		}
+	}
+
+	.quiz-links p {
+		margin: 0;
+	}
+
+	.quiz-links a {
+		color: var(--ds-primary);
+		font-weight: 600;
+		text-decoration: none;
+		transition: color var(--ds-transition-fast);
+	}
+
+	.quiz-links a:hover {
+		text-decoration: underline;
+	}
+
+	/* ============================
+	   RESPONSIVE
+	   ============================ */
+	@media (min-width: 768px) {
+		.quiz-hero {
+			padding: var(--ds-space-3xl) 0;
+		}
+
+		.text-gradient {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.25rem;
+		}
+
+		.question-text {
+			font-size: 1.75rem;
+		}
+
+		.quiz-glass-card {
+			padding: var(--ds-space-3xl);
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.quiz-hero {
+			padding: var(--ds-space-4xl) 0;
+		}
+
+		.text-gradient {
+			font-size: 3rem;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.quiz-glass-card {
+			padding: var(--ds-space-lg);
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+
+		.info-glass-card {
+			padding: var(--ds-space-lg);
+		}
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--ds-primary);
+		outline-offset: 2px;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.option-button,
+		.faq-glass-item {
+			transition: none;
+		}
+
+		.progress-fill {
+			transition: none;
+		}
+	}
+</style>

@@ -1,0 +1,144 @@
+---
+import Base from '../layouts/Base.astro';
+import Postcard from '../components/world/Postcard.astro';
+import { APPS, STUDIO } from '@intently/registry';
+---
+
+<Base title="Contact" sky="dusk" description="Questions, feedback or support for any Intently app: write to us here or email the app directly.">
+	<main>
+		<Postcard id="relationships" as="header" eager label="contact-title">
+			<h1 id="contact-title" class="display">Get in touch.</h1>
+			<p class="lede">Questions, bug reports or ideas about any of our apps. We usually reply within two days.</p>
+		</Postcard>
+	<div class="wrap contact">
+		<p class="muted">You can also email the app directly; each one's address is listed below.</p>
+
+		<form id="contact-form" novalidate>
+			<label>Which app is this about?
+				<select name="app">
+					<option value="">Something else / the studio</option>
+					{APPS.map((a) => <option value={a.id}>{a.name}</option>)}
+				</select>
+			</label>
+			<label>Your name
+				<input name="name" autocomplete="name" required minlength="2" />
+				<span class="error" data-for="name"></span>
+			</label>
+			<label>Your email
+				<input name="email" type="email" autocomplete="email" required />
+				<span class="error" data-for="email"></span>
+			</label>
+			<label>Message
+				<textarea name="message" rows="6" required minlength="10"></textarea>
+				<span class="error" data-for="message"></span>
+			</label>
+			<label class="trap" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off" /></label>
+			<button class="button" type="submit">Send message</button>
+			<p id="status" role="status" aria-live="polite"></p>
+		</form>
+
+		<h2>Email us directly</h2>
+		<ul class="emails">
+			{APPS.map((a) => <li><span>{a.name}</span> <a href={`mailto:${a.email}`}>{a.email}</a></li>)}
+			<li><span>Studio</span> <a href={`mailto:${STUDIO.email}`}>{STUDIO.email}</a></li>
+		</ul>
+	</div>
+	</main>
+
+	<script>
+		const form = document.getElementById('contact-form') as HTMLFormElement;
+		// Links like /contact/?app=loop open with that app chosen (the page itself is static).
+		const wanted = new URLSearchParams(location.search).get('app');
+		const select = form.querySelector<HTMLSelectElement>('select[name="app"]')!;
+		if (wanted && [...select.options].some((o) => o.value === wanted)) select.value = wanted;
+		const status = document.getElementById('status')!;
+		form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+			form.querySelectorAll('.error').forEach((e) => (e.textContent = ''));
+			const button = form.querySelector('button')!;
+			button.disabled = true;
+			status.textContent = 'Sending…';
+			try {
+				const response = await fetch('/api/contact', { method: 'POST', body: new FormData(form) });
+				const data = await response.json();
+				if (data.success) {
+					form.reset();
+					status.textContent = 'Thanks! Your message is on its way.';
+				} else {
+					for (const [key, message] of Object.entries(data.errors ?? {})) {
+						const slot = form.querySelector(`.error[data-for="${key}"]`);
+						if (slot) slot.textContent = message as string;
+					}
+					status.textContent = data.message ?? 'Please fix the highlighted fields.';
+				}
+			} catch {
+				status.textContent = 'Could not send. Please email us directly.';
+			} finally {
+				button.disabled = false;
+			}
+		});
+	</script>
+</Base>
+
+<style>
+	.contact {
+		max-width: 640px;
+		padding-top: 48px;
+	}
+
+	h1 {
+		font-size: clamp(2.6rem, 6vw, 4.6rem);
+		margin: 0 0 1rem;
+	}
+
+	.lede { margin: 0; color: var(--ink2); }
+
+	form {
+		display: grid;
+		gap: 18px;
+		margin: 32px 0 56px;
+	}
+
+	label {
+		display: grid;
+		gap: 6px;
+		font-weight: 600;
+	}
+
+	input, select, textarea {
+		font: inherit;
+		font-weight: 400;
+		padding: 12px 14px;
+		border-radius: 14px;
+		border: 1px solid var(--line);
+		background: var(--surface);
+		color: var(--text);
+	}
+
+	.error {
+		color: #ffb1a3;
+		font-weight: 500;
+		font-size: 0.9rem;
+		min-height: 1em;
+	}
+
+	.trap {
+		position: absolute;
+		left: -9999px;
+	}
+
+	button { justify-self: start; }
+
+	.emails {
+		list-style: none;
+		padding: 0;
+	}
+
+	.emails li {
+		display: flex;
+		justify-content: space-between;
+		gap: 16px;
+		padding: 10px 0;
+		border-bottom: 1px solid var(--line);
+	}
+</style>

@@ -1,0 +1,103 @@
+/* Hub design tokens, on top of @intently/ui/base.css. The hours themselves come from
+   src/components/SkyStyles.astro; this file maps them onto the shared tokens and sets type. */
+:root {
+	--serif: "Fraunces Variable", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+	--sans: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+	--ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+	--measure: 34rem;
+}
+
+/* A page that happens at an hour stands on that hour's ground: content sits on the soil. */
+html[data-sky] {
+	--bg: var(--soil);
+	--text: var(--soil-ink);
+	--text-2: var(--soil-ink2);
+	--accent: var(--soil-accent);
+	--line: color-mix(in srgb, var(--soil-ink) 16%, transparent);
+	--surface: color-mix(in srgb, var(--soil) 90%, var(--soil-ink) 10%);
+	color: var(--soil-ink);
+}
+
+html[data-sky] body {
+	background: var(--soil);
+}
+
+/* Words over a landscape read in the sky's own ink. */
+.sky-words {
+	--bg: var(--sky-top);
+	--text: var(--ink);
+	--text-2: var(--ink2);
+	--accent: var(--sky-accent);
+	color: var(--ink);
+	text-shadow: 0 1px 28px color-mix(in srgb, var(--sky-top) 70%, transparent);
+}
+
+.sky-words .button { text-shadow: none; }
+
+/* Fraunces with its soft axis turned up: round and warm at display sizes. */
+.display {
+	font-family: var(--serif);
+	font-weight: 480;
+	font-variation-settings: "SOFT" 100;
+	letter-spacing: -0.025em;
+	line-height: 1.04;
+	text-wrap: balance;
+}
+
+/* When in the day a chapter happens, and which part of life it is. */
+.when {
+	display: flex;
+	align-items: center;
+	gap: 0.6em;
+	margin: 0 0 1rem;
+	font-size: 0.95rem;
+	font-weight: 550;
+	color: var(--text-2);
+	font-variant-numeric: tabular-nums;
+}
+
+.when strong {
+	color: var(--text);
+	font-weight: 650;
+}
+
+.when .light {
+	width: 0.7em;
+	height: 0.7em;
+	border-radius: 50%;
+	background: var(--light, var(--glow));
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--light, var(--glow)) 30%, transparent),
+		0 0 18px var(--light, var(--glow));
+}
+
+.lede {
+	font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+	line-height: 1.6;
+	max-width: var(--measure);
+	text-wrap: pretty;
+}
+
+/* Controls that only work with JavaScript stay out of the way without it. */
+html:not(.js) .needs-js { display: none !important; }
+html.js .no-js-only { display: none !important; }
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+/* A text link that reads as the next step: underlined, in the current ink. */
+.step {
+	font-weight: 650;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 0.3em;
+	text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+	transition: text-decoration-color 200ms ease;
+}
+
+.step:hover { text-decoration-color: currentColor; }

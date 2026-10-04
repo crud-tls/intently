@@ -1,0 +1,33 @@
+---
+/**
+ * Before dawn: the night the day begins from, at the tent. The logo keeps data-splash-target: the
+ * first-visit splash flies the animated mark onto it.
+ */
+import Postcard from '../world/Postcard.astro';
+---
+
+<Postcard id="prologue" eager label="prologue-title">
+	<img src="/brand/intently-logo.svg" alt="" width="76" height="76" class="logo" data-splash-target />
+	<h1 id="prologue-title" class="display">Most days just happen.</h1>
+	<p class="lede">Walk through one with us, from first light to the quiet after dark, and notice the seven
+		places where a little intention goes a long way.</p>
+	<a class="button" href="#time">Start at dawn</a>
+</Postcard>
+
+<style>
+	.logo {
+		display: block;
+		margin: 0 auto 24px;
+	}
+
+	h1 {
+		font-size: clamp(3rem, 8.5vw, 6.6rem);
+		margin: 0 auto 1.3rem;
+		max-width: 12ch !important;
+	}
+
+	.lede {
+		margin: 0 auto 2rem;
+		color: var(--ink2);
+	}
+</style>

@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import LegalArticle from '@intently/legal/LegalArticle.astro';
+import type { MarkdownInstance } from 'astro';
+import * as md from '@intently/legal/policies/intently/privacy.md';
+
+// A namespace import of a Markdown file is its MarkdownInstance; TypeScript only knows the module shape.
+const policy = md as unknown as MarkdownInstance<{ title: string; updated: string | Date }>;
+---
+
+<Base title={policy.frontmatter.title} description="How liveintently.app handles your data: what the website collects, why, and what you can ask us to do. Each app has its own policy on its own site.">
+	<main>
+		<LegalArticle policy={policy} />
+	</main>
+</Base>

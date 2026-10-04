@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://pawse.liveintently.app/sitemap-index.xml

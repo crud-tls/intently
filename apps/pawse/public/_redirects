@@ -1,0 +1,27 @@
+# Redirects for consolidated blog and resources page
+/resources                      /blog                       301
+/guides/screen-time-reduction   /blog#getting-started       301
+/comparisons                    /blog#comparisons           301
+
+# Comparison posts renamed with the Intently -> Pawse rebrand
+/blog/intently-vs-brick  /blog/pawse-vs-brick  301
+/blog/intently-vs-clearspace  /blog/pawse-vs-clearspace  301
+/blog/intently-vs-flowbuddy  /blog/pawse-vs-flowbuddy  301
+/blog/intently-vs-forest  /blog/pawse-vs-forest  301
+/blog/intently-vs-freedom  /blog/pawse-vs-freedom  301
+/blog/intently-vs-google-digital-wellbeing  /blog/pawse-vs-google-digital-wellbeing  301
+/blog/intently-vs-one-sec  /blog/pawse-vs-one-sec  301
+/blog/intently-vs-opal  /blog/pawse-vs-opal  301
+/blog/intently-vs-refocus  /blog/pawse-vs-refocus  301
+/blog/intently-vs-screenzen  /blog/pawse-vs-screenzen  301
+
+# Chrome extension policy moved under /privacy; the old paths are in store listings.
+/privacy-chrome               /privacy/chrome          301
+/privacy-policy-chrome.html   /privacy/chrome          301
+/privacy-policy-chrome        /privacy/chrome          301
+# The deletion email from the API linked here before the page existed.
+/confirm-deletion             /delete-account/confirm  301
+
+# The iPhone app is now Respite, with its own site.
+/privacy/ios     https://respite.liveintently.app/privacy/   301
+/privacy/ios/    https://respite.liveintently.app/privacy/   301

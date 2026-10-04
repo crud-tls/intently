@@ -1,0 +1,48 @@
+---
+/** Faith: a verse to sit with by lantern light, in Arabic and in translation. */
+import '@fontsource/amiri-quran/arabic-400.css';
+import FeelFrame from './FeelFrame.astro';
+import type { Chapter } from '../../data/chapters.ts';
+
+interface Props {
+	caption: string;
+	verse: NonNullable<Chapter['verse']>;
+}
+
+const { caption, verse } = Astro.props;
+---
+
+<FeelFrame caption={caption} tone="dark">
+	<blockquote class="verse">
+		<p class="arabic" lang="ar" dir="rtl">{verse.arabic}</p>
+		<p class="translation display">{verse.translation}</p>
+		<footer>{verse.source}. Translation: {verse.translator}.</footer>
+	</blockquote>
+</FeelFrame>
+
+<style>
+	.verse {
+		margin: 0;
+		text-align: center;
+	}
+
+	.arabic {
+		font-family: "Amiri Quran", serif;
+		font-size: clamp(1.8rem, 4.4vw, 2.8rem);
+		line-height: 2.1;
+		margin: 0 0 20px;
+		color: var(--accent);
+	}
+
+	.translation {
+		font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+		line-height: 1.4;
+		max-width: 34ch;
+		margin: 0 auto 18px;
+	}
+
+	footer {
+		font-size: 0.9rem;
+		color: var(--text-2);
+	}
+</style>

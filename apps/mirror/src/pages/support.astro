@@ -1,0 +1,13 @@
+---
+import '@fontsource-variable/inter/wght.css';
+import AppLayout from '@intently/ui/AppLayout.astro';
+import Support from '@intently/ui/Support.astro';
+import { app } from '@intently/registry';
+import { content } from '../content';
+
+const a = app('mirror');
+---
+
+<AppLayout app={a} content={content} title="Support" description={`Get help with ${a.name}.`}>
+	<Support app={a} content={content} />
+</AppLayout>

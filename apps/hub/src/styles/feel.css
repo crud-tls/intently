@@ -1,0 +1,78 @@
+/* Shared look of the chapter interactives (src/components/feel/live/*): plain controls on a soft
+   piece of the hero's sky, numbers in the display face. */
+.feel-live {
+	margin-top: 1.4rem;
+	text-shadow: none;
+}
+
+.feel-live .ask { margin: 0 0 1rem; color: var(--ink2); }
+
+.feel-live .fields {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px 22px;
+}
+
+.feel-live .field {
+	display: grid;
+	gap: 6px;
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+
+.feel-live output { font-variant-numeric: tabular-nums; }
+
+.feel-live input[type="range"] {
+	width: 100%;
+	accent-color: var(--sky-accent);
+}
+
+.feel-live .readout {
+	margin: 1rem 0 0.4rem;
+	font-family: var(--serif);
+	font-variation-settings: "SOFT" 100;
+	font-size: clamp(1.2rem, 2.1vw, 1.55rem);
+	line-height: 1.3;
+}
+
+.feel-live .readout strong {
+	font-weight: 600;
+	font-variant-numeric: tabular-nums lining-nums;
+}
+
+.feel-live .assume,
+.feel-live .hint {
+	margin: 0;
+	font-size: 0.85rem;
+	color: var(--ink2);
+}
+
+.feel-live .hint { margin-top: 0.5rem; }
+
+.feel-live .cue {
+	min-height: 1.6em;
+	margin: 0.6rem 0 1rem;
+	font-family: var(--serif);
+	font-variation-settings: "SOFT" 100;
+	font-size: 1.25rem;
+}
+
+/* Press-and-hold buttons (src/scripts/feel/hold.ts). */
+.feel-live .hold {
+	min-width: 12rem;
+	justify-content: center;
+	touch-action: none;
+	user-select: none;
+	-webkit-user-select: none;
+	transition: transform 300ms var(--ease-out);
+}
+
+.feel-live .hold[aria-pressed="true"] { transform: scale(0.96); }
+
+@media (prefers-reduced-motion: reduce) {
+	.feel-live .hold { transition: none; }
+}
+
+@media (max-width: 520px) {
+	.feel-live .fields { grid-template-columns: 1fr; }
+}

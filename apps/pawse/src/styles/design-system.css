@@ -1,0 +1,164 @@
+/**
+ * Pawse Design System
+ * Warm cream and orange, matching the Pawse app
+ */
+
+:root {
+	/* === Brand Colors === */
+	/* Primary - Pawse orange for brand identity and CTAs */
+	/* Pawse orange is decorative (logo, gradients, glows); text and buttons use the darker
+	   primary, which keeps 4.5:1 contrast on cream and white. */
+	--ds-brand: #FF8A3D;
+	--ds-brand-rgb: 255, 138, 61;
+	--ds-primary-rgb: 184, 78, 23;
+	--ds-primary-dark-rgb: 143, 59, 16;
+	--ds-primary: #B84E17;
+	/* Text on brand orange is always dark; text on primary flips with the theme. */
+	--ds-on-brand: #2A1E16;
+	--ds-on-primary: #FFFFFF;
+	--ds-primary-dark: #8F3B10;
+	--ds-primary-light: #FFE3CC;
+
+	/* Success - Green for goals achieved, positive trends */
+	--ds-green: #3E9B4F;
+	--ds-green-dark: #2F7A3D;
+	--ds-green-light: #D6EFD9;
+
+	/* Warning - Orange for approaching limits */
+	--ds-orange: #E8A317;
+	--ds-orange-dark: #B97F0C;
+	--ds-orange-light: #FCEBC4;
+
+	/* Urgent - Red for limits exceeded */
+	--ds-red: #F44336;
+	--ds-red-dark: #D32F2F;
+	--ds-red-light: #FFCDD2;
+
+	/* Milestone - Purple for achievements */
+	--ds-purple: #D9467A;
+	--ds-purple-dark: #B02E5E;
+	--ds-purple-light: #FAD6E2;
+
+	/* === Neutral Colors === */
+	--ds-gray-50: #FBF6F0;
+	--ds-gray-100: #F5EDE4;
+	--ds-gray-200: #EADFD3;
+	--ds-gray-300: #DCCDBE;
+	--ds-gray-400: #BFAE9E;
+	--ds-gray-500: #9C8A7A;
+	--ds-gray-600: #7A6858;
+	--ds-gray-700: #5E4E41;
+	--ds-gray-800: #43362C;
+	--ds-gray-900: #2A1E16;
+
+	/* === Semantic Colors === */
+	--ds-bg-primary: #FFFAF3;
+	--ds-bg-secondary: #FFF3E6;
+	--ds-bg-accent: #FFE8D4;
+
+	/* Tinted backgrounds for alert boxes */
+	--ds-bg-info: #FFEFE0;
+	--ds-bg-warning: #FFF3E0;
+	--ds-bg-success: #E8F5E9;
+	--ds-bg-error: #FFEBEE;
+
+	--ds-text-primary: #2A1E16;
+	--ds-text-secondary: #6E5A4C;
+	--ds-text-hint: #9C8676;
+
+	/* === Shadows - Material 3 elevation === */
+	--ds-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+	--ds-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+	--ds-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+	--ds-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+
+	/* === Border Radius - Material 3 === */
+	--ds-radius-sm: 8px;
+	--ds-radius-md: 12px;
+	--ds-radius-lg: 16px;
+	--ds-radius-xl: 24px;
+	--ds-radius-full: 9999px;
+
+	/* === Spacing Scale === */
+	--ds-space-xs: 0.25rem; /* 4px */
+	--ds-space-sm: 0.5rem; /* 8px */
+	--ds-space-md: 1rem; /* 16px */
+	--ds-space-lg: 1.5rem; /* 24px */
+	--ds-space-xl: 2rem; /* 32px */
+	--ds-space-2xl: 3rem; /* 48px */
+	--ds-space-3xl: 4rem; /* 64px */
+	--ds-space-4xl: 6rem; /* 96px */
+	--ds-space-5xl: 8rem; /* 128px */
+
+	/* === Transitions === */
+	--ds-transition-fast: 150ms ease;
+	--ds-transition-normal: 250ms ease;
+	--ds-transition-slow: 350ms ease;
+
+	/* === Breakpoints (Mobile-First) === */
+	--breakpoint-mobile: 0px;
+	--breakpoint-tablet: 768px;
+	--breakpoint-desktop: 1024px;
+	--breakpoint-wide: 1280px;
+
+	/* === Touch Targets (Mobile-First) === */
+	--touch-target-min: 44px;
+	--touch-target-comfortable: 48px;
+}
+
+/* === Dark Mode === */
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* === Semantic Backgrounds === */
+		--ds-bg-primary: #1E1712;
+		--ds-bg-secondary: #2A2019;
+		--ds-bg-accent: #3A2A1E;
+
+		/* === Tinted Backgrounds === */
+		--ds-bg-info: #3A2A1E;
+		--ds-bg-warning: #2D2416;
+		--ds-bg-success: #1B2E1D;
+		--ds-bg-error: #2C1B1D;
+
+		/* === Text Colors - inverted for dark mode === */
+		--ds-text-primary: #F5EADF;
+		--ds-text-secondary: #C9B7A6;
+		--ds-text-hint: #8F7D6D;
+
+		/* === Neutral Colors - dark variants === */
+		--ds-gray-50: #2A2019;
+		--ds-gray-100: #33271F;
+		--ds-gray-200: #413328;
+		--ds-gray-300: #4F3F33;
+		--ds-gray-400: #6E5B4C;
+		--ds-gray-500: #8F7D6D;
+		--ds-gray-600: #AD9A89;
+		--ds-gray-700: #C9B7A6;
+		--ds-gray-800: #E3D5C8;
+		--ds-gray-900: #FFF8F0;
+
+		/* === Shadows - need more opacity for dark backgrounds === */
+		--ds-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+		--ds-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+		--ds-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+		--ds-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+
+		/* === Brand Colors - slightly muted for dark mode === */
+		--ds-primary: #FF9A55;
+		--ds-on-primary: #2A1E16;
+		--ds-primary-dark: #E8702A;
+		--ds-primary-light: #4A2E1C;
+		--ds-green: #66BB6A;
+		--ds-green-dark: #43A047;
+		--ds-green-light: #4CAF50;
+		--ds-orange: #FFA726;
+		--ds-orange-dark: #FB8C00;
+		--ds-orange-light: #FFB74D;
+		--ds-red: #EF5350;
+		--ds-red-dark: #E53935;
+		--ds-red-light: #E57373;
+		--ds-purple: #F06B9A;
+		--ds-purple-dark: #D9467A;
+		--ds-purple-light: #4A2232;
+	}
+}

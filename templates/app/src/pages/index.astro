@@ -1,0 +1,13 @@
+---
+import '@fontsource-variable/inter/wght.css';
+import AppLayout from '@intently/ui/AppLayout.astro';
+import Landing from '@intently/ui/Landing.astro';
+import { app } from '@intently/registry';
+import { content } from '../content';
+
+const a = app('{{ID}}');
+---
+
+<AppLayout app={a} content={content} title={a.name} description={content.subhead}>
+	<Landing app={a} content={content} />
+</AppLayout>

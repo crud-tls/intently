@@ -1,0 +1,20 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import TailEnd from '../components/feel/TailEnd.astro';
+import RelationshipsLive from '../components/feel/live/RelationshipsLive.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('relationships');
+---
+
+<Chapter chapter={c}>
+	<RelationshipsLive slot="live" intro={c.feel.intro} />
+	<TailEnd slot="feel" caption={c.feel.example} />
+</Chapter>
+
+<script>
+	import { startChapter } from '../scripts/world/chapter.ts';
+	import { mountRelationships } from '../scripts/feel/relationships.ts';
+
+	startChapter('relationships', mountRelationships(document));
+</script>

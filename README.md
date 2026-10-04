@@ -1,87 +1,56 @@
-# Intently Web Documentation
+# Intently sites
 
-**Created:** January 21, 2026
-**Location:** `/Users/fahad/myLab/web/intently/`
+Intently is the studio; each app has its own site on a subdomain of `liveintently.app`.
+This repo is an npm-workspaces monorepo with one Astro site per Cloudflare Worker, so deploying
+one app's site can never break another app's privacy page.
 
----
+| Workspace | Host | Worker |
+|---|---|---|
+| `apps/hub` | `liveintently.app` (preview: `intently-hub.fsadakathussain.workers.dev`) | `intently-hub` |
+| `apps/pawse` | `pawse.liveintently.app` (preview: `pawse-site.fsadakathussain.workers.dev`) | `pawse-site` |
+| `apps/<id>` (loop, qandeel, mirror, paceshift, twohearts, hisab) | `<id>.liveintently.app` (preview: `<id>-site.fsadakathussain.workers.dev`) | `<id>-site` |
 
-## 📁 File Structure
+Shared packages: `packages/registry` (one record per app), `packages/legal` (each app's policies
+and the component that renders them), `packages/ui` (base styles and the app-site layout,
+landing, support and account-deletion sections).
 
-```
-/Users/fahad/myLab/web/intently/
-├── index.html                      # Landing page
-├── privacy-policy-android.html     # Privacy Policy for Android app
-├── terms-of-service.html          # Terms of Service
-└── README.md                      # This file
-```
+## Adding an app
 
----
+1. Add it to `packages/registry/src/apps.ts` (and its icon to `apps/hub/public/icons/`).
+2. Write its policies in `packages/legal/policies/<id>/` from what the code actually does.
+3. `node tools/create-app.mjs <id> [--accounts]`, then write `apps/<id>/src/content.ts`.
+4. `npm install`, build, deploy the preview, then add the custom domain and its email alias.
 
-## 🌐 URLs for Google Play
+More app sites arrive in later phases; see
+`docs/house-of-brands.md` for the plan, decisions and status.
 
-### Privacy Policy URL (for Google Play Console):
-```
-https://yourdomain.com/privacy-policy-android.html
-```
-
-### Terms of Service URL:
-```
-https://yourdomain.com/terms-of-service.html
-```
-
----
-
-## 🚀 Quick Deployment (GitHub Pages)
+## Commands
 
 ```bash
-cd /Users/fahad/myLab/web/intently
-git init
-git add .
-git commit -m "Initial commit: Intently legal pages"
-
-# Create repo on GitHub, then:
-git remote add origin https://github.com/YOUR_USERNAME/intently-website.git
-git push -u origin main
-
-# Enable GitHub Pages in repo settings
-# Your URL will be: https://YOUR_USERNAME.github.io/intently-website/
+npm install                                   # once, at the repo root
+npm run dev:pawse                             # local dev server for one site
+npm run build                                 # build every site
+npm run check                                 # build + type-check + wrangler dry-run, every site
+npm run deploy -w @intently/pawse-site        # deploy one site (ask first: it is production)
+npm test -w @intently/hub-site                # hub unit tests (terrain, timeline, palettes, maths…)
+npm run test:e2e -w @intently/hub-site        # hub end-to-end: desktop Chrome/Safari, Android, iPhone, iPad
 ```
 
----
+The hub's end-to-end tests need Playwright's browsers once: `npx playwright install chromium webkit`
+(in `apps/hub`). They build the site and run it under `wrangler dev`, so redirects are the real ones.
 
-## ✅ What's Included
+Node 22+ (`.nvmrc`). npm only runs the install scripts listed in `allowScripts` in the root
+`package.json`; workerd, esbuild and sharp need theirs to fetch native binaries.
 
-### 1. Landing Page (index.html)
-- Professional design
-- App description
-- Links to legal pages
-- Contact information
+## Legacy URLs
 
-### 2. Privacy Policy (privacy-policy-android.html)
-- ✅ All third-party services disclosed
-- ✅ All 9 Android permissions explained
-- ✅ Analytics opt-out instructions
-- ✅ GDPR/CCPA compliant
-- ✅ Last updated: January 21, 2026
+The hub's `public/_redirects` is generated: `node tools/hub-redirects.mjs`. Check every legacy
+URL with `node tools/verify-urls.mjs` (production) or `--preview` (workers.dev hosts).
 
-### 3. Terms of Service (terms-of-service.html)
-- ✅ Comprehensive legal terms
-- ✅ User rights and responsibilities
-- ✅ Disclaimers and warranties
-- ✅ Limitation of liability
-- ✅ Last updated: January 21, 2026
-
----
-
-## 📱 Next Steps
-
-1. **Deploy** to GitHub Pages, Firebase, or your domain
-2. **Update Google Play Console** with privacy policy URL
-3. **Update Android app** Settings screen with URLs
-4. **Test** all links work correctly
-5. **Submit** app to Google Play
-
----
-
-**Developer:** Intently Team
-**Email:** info@liveintently.app
+## Rules
+- Never break a URL in `docs/legacy-urls.txt`: Play Console, the Chrome Web Store and shipped
+  app versions link to them. Each must end in a 200, directly or through a 301.
+- A site's Worker gets its production custom domain only at cutover; until then it serves on
+  workers.dev.
+- Store-listing URLs (privacy, terms, account deletion) are contracts: change them only with a
+  redirect in place.

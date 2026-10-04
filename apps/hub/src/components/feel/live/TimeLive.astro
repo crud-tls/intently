@@ -1,0 +1,47 @@
+---
+/** Time, live: your age and a life length; the weeks fill the dawn sky (src/scripts/feel/time.ts). */
+import { lifeWeeks, weeksLived } from '../../../scripts/lib/math.ts';
+
+interface Props {
+	/** The chapter's own invitation (src/data/chapters.ts: feel.intro). */
+	intro: string;
+}
+
+const { intro } = Astro.props;
+
+const AGE = 30;
+const LIFE = 80;
+const fmt = (n: number) => n.toLocaleString('en');
+---
+
+<div class="feel-live needs-js" data-feel="time">
+	<div class="feel-stage" data-stage aria-hidden="true" style={`aspect-ratio:${LIFE} / 52`}></div>
+	<p class="ask">{intro}</p>
+	<div class="fields">
+		<label class="field">
+			<span>Your age <output data-out="age">{AGE}</output></span>
+			<input type="range" min="1" max="99" step="1" value={AGE} data-age />
+		</label>
+		<label class="field">
+			<span>A life of <output data-out="life">{LIFE}</output> years</span>
+			<input type="range" min="60" max="100" step="1" value={LIFE} data-life />
+		</label>
+	</div>
+	<p class="readout" aria-live="polite">
+		<span><strong data-out="lived">{fmt(weeksLived(AGE))}</strong> weeks lived.</span>
+		<span data-ahead-line>About <strong data-out="ahead">{fmt(lifeWeeks(LIFE) - weeksLived(AGE))}</strong> ahead.</span>
+		<span data-past hidden>Past the assumption: every week now is a gift.</span>
+	</p>
+	<p class="assume">The life length is an assumption, not a prediction. Nothing you choose leaves this page.</p>
+</div>
+
+<style>
+	/* Where the world draws the weeks (only while the live hero runs). */
+	.feel-stage { display: none; }
+
+	:global(html.hero-live) .feel-stage {
+		display: block;
+		width: 100%;
+		margin-bottom: 14px;
+	}
+</style>

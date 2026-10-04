@@ -1,0 +1,20 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import SmallLeak from '../components/feel/SmallLeak.astro';
+import WealthLive from '../components/feel/live/WealthLive.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('wealth');
+---
+
+<Chapter chapter={c}>
+	<WealthLive slot="live" intro={c.feel.intro} />
+	<SmallLeak slot="feel" caption={c.feel.example} />
+</Chapter>
+
+<script>
+	import { startChapter } from '../scripts/world/chapter.ts';
+	import { mountWealth } from '../scripts/feel/wealth.ts';
+
+	startChapter('wealth', mountWealth(document));
+</script>

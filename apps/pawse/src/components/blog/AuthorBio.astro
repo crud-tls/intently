@@ -1,0 +1,114 @@
+---
+interface Props {
+	author?: string;
+}
+
+const { author = 'Pawse Team' } = Astro.props;
+
+const isTeam = author === 'Pawse Team';
+const descriptionText = isTeam
+	? `Written by the <strong>Pawse Team</strong>, experts in digital wellbeing and behavioral psychology. We're building privacy-first tools to help people develop healthier relationships with technology. Our mission is to empower mindful tech usage through compassionate interventions, not restrictive blocking.`
+	: `Written by <strong>${author}</strong>, contributing to the Pawse blog on digital wellbeing, screen time management, and building healthier relationships with technology.`;
+---
+
+<div class="author-bio">
+	<div class="author-header">
+		<div class="author-avatar">
+			<svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+				<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+			</svg>
+		</div>
+		<div class="author-info">
+			<h3>About the Author</h3>
+			<p class="author-name">{author}</p>
+		</div>
+	</div>
+	<p class="author-description" set:html={descriptionText} />
+	<a href="/about" class="author-link">Learn more about Pawse →</a>
+</div>
+
+<style>
+.author-bio {
+	margin-top: var(--ds-space-3xl);
+	padding: var(--ds-space-2xl);
+	background: var(--ds-bg-secondary);
+	border-radius: var(--ds-radius-lg);
+	border: 1px solid var(--ds-gray-200);
+}
+
+.author-header {
+	display: flex;
+	align-items: center;
+	gap: var(--ds-space-lg);
+	margin-bottom: var(--ds-space-lg);
+}
+
+.author-avatar {
+	width: 64px;
+	height: 64px;
+	background: var(--ds-primary);
+	color: var(--ds-on-primary);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.author-info h3 {
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0 0 var(--ds-space-xs);
+	color: var(--ds-text-secondary);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.author-name {
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin: 0;
+	color: var(--ds-text-primary);
+}
+
+.author-description {
+	line-height: 1.7;
+	margin: 0 0 var(--ds-space-lg);
+	color: var(--ds-text-secondary);
+	font-size: 1rem;
+}
+
+.author-description strong {
+	color: var(--ds-text-primary);
+	font-weight: 600;
+}
+
+.author-link {
+	display: inline-flex;
+	align-items: center;
+	color: var(--ds-primary);
+	font-weight: 600;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: var(--ds-transition-normal);
+}
+
+.author-link:hover {
+	border-bottom-color: var(--ds-primary);
+}
+
+@media (max-width: 767px) {
+	.author-bio {
+		padding: var(--ds-space-xl);
+	}
+
+	.author-header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.author-description {
+		font-size: 0.9375rem;
+	}
+}
+</style>

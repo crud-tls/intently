@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+import LegalArticle from '@intently/legal/LegalArticle.astro';
+import * as policy from '@intently/legal/policies/pawse/privacy.md';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Privacy Policy - Pawse" description="What the Pawse Android app collects, why, and where it goes." />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://pawse.liveintently.app" },
+				{ name: "Privacy Policy", url: "https://pawse.liveintently.app/privacy" }
+			]}
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<LegalArticle policy={policy} links={[{ label: 'Pawse for Chrome privacy', href: '/privacy/chrome' }, { label: 'Terms of Service', href: '/terms' }, { label: 'Delete your account', href: '/delete-account' }]} />
+		</main>
+		<Footer />
+	</body>
+</html>

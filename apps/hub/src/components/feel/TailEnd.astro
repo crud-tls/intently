@@ -1,0 +1,41 @@
+---
+/** Relationships: the visits ahead with someone you love, one dot each. */
+import FeelFrame from './FeelFrame.astro';
+import { visitsLeft } from '../../scripts/lib/math.ts';
+
+interface Props {
+	caption: string;
+	theirAge?: number;
+	perYear?: number;
+}
+
+const { caption, theirAge = 60, perYear = 4 } = Astro.props;
+const n = visitsLeft(theirAge, perYear);
+const COLS = 20;
+const P = 22;
+const rows = Math.ceil(n / COLS);
+---
+
+<FeelFrame caption={caption}>
+	<svg class="visits" viewBox={`0 0 ${COLS * P} ${rows * P}`} role="img" aria-label={`${n} dots, one for each visit ahead.`}>
+		{Array.from({ length: n }, (_, i) => (
+			<circle cx={(i % COLS) * P + P / 2} cy={Math.floor(i / COLS) * P + P / 2} r={P * 0.32} />
+		))}
+	</svg>
+</FeelFrame>
+
+<style>
+	.visits {
+		display: block;
+		width: 100%;
+		max-width: 560px;
+		height: auto;
+	}
+
+	circle {
+		fill: var(--light);
+		stroke: var(--text);
+		stroke-opacity: 0.4;
+		stroke-width: 1.5;
+	}
+</style>

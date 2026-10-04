@@ -1,0 +1,46 @@
+---
+/**
+ * Biscuit, the Pawse mascot, from the same Lottie files the app ships
+ * (copied from ThinkFast-Android app/src/main/res/raw/biscuit_<mood>.json).
+ * Frame 0 is a finished pose, so with reduced motion the still frame is shown.
+ */
+interface Props {
+	mood: 'wave' | 'meditate' | 'cheer' | 'hop_in' | 'sleepy' | 'thinking' | 'ring_bell' | 'read_chart' | 'peek_phone' | 'idle' | 'breathe' | 'concerned';
+	size?: number;
+	loop?: boolean;
+	label?: string;
+	class?: string;
+}
+const { mood, size = 200, loop = true, label = 'Biscuit the fox', class: className = '' } = Astro.props;
+---
+
+<dotlottie-wc
+	src={`/biscuit/${mood}.json`}
+	data-biscuit
+	data-loop={loop ? '' : undefined}
+	class:list={['biscuit', className]}
+	style={`width:${size}px;height:${size}px`}
+	role="img"
+	aria-label={label}
+></dotlottie-wc>
+
+<script is:inline>
+	// Runs before the player upgrades the element, so the attributes are read on start.
+	if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+		document.querySelectorAll('dotlottie-wc[data-biscuit]:not([autoplay])').forEach((el) => {
+			el.setAttribute('autoplay', '');
+			if (el.hasAttribute('data-loop')) el.setAttribute('loop', '');
+		});
+	}
+</script>
+
+<script>
+	import('@lottiefiles/dotlottie-wc');
+</script>
+
+<style>
+	.biscuit {
+		display: block;
+		max-width: 100%;
+	}
+</style>

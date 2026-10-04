@@ -1,0 +1,31 @@
+---
+/** Attention, live: hold one slow breath to quiet the morning; see what phone hours add up to. */
+import { hoursPerYear, wakingDays } from '../../../scripts/lib/math.ts';
+
+interface Props {
+	/** The chapter's own invitation (src/data/chapters.ts: feel.intro). */
+	intro: string;
+}
+
+const { intro } = Astro.props;
+
+const HOURS = 4;
+const fmt = (n: number) => Math.floor(n).toLocaleString('en');
+---
+
+<div class="feel-live needs-js" data-feel="attention">
+	<p class="ask">{intro}</p>
+	<button type="button" class="button hold" data-breathe aria-pressed="false" aria-describedby="breathe-help">Hold to breathe</button>
+	<p id="breathe-help" class="hint">Press and hold for about four seconds, or tap once to be guided.</p>
+	<p class="cue" data-cue aria-live="polite"></p>
+	<label class="field">
+		<span>Hours on your phone a day <output data-out="hours">{HOURS}</output></span>
+		<input type="range" min="0" max="12" step="0.5" value={HOURS} data-hours />
+	</label>
+	<p class="readout" aria-live="polite">
+		<strong data-out="year">{fmt(hoursPerYear(HOURS))}</strong> hours a year: about
+		<strong data-out="days">{fmt(wakingDays(hoursPerYear(HOURS)))}</strong> full waking days.
+	</p>
+	<p class="assume">A waking day is sixteen hours. Nothing you choose leaves this page.</p>
+</div>
+

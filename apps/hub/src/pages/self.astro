@@ -1,0 +1,20 @@
+---
+import Chapter from '../layouts/Chapter.astro';
+import BecomingMirror from '../components/feel/BecomingMirror.astro';
+import SelfLive from '../components/feel/live/SelfLive.astro';
+import { chapter } from '../data/chapters.ts';
+
+const c = chapter('self');
+---
+
+<Chapter chapter={c}>
+	<SelfLive slot="live" intro={c.feel.intro} />
+	<BecomingMirror slot="feel" caption={c.feel.example} />
+</Chapter>
+
+<script>
+	import { startChapter } from '../scripts/world/chapter.ts';
+	import { mountSelf } from '../scripts/feel/self.ts';
+
+	startChapter('self', mountSelf(document));
+</script>

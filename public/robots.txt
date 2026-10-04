@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://liveintently.app/sitemap-index.xml

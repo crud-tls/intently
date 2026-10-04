@@ -1,0 +1,62 @@
+---
+/** Faith, live: hold the lantern; the night warms and the verse rises (src/scripts/feel/faith.ts). */
+import '@fontsource/amiri-quran/arabic-400.css';
+import type { Chapter } from '../../../data/chapters.ts';
+
+interface Props {
+	/** The chapter's own invitation (src/data/chapters.ts: feel.intro). */
+	intro: string;
+	verse: NonNullable<Chapter['verse']>;
+}
+
+const { intro, verse } = Astro.props;
+---
+
+<div class="feel-live needs-js" data-feel="faith" style="--lit:0">
+	<p class="ask">{intro}</p>
+	<button type="button" class="button hold" data-lantern aria-pressed="false" aria-describedby="lantern-help">Hold the lantern</button>
+	<p id="lantern-help" class="hint">Press and hold, or tap once and it will brighten on its own.</p>
+	<p class="cue" data-cue aria-live="polite"></p>
+	<blockquote class="verse" data-verse>
+		<p class="arabic" lang="ar" dir="rtl">{verse.arabic}</p>
+		<p class="translation">{verse.translation}</p>
+		<footer>{verse.source}. Translation: {verse.translator}.</footer>
+	</blockquote>
+</div>
+
+<style>
+	/* The verse belongs to the live hero; without it, the still example below carries the verse. */
+	.verse { display: none; }
+
+	:global(html.hero-live) .verse {
+		display: block;
+		margin: 0.4rem 0 0;
+		opacity: clamp(0.08, calc((var(--lit) - 0.25) * 1.8), 1);
+		transition: opacity 400ms ease;
+	}
+
+	.arabic {
+		font-family: "Amiri Quran", serif;
+		font-size: clamp(1.5rem, 2.6vw, 2rem);
+		line-height: 2;
+		margin: 0 0 0.4rem;
+		color: var(--sky-accent);
+	}
+
+	.translation {
+		font-family: var(--serif);
+		font-variation-settings: "SOFT" 100;
+		font-size: 1.15rem;
+		line-height: 1.4;
+		margin: 0 0 0.5rem;
+	}
+
+	footer {
+		font-size: 0.85rem;
+		color: var(--ink2);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		:global(html.hero-live) .verse { transition: none; }
+	}
+</style>

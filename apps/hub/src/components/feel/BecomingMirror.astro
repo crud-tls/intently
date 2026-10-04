@@ -1,0 +1,71 @@
+---
+/** Self: small daily acts that, chosen and repeated, make up who you're becoming. */
+import FeelFrame from './FeelFrame.astro';
+
+interface Props {
+	caption: string;
+}
+
+const { caption } = Astro.props;
+const ACTS = ['rested', 'kind', 'present', 'patient', 'honest', 'brave', 'grateful', 'generous', 'curious', 'steady', 'gentle with myself', 'upright'];
+const chosen = ['rested', 'kind', 'present'];
+---
+
+<FeelFrame caption={caption} tone="dark">
+	<div class="split">
+		<svg class="figure" viewBox="0 0 400 400" aria-hidden="true">
+			<use href="#im" width="400" height="400" />
+		</svg>
+		<div>
+			<p class="sentence display">I'm becoming someone who is <span data-becoming>rested, kind and present</span>.</p>
+			<ul class="acts" aria-label="Small acts">
+				{ACTS.map((a) => <li class:list={{ on: chosen.includes(a) }}>{a}</li>)}
+			</ul>
+		</div>
+	</div>
+</FeelFrame>
+
+<style>
+	.split {
+		display: grid;
+		grid-template-columns: minmax(140px, 220px) 1fr;
+		gap: clamp(24px, 5vw, 56px);
+		align-items: center;
+	}
+
+	.figure { width: 100%; height: auto; }
+
+	.sentence {
+		font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+		margin: 0 0 24px;
+	}
+
+	.acts {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.acts li {
+		padding: 6px 14px;
+		border-radius: 999px;
+		border: 1px solid var(--line);
+		color: var(--text-2);
+		font-size: 0.95rem;
+	}
+
+	.acts li.on {
+		background: var(--light);
+		border-color: var(--light);
+		color: #1d1b2e;
+		font-weight: 600;
+	}
+
+	@media (max-width: 600px) {
+		.split { grid-template-columns: 1fr; }
+		.figure { max-width: 160px; }
+	}
+</style>

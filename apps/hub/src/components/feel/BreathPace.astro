@@ -1,0 +1,64 @@
+---
+/** Health: a square to breathe along, and what everyday steps add up to. */
+import FeelFrame from './FeelFrame.astro';
+import Tally from '../Tally.astro';
+import { kmPerYear, marathons, STRIDE_M } from '../../scripts/lib/math.ts';
+
+interface Props {
+	caption: string;
+	steps?: number;
+}
+
+const { caption, steps = 6000 } = Astro.props;
+const km = kmPerYear(steps);
+const fmt = (n: number, d = 0) => n.toLocaleString('en', { maximumFractionDigits: d });
+---
+
+<FeelFrame caption={caption}>
+	<div class="split">
+		<svg class="box" viewBox="0 0 200 200" role="img" aria-label="A square to breathe along: in for four, hold for four, out for four, hold for four.">
+			<rect x="30" y="30" width="140" height="140" rx="18" class="track" />
+			<circle cx="30" cy="170" r="9" class="dot" data-breath-dot />
+			<text x="100" y="20" text-anchor="middle">hold 4</text>
+			<text x="100" y="192" text-anchor="middle">out 4</text>
+			<text x="16" y="100" text-anchor="middle" transform="rotate(-90 16 100)">in 4</text>
+			<text x="184" y="100" text-anchor="middle" transform="rotate(90 184 100)">hold 4</text>
+		</svg>
+		<Tally lines={[
+			{ key: 'steps', value: fmt(steps), unit: 'steps a day' },
+			{ key: 'day', value: fmt((steps * STRIDE_M) / 1000, 1), unit: 'km a day' },
+			{ key: 'year', value: fmt(km), unit: 'km a year' },
+			{ key: 'marathons', value: fmt(marathons(km)), unit: 'marathons, just from living' },
+		]} />
+	</div>
+</FeelFrame>
+
+<style>
+	.split {
+		display: grid;
+		grid-template-columns: minmax(160px, 240px) 1fr;
+		gap: clamp(24px, 5vw, 64px);
+		align-items: center;
+	}
+
+	.box { width: 100%; height: auto; }
+
+	.track {
+		fill: color-mix(in srgb, var(--light) 25%, transparent);
+		stroke: var(--text);
+		stroke-opacity: 0.35;
+		stroke-width: 3;
+	}
+
+	.dot { fill: var(--text); }
+
+	text {
+		font: 600 11px var(--sans);
+		fill: var(--text-2);
+	}
+
+	@media (max-width: 600px) {
+		.split { grid-template-columns: 1fr; }
+		.box { max-width: 220px; }
+	}
+</style>

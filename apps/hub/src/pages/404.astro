@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import Postcard from '../components/world/Postcard.astro';
+import { CHAPTERS } from '../data/chapters.ts';
+---
+
+<Base title="Page not found" sky="lantern" description="This page doesn't exist, but the day does: choose an hour to go to." noindex>
+	<main>
+		<Postcard id="faith" as="header" eager label="lost-title">
+			<h1 id="lost-title" class="display">This page isn't here.</h1>
+			<p class="lede">It may have moved, or never existed. Each of our apps now has its own site. Here's a lantern:
+				choose an hour of the day to go to, or start from the <a href="/">beginning</a>.</p>
+			<ul class="hours">
+				{CHAPTERS.map((c) => (
+					<li style={`--light:${c.light}`}><a href={c.path}><span class="star" aria-hidden="true"></span><span>{c.clock}</span> {c.name}</a></li>
+				))}
+			</ul>
+		</Postcard>
+	</main>
+</Base>
+
+<style>
+	h1 {
+		font-size: clamp(2.6rem, 6vw, 4.6rem);
+		margin: 0 0 1rem;
+	}
+
+	.lede { margin: 0 0 1.4rem; color: var(--ink2); }
+
+	.lede a { color: var(--ink); }
+
+	.hours {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px 10px;
+		text-shadow: none;
+	}
+
+	.hours a {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		padding: 7px 14px 7px 9px;
+		border-radius: 999px;
+		border: 1px solid color-mix(in srgb, var(--ink) 25%, transparent);
+		background: color-mix(in srgb, var(--sky-top) 70%, transparent);
+		color: var(--ink);
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.95rem;
+	}
+
+	.hours a span:first-of-type + span { font-variant-numeric: tabular-nums; }
+
+	.hours a:hover { border-color: var(--light); }
+
+	.star {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: radial-gradient(circle, #fff 0 22%, var(--light) 50%, transparent 74%);
+	}
+</style>

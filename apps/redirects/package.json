@@ -1,0 +1,12 @@
+{
+	"name": "@intently/redirects",
+	"description": "Redirect-only hostnames: www, old experiments, former app names",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"check": "wrangler deploy --dry-run",
+		"deploy": "wrangler deploy"
+	},
+	"dependencies": { "@intently/registry": "*" },
+	"devDependencies": { "wrangler": "4.56.0" }
+}

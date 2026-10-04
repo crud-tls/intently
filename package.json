@@ -1,43 +1,27 @@
 {
-	"name": "intently",
-	"description": "Build a personal website, blog, or portfolio with Astro.",
-	"cloudflare": {
-		"label": "Astro Framework Starter",
-		"products": [
-			"Workers"
-		],
-		"categories": [],
-		"preview_icon_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/394ca3c9-d351-4036-035a-9f6dfa26dd00/public",
-		"preview_image_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/f40a6577-eed5-4f3e-cef4-b5ef0a1be100/preview",
-		"publish": true
-	},
-	"dependencies": {
-		"@astrojs/cloudflare": "12.6.12",
-		"@astrojs/mdx": "4.3.12",
-		"@astrojs/rss": "4.0.14",
-		"@astrojs/sitemap": "3.6.0",
-		"@lottiefiles/dotlottie-wc": "^0.8.14",
-		"astro": "5.16.2",
-		"lucide-static": "^0.563.0",
-		"markdown-it": "^14.1.1",
-		"mimetext": "^3.0.27",
-		"resend": "^6.9.1",
-		"sanitize-html": "^2.17.1",
-		"typescript": "5.9.3"
-	},
-	"devDependencies": {
-		"wrangler": "4.56.0"
-	},
+	"name": "intently-sites",
 	"private": true,
-	"scripts": {
-		"astro": "astro",
-		"build": "astro build",
-		"cf-typegen": "wrangler types",
-		"check": "astro build && tsc && wrangler deploy --dry-run",
-		"deploy": "wrangler deploy",
-		"dev": "astro dev",
-		"preview": "astro build && wrangler dev",
-		"optimize-images": "node scripts/optimize-images.mjs"
+	"type": "module",
+	"description": "Intently studio sites: liveintently.app hub and one site per app on <app>.liveintently.app",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"engines": {
+		"node": ">=22"
 	},
-	"type": "module"
+	"scripts": {
+		"build": "npm run build --workspaces --if-present",
+		"check": "npm run check --workspaces --if-present",
+		"dev:pawse": "npm run dev -w @intently/pawse-site"
+	},
+	"allowScripts": {
+		"workerd@1.20251217.0": true,
+		"workerd@1.20251118.0": true,
+		"esbuild@0.25.12": true,
+		"esbuild@0.27.0": true,
+		"esbuild@0.25.4": true,
+		"sharp@0.34.5": true,
+		"sharp@0.33.5": true
+	}
 }

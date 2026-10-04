@@ -1,0 +1,8 @@
+{
+	"name": "@intently/registry",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "One record per Intently app: names, hosts, status, contacts, store links, colours",
+	"exports": { ".": "./src/apps.ts" }
+}

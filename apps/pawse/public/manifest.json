@@ -1,0 +1,103 @@
+{
+  "name": "Pawse - Mindful Screen Time & Digital Wellbeing",
+  "short_name": "Pawse",
+  "description": "Build healthier digital habits through mindful interventions. Privacy-first, 100% offline screen time tracking and digital wellbeing app.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFAF3",
+  "theme_color": "#FF8A3D",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": [
+    "health",
+    "productivity",
+    "lifestyle"
+  ],
+  "screenshots": [
+    {
+      "src": "/blog-placeholder-1.jpg",
+      "sizes": "1020x510",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Pawse home screen"
+    },
+    {
+      "src": "/blog-placeholder-1.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Pawse mobile view"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Blog",
+      "short_name": "Blog",
+      "description": "Read articles about digital wellbeing",
+      "url": "/blog",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Download App",
+      "short_name": "Download",
+      "description": "Download Pawse for your device",
+      "url": "/download",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "Learn about Pawse's mission",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster",
+      "id": "dev.sadakat.thinkfaster"
+    },
+    {
+      "platform": "chrome_web_store",
+      "url": "https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop"
+    }
+  ]
+}

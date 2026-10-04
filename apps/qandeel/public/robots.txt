@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qandeel.liveintently.app/sitemap-index.xml

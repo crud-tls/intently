@@ -1,0 +1,23 @@
+---
+/** Attention: what a daily phone habit adds up to over a year. */
+import FeelFrame from './FeelFrame.astro';
+import Tally from '../Tally.astro';
+import { hoursPerYear, wakingDays } from '../../scripts/lib/math.ts';
+
+interface Props {
+	caption: string;
+	perDay?: number;
+}
+
+const { caption, perDay = 4 } = Astro.props;
+const year = hoursPerYear(perDay);
+const fmt = (n: number) => Math.floor(n).toLocaleString('en');
+---
+
+<FeelFrame caption={caption}>
+	<Tally lines={[
+		{ key: 'perDay', value: String(perDay), unit: 'hours a day' },
+		{ key: 'year', value: fmt(year), unit: 'hours a year' },
+		{ key: 'days', value: fmt(wakingDays(year)), unit: 'waking days, every year' },
+	]} />
+</FeelFrame>

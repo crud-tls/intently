@@ -1,0 +1,98 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  platform: 'android' | 'ios' | 'chrome';
+  downloadUrl: string;
+  ratingValue?: number;
+  ratingCount?: number;
+  reviews?: Array<{
+    author: string;
+    rating: number;
+    date: string;
+    text: string;
+  }>;
+}
+
+const {
+  name,
+  description,
+  platform,
+  downloadUrl,
+  ratingValue,
+  ratingCount,
+  reviews = []
+} = Astro.props;
+
+const platformNames = {
+  android: "Android App",
+  ios: "iOS App",
+  chrome: "Chrome Extension"
+};
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": `Pawse - ${platformNames[platform]}`,
+  "alternateName": "Intently",
+  "description": description,
+  "applicationCategory": "HealthApplication",
+  "url": downloadUrl,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  ...(ratingValue && ratingCount ? {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": ratingValue,
+      "ratingCount": ratingCount,
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  } : {}),
+  "author": {
+    "@type": "Organization",
+    "@id": "https://liveintently.app/#organization",
+    "name": "Intently",
+    "url": "https://liveintently.app"
+  },
+  "operatingSystem": { android: "Android", ios: "iOS", chrome: "Windows, macOS, Linux" }[platform],
+  "softwareVersion": "1.0",
+  "datePublished": "2024-01-01",
+  "featureList": [
+    "Screen time decrease and tracking",
+    "Reduce screen time effectively",
+    "Mindful interventions to lower usage",
+    "Mindful interventions and daily awareness",
+    "Usage analytics and insights",
+    "Streak tracking for motivation",
+    "Privacy-first offline mode",
+    "No account required",
+    "Widget support"
+  ]
+};
+
+// Include individual reviews if provided
+const reviewsSchema = reviews.length > 0 ? reviews.map(review => ({
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": review.author
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": review.rating,
+    "bestRating": "5"
+  },
+  "datePublished": review.date,
+  "reviewBody": review.text
+})) : [];
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+
+{reviews.length > 0 && reviewsSchema.map(review => (
+  <script type="application/ld+json" set:html={JSON.stringify(review)} />
+))}

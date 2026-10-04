@@ -1,0 +1,15 @@
+{
+  "name": "respite-site",
+  "compatibility_date": "2025-10-08",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "respite.liveintently.app",
+      "custom_domain": true
+    }
+  ]
+}

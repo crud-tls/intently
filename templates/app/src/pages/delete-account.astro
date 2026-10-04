@@ -1,0 +1,13 @@
+---
+import '@fontsource-variable/inter/wght.css';
+import AppLayout from '@intently/ui/AppLayout.astro';
+import DeleteAccount from '@intently/ui/DeleteAccount.astro';
+import { app } from '@intently/registry';
+import { content } from '../content';
+
+const a = app('{{ID}}');
+---
+
+<AppLayout app={a} content={content} title="Delete your account" description={`How to delete your ${a.name} account and data.`}>
+	<DeleteAccount app={a} content={content} />
+</AppLayout>

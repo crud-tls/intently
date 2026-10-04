@@ -1,0 +1,107 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Biscuit from '../../components/ui/Biscuit.astro';
+import { PAWSE_API_URL, SUPPORT_EMAIL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Confirm Account Deletion | Pawse" description="Confirm that you want to permanently delete your Pawse account." noindex={true} />
+	</head>
+	<body data-api={PAWSE_API_URL} data-support={SUPPORT_EMAIL}>
+		<Header />
+		<main class="confirm">
+			<Biscuit mood="concerned" size={140} loop={false} label="Biscuit looking concerned" class="confirm-biscuit" />
+			<h1>Delete your Pawse account?</h1>
+
+			<!-- Deleting needs a click, never just a page load: mail scanners open links on their own. -->
+			<section id="ask">
+				<p>This permanently deletes your account and everything synced to it. It can't be undone.
+					Data that only lives on your phone stays there until you uninstall Pawse.</p>
+				<button id="confirm" class="danger" type="button">Yes, delete my account</button>
+				<p class="muted"><a href="/">No, keep my account</a></p>
+			</section>
+
+			<section id="done" hidden>
+				<p>Your account and synced data have been deleted. Thank you for trying Pawse.</p>
+				<p class="muted"><a href="/">Back to Pawse</a></p>
+			</section>
+
+			<section id="failed" hidden>
+				<p id="error-text"></p>
+				<p class="muted"><a href="/delete-account">Start a new deletion request</a> or email
+					<a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.</p>
+			</section>
+		</main>
+		<Footer />
+
+		<script>
+			const token = new URLSearchParams(location.search).get('token');
+			const show = (id: string) => {
+				for (const s of ['ask', 'done', 'failed']) document.getElementById(s)!.hidden = s !== id;
+			};
+			const fail = (message: string) => {
+				document.getElementById('error-text')!.textContent = message;
+				show('failed');
+			};
+
+			if (!token) fail('This link is missing its confirmation code. Open the link from the email again.');
+
+			document.getElementById('confirm')!.addEventListener('click', async (event) => {
+				const button = event.currentTarget as HTMLButtonElement;
+				button.disabled = true;
+				button.textContent = 'Deleting…';
+				try {
+					const response = await fetch(`${document.body.dataset.api}/account/confirm-deletion`, {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({ token }),
+					});
+					if (response.ok) return show('done');
+					const data = await response.json().catch(() => ({}));
+					fail(data.error || 'We could not delete the account. Please try again.');
+				} catch {
+					fail(`We could not reach the server. Please try again, or email ${document.body.dataset.support}.`);
+				}
+			});
+		</script>
+	</body>
+</html>
+
+<style>
+	.confirm {
+		max-width: 560px;
+		margin: 0 auto;
+		padding: var(--ds-space-4xl) 1rem var(--ds-space-3xl);
+		text-align: center;
+	}
+
+	.confirm :global(.confirm-biscuit) {
+		margin: 0 auto var(--ds-space-md);
+	}
+
+	.danger {
+		margin-top: var(--ds-space-lg);
+		padding: 14px 28px;
+		border: 0;
+		border-radius: var(--ds-radius-full);
+		background: #B3261E;
+		color: #FFFFFF;
+		font: inherit;
+		font-weight: 700;
+		cursor: pointer;
+	}
+
+	.danger:disabled {
+		opacity: 0.6;
+		cursor: progress;
+	}
+
+	.muted {
+		margin-top: var(--ds-space-lg);
+		color: var(--ds-text-secondary);
+	}
+</style>
