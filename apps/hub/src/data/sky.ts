@@ -101,7 +101,7 @@ export const SKY: Record<SkyKey, Sky> = {
 	},
 	bluehour: {
 		zenith: '#0F1640', upper: '#252C63', horizon: '#6C70AA',
-		sun: NO_SUN, moon: { x: 0.22, y: 0.3, r: 0.022, show: 0.55 }, stars: 0.55,
+		sun: NO_SUN, moon: { x: 0.12, y: 0.2, r: 0.022, show: 0.55 }, stars: 0.55,
 		ground: ['#4B5087', '#353B6C', '#232851', '#10133A'],
 		cloud: '#3A4180', cloudOpacity: 0.35,
 		ink: '#F5F2FB', ink2: '#D2CCEA', accent: '#FFD0B0',

@@ -143,7 +143,7 @@ export const CHAPTERS: Chapter[] = [
 		],
 		feel: {
 			heading: 'Breathe, then add it up',
-			intro: 'Follow the square: in for four, hold for four, out for four, hold for four. Then see what your everyday steps add up to.',
+			intro: 'Breathe with the sun for a minute: four counts in, hold, out, hold. Then see what your everyday steps add up to.',
 			example: 'Six thousand steps a day is about 4.5 km. Over a year that is 1,643 km: the length of 39 marathons, just from living.',
 			assumptions: [
 				'A step is about 0.75 m. Yours may be longer or shorter.',
@@ -184,7 +184,7 @@ export const CHAPTERS: Chapter[] = [
 		],
 		feel: {
 			heading: 'A small amount, every day',
-			intro: 'Pick a small daily amount: a coffee, a delivery fee, a subscription you forgot about. Watch the jar fill.',
+			intro: 'Pick a small daily amount: a coffee, a delivery fee, a subscription you forgot about. Watch it fill the pond.',
 			example: 'Five a day, in any currency, is 1,825 in a year and 18,250 in ten years, simply set aside.',
 			assumptions: [
 				'Simply set aside: no interest and no returns.',
@@ -266,7 +266,7 @@ export const CHAPTERS: Chapter[] = [
 		],
 		feel: {
 			heading: "Who you're becoming",
-			intro: 'The figure starts as a blur. Hold still and it sharpens. Then choose the small acts you want more of, and watch each one add to it.',
+			intro: 'In a hurry, the reflection blurs. Hold still and it sharpens. Then choose the small acts you want more of, and watch each one light up.',
 			example: 'Someone who is rested, kind and present: three small acts, repeated, and the outline sharpens.',
 			assumptions: [],
 		},

@@ -1,11 +1,20 @@
 ---
 import Chapter from '../layouts/Chapter.astro';
 import BreathPace from '../components/feel/BreathPace.astro';
+import HealthLive from '../components/feel/live/HealthLive.astro';
 import { chapter } from '../data/chapters.ts';
 
 const c = chapter('health');
 ---
 
 <Chapter chapter={c}>
+	<HealthLive slot="live" intro={c.feel.intro} />
 	<BreathPace slot="feel" caption={c.feel.example} />
 </Chapter>
+
+<script>
+	import { startChapter } from '../scripts/world/chapter.ts';
+	import { mountHealth } from '../scripts/feel/health.ts';
+
+	startChapter('health', mountHealth(document));
+</script>

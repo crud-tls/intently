@@ -3,7 +3,7 @@
  * live hero draws them where it can, and without it the still example below follows the controls.
  */
 import { test, expect } from '@playwright/test';
-import { hoursPerYear, lifeWeeks, visitsLeft, wakingDays, weeksLived } from '../../src/scripts/lib/math.ts';
+import { hoursPerYear, kmPerYear, lifeWeeks, marathons, setAside, visitsLeft, wakingDays, weeksLived, withGrowth } from '../../src/scripts/lib/math.ts';
 import { collectErrors, isChromium, skipSplash } from './helpers.ts';
 
 const fmt = (n: number) => Math.floor(n).toLocaleString('en');
@@ -193,5 +193,95 @@ test.describe('relationships', () => {
 		await setRange(page, '[data-their-age]', 75);
 		await setRange(page, '[data-per-year]', 6);
 		await expect(page.locator('.feel svg.visits circle')).toHaveCount(visitsLeft(75, 6));
+	});
+});
+
+test.describe('wealth', () => {
+	test('a small amount, simply set aside, in your currency; growth only when asked, and labelled', async ({ page }) => {
+		const errors = collectErrors(page);
+		await page.goto('/wealth/');
+		await setRange(page, '[data-amount]', 20);
+		await setRange(page, '[data-years]', 20);
+		await page.locator('[data-currency]').selectOption('USD');
+		await expect(page.locator('[data-feel="wealth"]')).toHaveAttribute('data-total', String(setAside(20, 20)));
+		await expect(page.locator('[data-out="total"]')).toHaveText('$146,000');
+		await expect(page.locator('[data-out="year"]')).toHaveText('$7,300');
+		await expect(page.locator('[data-growth-line]')).toBeHidden();
+		await page.locator('[data-growth]').check();
+		await expect(page.locator('[data-growth-line]')).toBeVisible();
+		await expect(page.locator('[data-growth-line]')).toContainText('not advice');
+		const grown = Math.round(withGrowth(20, 20, 0.05)).toLocaleString('en');
+		await expect(page.locator('[data-out="grown"]')).toHaveText(`$${grown}`);
+		// The headline number never includes growth.
+		await expect(page.locator('[data-out="total"]')).toHaveText('$146,000');
+		expect(errors).toEqual([]);
+	});
+
+	test('without the live world the still tally follows the amount', async ({ page }) => {
+		await page.emulateMedia({ reducedMotion: 'reduce' });
+		await page.goto('/wealth/');
+		await setRange(page, '[data-amount]', 3);
+		await expect(page.locator('.feel [data-tally="year"]')).toHaveText(setAside(3, 1).toLocaleString('en'));
+		await expect(page.locator('.feel [data-tally="ten"]')).toHaveText(setAside(3, 10).toLocaleString('en'));
+	});
+});
+
+test.describe('health', () => {
+	test('breathing with the sun counts the box breath and can be stopped', async ({ page }) => {
+		const errors = collectErrors(page);
+		await page.goto('/health/');
+		const feel = page.locator('[data-feel="health"]');
+		const button = page.locator('[data-pace]');
+		await button.click();
+		await expect(feel).toHaveAttribute('data-breathing', 'true');
+		await expect(page.locator('[data-feel="health"] [data-cue]')).toContainText('Breathe in');
+		await expect(feel).toHaveAttribute('data-phase', '1', { timeout: 8_000 });
+		await expect(page.locator('[data-feel="health"] [data-cue]')).toContainText('Hold');
+		await button.click();
+		await expect(feel).toHaveAttribute('data-breathing', 'false');
+		await expect(button).toHaveText('Breathe with the sun');
+		expect(errors).toEqual([]);
+	});
+
+	test('everyday steps add up to marathons', async ({ page }) => {
+		await page.goto('/health/');
+		for (const s of [0, 6000, 12500, 20000]) {
+			await setRange(page, '[data-steps]', s);
+			const m = Math.round(marathons(kmPerYear(s)));
+			await expect(page.locator('[data-feel="health"]')).toHaveAttribute('data-marathons', String(m));
+			await expect(page.locator('[data-out="year"]')).toHaveText(Math.round(kmPerYear(s)).toLocaleString('en'));
+		}
+	});
+});
+
+test.describe('self', () => {
+	test('small acts build the sentence; holding still sharpens the reflection', async ({ page }, info) => {
+		await page.emulateMedia({ reducedMotion: 'no-preference' });
+		const errors = collectErrors(page);
+		await page.goto('/self/');
+		const feel = page.locator('[data-feel="self"]');
+		await page.locator('[data-act="rested"]').click();
+		await page.locator('[data-act="kind"]').click();
+		await page.locator('[data-act="present"]').click();
+		await expect(page.locator('[data-feel="self"] [data-becoming]')).toHaveText('rested, kind and present');
+		await expect(page.locator('[data-act="kind"]')).toHaveAttribute('aria-pressed', 'true');
+		await page.locator('[data-act="kind"]').click();
+		await expect(page.locator('[data-feel="self"] [data-becoming]')).toHaveText('rested and present');
+		// Stillness: nothing moves for a few seconds.
+		await expect.poll(async () => +(await feel.getAttribute('data-stillness'))!, { timeout: 8_000 }).toBe(100);
+		await expect(page.locator('[data-feel="self"] [data-cue]')).toHaveText('There you are.');
+		if (!info.project.name.match(/iphone|ipad|android/)) {
+			await page.mouse.move(100, 100);
+			await page.mouse.move(300, 200);
+			await expect.poll(async () => +(await feel.getAttribute('data-stillness'))!).toBeLessThan(100);
+		}
+		expect(errors).toEqual([]);
+	});
+
+	test('without the live world the still sentence follows the acts too', async ({ page }) => {
+		await page.emulateMedia({ reducedMotion: 'reduce' });
+		await page.goto('/self/');
+		await page.locator('[data-act="brave"]').click();
+		await expect(page.locator('.feel [data-becoming]')).toHaveText('brave');
 	});
 });
