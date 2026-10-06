@@ -44,7 +44,7 @@ And if you have ADHD (diagnosed or not), this stuff hits even harder. ADHD brain
 
 ### 1. Pawse -- Free All-Day Awareness
 
-Free | Android, Chrome (iOS coming soon)
+Free | Android, Chrome, iPhone ([Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293))
 
 Pawse takes a different approach from most screen time tools. Instead of locking you out of apps, it creates a brief mindful pause every time you open a distracting one. You'll see a prompt like: "You wanted to study right now. Do you still want to open Instagram?" You can always tap through and open the app -- but that three-second pause is surprisingly effective at breaking the autopilot loop.
 
@@ -68,7 +68,7 @@ Free | iOS, Android
 
 If you're on iOS and want something like Pawse right now, ScreenZen is worth a look. It works similarly -- creating a breathing pause before distracting apps open -- but takes more of a structured countdown approach. Setup is straightforward and the core features are free.
 
-It's a good interim choice for iPhone users until Pawse launches on iOS. The trade-off is that it's a bit less customizable, and the experience isn't quite as seamless, but it gets the job done.
+It's a solid choice for iPhone users; if you prefer Pawse's style of mindful pause, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) brings it to iOS. The trade-off is that it's a bit less customizable, and the experience isn't quite as seamless, but it gets the job done.
 
 ### 4. Freedom -- When You Need to Lock Things Down
 

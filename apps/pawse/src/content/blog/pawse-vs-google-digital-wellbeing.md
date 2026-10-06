@@ -22,7 +22,7 @@ Here's a quick look at the practical differences:
 | | Google Digital Wellbeing | Pawse |
 |---|---|---|
 | Price | Free | Free + Premium ($4.99/mo) |
-| Platforms | Android only | Android, iOS, Chrome |
+| Platforms | Android only | Android, iPhone (as Respite), Chrome |
 | Setup | None (pre-installed) | Quick download |
 | Data Storage | Google servers | 100% on your device |
 | Privacy | Part of your Google account | No account; history on your phone |
@@ -85,7 +85,7 @@ It's a meaningful difference. Goals without any way to track and celebrate progr
 
 Digital Wellbeing is Android only. If you also use an iPhone or spend a lot of time in Chrome on your laptop, you're out of luck.
 
-Pawse has apps for Android, iOS, and a Chrome extension. Data doesn't sync between devices (that's the privacy tradeoff), but you can export and import if needed. For anyone using more than one device, this matters.
+Pawse has apps for Android and iPhone (as Respite), and a Chrome extension. Data doesn't sync between devices (that's the privacy tradeoff), but you can export and import if needed. For anyone using more than one device, this matters.
 
 ## Which One Is Right for You?
 

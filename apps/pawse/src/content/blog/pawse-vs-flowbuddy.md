@@ -18,7 +18,7 @@ faq:
   - question: "Can I use Pawse or FlowBuddy as a free One Sec alternative on Android?"
     answer: "Yes, both work as free Android alternatives to One Sec. Pawse is the closer equivalent — it matches or exceeds One Sec's feature set with custom prompts, tracking, and analytics, all for free. FlowBuddy offers only the breathing pause component without the broader feature set."
   - question: "Does FlowBuddy work on iPhone or Chrome?"
-    answer: "No, FlowBuddy is Android-only with no iOS or browser version. Pawse supports Android and Chrome, with iOS coming soon. If you need to manage screen time across devices, Pawse covers more ground."
+    answer: "No, FlowBuddy is Android-only with no iOS or browser version. Pawse supports Android and Chrome, and on iPhone there's Respite, its iOS companion. If you need to manage screen time across devices, Pawse covers more ground."
 ---
 
 # Pawse vs FlowBuddy: Full-Featured Toolkit or Minimal Breathing Pause?
@@ -82,7 +82,7 @@ Both approaches achieve real privacy, just through different mechanisms.
 
 ### Platform Coverage
 
-Both work on Android. Only Pawse also offers a Chrome extension for managing distracting websites on desktop. FlowBuddy has no browser component and no iOS version. Pawse's iOS version is coming soon.
+Both work on Android. Only Pawse also offers a Chrome extension for managing distracting websites on desktop. FlowBuddy has no browser component and no iOS version. On iPhone, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) — Pawse's iOS companion — covers the same ground.
 
 ## Feature Comparison
 
@@ -96,7 +96,7 @@ Both work on Android. Only Pawse also offers a Chrome extension for managing dis
 | **Chrome extension** | Yes | No |
 | **Widgets** | Yes | No |
 | **Privacy** | Works offline, no account, optional sync | Open-source, minimal data |
-| **Platforms** | Android + Chrome (iOS soon) | Android only |
+| **Platforms** | Android + Chrome (iPhone via Respite) | Android only |
 | **Intervention types** | Multiple (prompts, breathing, goals) | Breathing animation only |
 
 ## Who Should Choose What

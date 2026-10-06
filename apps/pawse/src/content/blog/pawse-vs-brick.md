@@ -110,7 +110,7 @@ That's not a knock on Brick. Physical barriers genuinely work while they're acti
 
 ### Platform Availability
 
-Brick covers iOS and Android today. Pawse currently covers Android with iOS on the way, plus a Chrome extension for managing distracting websites on your computer. If you need iOS right now and want the physical barrier approach, Brick's available. If you want to extend coverage to your browser, Pawse's Chrome extension fills that gap.
+Brick covers iOS and Android today. Pawse covers Android, and on iPhone [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) — its iOS companion — keeps the same pause-based approach, plus a Chrome extension for managing distracting websites on your computer. If you want the physical barrier approach, Brick's available. If you want to extend coverage to your browser, Pawse's Chrome extension fills that gap.
 
 ## On Intervention Strength -- An Honest Take
 

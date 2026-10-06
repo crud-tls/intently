@@ -15,7 +15,7 @@ faq:
   - question: "Do pause-based apps actually work better than hard blockers?"
     answer: "Many users find that pause-based apps lead to better long-term habit retention than hard blocking. Apps like Pawse and ScreenZen build internal motivation rather than relying on external restriction, which often leads to workarounds over time."
   - question: "Can I use Pawse or ScreenZen on iPhone?"
-    answer: "ScreenZen is available on both iOS and Android. Pawse currently supports Android and Chrome, with an iOS version coming soon. If you need an iPhone solution today, ScreenZen is the available pause-based option."
+    answer: "ScreenZen is available on both iOS and Android. Pawse supports Android and Chrome, and on iPhone there's Respite, its iOS companion — free on the App Store. Both are pause-based options on iPhone."
   - question: "Which app is more private: Pawse or ScreenZen?"
     answer: "Pawse works offline with no account; your usage history stays on your phone unless you sign in to sync. ScreenZen also requires some connectivity for features like streak syncing. For privacy, Pawse is a strong choice."
   - question: "What is the difference between Pawse and ScreenZen intervention styles?"
@@ -30,9 +30,9 @@ What makes this comparison interesting is that price isn't the deciding factor. 
 
 ## Quick Verdict
 
-Both are free, pause-based screen time apps that respect your autonomy. Pawse gives you deeply customizable prompts, complete offline privacy, and detailed analytics on Android and Chrome. ScreenZen offers a simpler, consistent breathing countdown on both iOS and Android with minimal setup.
+Both are free, pause-based screen time apps that respect your autonomy. Pawse gives you deeply customizable prompts, complete offline privacy, and detailed analytics on Android and Chrome — with Respite covering iPhone. ScreenZen offers a simpler, consistent breathing countdown on both iOS and Android with minimal setup.
 
-**Bottom line:** Choose Pawse if you want personalized interventions, full privacy, and a Chrome extension for desktop habits. Choose ScreenZen if you need an iOS-compatible pause app right now or prefer a simple, no-configuration experience.
+**Bottom line:** Choose Pawse if you want personalized interventions, full privacy, and a Chrome extension for desktop habits. Choose ScreenZen if you prefer a simple, no-configuration experience.
 
 ## What Makes Each App Distinct
 
@@ -72,9 +72,9 @@ ScreenZen is privacy-conscious compared to most apps, but it's not a zero-data a
 
 ### Platform Support
 
-ScreenZen has an edge on mobile -- it supports both iOS and Android today. Pawse currently covers Android with an iOS version on the way, but it also offers a Chrome extension for managing distracting websites on your computer, which ScreenZen doesn't have.
+Both apps cover mobile. ScreenZen supports iOS and Android; Pawse covers Android, and on iPhone [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) — its iOS companion — keeps the same pause-based approach. Pawse also offers a Chrome extension for managing distracting websites on your computer, which ScreenZen doesn't have.
 
-If you need an iPhone solution right now, ScreenZen is the pause-based app available to you. If you spend a lot of time distracted on your laptop, Pawse's Chrome extension fills a gap that ScreenZen leaves open.
+On iPhone you can go with either ScreenZen or Respite. If you spend a lot of time distracted on your laptop, Pawse's Chrome extension fills a gap that ScreenZen leaves open.
 
 ### Pricing Model
 
@@ -120,7 +120,6 @@ Both strategies have merit. The risk with customization is that some users never
 
 ### ScreenZen is likely the better fit if:
 
-- You need an iOS-compatible pause-based app right now
 - You prefer a simple, consistent breathing pause that requires no configuration
 - Streak tracking is a primary motivator for you
 - You like a structured, predictable intervention every time
@@ -135,7 +134,7 @@ The difference between these two apps isn't about quality. Both are well-made, b
 
 There's no wrong answer. Pick the one that matches how you think, give it at least a few weeks, and pay attention to whether the pauses are still making you think or whether they've started to feel invisible. If the latter happens, that's your signal to adjust.
 
-[Download Pawse for Android, iOS & Chrome](/download)
+[Download Pawse for Android & Chrome — or Respite for iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)
 
 Questions or feedback? Reach out at pawse@liveintently.app.
 

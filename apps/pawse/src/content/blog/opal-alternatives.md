@@ -13,7 +13,7 @@ faq:
   - question: "What's the best free alternative to Opal?"
     answer: "Pawse is a strong free option. It offers mindful interventions, usage tracking, gamification, and privacy: no account, no ads, and your usage history stays on your phone. ScreenZen is another solid free choice if you prefer simple delay-based friction. Both are worth trying to see which approach suits you."
   - question: "Can I block apps without paying for Opal?"
-    answer: "Yes. Apple Screen Time (built into every iPhone) offers free app blocking. ScreenZen provides free app delays. Pawse offers free mindful interventions on Android and Chrome. Cold Turkey offers a one-time $39 purchase for powerful desktop blocking. You do not need to pay $99/year to limit app access."
+    answer: "Yes. Apple Screen Time (built into every iPhone) offers free app blocking. ScreenZen provides free app delays. Pawse offers free mindful interventions on Android and Chrome, and on iPhone via Respite. Cold Turkey offers a one-time $39 purchase for powerful desktop blocking. You do not need to pay $99/year to limit app access."
   - question: "Does Opal actually reduce screen time?"
     answer: "Opal can reduce screen time in the short term through blocking. However, many users find that blocking alone does not change the underlying habit — when the block is lifted, old patterns return. Apps that combine awareness-building with friction, like Pawse or One Sec, may offer more durable results for some users."
   - question: "What Opal alternative works on Android?"
@@ -49,7 +49,7 @@ What makes it different from Opal is the philosophy. Rather than locking you out
 
 The privacy angle is worth mentioning too: Pawse works offline and needs no account. Your usage history stays on your phone unless you choose to sync it. For anyone wary of handing screen time data to yet another company, that's a real differentiator.
 
-The honest trade-off: there's no iOS version yet (it's in development), and if you genuinely need hard blocking -- like, "physically prevent me from opening Instagram" -- this isn't that tool. It's designed for people who want to build self-control, not outsource it.
+The honest trade-off: there's no hard blocking — if you genuinely need "physically prevent me from opening Instagram," this isn't that tool — and on iPhone you'd use [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Pawse's iOS companion. It's designed for people who want to build self-control, not outsource it.
 
 Rating: 4/5
 

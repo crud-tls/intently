@@ -8,7 +8,7 @@ tags: ['best screen time app 2026', 'best screen time app android', 'best free s
 heroImage: '/blog-placeholder-3.jpg'
 faq:
   - question: "What is the best screen time app in 2026?"
-    answer: "The best screen time app depends on your approach. For mindful awareness without hard blocking, Pawse is the top free option on Android and Chrome. For hard blocking, Freedom and Cold Turkey are the most reliable paid options. For built-in simplicity, Apple Screen Time and Google Digital Wellbeing are decent starting points."
+    answer: "The best screen time app depends on your approach. For mindful awareness without hard blocking, Pawse is the top free option on Android and Chrome — and on iPhone as Respite. For hard blocking, Freedom and Cold Turkey are the most reliable paid options. For built-in simplicity, Apple Screen Time and Google Digital Wellbeing are decent starting points."
   - question: "What is the best free screen time app?"
     answer: "Pawse is the best fully free screen time app — it offers mindful interventions, usage tracking, gamification, and a Chrome extension at zero cost, with no ads and no account required. ScreenZen is another strong free option available on both iOS and Android with basic delay-based pauses."
   - question: "What is the best screen time app for Android?"
@@ -41,13 +41,13 @@ Before comparing specific apps, it helps to know what actually matters:
 
 ## 1. Pawse — Best Overall (Mindful Interventions)
 
-**Platform**: Android, Chrome | **Price**: Free | **Approach**: Mindful pause + tracking
+**Platform**: Android, Chrome, iPhone (as [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)) | **Price**: Free | **Approach**: Mindful pause + tracking
 
 Pawse creates a full-screen moment of awareness before you open distracting apps. Instead of blocking you, it asks: "Take a breath. Do you still want to open this?" You always have the choice to proceed — but that brief pause is often enough to break the autopilot.
 
 What sets Pawse apart from other pause-based tools is the full package around the core intervention. You get comprehensive usage tracking (daily, weekly, monthly breakdowns), a gamification layer with streaks and achievements that keeps you motivated past the first week, and a Chrome extension that brings the same mindful approach to desktop browsing.
 
-Your usage history stays on your phone. No account required, no ads, and nothing syncs unless you sign in. The trade-off is no iOS version yet (it's in development).
+Your usage history stays on your phone. No account required, no ads, and nothing syncs unless you sign in. On iPhone, the same gentle pause arrives via [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), our native iOS app built on Apple's Screen Time.
 
 **Rating: 4.5/5** — The most complete free screen time app available. The mindful approach is backed by research showing up to 67% reduction in impulsive app opens.
 
@@ -169,11 +169,11 @@ The main issue: the "one more minute" bypass completely undermines the time limi
 
 ## Which Approach Is Right for You?
 
-**If you want to build lasting awareness**: Start with a mindful intervention tool. Pawse (Android/Chrome) or One Sec (iOS) create that moment of conscious choice that builds self-regulation over time. This is the approach with the strongest research support for sustained behavior change.
+**If you want to build lasting awareness**: Start with a mindful intervention tool. Pawse (Android/Chrome), Respite (iPhone) or One Sec (iOS) create that moment of conscious choice that builds self-regulation over time. This is the approach with the strongest research support for sustained behavior change.
 
 **If you need hard enforcement for work hours**: Freedom or Cold Turkey will block distractions when you need zero temptation. Best paired with a mindful tool for the rest of your day.
 
-**If you want something simple and free**: Pawse covers the most ground at zero cost on Android. On iOS, ScreenZen is the best free starting point.
+**If you want something simple and free**: Pawse covers the most ground at zero cost on Android, and Respite brings the same idea to iPhone. On iOS, ScreenZen is another free starting point.
 
 **If you're setting up controls for family**: Apple Screen Time and Google Digital Wellbeing provide parental control features that third-party apps can't match. Consider supplementing with a mindful tool for teens who are old enough to benefit from awareness-building rather than pure restriction.
 
@@ -185,11 +185,11 @@ The best screen time app is the one that matches how you actually want to change
 
 ### What is the best screen time app in 2026?
 
-It depends on your needs. For mindful awareness-building, Pawse is the top free option on Android and Chrome. For hard blocking, Freedom and Cold Turkey are the most reliable. For a research-backed pause on iOS, One Sec leads the category. There's no single "best" — it depends on your platform, budget, and preferred approach.
+It depends on your needs. For mindful awareness-building, Pawse is the top free option on Android and Chrome, and Respite carries the same approach to iPhone. For hard blocking, Freedom and Cold Turkey are the most reliable. For a research-backed pause on iOS, One Sec leads the category. There's no single "best" — it depends on your platform, budget, and preferred approach.
 
 ### What is the best free screen time app?
 
-Pawse offers the most complete free package: mindful interventions, usage tracking, gamification, and a Chrome extension with zero cost, no ads and no account required. ScreenZen is the best free option on iOS for basic delay-based pauses.
+Pawse offers the most complete free package: mindful interventions, usage tracking, gamification, and a Chrome extension with zero cost, no ads and no account required. On iPhone, Respite is free too. ScreenZen is another free option on iOS for basic delay-based pauses.
 
 ### Do screen time apps actually reduce phone usage?
 
@@ -211,7 +211,7 @@ Some can. Many screen time apps require broad permissions and collect usage data
 
 ## Getting Started
 
-The fastest way to find what works is to just try one. Grab [Pawse](/download) (free on Android and Chrome) and use it for two weeks. Most people notice a real shift in their phone habits within the first few days — not because anything is blocked, but because the pause makes you realize how often you're reaching for your phone on autopilot.
+The fastest way to find what works is to just try one. Grab [Pawse](/download) (free on Android and Chrome — or [Respite on iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)) and use it for two weeks. Most people notice a real shift in their phone habits within the first few days — not because anything is blocked, but because the pause makes you realize how often you're reaching for your phone on autopilot.
 
 [Take the Phone Habit Quiz](/quiz)
 

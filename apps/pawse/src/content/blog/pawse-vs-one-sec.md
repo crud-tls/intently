@@ -15,7 +15,7 @@ faq:
   - question: "Does One Sec actually work?"
     answer: "Yes, One Sec has a peer-reviewed study from the Max Planck Institute showing a 57% reduction in social media app opens. That is one of the strongest pieces of evidence for any single screen time app. Its breathing-exercise approach works well for many users, though some report it can feel repetitive over time. Pawse uses a similar mindful pause concept but with customizable prompts, which some users find maintains engagement better."
   - question: "Can I use Pawse on iPhone?"
-    answer: "iOS support is coming soon. Currently, Pawse is available for Android and Chrome. One Sec works on iOS and has a Chrome extension too, so if you need an iPhone solution today, One Sec is a viable option until Pawse launches on iOS."
+    answer: "Yes. On iPhone, Pawse's companion app Respite is available now on the App Store; Pawse itself runs on Android and Chrome. One Sec also works on iOS and has a Chrome extension, so both are options for iPhone users."
   - question: "Which app is more private: Pawse or One Sec?"
     answer: "Both apps are privacy-conscious compared to most competitors. Pawse works offline with no account, keeps your usage history on your phone, and only syncs if you sign in. One Sec also offers optional cloud sync and requires more permissions. For users where privacy is the top concern, Pawse has the edge."
   - question: "What's the difference between Pawse and One Sec's approach?"
@@ -64,7 +64,7 @@ You always have the choice to proceed or close. There's no forced wait, no anima
 
 The reasoning behind this approach draws on behavioral science suggesting that personalized interventions maintain their effectiveness longer than generic ones, because your brain is less likely to tune out a message that connects to your specific goals.
 
-**Where Pawse is strong**: Fully customizable prompts, free with no limitations, works offline with no account, Android and Chrome.
+**Where Pawse is strong**: Fully customizable prompts, free with no limitations, works offline with no account, Android and Chrome — plus iPhone via Respite.
 
 **The trade-off**: The open-ended nature means you need to spend a few minutes crafting prompts that resonate. Without that personalization, the experience is less targeted than One Sec's breathing exercise.
 
@@ -82,7 +82,7 @@ Pawse works offline with no account; your usage history stays on your phone unle
 
 ### Platform
 
-One Sec has its best experience on iOS, where it integrates deeply with Apple's Shortcuts. It also has an Android version and Chrome extension. Pawse is strongest on Android and Chrome, with iOS coming soon. If you're an iPhone user today, One Sec is the more mature option. On Android, Pawse is the more complete choice.
+One Sec has its best experience on iOS, where it integrates deeply with Apple's Shortcuts. It also has an Android version and Chrome extension. Pawse is strongest on Android and Chrome, and on iPhone [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) brings the same mindful pause. If you're an iPhone user, both are solid options; on Android, Pawse is the more complete choice.
 
 ### Analytics
 

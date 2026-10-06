@@ -215,7 +215,7 @@ If you're in the "Time to Act" category, consider consulting your pediatrician o
 - Focus modes and Do Not Disturb scheduling
 
 ### For Parents: Building Your Own Habits
-- **[Pawse](/download)** — Free mindful pause app. Add awareness before opening distracting apps. Custom messages, usage tracking, works offline with no account. Available on Android and Chrome, with iOS coming soon.
+- **[Pawse](/download)** — Free mindful pause app. Add awareness before opening distracting apps. Custom messages, usage tracking, works offline with no account. Available on Android and Chrome; on iPhone, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) does the same.
 - **Phone-free charging station** — A central spot where all family devices charge overnight
 - **Grayscale mode** — Makes your phone less visually stimulating (Settings > Accessibility > Display)
 

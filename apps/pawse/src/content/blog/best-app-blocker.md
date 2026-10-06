@@ -14,7 +14,7 @@ faq:
   - question: "What is the best free app blocker for Android?"
     answer: "Google Digital Wellbeing (built-in) offers basic app timers for free. For a more effective free approach, Pawse provides mindful pause interventions with full customization and privacy — also completely free. Traditional blockers like Freedom require subscriptions for full functionality."
   - question: "What is the best app blocker for iPhone?"
-    answer: "Apple Screen Time is the best free built-in option. Opal is the best premium third-party blocker for iOS. For a mindful alternative, One Sec and ScreenZen offer pause-based approaches on iOS. Pawse's iOS version is coming soon."
+    answer: "Apple Screen Time is the best free built-in option. Opal is the best premium third-party blocker for iOS. For a mindful alternative, One Sec and ScreenZen offer pause-based approaches on iOS — and Respite, Pawse's iPhone companion, is free on the App Store."
   - question: "Why do app blockers stop working over time?"
     answer: "App blockers trigger 'psychological reactance' — the harder something is to access, the more you want it. Users find workarounds (disabling the blocker, using a different device, accessing websites through browsers). Blockers also don't address the underlying habit; they just suppress it. When the block is removed, the behavior returns unchanged."
   - question: "Are mindful screen time apps better than blockers?"
@@ -115,7 +115,7 @@ A growing category of apps takes a fundamentally different approach. Instead of 
 
 ### Pawse — Best Free Mindful Alternative
 
-**Platforms:** Android + Chrome (iOS coming soon)
+**Platforms:** Android + Chrome + iPhone (as [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293))
 **Price:** Completely free
 
 Pawse shows a full-screen pause before you open tracked apps. The pause displays a message you've written yourself — tied to your actual goals and reasons for changing. You reflect for a moment and then make a conscious choice.

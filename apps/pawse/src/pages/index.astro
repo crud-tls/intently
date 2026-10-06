@@ -13,7 +13,7 @@ import ProductSchema from '../components/SEO/ProductSchema.astro';
 import { getCollection } from 'astro:content';
 
 const androidFeatures = ["Complete app blocking", "Usage analytics", "Streak tracking", "Widget support"];
-const iosFeatures = ["Screen Time API", "Widget support", "iCloud sync", "Beautiful design"];
+const iosFeatures = ["A pause before the apps you choose", "Daily limits and an app lock", "Built on Apple's Screen Time", "Private by design"];
 const chromeFeatures = ["Site tracking", "Focus mode", "Usage insights", "Quick settings"];
 
 // Get latest 3 blog posts
@@ -244,12 +244,11 @@ const latestPosts = allPosts
 						/>
 						<PlatformCard
 							platform="ios"
-							title="iOS"
-							description="iPhone users, your turn is coming. A beautiful, native experience designed to respect your attention."
+							title="iOS — Respite"
+							description="iPhone users, meet Respite — our native app with the same gentle pause, built on Apple's Screen Time. App names never leave your iPhone."
 							features={iosFeatures}
-							downloadUrl="#"
+							downloadUrl="https://apps.apple.com/us/app/respite-screen-time-control/id6757760293"
 							storeType="appstore"
-							available={false}
 						/>
 						<PlatformCard
 							platform="chrome"

@@ -98,7 +98,7 @@ Rather than declaring a winner, it helps to be specific about what you're strugg
 - Gamification motivates you -- you enjoy virtual rewards and visual progress
 - You care about environmental impact and want your focus time to plant real trees
 - You want social accountability features like growing trees with friends
-- You're on iOS and need a solution today (Pawse is Android and Chrome for now)
+- You're on iOS and want tree-growing focus sessions (Pawse's iPhone companion is [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293))
 - You're a student looking for a fun way to stay off your phone while studying
 
 ### Use both if:
@@ -113,7 +113,7 @@ You want always-on awareness throughout the day (Pawse) plus structured focus se
 
 **Privacy**: Pawse works offline with no account; sync is optional. Forest requires an account and uses cloud sync for social features.
 
-**Platform**: Pawse is on Android and Chrome. Forest is on iOS, Android, and Chrome.
+**Platform**: Pawse is on Android and Chrome, with Respite on iPhone. Forest is on iOS, Android, and Chrome.
 
 **Motivation style**: Pawse uses streaks, milestones, and mindful reflection. Forest uses virtual trees, coins, real tree planting, and social features.
 
@@ -123,7 +123,7 @@ You want always-on awareness throughout the day (Pawse) plus structured focus se
 
 Pawse is completely free with no account required, so there's nothing to lose by trying it. If you've been using Forest and finding that your screen time outside of focus sessions hasn't changed, Pawse might be the missing piece.
 
-[Download Pawse for Android and Chrome](/download)
+[Download Pawse for Android & Chrome — or Respite for iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)
 
 ---
 

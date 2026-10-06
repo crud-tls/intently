@@ -12,7 +12,7 @@ faq:
   - question: "Is Opal worth $99 per year?"
     answer: "It depends on your needs. If you're an iOS user who needs strong blocking features for time-sensitive goals (exams, projects) and don't mind an account and cloud sync, it may be worth it. For long-term habit change, Pawse's free mindful approach delivers better value."
   - question: "Can I use Pawse on iPhone?"
-    answer: "iOS version is coming soon. Currently, Pawse is available for Android and Chrome. Opal is iOS-only, so if you need an iPhone solution today, Opal or One Sec are your options until Pawse launches on iOS."
+    answer: "Yes. Pawse's iPhone companion, Respite, is available now on the [App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293). Pawse itself runs on Android and Chrome. Opal is iOS-only as well, so on iPhone you can pick between the two approaches."
   - question: "Which app is better for privacy: Pawse or Opal?"
     answer: "Pawse is better for privacy. It works offline with no account; your usage history stays on your phone unless you sign in to sync. Opal requires an account and collects usage data for cloud sync and analytics."
   - question: "Do mindful interventions work better than app blocking?"
@@ -34,7 +34,7 @@ Here's an honest look at how they compare across the things that matter most: ap
 | Approach | Mindful interventions | App blocking |
 | Price | Free | $99/year |
 | Privacy | Works offline, no account, optional sync | Cloud sync, collects usage data |
-| Platforms | Android, iOS (coming soon), Chrome | iOS only |
+| Platforms | Android, iPhone (as Respite), Chrome | iOS only |
 | Blocking | Available, but not the focus | Core feature |
 | Streaks | Yes | Yes |
 | Usage Analytics | Detailed, stored locally | Detailed, cloud-synced |
@@ -120,7 +120,7 @@ For anyone who's wary about yet another app tracking their behavior (especially 
 
 ### Platform Availability
 
-Pawse runs on Android (full-featured), has an iOS version coming soon with Screen Time API integration, and offers a Chrome extension for web tracking and focus.
+Pawse runs on Android (full-featured), offers a Chrome extension for web tracking and focus, and on iPhone there's [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), built on the Screen Time API.
 
 Opal is iOS-only. No Android, no browser extension. The upside is that their iOS integration is deep and polished. The downside is that if you're not on iPhone, it's not an option.
 

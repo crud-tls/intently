@@ -11,13 +11,13 @@ faq:
   - question: "Is the Forest app worth it?"
     answer: "Yes, for what it does. Forest is one of the best gamified focus timers available, with charming design and the meaningful bonus of planting real trees. At $1.99-$3.99, it is excellent value. The limitation is that it only works during active focus sessions -- it cannot help with compulsive phone-checking habits outside of focused work time."
   - question: "What's the best free alternative to Forest?"
-    answer: "It depends on what you want. If you want gamification with always-on habit tracking, Pawse is free on Android and Chrome (iOS coming soon). If you want a Forest-like tree-growing experience with social features, Flora is free to start. If you want gentle awareness nudges, ScreenZen is free on both iOS and Android."
+    answer: "It depends on what you want. If you want gamification with always-on habit tracking, Pawse is free on Android and Chrome — and on iPhone as Respite. If you want a Forest-like tree-growing experience with social features, Flora is free to start. If you want gentle awareness nudges, ScreenZen is free on both iOS and Android."
   - question: "Does Forest actually help with phone addiction?"
     answer: "Forest helps with focused work sessions but does not address phone addiction directly. It only works when you actively start a timer -- it cannot intervene when you mindlessly pick up your phone. For compulsive phone use, apps that provide always-on interventions (like One Sec or Pawse) are better suited."
   - question: "Can I plant real trees with Forest alternatives?"
     answer: "Forest partners with Trees for the Future and has funded over 2 million real trees. Flora also offers real tree planting through partner organizations. Most other alternatives focus on digital habit change rather than environmental impact."
   - question: "Which Forest alternative works on both iPhone and Android?"
-    answer: "One Sec, Flora, Freedom, and ScreenZen all work on both iOS and Android. Pawse currently works on Android and Chrome, with iOS coming soon. Opal is iOS-only."
+    answer: "One Sec, Flora, Freedom, and ScreenZen all work on both iOS and Android. Pawse works on Android and Chrome, and on iPhone as Respite, its iOS companion. Opal is iOS-only."
   - question: "Do I actually need more than a focus timer?"
     answer: "If you only struggle during work or study sessions, a focus timer like Forest may be all you need. But if you find yourself compulsively checking your phone throughout the day, opening apps without thinking, or losing hours to scrolling outside of work, you likely need a tool that works beyond timed sessions."
 ---
@@ -78,7 +78,7 @@ On top of the interventions, there are streaks, achievements, and milestone cele
 
 Pricing: free. All features, no premium tier, no paywalls.
 
-The honest limitations: it's Android and Chrome only right now (iOS is in development). There's no tree-planting or forest visualization. No group features yet. If you're on iPhone, you'll need to wait or look at the other options on this list.
+The honest limitations: iPhone users get the same idea through [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Pawse's iOS companion, rather than the Pawse app itself. There's no tree-planting or forest visualization. No group features yet.
 
 Rating: 4/5 -- The strongest free option if you want Forest-style motivation applied to your whole day, not just timed sessions.
 
@@ -144,7 +144,7 @@ The right alternative depends entirely on what's not working for you about Fores
 
 If the core experience is fine but you wish it were more social, Flora is the natural next step. Same concept, better group features.
 
-If your real problem isn't focus sessions but the 50 times a day you reach for your phone without thinking, One Sec or Pawse will help more than any focus timer can. One Sec is the proven option with published research behind it; Pawse is free and adds gamification to keep things engaging (Android and Chrome now, iOS coming soon).
+If your real problem isn't focus sessions but the 50 times a day you reach for your phone without thinking, One Sec or Pawse will help more than any focus timer can. One Sec is the proven option with published research behind it; Pawse is free and adds gamification to keep things engaging (Android and Chrome, plus iPhone via [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)).
 
 If gentle approaches haven't been enough and you need your phone to actively stop you, Opal is the most polished hard blocker on iPhone -- though it'll cost you $99/year.
 
@@ -172,7 +172,7 @@ Yes. Forest remains one of the best gamified focus timers available. At $1.99-$3
 
 ### What's the best free alternative to Forest?
 
-It depends on what you need. Pawse is the best free option for combining gamification with always-on habit tracking (Android and Chrome, iOS coming soon). Flora is free to start and offers the most Forest-like experience with social features. ScreenZen is free on both iOS and Android for gentle awareness nudges.
+It depends on what you need. Pawse is the best free option for combining gamification with always-on habit tracking (Android and Chrome, plus iPhone via [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)). Flora is free to start and offers the most Forest-like experience with social features. ScreenZen is free on both iOS and Android for gentle awareness nudges.
 
 ### Do any Forest alternatives let you plant real trees?
 
@@ -196,7 +196,7 @@ If you only struggle during work or study sessions, a focus timer like Forest ma
 
 - Want Forest with social accountability? Try Flora
 - Need to break compulsive app-checking? Try One Sec
-- Want free gamification for all-day habits? Try [Pawse](/download) (Android and Chrome, iOS coming soon)
+- Want free gamification for all-day habits? Try [Pawse](/download) (Android and Chrome) or [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) (iPhone)
 - Need hard blocking on iPhone? Try Opal
 - Prefer the gentlest possible nudge? Try ScreenZen
 

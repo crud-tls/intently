@@ -11,7 +11,7 @@ faq:
   - question: "Is Apple Screen Time good enough for managing phone habits?"
     answer: "For basic time limits and parental controls, yes. But Screen Time is easy to bypass, lacks mindful interventions, and offers minimal insights into why you pick up your phone. Third-party alternatives use different approaches -- breathing exercises, mindful pauses, hard blocks -- that can be more effective for adults trying to change habits."
   - question: "What's the best free alternative to Apple Screen Time?"
-    answer: "Pawse is a strong free option offering mindful interventions, usage tracking, and gamification with complete privacy. It currently works on Android and Chrome, with iOS coming soon. On iPhone right now, ScreenZen offers a free awareness-based approach."
+    answer: "Pawse is a strong free option offering mindful interventions, usage tracking, and gamification with complete privacy. It works on Android and Chrome, and on iPhone as Respite, our native iOS app — free on the App Store."
   - question: "Why is Apple Screen Time so easy to bypass?"
     answer: "Screen Time relies on a simple 4-digit passcode and includes an 'Ignore Limit' button built right into the notification. Users can also bypass it by deleting and reinstalling apps, changing time zones, or using iMessage workarounds. It was designed primarily as a parental tool, not an adult habit-change tool."
   - question: "Can I replace Screen Time with a third-party app on iPhone?"
@@ -111,7 +111,7 @@ Pawse takes a different angle from the apps above. Instead of just a breathing e
 
 That privacy-first model is a genuine differentiator. Most apps in this space want your usage data. Pawse keeps it on your phone unless you choose to sync.
 
-The catch for iPhone users: Pawse is currently on Android and Chrome, with iOS in development. If you're on Android or use Chrome on desktop, it's an easy recommendation. If you're on iPhone, keep it on your radar.
+Good news for iPhone users: Pawse is on Android and Chrome, and on iPhone as Respite, our native iOS app built on Apple's Screen Time. If you're on Android or use Chrome on desktop, Pawse is an easy recommendation. On iPhone, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) brings the same gentle pause.
 
 Rating: 4/5
 
@@ -177,7 +177,7 @@ If you need unbreakable focus blocks for work or studying, Opal or Freedom can d
 
 If you want to understand your habits before committing to restrictions, ScreenZen gives you awareness without getting in the way.
 
-If you want something free and comprehensive, Pawse combines mindful interventions with tracking and gamification at no cost -- though it's currently Android and Chrome only, with iOS on the way.
+If you want something free and comprehensive, Pawse combines mindful interventions with tracking and gamification at no cost -- on Android and Chrome, and on iPhone as [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293).
 
 If you use a mix of Apple, Windows, and Android devices, Freedom is the only option that covers all of them.
 
@@ -204,11 +204,11 @@ It was designed primarily as a parental control tool. The "Ignore Limit" button 
 
 ### Do I need to pay for a better Screen Time alternative?
 
-Not necessarily. Pawse is completely free with all features included (Android and Chrome, iOS coming soon). ScreenZen is also free on both iOS and Android. Paid options like One Sec (~$50), Opal ($99/year), and Freedom ($120/year) offer specific capabilities, but plenty of people get results without spending anything.
+Not necessarily. Pawse is completely free with all features included (Android and Chrome, plus iPhone via Respite). ScreenZen is also free on both iOS and Android. Paid options like One Sec (~$50), Opal ($99/year), and Freedom ($120/year) offer specific capabilities, but plenty of people get results without spending anything.
 
 ### Which alternative works best on iPhone right now?
 
-For a proven mindful-pause experience, One Sec is the strongest option on iOS, backed by actual research. ClearSpace offers a freemium alternative in the same category. Opal is the most effective hard blocker. ScreenZen is the best free awareness tool. Pawse is coming to iOS soon and is already a top pick on Android and Chrome.
+For a proven mindful-pause experience, One Sec is the strongest option on iOS, backed by actual research. ClearSpace offers a freemium alternative in the same category. Opal is the most effective hard blocker. ScreenZen is the best free awareness tool. Pawse is a top pick on Android and Chrome — and on iPhone, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) brings the same gentle pause.
 
 ### Can I use these alongside Apple Screen Time?
 
@@ -223,7 +223,7 @@ The best Screen Time alternative depends on what isn't working for you right now
 - Keep tapping "Ignore Limit"? Try One Sec or ClearSpace for mindful pauses.
 - Need focus sessions for work? Try Opal or Freedom for hard blocking.
 - Want free awareness on iPhone? Try ScreenZen for lightweight nudges.
-- Want a free, all-in-one tool? Try [Pawse](/download) on Android or Chrome (iOS coming soon).
+- Want a free, all-in-one tool? Try [Pawse](/download) on Android or Chrome, or [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) on iPhone.
 
 Whatever you choose, the goal is the same: building a relationship with your phone that you actually feel good about.
 

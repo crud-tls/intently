@@ -50,9 +50,9 @@ If One Sec is a scalpel — one focused intervention — Pawse is more of a Swis
 
 The tracking is what sets it apart from One Sec. You get daily, weekly, and monthly breakdowns of your app usage, so you can actually see whether your habits are changing over time. The gamification layer (streaks and achievements) helps keep you motivated past the first week, which is where most people drop off with these tools.
 
-It works offline and keeps your usage history on your device — no account, sync only if you sign in. The trade-off is there's no iOS version yet (it's in development). If you're on iPhone, you'll need to look at the other options below.
+It works offline and keeps your usage history on your device — no account, sync only if you sign in. On iPhone, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) — Pawse's iOS companion — covers the same ground.
 
-Rating: 4/5 — The most full-featured free option in this space. The iOS gap is the main limitation.
+Rating: 4/5 — The most full-featured free option in this space.
 
 [Try Pawse for free](/download)
 

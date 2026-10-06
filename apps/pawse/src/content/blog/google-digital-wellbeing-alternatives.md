@@ -15,7 +15,7 @@ faq:
   - question: "Which Digital Wellbeing app is the most private?"
     answer: "Pawse works offline and needs no account; your usage history stays on your phone and only syncs if you sign in. It sends anonymous analytics and crash reports, which its privacy policy lists."
   - question: "Can I use Digital Wellbeing alternatives on multiple devices?"
-    answer: "Depends on the app. Pawse works on Android and Chrome (iOS coming soon). Freedom works across all platforms. Most alternatives are single-platform. Check each app's compatibility before choosing."
+    answer: "Depends on the app. Pawse works on Android and Chrome, and on iPhone as Respite. Freedom works across all platforms. Most alternatives are single-platform. Check each app's compatibility before choosing."
   - question: "Do I need to pay for a screen time app?"
     answer: "No. Pawse is completely free with all features included. Free alternatives like StayFree and YourHour exist but have ads. Paid apps ($20-100/year) offer premium features but aren't necessary for most users."
   - question: "Will these apps drain my battery?"
@@ -70,7 +70,7 @@ What makes it stand out:
 - Automatic usage tracking with daily, weekly, and monthly breakdowns
 - Streaks, achievements, and milestone celebrations to keep you motivated
 - Works offline — no account needed, sync only if you sign in
-- Available on Android and Chrome (iOS coming soon)
+- Available on Android and Chrome, plus iPhone via [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)
 - Completely free. No ads, no upsells, no premium tier
 
 The privacy angle is worth emphasizing. Your usage history stays on your phone, and there's no account to create. Sync is optional and only happens if you sign in. For anyone who's uncomfortable with the idea of a company cataloging their app habits, that's a meaningful difference.
@@ -203,7 +203,7 @@ Cross-platform support is a plus, and the free tier is genuinely useful. The app
 | App Blocking | Optional | Basic | Yes | Yes | Basic | Delay only | Focus mode | Advanced |
 | Gamification | Streaks + achievements | Basic | Basic | Score system | Challenges | None | Tree growing | None |
 | Privacy | Works offline, no account | Anonymous analytics | Collects data | Collects data | Cloud AI | Good | Good | Account required |
-| Cross-Platform | Android + Chrome | Android only | Android only | Android only | iOS + Android | iOS + Android | iOS + Android | All platforms |
+| Cross-Platform | Android + Chrome (iPhone via Respite) | Android only | Android only | Android only | iOS + Android | iOS + Android | iOS + Android | All platforms |
 | Price | Free | $4.99 one-time | Free (ads) | Free (ads) | $9.99/mo | $24.99/yr | $1.99 one-time | $39.99/yr |
 
 ---

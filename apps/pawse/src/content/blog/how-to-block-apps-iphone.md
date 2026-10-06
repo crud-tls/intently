@@ -163,11 +163,11 @@ The difference is subtle but significant:
 
 Research shows that pause-based interventions lead to better long-term habit retention because they build internal motivation rather than relying on external restriction. You're developing the skill of catching yourself — a skill that transfers beyond any single app.
 
-### Pawse: Mindful Pauses Coming to iPhone
+### Pawse on iPhone: Respite
 
-[Pawse](/download) is a free mindful pause app currently available on Android and Chrome, with an iOS version coming soon. It lets you write custom intervention messages for each app, tracks your usage privately (history on your phone, no account required), and helps you build awareness rather than dependence on a blocker.
+[Pawse](/download) is a free mindful pause app available on Android and Chrome — and on iPhone as [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), our native iOS app. It lets you write custom intervention messages for each app, tracks your usage privately (history on your phone, no account required), and helps you build awareness rather than dependence on a blocker.
 
-If you're on Android or use Chrome, you can start today. For iPhone, check back — or sign up for updates at [liveintently.app](https://pawse.liveintently.app).
+If you're on Android or use Chrome, you can start today. On iPhone, [Respite is free on the App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293).
 
 In the meantime, the best iPhone alternatives for a mindful approach are One Sec and ScreenZen, both of which offer pause-based interventions on iOS today.
 

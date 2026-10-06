@@ -45,7 +45,7 @@ Where ScreenZen gives you a countdown, Pawse gives you a moment of mindful aware
 
 Beyond the core intervention, Pawse includes comprehensive usage tracking (daily, weekly, monthly breakdowns), a gamification system with streaks and achievements that sustains motivation past the first week, and a Chrome extension for desktop habits. Your usage history stays on your phone — no account, no ads, sync only if you sign in.
 
-The main limitation is no iOS version yet (it's in development). If you're on Android or Chrome, it's the most full-featured free option in this space.
+The main limitation is that iPhone users get [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) — Pawse's iOS companion — rather than the Pawse app itself. If you're on Android or Chrome, it's the most full-featured free option in this space.
 
 Rating: 4/5 — The most complete free alternative. Mindful interventions engage awareness more actively than a countdown.
 

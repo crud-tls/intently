@@ -67,11 +67,13 @@ export const APPS: App[] = [
 		name: 'Respite',
 		tagline: 'A short pause before the apps that eat your day.',
 		host: 'respite.liveintently.app',
-		status: 'review',
+		status: 'live',
 		// No per-app inbox yet (Email Routing needs a token scope); the studio inbox works today.
 		email: 'support@liveintently.app',
 		platforms: ['iOS'],
-		stores: {},
+		stores: {
+			appStore: 'https://apps.apple.com/us/app/respite-screen-time-control/id6757760293',
+		},
 		color: '#FF8A3D',
 		icon: '/icons/respite.svg',
 		highlights: [

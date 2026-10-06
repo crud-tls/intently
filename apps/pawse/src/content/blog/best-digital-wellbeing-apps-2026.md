@@ -27,7 +27,7 @@ Some apps nail all of these. Most nail one or two. Let's get into it.
 ## 1. Pawse -- Best for Privacy-First Mindful Interventions
 
 **Price:** Free with optional premium ($4.99/month)
-**Platforms:** Android, iOS, Chrome
+**Platforms:** Android, iPhone (as Respite), Chrome
 **Approach:** Mindful interventions without blocking
 
 ### The Philosophy

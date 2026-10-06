@@ -29,7 +29,7 @@ Same goal, very different philosophies. One asks you to think. The other asks yo
 
 ## Quick Verdict
 
-Pawse is a free mindful pause app for Android and Chrome that works offline. Clearspace is a freemium iOS app that requires physical exercise (verified by camera) to unlock apps. Choose Pawse if you want customizable prompts, strong privacy, and an app that works anywhere. Choose Clearspace if you're on iOS and find physical effort more motivating than reflection.
+Pawse is a free mindful pause app for Android and Chrome that works offline — and on iPhone, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) carries the same approach. Clearspace is a freemium iOS app that requires physical exercise (verified by camera) to unlock apps. Choose Pawse if you want customizable prompts, strong privacy, and an app that works anywhere. Choose Clearspace if you're on iOS and find physical effort more motivating than reflection.
 
 **Bottom line:** Pawse works in every context — at your desk, in bed, on the bus. Clearspace's exercise requirement is powerful when practical but becomes a barrier in situations where pushups aren't an option.
 
@@ -75,7 +75,7 @@ Clearspace uses a freemium model. Basic exercise unlocks are free, but advanced 
 
 ### Platform Support
 
-Pawse covers Android and Chrome (with iOS coming soon). Clearspace is iOS-only.
+Pawse covers Android and Chrome, and on iPhone its companion app [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) is now live. Clearspace is iOS-only.
 
 If you're on Android, Clearspace isn't available to you. If you use Chrome on desktop, Pawse's browser extension covers website habits that Clearspace doesn't address at all.
 

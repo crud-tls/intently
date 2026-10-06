@@ -73,7 +73,7 @@ Here's what makes it worth trying:
 - Completely free. No ads, no paywalls, no premium tiers
 - Chrome extension covers desktop browsing too
 
-The honest limitation is that there's no iOS version yet (it's in development), and there's no hard blocking. If you need something that physically prevents you from opening an app, Pawse isn't designed for that. It's designed for people who want to stop needing that.
+The honest limitation is that there's no hard blocking — and on iPhone you'd use [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Pawse's iOS companion, rather than Pawse itself. If you need something that physically prevents you from opening an app, Pawse isn't designed for that. It's designed for people who want to stop needing that.
 
 It's especially worth trying if you've used Freedom and noticed your habits bouncing back every time the blocks come off.
 

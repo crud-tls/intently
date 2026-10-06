@@ -13,7 +13,7 @@ import { SITE_TITLE } from '../consts';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Download Pawse Free | Your Next Hour Starts Now" description="Download in 30 seconds. No account, no credit card, no ads. Pawse gives you back the hours you've been losing to mindless scrolling. Free on Android and Chrome." />
+		<BaseHead title="Download Pawse Free | Your Next Hour Starts Now" description="Download in 30 seconds. No account, no credit card, no ads. Pawse gives you back the hours you've been losing to mindless scrolling. Free on Android, iPhone and Chrome." />
 		<ProductSchema
 			name="Pawse Android"
 			description="Free privacy-first digital wellbeing app that creates a mindful pause before distracting apps open. Usage tracking, mindful interventions, streak tracking, and detailed analytics — all offline with no account needed."
@@ -21,10 +21,10 @@ import { SITE_TITLE } from '../consts';
 			downloadUrl="https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster"
 		/>
 		<ProductSchema
-			name="Pawse for iOS"
-			description="Privacy-first screen time app for iPhone. Screen Time API integration, iCloud sync, native widgets, and mindful interventions."
+			name="Respite — Pawse for iPhone"
+			description="Pawse for iPhone is Respite: a privacy-first screen time app built on Apple's Screen Time API. A gentle pause before distracting apps, daily limits, an app lock that refreshes at midnight, and no ads. App names never leave your iPhone."
 			platform="ios"
-			downloadUrl="https://pawse.liveintently.app/download"
+			downloadUrl="https://apps.apple.com/us/app/respite-screen-time-control/id6757760293"
 		/>
 		<ProductSchema
 			name="Pawse for Chrome"
@@ -79,25 +79,24 @@ import { SITE_TITLE } from '../consts';
 								</ul>
 							</div>
 
-							<!-- iOS -->
+							<!-- iOS : Respite -->
 							<div class="download-card">
-								<div class="coming-soon-badge">Coming Soon</div>
+								<div class="live-badge">Now Live</div>
 								<div class="platform-badge ios">
 									<svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
 										<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
 									</svg>
 								</div>
 								<h3>iOS</h3>
-								<p>iPhone users, your moment is coming. A beautiful, native experience built to respect your attention and your privacy.</p>
-								<button class="store-button-disabled" disabled>
-									<span class="button-text">Coming Soon</span>
-								</button>
+								<p>iPhone users, meet Respite — our native app with the same gentle pause, built on Apple's Screen Time. No account needed, and app names never leave your iPhone.</p>
+								<StoreButton store="appstore" href="https://apps.apple.com/us/app/respite-screen-time-control/id6757760293" />
 								<ul class="feature-list">
-									<li>Screen Time API integration</li>
-									<li>Beautiful native design</li>
-									<li>iCloud sync across devices</li>
-									<li>Lock screen widgets</li>
+									<li>A pause before the apps you choose</li>
+									<li>Daily limits and an app lock that refreshes at midnight</li>
+									<li>Built on Apple's Screen Time, private by design</li>
+									<li>No ads, no tracking SDKs</li>
 								</ul>
+								<p class="privacy-link"><a href="https://respite.liveintently.app">Respite — our iPhone app</a></p>
 							</div>
 
 							<!-- Chrome -->
@@ -366,12 +365,12 @@ import { SITE_TITLE } from '../consts';
 		background: radial-gradient(circle, var(--ds-red), transparent 70%);
 	}
 
-	.coming-soon-badge {
+	.live-badge {
 		position: absolute;
 		top: var(--ds-space-md);
 		right: var(--ds-space-md);
-		background: var(--ds-orange);
-		color: var(--ds-on-brand);
+		background: var(--ds-green);
+		color: #fff;
 		padding: 0.25rem 0.75rem;
 		border-radius: var(--ds-radius-full);
 		font-size: 0.75rem;
@@ -379,21 +378,6 @@ import { SITE_TITLE } from '../consts';
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
 		box-shadow: var(--ds-shadow-sm);
-	}
-
-	.store-button-disabled {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0.75rem 1.5rem;
-		background: var(--ds-gray-200);
-		color: var(--ds-text-hint);
-		border: none;
-		border-radius: var(--ds-radius-md);
-		font-weight: 600;
-		font-size: 0.9375rem;
-		cursor: not-allowed;
-		min-height: 48px;
 	}
 
 	.download-card h3 {

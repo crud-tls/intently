@@ -81,11 +81,11 @@ On privacy, Pawse works offline and needs no account. Your usage history stays o
 
 And Pawse is free. Not freemium, not free-with-ads. All features, no cost.
 
-Now, the honest downsides. Pawse currently supports Android and Chrome, with iOS coming. There's no desktop app for Windows or Mac yet. If you need to block distractions on your laptop during work hours, Pawse can't do that today -- and Freedom clearly wins there.
+Now, the honest downsides. On iPhone you'd use [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Pawse's iOS companion, rather than Pawse itself — and there's no desktop app for Windows or Mac yet, just the Chrome extension. If you need native blocking on a Windows or Mac desktop during work hours, Freedom clearly wins there.
 
 The other limitation is baked into the design itself. Pawse can't stop you if you're determined to tap through. For someone who will blow past any intervention without a second thought, Freedom's hard blocking might genuinely be the better tool.
 
-[Try Pawse free on Android or Chrome](/download)
+[Try Pawse free on Android or Chrome — or Respite on iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)
 
 ## Side-by-Side Comparison
 
@@ -93,7 +93,7 @@ The other limitation is baked into the design itself. Pawse can't stop you if yo
 |---|---|---|
 | Philosophy | Awareness and choice | Restriction and enforcement |
 | Price | Free | $40/yr or $120 lifetime |
-| Platforms | Android, Chrome (iOS coming) | iOS, Android, Windows, Mac, Chrome |
+| Platforms | Android, Chrome, iPhone (via Respite) | iOS, Android, Windows, Mac, Chrome |
 | Privacy | Works offline, no account | Account required, cloud sync |
 | Blocking | No (by design) | Yes, with Locked Mode |
 | Cross-device sync | No | Yes |
@@ -102,7 +102,7 @@ The other limitation is baked into the design itself. Pawse can't stop you if yo
 | Scheduling | Always-on interventions | Time-based scheduling |
 | Behavior change | Mindful prompts, breathing exercises, goals | None beyond blocking |
 | Best for | Building lasting habits | Enforcing focus during work |
-| Rating | 4/5 (limited platforms) | 4/5 (no behavior change tools) |
+| Rating | 4/5 (desktop is Chrome-only) | 4/5 (no behavior change tools) |
 
 ## So Which One Should You Actually Use?
 

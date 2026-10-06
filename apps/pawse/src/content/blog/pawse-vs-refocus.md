@@ -14,7 +14,7 @@ faq:
   - question: "Is Refocus free?"
     answer: "Refocus offers a free tier with basic time budget features. Some advanced features may require a premium subscription. Pawse is completely free with no limitations — every feature is available at no cost."
   - question: "Which app works on more platforms?"
-    answer: "Refocus supports both iOS and Android. Pawse supports Android and Chrome, with iOS coming soon. Refocus has the edge on mobile platforms today, while Pawse uniquely covers desktop habits through its Chrome extension."
+    answer: "Refocus supports both iOS and Android. Pawse supports Android and Chrome — and on iPhone there's Respite, its iOS companion. Refocus leans on structured roadmaps, while Pawse uniquely covers desktop habits through its Chrome extension."
   - question: "Can Pawse and Refocus work together?"
     answer: "They can complement each other since they work differently — Pawse pauses before every app open while Refocus monitors cumulative time. However, running both may feel like over-monitoring. Most users will find that one approach or the other matches their style better."
   - question: "Which approach is more effective for reducing screen time?"
@@ -83,7 +83,7 @@ Refocus offers a free tier with core features, with some advanced capabilities b
 
 ### Platform Support
 
-Refocus has an edge on mobile with both iOS and Android support. Pawse covers Android with iOS coming soon, but also offers a Chrome extension for managing website habits on desktop — something Refocus doesn't provide.
+Refocus covers both iOS and Android with one app. Pawse covers Android, with [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) doing the honors on iPhone — and it also offers a Chrome extension for managing website habits on desktop, something Refocus doesn't provide.
 
 ## Feature Comparison
 
