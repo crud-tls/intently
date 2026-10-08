@@ -77,7 +77,7 @@ const isLast = c.id === 'faith';
 		<section class="wrap narrow apps" aria-labelledby="apps-title">
 			<h2 id="apps-title" class="display">{c.apps.length > 1 ? 'The apps we made for this' : 'The app we made for this'}</h2>
 			<p class="lede">{c.appLine}</p>
-			{c.apps.map((a) => <AppCard app={a} />)}
+			{c.apps.map((a) => <AppCard app={a} chapter={c} />)}
 		</section>
 
 		<nav class="wrap narrow day" aria-label="The rest of the day">
@@ -94,6 +94,12 @@ const isLast = c.id === 'faith';
 		</nav>
 	</main>
 </Base>
+
+<script>
+	import { watchRanges } from '../scripts/feel/range.ts';
+
+	watchRanges(document);
+</script>
 
 <style>
 	h1 {
@@ -189,7 +195,7 @@ const isLast = c.id === 'faith';
 		margin-top: clamp(80px, 12vw, 140px);
 	}
 
-	.apps .lede { margin: 0 0 24px; }
+	.apps .lede { margin: 0 0 28px; }
 
 	.day {
 		display: grid;

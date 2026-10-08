@@ -23,9 +23,59 @@
 .feel-live output { font-variant-numeric: tabular-nums; }
 
 .feel-live input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	display: block;
 	width: 100%;
+	height: 28px;
+	margin: 0;
+	background: none;
+	cursor: pointer;
 	accent-color: var(--sky-accent);
+	--track: color-mix(in srgb, var(--ink) 24%, transparent);
 }
+
+/* The track fills up to the thumb (--fill is kept in step by src/scripts/feel/range.ts). */
+.feel-live input[type="range"]::-webkit-slider-runnable-track {
+	height: 6px;
+	border-radius: 3px;
+	background: linear-gradient(to right, var(--sky-accent) var(--fill, 0%), var(--track) var(--fill, 0%));
+}
+
+.feel-live input[type="range"]::-moz-range-track {
+	height: 6px;
+	border-radius: 3px;
+	background: var(--track);
+}
+
+.feel-live input[type="range"]::-moz-range-progress {
+	height: 6px;
+	border-radius: 3px;
+	background: var(--sky-accent);
+}
+
+.feel-live input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 22px;
+	height: 22px;
+	margin-top: -8px;
+	border: 0;
+	border-radius: 50%;
+	background: var(--ink);
+	box-shadow: 0 0 0 4px color-mix(in srgb, var(--sky-top) 55%, transparent), 0 2px 8px rgb(0 0 0 / 0.25);
+}
+
+.feel-live input[type="range"]::-moz-range-thumb {
+	width: 22px;
+	height: 22px;
+	border: 0;
+	border-radius: 50%;
+	background: var(--ink);
+	box-shadow: 0 0 0 4px color-mix(in srgb, var(--sky-top) 55%, transparent), 0 2px 8px rgb(0 0 0 / 0.25);
+}
+
+/* What only makes sense while the world is drawing (a note about the pond, a line in the scene). */
+html:not(.hero-live) .feel-live .live-only { display: none; }
 
 .feel-live .readout {
 	margin: 1rem 0 0.4rem;

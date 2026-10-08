@@ -23,6 +23,11 @@ export interface Chapter {
 	home: string;
 	/** The link from the home page to the chapter page: says what the visitor will do there. */
 	deeper: string;
+	/**
+	 * The storyteller's line: set beside the walker on the home page when the visitor pauses at this
+	 * hour. It only shows while the live world runs, so it may point at what the world is doing.
+	 */
+	aside: string;
 	meta: { title: string; description: string };
 	lede: string[];
 	feel: {
@@ -52,6 +57,7 @@ export const CHAPTERS: Chapter[] = [
 		title: 'You get about four thousand weeks.',
 		home: "If you live to eighty, that's about four thousand Mondays. Intention can't add more of them. It decides what goes into the ones you have.",
 		deeper: 'Count your weeks',
+		aside: 'Each light up there is one week.',
 		meta: {
 			title: 'Your life in weeks',
 			description: 'See your life as about 4,000 weeks and decide what goes into this one. A quiet page about time, with Loop, our app for fitting what matters into your week.',
@@ -93,6 +99,7 @@ export const CHAPTERS: Chapter[] = [
 		title: 'Whatever holds your attention holds your day.',
 		home: "Before your feet touch the floor, a dozen apps have asked for you. Your attention is where your life actually happens. It's worth choosing where it goes.",
 		deeper: 'Clear the noise',
+		aside: 'Wait a moment. They leave as birds.',
 		meta: {
 			title: 'Your attention',
 			description: 'Notice what pulls at you, take one breath, and choose. A page about attention, with Pawse and Respite, our apps for a short pause before the apps that eat your day.',
@@ -134,6 +141,7 @@ export const CHAPTERS: Chapter[] = [
 		title: 'Your body is listening to every ordinary day.',
 		home: "Health is rarely one big decision. It's the stairs, the walk after lunch, the night you go to bed on time. Small, repeated, slightly boring, and you can start at lunch.",
 		deeper: 'Breathe and find your pace',
+		aside: 'The grass leans when you walk.',
 		meta: {
 			title: 'Your health',
 			description: 'Small, repeated choices add up in the body. Breathe with us for a minute, see what everyday steps add up to, and meet PaceShift, marathon training that adapts to your runs.',
@@ -175,6 +183,7 @@ export const CHAPTERS: Chapter[] = [
 		title: 'Money mostly leaves in small amounts.',
 		home: 'Nobody decides to spend a month of rent on delivery fees. It leaks out a little at a time. Knowing where it goes lets it go where you mean it to.',
 		deeper: 'Watch a small amount add up',
+		aside: 'One drop for each day.',
 		meta: {
 			title: 'Your money',
 			description: 'Small daily amounts add up to surprising sums. See yours, set it aside on purpose, and meet Hisab, an app that logs your spending from bank SMS without typing.',
@@ -216,6 +225,7 @@ export const CHAPTERS: Chapter[] = [
 		title: 'The people you love are not a someday.',
 		home: "There's always next weekend, the next holiday, next summer. Until there isn't. That's not a reason to be sad. It's a reason to call tonight.",
 		deeper: 'See the time you have together',
+		aside: 'Someone left the light on.',
 		meta: {
 			title: 'Your people',
 			description: 'The time we have with the people we love is limited and precious. See it plainly, ask a better question tonight, and meet TwoHearts, one daily question for two people.',
@@ -257,6 +267,7 @@ export const CHAPTERS: Chapter[] = [
 		title: "You're becoming someone, either way.",
 		home: "Every day leaves a small mark on who you are. You don't need a new you. You need to notice the one you're already shaping.",
 		deeper: "Meet who you're becoming",
+		aside: 'Slow down, and the water clears.',
 		meta: {
 			title: 'Yourself',
 			description: 'Who you become is built from small daily acts. Slow down, choose a few, and watch the figure take shape. With Mirror, an app for finding the looks that suit your face.',
@@ -295,6 +306,7 @@ export const CHAPTERS: Chapter[] = [
 		title: 'Every heart needs somewhere to rest.',
 		home: "At the end of the day, something in us wants to come home. For many of us it's the Quran: a lantern carried through the dark, one verse at a time.",
 		deeper: 'Light the lantern',
+		aside: 'A small light, carried a long way.',
 		meta: {
 			title: 'Your heart',
 			description: 'A still minute at the end of the day. Light a lantern, read a verse, and meet Qandeel, the Quran on your phone and your watch, offline and in sync.',

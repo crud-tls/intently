@@ -6,6 +6,7 @@
 import { test, expect } from '@playwright/test';
 import { SCENES } from '../../src/world/scenes.ts';
 import { SKY } from '../../src/data/sky.ts';
+import { CHAPTERS } from '../../src/data/chapters.ts';
 import { collectErrors, gesture, isChromium, scrollToScene, skipSplash, waitForWorld, world, wordsOpacity } from './helpers.ts';
 
 test.use({ reducedMotion: 'no-preference' });
@@ -87,6 +88,34 @@ test('real scrolling to the end and back up keeps the world alive (wheel, or tou
 	await expect.poll(() => wordsOpacity(page, 0)).toBeGreaterThan(0.9);
 	const before = (await world(page))!.frames;
 	await expect.poll(async () => (await world(page))!.frames).toBeGreaterThan(before);
+	expect(errors).toEqual([]);
+});
+
+test('the storyteller speaks beside the walker when the visitor pauses, and steps back when they move on', async ({ page }) => {
+	test.setTimeout(180_000);
+	const errors = collectErrors(page);
+	await page.goto('/');
+	test.skip(!(await waitForWorld(page)), 'no WebGL2 in this browser');
+	const teller = page.locator('[data-storyteller]');
+	await expect(teller).toHaveAttribute('aria-hidden', 'true');
+	await expect(teller).toHaveClass(/\bon\b/, { timeout: 30_000 });
+	await expect(teller).toHaveText('Scroll, and the day starts walking.');
+
+	// It stands above the walker's head, inside the screen.
+	const st = (await world(page))!;
+	const vp = page.viewportSize()!;
+	const box = (await teller.boundingBox())!;
+	expect(box.x).toBeGreaterThanOrEqual(0);
+	expect(box.x + box.width).toBeLessThanOrEqual(vp.width);
+	expect(box.y + box.height, 'above the walker').toBeLessThan(st.walker.y * st.scale - 60 * st.scale);
+
+	// Moving on, it steps back at once; at the next hour it says that hour's line.
+	const wealth = SCENES.findIndex((s) => s.id === 'wealth');
+	await scrollToScene(page, wealth);
+	await expect(teller).not.toHaveClass(/\bon\b/);
+	await expect(teller).toHaveClass(/\bon\b/, { timeout: 90_000 });
+	await expect(teller).toHaveText(CHAPTERS.find((c) => c.id === 'wealth')!.aside);
+	await expect(teller).toHaveAttribute('data-sky', 'afternoon');
 	expect(errors).toEqual([]);
 });
 

@@ -1,6 +1,10 @@
 ---
-/** Wealth, live: a small daily amount fills the pond (src/scripts/feel/wealth.ts). */
+/**
+ * Wealth, live: a small daily amount fills the pond (src/scripts/feel/wealth.ts). The two sliders
+ * are the scene's own legend: the drop is a day's amount, the stone is a year.
+ */
 import { setAside, withGrowth } from '../../../scripts/lib/math.ts';
+import { pondNote } from '../../../scripts/feel/wealth.ts';
 
 interface Props {
 	/** The chapter's own invitation (src/data/chapters.ts: feel.intro). */
@@ -10,47 +14,146 @@ interface Props {
 const { intro } = Astro.props;
 const AMOUNT = 5;
 const YEARS = 10;
-// A few currencies people here use; formatting is the browser's (Intl), nothing is converted.
-const CURRENCIES = [['', 'No currency'], ['USD', 'US dollar'], ['EUR', 'Euro'], ['GBP', 'Pound'], ['BDT', 'Taka'], ['INR', 'Rupee (India)'], ['PKR', 'Rupee (Pakistan)'], ['AED', 'Dirham'], ['SAR', 'Riyal'], ['MYR', 'Ringgit'], ['IDR', 'Rupiah']];
+/**
+ * A few currencies people here use; formatting is the browser's (Intl), nothing is converted. The
+ * third value sizes the slider for that currency: a small daily amount is 0.5 to 50 dollars, euros
+ * or pounds, and 10 to 1,000 taka.
+ */
+const CURRENCIES: [string, string, number][] = [
+	['', 'No currency', 1], ['USD', 'US dollar', 1], ['EUR', 'Euro', 1], ['GBP', 'Pound', 1], ['BDT', 'Taka', 20],
+	['INR', 'Rupee (India)', 20], ['PKR', 'Rupee (Pakistan)', 50], ['AED', 'Dirham', 4], ['SAR', 'Riyal', 4],
+	['MYR', 'Ringgit', 2], ['IDR', 'Rupiah', 4000],
+];
+/** The intro's three small leaks as starting points, in the slider's base units. Examples, not prices. */
+const LEAKS: [string, number][] = [['A coffee', 4], ['A delivery fee', 3], ['A subscription', 0.5]];
 const n = (v: number) => Math.round(v).toLocaleString('en');
 ---
 
 <div class="feel-live needs-js" data-feel="wealth">
 	<p class="ask">{intro}</p>
+	<div class="leaks" role="group" aria-label="Example amounts">
+		{LEAKS.map(([name, base]) => (
+			<button type="button" class="leak" data-leak={base} aria-pressed="false">{name} <span data-leak-amount>{base}</span></button>
+		))}
+	</div>
 	<div class="fields">
-		<label class="field">
-			<span>A day <output data-out="amount">{AMOUNT}</output></span>
+		<label class="field drop">
+			<span>A day <output data-out="amount">{AMOUNT}</output> <i class="key voice live-only">a drop</i></span>
 			<input type="range" min="0.5" max="50" step="0.5" value={AMOUNT} data-amount />
 		</label>
-		<label class="field">
-			<span>For <output data-out="years">{YEARS}</output> years</span>
+		<label class="field stone">
+			<span>For <output data-out="years">{YEARS}</output> years <i class="key voice live-only">a stone each</i></span>
 			<input type="range" min="1" max="30" step="1" value={YEARS} data-years />
 		</label>
-		<label class="field">
-			<span>Currency</span>
-			<select data-currency>
-				{CURRENCIES.map(([code, name]) => <option value={code}>{code ? `${code}, ${name}` : name}</option>)}
-			</select>
-		</label>
-		<label class="field check">
+	</div>
+	<p class="readout" aria-live="polite">
+		<span class="lead"><strong data-out="perDay">{AMOUNT}</strong> a day is <strong data-out="year">{n(setAside(AMOUNT, 1))}</strong> a year and</span>
+		<strong class="total" data-out="total">{n(setAside(AMOUNT, YEARS))}</strong>
+		<span class="tail">in <span data-out="yearsAgain">{YEARS}</span> years, simply set aside.</span>
+	</p>
+	<p class="grown" data-growth-line hidden>If it grew 5% a year: about <strong data-out="grown">{n(withGrowth(AMOUNT, YEARS, 0.05))}</strong>.
+		An illustration only, before inflation and fees, and not advice.</p>
+	<div class="options">
+		<select data-currency aria-label="Currency">
+			{CURRENCIES.map(([code, name, scale]) => <option value={code} data-scale={scale}>{code ? `${code}, ${name}` : name}</option>)}
+		</select>
+		<label class="check">
 			<input type="checkbox" data-growth />
 			<span>Show it growing at 5% a year</span>
 		</label>
 	</div>
-	<p class="readout" aria-live="polite">
-		<strong data-out="perDay">{AMOUNT}</strong> a day is <strong data-out="year">{n(setAside(AMOUNT, 1))}</strong> a year and
-		<strong data-out="total">{n(setAside(AMOUNT, YEARS))}</strong> in <span data-out="yearsAgain">{YEARS}</span> years, simply set aside.
-	</p>
-	<p class="grown" data-growth-line hidden>If it grew 5% a year: about <strong data-out="grown">{n(withGrowth(AMOUNT, YEARS, 0.05))}</strong>.
-		An illustration only, before inflation and fees, and not advice.</p>
-	<p class="assume">Nothing is converted or saved; nothing you choose leaves this page.</p>
+	<p class="assume">Example amounts. Nothing is converted or saved; nothing you choose leaves this page.</p>
 </div>
+{/* What the pond says about itself. It sits outside the panel so the world can set it down beside the
+    water (src/scripts/feel/wealth.ts). It describes the picture, so it is hidden from assistive tech:
+    the numbers themselves are announced by the readout above. */}
+<p class="voice pond-note" data-pond-note aria-hidden="true">{pondNote(setAside(AMOUNT, YEARS))}</p>
 
 <style>
+	.feel-live .ask { font-size: 0.97rem; line-height: 1.5; margin-bottom: 0.8rem; }
+
+	.leaks {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+		margin-bottom: 0.9rem;
+	}
+
+	.leak {
+		font: inherit;
+		font-size: 0.82rem;
+		line-height: 1.3;
+		padding: 4px 9px;
+		border-radius: 999px;
+		border: 1px solid color-mix(in srgb, var(--ink) 34%, transparent);
+		background: transparent;
+		color: var(--ink);
+		cursor: pointer;
+		transition: background-color 200ms ease, border-color 200ms ease;
+	}
+
+	.leak span {
+		margin-left: 0.2em;
+		font-weight: 650;
+		font-variant-numeric: tabular-nums;
+	}
+
+	.leak:hover { border-color: var(--ink); }
+
+	.leak[aria-pressed="true"] {
+		background: color-mix(in srgb, var(--ink) 12%, transparent);
+		border-color: var(--ink);
+	}
+
+	.leak:focus-visible { outline: 3px solid var(--sky-accent); outline-offset: 2px; }
+
+	/* The thumbs are the legend: a drop for the day's amount, a shore stone for the years. */
+	.drop input::-webkit-slider-thumb { border-radius: 2px 50% 50% 50%; transform: rotate(45deg) scale(0.92); }
+	.drop input::-moz-range-thumb { border-radius: 2px 50% 50% 50%; transform: rotate(45deg) scale(0.92); }
+	.stone input::-webkit-slider-thumb { width: 26px; height: 19px; margin-top: -7px; border-radius: 46% 54% 58% 42% / 58% 50% 50% 42%; }
+	.stone input::-moz-range-thumb { width: 26px; height: 19px; border-radius: 46% 54% 58% 42% / 58% 50% 50% 42%; }
+
+	.field > span { display: flex; align-items: baseline; gap: 0.35em; }
+
+	.key {
+		margin-left: auto;
+		font-size: 0.9rem;
+		color: var(--ink2);
+	}
+
+	/* The sentence keeps its words; the total is the thing to see. */
+	.feel-live .readout {
+		display: grid;
+		gap: 0.08em;
+		margin: 0.7rem 0 0.6rem;
+	}
+
+	.lead,
+	.tail { font-size: clamp(1rem, 1.4vw, 1.12rem); }
+
+	.total {
+		font-size: clamp(2.3rem, 4vw, 2.9rem);
+		font-weight: 520;
+		line-height: 1;
+		letter-spacing: -0.03em;
+	}
+
+	.grown { margin: 0 0 0.6rem; font-size: 0.9rem; }
+
+	.options {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 6px 12px;
+		margin-bottom: 0.6rem;
+	}
+
 	select {
 		font: inherit;
+		font-size: 0.9rem;
 		font-weight: 450;
-		padding: 6px 10px;
+		width: 8.2rem;
+		padding: 5px 8px;
 		border-radius: 10px;
 		border: 1px solid color-mix(in srgb, var(--ink) 30%, transparent);
 		background: color-mix(in srgb, var(--sky-top) 40%, #ffffff 60%);
@@ -60,12 +163,47 @@ const n = (v: number) => Math.round(v).toLocaleString('en');
 	.check {
 		display: flex;
 		align-items: center;
-		gap: 8px;
-		align-self: end;
+		gap: 7px;
+		font-size: 0.88rem;
 		font-weight: 500;
+		white-space: nowrap;
 	}
 
-	.check input { width: 18px; height: 18px; accent-color: var(--sky-accent); }
+	.check input { width: 18px; height: 18px; margin: 0; accent-color: var(--sky-accent); }
 
-	.grown { margin: 0 0 0.6rem; font-size: 0.95rem; }
+	/* The pond's own note only exists while the world is drawing. On a phone it is a caption under
+	   the controls; on wide screens the world sets it down in the scene, above the figure on the bank
+	   (src/scripts/feel/wealth.ts moves it there every frame). */
+	.pond-note { display: none; }
+
+	:global(html.hero-live) .pond-note {
+		display: block;
+		width: fit-content;
+		margin: 10px 0 0;
+		padding: 5px 13px 6px;
+		border-radius: 14px 14px 14px 3px;
+		background: color-mix(in srgb, var(--sky-top) 82%, transparent);
+		color: var(--ink);
+		font-size: 1.05rem;
+		text-shadow: none;
+	}
+
+	@media (min-width: 1024px) {
+		:global(html.hero-live) .pond-note {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 3;
+			margin: 0;
+			white-space: nowrap;
+			pointer-events: none;
+			visibility: hidden;
+		}
+
+		:global(html.hero-live) .pond-note:global(.placed) { visibility: visible; }
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.leak { transition: none; }
+	}
 </style>

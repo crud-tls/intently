@@ -4,6 +4,8 @@
  */
 import { test, expect } from '@playwright/test';
 import { hoursPerYear, kmPerYear, lifeWeeks, marathons, setAside, visitsLeft, wakingDays, weeksLived, withGrowth } from '../../src/scripts/lib/math.ts';
+import { GROWN_NOTE, POND_NOTES } from '../../src/scripts/feel/wealth.ts';
+import { pondFill, pondStage } from '../../src/world/pond.ts';
 import { collectErrors, isChromium, skipSplash } from './helpers.ts';
 
 const fmt = (n: number) => Math.floor(n).toLocaleString('en');
@@ -215,6 +217,92 @@ test.describe('wealth', () => {
 		// The headline number never includes growth.
 		await expect(page.locator('[data-out="total"]')).toHaveText('$146,000');
 		expect(errors).toEqual([]);
+	});
+
+	test('the named examples set the amount, and a currency brings its own range', async ({ page }) => {
+		const errors = collectErrors(page);
+		await page.goto('/wealth/');
+		const coffee = page.getByRole('button', { name: /A coffee/ });
+		await coffee.click();
+		await expect(page.locator('[data-amount]')).toHaveValue('4');
+		await expect(coffee).toHaveAttribute('aria-pressed', 'true');
+		await expect(page.locator('[data-feel="wealth"]')).toHaveAttribute('data-total', String(setAside(4, 10)));
+		// The amount keeps its place on the slider: 4 of 0.5 to 50 is 80 of 10 to 1,000 taka. Nothing is converted.
+		await page.locator('[data-currency]').selectOption('BDT');
+		await expect(page.locator('[data-amount]')).toHaveValue('80');
+		await expect(page.locator('[data-amount]')).toHaveAttribute('min', '10');
+		await expect(page.locator('[data-amount]')).toHaveAttribute('max', '1000');
+		await expect(page.locator('[data-out="total"]')).toHaveText(/292,000$/);
+		await expect(coffee).toContainText('80');
+		await expect(coffee).toHaveAttribute('aria-pressed', 'true');
+		await page.locator('[data-currency]').selectOption('');
+		await expect(page.locator('[data-amount]')).toHaveValue('4');
+		await expect(page.locator('[data-out="total"]')).toHaveText(setAside(4, 10).toLocaleString('en'));
+		// Whole amounts stay whole; small change keeps its cents.
+		await page.locator('[data-currency]').selectOption('USD');
+		await expect(page.locator('[data-out="perDay"]')).toHaveText('$4');
+		await page.getByRole('button', { name: /A subscription/ }).click();
+		await expect(page.locator('[data-out="perDay"]')).toHaveText('$0.50');
+		expect(errors).toEqual([]);
+	});
+
+	test('the pond says what has come to live in it, alike in any currency', async ({ page }) => {
+		// The numbers behind the picture; the picture itself is the next test.
+		await page.emulateMedia({ reducedMotion: 'reduce' });
+		const errors = collectErrors(page);
+		await page.goto('/wealth/');
+		const feel = page.locator('[data-feel="wealth"]');
+		const note = page.locator('[data-pond-note]');
+		for (const [amount, years] of [[0.5, 1], [2, 3], [5, 10], [50, 30]]) {
+			await setRange(page, '[data-amount]', amount);
+			await setRange(page, '[data-years]', years);
+			const stage = pondStage(pondFill(setAside(amount, years)));
+			await expect(feel).toHaveAttribute('data-pond', String(stage));
+			await expect(note).toHaveText(POND_NOTES[stage]);
+		}
+		expect(pondStage(pondFill(setAside(0.5, 1)))).toBe(0);
+		expect(pondStage(pondFill(setAside(50, 30)))).toBe(5);
+		// 100 taka a day fills the pond as 5 a day does with no currency: the same place on the slider.
+		await page.locator('[data-currency]').selectOption('BDT');
+		await setRange(page, '[data-amount]', 100);
+		await setRange(page, '[data-years]', 10);
+		await expect(feel).toHaveAttribute('data-pond', String(pondStage(pondFill(setAside(5, 10)))));
+		// "Show it growing" adds one thing to the picture, and the note says what it is.
+		await page.locator('[data-growth]').check();
+		await expect(note).toHaveText(GROWN_NOTE);
+		await page.locator('[data-growth]').uncheck();
+		await expect(note).toHaveText(POND_NOTES[pondStage(pondFill(setAside(5, 10)))]);
+		expect(errors).toEqual([]);
+	});
+
+	test('while the world draws, the pond\'s note is set down in the picture', async ({ page }, info) => {
+		test.skip(!isChromium(info), 'the live hero needs WebGL2');
+		test.setTimeout(120_000);
+		await page.emulateMedia({ reducedMotion: 'no-preference' });
+		const errors = collectErrors(page);
+		await page.goto('/wealth/');
+		await expect.poll(() => heroFrames(page), { timeout: 60_000 }).toBeGreaterThan(3);
+		const note = page.locator('[data-pond-note]');
+		await expect(note).toBeVisible();
+		await expect(note).toHaveText(POND_NOTES[pondStage(pondFill(setAside(5, 10)))]);
+		// Part of the picture, not of the form: hidden from assistive tech, inside the screen, off the controls.
+		await expect(note).toHaveAttribute('aria-hidden', 'true');
+		const box = (await note.boundingBox())!;
+		const panel = (await page.locator('[data-feel="wealth"]').boundingBox())!;
+		expect(box.x).toBeGreaterThanOrEqual(0);
+		expect(box.x + box.width).toBeLessThanOrEqual(page.viewportSize()!.width + 1);
+		expect(box.y, 'below the controls').toBeGreaterThanOrEqual(panel.y + panel.height);
+		expect(errors).toEqual([]);
+	});
+
+	test('without the live world the pond keeps quiet: no note, no legend about a scene that is still', async ({ page }) => {
+		await page.emulateMedia({ reducedMotion: 'reduce' });
+		await page.goto('/wealth/');
+		await expect(page.locator('[data-pond-note]')).toBeHidden();
+		await expect(page.locator('[data-feel="wealth"] .key').first()).toBeHidden();
+		await page.locator('[data-growth]').check();
+		await expect(page.locator('[data-growth-line]')).toBeVisible();
+		await expect(page.locator('[data-pond-note]')).toBeHidden();
 	});
 
 	test('without the live world the still tally follows the amount', async ({ page }) => {

@@ -1,21 +1,34 @@
 ---
-/** An app, presented as the tool for one part of life: what it is, what's true about it, where to get it. */
+/**
+ * An app, shown where it lives: in a piece of its own hour's sky, with its icon standing on that
+ * hour's land the way the walker does. What it is, what's true about it, where to get it.
+ */
 import AppMark from '@intently/ui/AppMark.astro';
 import type { App } from '@intently/registry';
+import Hour from './world/Hour.astro';
 import { siteUrl, statusLabel, stores } from '../data/apps.ts';
+import { vignetteGround } from '../world/vignette.ts';
+import type { Chapter } from '../data/chapters.ts';
 
 interface Props {
 	app: App;
+	/** The part of the day this app looks after. */
+	chapter: Chapter;
 }
 
-const { app } = Astro.props;
+const { app, chapter } = Astro.props;
 const status = statusLabel(app);
 const links = stores(app);
+
+// The icon stands on the near ridge: this far in from the right edge, on wide screens and on phones.
+const LAND = 116;
+const ICON = 72;
+const AT = { wide: 150, narrow: 64 };
+const stand = (fromRight: number) => Math.round(LAND - vignetteGround(chapter.id, LAND, fromRight) - 3);
 ---
 
-<article class="app-card" style={`--app:${app.color}`} aria-labelledby={`app-${app.id}`}>
-	<AppMark app={app} size={72} />
-	<div class="text">
+<Hour as="article" chapter={chapter} land={LAND} class="app-card" aria-labelledby={`app-${app.id}`}>
+	<div class="card" style={`--app:${app.color};--at:${AT.wide - ICON / 2}px;--up:${stand(AT.wide)}px;--at-narrow:${AT.narrow - ICON / 2 + 8}px;--up-narrow:${stand(AT.narrow)}px`}>
 		<h3 id={`app-${app.id}`} class="display">{app.name}</h3>
 		<p class="tagline">{app.tagline}</p>
 		{app.highlights && (
@@ -25,64 +38,134 @@ const links = stores(app);
 		)}
 		<p class="actions">
 			{links.map((l) => <a class="button" href={l.href}>{l.label}</a>)}
-			{status && <span class="pill">{status}</span>}
 			<a class="step" href={siteUrl(app)}>Visit the {app.name} site</a>
 		</p>
-		<p class="platforms">{app.platforms.join(', ')}</p>
+		<p class="where">
+			{status
+				? <span class="voice">{status}</span>
+				: <span class="out"><span class="star" aria-hidden="true"></span>Out now</span>}
+			<span class="platforms"><span class="visually-hidden">for </span>{app.platforms.join(', ')}</span>
+		</p>
+		<span class="stand" aria-hidden="true"><AppMark app={app} size={ICON} /></span>
 	</div>
-</article>
+</Hour>
 
 <style>
-	.app-card {
-		display: grid;
-		grid-template-columns: 72px 1fr;
-		gap: 24px;
-		padding: 28px 0;
-		border-top: 1px solid var(--line);
+	:global(.app-card) {
+		border-radius: 30px;
+		margin-top: 18px;
 	}
 
+	.card {
+		padding: clamp(24px, 4vw, 36px) clamp(22px, 4vw, 40px) 14px;
+		text-shadow: none;
+	}
+
+	.card > :not(.stand) { max-width: min(31rem, 68%); }
+
 	h3 {
-		font-size: clamp(1.8rem, 3vw, 2.3rem);
-		margin: 0 0 4px;
+		font-size: clamp(2rem, 3.6vw, 2.7rem);
+		margin: 0 0 6px;
 	}
 
 	.tagline {
-		font-size: 1.1rem;
-		color: var(--text-2);
-		margin: 0 0 14px;
+		font-size: 1.12rem;
+		line-height: 1.45;
+		color: var(--ink2);
+		margin: 0 0 16px;
+		text-wrap: pretty;
 	}
 
 	ul {
-		margin: 0 0 20px;
-		padding-left: 1.1rem;
+		list-style: none;
+		margin: 0 0 22px;
+		padding: 0;
 	}
 
-	li { margin: 4px 0; }
+	li {
+		position: relative;
+		margin: 6px 0;
+		padding-left: 20px;
+	}
 
-	li::marker { color: var(--app); }
+	/* Each true thing gets a small light, in the colour of this part of the day. */
+	li::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0.62em;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: radial-gradient(circle, #fff 0 25%, var(--light) 60%);
+		box-shadow: 0 0 10px color-mix(in srgb, var(--light) 70%, transparent);
+	}
 
 	.actions {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 12px 18px;
+		gap: 12px 20px;
+		margin: 0 0 14px;
+	}
+
+	.where {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 4px 12px;
 		margin: 0;
+		font-size: 0.98rem;
 	}
 
-	.pill {
-		padding: 6px 14px;
-		border-radius: 999px;
-		border: 1px solid var(--line);
-		font-size: 0.92rem;
+	.where .voice { font-size: 1.08rem; }
+
+	.out {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		font-weight: 650;
 	}
 
-	.platforms {
-		margin: 14px 0 0;
-		font-size: 0.9rem;
-		color: var(--text-2);
+	.star {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: radial-gradient(circle, #fff 0 22%, var(--light) 45%, transparent 72%);
+		box-shadow: 0 0 12px color-mix(in srgb, var(--light) 80%, transparent);
 	}
 
-	@media (max-width: 560px) {
-		.app-card { grid-template-columns: 1fr; gap: 16px; }
+	.platforms { color: var(--ink2); }
+
+	/* The icon on the hill, with the shadow it casts on the ground. */
+	.stand {
+		position: absolute;
+		right: var(--at);
+		bottom: var(--up);
+		z-index: 3;
+		display: block;
+		line-height: 0;
+	}
+
+	.stand::after {
+		content: "";
+		position: absolute;
+		left: 8%;
+		right: 8%;
+		bottom: -5px;
+		height: 10px;
+		border-radius: 50%;
+		background: rgb(0 0 0 / 0.28);
+		filter: blur(5px);
+		z-index: -1;
+	}
+
+	.stand :global(.mark) { box-shadow: none; }
+
+	@media (max-width: 640px) {
+		.card > :not(.stand) { max-width: none; }
+		.card { padding-bottom: 44px; }
+		.stand { right: var(--at-narrow); bottom: var(--up-narrow); }
+		.stand :global(.mark) { --size: 56px !important; width: 56px; height: 56px; }
 	}
 </style>

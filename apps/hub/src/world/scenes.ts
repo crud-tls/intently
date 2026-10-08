@@ -11,7 +11,9 @@ import type { ChapterId } from '../data/chapters.ts';
 
 export type SceneId = 'prologue' | ChapterId | 'finale';
 
-export type PropKind = 'figure' | 'tent' | 'fire' | 'phone' | 'pill' | 'bird' | 'house' | 'lantern' | 'spring' | 'drop' | 'firefly';
+export type PropKind = 'figure' | 'tent' | 'fire' | 'phone' | 'pill' | 'bird' | 'house' | 'lantern' | 'spring' | 'drop' | 'firefly'
+	// What comes to live in the pond (src/world/pond.ts), and smoke from a chimney.
+	| 'reed' | 'lily' | 'bloom' | 'stone' | 'boat' | 'puff';
 
 export interface Placement {
 	kind: PropKind;
@@ -36,7 +38,10 @@ export interface Placement {
 export interface Water {
 	/** Water line, as a fraction of the scene height. */
 	level: number;
-	/** Visible-width fractions it spans; `dx` widens (pond: half-width) or shifts its far end, in units. */
+	/**
+	 * A lake: the visible-width fractions it spans; `dx` shifts its far end, in units. A pond is
+	 * centred on `from` (src/world/pond.ts); `dx` is its half-width at most.
+	 */
 	from: number;
 	to: number;
 	dx?: number;
@@ -105,10 +110,11 @@ export const SCENES: Scene[] = [
 	{
 		id: 'wealth', sky: 'afternoon', cam: 4, words: 'left',
 		props: [
-			{ kind: 'spring', fx: 0.69, dx: 150, layer: 3, size: 64 },
-			{ kind: 'figure', fx: 0.69, dx: -150, layer: 3, size: 82 },
+			// Either side of the pond; on a phone they stand closer, so the spring stays in the picture.
+			{ kind: 'spring', fx: 0.76, dx: 38, layer: 3, size: 64 },
+			{ kind: 'figure', fx: 0.62, dx: -38, layer: 3, size: 82 },
 		],
-		water: { level: 0.9, from: 0.69, to: 0.69, dx: 120, kind: 'pond' },
+		water: { level: 0.9, from: 0.69, to: 0.69, dx: 150, kind: 'pond' },
 	},
 	{
 		id: 'relationships', sky: 'dusk', cam: 5, words: 'right',

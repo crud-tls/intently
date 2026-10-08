@@ -16,6 +16,8 @@ export interface FeelContext {
 	dt: number;
 	/** An element's box in world units (for drawing into a spot the page lays out). */
 	toUnits: (r: DOMRect) => [number, number, number, number];
+	/** A point in world units as CSS pixels from the hero's top left (for setting words beside something in the scene). */
+	toPx: (x: number, y: number) => [number, number];
 	/** The atlas, for adding sprites (a bird, a light). */
 	sprites: Map<string, Sprite>;
 }
@@ -113,7 +115,8 @@ export async function startChapter(id: SceneId, feel: Feel): Promise<void> {
 		];
 		const time = (now - t0) / 1000;
 		const frame = frameAt({ u: index, visW, time, velocity: 0, sprites, markRect: null });
-		feel.patch?.(frame, { time, dt: Math.min(0.1, (now - last) / 1000), toUnits, sprites });
+		const toPx = (x: number, y: number): [number, number] => [top.width / 2 + x * scale, y * scale];
+		feel.patch?.(frame, { time, dt: Math.min(0.1, (now - last) / 1000), toUnits, toPx, sprites });
 		last = now;
 		renderer.render(frame, time);
 		state.frames++;

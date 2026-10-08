@@ -1,12 +1,13 @@
 /**
  * Draws a Frame with WebGL2: sky → stars-that-become-weeks → far land → props on the far layers →
- * foreground, water and lights → props in front → grain. Raw WebGL, no engine: one fullscreen
- * shader in three passes, one sprite batch, one point cloud.
+ * foreground, water and lights → the pond → props in front → grain. Raw WebGL, no engine: one
+ * fullscreen shader in three passes, the pond's own shader on its own patch of ground, one sprite
+ * batch, one point cloud.
  */
 import { computeColumns, TREE_SLOTS, type Columns } from './columns.ts';
 import { LAYERS } from '../../world/terrain.ts';
 import { hexToRgb } from '../lib/color.ts';
-import { FULLSCREEN_VS, LANDSCAPE_FS, SPRITE_VS, SPRITE_FS, POINTS_VS, POINTS_FS, DOTS_VS, DOTS_FS, GRAIN_FS } from './shaders.ts';
+import { FULLSCREEN_VS, LANDSCAPE_FS, POND_FS, SPRITE_VS, SPRITE_FS, POINTS_VS, POINTS_FS, DOTS_VS, DOTS_FS, GRAIN_FS } from './shaders.ts';
 import type { Frame, SpriteDraw } from './timeline.ts';
 
 type Uniforms = Record<string, WebGLUniformLocation | null>;
@@ -49,6 +50,7 @@ const MAX_DOTS = 2048;
 export class Renderer {
 	gl: WebGL2RenderingContext;
 	private land: ReturnType<typeof compile>;
+	private pond: ReturnType<typeof compile>;
 	private sprite: ReturnType<typeof compile>;
 	private pts: ReturnType<typeof compile>;
 	private grain: ReturnType<typeof compile>;
@@ -75,6 +77,7 @@ export class Renderer {
 		if (!gl) throw new Error('no webgl2');
 		this.gl = gl;
 		this.land = compile(gl, FULLSCREEN_VS, LANDSCAPE_FS);
+		this.pond = compile(gl, FULLSCREEN_VS, POND_FS);
 		this.sprite = compile(gl, SPRITE_VS, SPRITE_FS);
 		this.pts = compile(gl, POINTS_VS, POINTS_FS);
 		this.grain = compile(gl, FULLSCREEN_VS, GRAIN_FS);
@@ -86,7 +89,7 @@ export class Renderer {
 		const qb = gl.createBuffer();
 		gl.bindBuffer(gl.ARRAY_BUFFER, qb);
 		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
-		for (const p of [this.land.prog, this.grain.prog]) {
+		for (const p of [this.land.prog, this.pond.prog, this.grain.prog]) {
 			const loc = gl.getAttribLocation(p, 'aPos');
 			gl.enableVertexAttribArray(loc);
 			gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
@@ -222,7 +225,6 @@ export class Renderer {
 		gl.uniform2f(L.u.uTreeOffset, frame.cam * LAYERS[1].parallax, frame.cam * LAYERS[2].parallax);
 		gl.uniform2i(L.u.uTreeFirst, this.columns!.firstCell[0], this.columns!.firstCell[1]);
 		gl.uniform3f(L.u.uLake, frame.lake?.a ?? 0, frame.lake?.b ?? 0, frame.lake?.level ?? -1);
-		gl.uniform4fv(L.u.uPond, frame.pond ?? [0, 0, 0, 0]);
 		const lights = new Float32Array(32);
 		const lightColors = new Float32Array(24);
 		frame.lights.forEach((l, i) => {
@@ -233,6 +235,9 @@ export class Renderer {
 		gl.uniform3fv(L.u.uLightColor, lightColors);
 		gl.uniform1i(L.u.uLightCount, frame.lights.length);
 		gl.uniform1f(L.u.uRipple, frame.ripple);
+		gl.uniform1f(L.u.uWind, frame.wind ?? 0);
+		// Flowers show by daylight: where there is a sun and the stars are faint.
+		gl.uniform1f(L.u.uFlowers, s.sun.show * Math.max(0, 1 - s.stars * 2));
 		gl.activeTexture(gl.TEXTURE0);
 		gl.bindTexture(gl.TEXTURE_2D, this.ridgeTex);
 		gl.uniform1i(L.u.uRidges, 0);
@@ -255,6 +260,7 @@ export class Renderer {
 		pass(1);
 		this.drawSprites(frame.sprites.filter((d) => !d.front), scale, W, H);
 		pass(2);
+		this.drawPond(frame, time, scale, W, H);
 		this.drawDots(frame, scale, W, H);
 		this.drawSprites(frame.sprites.filter((d) => d.front), scale, W, H);
 
@@ -266,6 +272,42 @@ export class Renderer {
 		gl.bindVertexArray(this.quad);
 		gl.drawArrays(gl.TRIANGLES, 0, 3);
 		gl.bindVertexArray(null);
+	}
+
+	/** The pond, over the finished land and only inside its own box (so the rest of the screen is free). */
+	private drawPond(frame: Frame, time: number, scale: number, W: number, H: number) {
+		const p = frame.pond;
+		if (!p || p[2] <= 0) return;
+		const fx = frame.pondFx;
+		const reach = Math.max(p[2], fx?.grown ?? 0) + 14;
+		const reachY = (reach * p[3]) / p[2] + 14;
+		const x0 = Math.max(0, Math.floor((p[0] - reach) * scale + W / 2));
+		const x1 = Math.min(W, Math.ceil((p[0] + reach) * scale + W / 2));
+		const y0 = Math.max(0, Math.floor(H - (p[1] + reachY) * scale));
+		const y1 = Math.min(H, Math.ceil(H - (p[1] - reachY) * scale));
+		if (x1 <= x0 || y1 <= y0) return;
+		const gl = this.gl;
+		const P = this.pond;
+		const s = frame.sky;
+		gl.useProgram(P.prog);
+		gl.uniform2f(P.u.uRes, W, H);
+		gl.uniform1f(P.u.uScale, scale);
+		gl.uniform1f(P.u.uTime, time);
+		gl.uniform3fv(P.u.uZenith, rgb(s.zenith));
+		gl.uniform3fv(P.u.uUpper, rgb(s.upper));
+		gl.uniform3fv(P.u.uHorizon, rgb(s.horizon));
+		gl.uniform4f(P.u.uSun, (s.sun.x - 0.5) * frame.visW, s.sun.y * 1000, s.sun.r * 1000, s.sun.show);
+		gl.uniform3fv(P.u.uSunCore, rgb(s.sun.core));
+		gl.uniform3fv(P.u.uGround, s.ground.flatMap(rgb));
+		gl.uniform4fv(P.u.uPond, p);
+		gl.uniform4fv(P.u.uPondRing, fx?.ring ?? [0, 0, 0, 0]);
+		gl.uniform4fv(P.u.uPondJetty, fx?.jetty ?? [0, 0, 0, 0]);
+		gl.uniform1f(P.u.uPondGrown, fx?.grown ?? 0);
+		gl.enable(gl.SCISSOR_TEST);
+		gl.scissor(x0, y0, x1 - x0, y1 - y0);
+		gl.bindVertexArray(this.quad);
+		gl.drawArrays(gl.TRIANGLES, 0, 3);
+		gl.disable(gl.SCISSOR_TEST);
 	}
 
 	private drawPoints(frame: Frame, time: number, scale: number, W: number, H: number) {

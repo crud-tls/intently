@@ -7,9 +7,11 @@
 import { SKY, SKY_STOPS, isNarrow, NARROW_MOON_Y, type Sky } from '../data/sky.ts';
 import { mix } from '../scripts/lib/color.ts';
 import { seeded } from '../scripts/lib/random.ts';
-import { LAYERS, ridge, treeAt, pineHalfWidth, shoreY, LAKE_EDGE, type Layer } from './terrain.ts';
+import { LAYERS, hash, ridge, rnd, treeAt, pineHalfWidth, shoreY, LAKE_EDGE, type Layer } from './terrain.ts';
 import { SPACING, VARIANTS, type Placement, type Scene, type Variant } from './scenes.ts';
-import { propLook, baseHalfWidth, restY, BLUE } from './props.ts';
+import { propLook, baseHalfWidth, restY, BLUE, SPOUT } from './props.ts';
+import { EXAMPLE, pondAt, pondFill, pondGround, pondLife, pondRx, shorePath } from './pond.ts';
+import { setAside } from '../scripts/lib/math.ts';
 
 const H = 1000;
 const r1 = (n: number) => Math.round(n * 10) / 10;
@@ -76,6 +78,32 @@ function trees(c: Ctx, i: number): string {
 		d += pinePath(x, t.y * H, t.h * H);
 	}
 	return d;
+}
+
+/**
+ * Grass along the near ground, in patches, and by day a few flowers: the live world's blades,
+ * standing still. One hash per blade, sliced into its few numbers exactly as the shader slices it
+ * (src/scripts/world/shaders.ts), so the meadow is the same meadow.
+ */
+function grass(c: Ctx): string {
+	const ends = lakeEnds(c);
+	const camX = c.scene.cam * SPACING;
+	const day = c.s.sun.show * Math.max(0, 1 - c.s.stars * 2);
+	let blades = '';
+	let flowers = '';
+	for (let i = Math.floor((camX - c.cx - 8) / 6); i <= Math.ceil((camX + c.W - c.cx + 8) / 6); i++) {
+		const dens = rnd(Math.floor(i / 11), 61);
+		const bits = hash(((i + 100000) ^ 0x51ed270b) >>> 0);
+		if ((bits & 63) / 63 > 0.2 + 0.6 * dens * dens) continue;
+		const x = (i + 0.2 + 0.6 * (((bits >>> 6) & 31) / 31)) * 6 - camX + c.cx;
+		if (ends && x > ends[0] - LAKE_EDGE && x < ends[1] + LAKE_EDGE) continue;
+		const h = 4 + 11 * (((bits >>> 11) & 63) / 63) * (0.35 + 0.65 * dens);
+		const tip = x + (((bits >>> 17) & 31) / 31 - 0.5) * 3;
+		const y = groundY(c, 3, x);
+		blades += `M${r1(x - 1.6)} ${r1(y + 1)}Q${r1(x - 1)} ${r1(y - h / 2)} ${r1(tip)} ${r1(y - h)}Q${r1(x + 1)} ${r1(y - h / 2)} ${r1(x + 1.6)} ${r1(y + 1)}Z`;
+		if (day > 0 && h > 8.5 && ((bits >>> 22) & 31) < 7) flowers += `<circle cx="${r1(tip)}" cy="${r1(y - h)}" r="1.7" fill="${mix('#FFFFFF', c.s.sun.glow, 0.25 + 0.6 * (((bits >>> 27) & 31) / 31))}"/>`;
+	}
+	return `<path d="${blades}" fill="${c.s.ground[3]}"/>${flowers ? `<g opacity="${day.toFixed(2)}">${flowers}</g>` : ''}`;
 }
 
 function stars(c: Ctx): string {
@@ -161,30 +189,88 @@ function prop(c: Ctx, p: Placement, index: number): string {
 	const glow = look.glow
 		? `<circle cx="${r1(look.glow.x)}" cy="${r1(look.glow.y)}" r="${r1(look.glow.r)}" fill="url(#${c.id}-${look.glow.color === BLUE ? 'blue' : 'warm'})" opacity="${look.glow.strength}"/>`
 		: '';
-	// The spring's drops are animated in the live world; here they hang in mid-fall.
-	const drops = p.kind === 'spring'
-		? [0.15, 0.35, 0.55, 0.75].map((t) => `<circle cx="${r1(-p.size * 0.4 - t * p.size * 0.9)}" cy="${r1(-p.size * 0.7 + t * t * p.size * 0.75)}" r="${r1(p.size * 0.06)}" fill="#DDF1FF"/>`).join('')
+	// Smoke stands still over a house with its light on (the live world lets it rise).
+	const smoke = p.kind === 'house' && p.lit
+		? [[0.02, 0.5], [0.34, 0.75], [0.66, 1.1]].map(([t, k]) => {
+			const puff = propLook('puff', { size: r1(10 * k), sky: c.s, skyKey: c.scene.sky, land: c.s.ground[2], mark: () => '' }).body;
+			return `<g transform="translate(${r1(-p.size * 0.3 + t * 30)} ${r1(-p.size * 0.95 - t * 62)})" opacity="${(0.8 * (1 - t)).toFixed(2)}">${puff}</g>`;
+		}).join('')
 		: '';
 	const flip = p.flip ? ' scale(-1 1)' : '';
 	const tilt = p.tilt ? ` rotate(${p.tilt})` : '';
 	const lean = p.lean ? ` skewX(${-p.lean})` : '';
-	return `<g transform="translate(${r1(x)} ${r1(y)})${tilt}${lean}${flip}">${glow}${look.body}${drops}</g>`;
+	return `<g transform="translate(${r1(x)} ${r1(y)})${tilt}${lean}${flip}">${glow}${look.body}</g>${smoke ? `<g transform="translate(${r1(x)} ${r1(y)})">${smoke}</g>` : ''}`;
 }
 
 function propsOn(c: Ctx, layer: number | undefined): string {
 	return c.scene.props.map((p, i) => (p.layer === layer ? prop(c, p, i) : '')).join('');
 }
 
+/**
+ * The pond as the worked example (five a day for ten years), drawn from the same description the
+ * live world uses (src/world/pond.ts): the water, a stone for each year, and what has come to live
+ * in it. The spring's drops fall in the live world; here they hang in mid-air.
+ */
 function pond(c: Ctx): string {
 	const w = c.scene.water;
 	if (!w || w.kind !== 'pond') return '';
+	const figure = c.scene.props.find((q) => q.kind === 'figure');
+	// As wide as the scene says, or as the screen allows.
 	const cx = fxToX(c, w.from);
-	const cy = groundY(c, 3, cx) + 16;
-	const rx = w.dx ?? 100;
-	return `<ellipse cx="${r1(cx)}" cy="${r1(cy - 2)}" rx="${r1(rx + 6)}" ry="${r1(rx * 0.15 + 4)}" fill="${mix(c.s.ground[3], c.s.ground[2], 0.5)}"/>`
-		+ `<ellipse cx="${r1(cx)}" cy="${r1(cy)}" rx="${r1(rx)}" ry="${r1(rx * 0.15)}" fill="url(#${c.id}-water)"/>`
-		+ `<ellipse cx="${r1(cx + rx * 0.35)}" cy="${r1(cy)}" rx="${r1(rx * 0.18)}" ry="${r1(rx * 0.03)}" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2"/>`
-		+ `<ellipse cx="${r1(cx + rx * 0.35)}" cy="${r1(cy)}" rx="${r1(rx * 0.32)}" ry="${r1(rx * 0.055)}" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>`;
+	const p = pondAt(cx, pondGround((x) => groundY(c, 3, x), cx), Math.min(w.dx ?? 100, pondRx(1, c.cx + c.vis / 2 - 8 - cx)));
+	const s = c.s;
+	const look = (kind: Parameters<typeof propLook>[0], size: number) =>
+		propLook(kind, { size, sky: s, skyKey: c.scene.sky, land: s.ground[3], mark: () => '' }).body;
+
+	// Keep the far bank clear where the walker stands and where the spring pours.
+	const avoid: [number, number][] = [];
+	if (figure) avoid.push([at(c, figure).x - 38, at(c, figure).x + 38]);
+	const spring = c.scene.props.find((q) => q.kind === 'spring');
+	let drops = '';
+	let rings = '';
+	if (spring) {
+		const sp = at(c, spring);
+		const tipX = sp.x + SPOUT[0] * spring.size;
+		const tipY = sp.y + SPOUT[1] * spring.size;
+		const landX = Math.min(Math.max(tipX - spring.size * 0.9, p.cx + p.rx * 0.12), p.cx + p.rx * 0.7);
+		const landY = p.cy - p.ry * 0.45;
+		avoid.push([sp.x - spring.size * 0.8, sp.x + spring.size * 0.9], [landX - 16, landX + 16]);
+		drops = [0.2, 0.45, 0.7, 0.9].map((t) => {
+			const tilt = (Math.atan2(tipX - landX, 2 * t * (landY - tipY)) * 180) / Math.PI;
+			return `<g transform="translate(${r1(tipX + (landX - tipX) * t)} ${r1(tipY + (landY - tipY) * t * t)}) rotate(${r1(tilt)})">${look('drop', 4.5)}</g>`;
+		}).join('');
+		const squash = r1(p.ry / p.rx);
+		rings = [9, 20].map((r, k) => `<ellipse cx="${r1(landX)}" cy="${r1(landY)}" rx="${r}" ry="${r1(r * +squash)}" fill="none" stroke="#FFFFFF" stroke-opacity="${k ? 0.25 : 0.5}" stroke-width="1.6"/>`).join('');
+	}
+
+	// Sun on the water: a broken path of light under the sun, if the sun is over the pond.
+	const sunX = fxToX(c, s.sun.x);
+	let glitter = '';
+	if (s.sun.show > 0 && Math.abs(sunX - cx) < p.rx * 0.8) {
+		const rand = seeded(83);
+		for (let k = 0; k < 9; k++) {
+			const t = (k + 0.5) / 9;
+			const y = p.cy + p.ry * (t * 1.5 - 0.75);
+			const half = (2.5 + 9 * t) * (0.6 + rand());
+			glitter += `<rect x="${r1(sunX + (rand() - 0.5) * (10 + 30 * t) - half)}" y="${r1(y)}" width="${r1(half * 2)}" height="2" rx="1" fill="${s.sun.core}" opacity="0.7"/>`;
+		}
+	}
+
+	const life = pondLife(p, pondFill(setAside(EXAMPLE.perDay, EXAMPLE.years)), EXAMPLE.years, avoid);
+	let jetty = '';
+	if (life.jetty) {
+		const { x0, x1, y } = life.jetty;
+		const wood = mix(s.ground[3], s.ground[1], 0.6);
+		let posts = '';
+		for (let x = x0 + 11; x < x1; x += 22) posts += `<rect x="${r1(x - 1.6)}" y="${r1(y)}" width="3.2" height="11"/>`;
+		jetty = `<g fill="${mix(s.ground[3], s.ground[2], 0.25)}">${posts}</g><rect x="${r1(x0)}" y="${r1(y - 2)}" width="${r1(x1 - x0)}" height="5.5" fill="${wood}"/>`;
+	}
+	const items = life.items.map((it) =>
+		`<g transform="translate(${r1(it.x)} ${r1(it.y)})${it.flip ? ' scale(-1 1)' : ''}"${it.alpha < 1 ? ` opacity="${it.alpha.toFixed(2)}"` : ''}>${look(it.kind, r1(it.size))}</g>`).join('');
+
+	return `<path d="${shorePath(p, 6)}" fill="${mix(s.ground[3], s.ground[2], 0.5)}"/>`
+		+ `<path d="${shorePath(p)}" fill="url(#${c.id}-water)"/>`
+		+ glitter + rings + jetty + items + drops;
 }
 
 function lake(c: Ctx): string {
@@ -239,7 +325,7 @@ export function renderScene(scene: Scene, variant: Variant, markInner: string): 
 <radialGradient id="${id}-warm"><stop offset="0" stop-color="#FFD38A" stop-opacity="0.9"/><stop offset="0.3" stop-color="#FFB25C" stop-opacity="0.35"/><stop offset="1" stop-color="#FF9A3C" stop-opacity="0"/></radialGradient>
 <radialGradient id="${id}-blue"><stop offset="0" stop-color="#CFEAFF" stop-opacity="0.9"/><stop offset="0.35" stop-color="#8CC8FF" stop-opacity="0.3"/><stop offset="1" stop-color="#8CC8FF" stop-opacity="0"/></radialGradient>
 <linearGradient id="${id}-haze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${s.horizon}" stop-opacity="0"/><stop offset="0.55" stop-color="${s.horizon}" stop-opacity="0.42"/><stop offset="1" stop-color="${s.horizon}" stop-opacity="0"/></linearGradient>
-<linearGradient id="${id}-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${mix(s.zenith, s.ground[3], 0.35)}"/><stop offset="0.6" stop-color="${mix(s.upper, s.ground[2], 0.25)}"/><stop offset="1" stop-color="${s.horizon}"/></linearGradient>
+<linearGradient id="${id}-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${mix(s.upper, s.horizon, 0.6)}"/><stop offset="1" stop-color="${mix(s.zenith, s.ground[3], 0.28)}"/></linearGradient>
 <filter id="${id}-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
 <filter id="${id}-ripple" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.002 0.09" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="14" xChannelSelector="R" yChannelSelector="G"/><feGaussianBlur stdDeviation="0.8 2"/></filter>
 <filter id="${id}-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 1.4 -0.45"/></filter>
@@ -255,7 +341,7 @@ export function renderScene(scene: Scene, variant: Variant, markInner: string): 
 		+ layer(1) + propsOn(c, 1)
 		+ layer(2) + propsOn(c, 2)
 		+ lake(c)
-		+ layer(3) + pond(c) + propsOn(c, 3)
+		+ layer(3) + grass(c) + pond(c) + propsOn(c, 3)
 		+ propsOn(c, undefined)
 		+ `<rect width="${W}" height="${H}" filter="url(#${id}-grain)" opacity="0.5" style="mix-blend-mode:overlay"/>`
 		+ '</svg>';

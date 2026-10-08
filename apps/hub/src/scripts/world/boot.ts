@@ -66,6 +66,8 @@ async function run(): Promise<void> {
 	const family = document.querySelector<HTMLElement>('.family-wrap');
 	const constellation = document.querySelector<HTMLElement>('.constellation');
 	const rail = new Map(CHAPTERS.map((c) => [c.id, document.querySelector<HTMLElement>(`[data-rail="${c.id}"]`)]));
+	const teller = document.querySelector<HTMLElement>('[data-storyteller]');
+	const asides = scenes.map((s) => s!.dataset.aside ?? '');
 
 	const [{ canvas: atlas, sprites }, cloud] = await Promise.all([buildAtlas(markInner), pointCloud(markInner)]);
 
@@ -136,6 +138,34 @@ async function run(): Promise<void> {
 	let drewLastTick = false;
 	let still = 0;
 	const t0 = performance.now();
+	let calmSince = t0;
+	let told = -1;
+	let size = [0, 0];
+
+	// The storyteller's line appears beside the walker once the visitor has paused at an hour, and
+	// steps back the moment they move on. In the morning it goes below the feet: the air is full.
+	const tell = (now: number, i: number, moving: boolean, walker: { x: number; y: number } | null, scale: number) => {
+		if (!teller) return;
+		if (moving || i < 0 || !asides[i] || !walker) calmSince = now;
+		if (!walker || now - calmSince < 700) {
+			teller.classList.remove('on');
+			return;
+		}
+		const below = SCENES[i].id === 'attention';
+		if (told !== i) {
+			told = i;
+			teller.textContent = asides[i];
+			teller.dataset.sky = SCENES[i].sky;
+			teller.classList.toggle('below', below);
+			// Measured once per line, not once per frame.
+			size = [teller.offsetWidth, teller.offsetHeight];
+		}
+		// Clear of the day rail on wide screens, and of the screen's edge on any.
+		const x = Math.min(Math.max(12, innerWidth / 2 + walker.x * scale - 18), innerWidth - size[0] - (innerWidth > 1180 ? 76 : 12));
+		const y = below ? walker.y * scale + 12 : (walker.y - 98) * scale - size[1];
+		teller.style.transform = `translate(${Math.round(x)}px, ${Math.round(y)}px)`;
+		teller.classList.add('on');
+	};
 
 	// Read-only state for tests and debugging: what the world is drawing right now.
 	// `hide` lets a test draw the scene without some sprites (to find exactly where they are).
@@ -149,6 +179,7 @@ async function run(): Promise<void> {
 		canvas.remove();
 		root.classList.remove('world-live');
 		words.forEach((w) => w && (w.style.opacity = ''));
+		teller?.classList.remove('on');
 		console.warn('[world] back to static landscapes:', why);
 	};
 
@@ -173,10 +204,13 @@ async function run(): Promise<void> {
 
 		// Words fade in as their scene arrives and out as it leaves.
 		const vc = y + innerHeight / 2;
+		let reading = -1;
 		words.forEach((w, i) => {
 			if (!w) return;
 			const p = (vc - tops[i]) / heights[i];
 			const o = i === 0 ? 1 - smoothstep(0.62, 0.86, p) : smoothstep(0.08, 0.24, p) * (1 - smoothstep(0.66, 0.86, p));
+			// The scene whose words are fully there is the one the storyteller may speak in.
+			if (o > 0.92) reading = i;
 			const v = o.toFixed(3);
 			if (w.style.opacity !== v) w.style.opacity = v;
 		});
@@ -195,6 +229,7 @@ async function run(): Promise<void> {
 		state.resting = !!family && family.getBoundingClientRect().top <= 0;
 		if (state.resting) {
 			drewLastTick = false;
+			tell(now, -1, true, null, 1);
 			return;
 		}
 
@@ -215,6 +250,7 @@ async function run(): Promise<void> {
 		const w = frame.sprites.find((d) => d.kind === 'walker');
 		if (w) state.walker = { x: w.x, y: w.y };
 		state.scale = cssH / 1000;
+		tell(now, reading, Math.abs(velocity) > 2e-4, w ?? null, cssH / 1000);
 		if (state.hide.length) frame.sprites = frame.sprites.filter((d) => !state.hide.includes(d.kind ?? ''));
 		renderer.render(frame, time);
 		state.frames++;

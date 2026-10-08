@@ -39,11 +39,12 @@ uniform vec2 uTreeCell;
 uniform vec2 uTreeOffset;
 
 uniform vec3 uLake;
-uniform vec4 uPond;
 uniform vec4 uLights[8];
 uniform vec3 uLightColor[8];
 uniform int uLightCount;
 uniform float uRipple;
+uniform float uWind;
+uniform float uFlowers;
 
 out vec4 outColor;
 
@@ -80,6 +81,12 @@ bool treeHit(int row, vec2 p) {
 
 // Over-composite a colour with alpha onto an opaque colour.
 vec3 over(vec3 base, vec3 c, float a) { return mix(base, c, clamp(a, 0.0, 1.0)); }
+
+// The same, onto a premultiplied colour that may still be see-through.
+void put(inout vec4 col, vec3 c, float a) {
+	a = clamp(a, 0.0, 1.0);
+	col = vec4(c * a + col.rgb * (1.0 - a), a + col.a * (1.0 - a));
+}
 
 vec3 sky(vec2 p) {
 	vec3 c = p.y < 400.0 ? mix(uZenith, uUpper, clamp(p.y / 400.0, 0.0, 1.0))
@@ -207,6 +214,31 @@ void main() {
 	}
 	if (p.y >= r.w) col = vec4(uGround[3], 1.0);
 
+	// Grass along the near ground, in patches: each blade leans with the breeze and with the walk,
+	// and by day a few carry a flower. One hash per blade, sliced into its few numbers (the postcards
+	// slice the same bits: src/world/render-svg.ts).
+	float up = r.w - p.y;
+	if (up > 0.0 && up < 19.0 && !(uLake.z > 0.0 && inLake)) {
+		float wx = p.x + uCam;
+		int c0 = int(floor(wx / 6.0));
+		float dens = rnd(int(floor(float(c0) / 11.0)), 61);
+		for (int k = -1; k <= 1; k++) {
+			int c = c0 + k;
+			uint bits = hashu(uint(c + 100000) ^ 0x51ED270BU);
+			if (float(bits & 63U) / 63.0 > 0.2 + 0.6 * dens * dens) continue;
+			float bx = (float(c) + 0.2 + 0.6 * float((bits >> 6) & 31U) / 31.0) * 6.0;
+			float h = 4.0 + 11.0 * float((bits >> 11) & 63U) / 63.0 * (0.35 + 0.65 * dens);
+			float tipX = bx + (sin(uTime * 1.3 + bx * 0.021) * 0.14 - uWind * 0.6) * h + (float((bits >> 17) & 31U) / 31.0 - 0.5) * 3.0;
+			if (uFlowers > 0.0 && h > 8.5 && ((bits >> 22) & 31U) < 7U && length(vec2(wx - tipX, up - h)) < 1.7) {
+				put(col, mix(vec3(1.0), uSunGlow, 0.25 + 0.6 * float((bits >> 27) & 31U) / 31.0), uFlowers);
+				break;
+			}
+			if (up > h) continue;
+			float t = up / h;
+			if (abs(wx - mix(bx, tipX, t * t)) < 1.3 * (1.0 - t) + 0.3) { col = vec4(uGround[3], 1.0); break; }
+		}
+	}
+
 	// A boardwalk across the lake: planks just above the water, a post every 80 units.
 	if (uLake.z > 0.0 && inLake) {
 		float top = uLake.z - 6.0;
@@ -215,23 +247,112 @@ void main() {
 		if (plank || post) col = vec4(mix(uGround[3], uGround[2], 0.35), 1.0);
 	}
 
-	if (uPond.z > 0.0) {
-		vec2 e = (p - uPond.xy) / uPond.zw;
-		float d = length(e);
-		if (d < 1.0 + 6.0 / uPond.z) col = vec4(mix(uGround[3], uGround[2], 0.5), 1.0);
-		if (d < 1.0) {
-			float t = clamp((p.y - (uPond.y - uPond.w)) / (2.0 * uPond.w), 0.0, 1.0);
-			vec3 w = t < 0.6 ? mix(mix(uZenith, uGround[3], 0.35), mix(uUpper, uGround[2], 0.25), t / 0.6)
-			                 : mix(mix(uUpper, uGround[2], 0.25), uHorizon, (t - 0.6) / 0.4);
-			// Rings spreading from where the drops land.
-			vec2 rp = (p - uPond.xy - vec2(uPond.z * 0.35, 0.0)) / vec2(1.0, 0.18);
-			float ring = fract(length(rp) / (uPond.z * 0.32) - uTime * 0.6);
-			w += vec3(1.0) * smoothstep(0.92, 1.0, ring) * 0.35 * smoothstep(uPond.z * 0.7, 0.0, length(rp));
-			col = vec4(w, 1.0);
-		}
+	light(col, p);
+	outColor = col;
+}
+`;
+
+/**
+ * The pond, drawn on its own over the finished land, and only where it is (the renderer scissors to
+ * its box): the rest of the screen never pays for it. Premultiplied alpha.
+ */
+export const POND_FS = `#version 300 es
+precision highp float;
+precision highp int;
+
+uniform vec2 uRes;
+uniform float uScale;
+uniform float uTime;
+uniform vec3 uZenith;
+uniform vec3 uUpper;
+uniform vec3 uHorizon;
+uniform vec4 uSun;
+uniform vec3 uSunCore;
+uniform vec3 uGround[4];
+uniform vec4 uPond;
+uniform vec4 uPondRing;
+uniform vec4 uPondJetty;
+uniform float uPondGrown;
+
+out vec4 outColor;
+
+uint hashu(uint x) {
+	x ^= x >> 16; x *= 0x7feb352dU; x ^= x >> 15; x *= 0x846ca68bU; x ^= x >> 16;
+	return x;
+}
+float rnd(int i, int seed) {
+	return float(hashu(uint(i + 100000) ^ (uint(seed) * 0x9E3779B9U))) / 4294967295.0;
+}
+
+void put(inout vec4 col, vec3 c, float a) {
+	a = clamp(a, 0.0, 1.0);
+	col = vec4(c * a + col.rgb * (1.0 - a), a + col.a * (1.0 - a));
+}
+
+// The shore by angle: not quite an ellipse (src/world/pond.ts has the same).
+float shoreR(float a) { return 1.0 + 0.05 * sin(3.0 * a + 0.6) + 0.03 * sin(5.0 * a + 2.1); }
+
+void main() {
+	vec2 p = vec2((gl_FragCoord.x - uRes.x * 0.5) / uScale, (uRes.y - gl_FragCoord.y) / uScale);
+	vec4 col = vec4(0.0);
+	vec2 e = (p - uPond.xy) / uPond.zw;
+	float len = max(length(e), 1e-4);
+	float ang = atan(e.y, e.x);
+	float R = shoreR(ang);
+	// Distance to the shore in units (negative in the water), whichever way the ellipse is squashed.
+	float grad = length(e / uPond.zw) / len;
+	float sd = (len - R) / grad;
+
+	// "If it grew": a dashed shoreline further out, like a high-water mark on a map.
+	// (not above the ground line the pond lies under: that is the hill behind).
+	if (uPondGrown > uPond.z + 3.0 && p.y > uPond.y - uPond.w * 1.08 - 6.0) {
+		float gd = abs(len - R * uPondGrown / uPond.z) / grad;
+		float dash = step(0.42, fract(ang * 5.6 + uTime * 0.03));
+		put(col, mix(uGround[3], uHorizon, 0.62), smoothstep(1.5, 0.5, gd) * dash * 0.85);
 	}
 
-	light(col, p);
+	// Wet earth around it, then the water.
+	put(col, mix(uGround[3], uGround[2], 0.5), smoothstep(7.0, 5.0, sd));
+	if (sd < 1.0) {
+		float t = clamp(e.y / R * 0.5 + 0.5, 0.0, 1.0);
+		// The far side mirrors the low sky; the near side is deeper and takes the zenith.
+		vec3 w = mix(mix(uUpper, uHorizon, 0.6), mix(uZenith, uGround[3], 0.28), smoothstep(0.05, 1.0, t));
+
+		// Sun on the water: a broken path of light below the sun, wider towards us.
+		if (uSun.w > 0.0) {
+			int row = int(floor(p.y / 2.4));
+			float flick = floor(uTime * 1.4 + rnd(row, 85) * 5.0);
+			float on = step(0.4, rnd(row + int(flick) * 131, 84));
+			float mid = uSun.x + (rnd(row, 81) - 0.5) * (10.0 + 30.0 * t) + sin(uTime * 0.8 + float(row) * 1.7) * 2.0;
+			float halfw = (2.5 + 9.0 * t) * (0.5 + rnd(row, 83));
+			float gl = smoothstep(halfw, halfw * 0.5, abs(p.x - mid)) * on;
+			w = mix(w, uSunCore, gl * 0.7 * uSun.w);
+		}
+
+		// Rings leaving the place where the drops land.
+		if (uPondRing.z > 0.0) {
+			float rl = length((p - uPondRing.xy) / vec2(1.0, uPond.w / uPond.z));
+			float ring = smoothstep(0.78, 1.0, fract(rl / uPondRing.z - uPondRing.w));
+			w += vec3(1.0) * ring * 0.38 * smoothstep(70.0, 6.0, rl);
+		}
+
+		// A light line where the water meets the far bank; the near bank casts a little shade.
+		w = mix(w, vec3(1.0), smoothstep(-3.0, -0.6, sd) * 0.3 * (1.0 - t));
+		w = mix(w, uGround[3], smoothstep(-6.0, 0.0, sd) * 0.3 * t);
+		put(col, w, smoothstep(1.0, 0.0, sd));
+	}
+
+	// The jetty: a deck on short posts, and the posts' shadows on the water.
+	if (uPondJetty.w > 0.0 && p.x > uPondJetty.x && p.x < uPondJetty.y) {
+		float along = p.x - uPondJetty.x;
+		bool isPost = abs(mod(along - 11.0, 22.0) - 11.0) < 1.6;
+		float dy = p.y - uPondJetty.z;
+		vec3 wood = mix(uGround[3], uGround[1], 0.6);
+		if (isPost && dy > 0.0 && dy < 26.0) put(col, mix(uGround[3], uGround[2], 0.25), (dy < 11.0 ? 1.0 : 0.3 * (1.0 - (dy - 11.0) / 15.0)) * uPondJetty.w);
+		if (dy > -2.0 && dy < 3.5) put(col, dy < -0.4 ? mix(wood, uHorizon, 0.4) : wood, uPondJetty.w);
+		// A gap between planks, every so often.
+		if (dy > -2.0 && dy < 3.5 && fract(along / 9.0) < 0.08) put(col, uGround[3], 0.5 * uPondJetty.w);
+	}
 	outColor = col;
 }
 `;

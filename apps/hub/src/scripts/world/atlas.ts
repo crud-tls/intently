@@ -5,6 +5,7 @@
 import { SKY } from '../../data/sky.ts';
 import { SCENES, type PropKind } from '../../world/scenes.ts';
 import { propLook, type Glow } from '../../world/props.ts';
+import { POND_SPRITES } from './pond.ts';
 
 export interface Sprite {
 	/** UV rectangle in the atlas. */
@@ -50,8 +51,12 @@ export async function buildAtlas(markInner: string): Promise<{ canvas: HTMLCanva
 	// The walker and the spring's drops, drawn once.
 	const noon = SCENES.find((s) => s.sky === 'noon')!;
 	add('walker', 'figure', noon, 84, 3);
-	add('drop', 'drop', noon, 4, 3);
+	add('drop', 'drop', noon, POND_SPRITES.drop, 3);
 	add('bird', 'bird', noon, 12, 3);
+	// What lives in the pond, in the afternoon's colours, and the smoke at dusk.
+	const afternoon = SCENES.find((s) => s.id === 'wealth')!;
+	for (const kind of ['reed', 'lily', 'bloom', 'stone', 'boat'] as const) add(kind, kind, afternoon, POND_SPRITES[kind], 3);
+	add('puff', 'puff', SCENES.find((s) => s.id === 'relationships')!, 10, 2);
 
 	const images = await Promise.all(entries.map(async (e) => {
 		const img = new Image();

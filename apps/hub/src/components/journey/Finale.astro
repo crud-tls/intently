@@ -1,11 +1,13 @@
 ---
 /**
  * Night again. The seven lights of the day sit on the Intently figure (the head is the last one,
- * faith); the visitor picks where to begin. Below, the app family, one row per light.
+ * faith); the visitor picks where to begin. Below, the app family: the day laid out from dawn to
+ * night, each app in its own hour's light (src/components/world/Hour.astro).
  */
 import AppMark from '@intently/ui/AppMark.astro';
 import { CHAPTERS, type ChapterId } from '../../data/chapters.ts';
 import Postcard from '../world/Postcard.astro';
+import Hour from '../world/Hour.astro';
 import { siteUrl, statusLabel } from '../../data/apps.ts';
 
 interface Props {
@@ -14,6 +16,12 @@ interface Props {
 }
 
 const { after } = Astro.props;
+
+/** "5:50 am" as minutes after midnight, so the page can tell which hour it is where the visitor is. */
+const minutes = (clock: string) => {
+	const [, h, m, half] = clock.match(/(\d+):(\d+) (am|pm)/)!;
+	return ((+h % 12) + (half === 'pm' ? 12 : 0)) * 60 + +m;
+};
 
 // Where each light sits on the figure (400-unit frame), and which side its name goes.
 const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
@@ -56,30 +64,52 @@ const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
 		<p class="intro">We're a small, independent studio, and each of our apps looks after one of these lights.
 			They're calm by default, with no streak guilt and no dark patterns. Each one says plainly what leaves your
 			device and why. None of them shows ads, and we never sell your data.</p>
-		<ul class="rows">
+		<ol class="day">
 			{CHAPTERS.map((c) => (
-				<li style={`--light:${c.light}`}>
-					<a class="aspect" href={c.path}><span class="star" aria-hidden="true"></span>{c.name}</a>
-					<div class="apps">
-						{c.apps.map((a) => {
-							const status = statusLabel(a);
-							return (
-								<a class="app" href={siteUrl(a)}>
-									<AppMark app={a} size={48} />
-									<span class="text">
-										<strong>{a.name}</strong>
-										<span class="tagline">{a.tagline}</span>
-									</span>
-									<span class:list={['status', { live: !status }]}>{status ?? a.platforms.join(', ')}</span>
-								</a>
-							);
-						})}
+				<Hour as="li" chapter={c} land={64} data-from={minutes(c.clock)}>
+					<div class="row">
+						<a class="aspect" href={c.path}>
+							<span class="clock">{c.clock}</span>
+							<span class="name">{c.name}</span>
+							<span class="now voice" hidden>about now</span>
+						</a>
+						<ul class="apps">
+							{c.apps.map((a) => {
+								const status = statusLabel(a);
+								return (
+									<li>
+										<a class="app" href={siteUrl(a)}>
+											<AppMark app={a} size={46} />
+											<span class="text">
+												<strong>{a.name}</strong>
+												<span class="tagline">{a.tagline}</span>
+												{status
+													? <span class="status voice">{status}</span>
+													: <span class="status out"><span class="star" aria-hidden="true"></span>{a.platforms.join(', ')}</span>}
+											</span>
+										</a>
+									</li>
+								);
+							})}
+						</ul>
 					</div>
-				</li>
+				</Hour>
 			))}
-		</ul>
+		</ol>
 	</div>
 </section>
+
+<script>
+	// Which hour of the day is it for the visitor? That strip says so. Nothing leaves the page.
+	const hours = [...document.querySelectorAll<HTMLElement>('.day [data-from]')];
+	if (hours.length) {
+		const d = new Date();
+		const m = d.getHours() * 60 + d.getMinutes();
+		// Before dawn it is still last night's lantern hour.
+		const current = hours.filter((h) => +h.dataset.from! <= m).pop() ?? hours[hours.length - 1];
+		current.querySelector<HTMLElement>('.now')?.removeAttribute('hidden');
+	}
+</script>
 
 <style>
 	.begin {
@@ -170,7 +200,7 @@ const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
 	.lights a:hover .name { text-decoration: underline; text-underline-offset: 0.25em; }
 
 	.family {
-		max-width: 900px;
+		max-width: 960px;
 	}
 
 	.intro {
@@ -179,46 +209,68 @@ const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
 		margin: 0 0 40px;
 	}
 
-	.rows {
+	/* The day, dawn at the top and the lantern hour at the bottom: seven skies, one after another. */
+	.day {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		border-top: 1px solid var(--line);
+		border-radius: 30px;
+		overflow: clip;
 	}
 
-	.rows > li {
+	.row {
 		display: grid;
-		grid-template-columns: 170px 1fr;
-		gap: 20px;
-		padding: 22px 0;
-		border-bottom: 1px solid var(--line);
+		grid-template-columns: 172px minmax(0, 1fr);
+		gap: 8px 24px;
+		padding: 24px 32px 8px;
+		/* The right of each strip belongs to its sun or moon. */
+		max-width: 68%;
 	}
 
 	.aspect {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-		align-self: center;
-		font-family: var(--serif);
-		font-variation-settings: "SOFT" 100;
-		font-size: 1.35rem;
+		display: grid;
+		align-content: start;
+		gap: 2px;
 		text-decoration: none;
 	}
 
-	.aspect .star { width: 18px; height: 18px; }
+	.clock {
+		font-size: 0.9rem;
+		font-weight: 550;
+		color: var(--ink2);
+		font-variant-numeric: tabular-nums;
+	}
 
-	.aspect:hover { text-decoration: underline; text-underline-offset: 0.25em; }
+	.aspect .name {
+		font-family: var(--serif);
+		font-variation-settings: "SOFT" 100;
+		font-size: 1.7rem;
+		line-height: 1.1;
+		letter-spacing: -0.02em;
+	}
+
+	.now {
+		margin-top: 4px;
+		font-size: 0.95rem;
+		color: var(--ink2);
+	}
+
+	.aspect:hover .name,
+	.app:hover strong { text-decoration: underline; text-underline-offset: 0.22em; text-decoration-thickness: 1.5px; }
 
 	.apps {
+		list-style: none;
+		margin: 0;
+		padding: 0;
 		display: grid;
-		gap: 14px;
+		gap: 16px;
 	}
 
 	.app {
 		display: grid;
-		grid-template-columns: 48px 1fr auto;
-		align-items: center;
-		gap: 16px;
+		grid-template-columns: 46px minmax(0, 1fr);
+		align-items: start;
+		gap: 14px;
 		text-decoration: none;
 	}
 
@@ -227,28 +279,32 @@ const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
 		line-height: 1.35;
 	}
 
-	.text strong { font-size: 1.05rem; }
-
-	.app:hover strong { text-decoration: underline; text-underline-offset: 0.2em; }
+	.text strong { font-size: 1.08rem; font-weight: 680; }
 
 	.tagline {
-		color: var(--soil-ink2);
+		color: var(--ink2);
 		font-size: 0.95rem;
+		text-wrap: pretty;
 	}
 
 	.status {
-		font-size: 0.85rem;
-		padding: 4px 12px;
-		border-radius: 999px;
-		border: 1px solid var(--line);
-		color: var(--soil-ink2);
-		white-space: nowrap;
+		margin-top: 4px;
+		font-size: 0.92rem;
 	}
 
-	.status.live {
-		border-color: color-mix(in srgb, var(--light) 60%, transparent);
-		color: var(--soil-ink);
+	/* Out in the world: its light is on. */
+	.status.out {
+		display: flex;
+		align-items: center;
+		gap: 7px;
+		font-weight: 600;
 	}
+
+	.status .star { width: 12px; height: 12px; box-shadow: 0 0 10px color-mix(in srgb, var(--light) 80%, transparent); }
+
+	/* The hour you point at lifts its sun a little. */
+	.day :global(.hour:hover .orb),
+	.day :global(.hour:focus-within .orb) { transform: translateY(-5px) scale(1.06); }
 
 	/* Too narrow for names around the figure: the lights become a simple list. */
 	@media (max-width: 560px) {
@@ -269,8 +325,9 @@ const SPOTS: Record<ChapterId, [number, number, 'left' | 'right' | 'top']> = {
 			border-radius: 999px;
 			background: color-mix(in srgb, var(--sky-top) 72%, transparent);
 		}
-		.rows > li { grid-template-columns: 1fr; gap: 12px; }
-		.app { grid-template-columns: 44px 1fr; }
-		.status { grid-column: 2; justify-self: start; }
+		.row { grid-template-columns: 1fr; padding: 20px 20px 6px; max-width: 80%; }
+		.aspect { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+		.now { flex-basis: 100%; margin: 0; }
+		.aspect .name { font-size: 1.45rem; }
 	}
 </style>

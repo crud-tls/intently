@@ -1,0 +1,116 @@
+---
+/**
+ * A piece of one hour: its sky, its sun or moon where it stands at that time, and a strip of its
+ * land along the bottom (src/world/vignette.ts). Whatever is said inside is said in that hour's
+ * light. Stacked in order, seven of these are the day; one alone is where an app lives.
+ *
+ * Words sit on the upper sky, where every hour's ink is checked for contrast; the warm colours of
+ * the horizon only show in the last stretch above the land.
+ */
+import { SKY } from '../../data/sky.ts';
+import { vignette } from '../../world/vignette.ts';
+import type { Chapter } from '../../data/chapters.ts';
+
+interface Props {
+	chapter: Chapter;
+	/** Height of the strip of land, in pixels. */
+	land?: number;
+	as?: 'div' | 'li' | 'article';
+	class?: string;
+	[attr: string]: unknown;
+}
+
+const { chapter: c, land = 72, as: Tag = 'div', class: className, ...rest } = Astro.props;
+const s = SKY[c.sky];
+const sun = s.sun.show > 0;
+// Across the right of the strip in the order of the day; low suns sink behind the hills.
+const ox = 60 + 30 * (sun ? s.sun.x : s.moon.x);
+const oy = sun ? 0.2 + 1.2 * s.sun.y : 0.32;
+---
+
+<Tag class:list={['hour', 'sky-words', className]} data-sky={c.sky} style={`--light:${c.light};--land:${land}px;--ox:${ox.toFixed(1)}%;--oy:${oy.toFixed(3)}`} {...rest}>
+	{s.stars > 0.2 && <span class="stars" aria-hidden="true" style={`opacity:${s.stars}`}></span>}
+	<span class:list={['orb', sun ? 'sun' : 'moon']} aria-hidden="true"></span>
+	<span class="land" set:html={vignette(c.id, land)} />
+	<div class="in"><slot /></div>
+</Tag>
+
+<style>
+	.hour {
+		position: relative;
+		display: block;
+		overflow: clip;
+		isolation: isolate;
+		background: linear-gradient(to bottom, var(--sky-top), var(--sky-upper) calc(100% - var(--land) - 16px), var(--sky-horizon) calc(100% - var(--land) * 0.4));
+	}
+
+	.in {
+		position: relative;
+		z-index: 2;
+		padding-bottom: calc(var(--land) + 4px);
+	}
+
+	.land {
+		position: absolute;
+		inset: auto 0 0;
+		height: var(--land);
+		z-index: 1;
+	}
+
+	.land :global(svg) {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* The sun or moon: behind the land, so a low one is half set. */
+	.orb {
+		position: absolute;
+		left: var(--ox);
+		top: calc((100% - var(--land)) * var(--oy));
+		z-index: 0;
+		width: 30px;
+		height: 30px;
+		margin: -15px 0 0 -15px;
+		border-radius: 50%;
+		transition: transform 600ms var(--ease-out);
+	}
+
+	.sun {
+		background: color-mix(in srgb, var(--glow) 30%, #ffffff);
+		box-shadow: 0 0 0 9px color-mix(in srgb, var(--glow) 16%, transparent), 0 0 64px 30px color-mix(in srgb, var(--glow) 36%, transparent);
+	}
+
+	.moon {
+		width: 24px;
+		height: 24px;
+		box-shadow: inset 6px -3px 0 0 #f6f1e4;
+		filter: drop-shadow(0 0 14px rgb(232 238 255 / 0.5));
+	}
+
+	.stars {
+		position: absolute;
+		/* Only in the open sky on the right: a star next to a word reads as a full stop. */
+		inset: 0 0 var(--land) 60%;
+		z-index: 0;
+		background:
+			radial-gradient(1.2px 1.2px at 6% 22%, #fff8ec 99%, transparent),
+			radial-gradient(1px 1px at 17% 61%, #fff8ec 99%, transparent),
+			radial-gradient(1.6px 1.6px at 29% 14%, #fff8ec 99%, transparent),
+			radial-gradient(1px 1px at 38% 47%, #fff8ec 99%, transparent),
+			radial-gradient(1.3px 1.3px at 47% 9%, #fff8ec 99%, transparent),
+			radial-gradient(1px 1px at 56% 34%, #fff8ec 99%, transparent),
+			radial-gradient(1.5px 1.5px at 66% 68%, #fff8ec 99%, transparent),
+			radial-gradient(1px 1px at 73% 18%, #fff8ec 99%, transparent),
+			radial-gradient(1.2px 1.2px at 92% 52%, #fff8ec 99%, transparent),
+			radial-gradient(1px 1px at 97% 12%, #fff8ec 99%, transparent);
+	}
+
+	@media (max-width: 560px) {
+		.stars { left: 80%; }
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.orb { transition: none; }
+	}
+</style>

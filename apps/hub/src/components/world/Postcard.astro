@@ -15,15 +15,17 @@ interface Props {
 	as?: 'section' | 'header';
 	label?: string;
 	class?: string;
+	/** The storyteller's line for this scene (the live world sets it beside the walker). */
+	aside?: string;
 }
 
-const { id, eager = false, after, as: Tag = 'section', label, class: className } = Astro.props;
+const { id, eager = false, after, as: Tag = 'section', label, class: className, aside } = Astro.props;
 const scene = getScene(id);
 const style = after ? `--after:${after}` : undefined;
 ---
 
 <Tag id={Tag === 'section' ? id : undefined} class:list={['postcard', `words-${scene.words}`, className]} data-scene={id} data-sky={scene.sky}
-	style={style} aria-labelledby={label}>
+	data-aside={aside} style={style} aria-labelledby={label}>
 	<picture class="land" aria-hidden="true">
 		<source media="(max-aspect-ratio: 1/1)" srcset={`/world/${id}-tall.svg`} />
 		<img src={`/world/${id}-wide.svg`} alt="" width="2800" height="1000" loading={eager ? 'eager' : 'lazy'}

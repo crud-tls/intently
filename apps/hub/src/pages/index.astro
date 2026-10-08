@@ -16,6 +16,10 @@ const groundAbove = [SKY.night, ...CHAPTERS.map((c) => SKY[c.sky])].map((s) => s
 	description="Most days just happen. Intently makes calm, private apps for living them on purpose: your time, attention, health, money, people, self and faith.">
 	<Splash />
 	<DayRail />
+	{/* The storyteller: one short line beside the walker once the visitor pauses at an hour. Only the
+	    live world places it (src/scripts/world/boot.ts), and it points at the picture, so it is hidden
+	    from assistive tech. */}
+	<p class="storyteller voice" data-storyteller aria-hidden="true"></p>
 	<main class="journey">
 		<Prologue />
 		{CHAPTERS.map((c, i) => <Moment chapter={c} after={groundAbove[i]} />)}
@@ -57,4 +61,34 @@ const groundAbove = [SKY.night, ...CHAPTERS.map((c) => SKY[c.sky])].map((s) => s
 	}
 
 	html.world-live .constellation .figure { visibility: hidden; }
+
+	/* The storyteller's line, on a soft piece of that hour's sky (or of its soil, below the walker). */
+	.storyteller { display: none; }
+
+	html.world-live .storyteller {
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		margin: 0;
+		padding: 5px 13px 6px;
+		border-radius: 14px 14px 14px 3px;
+		background: color-mix(in srgb, var(--sky-top) 82%, transparent);
+		color: var(--ink);
+		font-size: 1.05rem;
+		white-space: nowrap;
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity 500ms ease;
+		will-change: transform, opacity;
+	}
+
+	html.world-live .storyteller.below {
+		border-radius: 3px 14px 14px 14px;
+		background: color-mix(in srgb, var(--soil) 82%, transparent);
+		color: var(--soil-ink);
+	}
+
+	html.world-live .storyteller.on { opacity: 1; }
 </style>

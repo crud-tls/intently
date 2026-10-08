@@ -57,6 +57,9 @@ export function restY(ground: (x: number) => number, x: number, half: number): n
 	return half > 0 ? Math.max(ground(x - half), ground(x), ground(x + half)) : ground(x);
 }
 
+/** Where the spring's spout ends, as fractions of its size: the drops start here. */
+export const SPOUT: [number, number] = [-0.44, -0.64];
+
 export const WARM = '#FFB25C';
 export const BLUE = '#8CC8FF';
 
@@ -127,15 +130,97 @@ export function propLook(kind: PropKind, o: PropOptions): PropLook {
 				glow: { x: 0, y: -s / 2, r: s * 9, color: WARM, strength: 0.65 },
 			};
 		case 'spring': {
+			// A mossy rock with a bamboo spout propped on a forked stick: someone made this.
 			const rock = mix(o.land, o.sky.ground[2], 0.5);
+			const dark = mix(rock, '#000000', 0.15);
+			const lit = mix(rock, o.sky.horizon, 0.3);
+			const moss = mix(rock, '#7A9A3C', 0.55);
+			const cane = mix('#D9C27A', o.land, 0.18);
+			const caneDark = mix(cane, o.land, 0.5);
+			const u = (v: number) => n(v * s);
 			return {
-				body: `<ellipse cx="0" cy="${n(-s * 0.25)}" rx="${n(s * 0.6)}" ry="${n(s * 0.45)}" fill="${rock}"/><ellipse cx="${n(s * 0.35)}" cy="${n(-s * 0.15)}" rx="${n(s * 0.4)}" ry="${n(s * 0.3)}" fill="${mix(rock, '#000000', 0.15)}"/>`,
-				box: [-s * 0.6, -s * 0.7, s * 0.75, 0.2 * s],
+				body: `<ellipse cx="${u(0.34)}" cy="${u(-0.3)}" rx="${u(0.46)}" ry="${u(0.38)}" fill="${dark}"/>`
+					+ `<path d="M${u(-0.56)} ${u(0.04)}C${u(-0.64)} ${u(-0.3)} ${u(-0.42)} ${u(-0.74)} ${u(-0.04)} ${u(-0.8)}C${u(0.32)} ${u(-0.84)} ${u(0.58)} ${u(-0.5)} ${u(0.6)} ${u(0.04)}Z" fill="${rock}"/>`
+					+ `<path d="M${u(-0.46)} ${u(-0.3)}C${u(-0.4)} ${u(-0.58)} ${u(-0.2)} ${u(-0.74)} 0 ${u(-0.76)}C${u(-0.16)} ${u(-0.66)} ${u(-0.3)} ${u(-0.5)} ${u(-0.36)} ${u(-0.26)}Z" fill="${lit}" opacity="0.6"/>`
+					+ `<path d="M${u(-0.3)} ${u(-0.66)}C${u(-0.14)} ${u(-0.86)} ${u(0.2)} ${u(-0.88)} ${u(0.36)} ${u(-0.66)}C${u(0.2)} ${u(-0.75)} ${u(-0.12)} ${u(-0.75)} ${u(-0.3)} ${u(-0.66)}Z" fill="${moss}"/>`
+					+ `<ellipse cx="${u(-0.5)}" cy="${u(-0.05)}" rx="${u(0.2)}" ry="${u(0.13)}" fill="${dark}"/>`
+					+ `<path d="M${u(-0.31)} ${u(0.02)}L${u(-0.25)} ${u(-0.7)}M${u(-0.17)} ${u(0.02)}L${u(-0.25)} ${u(-0.7)}" stroke="${caneDark}" stroke-width="${u(0.035)}" stroke-linecap="round" fill="none"/>`
+					+ `<path d="M${u(0.14)} ${u(-0.84)}L${u(-0.42)} ${u(-0.68)}" stroke="${cane}" stroke-width="${u(0.1)}" stroke-linecap="round"/>`
+					+ `<path d="M${u(-0.07)} ${u(-0.832)}L${u(-0.042)} ${u(-0.736)}M${u(-0.266)} ${u(-0.776)}L${u(-0.238)} ${u(-0.68)}" stroke="${caneDark}" stroke-width="${u(0.022)}"/>`
+					+ `<circle cx="${u(SPOUT[0])}" cy="${u(SPOUT[1] - 0.02)}" r="${u(0.035)}" fill="#DDF1FF"/>`,
+				box: [-s * 0.72, -s * 0.94, s * 0.82, s * 0.2],
 			};
 		}
 		case 'drop':
+			// A teardrop with a glint; the anchor is the middle of its round end.
 			return {
-				body: `<circle r="${n(s)}" fill="#DDF1FF"/>`,
+				body: `<path d="M0 ${n(-s * 1.8)}C${n(s * 0.5)} ${n(-s * 0.9)} ${s} ${n(-s * 0.35)} ${s} ${n(s * 0.1)}A${s} ${s} 0 0 1 ${-s} ${n(s * 0.1)}C${-s} ${n(-s * 0.35)} ${n(-s * 0.5)} ${n(-s * 0.9)} 0 ${n(-s * 1.8)}Z" fill="#DDF1FF"/>`
+					+ `<circle cx="${n(-s * 0.32)}" cy="${n(s * 0.05)}" r="${n(s * 0.28)}" fill="#FFFFFF"/>`,
+				box: [-s, -s * 1.9, s, s * 1.2],
+			};
+		case 'reed': {
+			// A cattail: its height is the size; it stands at 0,0.
+			const stem = mix(o.land, '#4E6B2E', 0.35);
+			const head = mix(o.land, '#9A5A24', 0.55);
+			const u = (v: number) => n(v * s);
+			return {
+				body: `<path d="M0 0C${u(-0.16)} ${u(-0.3)} ${u(-0.22)} ${u(-0.5)} ${u(-0.2)} ${u(-0.7)}C${u(-0.12)} ${u(-0.45)} ${u(-0.04)} ${u(-0.25)} ${u(0.04)} 0Z" fill="${stem}"/>`
+					+ `<path d="M0 0C${u(0.1)} ${u(-0.2)} ${u(0.18)} ${u(-0.34)} ${u(0.22)} ${u(-0.5)}C${u(0.12)} ${u(-0.3)} ${u(0.06)} ${u(-0.14)} ${u(-0.03)} 0Z" fill="${stem}"/>`
+					+ `<path d="M0 0Q${u(0.05)} ${u(-0.5)} 0 ${u(-0.98)}" stroke="${stem}" stroke-width="${Math.max(1.2, u(0.045))}" stroke-linecap="round" fill="none"/>`
+					+ `<rect x="${u(-0.03)}" y="${u(-0.86)}" width="${u(0.1)}" height="${u(0.28)}" rx="${u(0.05)}" fill="${head}"/>`,
+				box: [-s * 0.26, -s, s * 0.26, s * 0.02],
+			};
+		}
+		case 'lily': {
+			// A pad lying flat on the water, with its notch; the size is half its width.
+			const pad = mix('#86A45A', o.land, 0.22);
+			const rim = mix(pad, '#FFFFFF', 0.3);
+			const ry = s * 0.4;
+			const at = (deg: number) => `${n(s * Math.cos((deg * Math.PI) / 180))} ${n(ry * Math.sin((deg * Math.PI) / 180))}`;
+			return {
+				body: `<path d="M${at(-8)}A${s} ${n(ry)} 0 1 1 ${at(-38)}L0 0Z" fill="${pad}"/>`
+					+ `<path d="M${at(200)}A${s} ${n(ry)} 0 0 1 ${at(262)}" stroke="${rim}" stroke-width="${n(s * 0.09)}" stroke-linecap="round" fill="none" opacity="0.75"/>`,
+				box: [-s, -ry - 0.5, s, ry + 0.5],
+			};
+		}
+		case 'bloom': {
+			// The flower that opens on a pad (sized by its pad), seen from the side.
+			const u = (v: number) => n(v * s);
+			return {
+				body: `<g transform="translate(${u(-0.15)} ${u(-0.18)})">`
+					+ `<path d="M0 0C${u(-0.34)} ${u(-0.1)} ${u(-0.36)} ${u(-0.4)} ${u(-0.3)} ${u(-0.5)}C${u(-0.14)} ${u(-0.42)} ${u(-0.02)} ${u(-0.2)} 0 0Z" fill="#FFD3DC"/>`
+					+ `<path d="M0 0C${u(0.34)} ${u(-0.1)} ${u(0.36)} ${u(-0.4)} ${u(0.3)} ${u(-0.5)}C${u(0.14)} ${u(-0.42)} ${u(0.02)} ${u(-0.2)} 0 0Z" fill="#FFD3DC"/>`
+					+ `<path d="M0 0C${u(-0.2)} ${u(-0.24)} ${u(-0.14)} ${u(-0.5)} 0 ${u(-0.66)}C${u(0.14)} ${u(-0.5)} ${u(0.2)} ${u(-0.24)} 0 0Z" fill="#FFF6F2"/>`
+					+ `<circle cy="${u(-0.1)}" r="${u(0.07)}" fill="#FFCB6B"/></g>`,
+				box: [-s * 0.55, -s * 0.9, s * 0.25, s * 0.05],
+			};
+		}
+		case 'stone': {
+			// A pebble on the shore; the size is half its width.
+			const stone = mix(o.land, o.sky.ground[1], 0.62);
+			const lit = mix(stone, o.sky.horizon, 0.4);
+			const u = (v: number) => n(v * s);
+			return {
+				body: `<path d="M${-s} 0C${-s} ${u(-0.7)} ${u(-0.5)} ${u(-1.05)} ${u(0.05)} ${-s}C${u(0.7)} ${u(-0.95)} ${s} ${u(-0.6)} ${s} 0Z" fill="${stone}"/>`
+					+ `<path d="M${u(-0.6)} ${u(-0.5)}C${u(-0.45)} ${u(-0.82)} ${u(-0.1)} ${u(-0.9)} ${u(0.2)} ${u(-0.84)}C${u(-0.1)} ${u(-0.8)} ${u(-0.4)} ${u(-0.66)} ${u(-0.6)} ${u(-0.5)}Z" fill="${lit}" opacity="0.7"/>`,
+				box: [-s, -s * 1.06, s, s * 0.02],
+			};
+		}
+		case 'boat': {
+			// A folded paper boat; the size is half its length and 0 is the waterline.
+			const u = (v: number) => n(v * s);
+			return {
+				body: `<path d="M${u(-0.44)} ${u(-0.3)}L0 ${u(-1.05)}L${u(0.44)} ${u(-0.3)}Z" fill="#FFF8EA"/>`
+					+ `<path d="M0 ${u(-1.05)}L${u(0.44)} ${u(-0.3)}L0 ${u(-0.3)}Z" fill="#E4D6BC"/>`
+					+ `<path d="M${-s} ${u(-0.3)}L${s} ${u(-0.3)}L${u(0.5)} ${u(0.2)}L${u(-0.5)} ${u(0.2)}Z" fill="#FFF8EA"/>`
+					+ `<path d="M${u(-0.8)} ${u(-0.1)}L${u(0.8)} ${u(-0.1)}L${u(0.5)} ${u(0.2)}L${u(-0.5)} ${u(0.2)}Z" fill="#E4D6BC"/>`,
+				box: [-s, -s * 1.07, s, s * 0.22],
+			};
+		}
+		case 'puff':
+			// One breath of chimney smoke, in the colour of that hour's clouds.
+			return {
+				body: `<circle r="${s}" fill="${o.sky.cloud}" opacity="0.3"/><circle r="${n(s * 0.62)}" fill="${o.sky.cloud}" opacity="0.4"/>`,
 				box: [-s, -s, s, s],
 			};
 		case 'firefly':

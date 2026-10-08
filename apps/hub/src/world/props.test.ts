@@ -4,7 +4,7 @@ import { propLook } from './props.ts';
 import { SKY } from '../data/sky.ts';
 import type { PropKind } from './scenes.ts';
 
-const KINDS: PropKind[] = ['figure', 'tent', 'fire', 'phone', 'pill', 'bird', 'house', 'lantern', 'spring', 'drop', 'firefly'];
+const KINDS: PropKind[] = ['figure', 'tent', 'fire', 'phone', 'pill', 'bird', 'house', 'lantern', 'spring', 'drop', 'firefly', 'reed', 'lily', 'bloom', 'stone', 'boat', 'puff'];
 
 test('every prop draws something with sane bounds', () => {
 	for (const kind of KINDS) {

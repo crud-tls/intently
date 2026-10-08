@@ -11,6 +11,9 @@ import { groundAt, type Lake } from './columns.ts';
 import { baseHalfWidth, restY } from '../../world/props.ts';
 import { spriteKey, type Sprite } from './atlas.ts';
 import { hexToRgb, mix, type Rgb } from '../lib/color.ts';
+import { EXAMPLE, pondFill, pondGround } from '../../world/pond.ts';
+import { setAside } from '../lib/math.ts';
+import { drawPond, type PondSite } from './pond.ts';
 
 export interface SpriteDraw {
 	sprite: Sprite;
@@ -50,6 +53,10 @@ export interface Frame {
 	visW: number;
 	lake: Lake | null;
 	pond: [number, number, number, number] | null;
+	/** The pond's moving parts: rings where the drops land (x, y, spacing, phase), the jetty (x0, x1, y, alpha), and the "if it grew" shoreline's half-width. */
+	pondFx?: { ring: [number, number, number, number]; jetty: [number, number, number, number]; grown: number } | null;
+	/** Where the pond is, so the Wealth page can redraw it from the visitor's numbers. */
+	pondSite?: PondSite | null;
 	sprites: SpriteDraw[];
 	lights: LightDraw[];
 	points: {
@@ -67,6 +74,8 @@ export interface Frame {
 	dots?: Float32Array | null;
 	dotColor?: Rgb;
 	ripple: number;
+	/** -1..1: how hard the visitor's own walking blows through the grass and the reeds. */
+	wind?: number;
 }
 
 const smooth = (a: number, b: number, x: number) => {
@@ -123,10 +132,14 @@ export function frameAt({ u, visW, time, velocity, sprites, markRect }: Timeline
 	const out: SpriteDraw[] = [];
 	const lights: LightDraw[] = [];
 	const near = (x: number) => x > -half && x < half;
+	// Small lights adrift in the air (sparks from the fire, seeds in the noon sun): x, y, size, alpha.
+	const motes: number[] = [];
+	let moteColor: Rgb = [1, 0.97, 0.88];
 
 	// Water first: the lake reshapes the foreground the walker stands on.
 	let lake: Lake | null = null;
-	let pond: Frame['pond'] = null;
+	let pondSite: PondSite | null = null;
+	let pondRx = 0;
 	for (const [i, sc] of SCENES.entries()) {
 		const w = sc.water;
 		if (!w || Math.abs(u - i) > 1.6) continue;
@@ -134,9 +147,9 @@ export function frameAt({ u, visW, time, velocity, sprites, markRect }: Timeline
 		if (w.kind === 'lake') {
 			lake = { a: off + (w.from - 0.5) * visW, b: off + (w.to - 0.5) * visW + (w.dx ?? 0), level: w.level * 1000 };
 		} else {
-			const cx = off + (w.from - 0.5) * visW;
-			const rx = w.dx ?? 100;
-			pond = [cx, groundAt(3, cx, cam, null) + 16, rx, rx * 0.15];
+			const home = (w.from - 0.5) * visW;
+			pondRx = w.dx ?? 100;
+			pondSite = { cx: off + home, room: visW / 2 - 8 - home, groundY: pondGround((x) => groundAt(3, x, cam, null), off + home), spring: null, walkerX: 0 };
 		}
 	}
 
@@ -241,16 +254,32 @@ export function frameAt({ u, visW, time, velocity, sprites, markRect }: Timeline
 					break;
 				case 'fire':
 					scaleY = 0.92 + 0.12 * Math.sin(time * 11 + Math.sin(time * 7));
+					// Sparks lift off the fire and go out as they rise.
+					for (let n = 0; n < 5; n++) {
+						const t = (time * 0.22 + n / 5) % 1;
+						motes.push(x + (n - 2) * 2.5 + Math.sin(time * 1.3 + n * 2.1) * 9 * t, y - p.size - t * 80, 6 - 4 * t, (1 - t) * Math.min(1, t * 8) * weight);
+					}
+					moteColor = [1, 0.72, 0.38];
+					break;
+				case 'house':
+					// Someone is home: smoke leaves the roof and thins on the evening air.
+					if (p.lit) {
+						const puff = sprites.get('puff');
+						for (let n = 0; puff && n < 4; n++) {
+							const t = (time * 0.11 + n / 4) % 1;
+							out.push({
+								sprite: puff, kind: 'puff', front,
+								x: x - p.size * 0.3 + t * 30 + Math.sin(time * 0.7 + n * 1.9) * 3,
+								y: y - p.size * 0.95 - t * 62,
+								scale: 0.45 + 1.1 * t,
+								alpha: (1 - t) * Math.min(1, t * 7) * 0.7,
+							});
+						}
+					}
 					break;
 				case 'spring':
-					// Drops fall from the rock into the pond, one after another.
-					for (let n = 0; n < 4; n++) {
-						const t = (time * 0.55 + n / 4) % 1;
-						const s = p.size;
-						const dx = -s * 0.4 - t * s * 0.9;
-						const dy = -s * 0.7 + t * t * s * 0.75;
-						out.push({ sprite: sprites.get('drop')!, x: x + dx, y: y + dy, scale: 1, alpha: Math.min(1, (1 - t) * 4), front: true });
-					}
+					// Its drops are the pond's business (below): they need to know where the water is.
+					if (pondSite) pondSite.spring = { x, y, size: p.size };
 					break;
 			}
 
@@ -263,6 +292,17 @@ export function frameAt({ u, visW, time, velocity, sprites, markRect }: Timeline
 			});
 			light(x, y, look, 1, alpha * (p.kind === 'fire' ? 0.85 + 0.15 * Math.sin(time * 13) : 1));
 		});
+	}
+
+	// At noon the meadow lets its seeds go: they drift across on the breeze, catching the sun.
+	const noon = Math.max(0, 1 - Math.abs(u - IDX.health) / 0.6);
+	if (noon > 0.01) {
+		const span = visW + 240;
+		for (let n = 0; n < 16; n++) {
+			const sx = ((((n * 0.618 + 0.13) % 1) * span + time * (7 + (n % 5) * 3)) % span) - span / 2;
+			const sy = 520 + ((n * 0.381 + 0.27) % 1) * 300 + Math.sin(time * 0.6 + n * 1.7) * 12;
+			motes.push(sx, sy, 7 + (n % 3) * 2, noon * (0.6 + 0.3 * Math.sin(time * 1.1 + n * 2.3)));
+		}
 	}
 
 	// The walker's lights (phone, lantern) are already in the list via their props.
@@ -294,5 +334,17 @@ export function frameAt({ u, visW, time, velocity, sprites, markRect }: Timeline
 		livedOn: 0,
 	};
 
-	return { u, sky, cam, visW, lake, pond, sprites: out, lights: lights.slice(0, 8), points, ripple: Math.min(1, Math.abs(velocity) * 30) };
+	const wind = Math.max(-1, Math.min(1, velocity * 60));
+	const frame: Frame = { u, sky, cam, visW, lake, pond: null, pondFx: null, pondSite, sprites: out, lights: lights.slice(0, 8), points, ripple: Math.min(1, Math.abs(velocity) * 30), wind };
+	if (motes.length) {
+		frame.dots = new Float32Array(motes);
+		frame.dotColor = moteColor;
+	}
+
+	// The pond, as the worked example (five a day for ten years): the water, what lives in it, the drops.
+	if (pondSite) {
+		pondSite.walkerX = wx;
+		drawPond(frame, sprites, pondSite, { fill: pondFill(setAside(EXAMPLE.perDay, EXAMPLE.years)), rx: pondRx, years: EXAMPLE.years, drops: 4, rate: 0.55, grown: 1, wind }, time);
+	}
+	return frame;
 }
