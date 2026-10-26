@@ -18,7 +18,7 @@ export function stores(app: App): { label: string; href: string }[] {
 
 export const siteUrl = (app: App) => `https://${app.host}`;
 
-/** "Pawse", "Pawse and Respite", "A, B and C". */
+/** "Respite", "Loop and Respite", "A, B and C". */
 export function names(apps: App[]): string {
 	const n = apps.map((a) => a.name);
 	return n.length < 2 ? n.join('') : `${n.slice(0, -1).join(', ')} and ${n[n.length - 1]}`;

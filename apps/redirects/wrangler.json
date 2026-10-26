@@ -17,6 +17,10 @@
       "custom_domain": true
     },
     {
+      "pattern": "pawse.liveintently.app",
+      "custom_domain": true
+    },
+    {
       "pattern": "infocus.liveintently.app",
       "custom_domain": true
     },

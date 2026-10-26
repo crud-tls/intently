@@ -4,9 +4,14 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"check": "wrangler deploy --dry-run",
+		"check": "node --test 'src/**/*.test.ts' && wrangler deploy --dry-run",
+		"test": "node --test 'src/**/*.test.ts'",
 		"deploy": "wrangler deploy"
 	},
-	"dependencies": { "@intently/registry": "*" },
-	"devDependencies": { "wrangler": "4.56.0" }
+	"dependencies": {
+		"@intently/registry": "*"
+	},
+	"devDependencies": {
+		"wrangler": "4.56.0"
+	}
 }

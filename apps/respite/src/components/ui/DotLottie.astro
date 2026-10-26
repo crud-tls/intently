@@ -1,0 +1,82 @@
+---
+/**
+ * DotLottie Component
+ *
+ * Renders dotlottie animations using the @lottiefiles/dotlottie-wc web component.
+ *
+ * @param src - Path to the .lottie file (relative to /public or full URL)
+ * @param autoplay - Whether to autoplay the animation (default: true)
+ * @param loop - Whether to loop the animation (default: true)
+ * @param width - Width of the player (default: "100%")
+ * @param height - Height of the player (default: "100%")
+ * @param speed - Playback speed (default: 1)
+ * @param hover - Whether to play on hover (default: false)
+ * @param direction - Animation direction: 1 (forward) or -1 (backward) (default: 1)
+ * @param className - Additional CSS classes
+ * @param ariaLabel - Accessible label for screen readers
+ */
+
+interface Props {
+  src: string;
+  autoplay?: boolean;
+  loop?: boolean;
+  width?: string | number;
+  height?: string | number;
+  speed?: number;
+  hover?: boolean;
+  direction?: 1 | -1;
+  className?: string;
+  ariaLabel?: string;
+}
+
+const {
+  src,
+  autoplay = true,
+  loop = true,
+  width = "100%",
+  height = "100%",
+  speed = 1,
+  hover = false,
+  direction = 1,
+  className = "",
+  ariaLabel
+} = Astro.props;
+
+// Format width/height - add "px" if just a number
+const formatSize = (size: string | number): string => {
+  return typeof size === 'number' ? `${size}px` : size;
+};
+---
+
+<dotlottie-wc
+  src={src}
+  autoplay={autoplay}
+  loop={loop}
+  speed={speed}
+  hover={hover}
+  direction={direction}
+  style={`width: ${formatSize(width)}; height: ${formatSize(height)};`}
+  class:list={["dotlottie-wc", className]}
+  aria-label={ariaLabel || "Animation"}
+></dotlottie-wc>
+
+<style>
+  :global(.dotlottie-wc) {
+    display: block;
+  }
+
+  :global(.dotlottie-wc):not(:defined) {
+    opacity: 0;
+  }
+
+  /* Fade in when the custom element is defined */
+  :global(.dotlottie-wc:defined) {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+
+<script>
+  // Load the dotlottie player web component
+  import('@lottiefiles/dotlottie-wc');
+</script>

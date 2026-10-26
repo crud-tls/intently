@@ -1,0 +1,67 @@
+---
+/**
+ * Card Component
+ * Used for feature cards, stats cards, and content cards
+ */
+interface Props {
+	variant?: 'default' | 'elevated' | 'outlined';
+	hover?: boolean;
+	class?: string;
+	[attr: string]: any;
+}
+
+const {
+	variant = 'elevated',
+	hover = true,
+	class: className = '',
+	...attrs
+} = Astro.props;
+
+const classes = `card card-${variant} ${hover ? 'card-hover' : ''} ${className}`.trim();
+---
+
+<div class={classes} {...attrs}>
+	<slot />
+</div>
+
+<style>
+	.card {
+		background-color: var(--ds-bg-primary);
+		border-radius: var(--ds-radius-lg);
+		padding: var(--ds-space-xl);
+		transition: all var(--ds-transition-normal);
+	}
+
+	/* Default - flat card */
+	.card-default {
+		background-color: var(--ds-bg-primary);
+	}
+
+	/* Elevated - with shadow */
+	.card-elevated {
+		box-shadow: var(--ds-shadow-md);
+	}
+
+	/* Outlined - with border */
+	.card-outlined {
+		border: 1px solid var(--ds-gray-200);
+	}
+
+	/* Hover effect */
+	.card-hover:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--ds-shadow-lg);
+	}
+
+	/* No hover for cards that shouldn't lift */
+	.card-outlined:not(.card-hover):hover {
+		border-color: var(--ds-gray-300);
+	}
+
+	/* Mobile: reduce padding */
+	@media (max-width: 767px) {
+		.card {
+			padding: var(--ds-space-lg);
+		}
+	}
+</style>

@@ -4,7 +4,7 @@ updated: 2026-10-02
 ---
 
 This policy covers the Intently website at **liveintently.app** only. Each app has its own policy
-on its own site, for example [Pawse](https://pawse.liveintently.app/privacy).
+on its own site, for example [Respite for Android](https://respite.liveintently.app/privacy/android).
 
 **Operator:** MD Sadakat Hussain Fahad, publishing as Intently ·
 **Contact:** [support@liveintently.app](mailto:support@liveintently.app)

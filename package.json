@@ -13,7 +13,7 @@
 	"scripts": {
 		"build": "npm run build --workspaces --if-present",
 		"check": "npm run check --workspaces --if-present",
-		"dev:pawse": "npm run dev -w @intently/pawse-site"
+		"dev:respite": "npm run dev -w @intently/respite-site"
 	},
 	"allowScripts": {
 		"workerd@1.20251217.0": true,

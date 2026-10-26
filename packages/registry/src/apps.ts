@@ -42,27 +42,6 @@ export const STUDIO = {
 
 export const APPS: App[] = [
 	{
-		id: 'pawse',
-		name: 'Pawse',
-		tagline: 'A gentle pause before the apps that eat your day.',
-		host: 'pawse.liveintently.app',
-		status: 'live',
-		email: 'pawse@liveintently.app',
-		platforms: ['Android', 'Chrome'],
-		stores: {
-			play: 'https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster',
-			chrome: 'https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop',
-		},
-		color: '#FF8A3D',
-		icon: '/icons/pawse.svg',
-		highlights: [
-			'A short, kind pause before the apps you choose',
-			'Daily limits and gentle timers, not hard blocks',
-			'Covers Reels and Shorts feeds too',
-		],
-		aliases: ['infocus.liveintently.app'],
-	},
-	{
 		id: 'respite',
 		name: 'Respite',
 		tagline: 'A short pause before the apps that eat your day.',
@@ -70,17 +49,21 @@ export const APPS: App[] = [
 		status: 'live',
 		// No per-app inbox yet (Email Routing needs a token scope); the studio inbox works today.
 		email: 'support@liveintently.app',
-		platforms: ['iOS'],
+		platforms: ['iOS', 'Android', 'Chrome'],
 		stores: {
 			appStore: 'https://apps.apple.com/us/app/respite-screen-time-control/id6757760293',
+			play: 'https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster',
+			chrome: 'https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop',
 		},
 		color: '#FF8A3D',
 		icon: '/icons/respite.svg',
 		highlights: [
 			'A short, kind pause before the apps you choose',
-			'Daily limits and an app lock that refreshes at midnight',
-			"Built on Apple's Screen Time; app names never leave your iPhone",
+			'Daily limits and gentle timers, plus an app lock on iPhone',
+			'On iPhone, Android and Chrome; your history stays on your device',
 		],
+		// Former names redirect here: Pawse (Android and Chrome), and InFocus before it.
+		aliases: ['pawse.liveintently.app', 'infocus.liveintently.app'],
 	},
 	{
 		id: 'qandeel',

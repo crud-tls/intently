@@ -7,7 +7,9 @@ one app's site can never break another app's privacy page.
 | Workspace | Host | Worker |
 |---|---|---|
 | `apps/hub` | `liveintently.app` (preview: `intently-hub.fsadakathussain.workers.dev`) | `intently-hub` |
-| `apps/pawse` | `pawse.liveintently.app` (preview: `pawse-site.fsadakathussain.workers.dev`) | `pawse-site` |
+| `apps/respite` | `respite.liveintently.app` (preview: `respite-site.fsadakathussain.workers.dev`): Respite on iPhone, Android and Chrome, with the blog, tools, contact form and account deletion | `respite-site` |
+| `apps/pawse` | being retired: `pawse.liveintently.app` becomes a 301 alias of Respite (see below) | `pawse-site` |
+| `apps/redirects` | `www.`, `health.`, `finances.` and former app names (`pawse.`, `infocus.`, `qit.`) | `intently-redirects` |
 | `apps/<id>` (loop, qandeel, mirror, paceshift, twohearts, hisab) | `<id>.liveintently.app` (preview: `<id>-site.fsadakathussain.workers.dev`) | `<id>-site` |
 
 Shared packages: `packages/registry` (one record per app), `packages/legal` (each app's policies
@@ -28,12 +30,13 @@ More app sites arrive in later phases; see
 
 ```bash
 npm install                                   # once, at the repo root
-npm run dev:pawse                             # local dev server for one site
+npm run dev:respite                           # local dev server for one site
 npm run build                                 # build every site
 npm run check                                 # build + type-check + wrangler dry-run, every site
-npm run deploy -w @intently/pawse-site        # deploy one site (ask first: it is production)
+npm run deploy -w @intently/respite-site      # deploy one site (ask first: it is production)
 npm test -w @intently/hub-site                # hub unit tests (terrain, timeline, palettes, maths…)
 npm run test:e2e -w @intently/hub-site        # hub end-to-end: desktop Chrome/Safari, Android, iPhone, iPad
+npm test -w @intently/redirects               # alias redirects and their per-alias path maps
 ```
 
 The hub's end-to-end tests need Playwright's browsers once: `npx playwright install chromium webkit`
@@ -41,6 +44,19 @@ The hub's end-to-end tests need Playwright's browsers once: `npx playwright inst
 
 Node 22+ (`.nvmrc`). npm only runs the install scripts listed in `allowScripts` in the root
 `package.json`; workerd, esbuild and sharp need theirs to fetch native binaries.
+
+## Pawse is now Respite
+
+The Android and Chrome app formerly called Pawse is Respite, and its site is merged into
+`apps/respite` (one site for iPhone, Android and Chrome). `apps/pawse` stays in the repo only
+until the cutover is verified, then the owner deletes it: nothing new depends on it (only its old
+`packages/legal/policies/pawse*` folders, which go with it). `pawse.liveintently.app` 301s to
+Respite through `apps/redirects`, with a path map: `/privacy` and `/terms` go to
+`/privacy/android` and `/terms/android`; every other path keeps its path.
+
+Legal is separate per platform on `respite.liveintently.app`: `/privacy` and `/terms` are the
+iPhone ones, `/privacy/android` and `/terms/android` the Android ones, `/privacy/chrome` the
+extension's.
 
 ## Legacy URLs
 

@@ -4,6 +4,22 @@
 Full plan: phases 0–8 (scaffold, Pawse rebrand, shared legal, hub, app sites, cutover, backend
 and Android follow-up, SEO).
 
+## Update 2026-10-26: Pawse merged into Respite
+- The Android app is being renamed Respite, so the Pawse site is merged into `apps/respite`
+  (server-backed, `@astrojs/cloudflare`): home, features, download, about, contact, compare, quiz,
+  tools, the 58-post blog (`respite-vs-*` slugs, 301s from `pawse-vs-*` and `intently-vs-*`),
+  rss, account deletion with the real form. Mascot Biscuit stays.
+- Legal is separate per platform: `/privacy` and `/terms` (iPhone), `/privacy/android` and
+  `/terms/android` (Android, `packages/legal/policies/respite-android`), `/privacy/chrome`.
+- One address: `support@liveintently.app` replaces `pawse@`. Site forms use
+  `https://respite-api.liveintently.app`.
+- `pawse.liveintently.app` is an alias in the registry, served by `intently-redirects` with a
+  path map (privacy and terms to the Android pages). The hub's `_redirects` point straight at
+  Respite. The `pawse` registry record is gone; `apps/pawse` is deleted after cutover.
+- Cutover order: deploy `respite-site`; detach the `pawse.liveintently.app` custom domain from
+  `pawse-site`; deploy `intently-redirects`; redeploy the hub. Below, "Pawse" in the earlier
+  notes means what is now Respite on Android and Chrome.
+
 ## Decisions
 - Monorepo, a Worker per site. Hub brand: Intently (studio). Pawse = "Pawse by Intently".
 - The screen-time blog (58 posts) and tools move to Pawse with 301s from every old URL.

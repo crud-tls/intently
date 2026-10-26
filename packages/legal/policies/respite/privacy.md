@@ -3,7 +3,7 @@ title: Privacy Policy for Respite
 updated: 2026-10-04
 ---
 
-Respite (formerly Pawse on iPhone) helps you notice and cut back on compulsive app use by
+Respite helps you notice and cut back on compulsive app use by
 showing a short pause before the apps you choose. This policy explains what the iPhone and iPad
 app collects, why, and where it goes.
 

@@ -102,7 +102,7 @@ export const CHAPTERS: Chapter[] = [
 		aside: 'Wait a moment. They leave as birds.',
 		meta: {
 			title: 'Your attention',
-			description: 'Notice what pulls at you, take one breath, and choose. A page about attention, with Pawse and Respite, our apps for a short pause before the apps that eat your day.',
+			description: 'Notice what pulls at you, take one breath, and choose. A page about attention, with Respite, our app for a short pause before the apps that eat your day.',
 		},
 		lede: [
 			"Most of us never decide to spend an hour on our phone. We decide to check one thing, and an hour happens. The fix isn't more willpower. It's a gap: one breath between the urge and the tap.",
@@ -128,8 +128,8 @@ export const CHAPTERS: Chapter[] = [
 				"If you have an answer, go ahead. If you don't, that's your answer.",
 			],
 		},
-		apps: [app('pawse'), app('respite')],
-		appLine: 'Pawse (for Android and Chrome) and Respite (for iPhone) put that breath in for you: a short, kind pause before the apps you choose, with gentle daily limits.',
+		apps: [app('respite')],
+		appLine: 'Respite (for iPhone, Android and Chrome) puts that breath in for you: a short, kind pause before the apps you choose, with gentle daily limits.',
 	},
 	{
 		id: 'health',

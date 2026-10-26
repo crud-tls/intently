@@ -9,7 +9,7 @@ const preview = process.argv.includes('--preview');
 const HOSTS = preview
 	? {
 		'liveintently.app': 'intently-hub.fsadakathussain.workers.dev',
-		'pawse.liveintently.app': 'pawse-site.fsadakathussain.workers.dev',
+		'respite.liveintently.app': 'respite-site.fsadakathussain.workers.dev',
 		'loop.liveintently.app': 'loop-site.fsadakathussain.workers.dev',
 	}
 	: {};

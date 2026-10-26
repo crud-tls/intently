@@ -1,13 +1,74 @@
 ---
-import '@fontsource-variable/inter/wght.css';
-import AppLayout from '@intently/ui/AppLayout.astro';
-import Support from '@intently/ui/Support.astro';
-import { app } from '@intently/registry';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
+import { SUPPORT_EMAIL } from '../consts';
 import { content } from '../content';
 
-const a = app('respite');
+const faqs = content.faq.map((f) => ({ question: f.q, answer: f.a }));
 ---
 
-<AppLayout app={a} content={content} title="Support" description={`Get help with ${a.name}.`}>
-	<Support app={a} content={content} />
-</AppLayout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Support - Respite" description="Get help with Respite on iPhone, Android or Chrome. Email us or browse the common questions." />
+		<BreadcrumbSchema
+			items={[
+				{ name: "Home", url: "https://respite.liveintently.app" },
+				{ name: "Support", url: "https://respite.liveintently.app/support" }
+			]}
+		/>
+		<FAQSchema faqs={faqs} />
+	</head>
+	<body>
+		<Header />
+		<main class="support">
+			<h1>Respite support</h1>
+			<p class="lead">Questions, bug reports or ideas? Email us at <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> or use the <a href="/contact">contact form</a>. We usually reply within two days.</p>
+			<p class="muted">Please include your phone model and its iOS or Android version (or your Chrome version) if something isn't working.</p>
+
+			<h2>Common questions</h2>
+			<div class="faq">
+				{content.faq.map((f) => (
+					<details>
+						<summary>{f.q}</summary>
+						<p>{f.a}</p>
+					</details>
+				))}
+			</div>
+
+			<h2>Your data</h2>
+			<ul>
+				<li>Privacy policy: <a href="/privacy">iPhone</a> · <a href="/privacy/android">Android</a> · <a href="/privacy/chrome">Chrome</a></li>
+				<li>Terms: <a href="/terms">iPhone</a> · <a href="/terms/android">Android</a></li>
+				<li>Want to delete your account? <a href="/delete-account">Here's how</a>.</li>
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.support {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 8rem 1rem var(--ds-space-3xl);
+		color: var(--ds-text-primary);
+	}
+
+	h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 var(--ds-space-md); }
+	h2 { font-size: 1.3rem; margin: 2.5rem 0 0.75rem; }
+	.lead { font-size: 1.15rem; }
+	.muted { color: var(--ds-text-secondary); }
+	a { color: var(--ds-primary); }
+
+	.faq details {
+		border-bottom: 1px solid var(--ds-gray-200);
+		padding: 1rem 0;
+	}
+
+	.faq summary { cursor: pointer; font-weight: 650; }
+	.faq p { margin: 0.6rem 0 0; color: var(--ds-text-secondary); }
+</style>
