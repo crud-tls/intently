@@ -41,6 +41,31 @@ You can sign in with Google, Facebook or Apple. We then receive your **email add
 **account identifier** from that provider and your **name** if the provider shares it. We never
 see your password.
 
+#### Google user data
+
+If you choose **Sign in with Google**, Respite asks Google only for the basic sign-in scopes
+(`openid`, `email` and `profile`). It requests no other access to your Google account: not Gmail,
+Drive, Contacts, Calendar or any other Google service.
+
+- **What we receive:** your Google account ID, your email address and whether Google has
+  verified it, your name, and the address of your Google profile photo.
+- **How we use it:** only to create and sign you in to your Respite account, to keep the same
+  account across your devices, to show which account you are signed in with and to send you emails
+  about your account (for example to confirm a deletion request).
+- **Where it is stored:** with your account on our server on Cloudflare, encrypted in transit
+  and at rest. The Google sign-in token itself is checked once and not kept.
+- **Sharing:** we don't sell Google user data, share it with anyone else, use it for
+  advertising, or use it to train AI or machine-learning models. No person at Respite reads it
+  except when you ask us for help with your account.
+- **Retention and deletion:** it is kept until you delete your account (in the app under
+  Account, or at [respite.liveintently.app/delete-account](/delete-account)), and is then
+  deleted. You can also remove Respite's access at any time at
+  [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
+
+Respite's use and transfer of information received from Google APIs adheres to the
+[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
+including the Limited Use requirements.
+
 While you are signed in and sync is on, Respite uploads your goals, usage sessions and events,
 daily statistics, intervention results, streak recoveries, your baseline and your settings to
 our server, which runs on **Cloudflare** (Workers and D1 database). This lets you restore your
