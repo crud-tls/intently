@@ -1,15 +1,16 @@
 /**
  * Contact Form API Endpoint
- * Sends emails through Resend's HTTP API (https://resend.com/docs/api-reference/emails/send-email).
- * It calls the API with fetch instead of the resend SDK: the SDK pulls in Node's mailparser, which
- * does not load in a Worker bundle.
+ * Sends through Cloudflare Email Routing's `send_email` binding (EMAIL in wrangler.json), so no
+ * third-party mail service or key is needed. Cloudflare only delivers to a verified destination
+ * address, which the binding pins; change it there, not here.
  */
 
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
+import { EmailMessage } from 'cloudflare:email';
 
-const DESTINATION_EMAIL = 'support@liveintently.app';
+const DESTINATION_EMAIL = 'sadakatpc1@gmail.com';
 const FROM_EMAIL = 'noreply@liveintently.app';
 const FROM_NAME = 'Respite Contact Form';
 
@@ -48,34 +49,10 @@ export const POST: APIRoute = async ({ request, locals }) => {
       });
     }
 
-    // Cloudflare runtime env (from .dev.vars locally, wrangler secret in production)
-    const apiKey = locals.runtime.env.RESEND_API_KEY;
+    const text = `New contact form submission:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}\n\n---\nSent from the Respite contact form at respite.liveintently.app`;
+    const raw = buildMessage({ replyTo: email, subject: `Contact Form: ${subject}`, text });
 
-    const response = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        from: `${FROM_NAME} <${FROM_EMAIL}>`,
-        to: [DESTINATION_EMAIL],
-        reply_to: email,
-        subject: `Contact Form: ${subject}`,
-        text: `New contact form submission:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}\n\n---\nSent from the Respite contact form at respite.liveintently.app`,
-      }),
-    });
-
-    if (!response.ok) {
-      console.error('Resend error:', response.status, await response.text());
-      return new Response(
-        JSON.stringify({
-          success: false,
-          message: 'Failed to send email. Please try again later.',
-        }),
-        {
-          status: 500,
-          headers: { 'Content-Type': 'application/json' },
-        }
-      );
-    }
+    await locals.runtime.env.EMAIL.send(new EmailMessage(FROM_EMAIL, DESTINATION_EMAIL, raw));
 
     return new Response(
       JSON.stringify({
@@ -102,6 +79,38 @@ export const POST: APIRoute = async ({ request, locals }) => {
     );
   }
 };
+
+/** A minimal plain-text MIME message; Email Routing requires From, To, Subject, Date and Message-ID. */
+function buildMessage({ replyTo, subject, text }: { replyTo: string; subject: string; text: string }): string {
+  return [
+    `From: ${FROM_NAME} <${FROM_EMAIL}>`,
+    `To: ${DESTINATION_EMAIL}`,
+    `Reply-To: ${headerSafe(replyTo)}`,
+    `Subject: ${encodeHeader(headerSafe(subject))}`,
+    `Date: ${new Date().toUTCString()}`,
+    `Message-ID: <${crypto.randomUUID()}@liveintently.app>`,
+    'MIME-Version: 1.0',
+    'Content-Type: text/plain; charset=utf-8',
+    'Content-Transfer-Encoding: base64',
+    '',
+    toBase64(text).replace(/.{76}/g, '$&\r\n'),
+  ].join('\r\n');
+}
+
+// Form fields go into headers, so a line break in one could add headers of its own.
+function headerSafe(value: string): string {
+  return value.replace(/[\r\n]+/g, ' ');
+}
+
+function encodeHeader(value: string): string {
+  return /^[\x20-\x7e]*$/.test(value) ? value : `=?utf-8?B?${toBase64(value)}?=`;
+}
+
+function toBase64(value: string): string {
+  let binary = '';
+  for (const byte of new TextEncoder().encode(value)) binary += String.fromCharCode(byte);
+  return btoa(binary);
+}
 
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

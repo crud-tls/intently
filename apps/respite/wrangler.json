@@ -19,5 +19,11 @@
       "pattern": "respite.liveintently.app",
       "custom_domain": true
     }
+  ],
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "destination_address": "sadakatpc1@gmail.com"
+    }
   ]
 }
