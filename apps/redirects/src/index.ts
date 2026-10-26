@@ -15,11 +15,12 @@ const TARGETS: Record<string, string> = {
 for (const app of APPS) for (const alias of app.aliases ?? []) TARGETS[alias] = app.host;
 
 /** Per-alias exceptions: old path (no trailing slash) to the path it moved to on the target host. */
+// Both old Pawse hosts served the Android policy at these paths; on Respite those paths are the iPhone ones.
+const ANDROID_LEGAL = { '/privacy': '/privacy/android', '/terms': '/terms/android' };
+
 export const PATH_MAPS: Record<string, Record<string, string>> = {
-	'pawse.liveintently.app': {
-		'/privacy': '/privacy/android',
-		'/terms': '/terms/android',
-	},
+	'pawse.liveintently.app': ANDROID_LEGAL,
+	'infocus.liveintently.app': ANDROID_LEGAL,
 };
 
 export const HOSTS = Object.keys(TARGETS);

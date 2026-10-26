@@ -29,8 +29,7 @@ test('pawse: every other path keeps its path, including /privacy/chrome', () => 
 });
 
 test('path maps apply only to the alias they belong to', () => {
-	assert.deepEqual(Object.keys(PATH_MAPS), ['pawse.liveintently.app']);
-	assert.equal(go('https://infocus.liveintently.app/privacy'), 'https://respite.liveintently.app/privacy');
+	assert.deepEqual(Object.keys(PATH_MAPS), ['pawse.liveintently.app', 'infocus.liveintently.app']);
 	assert.equal(go('https://qit.liveintently.app/terms'), 'https://qandeel.liveintently.app/terms');
 });
 
@@ -55,4 +54,9 @@ test('every alias in the registry is a redirect host with a route in wrangler.js
 	const { readFileSync } = await import('node:fs');
 	const routes = JSON.parse(readFileSync(new URL('../wrangler.json', import.meta.url), 'utf8')).routes.map((r: { pattern: string }) => r.pattern);
 	assert.deepEqual([...HOSTS].sort(), [...routes].sort());
+});
+
+test('infocus: privacy and terms land on the Android pages too', () => {
+	assert.equal(go('https://infocus.liveintently.app/privacy'), 'https://respite.liveintently.app/privacy/android');
+	assert.equal(go('https://infocus.liveintently.app/terms/'), 'https://respite.liveintently.app/terms/android');
 });
