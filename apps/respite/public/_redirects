@@ -32,3 +32,5 @@
 /privacy-policy-chrome        /privacy/chrome          301
 # The deletion email from the API linked here before the page existed.
 /confirm-deletion             /delete-account/confirm  301
+# Shipped iOS builds linked pawse.liveintently.app/privacy/ios; that host now forwards the same path here.
+/privacy/ios                  /privacy                 301
