@@ -1,23 +1,27 @@
 /**
  * Respite Design System
- * Warm cream and orange, matching the Respite app
+ * Mist blue, from the Respite logo gradient (#5E8FA6 to #24465A)
  */
 
 :root {
 	/* === Brand Colors === */
-	/* Primary - Respite orange for brand identity and CTAs */
-	/* Respite orange is decorative (logo, gradients, glows); text and buttons use the darker
-	   primary, which keeps 4.5:1 contrast on cream and white. */
-	--ds-brand: #FF8A3D;
-	--ds-brand-rgb: 255, 138, 61;
-	--ds-primary-rgb: 184, 78, 23;
-	--ds-primary-dark-rgb: 143, 59, 16;
-	--ds-primary: #B84E17;
-	/* Text on brand orange is always dark; text on primary flips with the theme. */
-	--ds-on-brand: #2A1E16;
+	/* Primary - Respite mist blue, sampled from the logo gradient */
+	/* Mist blue (#5E8FA6) is decorative (gradients, glows, tinted fills); text, links and
+	   solid fills carrying white text use the darker primary, which keeps 4.5:1 contrast on
+	   the page backgrounds. */
+	--ds-brand: #5E8FA6;
+	--ds-brand-rgb: 94, 143, 166;
+	--ds-primary-rgb: 47, 96, 121;
+	--ds-primary-dark-rgb: 36, 70, 90;
+	--ds-primary: #2F6079;
+	/* Text on brand blue is always dark ink; text on primary flips with the theme. */
+	--ds-on-brand: #0B1C27;
 	--ds-on-primary: #FFFFFF;
-	--ds-primary-dark: #8F3B10;
-	--ds-primary-light: #FFE3CC;
+	--ds-primary-dark: #24465A;
+	--ds-primary-light: #DCEEF4;
+	/* Logo clock face, for light accents */
+	--ds-mist: #BDE1EC;
+	--ds-gradient-brand: linear-gradient(135deg, #5E8FA6 0%, #24465A 100%);
 
 	/* Success - Green for goals achieved, positive trends */
 	--ds-green: #3E9B4F;
@@ -34,37 +38,37 @@
 	--ds-red-dark: #D32F2F;
 	--ds-red-light: #FFCDD2;
 
-	/* Milestone - Purple for achievements */
-	--ds-purple: #D9467A;
-	--ds-purple-dark: #B02E5E;
-	--ds-purple-light: #FAD6E2;
+	/* Milestone - secondary mist blue for achievements and gradient partners */
+	--ds-purple: #3F7A97;
+	--ds-purple-dark: #2B5D77;
+	--ds-purple-light: #D3E8F1;
 
 	/* === Neutral Colors === */
-	--ds-gray-50: #FBF6F0;
-	--ds-gray-100: #F5EDE4;
-	--ds-gray-200: #EADFD3;
-	--ds-gray-300: #DCCDBE;
-	--ds-gray-400: #BFAE9E;
-	--ds-gray-500: #9C8A7A;
-	--ds-gray-600: #7A6858;
-	--ds-gray-700: #5E4E41;
-	--ds-gray-800: #43362C;
-	--ds-gray-900: #2A1E16;
+	--ds-gray-50: #F4F8FA;
+	--ds-gray-100: #EAF1F5;
+	--ds-gray-200: #DCE6EC;
+	--ds-gray-300: #C6D4DD;
+	--ds-gray-400: #A3B5C1;
+	--ds-gray-500: #7F93A2;
+	--ds-gray-600: #5E7283;
+	--ds-gray-700: #44566A;
+	--ds-gray-800: #2B3B49;
+	--ds-gray-900: #13222D;
 
 	/* === Semantic Colors === */
-	--ds-bg-primary: #FFFAF3;
-	--ds-bg-secondary: #FFF3E6;
-	--ds-bg-accent: #FFE8D4;
+	--ds-bg-primary: #F7FBFC;
+	--ds-bg-secondary: #EEF5F8;
+	--ds-bg-accent: #DDEBF1;
 
 	/* Tinted backgrounds for alert boxes */
-	--ds-bg-info: #FFEFE0;
+	--ds-bg-info: #E6F2F7;
 	--ds-bg-warning: #FFF3E0;
 	--ds-bg-success: #E8F5E9;
 	--ds-bg-error: #FFEBEE;
 
-	--ds-text-primary: #2A1E16;
-	--ds-text-secondary: #6E5A4C;
-	--ds-text-hint: #9C8676;
+	--ds-text-primary: #13222D;
+	--ds-text-secondary: #46596A;
+	--ds-text-hint: #5A6E7E;
 
 	/* === Shadows - Material 3 elevation === */
 	--ds-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -110,32 +114,32 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		/* === Semantic Backgrounds === */
-		--ds-bg-primary: #1E1712;
-		--ds-bg-secondary: #2A2019;
-		--ds-bg-accent: #3A2A1E;
+		--ds-bg-primary: #0F1B24;
+		--ds-bg-secondary: #15262F;
+		--ds-bg-accent: #1D3442;
 
 		/* === Tinted Backgrounds === */
-		--ds-bg-info: #3A2A1E;
-		--ds-bg-warning: #2D2416;
+		--ds-bg-info: #1D3442;
+		--ds-bg-warning: #2D2816;
 		--ds-bg-success: #1B2E1D;
 		--ds-bg-error: #2C1B1D;
 
 		/* === Text Colors - inverted for dark mode === */
-		--ds-text-primary: #F5EADF;
-		--ds-text-secondary: #C9B7A6;
-		--ds-text-hint: #8F7D6D;
+		--ds-text-primary: #E8F2F7;
+		--ds-text-secondary: #B4C8D4;
+		--ds-text-hint: #8FA6B6;
 
 		/* === Neutral Colors - dark variants === */
-		--ds-gray-50: #2A2019;
-		--ds-gray-100: #33271F;
-		--ds-gray-200: #413328;
-		--ds-gray-300: #4F3F33;
-		--ds-gray-400: #6E5B4C;
-		--ds-gray-500: #8F7D6D;
-		--ds-gray-600: #AD9A89;
-		--ds-gray-700: #C9B7A6;
-		--ds-gray-800: #E3D5C8;
-		--ds-gray-900: #FFF8F0;
+		--ds-gray-50: #15262F;
+		--ds-gray-100: #1A2E3A;
+		--ds-gray-200: #243C4B;
+		--ds-gray-300: #31495A;
+		--ds-gray-400: #4D6677;
+		--ds-gray-500: #7A93A3;
+		--ds-gray-600: #94AABA;
+		--ds-gray-700: #B4C8D4;
+		--ds-gray-800: #D3E2EB;
+		--ds-gray-900: #F4FAFD;
 
 		/* === Shadows - need more opacity for dark backgrounds === */
 		--ds-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -143,11 +147,15 @@
 		--ds-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
 		--ds-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
 
-		/* === Brand Colors - slightly muted for dark mode === */
-		--ds-primary: #FF9A55;
-		--ds-on-primary: #2A1E16;
-		--ds-primary-dark: #E8702A;
-		--ds-primary-light: #4A2E1C;
+		/* === Brand Colors - lighter for dark mode === */
+		--ds-brand: #8EC1D6;
+		--ds-brand-rgb: 142, 193, 214;
+		--ds-primary-rgb: 142, 193, 214;
+		--ds-primary-dark-rgb: 111, 169, 192;
+		--ds-primary: #8EC1D6;
+		--ds-on-primary: #0F1B24;
+		--ds-primary-dark: #6FA9C0;
+		--ds-primary-light: #1D3A4A;
 		--ds-green: #66BB6A;
 		--ds-green-dark: #43A047;
 		--ds-green-light: #4CAF50;
@@ -157,8 +165,8 @@
 		--ds-red: #EF5350;
 		--ds-red-dark: #E53935;
 		--ds-red-light: #E57373;
-		--ds-purple: #F06B9A;
-		--ds-purple-dark: #D9467A;
-		--ds-purple-light: #4A2232;
+		--ds-purple: #A9D3E3;
+		--ds-purple-dark: #8EC1D6;
+		--ds-purple-light: #1F3F50;
 	}
 }

@@ -22,7 +22,7 @@ const colorDefs = {
 	blue: { primary: 'var(--ds-primary)', secondary: 'var(--ds-brand)', light: 'rgba(var(--ds-brand-rgb),  0.12)' },
 	green: { primary: '#4CAF50', secondary: '#81C784', light: 'rgba(76, 175, 80, 0.12)' },
 	orange: { primary: '#FF9800', secondary: '#FFB74D', light: 'rgba(255, 152, 0, 0.12)' },
-	purple: { primary: 'var(--ds-purple)', secondary: '#F06B9A', light: 'rgba(217, 70, 122,  0.12)' }
+	purple: { primary: 'var(--ds-purple)', secondary: '#A9D3E3', light: 'rgba(63, 122, 151,  0.12)' }
 };
 const c = colorDefs[color];
 
@@ -102,7 +102,7 @@ const iconSize = size === 'hero' ? 48 : 40;
 	/* Glass effects - Dark */
 	@media (prefers-color-scheme: dark) {
 		.glass-card.glass-heavy .glass-inner {
-			background: rgba(40, 40, 40, 0.75);
+			background: rgba(27, 46, 58, 0.75);
 			border: 1px solid rgba(255, 255, 255, 0.15);
 			box-shadow:
 				inset 0 1px 0 rgba(255, 255, 255, 0.2),
@@ -110,7 +110,7 @@ const iconSize = size === 'hero' ? 48 : 40;
 		}
 
 		.glass-card.glass-soft .glass-inner {
-			background: rgba(50, 50, 50, 0.85);
+			background: rgba(34, 56, 70, 0.85);
 			border: 1px solid rgba(255, 255, 255, 0.2);
 			box-shadow:
 				inset 0 1px 0 rgba(255, 255, 255, 0.25),
@@ -145,11 +145,11 @@ const iconSize = size === 'hero' ? 48 : 40;
 
 	@media (prefers-color-scheme: dark) {
 		.glass-heavy:hover .glass-inner {
-			background: rgba(40, 40, 40, 0.85);
+			background: rgba(27, 46, 58, 0.85);
 		}
 
 		.glass-soft:hover .glass-inner {
-			background: rgba(50, 50, 50, 0.95);
+			background: rgba(34, 56, 70, 0.95);
 		}
 	}
 

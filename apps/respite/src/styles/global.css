@@ -9,10 +9,10 @@
 :root {
 	--accent: var(--ds-primary);
 	--accent-dark: var(--ds-primary-dark);
-	--black: 42, 30, 22;
-	--gray: 122, 104, 88;
-	--gray-light: 234, 223, 211;
-	--gray-dark: 58, 44, 34;
+	--black: 19, 34, 45;
+	--gray: 94, 114, 131;
+	--gray-light: 220, 230, 236;
+	--gray-dark: 43, 59, 73;
 	--gray-gradient: rgba(var(--gray-light), 50%), var(--ds-bg-primary);
 	--font-heading: "Nunito Variable", "Nunito", system-ui, sans-serif;
 	--box-shadow:
@@ -223,10 +223,10 @@ hr {
 /* === Dark Mode === */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--gray-gradient: rgba(30, 30, 30, 50%), #121212;
+		--gray-gradient: rgba(21, 38, 47, 50%), #0F1B24;
 		/* Blog-specific RGB color variables for dark mode */
-		--gray: 160, 160, 160;
-		--gray-dark: 232, 232, 232;
+		--gray: 148, 170, 186;
+		--gray-dark: 232, 242, 247;
 	}
 
 	body {
