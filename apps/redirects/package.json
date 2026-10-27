@@ -12,6 +12,6 @@
 		"@intently/registry": "*"
 	},
 	"devDependencies": {
-		"wrangler": "4.56.0"
+		"wrangler": "^4.149.0"
 	}
 }
