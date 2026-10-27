@@ -55,7 +55,7 @@ export const APPS: App[] = [
 			play: 'https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster',
 			chrome: 'https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop',
 		},
-		color: '#FF8A3D',
+		color: '#2F6079',
 		icon: '/icons/respite.svg',
 		highlights: [
 			'A short, kind pause before the apps you choose',
