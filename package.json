@@ -16,12 +16,12 @@
 		"dev:respite": "npm run dev -w @intently/respite-site"
 	},
 	"allowScripts": {
-		"workerd@1.20251217.0": true,
 		"workerd@1.20251118.0": true,
 		"esbuild@0.25.12": true,
-		"esbuild@0.27.0": true,
 		"esbuild@0.25.4": true,
 		"sharp@0.34.5": true,
-		"sharp@0.33.5": true
+		"sharp@0.33.5": true,
+		"workerd@1.20261006.1": true,
+		"esbuild@0.28.2": true
 	}
 }
