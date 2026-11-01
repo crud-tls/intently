@@ -4,7 +4,7 @@ description: 'The best screen time apps for students in 2026: Respite, Forest, S
 pubDate: 2026-02-01
 updatedDate: 2026-11-01
 author: "Respite Team"
-answer: 'The best screen time apps for students are Respite (free, a short pause before distracting apps on iPhone, Android and Chrome), Forest (a cheap gamified study timer), ScreenZen (free countdown delays) and, for exam week, Freedom or Cold Turkey for hard blocks. Use a pause app all day and a timer or blocker for study sessions.'
+answer: 'The best screen time apps for students are Respite (free, a short pause before distracting apps on iPhone, Android and Chrome), Forest (a gamified study timer, free with a paid Plus subscription), ScreenZen (free countdown delays) and, for exam week, Freedom or Cold Turkey for hard blocks. Use a pause app all day and a timer or blocker for study sessions.'
 keyTakeaways:
   - 'Respite is free and runs all day in the background, with a Chrome extension for laptop browsing.'
   - 'Forest covers timed study blocks; it does nothing between sessions.'
@@ -24,7 +24,7 @@ faq:
   - question: 'Should students delete social media during exams?'
     answer: 'Temporarily, it can help, but it is hard to sustain and you may miss genuine social contact. A gentler option is to keep the apps and add friction: a pause app, notifications off, apps in a folder and the phone across the room. Save a blocker for the final 48 hours if needed.'
   - question: 'Is Forest or Respite better for students?'
-    answer: 'They do different jobs. Forest is great for Pomodoro-style study blocks, while Respite works all day by pausing you before distracting apps. Many students use both: Forest during study sessions, Respite for the hours in between. Forest is a low one-time price and Respite is free.'
+    answer: 'They do different jobs. Forest is great for Pomodoro-style study blocks, while Respite works all day by pausing you before distracting apps. Many students use both: Forest during study sessions, Respite for the hours in between. Forest is free with a paid Plus subscription, and Respite is free.'
   - question: 'What is the best app to block social media while studying?'
     answer: 'For a hard block, Freedom works across phone and laptop and Cold Turkey blocks on Windows and Mac. For a softer approach that you can''t resent as easily, Respite adds a pause before social apps and sites. Use hard blocks sparingly, such as finals week.'
 ---
@@ -59,7 +59,7 @@ On iPhone, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/i
 
 ### 2. Forest -- Gamified Study Timer
 
-$1.99-$3.99 | iOS, Android, Chrome
+Free, with a paid Plus subscription | iOS, Android, Chrome
 
 Forest is the one your friends have probably heard of. You plant a virtual tree, set a timer (25-120 minutes), and if you leave the app before time's up, your tree dies. Over a semester, you build a little forest that represents all your focused study time. It's surprisingly motivating.
 
@@ -77,17 +77,17 @@ The trade-off is that it tracks less, but it gets the job done. If you want to c
 
 ### 4. Freedom -- When You Need to Lock Things Down
 
-$40-120/year | iOS, Android, Mac, Windows, Chrome
+Around $40/year at the time of writing (a lifetime plan is also sold) | iOS, Android, Mac, Windows, Chrome
 
 Freedom is the heavy-duty option. It blocks distracting apps and websites across all your devices at once -- phone and laptop simultaneously. The real selling point is "Locked Mode," which prevents you from disabling the block during a session. During exam week, that kind of nuclear option can be genuinely useful.
 
 **Strengths:** Cross-device blocking, scheduled recurring sessions (e.g., weekdays 9am-12pm), Locked Mode that can't be overridden.
 
-**Honest trade-off:** It's expensive for a student budget, and hard blocking can backfire. If you're the type who gets frustrated and resentful when something's locked, you might end up fighting the tool instead of studying. It works best for short, high-stakes periods like finals rather than everyday use.
+**Honest trade-off:** It's a yearly cost on a student budget, and hard blocking can backfire. If you're the type who gets frustrated and resentful when something's locked, you might end up fighting the tool instead of studying. It works best for short, high-stakes periods like finals rather than everyday use.
 
 ### 5. Cold Turkey -- The Nuclear Desktop Blocker
 
-$39 one-time | Windows, Mac
+Pro is a one-time purchase of around $40 | Windows, Mac
 
 Cold Turkey is for students whose main distraction problem happens on their laptop. If your workflow is "open Word document, somehow end up on Reddit for 40 minutes," this is the app that'll stop you. The "Frozen Turkey" mode locks your entire computer down to only the applications you've approved.
 
@@ -98,10 +98,10 @@ It's extreme, and it's desktop-only, so it won't help with your phone. But for e
 | App | Price | How It Works | Platforms | Best Scenario |
 |-----|-------|-------------|-----------|---------------|
 | Respite | Free (optional Plus) | Shows a mindful pause before you open distracting apps | iPhone, Android, Chrome | Reducing impulsive phone use throughout the day |
-| Forest | $2-4 | Gamified focus timer -- your tree dies if you leave | iOS, Android, Chrome | Dedicated 25-50 min study blocks |
+| Forest | Free + paid Plus | Gamified focus timer -- your tree dies if you leave | iOS, Android, Chrome | Dedicated 25-50 min study blocks |
 | ScreenZen | Free | Countdown pause before apps | iOS, Android | A simple free countdown |
-| Freedom | $40-120/yr | Blocks apps and sites across devices; can't be overridden | All major platforms | Exam prep, scheduled blocks |
-| Cold Turkey | $39 once | Locks your computer to approved apps only | Desktop | Laptop-based distractions during assignments |
+| Freedom | ~$40/yr | Blocks apps and sites across devices; can't be overridden | All major platforms | Exam prep, scheduled blocks |
+| Cold Turkey | ~$40 once | Locks your computer to approved apps only | Desktop | Laptop-based distractions during assignments |
 
 ## Study Strategies That Work Alongside These Apps
 

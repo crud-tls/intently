@@ -113,7 +113,7 @@ It's free, lightweight, and highly customizable. You can toggle individual featu
 
 ### Forest Chrome — Focus Timer With Trees
 
-**Price**: Free (limited) / ~$2 for full | **Approach**: Gamified focus timer
+**Price**: Free, with a paid Plus subscription | **Approach**: Gamified focus timer
 
 Forest's Chrome extension mirrors its mobile app: you plant a virtual tree when you start a focus session, and it dies if you visit a blacklisted site. Real trees get planted through a partnership with Trees for the Future.
 
@@ -125,7 +125,7 @@ The gamification is genuinely motivating for some people, and the environmental 
 
 ### Freedom — Cross-Device Blocking (Premium)
 
-**Price**: ~$40/year | **Approach**: Block sites across all devices simultaneously
+**Price**: Around $40/year at the time of writing (a lifetime plan is also sold) | **Approach**: Block sites across all devices simultaneously
 
 Freedom's Chrome extension is part of its broader cross-device blocking platform. Block a site on Chrome and it's also blocked on your phone, tablet, and other computers. This closes the "I'll just check on my phone" loophole.
 
@@ -158,7 +158,7 @@ The free version covers basic blocking with a limited number of sites. The premi
 | **LeechBlock** | Schedule blocking | Free | Complex custom rules |
 | **News Feed Eradicator** | Feed removal | Free | Keeping social media without the feed |
 | **Unhook YouTube** | Feature removal | Free | YouTube without the rabbit hole |
-| **Forest** | Gamified timer | Free/$2 | Timed focus sessions |
+| **Forest** | Gamified timer | Free + paid Plus | Timed focus sessions |
 | **Freedom** | Cross-device blocking | ~$40/yr | Multi-device enforcement |
 | **BlockSite** | URL blocklist | Free/Premium | Dead-simple blocking |
 

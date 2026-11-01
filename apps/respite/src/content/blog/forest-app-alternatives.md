@@ -4,7 +4,7 @@ description: 'Apps like Forest for focus and screen time: Flora, One Sec, Respit
 pubDate: 2026-02-01
 updatedDate: 2026-11-01
 author: 'Respite Team'
-answer: 'The best Forest app alternatives are Flora (the same tree-growing timer with group sessions), Respite (free, an always-on mindful pause with streaks, on iPhone, Android and Chrome), One Sec (a paid breathing pause) and ScreenZen (free countdown delays). Forest only helps during timed sessions, so the alternatives mostly cover the rest of your day.'
+answer: 'The best Forest app alternatives are Flora (the same tree-growing timer with group sessions), Respite (free, an always-on mindful pause with streaks, on iPhone, Android and Chrome), One Sec (a breathing pause, free for one app) and ScreenZen (free countdown delays). Forest only helps during timed sessions, so the alternatives mostly cover the rest of your day.'
 keyTakeaways:
   - 'Flora is the closest Forest swap: same timer, with shared focus rooms.'
   - 'Respite is a free, always-on pause with streaks on iPhone, Android and Chrome.'
@@ -16,9 +16,9 @@ tags: ['forest app alternatives', 'forest alternative free', 'apps like forest',
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: 'What are the best alternatives to the Forest app?'
-    answer: 'Flora is the closest match with shared focus rooms. For help outside timed sessions, Respite (free pause, tracking and streaks on iPhone, Android and Chrome), One Sec (paid breathing pause) and ScreenZen (free countdown delay) work all day. Opal is a hard blocker for iPhone.'
+    answer: 'Flora is the closest match with shared focus rooms. For help outside timed sessions, Respite (free pause, tracking and streaks on iPhone, Android and Chrome), One Sec (breathing pause, free for one app) and ScreenZen (free countdown delay) work all day. Opal is a hard blocker for iPhone.'
   - question: 'Is the Forest app worth it?'
-    answer: 'Yes, for what it does. Forest is a well-designed gamified focus timer with a real-tree-planting tie-in, at a low one-time price. The limitation is that it only works during sessions you start, so it can''t help with compulsive checking outside focused work.'
+    answer: 'Yes, for what it does. Forest is a well-designed gamified focus timer with a real-tree-planting tie-in, and it is free, with a paid Plus subscription. The limitation is that it only works during sessions you start, so it can''t help with compulsive checking outside focused work.'
   - question: 'What is the best free alternative to Forest?'
     answer: 'It depends on what you want. Respite is free on iPhone, Android and Chrome and adds streaks to an always-on pause. Flora is free to start for a Forest-like timer with social features. ScreenZen is free on iOS and Android for simple awareness delays.'
   - question: 'Does Forest actually help with phone addiction?'
@@ -47,7 +47,7 @@ Credit where it's due. Forest gets a lot right:
 
 - The gamification actually works. Growing trees feels more rewarding than staring at usage bar charts.
 - Real-world impact through Trees for the Future (2 million+ real trees and counting).
-- A one-time purchase ($1.99 Android, $3.99 iOS) in a world of $99/year subscriptions.
+- Free to use, with a paid Plus subscription, in a world where blockers charge around $100 a year at the time of writing.
 - Social planting with friends for group accountability.
 - Genuinely beautiful design -- the forest visualization is charming in a way most productivity apps aren't.
 
@@ -57,7 +57,7 @@ If any of that resonates, here's what else is out there.
 
 | App | What it does | Price | Platform |
 |---|---|---|---|
-| **Forest** | Gamified focus timer | $1.99-$3.99 one-time | iOS, Android, Chrome |
+| **Forest** | Gamified focus timer | Free, with a paid Plus subscription | iOS, Android, Chrome |
 | **Flora** | Focus timer with group rooms | Free to start, in-app purchases | iOS, Android |
 | **Respite** | Always-on mindful pause, streaks | Free (optional Plus) | iPhone, Android, Chrome |
 | **One Sec** | Breathing pause | Paid | iOS, Android |
@@ -84,9 +84,9 @@ The idea sounds almost too simple, but a study with the Max Planck Institute fou
 
 You can customize the breath duration (5-30 seconds), add intention prompts ("Why are you opening this?"), and track how often you opened an app versus how often you actually went through with using it. That last metric is eye-opening. You'll probably discover you close the app after the breathing pause more often than you'd expect.
 
-Pricing runs around $50 lifetime or $25/year, which is steep for a single-purpose tool. On iOS, it relies on the Shortcuts system, which means per-app setup and occasional breakage after OS updates. There's no gamification, no streaks, no forest to build -- if you need that kind of long-term engagement hook, you won't find it here.
+One Sec is free for one app, and One Sec Pro is around $20 a year, which is modest but still a fee for a single-purpose tool. On iOS, it relies on the Shortcuts system, which means per-app setup and occasional breakage after OS updates. There's no gamification, no streaks, no forest to build -- if you need that kind of long-term engagement hook, you won't find it here.
 
-Rating: 4/5 -- If your actual problem is compulsive app-checking rather than a lack of focus sessions, One Sec is more relevant to you than Forest ever was. The price is the main sticking point.
+Rating: 4/5 -- If your actual problem is compulsive app-checking rather than a lack of focus sessions, One Sec is more relevant to you than Forest ever was. The narrow scope is the main sticking point.
 
 ## Respite -- Free, Always-On, and Gamified
 
@@ -110,7 +110,7 @@ The standout feature is "Opal Shield," which installs a device management profil
 
 It's beautifully designed for iPhone, offers team and group focus sessions, and includes a focus score with streaks. The app categories (Social, News, Entertainment) make setup quick.
 
-But it comes at a cost -- literally. $99/year or $14.99/month, which is a hard sell next to Forest's one-time $3.99. The device management profile that powers Opal Shield also raises fair privacy questions; you're giving an app significant control over your phone. And blocking without building awareness can feel punitive. You're white-knuckling through restrictions rather than changing the underlying habit. The free version is very limited.
+But it comes at a cost -- literally. Opal Pro is around $100 a year (also sold monthly or as a lifetime plan), which is a hard sell next to Forest, which is free with a paid Plus subscription. The device management profile that powers Opal Shield also raises fair privacy questions; you're giving an app significant control over your phone. And blocking without building awareness can feel punitive. You're white-knuckling through restrictions rather than changing the underlying habit. The free version is very limited.
 
 Rating: 3.5/5 -- If willpower alone isn't cutting it and you need hard restrictions on iPhone, Opal is the most polished option. Just go in with open eyes about the price and the privacy trade-off.
 
@@ -164,7 +164,7 @@ If the core experience is fine but you wish it were more social, Flora is the na
 
 If your real problem isn't focus sessions but the 50 times a day you reach for your phone without thinking, One Sec or Respite will help more than any focus timer can. One Sec is the proven option with published research behind it; Respite is free and adds gamification to keep things engaging (iPhone, Android and Chrome).
 
-If gentle approaches haven't been enough and you need your phone to actively stop you, Opal is the most polished hard blocker on iPhone -- though it'll cost you $99/year.
+If gentle approaches haven't been enough and you need your phone to actively stop you, Opal is the most polished hard blocker on iPhone -- though Opal Pro is around $100 a year.
 
 And if you just want a quiet nudge without any complexity, ScreenZen pairs nicely with Forest to cover the hours outside your focus sessions.
 

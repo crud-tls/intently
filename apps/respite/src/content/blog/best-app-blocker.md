@@ -4,9 +4,9 @@ description: 'The best app blockers for Android and iPhone in 2026. Hard blocker
 pubDate: 2026-02-28
 updatedDate: 2026-11-01
 author: "Respite Team"
-answer: 'The best app blockers in 2026 are Freedom (blocks across all your devices, subscription), Cold Turkey (unbypassable desktop blocking, $39 one-time), Opal (polished iPhone blocking) and the free built-ins, Apple Screen Time and Google Digital Wellbeing. If blocking has never stuck for you, a free pause app like Respite (iPhone, Android, Chrome) is the gentler alternative.'
+answer: 'The best app blockers in 2026 are Freedom (blocks across all your devices, subscription), Cold Turkey (unbypassable desktop blocking, around $40 one-time), Opal (polished iPhone blocking) and the free built-ins, Apple Screen Time and Google Digital Wellbeing. If blocking has never stuck for you, a free pause app like Respite (iPhone, Android, Chrome) is the gentler alternative.'
 keyTakeaways:
-  - 'Strongest cross-device blocker: Freedom; strongest desktop blocker: Cold Turkey ($39 one-time).'
+  - 'Strongest cross-device blocker: Freedom; strongest desktop blocker: Cold Turkey (around $40 one-time).'
   - 'Best iPhone blocker: Opal. Free built-ins (Screen Time, Digital Wellbeing) are easy to bypass.'
   - 'Blockers enforce; pause apps like Respite and One Sec build awareness and let you choose.'
   - 'Many people use a hard block for exam or deadline windows and a pause for everyday use.'
@@ -45,7 +45,7 @@ Both approaches reduce screen time. They differ in whether they change the under
 ### Freedom — Best Cross-Platform Blocker
 
 **Platforms:** iOS, Android, Mac, Windows, Chrome
-**Price:** Subscription (monthly or yearly; see Freedom's site for current pricing)
+**Price:** Subscription, around $40 a year at the time of writing (a lifetime plan is also sold)
 
 Freedom blocks apps and websites across all your devices simultaneously. Create "blocksessions" that sync across phone, tablet, and computer so you can't cheat by switching devices.
 
@@ -55,7 +55,7 @@ Freedom blocks apps and websites across all your devices simultaneously. Create 
 ### Cold Turkey — Most Hardcore Blocker
 
 **Platforms:** Windows, Mac (phone support limited)
-**Price:** Free basic; $39 one-time for Pro
+**Price:** Free basic; Pro is a one-time purchase of around $40
 
 Cold Turkey takes blocking seriously. In its strictest mode, you literally cannot access blocked sites or apps until the timer expires — not even by restarting your computer or uninstalling the app. It's designed for people who know they'll try to cheat.
 
@@ -65,7 +65,7 @@ Cold Turkey takes blocking seriously. In its strictest mode, you literally canno
 ### Opal — Best iOS-Focused Blocker
 
 **Platforms:** iOS
-**Price:** Free basic; paid premium (about $99/year)
+**Price:** Free basic; Opal Pro (around $100/year)
 
 Opal provides session-based blocking for iPhone with a polished interface. Create focus sessions that block distracting apps, with options for gentle reminders or hard blocks.
 

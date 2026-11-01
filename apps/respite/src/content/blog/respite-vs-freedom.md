@@ -17,7 +17,7 @@ faq:
   - question: 'Which is better: Respite or Freedom?'
     answer: 'It depends on the problem. Freedom is better when you need strict blocking across all your devices during work or study, including Windows and Mac. Respite is better when you want a free, gentler pause and tracking to change everyday habits on iPhone, Android and Chrome. Some people use Freedom for work hours and Respite the rest of the time.'
   - question: 'Is Freedom free?'
-    answer: 'Freedom offers a limited free trial, but real use needs a paid plan. Pricing has included monthly, yearly and lifetime options; check Freedom''s site for current prices. Respite is free to use, with an optional Respite Plus upgrade for sync across devices and extras.'
+    answer: 'Freedom offers a limited free trial, but real use needs a paid plan. Pricing has included monthly, yearly (around $40 a year at the time of writing) and lifetime options; check Freedom''s site for current prices. Respite is free to use, with an optional Respite Plus upgrade for sync across devices and extras.'
   - question: 'Is there a free alternative to Freedom?'
     answer: 'Yes, if you want a pause rather than a hard lock. Respite is free on iPhone, Android and Chrome and adds a gentle pause before the apps and sites you pick. If you need true blocking, see our [Freedom alternatives guide](/blog/freedom-alternatives/) for other options.'
   - question: 'Does Freedom''s Locked Mode really work?'

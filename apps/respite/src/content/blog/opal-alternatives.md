@@ -4,24 +4,24 @@ description: 'Looking for an Opal alternative? Respite, One Sec, ScreenZen and m
 pubDate: 2026-02-01
 updatedDate: 2026-11-01
 author: 'Respite Team'
-answer: 'The best Opal alternatives are Respite (free, a mindful pause before the apps you pick, on iPhone, Android and Chrome), ScreenZen (free countdown delays on iOS and Android), One Sec (about $50 a year, a breathing pause) and Cold Turkey ($39 one-time desktop blocking). Opal costs about $99 a year and is iPhone-only, so most of these are cheaper or free.'
+answer: 'The best Opal alternatives are Respite (free, a mindful pause before the apps you pick, on iPhone, Android and Chrome), ScreenZen (free countdown delays on iOS and Android), One Sec (free for one app, Pro around $20 a year, a breathing pause) and Cold Turkey (around $40 one-time desktop blocking). Opal Pro costs around $100 a year and is iPhone-only, so most of these are cheaper or free.'
 keyTakeaways:
-  - 'Opal is about $99/year and iPhone-only; Respite and ScreenZen are free alternatives.'
+  - 'Opal Pro is around $100/year and iPhone-only; Respite and ScreenZen are free alternatives.'
   - 'Respite runs on iPhone, Android and Chrome; sign-in is optional and only needed for sync.'
-  - 'Cold Turkey ($39 once) is the pick for hard desktop blocking.'
+  - 'Cold Turkey (around $40 once) is the pick for hard desktop blocking.'
   - 'Opal still wins on polished iPhone blocking and team focus features.'
 section: 'App Comparisons'
 tags: ['opal alternatives', 'opal alternative free', 'best opal alternative', 'screen time', 'app blockers', 'digital wellbeing']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: 'What are the best alternatives to Opal?'
-    answer: 'Respite (free pause before the apps you pick, iPhone, Android, Chrome), ScreenZen (free countdown delay, iOS and Android), One Sec (about $50 a year, breathing pause), Cold Turkey ($39 one-time desktop blocking) and Apple Screen Time (free, built in). Choose by whether you want to block apps or build awareness.'
-  - question: 'Is Opal worth $99 a year?'
+    answer: 'Respite (free pause before the apps you pick, iPhone, Android, Chrome), ScreenZen (free countdown delay, iOS and Android), One Sec (free for one app, Pro around $20 a year, breathing pause), Cold Turkey (around $40 one-time desktop blocking) and Apple Screen Time (free, built in). Choose by whether you want to block apps or build awareness.'
+  - question: 'Is Opal worth around $100 a year?'
     answer: 'For most people probably not. Opal''s core features, blocking and usage tracking, have free or cheaper equivalents in Respite, ScreenZen and Apple Screen Time. It can be worth it if you specifically want its focus score, polished iPhone design or team features.'
   - question: 'What is the best free alternative to Opal?'
     answer: 'Respite is a strong free option: mindful pauses, usage tracking and streaks on iPhone, Android and Chrome, with no ads. You can use it without an account and sign in only for sync. ScreenZen is the other good free choice if you prefer a plain countdown delay.'
   - question: 'Can I block apps without paying for Opal?'
-    answer: 'Yes. Apple Screen Time on every iPhone offers free app limits, ScreenZen adds free delays, and Respite adds a free pause on iPhone, Android and Chrome (its iPhone app also has an app lock that refreshes at midnight). Cold Turkey is a $39 one-time purchase for desktop blocking.'
+    answer: 'Yes. Apple Screen Time on every iPhone offers free app limits, ScreenZen adds free delays, and Respite adds a free pause on iPhone, Android and Chrome (its iPhone app also has an app lock that refreshes at midnight). Cold Turkey Pro is a one-time purchase of around $40 for desktop blocking.'
   - question: 'Is there an Opal alternative for Android?'
     answer: 'Opal is iPhone-only. On Android, Respite is a free option with mindful pauses and tracking, and ScreenZen, One Sec, Forest and Freedom also run on Android. Google Digital Wellbeing is built into most Android phones.'
   - question: 'Does Opal actually reduce screen time?'
@@ -32,7 +32,7 @@ faq:
     answer: 'Download the alternative you want, set it up (most take a few minutes) and cancel your Opal subscription. There is no data to migrate, because screen time apps track usage going forward. Cancel through the platform you subscribed on, so you are not billed again.'
 ---
 
-Opal's a well-made screen time app, and it deserves its popularity on iOS. But at $99/year, it's one of the priciest apps in the category -- and it's iPhone-only, with a blocking-first approach that doesn't click for everyone.
+Opal's a well-made screen time app, and it deserves its popularity on iOS. But at around $100 a year for Opal Pro at the time of writing, it's one of the priciest apps in the category -- and it's iPhone-only, with a blocking-first approach that doesn't click for everyone.
 
 If you're here, you're probably already weighing your options. Maybe the price tag stings, maybe you're on Android, or maybe you've tried blocking and found yourself just... turning it off. Whatever the reason, here's what's actually worth your time.
 
@@ -40,7 +40,7 @@ If you're here, you're probably already weighing your options. Maybe the price t
 
 The complaints we see most often:
 
-- $99/year is a lot when several solid alternatives are free
+- Around $100 a year is a lot when several solid alternatives are free
 - No Android support at all
 - Blocking can create a frustrating cycle -- restrict, bypass, feel guilty, repeat
 - The free tier feels more like a demo than a real product
@@ -67,13 +67,13 @@ Rating: 4/5
 
 ## One Sec -- The Breathing Pause That Actually Works
 
-Platform: iOS, Android | Price: ~$50/year
+Platform: iOS, Android | Price: Free for one app; Pro around $20/year
 
 One Sec does one thing and does it well. Open a distracting app, and you're met with a short breathing exercise (5-10 seconds) before you can proceed. That's the whole concept.
 
 It's backed by a study conducted with the Max Planck Institute, which is worth noting because most apps in this space wave vaguely at "behavioral science" without specifics. One Sec also lets you set intention prompts that ask why you're opening the app, which adds another layer of friction without full blocking.
 
-Here's the catch: at ~$50/year, it's not cheap for what's essentially a single intervention. The Android version was added later and can feel like an afterthought compared to iOS. And if you want tracking dashboards, gamification, or any broader feature set, you'll need to pair it with something else.
+Here's the catch: the free version covers one app, and Pro (around $20 a year) is a fee for what's essentially a single intervention. The Android version was added later and can feel like an afterthought compared to iOS. And if you want tracking dashboards, gamification, or any broader feature set, you'll need to pair it with something else.
 
 Still -- if your main problem is reflexively opening Twitter or Instagram without thinking, One Sec is genuinely effective at breaking that loop.
 
@@ -102,11 +102,11 @@ Rating: 3.5/5
 
 ## Cold Turkey -- Desktop Blocking You Can't Cheat
 
-Platform: Windows, Mac | Price: $39 one-time
+Platform: Windows, Mac | Price: One-time purchase of around $40
 
 If you need to lock yourself out of distracting websites while working on your computer, Cold Turkey is the nuclear option -- in the best way. When you set a block, it's genuinely impossible to bypass. Restarting your computer won't help. Uninstalling the app won't help. The "Frozen Turkey" mode can lock down your entire machine.
 
-It's a one-time $39 purchase (no subscription), and it doesn't require an account for basic use. The scheduling features are solid, letting you set recurring blocks with built-in breaks.
+It's a one-time purchase of around $40 (no subscription), and it doesn't require an account for basic use. The scheduling features are solid, letting you set recurring blocks with built-in breaks.
 
 The obvious gap: Cold Turkey is desktop-only. It can't touch your phone habits. If phone screen time is your main concern, you'll need to pair it with something like Respite or One Sec. It also won't teach you anything about why you're reaching for distractions -- it just makes them unavailable. For deep-focus work sessions, though, nothing else comes close.
 
@@ -116,11 +116,11 @@ Rating: 4/5
 
 ## Forest -- Grow Trees, Stay Focused
 
-Platform: iOS, Android | Price: $2-4 one-time
+Platform: iOS, Android | Price: Free, with a paid Plus subscription
 
 Forest takes a completely different tack. Set a focus timer, and a virtual tree starts growing. Leave the app before the timer's up, and your tree dies. Earn enough coins, and Forest will fund the planting of a real tree through Trees for the Future.
 
-That real-tree feature is genuinely charming and surprisingly motivating. The whole experience feels positive rather than punitive -- you're building a forest, not fighting yourself. At $2-4 one-time, the price is negligible.
+That real-tree feature is genuinely charming and surprisingly motivating. The whole experience feels positive rather than punitive -- you're building a forest, not fighting yourself. It's free to start, with a paid Plus subscription for extras.
 
 The big caveat: Forest only works during active focus sessions. It won't help with the 47 times you check your phone throughout the day between sessions. It doesn't track your usage, it doesn't intervene when you compulsively open apps, and it doesn't address always-on screen time habits. Think of it as a focus timer with great vibes, not a screen time management tool. Pairs well with something more comprehensive running in the background.
 
@@ -188,12 +188,12 @@ Rating: 3.5/5
 
 | App | Approach | Price | Platform |
 |---|---|---|---|
-| **Opal** | Blocking, focus score | ~$99/yr | iPhone |
+| **Opal** | Blocking, focus score | Pro ~$100/yr | iPhone |
 | **Respite** | Mindful pause, tracking | Free (optional Plus) | iPhone, Android, Chrome |
-| **One Sec** | Breathing pause | ~$50/yr | iOS, Android |
+| **One Sec** | Breathing pause | Free for one app; Pro ~$20/yr | iOS, Android |
 | **ScreenZen** | Countdown delay | Free | iOS, Android |
-| **Cold Turkey** | Hard desktop blocking | $39 one-time | Windows, Mac |
-| **Forest** | Gamified focus timer | $2-4 one-time | iOS, Android |
+| **Cold Turkey** | Hard desktop blocking | ~$40 one-time | Windows, Mac |
+| **Forest** | Gamified focus timer | Free + paid Plus | iOS, Android |
 | **Apple Screen Time** | Limits, downtime | Free (built in) | iPhone, Mac |
 
 ## Where does Opal still win?

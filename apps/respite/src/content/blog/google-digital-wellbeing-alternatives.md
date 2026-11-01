@@ -4,7 +4,7 @@ description: 'Best Google Digital Wellbeing alternatives for Android: Respite, A
 pubDate: 2026-01-16
 updatedDate: 2026-11-01
 author: 'Respite Team'
-answer: 'The best Google Digital Wellbeing alternative for most Android users is Respite: it adds a mindful pause before the apps you pick, tracks usage with streaks, and is free with no ads and no account needed. ActionDash is best for detailed stats, StayFree is the budget tracker, One Sec is a paid breathing pause and Freedom blocks across every device.'
+answer: 'The best Google Digital Wellbeing alternative for most Android users is Respite: it adds a mindful pause before the apps you pick, tracks usage with streaks, and is free with no ads and no account needed. ActionDash is best for detailed stats, StayFree is the budget tracker, One Sec is a breathing pause (free for one app) and Freedom blocks across every device.'
 keyTakeaways:
   - 'Respite is the free all-rounder: a pause before apps, tracking and streaks; sign in only for sync.'
   - 'ActionDash gives the deepest stats; StayFree is the free-with-ads tracker.'
@@ -26,7 +26,7 @@ faq:
   - question: 'Can I use Digital Wellbeing alternatives on multiple devices?'
     answer: 'It depends on the app. Respite runs on iPhone, Android and Chrome, and its optional Plus upgrade syncs across devices. Freedom blocks across all platforms. ActionDash, StayFree and YourHour are Android-only. Check platforms before you commit.'
   - question: 'Do I need to pay for a screen time app?'
-    answer: 'No. Respite''s core app is free, and StayFree and YourHour are free with ads. Paid apps range from one-time purchases like ActionDash and Forest to yearly subscriptions like Freedom and One Sec, which add specific features but are not necessary for most people.'
+    answer: 'No. Respite''s core app is free, and StayFree and YourHour are free with ads. Paid apps range from paid upgrades like ActionDash and Forest Plus to yearly subscriptions like Freedom and One Sec, which add specific features but are not necessary for most people.'
   - question: 'Do screen time apps drain battery?'
     answer: 'Most modern screen time apps have a small battery impact, though it varies by app and phone. Check your phone''s battery stats after a few days to see what each app costs you. If one stands out, try an alternative or adjust its settings.'
   - question: 'Can I use multiple screen time apps at once?'
@@ -42,13 +42,13 @@ We've put together eleven alternatives and this guide to help you pick the right
 | App | Approach | Price | Privacy | Best For |
 |-----|----------|-------|---------|----------|
 | Respite | Mindful interventions | Free (optional Plus) | No account needed, history on device | Long-term habit change |
-| ActionDash | Enhanced tracking | Freemium ($5) | Good | Power users wanting data |
+| ActionDash | Enhanced tracking | Freemium | Good | Power users wanting data |
 | StayFree | App limits + blocking | Free (ads) | Fair | Budget-conscious users |
 | YourHour | Addiction focus | Free | Fair | Understanding phone dependency |
-| Socratic | AI coaching | $9.99/mo | Poor (cloud AI) | Personalized guidance |
-| One Sec | Breathing delays | $24.99/yr | Good | Impulse control |
-| Forest | Gamified focus | $1.99 one-time | Good | Pomodoro technique fans |
-| Freedom | Cross-device blocking | $39.99/yr | Fair | Multi-device blocking |
+| Socratic | AI coaching | Paid subscription | Poor (cloud AI) | Personalized guidance |
+| One Sec | Breathing delays | Free for one app; Pro ~$20/yr | Good | Impulse control |
+| Forest | Gamified focus | Free + paid Plus | Good | Pomodoro technique fans |
+| Freedom | Cross-device blocking | ~$40/yr | Fair | Multi-device blocking |
 
 ## Why look for a Google Digital Wellbeing alternative?
 
@@ -98,7 +98,7 @@ If you love data, ActionDash will make you very happy. It takes what Google Digi
 
 The trade-off is that it's really just a tracking tool. If you're looking for something that'll actually help you change behavior, ActionDash won't do much — it'll just show you very detailed evidence of your habits. It can also be overwhelming if you don't enjoy digging through dashboards.
 
-Pricing is refreshingly simple: free version for basics, $4.99 one-time for everything. It does collect anonymous usage statistics by default, though you can disable that in settings.
+Pricing is refreshingly simple: free version for basics, with a paid upgrade for everything. It does collect anonymous usage statistics by default, though you can disable that in settings.
 
 A great choice for data enthusiasts, but if behavior change is your goal, you'll probably want to pair it with something else.
 
@@ -108,7 +108,7 @@ A great choice for data enthusiasts, but if behavior change is your goal, you'll
 
 StayFree doesn't try to reinvent anything. It gives you app usage tracking, daily time limits, scheduled blocking, and distraction alerts. It works, it's free, and it gets the job done for people who just want basic guardrails without paying.
 
-The catch, predictably, is ads. They're not overwhelming, but they're there. You can remove them for a $6.99 lifetime purchase, which is reasonable. The UI isn't as polished as some competitors, and the analytics are basic compared to ActionDash, but for a free tool it covers the fundamentals well.
+The catch, predictably, is ads. They're not overwhelming, but they're there. You can remove them with a paid upgrade. The UI isn't as polished as some competitors, and the analytics are basic compared to ActionDash, but for a free tool it covers the fundamentals well.
 
 Worth a look if budget is your primary concern and you don't mind a few ads in your screen time app (yes, the irony isn't lost on us).
 
@@ -123,7 +123,7 @@ YourHour does something interesting: it gives you a real-time clock timer showin
 - Goal setting and motivational messages
 - Notification management tools
 
-The app feels a bit dated visually, and the free version has ads and upsells. Premium runs $19.99/year. It also collects analytics data, which is worth knowing if privacy matters to you.
+The app feels a bit dated visually, and the free version has ads and upsells. Premium is a paid subscription. It also collects analytics data, which is worth knowing if privacy matters to you.
 
 If the idea of quantifying your phone dependency appeals to you, YourHour does that well. Just don't expect a modern-feeling experience.
 
@@ -133,7 +133,7 @@ If the idea of quantifying your phone dependency appeals to you, YourHour does t
 
 Socratic tries to be a personal digital wellbeing coach powered by AI. You tell it your goals, it analyzes your behavior, and it gives you personalized recommendations through a conversational interface. Think daily check-ins, tailored challenges, and adaptive guidance.
 
-It's a genuinely interesting concept. The problem is twofold: it costs $9.99/month (or $79.99/year), and all that personalized coaching requires sending your usage data to the cloud for AI processing. If you're specifically looking for alternatives because of Google's data collection, Socratic moves you in the wrong direction on that front.
+It's a genuinely interesting concept. The problem is twofold: it is a paid subscription, and all that personalized coaching requires sending your usage data to the cloud for AI processing. If you're specifically looking for alternatives because of Google's data collection, Socratic moves you in the wrong direction on that front.
 
 For people who want hand-holding and don't mind the price or the privacy trade-off, it's worth trying. For everyone else, there are better options.
 
@@ -145,7 +145,7 @@ One Sec has the most focused pitch of any app on this list: when you open a dist
 
 And honestly? It works surprisingly well for impulse control. That tiny pause is often enough to make you realize you didn't actually need to open Instagram for the fourth time this hour. It's available on both iOS and Android, the design is clean, and it does its one thing effectively.
 
-The limitation is obvious — it really is just that one thing. No meaningful analytics, no gamification, no broader habit-building framework. At $24.99/year (or $4.99/month), the price feels steep for a single feature, especially when Respite includes pause interventions alongside a broader toolkit in its free app.
+The limitation is obvious — it really is just that one thing. No meaningful analytics, no gamification, no broader habit-building framework. It is free for one app and Pro is around $20 a year at the time of writing, which is fair, but it is still a fee for a single feature when Respite includes pause interventions alongside a broader toolkit in its free app.
 
 A good option if you want something minimal. Respite covers similar ground with more tracking; see [Respite vs One Sec](/blog/respite-vs-one-sec/).
 
@@ -155,7 +155,7 @@ A good option if you want something minimal. Respite covers similar ground with 
 
 Forest turns focus time into a game: start a session, and a virtual tree begins growing. Stay off your phone and it flourishes. Pick up your phone early and it dies. Over time, you build a little forest — and the coins you earn can go toward planting actual trees through Trees for the Future.
 
-It's charming, it's motivating, and at $1.99 on Android ($3.99 on iOS), the price is right. The social planting feature (grow trees with friends) adds a nice layer of accountability.
+It's charming, it's motivating, and it is free to start, with a paid Plus subscription for extras. The social planting feature (grow trees with friends) adds a nice layer of accountability.
 
 The caveat is that Forest only covers focus sessions. It won't track your overall screen time, it won't help you understand your habits, and it won't intervene when you're mindlessly scrolling at midnight. Think of it as a pomodoro timer with personality, not a comprehensive wellbeing tool. Great for students and anyone who responds well to gamification.
 
@@ -167,7 +167,7 @@ Freedom is what you reach for when you need distraction blocking across every de
 
 It's powerful, and for people who work across multiple devices and need enforced focus periods, nothing else quite matches it.
 
-The downsides: it's expensive at $39.99/year ($129 lifetime, or $8.99/month), the mobile experience feels secondary to desktop, and philosophically it's pure restriction. It doesn't help you build better habits — it just makes the bad ones temporarily impossible. Once the block ends, you're back to willpower alone.
+The downsides: it costs around $40 a year (about $9 monthly; a lifetime plan is also sold), the mobile experience feels secondary to desktop, and philosophically it's pure restriction. It doesn't help you build better habits — it just makes the bad ones temporarily impossible. Once the block ends, you're back to willpower alone.
 
 Best suited for professionals who need hard boundaries during work hours and are willing to pay for it.
 
@@ -213,7 +213,7 @@ Cross-platform support is a plus, and the free tier is genuinely useful. The app
 | Gamification | Streaks + achievements | Basic | Basic | Score system | Challenges | None | Tree growing | None |
 | Privacy | No account, history on device | Anonymous analytics | Collects data | Collects data | Cloud AI | Good | Good | Account required |
 | Cross-Platform | iPhone, Android and Chrome | Android only | Android only | Android only | iOS + Android | iOS + Android | iOS + Android | All platforms |
-| Price | Free (optional Plus) | $4.99 one-time | Free (ads) | Free (ads) | $9.99/mo | $24.99/yr | $1.99 one-time | $39.99/yr |
+| Price | Free (optional Plus) | Freemium | Free (ads) | Free (ads) | Paid subscription | Free for one app; Pro ~$20/yr | Free + paid Plus | ~$40/yr |
 
 ---
 
@@ -223,13 +223,13 @@ It depends on what matters most to you:
 
 **Privacy and lasting change** -- Go with Respite. It's free, needs no account, and is built around helping you actually shift your relationship with your phone rather than just restricting it.
 
-**Detailed analytics** -- ActionDash gives you more data than you'll probably know what to do with, and the $4.99 one-time price is fair.
+**Detailed analytics** -- ActionDash gives you more data than you'll probably know what to do with, and the paid upgrade is fair.
 
-**Tight budget** -- StayFree covers the basics for free. Forest is $1.99 if you want something more engaging.
+**Tight budget** -- StayFree covers the basics for free. Forest is free to start if you want something more engaging.
 
 **Real-time awareness** -- YourHour's live session timer is uniquely effective if you respond to seeing the numbers tick upward.
 
-**Personalized coaching** -- Socratic, if you're willing to spend $9.99/month and share your data.
+**Personalized coaching** -- Socratic, if you're willing to pay for a subscription and share your data.
 
 **Impulse interruption** -- One Sec if you want the research-backed breathing pause and don't mind paying; Respite if you want a free pause with tracking.
 
@@ -262,7 +262,7 @@ Respite keeps your usage history on your device, needs no account, and only sync
 
 **Best for Data Lovers: ActionDash** -- Unmatched analytics and insights for people who want to really understand their usage patterns.
 
-**Best Value: Forest** -- A one-time $1.99 payment, genuinely fun gamification, and it supports real tree planting.
+**Best Value: Forest** -- Free to start (with a paid Plus subscription), genuinely fun gamification, and it supports real tree planting.
 
 ---
 

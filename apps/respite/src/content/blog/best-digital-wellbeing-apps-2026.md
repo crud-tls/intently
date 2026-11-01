@@ -72,7 +72,7 @@ On the downside, there's no web dashboard and no parental controls, and it isn't
 
 ## 2. Freedom -- Best for Cross-Platform Blocking
 
-**Price:** Paid subscription (see Freedom's site for current pricing)
+**Price:** Subscription, around $40 a year at the time of writing (a lifetime plan is also sold)
 **Platforms:** Windows, Mac, iOS, Android, Chrome
 **Approach:** Scheduled blocking across all devices
 
@@ -90,7 +90,7 @@ That said, if you're dealing with genuinely compulsive internet use and need har
 
 ## 3. Forest -- Best for Gamified Focus
 
-**Price:** $3.99 one-time (iOS) or Free with ads (Android)
+**Price:** Free, with a paid Plus subscription
 **Platforms:** iOS, Android, Chrome
 **Approach:** Gamification and virtual trees
 
@@ -106,7 +106,7 @@ The real-world tie-in is a nice touch: you can spend virtual coins to plant actu
 
 Where Forest falls short is depth. It doesn't track your overall phone usage or provide analytics. It's a focus timer with a charming skin, not a comprehensive wellbeing tool. And the gamification novelty does wear off for some people after a few weeks.
 
-But for $3.99 (or free on Android with ads), it's hard to argue with the value.
+But for a free app, it's hard to argue with the value.
 
 **Rating: 4.5/5**
 
@@ -146,7 +146,7 @@ Worth using if you're already in the Apple ecosystem and want basic visibility. 
 
 ## 6. Opal -- Best for Aesthetics-Minded Focus
 
-**Price:** Free basic, $99/year premium
+**Price:** Free basic; Opal Pro around $100/year
 **Platforms:** iOS, Mac
 **Approach:** App blocking during scheduled focus sessions
 
@@ -154,7 +154,7 @@ Opal is, without question, the most beautiful app on this list. The interface is
 
 Functionally, it's a focus-blocking app with smart scheduling -- it learns your patterns and suggests focus times. The "focus score" gives you a daily rating of how well you stayed on task, and the gemstone reward system adds light gamification without feeling juvenile.
 
-The catch is the price. At $99/year, it's one of the most expensive options here, and the free tier is quite limited. It's also Apple-only. And like Freedom, the underlying approach is blocking rather than building awareness, which limits its long-term impact for some people.
+The catch is the price. At around $100 a year for Pro, it's one of the most expensive options here, and the free tier is quite limited. It's also Apple-only. And like Freedom, the underlying approach is blocking rather than building awareness, which limits its long-term impact for some people.
 
 If you're a Mac/iPhone user doing knowledge work and you don't mind paying for premium software, Opal is a polished choice. For everyone else, it's a tough sell at that price point.
 
@@ -183,13 +183,13 @@ No account or cloud connection required, which is a plus for privacy.
 
 ## 8. StayFree -- Best Budget Option
 
-**Price:** Free with ads, $1.99/month premium
+**Price:** Free with ads, with a paid premium tier
 **Platforms:** Android
 **Approach:** Usage tracking and app limits
 
-StayFree is the best option for Android users who want more than Google's built-in tools but aren't ready to pay $8-10/month for a premium app. The free tier, while ad-supported, is genuinely functional -- you get detailed usage stats, daily/weekly/monthly breakdowns, app time limits, and even the ability to export PDF reports.
+StayFree is the best option for Android users who want more than Google's built-in tools but aren't ready to pay for a premium subscription app. The free tier, while ad-supported, is genuinely functional -- you get detailed usage stats, daily/weekly/monthly breakdowns, app time limits, and even the ability to export PDF reports.
 
-The premium tier at $1.99/month removes ads and unlocks a few extras, making it one of the most affordable paid options in the category. The interface isn't going to win any design awards, and customer support is limited, but for the price, it's hard to complain.
+The paid premium tier removes ads and unlocks a few extras, making it a low-cost paid option in the category. The interface isn't going to win any design awards, and customer support is limited, but for the price, it's hard to complain.
 
 If budget is a real constraint and you're on Android, start here.
 
@@ -244,13 +244,13 @@ Cross-platform support and a generous free tier make it accessible. The approach
 | App | Best For | Price | Privacy | Approach |
 |-----|----------|-------|---------|----------|
 | **Respite** | Mindful interventions | Free (optional Plus) | Excellent | Awareness |
-| **Freedom** | Cross-platform blocking | Subscription | Fair | Blocking |
-| **Forest** | Gamified focus | $3.99 one-time | Good | Gamification |
+| **Freedom** | Cross-platform blocking | ~$40/year | Fair | Blocking |
+| **Forest** | Gamified focus | Free + paid Plus | Good | Gamification |
 | **Digital Wellbeing** | Basic free option (Android) | Free | Poor | Tracking |
 | **Screen Time** | iPhone families | Free | Poor | Tracking + Limits |
-| **Opal** | Beautiful focus sessions | $99/year | Good | Blocking |
+| **Opal** | Beautiful focus sessions | Pro ~$100/year | Good | Blocking |
 | **One Sec** | Breaking impulse habits | Free tier, then paid | Excellent | Breathing |
-| **StayFree** | Budget Android users | Free-$1.99/mo | Fair | Tracking + Limits |
+| **StayFree** | Budget Android users | Free + paid premium | Fair | Tracking + Limits |
 
 ## Which digital wellbeing app should you pick?
 
@@ -258,7 +258,7 @@ It depends on what's driving your screen time problem -- and what kind of soluti
 
 If privacy matters to you and you'd rather build awareness than have apps blocked, **Respite** is the strongest option. It treats you like an adult, keeps your data on your device unless you sync, and its intervention approach tends to stick. [Download Respite](/download/) to try it out, or see how it stacks up in our [best screen time apps roundup](/blog/best-screen-time-apps-2026/).
 
-If you need hard boundaries because willpower alone isn't cutting it, **Freedom** gives you the most robust cross-platform blocking available. It's not cheap, but it's thorough.
+If you need hard boundaries because willpower alone isn't cutting it, **Freedom** gives you the most robust cross-platform blocking available. It's a yearly subscription, but it's thorough.
 
 If you're a student or someone who responds well to game-like motivation, **Forest** is fun, affordable, and has the real-tree-planting angle going for it.
 

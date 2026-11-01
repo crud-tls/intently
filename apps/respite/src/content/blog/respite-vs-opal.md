@@ -4,10 +4,10 @@ description: 'Respite vs Opal compared: a free mindful pause versus a paid app b
 pubDate: 2026-01-16
 updatedDate: 2026-11-01
 author: 'Respite Team'
-answer: 'Pick Opal if you are on iPhone, want strong scheduled blocking for a deadline or exam period, and are happy to pay around $99 a year. Pick Respite if you want a free, gentler pause before the apps you choose, with usage tracking and streaks, on iPhone, Android and Chrome. Respite nudges you; Opal locks apps.'
+answer: 'Pick Opal if you are on iPhone, want strong scheduled blocking for a deadline or exam period, and are happy to pay around $100 a year. Pick Respite if you want a free, gentler pause before the apps you choose, with usage tracking and streaks, on iPhone, Android and Chrome. Respite nudges you; Opal locks apps.'
 keyTakeaways:
   - 'Opal blocks apps on a schedule; Respite adds a short pause and lets you decide.'
-  - 'Opal costs around $99 a year for full features; Respite is free, with an optional Plus for sync.'
+  - 'Opal Pro costs around $100 a year for full features; Respite is free, with an optional Plus for sync.'
   - 'Respite covers iPhone, Android and Chrome; Opal is built around iPhone.'
   - 'Opal is deeper on focus sessions and scheduled blocking; Respite is lighter and needs no account.'
 section: 'App Comparisons'
@@ -17,7 +17,7 @@ faq:
   - question: 'Which is better: Respite or Opal?'
     answer: 'Neither is better for everyone. Opal is better if you want firm scheduled blocking and focus sessions on iPhone and accept a paid subscription. Respite is better if you want a free, gentler pause before the apps you pick, usage tracking and streaks, and coverage across iPhone, Android and Chrome. Many people prefer a pause; some need a lock.'
   - question: 'Is Opal free?'
-    answer: 'Opal has a limited free plan, but most of its useful features sit behind a paid subscription that has cost around $99 a year at the time of writing. Respite is free to use, with an optional Respite Plus upgrade that adds sync across devices and extras.'
+    answer: 'Opal has a limited free plan, but most of its useful features sit behind a paid subscription that has cost around $100 a year at the time of writing (also sold monthly or as a lifetime plan). Respite is free to use, with an optional Respite Plus upgrade that adds sync across devices and extras.'
   - question: 'Is there a free alternative to Opal?'
     answer: 'Yes. Respite is a free alternative that puts a pause before apps rather than blocking them, on iPhone, Android and Chrome. ScreenZen is another free option. Our [Opal alternatives guide](/blog/opal-alternatives/) compares them, including options that block harder.'
   - question: 'Is Opal worth the money?'
@@ -35,7 +35,7 @@ Respite and Opal both want you to use your phone less, but they take opposite ro
 | | Respite | Opal |
 |---|---|---|
 | Platforms | iPhone, Android, Chrome | iPhone |
-| Price model | Free; optional Plus for sync and extras | Limited free plan; paid subscription (around $99 a year at the time of writing) |
+| Price model | Free; optional Plus for sync and extras | Limited free plan; paid subscription (around $100 a year at the time of writing) |
 | Approach | A short pause before chosen apps and sites | Scheduled blocking and focus sessions |
 | Account | Optional; sign in only for sync | Account created during setup |
 | Privacy | Usage history stays on your device unless you sync | Account-based, with cloud features |

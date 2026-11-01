@@ -8,7 +8,7 @@ answer: 'The best screen time app in 2026 depends on your approach. Respite is t
 keyTakeaways:
   - 'Best free pick: Respite on iPhone, Android and Chrome (optional Plus adds sync).'
   - 'Best research-backed pause: One Sec, with a Max Planck study showing 57% fewer app opens.'
-  - 'Best blockers: Freedom (all devices), Cold Turkey (desktop, $39 once), Opal (iPhone).'
+  - 'Best blockers: Freedom (all devices), Cold Turkey (desktop, around $40 once), Opal (iPhone).'
   - 'Built-in Screen Time and Digital Wellbeing are free but easy to bypass.'
   - 'Most people do best combining a pause tool with a blocker for specific windows.'
 section: 'App Comparisons'
@@ -65,11 +65,11 @@ Your usage history stays on your device unless you turn on sync. No ads, and no 
 
 ## 2. One Sec — Best Research-Backed Pause (iOS)
 
-**Platform**: iOS, Android | **Price**: ~$50/year | **Approach**: Breathing exercise before app opens
+**Platform**: iOS, Android | **Price**: Free for one app; Pro around $20/year at the time of writing | **Approach**: Breathing exercise before app opens
 
 One Sec popularized the pause-before-scrolling concept and backed it with a real study — a collaboration with the Max Planck Institute showed their breathing intervention reduced social media app opens by 57%. That's published, peer-reviewed research, which is rare in this space.
 
-The app triggers a brief breathing exercise when you tap a flagged app. It's elegant and focused. The downside is that $50/year is steep for what is essentially a single intervention with limited tracking. The Android version exists but feels secondary to iOS.
+The app triggers a brief breathing exercise when you tap a flagged app. It's elegant and focused. The free version covers one app and Pro is around $20 a year, which is fair, but it is still essentially a single intervention with limited tracking. The Android version exists but feels secondary to iOS.
 
 **Rating: 4/5** — Excellent if you're on iOS and want a research-backed breathing intervention. The price is hard to justify when free alternatives offer more features.
 
@@ -89,7 +89,7 @@ Setup takes two minutes, battery impact is minimal, and it works on both platfor
 
 ## 4. Opal — Best Premium Blocker (iOS)
 
-**Platform**: iOS | **Price**: ~$100/year | **Approach**: App blocking + focus sessions
+**Platform**: iOS | **Price**: Pro around $100/year | **Approach**: App blocking + focus sessions
 
 Opal is the premium option in the blocking category. It groups apps into customizable "sessions" and blocks them during scheduled focus times. The interface is polished, and the scheduling system is more flexible than most blockers.
 
@@ -101,7 +101,7 @@ The catch: it's expensive, iOS-only, and — like all blockers — doesn't build
 
 ## 5. Freedom — Best Cross-Platform Blocker
 
-**Platform**: iOS, Android, Mac, Windows, Chrome | **Price**: ~$40/year | **Approach**: Website and app blocking
+**Platform**: iOS, Android, Mac, Windows, Chrome | **Price**: Around $40/year (a lifetime plan is also sold) | **Approach**: Website and app blocking
 
 Freedom's main advantage is coverage. It blocks distracting sites and apps across all your devices simultaneously — phone, laptop, tablet. If you find yourself switching devices to get around a blocker, Freedom closes that loophole.
 
@@ -113,7 +113,7 @@ The blocklist is customizable, scheduling is flexible, and the "locked mode" pre
 
 ## 6. Cold Turkey — Best Desktop Blocker
 
-**Platform**: Windows, Mac | **Price**: $39 one-time | **Approach**: Hardcore website blocking
+**Platform**: Windows, Mac | **Price**: Pro is a one-time purchase of around $40 | **Approach**: Hardcore website blocking
 
 Cold Turkey is the nuclear option. Once you start a block, you cannot disable it — not by restarting your computer, not by uninstalling the app, not by editing system files. It's genuinely unbreakable on desktop.
 
@@ -125,7 +125,7 @@ For people who need absolute enforcement during work hours, nothing else comes c
 
 ## 7. Forest — Best for Focus Sessions
 
-**Platform**: iOS, Android | **Price**: $2-4 one-time | **Approach**: Gamified focus timer
+**Platform**: iOS, Android | **Price**: Free, with a paid Plus subscription | **Approach**: Gamified focus timer
 
 Forest gamifies staying off your phone during timed sessions. You plant a virtual tree, and it grows as long as you don't leave the app. Use your phone and the tree dies. Real trees get planted through a partnership with Trees for the Future.
 
@@ -164,12 +164,12 @@ The main issue: the "one more minute" bypass completely undermines the time limi
 | App | Best For | Price | Privacy | Platform | Approach |
 |-----|----------|-------|---------|----------|----------|
 | **Respite** | Overall mindful approach | Free (optional Plus) | On-device history, optional sync | iPhone, Android, Chrome | Mindful pause + tracking |
-| **One Sec** | Research-backed pause | ~$50/yr | Good | iOS, Android | Breathing exercise |
+| **One Sec** | Research-backed pause | Free for one app; Pro ~$20/yr | Good | iOS, Android | Breathing exercise |
 | **ScreenZen** | Free iOS pause | Free | Good | iOS, Android | Countdown delay |
-| **Opal** | Premium iOS blocking | ~$100/yr | Cloud-based | iOS | App blocking + sessions |
+| **Opal** | Premium iOS blocking | Pro ~$100/yr | Cloud-based | iOS | App blocking + sessions |
 | **Freedom** | Multi-device blocking | ~$40/yr | Cloud-based | All platforms | Site/app blocking |
-| **Cold Turkey** | Desktop enforcement | $39 once | Local | Windows, Mac | Hardcore blocking |
-| **Forest** | Focus sessions | $2-4 once | Good | iOS, Android | Gamified timer |
+| **Cold Turkey** | Desktop enforcement | ~$40 once | Local | Windows, Mac | Hardcore blocking |
+| **Forest** | Focus sessions | Free + paid Plus | Good | iOS, Android | Gamified timer |
 | **Digital Wellbeing** | Android baseline | Free | Google | Android | Time limits |
 | **Screen Time** | iOS/family baseline | Free | Apple | iOS | Time limits |
 

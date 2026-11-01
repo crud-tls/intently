@@ -110,7 +110,7 @@ A study conducted with the Max Planck Institute found this approach reduced soci
 
 The setup on iOS requires configuring each app individually through Shortcuts, which is tedious but workable. Once it's running, it feels surprisingly native. The app also tracks "opened" versus "actually used," which gives you a nice picture of how often the pause alone was enough to change your mind.
 
-Pricing runs about $50 lifetime or $25/year -- steep for a single-purpose tool, but the approach genuinely works. If you're the type of person who just needs that one extra beat of friction, it's worth the investment.
+One Sec is free for one app, and One Sec Pro is around $20 a year at the time of writing -- modest, though still a fee for a single-purpose tool, and the approach genuinely works. If you're the type of person who just needs that one extra beat of friction, it's worth the investment.
 
 Rating: 4/5
 
@@ -118,7 +118,7 @@ Rating: 4/5
 
 ClearSpace works similarly to One Sec -- breathing exercises and reflection prompts before you can access distracting apps -- but bundles in daily usage limits with gentler enforcement. Think of it as One Sec with a wider feature set, designed specifically for iOS.
 
-The interface is clean and modern, and the development team has been shipping features consistently. The free tier is fairly limited, though, and at about $50/year for premium, you're paying in the same ballpark as One Sec for an app with a smaller track record.
+The interface is clean and modern, and the development team has been shipping features consistently. The free tier is fairly limited, though, and the premium tier is paid, for an app with a smaller track record than One Sec.
 
 It's worth watching. If you want a mindful-pause app but prefer a freemium model over a flat purchase, ClearSpace is a reasonable pick.
 
@@ -144,7 +144,7 @@ If you don't trust yourself with a gentle nudge and want something that actually
 
 Opal is the most polished hard-blocking app on iOS. It uses session-based blocking and a feature called "Opal Shield" that installs a device management profile to make blocks genuinely difficult to bypass. You can group apps by category (Social, News, Entertainment), run "Deep Focus" sessions, and even set up group focus sessions with coworkers or study partners.
 
-Here's the trade-off you should think about: Opal Shield requires installing a device management profile on your phone. That's how it makes blocking so hard to circumvent -- but it also means you're giving a third-party app a level of device access that's worth scrutinizing. At $99/year (or $14.99/month), it's also one of the priciest options in this category.
+Here's the trade-off you should think about: Opal Shield requires installing a device management profile on your phone. That's how it makes blocking so hard to circumvent -- but it also means you're giving a third-party app a level of device access that's worth scrutinizing. At around $100 a year for Opal Pro (also sold monthly or as a lifetime plan), it's also one of the priciest options in this category.
 
 Opal is effective at what it does. But blocking alone doesn't build self-regulation. Once the session ends, you're back where you started -- which is fine for work sprints but less useful for long-term habit change.
 
@@ -156,7 +156,7 @@ Freedom's selling point is straightforward: it blocks distracting websites and a
 
 "Locked Mode" is its standout feature. Once you start a session, you genuinely cannot disable the block until it ends. No workaround, no override. Scheduled recurring blocks are also useful for building routines around deep work.
 
-On the downside, Freedom costs $120/year (or $240 lifetime), uses a VPN on iOS which conflicts with actual VPN usage, and takes a purely restrictive approach. There's no habit-building here, no mindful pauses, no insights into your behavior. It's a lock, not a coach. That said, if you need focused blocks across multiple devices, nothing else really competes.
+On the downside, Freedom costs around $40 a year (a lifetime plan is also sold), uses a VPN on iOS which conflicts with actual VPN usage, and takes a purely restrictive approach. There's no habit-building here, no mindful pauses, no insights into your behavior. It's a lock, not a coach. That said, if you need focused blocks across multiple devices, nothing else really competes.
 
 Rating: 3.5/5
 

@@ -4,11 +4,11 @@ description: 'Apps and extensions like StayFocusd: Respite, LeechBlock, Cold Tur
 pubDate: 2026-02-28
 updatedDate: 2026-11-01
 author: 'Respite Team'
-answer: 'The best StayFocusd alternatives are LeechBlock (free, far more flexible schedules and rules), Respite (free Chrome extension that adds a mindful pause instead of blocking), Cold Turkey ($39 one-time, unbypassable desktop blocking) and Freedom (paid, blocks across devices). StayFocusd still wins on free daily time limits and its Nuclear Option.'
+answer: 'The best StayFocusd alternatives are LeechBlock (free, far more flexible schedules and rules), Respite (free Chrome extension that adds a mindful pause instead of blocking), Cold Turkey (around $40 one-time, unbypassable desktop blocking) and Freedom (paid, blocks across devices). StayFocusd still wins on free daily time limits and its Nuclear Option.'
 keyTakeaways:
   - 'LeechBlock is the closest free swap, with more flexible rules than StayFocusd.'
   - 'Respite''s Chrome extension pauses you before sites load instead of blocking them; it is free.'
-  - 'Cold Turkey ($39 once) and Freedom (subscription) close the other-browser and other-device loopholes.'
+  - 'Cold Turkey (around $40 once) and Freedom (subscription) close the other-browser and other-device loopholes.'
   - 'StayFocusd still has the Nuclear Option and costs nothing.'
   - 'News Feed Eradicator and Unhook YouTube remove feeds rather than whole sites.'
 section: 'App Comparisons'
@@ -76,11 +76,11 @@ Rating: 4/5 — The most customizable free blocker. Interface could use moderniz
 
 ### Cold Turkey (Chrome + Desktop) — Nuclear-Grade Enforcement
 
-**Price**: $39 one-time | **Approach**: Unbreakable blocking
+**Price**: One-time purchase of around $40 | **Approach**: Unbreakable blocking
 
 If StayFocusd's Nuclear Option appeals to you but you want something more comprehensive, Cold Turkey takes enforcement to the extreme. Once you start a block, you genuinely cannot disable it — not by restarting Chrome, not by reinstalling the extension, not by editing system files.
 
-Cold Turkey works primarily as a desktop application (Windows/Mac) with a Chrome component. This means it blocks distracting sites across all browsers, not just Chrome — closing the "I'll just open Firefox" loophole. The scheduling is powerful, and the one-time $39 price means no ongoing subscription.
+Cold Turkey works primarily as a desktop application (Windows/Mac) with a Chrome component. This means it blocks distracting sites across all browsers, not just Chrome — closing the "I'll just open Firefox" loophole. The scheduling is powerful, and the one-time price (around $40) means no ongoing subscription.
 
 The trade-off: it's the most restrictive option here and purely enforcement-based. Zero awareness-building. But if you need guaranteed distraction-free periods and StayFocusd's enforcement isn't strong enough, Cold Turkey is the next level.
 
@@ -90,7 +90,7 @@ Rating: 3.5/5 — The strongest enforcement available. Desktop app + Chrome cove
 
 ### Freedom — Cross-Device Blocking
 
-**Price**: ~$40/year | **Approach**: Block sites and apps across all devices
+**Price**: Around $40/year (a lifetime plan is also sold) | **Approach**: Block sites and apps across all devices
 
 Freedom extends blocking beyond Chrome to cover your phone, tablet, and all browsers simultaneously. Block Twitter in Chrome, and it's also blocked on your phone and in Safari. This eliminates the most common bypass strategy: switching devices.
 
@@ -138,7 +138,7 @@ Rating: 4/5 — The smartest approach for people who need platforms but not the 
 | **StayFocusd** | Daily time limits | Free | Strong (Nuclear Option) | Simple daily limits |
 | **Respite** | Mindful pause | Free (optional Plus) | Soft (awareness-based) | Building lasting habits |
 | **LeechBlock** | Flexible rules | Free | Moderate | Complex scheduling needs |
-| **Cold Turkey** | Unbreakable blocking | $39 once | Maximum | Absolute enforcement |
+| **Cold Turkey** | Unbreakable blocking | ~$40 once | Maximum | Absolute enforcement |
 | **Freedom** | Cross-device blocking | ~$40/yr | Strong | Multi-device consistency |
 | **BlockSite** | URL blocklist | Free/Premium | Basic | Dead-simple blocking |
 | **NFE + Unhook** | Feature removal | Free | Surgical | Keep platforms, remove feeds |

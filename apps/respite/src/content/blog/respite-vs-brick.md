@@ -4,10 +4,10 @@ description: 'Respite vs Brick compared: a free mindful pause app versus a physi
 pubDate: 2026-02-01
 updatedDate: 2026-11-01
 author: 'Respite Team'
-answer: 'Pick Brick if software pauses are too easy for you to tap through and you want a physical barrier: you tap an NFC device to unlock apps (around $59 at the time of writing). Pick Respite if you want a free app that adds a gentle pause before the apps you choose, on iPhone, Android and Chrome, with no hardware to carry.'
+answer: 'Pick Brick if software pauses are too easy for you to tap through and you want a physical barrier: you tap an NFC device to unlock apps (a one-time hardware purchase). Pick Respite if you want a free app that adds a gentle pause before the apps you choose, on iPhone, Android and Chrome, with no hardware to carry.'
 keyTakeaways:
   - 'Brick is a physical NFC device; Respite is software with nothing extra to buy or carry.'
-  - 'Brick costs around $59 at the time of writing; Respite is free, with an optional Plus for sync.'
+  - 'Brick is a one-time hardware purchase; Respite is free, with an optional Plus for sync.'
   - 'Brick is a harder barrier; Respite always lets you continue after the pause.'
   - 'You can combine them: Brick for high-risk hours, Respite for awareness the rest of the day.'
 section: 'App Comparisons'
@@ -36,7 +36,7 @@ Respite and Brick are barely competitors; they are two theories of behaviour cha
 |---|---|---|
 | Type | Software app | Physical NFC device plus app |
 | Platforms | iPhone, Android, Chrome | iOS and Android |
-| Price model | Free; optional Plus for sync and extras | One-off purchase (around $59 at the time of writing) |
+| Price model | Free; optional Plus for sync and extras | One-time hardware purchase |
 | Approach | A short pause before chosen apps and sites | Tap the device to unlock blocked apps |
 | Account | Optional; sign in only for sync | Check Brick's setup |
 | Privacy | Usage history stays on your device unless you sync | App-based; see its policy |

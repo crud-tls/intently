@@ -7,7 +7,7 @@ author: 'Respite Team'
 answer: 'Pick One Sec if you want a research-backed breathing exercise and are happy to pay for it (a Max Planck study found 57% fewer app opens). Pick Respite if you want a free pause before your chosen apps on iPhone, Android and Chrome, plus usage tracking and streaks. Both put a moment of friction between the urge and the scroll.'
 keyTakeaways:
   - 'One Sec has the strongest evidence: a Max Planck study found 57% fewer social media app opens.'
-  - 'One Sec is a paid subscription or lifetime purchase; Respite is free, with an optional Plus for sync.'
+  - 'One Sec is free for one app, then Pro is a paid subscription (around $20 a year at the time of writing); Respite is free, with an optional Plus for sync.'
   - 'Respite runs on iPhone, Android and Chrome; no account is needed unless you want sync.'
   - 'Both use a pause, not a hard block, so you always keep the final say.'
 section: 'App Comparisons'
@@ -17,7 +17,7 @@ faq:
   - question: 'Which is better: Respite or One Sec?'
     answer: 'It depends on what you value. One Sec is the better pick if you want a guided breathing exercise with published research behind it and do not mind paying. Respite is the better pick if you want a free pause, usage tracking and streaks across iPhone, Android and Chrome. Both use the same core idea, a pause before you open a distracting app.'
   - question: 'Is One Sec free?'
-    answer: 'One Sec has a limited free version, with full features behind a paid subscription or a one-time lifetime purchase (around $50 at the time of writing). Respite is free to use, with an optional Respite Plus upgrade for sync across devices and extras. If price is the deciding factor, Respite costs nothing to try.'
+    answer: 'One Sec is free for one app, with full features behind One Sec Pro, a paid subscription (around $20 a year at the time of writing). Respite is free to use, with an optional Respite Plus upgrade for sync across devices and extras. If price is the deciding factor, Respite costs nothing to try.'
   - question: 'Does One Sec actually work?'
     answer: 'There is good evidence that it does. A study with the Max Planck Institute found that One Sec''s breathing pause led to 57% fewer opens of the targeted social media apps. That is a strong result for a single app, although long-term results in everyday use are less documented for any pause app, including Respite.'
   - question: 'Can I use Respite on iPhone?'
@@ -35,7 +35,7 @@ Respite and One Sec are the two apps in this space that share the same philosoph
 | | Respite | One Sec |
 |---|---|---|
 | Platforms | iPhone, Android, Chrome | iPhone, Android, Chrome |
-| Price model | Free; optional Plus for sync and extras | Limited free tier; paid subscription or lifetime purchase |
+| Price model | Free; optional Plus for sync and extras | Free for one app; Pro subscription (around $20 a year at the time of writing) |
 | Approach | A short, gentle pause before chosen apps and sites | A guided breathing pause before chosen apps |
 | Account | Optional; sign in only for sync | Not required for core use |
 | Privacy | Usage history stays on your device unless you sync | Privacy-conscious; optional cloud sync |
@@ -66,7 +66,7 @@ Around that pause it adds usage tracking, daily limits and timers, streaks, and 
 
 ## Is One Sec free? Pricing compared
 
-One Sec offers a limited free tier and charges for full features, either as a subscription or a lifetime purchase. Respite is free, and the optional Respite Plus adds sync across devices, more schedules, longer focus sessions and richer insights. If you are weighing cost, see our [One Sec alternatives](/blog/one-sec-alternatives/) roundup.
+One Sec is free for one app and charges for full features through a Pro subscription. Respite is free, and the optional Respite Plus adds sync across devices, more schedules, longer focus sessions and richer insights. If you are weighing cost, see our [One Sec alternatives](/blog/one-sec-alternatives/) roundup.
 
 ## Where One Sec wins
 

@@ -4,11 +4,11 @@ description: 'Apps like ScreenZen that slow you down before scrolling. Respite, 
 pubDate: 2026-02-28
 updatedDate: 2026-11-01
 author: 'Respite Team'
-answer: 'The best ScreenZen alternatives are Respite (free, a mindful pause plus tracking on iPhone, Android and Chrome), One Sec (about $50 a year, a breathing pause with published research) and FlowBuddy (free, open-source breathing pause on Android). ScreenZen stays the simplest free countdown; the alternatives add awareness, tracking or desktop coverage.'
+answer: 'The best ScreenZen alternatives are Respite (free, a mindful pause plus tracking on iPhone, Android and Chrome), One Sec (free for one app, Pro around $20 a year, a breathing pause with published research) and FlowBuddy (free, open-source breathing pause on Android). ScreenZen stays the simplest free countdown; the alternatives add awareness, tracking or desktop coverage.'
 keyTakeaways:
   - 'ScreenZen is free and simple; alternatives add tracking, a mindful prompt or browser coverage.'
   - 'Respite is free on iPhone, Android and Chrome; an optional Plus adds sync across devices.'
-  - 'One Sec has the strongest research (a Max Planck study, 57% fewer opens) but costs about $50 a year.'
+  - 'One Sec has the strongest research (a Max Planck study, 57% fewer opens) but Pro is around $20 a year after the free app.'
   - 'FlowBuddy is the free, open-source breathing pause, Android only.'
 section: 'App Comparisons'
 tags: ['screenzen alternative', 'screenzen alternatives 2026', 'apps like screenzen', 'screen time', 'mindful pause', 'digital wellbeing']
@@ -64,11 +64,11 @@ Rating: 4/5 — The most complete free alternative. Mindful interventions engage
 
 ### One Sec — Research-Backed Breathing Pause
 
-**Platform**: iOS, Android | **Price**: ~$50/year
+**Platform**: iOS, Android | **Price**: Free for one app; Pro around $20/year
 
 One Sec triggers a breathing exercise before flagged apps open — a study with the Max Planck Institute showed this approach reduced app opens by 57%. The breathing component adds physiological calm to the pause, which a plain countdown can't match.
 
-The app is focused and polished, especially on iOS where it integrates natively with Shortcuts. The Android version exists but feels secondary. At ~$50/year, you're paying significantly more than ScreenZen's free model for what is still a single-intervention tool with limited tracking.
+The app is focused and polished, especially on iOS where it integrates natively with Shortcuts. The Android version exists but feels secondary. Beyond the one free app, Pro at around $20 a year costs more than ScreenZen's free model for what is still a single-intervention tool with limited tracking.
 
 Rating: 4/5 — The strongest research backing in the category. The subscription price is the main barrier.
 
@@ -92,7 +92,7 @@ Rating: 3/5 — The closest free analog to One Sec on Android. Minimal features 
 
 Opal is a different beast — it's primarily an app blocker, but it includes visual pause screens and focus session modes that overlap with what ScreenZen does. The interface is beautiful, the scheduling is flexible, and the social features (group focus sessions) are unique.
 
-The price (~$100/year) puts it in a completely different category from ScreenZen. It's also iOS-only and leans more toward blocking than awareness-building. If you want a premium, all-in-one solution for iOS and budget isn't a concern, Opal delivers. For most people, it's overkill compared to ScreenZen.
+The price (Pro around $100/year) puts it in a completely different category from ScreenZen. It's also iOS-only and leans more toward blocking than awareness-building. If you want a premium, all-in-one solution for iOS and budget isn't a concern, Opal delivers. For most people, it's overkill compared to ScreenZen.
 
 Rating: 3.5/5 — Polished and feature-rich, but the premium price and iOS-only availability narrow its audience.
 
@@ -128,7 +128,7 @@ Rating: 3/5 — Decent starting point. Not enough for serious habit change.
 |-----|----------|-------|----------|----------|----------|
 | **ScreenZen** | Countdown delay | Free | iOS, Android | Minimal | Simple friction |
 | **Respite** | Mindful pause | Free (optional Plus) | iPhone, Android, Chrome | Comprehensive | Full toolkit, free |
-| **One Sec** | Breathing exercise | ~$50/yr | iOS, Android | Basic | Research-backed pause |
+| **One Sec** | Breathing exercise | Free for one app; Pro ~$20/yr | iOS, Android | Basic | Research-backed pause |
 | **FlowBuddy** | Breathing exercise | Free | Android | None | Open-source simplicity |
 | **Opal** | Blocking + visual pause | ~$100/yr | iOS | Good | Premium iOS solution |
 | **Freedom** | Hard blocking | ~$40/yr | All platforms | Moderate | Cross-device enforcement |

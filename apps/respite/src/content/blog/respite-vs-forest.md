@@ -7,7 +7,7 @@ author: 'Respite Team'
 answer: 'Pick Forest if you want a gamified focus timer for study or work sessions, where a virtual tree grows while you stay off your phone. Pick Respite if your problem is the impulsive reach for Instagram or TikTok all day; it adds a free pause before the apps you choose, on iPhone, Android and Chrome. They solve different problems, and many people use both.'
 keyTakeaways:
   - 'Forest is a session-based focus timer; Respite works automatically whenever you open a chosen app.'
-  - 'Forest is a low-cost paid app; Respite is free, with an optional Plus for sync.'
+  - 'Forest is free, with a paid Plus subscription; Respite is free, with an optional Plus for sync.'
   - 'Forest has a real-tree-planting partnership with Trees for the Future.'
   - 'Respite adds usage tracking and daily limits; Forest tracks focus sessions.'
 section: 'App Comparisons'
@@ -17,7 +17,7 @@ faq:
   - question: 'Which is better: Respite or Forest?'
     answer: 'It depends on the problem. Forest is better for dedicated focus sessions, such as studying with a timer and a growing virtual tree. Respite is better for cutting down impulsive phone checks throughout the day, because it pauses you whenever you open a chosen app. They overlap very little, and many people run both.'
   - question: 'Is Forest free?'
-    answer: 'Forest is generally a paid app with a low one-time price on mobile, rather than a subscription, though prices vary by platform and over time. Respite is free to use, with an optional Respite Plus upgrade that adds sync across devices and extras.'
+    answer: 'Forest is free to use, with a paid Plus subscription for extras, though plans vary by platform and over time. Respite is free to use, with an optional Respite Plus upgrade that adds sync across devices and extras.'
   - question: 'Is there a free alternative to Forest?'
     answer: 'If you want a free way to use your phone less, Respite adds a pause before the apps you pick and includes focus timers, on iPhone, Android and Chrome. For free apps closer to Forest''s tree-growing idea, see our [Forest alternatives guide](/blog/forest-app-alternatives/).'
   - question: 'Does Forest plant real trees?'
@@ -35,7 +35,7 @@ Forest and Respite are easy to confuse because both help you use your phone more
 | | Respite | Forest |
 |---|---|---|
 | Platforms | iPhone, Android, Chrome | iOS, Android, Chrome |
-| Price model | Free; optional Plus for sync and extras | Paid app, low one-time price on mobile |
+| Price model | Free; optional Plus for sync and extras | Free, with a paid Plus subscription |
 | Approach | Automatic pause before chosen apps and sites | Manual focus sessions with a growing virtual tree |
 | Account | Optional; sign in only for sync | Account used for features such as coins and friends |
 | Privacy | Usage history stays on your device unless you sync | Cloud features for social and sync |
@@ -61,14 +61,14 @@ Respite puts a short, gentle pause before the apps (and on Chrome, the websites)
 
 ## Is Forest free?
 
-Forest is a paid app with a low one-time price, so it is not free, but it is inexpensive. Respite is free, and Respite Plus is optional. If you want other options in Forest's style, see [Forest alternatives](/blog/forest-app-alternatives/).
+Forest is free, with a paid Plus subscription. Respite is free, and Respite Plus is optional. If you want other options in Forest's style, see [Forest alternatives](/blog/forest-app-alternatives/).
 
 ## Where Forest wins
 
 - Excellent gamification: a forest that fills in over weeks is genuinely motivating.
 - Real tree planting through its Trees for the Future partnership.
 - Friends and classmates can grow trees together for gentle accountability.
-- A low, one-time price rather than a subscription.
+- Free to start, with a paid Plus subscription only if you want extras.
 - A clear fit for studying and Pomodoro-style focus.
 
 ## What are you actually trying to fix?

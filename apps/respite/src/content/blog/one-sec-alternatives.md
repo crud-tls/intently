@@ -4,7 +4,7 @@ description: 'Free apps like One Sec that pause you before Instagram, TikTok or 
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
 author: 'Respite Team'
-answer: 'The best free One Sec alternatives are Respite (a mindful pause before the apps you pick, on iPhone, Android and Chrome), ScreenZen (free countdown delays on iOS and Android) and ClearSpace (a pause plus exercises on iOS). All three keep One Sec''s core idea, a moment of friction before you open a distracting app, without its roughly $50 a year price.'
+answer: 'The best free One Sec alternatives are Respite (a mindful pause before the apps you pick, on iPhone, Android and Chrome), ScreenZen (free countdown delays on iOS and Android) and ClearSpace (a pause plus exercises on iOS). All three keep One Sec''s core idea, a moment of friction before you open a distracting app, without One Sec Pro, around $20 a year.'
 keyTakeaways:
   - 'One Sec works: a Max Planck study found 57% fewer app opens with its breathing pause.'
   - 'Respite is free on iPhone, Android and Chrome; an optional Plus adds sync across devices.'
@@ -15,7 +15,7 @@ tags: ['one sec alternatives', 'one sec alternative android', 'one sec alternati
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'
 faq:
   - question: "Is there a free version of One Sec?"
-    answer: "One Sec has a limited free tier, but most useful features require the paid subscription (~$50/year). For a free alternative with similar mindful pause functionality, Respite offers full-screen interventions, usage tracking, and gamification at zero cost on iPhone, Android and Chrome. ScreenZen offers free delay-based pauses on both iOS and Android."
+    answer: "One Sec is free for one app, but fuller use needs One Sec Pro, a paid subscription (around $20/year). For a free alternative with similar mindful pause functionality, Respite offers full-screen interventions, usage tracking, and gamification at zero cost on iPhone, Android and Chrome. ScreenZen offers free delay-based pauses on both iOS and Android."
   - question: "What's the best One Sec alternative for Android?"
     answer: "Respite is a strong One Sec alternative for Android. It was built for Android from the ground up and offers mindful interventions, comprehensive tracking, gamification, and offline privacy — all completely free. ScreenZen is another good free option available on Android."
   - question: "Does One Sec work on Android?"
@@ -34,7 +34,7 @@ faq:
 
 One Sec deserves credit for popularizing the "pause before scrolling" idea, and they backed it with real science — a study with the Max Planck Institute showed their breathing intervention cut social media app opens by 57%. That's a legit, published result.
 
-But One Sec isn't the only game in town anymore. At roughly $50/year, you're paying a premium for what is essentially a single intervention. Some people want more tools, better tracking, or just don't want to pay that much for a breathing timer.
+But One Sec isn't the only game in town anymore. One Sec is free for one app, and One Sec Pro is around $20 a year at the time of writing. That's modest, but it's still a fee for what is essentially a single intervention. Some people want more tools, better tracking, or just don't want to pay for a breathing timer.
 
 This guide covers the mindful pause category specifically — apps that create a moment of awareness before you open distracting apps, rather than blocking them outright. If you're after hard blockers, check our [Freedom alternatives guide](/blog/freedom-alternatives/) instead.
 
@@ -96,7 +96,7 @@ Rating: 3.5/5 — Polished and well-designed, but the iOS-only limitation and fr
 
 ### Forest — A Different Problem Entirely
 
-**Platform**: iOS, Android | **Price**: $2-4 one-time
+**Platform**: iOS, Android | **Price**: Free, with a paid Plus subscription
 
 Forest comes up in a lot of One Sec alternative searches, so it's worth addressing directly: it solves a different problem. Forest gamifies timed focus sessions — you plant a virtual tree and it grows as long as you stay off your phone. It's about sustained focus, not about that split-second moment when you reach for Instagram.
 
@@ -139,7 +139,7 @@ It wouldn't be honest to write an alternatives guide without being upfront about
 - On iOS, One Sec's Shortcuts integration feels native and polished.
 - It's available on both iOS and Android, though iPhone is clearly its home turf.
 
-The reasons to explore alternatives mostly come down to price (~$50/year for a single feature), limited scope (no tracking, gamification, or desktop support), and platform — if you're on Android, other options may feel more at home on your device.
+The reasons to explore alternatives mostly come down to price (Pro is a subscription for what is a single feature), limited scope (no tracking, gamification, or desktop support), and platform — if you're on Android, other options may feel more at home on your device.
 
 ---
 
