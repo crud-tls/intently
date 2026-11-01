@@ -1,48 +1,56 @@
 ---
-title: "Screen Time for Parents: The Complete Family Guide (2026)"
-description: "A practical guide to managing screen time for the whole family. Age-specific guidelines, built-in parental controls, family rules that work, and why modeling good phone habits matters most."
+title: 'Screen Time for Parents: Age Guidelines and Family Rules'
+description: 'Screen time for parents: what experts advise by age, how to set up iPhone and Android parental controls, and family rules that work.'
 pubDate: 2026-02-28
+updatedDate: 2026-11-01
 author: "Respite Team"
+answer: 'Experts advise no screens for babies except video calls, about an hour a day of quality content for ages 2 to 4, and consistent limits that protect sleep, activity and family time for older children. Rules work best when made together, applied to everyone including parents, and backed by phone-free meals and bedtimes. Built-in controls help, but modelling matters most.'
+keyTakeaways:
+  - 'Young children: avoid screens for babies and keep to about an hour of quality content for ages 2 to 4.'
+  - 'For older kids, protect sleep, activity and meals rather than chasing an exact number.'
+  - 'Apple Screen Time and Google Family Link give parents controls on iPhone and Android.'
+  - 'Rules made together and applied to adults too get less resistance.'
+  - 'Your own phone habits are the strongest example you set.'
 section: "Digital Wellbeing"
 tags: ["screen time for parents", "kids screen time", "family screen time rules", "parental controls screen time", "digital wellbeing families", "children screen time guidelines"]
 heroImage: "/blog-placeholder-about.jpg"
 faq:
-  - question: "How much screen time should kids have per day?"
-    answer: "WHO and AAP guidelines recommend: no screen time for children under 18 months (except video calls), up to 1 hour of high-quality content for ages 2-5, and consistent limits for ages 6+. For school-age children, most experts suggest 1-2 hours of recreational screen time, though quality and context matter more than exact minutes."
-  - question: "How do I set up parental controls on iPhone?"
-    answer: "Go to Settings > Screen Time > Family. Add your child's Apple ID, then configure App Limits, Downtime schedules, Content Restrictions, and Communication Limits. Set a parent passcode so your child can't change settings. You can manage everything remotely from your own device through Family Sharing."
-  - question: "How do I set up parental controls on Android?"
-    answer: "Use Google Family Link (free app). Create a supervised Google account for your child, then manage app approvals, screen time limits, content filters, and location tracking from your device. Family Link works on Android phones and tablets and Chromebooks."
-  - question: "What if my kids resist screen time limits?"
-    answer: "Resistance is normal. Key strategies: involve kids in setting the rules (they're more likely to follow rules they helped create), explain the 'why' behind limits in age-appropriate terms, offer engaging alternatives, be consistent, and most importantly model the behavior yourself. Arbitrary-feeling rules get more resistance than collaborative agreements."
-  - question: "Should I track my kids' phone usage?"
-    answer: "Age-appropriate monitoring is reasonable. For younger children (under 12), active oversight is standard and expected. For teens, gradually shift from monitoring to mentoring — discuss what healthy usage looks like and give increasing autonomy. Overly invasive surveillance of teens can damage trust and backfire. The goal is building their internal judgment, not permanent external control."
-  - question: "How do I manage my own screen time as a parent?"
-    answer: "Children model what they see, not what they're told. If you're on your phone constantly, screen time rules feel hypocritical. Start by creating phone-free family times (meals, bedtime routines, outings), charge your phone outside the bedroom, and use a mindful pause app like Respite to build awareness of your own habits. Your behavior sets the baseline for the whole family."
+  - question: 'How much screen time should kids have per day?'
+    answer: 'Guidance varies by age. The WHO and American Academy of Pediatrics advise avoiding screens for babies except video calls and keeping it to about an hour a day of quality content for ages 2 to 4, ideally with a parent. For older children there is no fixed number: protect sleep, physical activity, homework and family time, and consider content and context, not only minutes.'
+  - question: 'How do I set up parental controls on iPhone?'
+    answer: 'Go to Settings, then Screen Time, and set it up for a child via Family Sharing. You can configure App Limits, Downtime, Content and Privacy Restrictions and Communication Limits, and set a Screen Time passcode your child does not know. You can manage settings from your own device and review the weekly report together with your child.'
+  - question: 'How do I set up parental controls on Android?'
+    answer: 'Use Google Family Link, a free app. Create a supervised Google account for your child, then manage app approvals, daily limits, bedtime lock, content filters and location from your phone. Features vary by device and the childs age, and older teens can often choose to manage their own account.'
+  - question: 'What if my kids resist screen time limits?'
+    answer: 'Some resistance is normal. Involve children in setting the rules, explain the reasons in age-appropriate terms, offer appealing alternatives, stay consistent and keep the same rules for yourself. Expect pushback at transitions, such as turning a screen off, and plan for them by giving a warning and a next activity. Collaborative agreements get less resistance than arbitrary rules.'
+  - question: 'Should I monitor my childs phone use?'
+    answer: 'Age-appropriate oversight is reasonable. With younger children, active supervision is standard. With teens, many experts suggest gradually moving from monitoring to mentoring: talk openly, agree on expectations and give more autonomy as trust grows. Heavy covert surveillance can damage trust. The long-term aim is building your childs own judgment.'
+  - question: 'How do I manage my own screen time as a parent?'
+    answer: 'Children learn from what they see. Start with phone-free family times such as meals and bedtime routines, charge your phone outside the bedroom, and notice your own habits with your phones screen time report or an app like Respite, which adds a short pause before the apps you choose. Your behaviour sets the baseline for the family.'
 ---
 
 Managing screen time is one of the most common challenges modern parents face. Kids want more screen time. You're trying to set reasonable limits. And in the background, there's a nagging awareness that your own phone habits might not be the example you'd like to set.
 
 This guide covers what the research actually recommends, how to set up controls on both iPhone and Android, family rules that work in practice, and the uncomfortable truth that the most important screen time intervention starts with you.
 
-## What the Experts Recommend: Age-by-Age Guidelines
+## How much screen time do experts recommend for each age?
 
-The World Health Organization (WHO) and American Academy of Pediatrics (AAP) provide the most widely cited guidelines. Here's what they recommend for recreational screen time (not homework or school):
+The World Health Organization (WHO) and American Academy of Pediatrics (AAP) publish the most widely cited guidelines. Here's a summary of what they advise for recreational screen time (not homework or school). Guidance is updated from time to time, so check their current advice for your child's age.
 
 ### Under 18 Months
 **Recommendation:** No screen time except video calls with family
 
-At this age, children learn primarily through physical interaction and face-to-face engagement. Screens don't register as social interaction for infants. The exception is video calls, where a real person is responding in real-time — that's genuinely social.
+At this age, children learn primarily through physical interaction and face-to-face engagement. Babies learn best from people and play, and passive screens can't replace that. The exception is video calls, where a real person is responding in real time.
 
 ### Ages 2-5
-**Recommendation:** Up to 1 hour per day of high-quality content
+**Recommendation:** No more than about 1 hour per day of high-quality content (less is better)
 
 "High-quality" means educational, age-appropriate programming that you watch together when possible. Co-viewing transforms passive consumption into interactive learning — you can ask questions, point things out, and connect what they see to their real world.
 
 ### Ages 6-12
 **Recommendation:** Consistent limits, prioritizing physical activity and sleep
 
-The guidelines get less specific here because context matters more. The focus shifts to ensuring screen time doesn't displace physical activity (at least 60 minutes daily), adequate sleep (9-12 hours), homework, and face-to-face social interaction. Most experts suggest 1-2 hours of recreational screen time as a reasonable starting point.
+The guidelines get less specific here because context matters more. The focus shifts to ensuring screen time doesn't displace physical activity (around 60 minutes a day is the common recommendation), adequate sleep, homework, and face-to-face social interaction. Some families use 1-2 hours of recreational screen time on school days as a starting point, but there is no official number, so adapt it to your child.
 
 ### Ages 13-18
 **Recommendation:** Ongoing conversation about healthy use, increasingly self-managed
@@ -53,7 +61,7 @@ Teens need to develop their own self-regulation. The parental role shifts from g
 
 The guidelines are starting points, not rigid rules. Every child is different. A kid who watches an hour of educational content, then spends an hour creating digital art, then video calls their grandparent is having a very different "3 hours of screen time" than a kid who scrolls TikTok for 3 hours. **Quality and context matter more than raw minutes.**
 
-## Setting Up Parental Controls
+## How do I set up parental controls?
 
 ### iPhone / iPad (Screen Time)
 
@@ -101,13 +109,13 @@ Google Family Link provides parental controls for Android devices.
 - Review activity together weekly rather than just monitoring silently
 - Gradually loosen controls as your child ages and demonstrates good judgment
 
-## Family Screen Time Rules That Actually Work
+## Which family screen time rules actually work?
 
-Technology controls are tools, not solutions. The rules and culture you build around screens matter more than any app setting. Here's what research and practical experience show works:
+Technology controls are tools, not solutions. The rules and culture you build around screens matter more than any app setting. Here's what tends to work in practice:
 
 ### 1. Create Rules Together
 
-Rules imposed unilaterally feel arbitrary and generate resistance. Rules created collaboratively feel fair and get better compliance. Sit down as a family and discuss:
+Rules imposed unilaterally feel arbitrary and generate resistance. Rules created collaboratively feel fairer and tend to get better buy-in. Sit down as a family and discuss:
 
 - What screen-free times make sense for everyone? (meals, bedtime, car rides?)
 - What's a reasonable daily limit for entertainment screens?
@@ -121,7 +129,7 @@ When kids help set the rules, they understand the reasoning and feel ownership o
 Specific, consistent boundaries are easier to follow than vague intentions.
 
 **Common phone-free agreements:**
-- **Meals** — No devices at the table. This is the single highest-impact rule you can set.
+- **Meals** — No devices at the table. For many families this is the simplest high-impact rule.
 - **Bedrooms at night** — All devices charge in a central location after a set time.
 - **First hour after school** — Transition time for connecting, snacking, and decompressing without screens.
 - **Family outings** — Phones stay in bags or pockets during activities together.
@@ -157,11 +165,11 @@ Rules set boundaries. Conversations build understanding. Talk regularly with you
 
 These conversations help children develop their own awareness and judgment — which is the long-term goal.
 
-## The Elephant in the Room: Your Own Screen Time
+## What about parents' own screen time?
 
-Here's the uncomfortable truth that most parenting guides dance around: **your children's screen time habits are primarily modeled on yours.**
+Here's the uncomfortable truth that many parenting guides dance around: **children pick up a lot of their screen habits from yours.**
 
-Children learn behavior by watching their parents — not by listening to rules. A child who sees their parent reach for their phone first thing in the morning, scroll during meals, and stare at a screen all evening absorbs a clear message: this is normal. This is what adults do.
+Children learn a lot by watching their parents, not only by listening to rules. A child who sees their parent reach for their phone first thing in the morning, scroll during meals, and stare at a screen all evening absorbs a clear message: this is normal. This is what adults do.
 
 Setting screen time rules for your kids while maintaining heavy phone use yourself creates a credibility gap that children sense immediately. "Do as I say, not as I do" has never been an effective parenting strategy.
 
@@ -171,13 +179,13 @@ Setting screen time rules for your kids while maintaining heavy phone use yourse
 
 **Create phone-free times for yourself.** If your kids can't have phones at dinner, neither can you. If devices charge outside bedrooms, yours does too. Shared rules build family culture.
 
-**Use a mindful pause app.** Tools like [Respite](/download/) add a brief pause before you open distracting apps — giving you a moment to decide consciously whether you want to check Instagram or be present with your family. It's a small intervention that makes a real difference, especially during after-school hours and evenings.
+**Try a pause before your own apps.** Respite puts a short pause before the apps you pick, giving you a moment to decide whether you want to check Instagram or be present with your family. It is for your own habits, not a parental control: it does not manage your child's device. Many parents find it most useful in the after-school hours and evenings.
 
 **Narrate your choices.** Let your kids see you making deliberate screen decisions. "I'm going to check my email now, and then my phone goes away for dinner." This shows them that intentional use is a skill adults practice too.
 
 **Be honest about your struggles.** If your kids see you wrestling with your own phone habits, that's not weakness — it's modeling. "I noticed I was scrolling instead of paying attention to our conversation. I'm going to put my phone in the other room." This teaches them that self-awareness is an ongoing practice, not a destination.
 
-## When to Worry (and When Not To)
+## When should parents worry about screen time?
 
 Not every screen time concern requires intervention. Here's a rough guide:
 
@@ -197,13 +205,13 @@ Not every screen time concern requires intervention. Here's a rough guide:
 
 ### Time to Act
 - Cannot stop when asked; tantrums or extreme distress when screens are removed
-- Screen time consistently displacing sleep (under 8 hours for teens, under 9 for younger)
+- Screen time consistently displacing sleep, so your child is regularly short on rest
 - Significant mood deterioration — increased anxiety, withdrawal, irritability
 - Social isolation — screens replacing rather than supplementing friendships
 - Academic decline linked to screen use
 - Exposure to harmful content or online interactions
 
-If you're in the "Time to Act" category, consider consulting your pediatrician or a child psychologist who specializes in technology and behavior. There's no shame in getting expert guidance — these issues are new for all of us.
+If you're in the "Time to Act" category, consider talking to your pediatrician or a child psychologist. There's no shame in getting expert guidance -- these issues are new for all of us. This guide is general information, not medical advice, and not a diagnosis of any child.
 
 ## Tools That Help the Whole Family
 
@@ -213,7 +221,7 @@ If you're in the "Time to Act" category, consider consulting your pediatrician o
 - Focus modes and Do Not Disturb scheduling
 
 ### For Parents: Building Your Own Habits
-- **[Respite](/download/)** — Free mindful pause app. Add awareness before opening distracting apps. Usage tracking, streaks, no account needed (sign in only for sync). Available on [iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Android and Chrome.
+- **[Respite](/download/)** — Free app that adds a short pause before the apps you pick, with usage tracking and streaks. No account needed (sign in only for sync). Available on [iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Android and Chrome.
 - **Phone-free charging station** — A central spot where all family devices charge overnight
 - **Grayscale mode** — Makes your phone less visually stimulating (Settings > Accessibility > Display)
 
@@ -224,7 +232,7 @@ If you're in the "Time to Act" category, consider consulting your pediatrician o
 - Creative projects
 - Reading time (everyone reads, including parents)
 
-## Getting Started
+## Next step
 
 You don't need to overhaul everything at once. Pick one change:
 
@@ -232,9 +240,9 @@ You don't need to overhaul everything at once. Pick one change:
 2. **Most impactful:** All devices charge outside bedrooms, starting tonight.
 3. **Most sustainable:** Sit down as a family this weekend and create screen time agreements together.
 
-Small, consistent changes compound over time. Your family's relationship with screens won't transform overnight, but it will shift — one phone-free dinner at a time.
+Small, consistent changes compound over time. Your family's relationship with screens won't transform overnight, but it will shift -- one phone-free dinner at a time.
 
-[Download Respite free](/download/) to start building better screen time habits for yourself — because the best thing you can do for your kids' screen time is manage your own.
+For your own habits, [download Respite](/download/) (free on iPhone, Android and Chrome). For teens specifically, our guide to [screen time and mental health](/blog/screen-time-and-mental-health/) covers what the research does and doesn't show, and [how much screen time is too much](/blog/how-much-screen-time-is-too-much/) goes deeper on guidelines.
 
 ---
 

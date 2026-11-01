@@ -26,6 +26,10 @@ faq:
     answer: 'No free app matches Freedom''s synced blocking everywhere. You can get close by combining tools: Respite on iPhone, Android and Chrome, plus Cold Turkey or LeechBlock for desktop. Respite''s optional Plus upgrade adds sync of your settings across devices, though it is a pause tool, not a hard blocker.'
   - question: 'Is there a Freedom alternative that doesn''t need an account?'
     answer: 'Yes. Respite works without an account; you only sign in with Google or Apple if you want sync across devices. Cold Turkey also needs no cloud account for basic use. Freedom, Opal and Forest ask you to create an account.'
+  - question: 'Can I replace Freedom with a combination of free tools?'
+    answer: 'Often yes. Respite on iPhone, Android and Chrome, plus LeechBlock or Cold Turkey for desktop, covers most devices at minimal cost. You lose the single-dashboard convenience and the ability to start one session across every device, so Freedom can still be worth it if that is what you need.'
+  - question: 'Why do habits come back after I stop blocking apps?'
+    answer: 'Blocking is an external restriction, so when it ends, or when you switch to an unblocked device, the automatic habit is still there. That is why some people find awareness-based approaches more durable. Others genuinely need hard enforcement, and there is nothing wrong with that. Many people combine both.'
 ---
 
 Freedom is one of the most recognized app and website blockers out there. Its cross-device blocking and "locked mode" have made it the default for people who want an unbypassable digital barrier. But at $120/year (or $40/year on sale), it's also one of the priciest tools in the category.
@@ -213,34 +217,6 @@ One reason Freedom gets away with its premium pricing is the cross-device sync. 
 - Desktop apps: Cold Turkey ($39 one-time) for unbypassable blocking
 
 Total cost: $0-39 instead of $120/year. The trade-off is no centralized dashboard or cross-device sync, but for most people that's a reasonable compromise.
-
----
-
-## Common Questions
-
-### Is Freedom worth $120 per year?
-
-Only if you specifically need cross-device blocking across phone, tablet, and computer with a single dashboard. For most people, a combination of free or cheaper tools gets you comparable results. If you only need help on your phone, Freedom is almost certainly overpriced for what you're getting.
-
-### What's the best free alternative to Freedom?
-
-Depends on your priorities. Respite (iPhone, Android and Chrome) for mindful habit-building. ScreenZen (Android + iOS) for simple delay-based friction. Google Digital Wellbeing or Apple Screen Time for basic built-in limits. LeechBlock for free browser-based website blocking.
-
-### Can I replace Freedom with a combination of free tools?
-
-Yes. Respite on iPhone, Android and Chrome, with LeechBlock or Cold Turkey for desktop. You'll lose the single-dashboard convenience, but you'll cover most devices at minimal cost.
-
-### Does Freedom work on Chromebooks?
-
-Freedom has a Chrome extension, but Chromebook support is limited. Respite's Chrome extension works on Chromebooks and is free.
-
-### Why do habits come back after stopping blocking apps?
-
-Blocking creates an external restriction without building internal motivation. When the block goes away -- or you switch to an unblocked device -- the automatic behavior is still there, unchanged. That's why some people find awareness-based approaches more sustainable: the self-awareness sticks around even without the app running. That said, some people genuinely need hard enforcement, and there's nothing wrong with that.
-
-### How do I cancel my Freedom subscription?
-
-Visit Freedom's website, go to Account Settings, and cancel. Then try a free alternative to keep your digital wellbeing practice going without the ongoing cost.
 
 ---
 

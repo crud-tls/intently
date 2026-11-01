@@ -27,6 +27,10 @@ faq:
     answer: 'It depends on the app. Respite runs on iPhone, Android and Chrome, and its optional Plus upgrade syncs across devices. Freedom blocks across all platforms. ActionDash, StayFree and YourHour are Android-only. Check platforms before you commit.'
   - question: 'Do I need to pay for a screen time app?'
     answer: 'No. Respite''s core app is free, and StayFree and YourHour are free with ads. Paid apps range from one-time purchases like ActionDash and Forest to yearly subscriptions like Freedom and One Sec, which add specific features but are not necessary for most people.'
+  - question: 'Do screen time apps drain battery?'
+    answer: 'Most modern screen time apps have a small battery impact, though it varies by app and phone. Check your phone''s battery stats after a few days to see what each app costs you. If one stands out, try an alternative or adjust its settings.'
+  - question: 'Can I use multiple screen time apps at once?'
+    answer: 'You can, but it is usually not recommended. Several apps running interventions at once can conflict and make it harder to build consistent habits. Pick one primary tool and give it a few weeks before judging it. The built-in Digital Wellbeing tools can sit alongside it for basic limits and reports.'
 ---
 
 Google Digital Wellbeing ships on most Android phones, and honestly, it's fine for what it is. But "fine" only gets you so far. The feature set is limited, customization is minimal, and your usage data gets folded into Google's ecosystem. If you want more control — or you'd rather your screen time habits stay between you and your phone — it's worth looking at what else is out there.
@@ -259,38 +263,6 @@ Respite keeps your usage history on your device, needs no account, and only sync
 **Best for Data Lovers: ActionDash** -- Unmatched analytics and insights for people who want to really understand their usage patterns.
 
 **Best Value: Forest** -- A one-time $1.99 payment, genuinely fun gamification, and it supports real tree planting.
-
----
-
-## Frequently Asked Questions
-
-### Is Google Digital Wellbeing good enough?
-
-For casual users who aren't worried about privacy, it's adequate. But if you want more features, better privacy, or methods that go beyond a grayed-out icon, alternatives like Respite are worth trying.
-
-### Do these apps drain battery?
-
-Most modern screen time apps have a small battery impact, but it varies by app and phone. Apps that keep data on the device rather than uploading it in the background tend to be lighter. Check your phone's battery stats after a few days.
-
-### Can I use multiple apps at once?
-
-You can, but we wouldn't recommend it. Running multiple screen time apps creates conflicting interventions and can actually make it harder to build consistent habits. Pick one and stick with it for at least 30 days.
-
-### Which app has the best privacy?
-
-Respite: it needs no account and keeps your usage history on your device unless you sync. ActionDash and One Sec are also reasonable (minimal, optional analytics). Avoid Socratic and Freedom if privacy matters to you.
-
-### Do blocking apps actually work long-term?
-
-They're effective in the short term, but most people go back to old habits once the blocks come off. That's because blocking doesn't build internal motivation — it's just external restriction. Mindful intervention approaches (like Respite's) tend to produce more durable results because they help you develop awareness and self-regulation rather than relying on a digital lock.
-
-### How much should I pay for a screen time app?
-
-Respite's core app is free, so you don't have to pay anything. Beyond that, $0-10 one-time (ActionDash, Forest) is reasonable, and a yearly subscription like Freedom's is acceptable if you need cross-device blocking. Socratic at $9.99/month is hard to justify.
-
-### Which app works best for severe addiction?
-
-For serious phone dependency, we'd recommend combining professional support (therapy, for instance) with Respite's mindful interventions. Blocking apps might seem like the answer, but they don't address root causes and often lead to workarounds.
 
 ---
 

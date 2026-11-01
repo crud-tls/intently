@@ -26,6 +26,10 @@ faq:
     answer: 'Partly. iOS limits what third-party apps can do, so they use Shortcuts, local VPNs or Apple''s Screen Time API rather than full system control. That is why many people layer an app such as Respite, One Sec or ScreenZen on top of Screen Time instead of replacing it.'
   - question: 'Do blocking apps actually build better phone habits?'
     answer: 'Blocking helps while it is active, especially for focused work. Habits often return once the block ends, which is why many newer apps pair or replace blocking with a pause that builds awareness. For work sprints, blocking is still a fair choice.'
+  - question: 'Do I need to pay for a better Screen Time alternative?'
+    answer: 'Not necessarily. Respite is free on iPhone, Android and Chrome, with an optional Plus upgrade for sync and extras, and ScreenZen is also free. Paid options such as One Sec, Opal and Freedom offer specific capabilities, like research-backed pauses or strict blocking, but plenty of people get results without spending anything. Try a free tool for a few weeks first.'
+  - question: 'Can I use these apps alongside Apple Screen Time?'
+    answer: 'Yes, and many people do. Keep Screen Time for basic limits and Downtime scheduling, then add a third-party app for the awareness layer, such as a pause before the apps you open on autopilot. Commit to one primary tool for a few weeks rather than switching constantly, so you can tell whether it is working.'
 ---
 
 Apple Screen Time ships on every iPhone, iPad, and Mac. For most people, it's the first -- and only -- tool they try for managing phone habits. And honestly, it does some things well: it's free, it requires no setup, and it gives you a basic picture of how you're spending time on your devices.
@@ -204,30 +208,6 @@ A lot of people don't replace Screen Time -- they add to it. A common setup:
 - Screen Time sets broad category limits while ScreenZen provides awareness of how often you're opening individual apps
 
 This layered approach can work well. Just watch out for "tool fatigue" -- if you're juggling three different apps to manage your phone use, it's time to simplify.
-
----
-
-## Frequently Asked Questions
-
-### Is Apple Screen Time good enough for managing phone habits?
-
-For basic time limits and parental controls, it's adequate. But if you're tapping "Ignore Limit" every day, it's not working for you. Screen Time restricts without building awareness or motivation. Third-party apps that add mindful pauses or breathing exercises fill that gap.
-
-### Why is Apple Screen Time so easy to bypass?
-
-It was designed primarily as a parental control tool. The "Ignore Limit" button is built right into the restriction notification, and users have found workarounds involving app reinstallation, time zone changes, and iMessage. For adults managing their own habits, these escape hatches undermine the whole system.
-
-### Do I need to pay for a better Screen Time alternative?
-
-Not necessarily. Respite is free on iPhone, Android and Chrome, with an optional Plus upgrade for sync and extras. ScreenZen is also free on both iOS and Android. Paid options like One Sec (~$50), Opal ($99/year), and Freedom ($120/year) offer specific capabilities, but plenty of people get results without spending anything.
-
-### Which alternative works best on iPhone right now?
-
-For a proven mindful-pause experience, One Sec is the strongest option on iOS, backed by actual research. ClearSpace offers a freemium alternative in the same category. Opal is the most effective hard blocker. ScreenZen is the best free awareness tool. Respite is a free pick on iPhone, Android and Chrome.
-
-### Can I use these alongside Apple Screen Time?
-
-Yes, and many people do. Keep Screen Time active for basic limits and Downtime scheduling, then add a third-party app for the mindful intervention or awareness layer. We'd recommend committing to one primary tool for at least 30 days to build consistency rather than constantly switching.
 
 ---
 

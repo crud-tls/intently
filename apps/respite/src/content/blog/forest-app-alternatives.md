@@ -27,6 +27,10 @@ faq:
     answer: 'Forest partners with Trees for the Future to plant real trees, and Flora also works with partner organizations. Most other alternatives focus on digital habit change rather than tree planting, and Respite has no tree-planting feature.'
   - question: 'Do I need more than a focus timer?'
     answer: 'If you only struggle during work or study sessions, a timer like Forest may be all you need. If you check your phone all day, open apps without thinking or lose hours to scrolling, add a tool that works beyond timed sessions.'
+  - question: 'Can I use Forest and another app together?'
+    answer: 'Yes, and many people do. Forest suits structured focus sessions like studying or deep work, while apps such as Respite or One Sec handle always-on screen time management. The two complement each other: Forest for when you sit down to focus, and a pause-based app for the rest of your day.'
+  - question: 'Which Forest alternative is best for students?'
+    answer: 'Flora suits group study sessions with classmates. Respite helps with overall phone habits through the day and is free on iPhone, Android and Chrome. Opal works for strict focus blocks on iPhone. For students on a budget, Forest itself plus a free tool like Respite or ScreenZen covers most needs. Pick what fits your study routine.'
 ---
 
 Forest is one of the most beloved digital wellness apps out there, and honestly, it deserves the reputation. The concept is dead simple: start a focus timer, a virtual tree grows while you stay off your phone, and if you bail early, the tree dies. Over time you build a little forest that represents your focused hours. With 10 million+ downloads and more than 2 million real trees planted through Trees for the Future, it's done genuine good in the world.
@@ -175,34 +179,6 @@ Some combinations that work well together:
 - Forest + ScreenZen: Forest for timed focus, ScreenZen for passive habit awareness in between
 
 If Forest is working for you, keep using it. The goal isn't to replace it -- it's to cover the parts of your day it can't reach.
-
----
-
-## Frequently Asked Questions
-
-### Is the Forest app still worth using in 2026?
-
-Yes. Forest remains one of the best gamified focus timers available. At $1.99-$3.99 with no subscription, it's excellent value. The tree-growing mechanic is genuinely motivating, and the real-tree-planting feature adds meaningful impact. If focus sessions are your primary need, Forest is still a great choice.
-
-### What's the best free alternative to Forest?
-
-It depends on what you need. Respite is a strong free option for combining streaks with always-on habit tracking (iPhone, Android and Chrome). Flora is free to start and offers the most Forest-like experience with social features. ScreenZen is free on both iOS and Android for gentle awareness nudges.
-
-### Do any Forest alternatives let you plant real trees?
-
-Flora offers real tree planting through partner organizations, similar to Forest. Most other alternatives focus on digital habit change rather than environmental impact. Forest's partnership with Trees for the Future (over 2 million real trees planted) remains unique in its scale.
-
-### Can I use Forest and another app together?
-
-Yes, and many users do. Forest is best for structured focus sessions (studying, deep work), while apps like Respite or One Sec handle always-on screen time management. The two approaches complement each other well -- Forest for when you sit down to focus, and a mindful-intervention app for the rest of your day.
-
-### Which alternative is best for students?
-
-Flora is great for group study sessions with classmates. Respite is best for building overall phone habits throughout the day (free, iPhone, Android and Chrome). Opal works well for strict focus blocks during study time on iPhone. For students on a budget, Forest itself ($1.99-$3.99) combined with a free tool like Respite or ScreenZen covers most needs.
-
-### Do I actually need more than a focus timer?
-
-If you only struggle during work or study sessions, a focus timer like Forest may be enough. But if you find yourself compulsively checking your phone throughout the day, opening apps without thinking, or losing hours to scrolling outside of work, you need a tool that works beyond timed sessions -- something like One Sec, Respite, or ScreenZen that runs whenever your phone is on.
 
 ---
 

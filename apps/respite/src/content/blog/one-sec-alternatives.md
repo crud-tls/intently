@@ -26,6 +26,10 @@ faq:
     answer: "Yes. One Sec has a real study conducted with the Max Planck Institute showing a 57% reduction in app opens. The broader research on pause-based interventions supports this approach — creating a moment of awareness between impulse and action helps many people make more intentional choices."
   - question: "Can I get One Sec features without paying?"
     answer: "You can get similar pause-based features for free. Respite provides mindful interventions, usage tracking, and gamification at no cost (iPhone, Android and Chrome). ScreenZen offers free delay-based pauses on iOS and Android. The main trade-off is that these are different implementations of the same core idea — not exact One Sec replicas."
+  - question: 'Can I use One Sec and Respite together?'
+    answer: 'You can, but running two pause apps on the same apps tends to create doubled-up prompts and intervention fatigue. Pick one and stick with it for a few weeks to see whether it helps, or split them by device or by app so they do not overlap.'
+  - question: 'Which is better: pausing or blocking apps?'
+    answer: 'It depends on the goal. A pause builds awareness and leaves the choice to you, while blocking gives stronger enforcement but does not change the underlying habit. Many people combine them: a pause for everyday use and a blocker for specific high-distraction periods, such as deadlines.'
 ---
 
 One Sec deserves credit for popularizing the "pause before scrolling" idea, and they backed it with real science — a study with the Max Planck Institute showed their breathing intervention cut social media app opens by 57%. That's a legit, published result.
@@ -150,34 +154,6 @@ On iOS with a budget of zero, ScreenZen is your best bet for basic pause frictio
 If your issue is more about sustained focus than impulsive app-checking, Forest is the right tool — it's just solving a different problem.
 
 And if you want the broadest set of tools around the pause concept — tracking, gamification, desktop coverage — Respite covers the most ground, with the caveat that iOS support isn't here yet.
-
----
-
-## Frequently Asked Questions
-
-### Is there a free version of One Sec?
-
-One Sec has a limited free tier, but the full feature set requires a subscription (~$50/year). Respite and ScreenZen both offer free alternatives with different takes on the same pause-based approach.
-
-### Do pause-before-scrolling apps actually work?
-
-Yes. One Sec's Max Planck study showed a 57% reduction in app opens, and the behavioral science literature broadly supports the idea that interrupting automatic behaviors with a moment of awareness reduces their frequency. Most users report becoming noticeably more conscious of their phone habits within the first couple of weeks.
-
-### Can I use One Sec and Respite together?
-
-You can, but running multiple intervention apps tends to create conflicting pauses and "intervention fatigue." We'd recommend picking one and sticking with it for at least 30 days to see real results.
-
-### Which is better: pausing or blocking apps?
-
-It depends on what you need. Pausing builds awareness and self-regulation skills that stick around even when you stop using the app. Blocking gives you stronger enforcement but doesn't change the underlying habit. Some people find success combining both — a pause tool for everyday use and a blocker for specific high-distraction periods.
-
-### How long should the pause be before opening an app?
-
-Most research and user experience points to 5-15 seconds as the sweet spot. Too short and you don't have time to reconsider. Too long and it just feels frustrating. Most apps in this category default to something in that range.
-
-### What's the best One Sec alternative for Android?
-
-Respite is the most comprehensive free option for Android, with mindful interventions, tracking, and gamification. ScreenZen is another solid free choice if you prefer simpler delay-based friction.
 
 ---
 

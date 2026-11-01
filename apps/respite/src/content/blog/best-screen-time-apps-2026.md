@@ -27,6 +27,8 @@ faq:
     answer: 'Not all of them. Many collect usage data, so check permissions and the privacy policy. Prefer apps that need no account and keep history on your device. Respite works without an account and keeps usage history on your device unless you turn on sync.'
   - question: 'Should I use an app blocker or a mindful screen time app?'
     answer: 'A blocker enforces limits and suits fixed windows like exams or deadlines. A mindful pause app builds awareness and keeps the choice in your hands, which many people find easier to sustain. You can combine them: a pause for everyday use, a blocker for high-stakes hours.'
+  - question: 'Are free screen time apps as good as paid ones?'
+    answer: 'Often, yes. Respite''s core app is free and covers a lot of what paid alternatives do, and ScreenZen is free too. The more important factor is whether the app''s approach suits you: a free tool you actually use beats a paid blocker sitting unused. Paid apps can be worth it for specific needs such as strict cross-device blocking.'
 ---
 
 There are now dozens of apps promising to fix your screen time habits, and they take genuinely different approaches. Some block apps outright. Some add friction or pauses. Some just track your usage and hope the data alone motivates change. A few do something more interesting — they use behavioral science to interrupt the autopilot without taking away your choice.
@@ -184,34 +186,6 @@ The main issue: the "one more minute" bypass completely undermines the time limi
 **If you're setting up controls for family**: Apple Screen Time and Google Digital Wellbeing provide parental control features that third-party apps can't match. Consider supplementing with a mindful tool for teens who are old enough to benefit from awareness-building rather than pure restriction.
 
 The best screen time app is the one that matches how you actually want to change. Blocking works for enforcement. Mindful pauses work for awareness. Tracking works for data-driven motivation. Most people do best combining two approaches.
-
----
-
-## Frequently Asked Questions
-
-### What is the best screen time app in 2026?
-
-It depends on your needs. For mindful awareness-building, Respite is the top free option on iPhone, Android and Chrome. For hard blocking, Freedom and Cold Turkey are the most reliable. For a research-backed pause on iOS, One Sec leads the category. There's no single "best" — it depends on your platform, budget, and preferred approach.
-
-### What is the best free screen time app?
-
-Respite offers a complete free package: mindful interventions, usage tracking, streaks and a Chrome extension with no ads and no account required, on iPhone, Android and Chrome (optional Plus adds sync). ScreenZen is another free option on iOS for basic delay-based pauses.
-
-### Do screen time apps actually reduce phone usage?
-
-Yes. One Sec's Max Planck study showed a 57% reduction in app opens. The key is choosing an approach that builds awareness rather than just enforcing restrictions.
-
-### Is it better to block apps or use mindful interventions?
-
-Many people find mindful interventions easier to sustain because they build awareness rather than rely on outside restriction. Blocking works while it is on, but habits often return when it is removed. The most effective strategy for many people is mindful interventions for daily use, with blocking reserved for specific high-distraction periods.
-
-### Are free screen time apps as good as paid ones?
-
-Often yes. Respite's core app is free and covers a lot of what paid alternatives do. The most important factor isn't price — it's whether the app's approach matches your needs. A free mindful tool that you actually use is far more effective than a $100/year blocker sitting unused on your phone.
-
-### Can screen time apps see my private data?
-
-Some can. Many screen time apps require broad permissions and collect usage data for advertising or analytics. Always check the privacy policy. Apps like Respite keep your usage history on your device unless you turn on sync. If privacy matters to you (and it should), look for apps that don't require accounts.
 
 ---
 

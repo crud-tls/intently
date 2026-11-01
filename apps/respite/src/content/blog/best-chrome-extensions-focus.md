@@ -27,6 +27,10 @@ faq:
     answer: 'Most focus extensions have a small impact. Lightweight ones such as News Feed Eradicator and Unhook YouTube barely register. Cross-device services like Freedom do more in the background and can be heavier. Check each extension''s permissions, and remove any you no longer use.'
   - question: 'Can I use multiple Chrome focus extensions together?'
     answer: 'Yes, but be selective. A good mix is one awareness tool, like Respite, plus one or two targeted ones, like News Feed Eradicator for feeds and Unhook YouTube for recommendations. Running several blockers at once can cause conflicts, so start with one and add others only if needed.'
+  - question: 'Can I block sites in Chrome without an extension?'
+    answer: 'You can edit your hosts file or use router-level blocking, but both are technical, inflexible and easy to forget about. For most people a Chrome extension is the easiest and most configurable option, since you can set schedules, allow breaks and turn it off when you need to. Extensions also work on every site without touching your network settings.'
+  - question: 'Should I block distracting sites or just remove the feeds?'
+    answer: 'If your problem is the infinite scroll and algorithmic feed, surgical tools such as News Feed Eradicator target that without blocking the useful parts of a site. If you have no productive reason to visit a site, blocking it entirely is simpler and more effective. A pause before the site opens sits between the two.'
 ---
 
 Desktop browsing has its own distraction problem, and a good Chrome extension is the cheapest fix. You sit down to work, open Chrome, and somehow end up 20 minutes into a Twitter thread about something you don't care about. Unlike phone habits (where you at least have to pick up a device), desktop distractions are one tab away at all times.
@@ -169,26 +173,6 @@ The free version covers basic blocking with a limited number of sites. The premi
 **For complete coverage**: Freedom blocks across all devices. Pair it with a mindful tool for the times when you're not in a blocked session.
 
 Most people do best with a combination: one awareness tool (Respite) plus one or two targeted tools (News Feed Eradicator, Unhook YouTube) for the specific platforms that waste the most time.
-
----
-
-## Frequently Asked Questions
-
-### What's the best free Chrome extension for focus?
-
-Respite is the best free option for building lasting awareness. For hard blocking, StayFocusd and LeechBlock are both free and reliable. News Feed Eradicator and Unhook YouTube are free surgical tools that target specific addictive features.
-
-### Do Chrome blocking extensions actually reduce screen time?
-
-Usually, yes. Any form of friction — whether blocking, pausing, or removing feeds — reduces time spent on distracting sites. One Sec's Max Planck study found a brief breathing pause cut app opens by 57%, which suggests the same principle applies to sites. The key is picking an approach you'll actually stick with.
-
-### Can I block sites in Chrome without an extension?
-
-You can edit your hosts file or use router-level blocking, but these are technical and inflexible. For most people, a Chrome extension is the easiest and most configurable option.
-
-### Should I block distracting sites or just remove the feeds?
-
-If your issue is specifically the infinite scroll and algorithmic feed, surgical tools like News Feed Eradicator are smarter — they target the problem without removing the useful parts. If you have no productive reason to visit a site, blocking it entirely is simpler and more effective.
 
 ---
 

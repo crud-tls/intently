@@ -26,6 +26,10 @@ faq:
     answer: 'Opal is iPhone-only. On Android, Respite is a free option with mindful pauses and tracking, and ScreenZen, One Sec, Forest and Freedom also run on Android. Google Digital Wellbeing is built into most Android phones.'
   - question: 'Does Opal actually reduce screen time?'
     answer: 'Blocking can cut screen time while a block is active. Many people find the habit returns once the block ends, so tools that add a pause and awareness, such as Respite or One Sec, are worth trying alongside or instead of blocking.'
+  - question: 'Does blocking apps reduce screen time long-term?'
+    answer: 'It can help in the short term, but blocking alone rarely changes the habit, and many people drift back when the restriction lifts. Approaches that build self-awareness, like the pauses in Respite and One Sec, aim for more durable change. Some people still need hard blocking, especially for focus sessions.'
+  - question: 'How do I switch from Opal?'
+    answer: 'Download the alternative you want, set it up (most take a few minutes) and cancel your Opal subscription. There is no data to migrate, because screen time apps track usage going forward. Cancel through the platform you subscribed on, so you are not billed again.'
 ---
 
 Opal's a well-made screen time app, and it deserves its popularity on iOS. But at $99/year, it's one of the priciest apps in the category -- and it's iPhone-only, with a blocking-first approach that doesn't click for everyone.
@@ -211,26 +215,6 @@ Mostly a desktop problem? Cold Turkey for blocking. Respite's Chrome extension f
 Care about privacy? Respite needs no account (sign in only for sync) and keeps your usage history on your device. Cold Turkey doesn't require a cloud account for basic use.
 
 Want research backing? One Sec has a published Max Planck Institute study behind it. Respite's approach is grounded in behavioral science research on habit interruption.
-
----
-
-## Common Questions
-
-**Is Opal worth $99/year?**
-
-Honestly, for most people, no. The core features -- blocking and usage tracking -- are available for free or much less in other apps. If you specifically love Opal's polished iOS experience or need team features, the price might make sense. But it's hard to justify when strong free alternatives exist.
-
-**Does blocking apps actually reduce screen time long-term?**
-
-It can help short-term, but blocking alone rarely changes the underlying habit. When the restriction lifts, most people go right back to old patterns. Approaches that build self-awareness tend to produce more lasting change -- which is why tools like Respite and One Sec focus on friction and reflection rather than hard locks.
-
-**What works on Android?**
-
-Opal is iOS-only, so if you're on Android, your best free option is Respite (mindful interventions plus tracking). ScreenZen, Forest, and Freedom also support Android. Google Digital Wellbeing comes built into most Android phones, though it's pretty basic.
-
-**How do I switch from Opal?**
-
-Download the alternative you want, set it up (most take under five minutes), and cancel your Opal subscription. There's no data to migrate -- screen time apps track usage going forward, not backward.
 
 ---
 

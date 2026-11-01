@@ -26,6 +26,10 @@ faq:
     answer: 'For many people yes, at least at first, because any pause between impulse and action interrupts autopilot. The catch is that a plain countdown can become routine and people zone out. Prompts that ask you to breathe or decide tend to keep your attention longer than waiting alone.'
   - question: 'Can I use ScreenZen and Respite together?'
     answer: 'You could, but two pause apps on the same app creates overlapping interruptions and annoyance. Pick one for at least 30 days. If ScreenZen''s countdown has become routine, switching to a mindful prompt like Respite''s is a better test than stacking both.'
+  - question: 'Which is better: a countdown or a breathing exercise?'
+    answer: 'Both can reduce impulsive opens. Breathing exercises add a calming element and ask for more active attention, while countdowns are simpler and less intrusive. The better approach is the one you will actually keep using beyond the first week, so try each for a short while.'
+  - question: 'Can I switch from ScreenZen to Respite easily?'
+    answer: 'Yes. Install Respite, choose your distraction apps and turn off ScreenZen so they do not both prompt you. There is no data to migrate, since both apps track usage going forward. Give the new setup a few weeks before deciding which approach suits you better.'
 ---
 
 ScreenZen's appeal is its simplicity: a countdown delay before distracting apps open. No breathing exercises, no motivational quotes, no complicated setup. You pick your apps, set a delay (5-30 seconds), and that's it. The friction alone reduces impulsive opens, and the free price tag on both iOS and Android makes it accessible to everyone.
@@ -152,22 +156,6 @@ The reasons to explore alternatives come down to: wanting more depth (tracking, 
 **Wanting cross-device coverage**: Freedom blocks across all devices. Pair it with a mindful tool for non-blocked periods.
 
 **Wanting open-source**: FlowBuddy on Android is the only fully open-source option in this space.
-
----
-
-## Frequently Asked Questions
-
-### Is a countdown delay enough to reduce screen time?
-
-For many people, yes — especially in the first few weeks. The research supports friction-based approaches in general. Over time, some users find plain countdowns become routine. If that happens, switching to a mindful intervention (like Respite) that engages active awareness tends to maintain effectiveness longer.
-
-### Can I switch from ScreenZen to Respite easily?
-
-Yes. Install Respite, configure it for your distraction apps, and disable ScreenZen. There's no data migration needed. Most users notice the difference in approach immediately — the mindful prompt engages your attention more actively than waiting out a countdown.
-
-### Which approach is better: countdown or breathing exercise?
-
-Both reduce impulsive app opens. Breathing exercises add a physiological calming effect and engage more active awareness. Countdowns are simpler and less intrusive. The "better" approach is the one you'll actually stick with for more than a week.
 
 ---
 

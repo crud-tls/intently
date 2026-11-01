@@ -27,6 +27,10 @@ faq:
     answer: 'They suit different jobs. Blocking gives stronger immediate enforcement for fixed windows like exams or deadlines. A pause such as Respite''s keeps the choice yours and tends to feel less like a fight. Many people use a pause for daily browsing and a blocker for high-stakes periods.'
   - question: 'Do Chrome focus extensions work in incognito mode?'
     answer: 'Not by default. Chrome extensions are off in incognito unless you enable them in the extension settings, so do that for any blocker you rely on, since incognito is a common bypass route. Check each extension''s settings page to confirm it is allowed there.'
+  - question: 'Can I use StayFocusd and Respite together?'
+    answer: 'Yes. They take different approaches that can complement each other. Use StayFocusd''s time limits or Nuclear Option for specific enforcement periods, and Respite''s pause on Chrome for the rest of your browsing. Check that both are not set to act on the same sites, which can feel like double friction.'
+  - question: 'Which is better for students, blocking or a pause?'
+    answer: 'For study sessions, a guaranteed block such as StayFocusd''s Nuclear Option or Cold Turkey can help. For long-term habits, a pause builds awareness that carries beyond school. Many students use both: enforcement during study blocks, awareness the rest of the time.'
 ---
 
 StayFocusd has been the go-to free Chrome blocking extension since 2011, and its Nuclear Option — an unbypassable block on all distracting sites — remains one of the most powerful enforcement features available. For pure, no-nonsense time limits in Chrome, it still works.
@@ -163,26 +167,6 @@ The reasons to explore alternatives: more flexible rules (LeechBlock), stronger 
 **Want cross-device coverage**: Freedom blocks across all devices and browsers.
 
 The best approach for many people combines tools: Respite for daily mindful awareness, plus News Feed Eradicator for social media, with StayFocusd's Nuclear Option or Cold Turkey reserved for when you need guaranteed enforcement during critical work periods.
-
----
-
-## Frequently Asked Questions
-
-### Can I use StayFocusd and Respite together?
-
-Yes. They take different approaches (blocking vs. awareness) that complement each other. Use StayFocusd's time limits or Nuclear Option for specific enforcement periods, and Respite's mindful pauses for the rest of your browsing.
-
-### What happens when StayFocusd's daily limit resets?
-
-Your allowed time resets at midnight (or a custom time you set). All blocked sites become accessible again until you use up the new day's allowance. This is a structural limitation — it doesn't change the urge to visit those sites, just temporarily prevents access.
-
-### Is Cold Turkey really unbreakable?
-
-On desktop, effectively yes. You cannot disable it during an active block by any normal means — including restarting, uninstalling, or editing system files. On Chrome alone (without the desktop app), it's bypassable like any extension.
-
-### Which is better for students?
-
-For studying: Cold Turkey or StayFocusd's Nuclear Option during study sessions provides guaranteed enforcement. For building long-term habits: Respite builds the self-regulation skills that will serve you beyond school. Ideally, use both — enforcement during study blocks, awareness the rest of the time.
 
 ---
 
