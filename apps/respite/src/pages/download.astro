@@ -7,7 +7,16 @@ import StoreButton from '../components/ui/StoreButton.astro';
 import ScrollReveal from '../components/ui/ScrollReveal.astro';
 import ProductSchema from '../components/SEO/ProductSchema.astro';
 import BreadcrumbSchema from '../components/SEO/BreadcrumbSchema.astro';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
 import { SITE_TITLE } from '../consts';
+
+const faqs = [
+	{ question: "Is Respite free to download?", answer: "Yes. Respite is free on iPhone, Android and Chrome, with no ads and no credit card needed. An optional upgrade, Respite Plus, adds sync across your devices and extras such as more schedules, longer focus sessions and richer insights. The core pause, tracking, limits and streaks work without it." },
+	{ question: "Does Respite need an account?", answer: "No. You can install Respite and use its core features without signing in. An account (Google or Apple sign-in) is only needed if you want sync across devices with Respite Plus. Without one, your usage history stays on your device." },
+	{ question: "Does Respite work on iPhone?", answer: "Yes. Download Respite from the App Store for iPhone. It is built on Apple's Screen Time, so the pause appears as Apple's Screen Time shield before the apps you pick, with daily limits and an app lock that refreshes at midnight. App names stay on your iPhone." },
+	{ question: "Which devices can I install Respite on?", answer: "Respite runs on iPhone, Android phones and Google Chrome. The Chrome extension also works in other Chromium browsers. Each version is its own app with its own settings and history; optional Respite Plus sync can bring your progress together across devices." },
+	{ question: "Does Respite collect my data?", answer: "Your usage history stays on your device unless you turn on sync. Respite shows no ads and never sells your data. Each version's privacy policy lists exactly what it collects, including any anonymous analytics or crash reports. On iPhone, Apple's Screen Time keeps the apps you pick private." },
+];
 ---
 
 <!doctype html>
@@ -16,7 +25,7 @@ import { SITE_TITLE } from '../consts';
 		<BaseHead title="Download Respite Free | Your Next Hour Starts Now" description="Get Respite free on iPhone, Android and Chrome. No credit card, no ads. Take back the hours you've been losing to mindless scrolling." />
 		<ProductSchema
 			name="Respite Android"
-			description="Free privacy-first digital wellbeing app that creates a mindful pause before distracting apps open. Usage tracking, mindful interventions, streak tracking, and detailed analytics — all offline with no account needed."
+			description="Free privacy-first digital wellbeing app that creates a mindful pause before distracting apps open. Usage tracking, a pause before the apps you pick, streaks and daily limits. Free, no ads, account optional."
 			platform="android"
 			downloadUrl="https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster"
 		/>
@@ -28,7 +37,7 @@ import { SITE_TITLE } from '../consts';
 		/>
 		<ProductSchema
 			name="Respite for Chrome"
-			description="Free Chrome extension for mindful browsing. Track website usage, focus mode, and usage insights — no account or data collection."
+			description="Free Chrome extension for mindful browsing. Track website usage, focus mode and usage insights. Free, no ads, account optional."
 			platform="chrome"
 			downloadUrl="https://chromewebstore.google.com/detail/intently-intentful-browsi/acjndeeecacgplloeefjjhlnlpgnonop"
 		/>
@@ -49,7 +58,8 @@ import { SITE_TITLE } from '../consts';
 				<div class="container">
 					<Biscuit mood="hop_in" size={140} loop={false} label="Biscuit hopping in" class="download-biscuit" />
 					<h1 class="text-gradient">Your Next Hour Starts Now</h1>
-					<p class="subtitle">Respite is free. In 30 seconds, you'll have a tool that gives you back the time you've been losing. No sign-up. No credit card. No ads. Just freedom.</p>
+					<p class="subtitle">Scroll less, on purpose: Respite adds a short, gentle pause before the apps you pick, so you choose to open them. Pick your store below and you're set up in about 30 seconds.</p>
+					<p class="trust-line">Free. No ads. Account optional. Your usage history stays on your device.</p>
 					<p class="hero-links">
 						See all <a href="/features/">features</a> or read the privacy policy for <a href="/privacy/">iPhone</a>, <a href="/privacy/android/">Android</a> or <a href="/privacy/chrome/">Chrome</a>.
 					</p>
@@ -60,7 +70,7 @@ import { SITE_TITLE } from '../consts';
 			<section class="download-section">
 				<div class="container">
 					<ScrollReveal animation="fadeUp">
-						<div class="download-grid">
+						<div class="download-grid" data-placement="download_cards">
 							<!-- Android -->
 							<div class="download-card">
 								<div class="platform-badge android">
@@ -69,12 +79,12 @@ import { SITE_TITLE } from '../consts';
 									</svg>
 								</div>
 								<h3>Android</h3>
-								<p>Usage tracking, mindful pauses and streaks. Within 24 hours, you'll know exactly where your time goes—and have the power to change it.</p>
+								<p>Usage tracking, a mindful pause before the apps you choose, and streaks. See where your time goes, and choose what to do about it.</p>
 								<StoreButton store="playstore" href="https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster" />
 								<ul class="feature-list">
-									<li>Complete app usage tracking</li>
-									<li>Mindful intervention overlays</li>
-									<li>Detailed analytics dashboard</li>
+									<li>App usage tracking</li>
+									<li>A pause before the apps you pick</li>
+									<li>Usage stats and daily limits</li>
 									<li>Home screen widgets</li>
 								</ul>
 								<p class="privacy-link"><a href="/privacy/android/">Android Privacy Policy</a> · <a href="/terms/android/">Terms</a></p>
@@ -89,13 +99,13 @@ import { SITE_TITLE } from '../consts';
 									</svg>
 								</div>
 								<h3>iOS</h3>
-								<p>Our native iPhone app has the same gentle pause, built on Apple's Screen Time. No account needed, and app names never leave your iPhone.</p>
+								<p>Our native iPhone app has the same gentle pause, built on Apple's Screen Time. No account needed to start, and app names never leave your iPhone.</p>
 								<StoreButton store="appstore" href="https://apps.apple.com/us/app/respite-screen-time-control/id6757760293" />
 								<ul class="feature-list">
 									<li>A pause before the apps you choose</li>
 									<li>Daily limits and an app lock that refreshes at midnight</li>
 									<li>Built on Apple's Screen Time, private by design</li>
-									<li>No ads, no tracking SDKs</li>
+									<li>No ads</li>
 								</ul>
 								<p class="privacy-link"><a href="/privacy/">iPhone Privacy Policy</a> · <a href="/terms/">Terms</a></p>
 							</div>
@@ -113,7 +123,7 @@ import { SITE_TITLE } from '../consts';
 								<ul class="feature-list">
 									<li>Website time tracking</li>
 									<li>Focus mode for deep work</li>
-									<li>Usage insights and reports</li>
+									<li>Usage insights</li>
 									<li>Quick settings access</li>
 								</ul>
 								<p class="privacy-link"><a href="/privacy/chrome/">Chrome Extension Privacy Policy</a></p>
@@ -133,12 +143,26 @@ import { SITE_TITLE } from '../consts';
 								<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
 							</svg>
 							<div class="privacy-text">
-								<strong>Your screen time stays on your phone.</strong> — It's your business—we just help you make it intentional.
+								<strong>Your usage history stays on your device unless you turn on sync.</strong> It's your business. We just help you make it intentional.
 							</div>
 						</div>
 					</ScrollReveal>
 				</div>
 			</section>
+
+			<!-- FAQ -->
+			<section class="faq-section">
+				<div class="container faq-container">
+					<h2 class="section-title">Download FAQ</h2>
+					{faqs.map((faq) => (
+						<details class="faq-item">
+							<summary>{faq.question}</summary>
+							<p>{faq.answer}</p>
+						</details>
+					))}
+				</div>
+			</section>
+			<FAQSchema faqs={faqs} />
 
 			<!-- Quick Links - Glass -->
 			<section class="links-section">
@@ -238,6 +262,73 @@ import { SITE_TITLE } from '../consts';
 		margin-left: auto;
 		margin-right: auto;
 		line-height: 1.6;
+	}
+
+	/* FAQ */
+	.faq-section {
+		width: 100%;
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
+	}
+
+	.faq-section .section-title {
+		font-size: 1.75rem;
+		font-weight: 800;
+		text-align: center;
+		margin: 0 0 var(--ds-space-lg);
+		color: var(--ds-text-primary);
+	}
+
+	.faq-container {
+		max-width: 800px;
+	}
+
+	.faq-item {
+		border: 1px solid var(--ds-gray-200);
+		border-radius: var(--ds-radius-md);
+		margin-bottom: var(--ds-space-sm);
+		overflow: hidden;
+		background: var(--ds-bg-primary);
+	}
+
+	.faq-item summary {
+		padding: var(--ds-space-md) var(--ds-space-lg);
+		font-weight: 600;
+		color: var(--ds-text-primary);
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.faq-item summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-item summary::after {
+		content: "+";
+		font-size: 1.25rem;
+		color: var(--ds-primary);
+		flex-shrink: 0;
+	}
+
+	.faq-item[open] summary::after {
+		content: "-";
+	}
+
+	.faq-item p {
+		padding: 0 var(--ds-space-lg) var(--ds-space-md);
+		margin: 0;
+		color: var(--ds-text-secondary);
+		line-height: 1.6;
+	}
+
+	.trust-line {
+		font-size: 0.9375rem;
+		font-weight: 600;
+		color: var(--ds-text-secondary);
+		margin: var(--ds-space-md) auto 0;
 	}
 
 	.hero-links {

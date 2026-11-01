@@ -10,21 +10,21 @@ import CollectionPageSchema from '../components/SEO/CollectionPageSchema.astro';
 const comparisons = [
 	{
 		title: "Respite vs Opal",
-		description: "Free mindful pause vs $99/yr app blocking. Compare approaches, features, privacy, and effectiveness.",
+		description: "Free mindful pause vs a paid app-blocking subscription. Compare approaches, features and privacy.",
 		href: "/blog/respite-vs-opal/",
 		badge: "Most Popular",
 		badgeColor: "blue"
 	},
 	{
 		title: "Respite vs One Sec",
-		description: "Free customizable prompts vs $50 breathing exercises. Head-to-head of two mindful pause apps.",
+		description: "Two apps that pause before you open an app. Head-to-head on price, platforms and approach.",
 		href: "/blog/respite-vs-one-sec/",
 		badge: "Direct Competitor",
 		badgeColor: "purple"
 	},
 	{
 		title: "Respite vs Freedom",
-		description: "Free mindful intervention vs $120/yr cross-device blocking. Different philosophies compared.",
+		description: "Free mindful pause vs paid cross-device blocking. Different philosophies compared.",
 		href: "/blog/respite-vs-freedom/",
 		badge: null,
 		badgeColor: null
@@ -38,21 +38,21 @@ const comparisons = [
 	},
 	{
 		title: "Respite vs ScreenZen",
-		description: "Two free mindful screen time apps compared. Features, platforms, and privacy side by side.",
+		description: "Two mindful screen time apps compared. Features, platforms and privacy side by side.",
 		href: "/blog/respite-vs-screenzen/",
-		badge: "Both Free",
+		badge: "Both Free to Start",
 		badgeColor: "green"
 	},
 	{
 		title: "Respite vs Brick",
-		description: "Free software pause vs $59 physical NFC device. Digital friction vs physical friction.",
+		description: "Free software pause vs a paid physical NFC device. Digital friction vs physical friction.",
 		href: "/blog/respite-vs-brick/",
 		badge: null,
 		badgeColor: null
 	},
 	{
 		title: "Respite vs Google Digital Wellbeing",
-		description: "Advanced mindful interventions vs basic built-in Android tools. Why you might need more.",
+		description: "A mindful pause vs the basic built-in Android tools. When you might want more.",
 		href: "/blog/respite-vs-google-digital-wellbeing/",
 		badge: null,
 		badgeColor: null
@@ -62,13 +62,13 @@ const comparisons = [
 const alternatives = [
 	{
 		title: "Best Opal Alternatives",
-		description: "8 free and paid alternatives to Opal's $99/yr screen time app.",
+		description: "8 free and paid alternatives to Opal's paid screen time app.",
 		href: "/blog/opal-alternatives/",
 		competitor: "Opal"
 	},
 	{
 		title: "Best Freedom Alternatives",
-		description: "Top app blockers and mindful tools to replace Freedom's $120/yr subscription.",
+		description: "Top app blockers and mindful tools to replace Freedom's paid subscription.",
 		href: "/blog/freedom-alternatives/",
 		competitor: "Freedom"
 	},
@@ -100,20 +100,24 @@ const alternatives = [
 
 const faqs = [
 	{
+		question: "Is Respite free?",
+		answer: "Yes. Respite is free on iPhone, Android and Chrome, with no ads. An optional upgrade, Respite Plus, adds sync across your devices and extras like more schedules and richer insights. You can use the core pause, usage tracking, limits and streaks without paying or signing in."
+	},
+	{
 		question: "What is the best free screen time app?",
-		answer: "Respite is the best free screen time app. It offers mindful interventions, usage tracking, streak tracking, and detailed analytics — all completely free with no account required and no ads. Unlike competitors that charge $50-120/year, Respite has no premium tier or paywalls."
+		answer: "It depends on how you want to change your habits. Respite is a free option that puts a short pause before the apps you pick, tracks your usage and keeps streaks, on iPhone, Android and Chrome. Built-in tools like Apple Screen Time and Google Digital Wellbeing are also free but more basic."
 	},
 	{
 		question: "Is Respite better than Opal?",
-		answer: "For most users seeking lasting behavior change, yes. Respite uses mindful interventions proven more effective long-term than Opal's app blocking approach. Respite is also free (vs Opal's $99/yr) and needs no account. Opal may be better for iOS users needing immediate hard blocking."
+		answer: "They take different approaches. Respite adds a short pause before an app opens so you choose to continue, while Opal focuses on stricter blocking and is a paid subscription for its full features. If you want a gentle nudge and a free start, try Respite. If you want hard blocks, Opal may suit you better."
 	},
 	{
-		question: "What's the difference between app blocking and mindful interventions?",
-		answer: "App blocking prevents access to apps entirely, which triggers psychological reactance (wanting what you can't have). Mindful interventions create a brief pause before apps open, prompting awareness and conscious choice. Research shows interventions lead to 73% better long-term results than blocking."
+		question: "What's the difference between app blocking and a mindful pause?",
+		answer: "App blocking stops you from opening an app at all, which some people find works and others work around. A mindful pause, which is what Respite does, puts a brief moment in front of the app so you open it on purpose. You stay in control, and the aim is to break the automatic reflex."
 	},
 	{
 		question: "Do I need to pay for a screen time app?",
-		answer: "No. Respite offers all features for free — usage tracking, mindful interventions, streak tracking, analytics, and more. Paid apps like Opal ($99/yr) and Freedom ($120/yr) offer additional features but aren't necessary for effective screen time management."
+		answer: "No. Respite is free to use, and many screen time apps have a free tier. Some, such as Opal and Freedom, are mainly paid subscriptions, and prices change, so check each app's current pricing. Respite Plus is an optional upgrade, and you can use Respite without it."
 	}
 ];
 ---
@@ -155,19 +159,19 @@ const faqs = [
 					<div class="hero-stats">
 						<div class="stat">
 							<span class="stat-value">$0</span>
-							<span class="stat-label">Respite cost</span>
+							<span class="stat-label">Free to start</span>
 						</div>
 						<div class="stat">
-							<span class="stat-value">4.7</span>
-							<span class="stat-label">Star rating</span>
+							<span class="stat-value">3</span>
+							<span class="stat-label">Platforms</span>
 						</div>
 						<div class="stat">
-							<span class="stat-value">12K+</span>
-							<span class="stat-label">Downloads</span>
+							<span class="stat-value">0</span>
+							<span class="stat-label">Ads</span>
 						</div>
 						<div class="stat">
-							<span class="stat-value">100%</span>
-							<span class="stat-label">Private</span>
+							<span class="stat-value">Optional</span>
+							<span class="stat-label">Account</span>
 						</div>
 					</div>
 				</div>
@@ -177,7 +181,7 @@ const faqs = [
 			<section class="section">
 				<div class="container">
 					<h2 class="section-title">Head-to-Head Comparisons</h2>
-					<p class="section-description">See how Respite compares directly with each competitor on features, pricing, privacy, and effectiveness.</p>
+					<p class="section-description">See how Respite compares directly with each competitor on features, pricing and privacy.</p>
 
 					<div class="card-grid">
 						{comparisons.map((item) => (
@@ -217,7 +221,7 @@ const faqs = [
 			<section class="section">
 				<div class="container">
 					<h2 class="section-title">Quick Comparison Matrix</h2>
-					<p class="section-description">How the top screen time apps compare at a glance.</p>
+					<p class="section-description">How the top screen time apps compare at a glance. Competitor details are approximate and can change, so check each app's own page.</p>
 
 					<div class="table-wrapper">
 						<table class="comparison-table">
@@ -235,10 +239,10 @@ const faqs = [
 								<tr>
 									<td>Price</td>
 									<td class="highlight">Free</td>
-									<td>$99/yr</td>
-									<td>$50</td>
-									<td>$120/yr</td>
-									<td>$2-4</td>
+									<td>Paid (~$99/yr)</td>
+									<td>Paid (~$50)</td>
+									<td>Paid (~$120/yr)</td>
+									<td>Paid (low one-time)</td>
 								</tr>
 								<tr>
 									<td>Approach</td>
@@ -250,8 +254,8 @@ const faqs = [
 								</tr>
 								<tr>
 									<td>Privacy</td>
-									<td class="highlight">Works offline</td>
-									<td>Cloud sync</td>
+									<td class="highlight">History stays on device</td>
+									<td>Account-based</td>
 									<td>Good</td>
 									<td>Account req.</td>
 									<td>Good</td>
@@ -260,7 +264,7 @@ const faqs = [
 									<td>Android</td>
 									<td class="highlight">✓</td>
 									<td>✓</td>
-									<td>✗</td>
+									<td>✓</td>
 									<td>✓</td>
 									<td>✓</td>
 								</tr>
@@ -282,7 +286,7 @@ const faqs = [
 								</tr>
 								<tr>
 									<td>Account Required</td>
-									<td class="highlight">No</td>
+									<td class="highlight">Optional (for sync)</td>
 									<td>Yes</td>
 									<td>No</td>
 									<td>Yes</td>
@@ -314,7 +318,7 @@ const faqs = [
 			<section class="cta-section">
 				<div class="container">
 					<h2>Ready to Take Control?</h2>
-					<p>Respite is free, private, and takes 30 seconds to set up. No account needed.</p>
+					<p>Respite is free, private, and takes about 30 seconds to set up. No account needed unless you want sync.</p>
 					<div class="cta-buttons">
 						<Button href="/download/" variant="primary" size="lg">Download Free</Button>
 						<Button href="/quiz/" variant="secondary" size="lg">Take the Quiz</Button>

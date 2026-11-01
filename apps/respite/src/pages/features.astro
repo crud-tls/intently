@@ -15,80 +15,84 @@ const features = [
 		icon: "BarChart3",
 		title: "Finally See the Truth",
 		description: "You tell yourself it's only 20 minutes. The data tells a different story. Respite shows you exactly where your time goes—without judgment.",
-		details: ["Daily time summaries", "Per-app usage breakdown", "Weekly and monthly trends", "Category-based grouping"],
+		details: ["Daily time summaries", "Per-app usage breakdown", "Weekly and monthly trends", "Streaks and daily totals"],
 		color: "blue"
 	},
 	{
 		icon: "Target",
 		title: "Set Boundaries You Actually Keep",
 		description: "Choose how much time feels right for each app. When you're getting close, Respite lets you know, with a gentle heads-up and no lectures. On iPhone you can also turn on an app lock that covers an app once today's time is used.",
-		details: ["Custom time limits per app", "Visual progress rings", "Goal achievement celebrations", "Flexible limit adjustments"],
+		details: ["Daily time limits per app", "Visual progress rings", "Goal achievement celebrations", "Adjust limits any time"],
 		color: "green"
 	},
 	{
 		icon: "Bell",
 		title: "The 3-Second Pause That Changes Everything",
 		description: "Before an app opens, a simple screen appears: 'Is this what you want to be doing right now?' That tiny moment is all it takes.",
-		details: ["Customizable reminder messages", "Timer-based interventions", "Multiple intervention types", "Reflection prompts"],
+		details: ["A pause before the apps you pick", "Leave, or continue after a moment", "Timers and daily limits", "Reflection questions (Android and Chrome)"],
 		color: "purple"
 	},
 	{
 		icon: "Trophy",
 		title: "Celebrate Every Win (Even the Small Ones)",
 		description: "Day 1 feels small. Day 7 feels like something. Day 30 feels like you're becoming someone new. Respite tracks your streaks because lasting change deserves recognition.",
-		details: ["Daily streak tracking", "Milestone celebrations", "Achievement badges", "Streak recovery options"],
+		details: ["Daily streak tracking", "Milestone celebrations", "Streak freezes in newer versions", "Gentle, no-guilt reminders"],
 		color: "orange"
 	},
 	{
 		icon: "TrendingUp",
 		title: "Watch Your Progress Unfold",
 		description: "Beautiful charts show your journey over days, weeks, and months. See your baseline shrink, and feel the pride of measurable progress.",
-		details: ["Usage trend charts", "Baseline comparisons", "Improvement metrics", "Exportable reports"],
+		details: ["Usage trend charts", "Day-by-day comparisons", "Weekly and monthly views", "Richer insights with Respite Plus"],
 		color: "blue"
 	},
 	{
 		icon: "Brain",
 		title: "Ask Yourself: Is This What I Want?",
-		description: "Custom prompts invite you to pause and reflect before diving into an app. Breathing exercises calm the impulse. It's mindfulness, built into your phone.",
-		details: ["Custom reflection prompts", "Breathing exercises", "Intention setting", "Usage journaling"],
+		description: "On Android and Chrome, the pause rotates reflection questions, a short guided breathing exercise, your own usage stats, quotes and activity suggestions. On iPhone, the pause is Apple's Screen Time shield. It's mindfulness, built into your phone.",
+		details: ["Reflection questions (Android and Chrome)", "Guided breathing exercise (Android and Chrome)", "Your own usage stats in the pause", "Quotes and activity suggestions"],
 		color: "green"
 	},
 	{
 		icon: "Smartphone",
 		title: "Your Progress, At a Glance",
 		description: "On Android, a widget on your home screen shows your streak and today's progress. One look is often enough to remind you of who you're becoming.",
-		details: ["Home screen widgets (Android)", "Quick settings toggle (Android)", "One-tap stats view", "Notification center integration"],
+		details: ["Home screen widgets (Android)", "Quick settings toggle (Android)", "One-tap stats view", "Streak at a glance"],
 		color: "purple"
 	},
 	{
 		icon: "Lock",
-		title: "We Literally Cannot See Your Data",
-		description: "No account needed, and your usage history stays on your phone. Sync is optional and only happens if you sign in. Your digital life is yours.",
-		details: ["Works offline", "History stored on your phone", "No account required", "No ads"],
+		title: "Your Data Stays Yours",
+		description: "No account needed for the core features, and your usage history stays on your device unless you turn on sync. There are no ads, and we never sell your data.",
+		details: ["History stored on your device", "No account needed (sign in only for sync)", "No ads", "We never sell your data"],
 		color: "green"
 	}
 ];
 
 const featureFAQs = [
 	{
-		question: "How does Respite track app usage?",
-		answer: "Respite runs on your device, noting which apps you use and how long you spend in each one. Your usage history is stored on your device; it only syncs to our servers if you sign in. On iPhone, Apple's Screen Time reports the minutes without ever telling Respite the app's name. What each version collects, including any anonymous analytics or crash reports, is listed in its privacy policy."
+		question: "Is Respite free?",
+		answer: "Yes. Respite is free on iPhone, Android and Chrome, with no ads. The pause, usage tracking, daily limits and streaks all work without paying. An optional upgrade, Respite Plus, adds sync across your devices and extras such as more schedules, longer focus sessions and richer insights."
 	},
 	{
-		question: "Is Respite better than other screen time apps?",
-		answer: "Unlike blocking-based solutions that use shame and restriction, Respite uses psychology-backed mindful interventions. Instead of preventing app access, we create moments of awareness so you can make conscious choices about your time. Studies show this compassionate approach leads to more lasting behavior change."
+		question: "Does Respite need an account?",
+		answer: "No. You can use Respite's core features without signing in. An account (Google or Apple sign-in) is only needed if you want to sync across devices with Respite Plus. Without one, your usage history stays on your device."
 	},
 	{
-		question: "Does Respite work offline?",
-		answer: "Yes. Respite's tracking, stats, and interventions all happen on your device and work offline. You don't need an account or an internet connection; sync is optional."
+		question: "Does Respite work on iPhone?",
+		answer: "Yes. Respite is available for iPhone, Android and Chrome. The iPhone app is built on Apple's Screen Time, so the pause appears as Apple's Screen Time shield before the apps you pick. It also offers daily limits and an app lock that covers an app once today's time is used, refreshing at midnight."
+	},
+	{
+		question: "How is Respite different from app blockers?",
+		answer: "Blockers shut an app down. Respite puts a short, gentle pause in front of the apps you pick, so you open them on purpose rather than by reflex. You can leave or continue after a moment. It also tracks your usage, keeps streaks and lets you set daily limits, so you see the pattern as well as interrupt it."
+	},
+	{
+		question: "Does Respite collect my data?",
+		answer: "Your usage history stays on your device unless you turn on sync. Respite shows no ads and never sells your data. On iPhone, Apple's Screen Time keeps the apps you pick private, even from Respite. Each version's privacy policy lists exactly what it collects, including any anonymous analytics or crash reports."
 	},
 	{
 		question: "Can I use Respite on multiple devices?",
-		answer: "Yes. Respite works independently on each device: iPhone, Android and Chrome. Currently, data doesn't sync between devices, keeping everything local and private. Each device maintains its own usage history and settings."
-	},
-	{
-		question: "What makes Respite privacy-first?",
-		answer: "Respite never sells your data and shows no ads. Your usage history stays on your device unless you sign in to sync. You don't need to create an account, and each platform's privacy policy says exactly what it collects."
+		answer: "Yes. Respite runs on iPhone, Android and Chrome, and each device works on its own with its own history and settings. If you want your progress synced across devices, the optional Respite Plus upgrade adds sync, which requires signing in with Google or Apple."
 	}
 ];
 
@@ -120,7 +124,7 @@ const colorMap: Record<string, string> = {
 				<div class="hero-glow" aria-hidden="true"></div>
 				<div class="container">
 					<h1 class="text-gradient">Everything You Need to Take Back Control</h1>
-					<p class="hero-subtitle">Respite uses behavioral science—not shame—to help you become the person who puts their phone down and doesn't think twice about it.</p>
+					<p class="hero-subtitle">Respite uses a gentle pause, not shame, to help you open apps on purpose. Free on iPhone, Android and Chrome, with no ads.</p>
 				</div>
 			</section>
 
@@ -131,7 +135,7 @@ const colorMap: Record<string, string> = {
 						<h2>What is Respite?</h2>
 						<div class="glass-intro-card">
 							<p class="direct-answer">
-								Respite is a <strong>privacy-first digital wellbeing app</strong> that helps you build healthier relationships with technology. Instead of just blocking apps, it uses <strong>mindful interventions</strong> to create moments of awareness, helping you make conscious choices about screen time. Your usage history stays on your device, no account is needed, and it runs on iPhone, Android and Chrome.
+								Respite is a <strong>privacy-first digital wellbeing app</strong> that helps you build healthier relationships with technology. Instead of just blocking apps, it uses <strong>mindful interventions</strong> to create moments of awareness, helping you make conscious choices about screen time. It's free with no ads, your usage history stays on your device, you only sign in if you want sync, and it runs on iPhone, Android and Chrome.
 							</p>
 						</div>
 						<p class="intro-links">
@@ -220,7 +224,7 @@ const colorMap: Record<string, string> = {
 							</div>
 							<div class="step-glass-card">
 								<h3>Pause</h3>
-								<p>When you reach for a distracting app on autopilot, a gentle prompt appears. Not to scold you—to ask: 'Is this what you want right now?'</p>
+								<p>When you reach for a distracting app on autopilot, a gentle pause appears. Not to scold you—to ask: 'Is this what you want right now?'</p>
 							</div>
 						</div>
 
@@ -232,7 +236,7 @@ const colorMap: Record<string, string> = {
 							</div>
 							<div class="step-glass-card">
 								<h3>Transform</h3>
-								<p>Small choices compound. After a week, the pull weakens. After a month, you reach for your phone less. After three months, people start asking what changed about you.</p>
+								<p>Small choices compound. Each time you pause, you get a little better at choosing on purpose, and your streak shows it.</p>
 							</div>
 							</div>
 					</div>
@@ -270,9 +274,9 @@ const colorMap: Record<string, string> = {
 					<ScrollReveal animation="fadeUp">
 						<div class="cta-glass">
 							<h2>Ready to Take Back Control?</h2>
-							<p>Change your relationship with your phone, one gentle pause at a time.</p>
-							<div class="cta-buttons">
-								<Button href="/download/" variant="primary" size="lg">Download Now</Button>
+							<p>Change your relationship with your phone, one gentle pause at a time. Free, no ads, account optional.</p>
+							<div class="cta-buttons" data-placement="final_cta">
+								<Button href="/download/" variant="primary" size="lg">Download Free</Button>
 								<Button href="/support/" variant="secondary" size="lg">Get Support</Button>
 							</div>
 						</div>

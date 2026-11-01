@@ -16,6 +16,15 @@ const storeFor = { ios: ['appstore', r.stores.appStore], android: ['playstore', 
 import WebSiteSchema from '../components/SEO/WebSiteSchema.astro';
 import ProductSchema from '../components/SEO/ProductSchema.astro';
 import { getCollection } from 'astro:content';
+import FAQSchema from '../components/SEO/FAQSchema.astro';
+
+const homeFaqs = [
+	{ question: "Is Respite free?", answer: "Yes. Respite is free on iPhone, Android and Chrome, with no ads. The pause, usage tracking, daily limits and streaks all work without paying. An optional upgrade, Respite Plus, adds sync across your devices and extras such as more schedules, longer focus sessions and richer insights." },
+	{ question: "Does Respite need an account?", answer: "No. The core features work without signing in. You only need an account (Google or Apple sign-in) if you want to sync across devices with Respite Plus. Without one, your usage history stays on your device." },
+	{ question: "Does Respite work on iPhone?", answer: "Yes. Respite is available for iPhone, Android and Chrome. The iPhone app is built on Apple's Screen Time, so the pause appears as Apple's Screen Time shield before the apps you pick, with daily limits and an app lock that refreshes at midnight." },
+	{ question: "How is Respite different from app blockers?", answer: "Blockers shut an app down. Respite puts a short, gentle pause in front of the apps you pick, so you open them on purpose instead of by reflex. You can leave or continue after a moment, and Respite also tracks usage, keeps streaks and lets you set daily limits." },
+	{ question: "Does Respite collect my data?", answer: "Your usage history stays on your device unless you turn on sync. Respite shows no ads and never sells your data. On iPhone, Apple's Screen Time keeps the apps you pick private, even from Respite. Each version's privacy policy lists exactly what it collects." },
+];
 
 
 // Get latest 3 blog posts
@@ -35,13 +44,13 @@ const latestPosts = allPosts
 		<WebSiteSchema />
 		<ProductSchema
 			name="Respite for iPhone"
-			description="Privacy-first screen time app built on Apple's Screen Time. A pause before the apps you pick, daily limits and an app lock, no account needed."
+			description="Privacy-first screen time app built on Apple's Screen Time. A pause before the apps you pick, daily limits and an app lock. Free, no ads, account optional."
 			platform="ios"
 			downloadUrl="https://apps.apple.com/us/app/respite-screen-time-control/id6757760293"
 		/>
 		<ProductSchema
 			name="Respite for Android"
-			description="Free privacy-first screen time app. Mindful pause before distracting apps, usage tracking and streaks, no account needed."
+			description="Free privacy-first screen time app. Mindful pause before distracting apps, usage tracking and streaks. Free, no ads, account optional."
 			platform="android"
 			downloadUrl="https://play.google.com/store/apps/details?id=dev.sadakat.thinkfaster"
 		/>
@@ -81,7 +90,7 @@ const latestPosts = allPosts
 										<Icon name="Clock" size={32} color="var(--ds-primary)" />
 									</div>
 									<h3>See Where Your Hours Go</h3>
-									<p>Most people are shocked to discover they spend 3-4 hours daily on apps they don't even enjoy. Respite reveals the truth gently.</p>
+									<p>Many people are surprised by how many hours go to apps they don't even enjoy. Respite shows you where your time goes, gently.</p>
 								</div>
 							</div>
 						</div>
@@ -118,9 +127,9 @@ const latestPosts = allPosts
 						<div class="bento-card bento-privacy">
 							<Biscuit mood="meditate" size={96} label="Biscuit meditating" class="bento-biscuit" />
 							<h3>Your Secrets Stay Yours</h3>
-							<p>Your screen-time history stays on your device. No account needed, and nothing is backed up unless you sign in.</p>
+							<p>Your screen-time history stays on your device. No account needed for the core features, and nothing is synced unless you sign in.</p>
 							<div class="privacy-badges">
-								<span class="privacy-badge"><Icon name="WifiOff" size={14} color="var(--ds-green)" /> Works offline</span>
+								<span class="privacy-badge"><Icon name="ShieldCheck" size={14} color="var(--ds-green)" /> Account optional</span>
 								<span class="privacy-badge"><Icon name="EyeOff" size={14} color="var(--ds-green)" /> No ads</span>
 								<span class="privacy-badge"><Icon name="Database" size={14} color="var(--ds-green)" /> History on your phone</span>
 							</div>
@@ -165,7 +174,7 @@ const latestPosts = allPosts
 							<div class="journey-before">
 								<div class="journey-card journey-card-before">
 									<span class="journey-icon journey-icon-before"><Icon name="Smartphone" size={20} color="var(--ds-red)" /></span>
-									<p>Picking up your phone 80+ times without thinking</p>
+									<p>Picking up your phone again and again without thinking</p>
 								</div>
 							</div>
 							<div class="timeline-node" aria-hidden="true"><div class="node-dot"></div></div>
@@ -296,6 +305,20 @@ const latestPosts = allPosts
 				</div>
 			</section>
 
+			<!-- FAQ -->
+			<section class="faq-section">
+				<div class="container faq-container">
+					<h2 class="section-title">Frequently Asked Questions</h2>
+					{homeFaqs.map((faq) => (
+						<details class="faq-item">
+							<summary>{faq.question}</summary>
+							<p>{faq.answer}</p>
+						</details>
+					))}
+				</div>
+			</section>
+			<FAQSchema faqs={homeFaqs} />
+
 			<!-- CTA Section -->
 			<section class="cta-section">
 				<div class="cta-divider" aria-hidden="true"></div>
@@ -312,14 +335,14 @@ const latestPosts = allPosts
 								<span class="cta-highlight">an Extra Hour</span>
 							</h2>
 							<p class="cta-body">Take back your mornings, your evenings, and your weekends. It starts with one free download.</p>
-							<div class="cta-actions">
+							<div class="cta-actions" data-placement="final_cta">
 								<a href="/download/" class="cta-button-primary">
 									Start Reclaiming Your Time
 									<Icon name="ArrowRight" size={18} color="currentColor" />
 								</a>
 								<span class="cta-reassurance">
 									<Icon name="ShieldCheck" size={14} color="var(--ds-green)" />
-									Free forever. No account needed.
+									Free, no ads. Account only for sync.
 								</span>
 							</div>
 						</div>
@@ -342,6 +365,57 @@ const latestPosts = allPosts
 </html>
 
 <style>
+	.faq-section {
+		width: 100%;
+		padding: var(--ds-space-2xl) 0;
+		background: var(--ds-bg-secondary);
+	}
+
+	.faq-container {
+		max-width: 800px;
+	}
+
+	.faq-item {
+		border: 1px solid var(--ds-gray-200);
+		border-radius: var(--ds-radius-md);
+		margin-bottom: var(--ds-space-sm);
+		overflow: hidden;
+		background: var(--ds-bg-primary);
+	}
+
+	.faq-item summary {
+		padding: var(--ds-space-md) var(--ds-space-lg);
+		font-weight: 600;
+		color: var(--ds-text-primary);
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.faq-item summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-item summary::after {
+		content: "+";
+		font-size: 1.25rem;
+		color: var(--ds-primary);
+		flex-shrink: 0;
+	}
+
+	.faq-item[open] summary::after {
+		content: "-";
+	}
+
+	.faq-item p {
+		padding: 0 var(--ds-space-lg) var(--ds-space-md);
+		margin: 0;
+		color: var(--ds-text-secondary);
+		line-height: 1.6;
+	}
+
 	main {
 		width: 100%;
 	}

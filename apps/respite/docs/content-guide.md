@@ -17,6 +17,10 @@ into installs (conversion). Never trade truth for any of them.
   e.g. "no account needed (sign in only if you want sync)". Never say "works fully offline forever" or
   "never collects any data". Say "usage history stays on your device unless you turn on sync".
 - No ads.
+- What the pause shows (from the app code): on Android and Chrome it rotates built-in content —
+  reflection questions, a short guided breathing exercise, your own usage stats, quotes and activity
+  suggestions. On iPhone the pause is Apple's Screen Time shield, so keep iPhone wording general
+  ("a short, gentle pause"). There is no journaling and no intention-setting feature.
 - You **cannot** write your own pause messages or customize prompts per app. Don't promise custom
   messages, custom prompts or per-app prompt text.
 - A game layer (acorns, streak freezes, the mascot Biscuit) exists in newer versions. Mention it lightly at
