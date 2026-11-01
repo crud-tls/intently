@@ -1,146 +1,122 @@
 ---
-title: 'Respite vs Refocus: Mindful Pause vs Time Budget Reminders'
-description: 'Compare Respite and Refocus screen time apps. See how always-on mindful interventions stack up against daily time budget reminders for reducing phone use and building healthier digital habits.'
+title: 'Respite vs Refocus (2026): Pause Every Open or Time Budgets?'
+description: 'Respite vs Refocus compared: a pause before every app open versus daily time budgets with reminders. See price, platforms and which fits your habit.'
 pubDate: 2026-02-28
+updatedDate: 2026-11-01
 author: 'Respite Team'
+answer: 'Pick Refocus if your problem is losing track of time inside apps and you like daily time budgets with gentle reminders on iOS or Android. Pick Respite if your problem is opening apps on autopilot; it adds a free pause before the apps you choose, plus daily limits and streaks, on iPhone, Android and Chrome. Respite acts before the scroll, Refocus as the budget runs low.'
+keyTakeaways:
+  - 'Respite pauses you when you open a chosen app; Refocus nudges you as you approach a daily time budget.'
+  - 'Refocus has a generous free tier with paid extras; Respite is free, with an optional Plus for sync.'
+  - 'Both cover iOS and Android; only Respite also has a Chrome extension.'
+  - 'Pick by diagnosis: too many opens points to a pause, too long per session points to budgets.'
 section: 'App Comparisons'
 tags: ['respite', 'refocus', 'screen time app', 'app comparison', 'digital wellbeing', 'refocus alternatives']
 heroImage: '/blog-app-comparison.jpg'
 faq:
-  - question: "Which is better: Respite or Refocus?"
-    answer: "Respite is better for users who want a mindful pause before every app open, with full customization and offline privacy. Refocus is better for users who prefer setting daily time budgets and only receiving reminders when they hit their limits. Respite intervenes proactively; Refocus intervenes reactively."
-  - question: "How does Refocus screen time tracking work?"
-    answer: "Refocus lets you set daily time budgets for specific apps. It tracks your usage throughout the day and sends gentle nudges when you approach or exceed your limits. The approach is time-based — you get reminders when you've used too much, rather than a pause before every launch."
-  - question: "Is Refocus free?"
-    answer: "Refocus offers a free tier with basic time budget features. Some advanced features may require a premium subscription. Respite is completely free with no limitations — every feature is available at no cost."
-  - question: "Which app works on more platforms?"
-    answer: "Refocus supports both iOS and Android. Respite supports iPhone, Android and Chrome. Refocus leans on structured roadmaps, while Respite uniquely covers desktop habits through its Chrome extension."
-  - question: "Can Respite and Refocus work together?"
-    answer: "They can complement each other since they work differently — Respite pauses before every app open while Refocus monitors cumulative time. However, running both may feel like over-monitoring. Most users will find that one approach or the other matches their style better."
-  - question: "Which approach is more effective for reducing screen time?"
-    answer: "Mindful pause approaches like Respite tend to catch unconscious habits in real-time — every app launch becomes a conscious choice. Time budget approaches like Refocus allow unrestricted use until a limit is hit, which means the first 30-60 minutes of scrolling happen on autopilot. For habitual, mindless phone checking, proactive pauses are generally more effective."
+  - question: 'Which is better: Respite or Refocus?'
+    answer: 'It depends on your habit. Respite is better if you open apps without thinking, because it pauses you at the moment you open them. Refocus is better if you open apps on purpose but lose track of time, because it works with daily budgets and reminders. Many people have both habits; try the free one first.'
+  - question: 'Is Refocus free?'
+    answer: 'Refocus has a free tier that covers the basics, with additional features behind a paid plan; check the app store for current details. Respite is free to use, with an optional Respite Plus upgrade that adds sync across devices and extras.'
+  - question: 'Is there a free alternative to Refocus?'
+    answer: 'Yes. Respite is a free alternative on iPhone, Android and Chrome. It adds a pause before chosen apps and also supports daily limits and timers. See our [best digital wellbeing apps](/blog/best-digital-wellbeing-apps-2026/) for more choices.'
+  - question: 'How do time budget apps like Refocus work?'
+    answer: 'You set a daily time budget for specific apps. The app tracks your use through the day and sends a reminder as you approach or pass the limit. Nothing happens when you first open the app, so the nudge arrives after you are already scrolling.'
+  - question: 'Can I use Respite and Refocus together?'
+    answer: 'You can, since one acts at the start and the other near a limit. Running both can feel like over-monitoring, though. Most people find one approach matches their style better, so try each for a week or two before combining them.'
+  - question: 'Do I need an account for Respite?'
+    answer: 'No. Core features work without signing in. Use Google or Apple sign-in only if you want sync across devices. Your usage history stays on your device unless you turn sync on.'
 ---
 
-Respite and Refocus both help you manage screen time, but they intervene at completely different moments. Respite shows a mindful pause before every app launch — turning each open into a conscious decision. Refocus sets daily time budgets and nudges you when you've used too much.
+Respite and Refocus both help you spend less time on your phone, but they speak up at different moments. Respite adds a pause when you open an app. Refocus keeps a daily time budget and nudges you as it runs low.
 
-The difference matters more than it sounds. One approach catches you before the scroll starts. The other lets you scroll freely until a timer runs out.
+## Respite vs Refocus at a glance
 
-## Quick Verdict
+| | Respite | Refocus |
+|---|---|---|
+| Platforms | iPhone, Android, Chrome | iOS, Android |
+| Price model | Free; optional Plus for sync and extras | Free tier; paid extras |
+| Approach | A short pause before chosen apps and sites, plus limits | Daily time budgets with reminders |
+| Account | Optional; sign in only for sync | Check app listing |
+| Privacy | Usage history stays on your device unless you sync | See its policy |
+| When it speaks up | When you open an app | When you near your limit |
+| Best for | Autopilot opening | Losing track of time |
 
-Respite creates a mindful pause before every app open — customizable prompts, full offline privacy, free with no limits. Refocus sets daily time budgets and sends gentle reminders when you approach your limits. Choose Respite if you want to make every app launch intentional. Choose Refocus if you prefer tracking cumulative time and getting nudged at your limits.
+## Which should you pick?
 
-**Bottom line:** If your problem is opening apps without thinking, Respite addresses that directly. If your problem is losing track of how long you've been scrolling, Refocus addresses that.
+**Choose Respite if** you pick up your phone and tap an app before you have thought about it, you want a Chrome extension too, or you want to pay nothing.
 
-## How Each App Works
+**Choose Refocus if** you open apps deliberately but then lose an hour, you prefer budgets over interruptions, and a nudge near a limit would suit you.
 
-### Respite: Pause Before Every Launch
+## Is your problem frequency or duration?
 
-Every time you open a tracked app, Respite shows a full-screen intervention. You see a message you've written yourself — a question, a goal reminder, a breathing prompt — and you make a conscious choice about whether to proceed.
+If you pick up your phone dozens of times a day without a reason, a pause targets the root cause. If you open apps on purpose but lose track of time, a budget does. A rough test: check your pickups in your phone's settings. A very high count points to a pause; moderate pickups with long sessions point to budgets.
 
-This happens every time. Not after 30 minutes. Not when you hit a limit. Every single launch. The idea is that most problematic phone use starts with an unconscious app open — your thumb taps Instagram before your brain engages. Respite catches that moment.
+## How does Refocus work?
 
-You always have the choice to continue. The intervention isn't a block; it's a pause. But that pause is often enough to break the autopilot cycle.
+You set a daily budget per app. Nothing happens when you open the app. As you near your limit, Refocus nudges you. It is less intrusive day to day, and it relies on you acting on the reminder.
 
-Everything runs on your device and works offline. No account, no internet required.
+## How does Respite work?
 
-### Refocus: Budget Your Time, Get Nudged at Limits
+Respite puts a short, gentle pause before the apps (and on Chrome, the websites) you pick, so you open them on purpose. You can always continue. It also tracks usage, keeps streaks, and has daily limits and timers, so you can use time budgets too. On iPhone it is built on Apple's Screen Time API and adds an app lock that refreshes at midnight. No ads.
 
-Refocus takes a time-management approach. You set daily time budgets for specific apps — say, 30 minutes for social media, 20 minutes for news. Refocus tracks your usage throughout the day and sends gentle reminders when you're approaching your limit.
+## Is Refocus free? Pricing compared
 
-The first time you open an app, nothing happens. You use it freely. The intervention comes later, when cumulative usage approaches the boundary you set. This approach is less intrusive during normal use but relies on you responding to the nudge when it arrives.
+Refocus has a useful free tier with paid extras. Respite is free, and Respite Plus is optional for sync across devices, more schedules, longer focus sessions and richer insights.
 
-Refocus works on both iOS and Android.
+## Where Refocus wins
 
-## Where They Differ
+- A time-budget approach is less intrusive than a pause on every open.
+- It is built around the "lost an hour" problem, which a pause does not address directly.
+- A useful free tier on both iOS and Android.
 
-### When the Intervention Happens
+## What about privacy?
 
-This is the core difference. Respite intervenes proactively — before every app launch, before any scrolling begins. Refocus intervenes reactively — after you've already been using an app and hit a time threshold.
+Respite needs no account for core features, and your history stays on your device unless you sync. See [privacy-first screen time tracking](/blog/privacy-first-screen-time-tracking/) for what to check in any app.
 
-Why this matters: most people don't struggle with consciously deciding to spend 45 minutes on Instagram. They struggle with the unconscious app open — the reflex that happens dozens of times a day without any thought. By the time a time-budget reminder fires, you've already been scrolling.
+## What does each look like day to day?
 
-On the other hand, some users find that every-launch pauses become too frequent or that they habituate to them. If your main problem is genuinely spending too long in apps (rather than opening them too often), time budgets might address your actual issue more directly.
+Refocus feels like a budget. You open your apps freely until you near the limit, at which point you get a reminder. It is low friction most of the day, with one notable nudge at the end of the allowance.
 
-### Customization
+Respite feels like a hesitation at the start. Each chosen app opens after a short pause, and over a day you might have a dozen such moments. If you also set a daily limit or timer in Respite, you get the budget feel as well.
 
-Respite gives you deep control over your interventions. You write custom messages for each app, choose intervention types (questions, affirmations, breathing exercises), and adjust timing. You can evolve your prompts as your goals change.
+## How do I set up Respite?
 
-Refocus's customization centers on time budgets — how many minutes per app per day, and when to receive reminders. The interaction model is simpler but less personalized.
+1. Install Respite on iPhone or Android; add the Chrome extension if you also browse.
+2. Choose the apps you open on autopilot.
+3. Turn on the pause and grant the permissions requested. On iPhone this uses Apple's Screen Time API.
+4. Set a daily limit for the apps where duration is the problem; on iPhone the app lock refreshes at midnight.
+5. Review after a week and adjust.
 
-### Privacy
+No account is needed unless you want sync.
 
-Respite works offline and needs no account. Your usage history stays on your phone unless you sign in to sync it.
+## Who is each app for?
 
-Refocus requires an account and collects usage data for its time tracking features. This is standard for time-budget apps, but it means your screen time data exists on external servers.
+- **Someone who loses an hour inside a single app:** Refocus's budgets, or Respite's daily limits.
+- **Someone who opens the phone fifty times without a reason:** Respite's pause.
+- **A person who finds pauses annoying:** Refocus is quieter.
+- **Someone who also scrolls on a laptop:** Respite's Chrome extension.
 
-### Pricing
+## What are the honest trade-offs?
 
-Respite is completely free — every feature, no premium tier, no subscriptions.
+A budget lets you start every session on autopilot and corrects you late; a pause catches the start but can feel repetitive if you open apps a lot. Because Respite also supports daily limits, you can combine both ideas in one app. A budget-only tool may be simpler if you find any pause intrusive.
 
-Refocus offers a free tier with core features, with some advanced capabilities behind a premium subscription.
+## Switching from Refocus to Respite
 
-### Platform Support
+Rebuild your budgets as daily limits for the same apps, then add the pause only to the two or three apps where you open without thinking. Do not turn the pause on for everything on day one; you will tire of it quickly. For a wider view of tools, see [best digital wellbeing apps](/blog/best-digital-wellbeing-apps-2026/).
 
-Refocus covers both iOS and Android with one app. Respite covers iPhone ([App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)) and Android, and also offers a Chrome extension for managing website habits on desktop, something Refocus doesn't provide.
+## How long should I try each?
 
-## Feature Comparison
+Give each approach two weeks. For a budget app, note whether the reminders change what you do or you simply dismiss them. For a pause, note how often you close an app after it appears. Because Respite supports both pauses and daily limits, a sensible experiment is to start with the pause alone, then add a limit only if one app keeps eating time. Changing one thing at a time makes it much easier to see what actually helped.
 
-| Feature | Respite | Refocus |
-|---------|----------|---------|
-| **Approach** | Mindful pause before every launch | Time budget with limit reminders |
-| **When it intervenes** | Before every app open | When daily limit approached |
-| **Price** | Completely free | Freemium |
-| **Platforms** | iPhone, Android and Chrome | iOS + Android |
-| **Privacy** | Works offline, no account | Account required |
-| **Custom messages** | Yes — fully personalized | No — standard notifications |
-| **Usage tracking** | Yes — local only | Yes — cloud-based |
-| **Chrome extension** | Yes | No |
-| **Time budgets** | No | Yes — core feature |
+## Next step
 
-## Who Should Choose What
+Both are free to start. [Download Respite](/download/) and try it for two weeks. If you are weighing the pause idea, read [Respite vs One Sec](/blog/respite-vs-one-sec/) or [Respite vs ScreenZen](/blog/respite-vs-screenzen/).
 
-### Choose Respite if:
+## Related articles
 
-- Your main problem is opening apps without thinking — the unconscious reflex
-- You want every app launch to be a conscious decision
-- Privacy is important — you want offline operation without an account
-- You want customizable interventions that speak in your own voice
-- You need a Chrome extension for website habits too
-- You want everything free with no premium gates
-
-### Choose Refocus if:
-
-- Your main problem is spending too long in apps once you're in them
-- You prefer setting time budgets and getting nudged at your limits
-- You need iOS support right now
-- You find every-launch pauses too frequent or intrusive
-- You're comfortable with a freemium model and cloud-based tracking
-- A time-management approach fits your mental model better than a mindfulness approach
-
-## Different Problems, Different Tools
-
-The choice between Respite and Refocus often comes down to diagnosing your actual problem:
-
-**If you pick up your phone 80 times a day without thinking**, Respite addresses the root cause — the unconscious app launch. A time budget won't help because the problem isn't duration, it's frequency.
-
-**If you open apps deliberately but then lose track of time for hours**, Refocus addresses the root cause — losing awareness of passing time. An every-launch pause won't help much if you consciously choose to open the app each time.
-
-Many people have both problems. If you're unsure which is primary, try tracking your phone pickups for a day (most phones have this stat in settings). If the number is high (50+), frequency is likely your main issue and Respite is the better fit. If pickups are moderate but total screen time is very high, duration is the issue and Refocus might serve you better.
-
-[Download Respite for Android, iOS & Chrome](/download/)
-
-Questions or feedback? Reach out at support@liveintently.app.
-
----
-
-## Related Articles
-
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
-- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec/)
-- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen/)
-- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives/)
+- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time/)
+- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives/)
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
 
----
-
-*Disclaimer: This comparison is based on publicly available information as of February 2026. Features and pricing may change. We aim to provide balanced information to help you make the best choice for your needs.*
+*This comparison is based on publicly available information as of November 2026. Features and pricing may change. Corrections: support@liveintently.app*

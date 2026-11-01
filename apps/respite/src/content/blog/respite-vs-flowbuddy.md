@@ -1,143 +1,119 @@
 ---
-title: 'Respite vs FlowBuddy: Full-Featured Free vs Minimal Open-Source'
-description: 'Compare Respite and FlowBuddy, two free Android screen time apps. See how a full-featured mindful pause toolkit stacks up against a minimal open-source breathing pause app for reducing phone use.'
+title: 'Respite vs FlowBuddy (2026): Free Pause Apps for Android'
+description: 'Respite vs FlowBuddy compared: a full free pause-and-tracking app versus a minimal open-source breathing pause. See which suits you on Android.'
 pubDate: 2026-02-28
+updatedDate: 2026-11-01
 author: 'Respite Team'
+answer: 'Pick FlowBuddy if you are on Android and want the simplest possible free breathing pause, with open-source code you can inspect. Pick Respite if you also want usage tracking, limits, streaks and a Chrome extension, or if you use iPhone. Both are free to use and both add a moment of friction before a distracting app opens.'
+keyTakeaways:
+  - 'FlowBuddy is a free, open-source breathing pause for Android only.'
+  - 'Respite is free on iPhone, Android and Chrome, with an optional Plus for sync.'
+  - 'Respite adds usage tracking, limits and streaks; FlowBuddy deliberately has none.'
+  - 'FlowBuddy wins on transparency and minimalism, Respite on features and platforms.'
 section: 'App Comparisons'
 tags: ['respite', 'flowbuddy', 'free screen time app', 'app comparison', 'digital wellbeing', 'one sec alternative android']
 heroImage: '/blog-app-comparison.jpg'
 faq:
-  - question: "Which is better: Respite or FlowBuddy?"
-    answer: "Respite is the more capable app with customizable prompts, usage tracking, analytics, gamification, and a Chrome extension — all completely free. FlowBuddy is a minimal open-source app that provides only a breathing pause before app launches. Choose Respite if you want a full toolkit; choose FlowBuddy if you only want the simplest possible breathing pause."
-  - question: "Is FlowBuddy really open source?"
-    answer: "Yes, FlowBuddy is fully open-source with its code available on GitHub. This means anyone can inspect the code, verify privacy claims, and contribute. Respite is not open-source; it keeps your usage history on your phone, needs no account, and discloses its anonymous analytics in its privacy policy."
-  - question: "What features does FlowBuddy have?"
-    answer: "FlowBuddy is intentionally minimal. It provides a breathing pause animation before you open tracked apps — and that's essentially it. There's no usage tracking, no analytics, no custom messages, no gamification, and no browser extension. It does one thing simply."
-  - question: "Are both Respite and FlowBuddy free?"
-    answer: "Yes, both are completely free with no premium tiers or subscriptions. Respite offers a full feature set for free (custom prompts, analytics, tracking, Chrome extension, widgets). FlowBuddy is free and open-source with its minimal breathing pause feature."
-  - question: "Can I use Respite or FlowBuddy as a free One Sec alternative on Android?"
-    answer: "Yes, both work as free Android alternatives to One Sec. Respite is the closer equivalent — it matches or exceeds One Sec's feature set with custom prompts, tracking, and analytics, all for free. FlowBuddy offers only the breathing pause component without the broader feature set."
-  - question: "Does FlowBuddy work on iPhone or Chrome?"
-    answer: "No, FlowBuddy is Android-only with no iOS or browser version. Respite supports iPhone, Android and Chrome. If you need to manage screen time across devices, Respite covers more ground."
+  - question: 'Which is better: Respite or FlowBuddy?'
+    answer: 'FlowBuddy is better if you want only a breathing pause on Android, with open-source code. Respite is better if you want more: usage tracking, limits, streaks, and support for iPhone and Chrome. Both are free to use, so the cheapest test is to install each for a week and see which pause you actually notice.'
+  - question: 'Is FlowBuddy free?'
+    answer: 'Yes. FlowBuddy is a free, open-source app with no subscription. Respite is also free to use, with an optional Respite Plus upgrade for sync across devices and extras. Neither needs a payment to get the core pause.'
+  - question: 'Is there a free alternative to FlowBuddy?'
+    answer: 'Yes. Respite is a free alternative with more features, on iPhone, Android and Chrome. ScreenZen is another free option with timed delays. Our [One Sec alternatives guide](/blog/one-sec-alternatives/) compares them all.'
+  - question: 'Is FlowBuddy really open source?'
+    answer: 'Yes, its code is publicly available, so anyone can inspect what it does and contribute. Respite is not open source; instead, no account is needed for core features and your usage history stays on your device unless you turn on sync. Both routes can build trust in different ways.'
+  - question: 'Is there a free One Sec alternative for Android?'
+    answer: 'Yes, two. FlowBuddy offers the closest like-for-like breathing pause for free. Respite adds a pause plus tracking, limits and streaks, also free. See [Respite vs One Sec](/blog/respite-vs-one-sec/) for how the original compares.'
+  - question: 'Does FlowBuddy work on iPhone or Chrome?'
+    answer: 'FlowBuddy is built for Android. Respite is available on iPhone, Android and as a Chrome extension, which also covers distracting websites on your computer.'
 ---
 
-If you're looking for a free way to add a pause before opening apps on Android, you've probably come across both Respite and FlowBuddy. Both are free, both run on Android, and both create a moment of friction before you open distracting apps.
+If you want a free pause before distracting apps open on Android, you will find both Respite and FlowBuddy. They share a basic idea but sit at opposite ends of a spectrum. FlowBuddy does one thing. Respite does that thing and wraps tools around it.
 
-But that's where the similarities end. Respite is a full-featured mindful screen time toolkit. FlowBuddy is a minimal, open-source app that does exactly one thing: show a breathing animation before an app opens.
+## Respite vs FlowBuddy at a glance
 
-## Quick Verdict
+| | Respite | FlowBuddy |
+|---|---|---|
+| Platforms | iPhone, Android, Chrome | Android |
+| Price model | Free; optional Plus for sync and extras | Free, open source |
+| Approach | A short, gentle pause before chosen apps and sites | A breathing pause before chosen apps |
+| Account | Optional; sign in only for sync | No account |
+| Privacy | Usage history stays on your device unless you sync | Open source, minimal by design |
+| Tracking | Usage history, limits, timers, streaks | None |
+| Best for | A fuller free toolkit | The simplest possible pause |
 
-Respite offers customizable prompts, usage tracking, detailed analytics, gamification, and a Chrome extension — all completely free. FlowBuddy is an open-source app that provides a simple breathing pause and nothing else. Both are free and privacy-respecting, but Respite gives you significantly more tools to actually change your habits.
+## Which should you pick?
 
-**Bottom line:** If you want a comprehensive free alternative to One Sec on Android, Respite is the better match. If you want the absolute simplest possible breathing pause with open-source transparency, FlowBuddy fills that niche.
+**Choose FlowBuddy if** you only want a breathing pause on Android, you value being able to read the code, and you do not need stats.
 
-## What Each App Offers
+**Choose Respite if** you want to see how your habits change, you use iPhone or Chrome too, or you like streaks and limits for motivation.
 
-### Respite: A Complete Toolkit
+## How does FlowBuddy work?
 
-Respite intercepts app launches with fully customizable interventions. You write your own messages — questions, reminders, affirmations, breathing prompts — and can set different interventions for different apps. A pointed question for Instagram, a breathing exercise for Reddit, a goal reminder for YouTube.
+When you open a tracked app, FlowBuddy shows a breathing animation, and then the app opens. That is the whole product, on purpose. It is community-built, so updates follow contributors rather than a fixed schedule.
 
-Beyond the pause itself, Respite includes:
+## How does Respite work?
 
-- **Usage tracking** with daily, weekly, and monthly breakdowns
-- **Analytics** showing how often you proceed vs. turn back
-- **Gamification** with streaks and milestones to maintain motivation
-- **Home screen widgets** for quick stats
-- **Chrome extension** for managing website habits on desktop
-- **Works offline** — no account needed
+Respite puts a short, gentle pause before the apps (and on Chrome, the websites) you pick, so you open them on purpose. You can always continue. It also tracks usage, keeps streaks, and has daily limits and timers. On iPhone it is built on Apple's Screen Time API. No ads, and a light game layer with a mascot called Biscuit.
 
-Everything is free. No premium tier, no feature gates, no subscriptions.
+## Is FlowBuddy free? Pricing compared
 
-### FlowBuddy: One Feature, Done Simply
+Both are free to use. FlowBuddy has no paid tier. Respite has an optional Respite Plus for sync across devices, more schedules, longer focus sessions and richer insights.
 
-FlowBuddy takes a radically different approach: do one thing and do it simply. When you open a tracked app, FlowBuddy shows a breathing animation. You breathe through it, and the app opens.
+## Where FlowBuddy wins
 
-That's it. No custom messages, no usage tracking, no analytics, no gamification, no browser extension. FlowBuddy is open-source, meaning its code is publicly available for anyone to inspect. For users who value code transparency above all else, this matters.
+- Fully open source, so anyone can verify what it does.
+- Minimal by design: nothing to configure, nothing to learn.
+- No account and no stats, which is as light as a pause app gets.
+- A direct, free, Android-only analogue of One Sec's breathing pause.
 
-The app is lightweight and does exactly what it promises — nothing more, nothing less.
+## What about privacy?
 
-## Where They Differ
+FlowBuddy earns trust through open code. Respite earns it by needing no account for core features and keeping your usage history on your device unless you turn on sync. See [privacy-first screen time tracking](/blog/privacy-first-screen-time-tracking/) and [free screen time apps for Android](/blog/free-screen-time-app-android/).
 
-### Feature Depth
+## What does each look like day to day?
 
-This is the fundamental difference. Respite gives you tools to understand and change your habits over time: tracking shows you patterns, analytics measure progress, gamification maintains motivation, and custom messages keep interventions fresh.
+FlowBuddy is a speed bump and nothing more. You tap a chosen app, you see a breathing animation, you proceed. There is no dashboard to check and nothing to tweak, which is its charm.
 
-FlowBuddy gives you the pause and leaves the rest to you. There's no data to review, no progress to track, no messages to customize. If the breathing pause alone is enough to change your behavior, FlowBuddy's simplicity is appealing. If you need more support, you'll find yourself wanting what Respite offers.
+Respite is the same speed bump with a bit of life around it. You get a short pause, and you can also see your usage history, build a streak, and set a daily limit if one app keeps winning. If you do not want any of that, you can simply ignore it.
 
-### Customization
+## How do I set up Respite?
 
-Respite lets you write personalized intervention messages, set different prompts for different apps, adjust pause durations, and choose intervention types. The experience evolves with your goals.
+1. Install Respite on Android (or iPhone, or add the Chrome extension).
+2. Pick the apps you open without thinking.
+3. Turn on the pause, granting the permissions the app asks for.
+4. Optionally set a daily limit or timer.
+5. Check your history after a week.
 
-FlowBuddy offers the same breathing animation for every app. You can't customize what you see or tailor the experience. For some users, this consistency is a feature — there's nothing to configure. For others, a generic animation becomes easy to ignore after a few weeks.
+No account is needed; sign in only for sync.
 
-### Open Source vs Offline Privacy
+## Who is each app for?
 
-FlowBuddy's biggest differentiator is being open-source. Anyone can read the code and verify exactly what it does. This is meaningful for users who want maximum transparency.
+- **A privacy-minded Android user who reads source code:** FlowBuddy.
+- **Someone who wants to see their numbers fall:** Respite.
+- **A person who also uses an iPhone or Chrome:** Respite, because FlowBuddy is Android only.
+- **A tinkerer who might contribute:** FlowBuddy, since it is community-built and open.
 
-Respite isn't open-source, but it takes privacy seriously in a different way: it works offline, needs no account, and keeps your usage history on your phone unless you sign in to sync. It sends anonymous analytics and crash reports, and the privacy policy says exactly what.
+## What are the honest trade-offs?
 
-Both approaches achieve real privacy, just through different mechanisms.
+FlowBuddy has fewer moving parts and nothing to break, but updates depend on volunteers, and with no stats you cannot tell whether it is working. Respite gives you evidence and more platforms, at the cost of being a larger app with more to look at. The pause itself is of the same kind in both, so the real choice is about what surrounds it. See [free screen time apps for Android](/blog/free-screen-time-app-android/) for a wider look.
 
-### Platform Coverage
+## Switching from FlowBuddy to Respite
 
-Both work on Android. Only Respite also offers a Chrome extension for managing distracting websites on desktop. FlowBuddy has no browser component and no iOS version. Respite is also on iPhone ([App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)).
+Move apps across one at a time rather than all at once. Keep FlowBuddy on a couple of apps while you try Respite on the others, then compare how each pause feels. Do not keep both on the same app for long, since a double pause quickly becomes irritating.
 
-## Feature Comparison
+## How long should I try each?
 
-| Feature | Respite | FlowBuddy |
-|---------|----------|-----------|
-| **Price** | Completely free | Completely free |
-| **Open source** | No | Yes |
-| **Custom messages** | Yes — fully personalized | No — breathing animation only |
-| **Usage tracking** | Yes — detailed local analytics | No |
-| **Gamification** | Yes — streaks and milestones | No |
-| **Chrome extension** | Yes | No |
-| **Widgets** | Yes | No |
-| **Privacy** | Works offline, no account, optional sync | Open-source, minimal data |
-| **Platforms** | iPhone, Android and Chrome | Android only |
-| **Intervention types** | Multiple (prompts, breathing, goals) | Breathing animation only |
+Two weeks is a fair trial for either app. Put the pause on three apps, leave everything else alone, and notice how often you close an app after the pause. FlowBuddy will not count this for you, so jot down a rough tally; Respite's history does it automatically. If after two weeks you are still tapping through every time, the problem may be the choice of apps or the habit's strength, not the tool. Try swapping which apps carry the pause before you give up on the idea.
 
-## Who Should Choose What
+## Next step
 
-### Choose Respite if:
+Both cost nothing, so try one for two weeks. [Download Respite](/download/) if you want tracking and iPhone or Chrome coverage, and compare with [Respite vs ScreenZen](/blog/respite-vs-screenzen/) if you want another free option.
 
-- You want a free app that offers more than just a pause
-- Usage tracking and analytics matter for understanding your habits
-- You want to write personalized messages that evolve with your goals
-- You need a Chrome extension for website habits too
-- You want gamification features to stay motivated
-- You're looking for a comprehensive free One Sec alternative on Android
+## Related articles
 
-### Choose FlowBuddy if:
+- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives/)
+- [Free Screen Time Apps for Android](/blog/free-screen-time-app-android/)
+- [Mindful Interventions vs Blocking](/blog/mindful-tech-interventions-vs-blocking/)
 
-- You want the absolute simplest possible intervention — just a breathing pause
-- Open-source code transparency is your top priority
-- You don't need tracking, analytics, or customization
-- You prefer a minimal app with no configuration required
-- A breathing animation alone is enough to change your app-opening behavior
-
-## The Bigger Picture
-
-Respite and FlowBuddy represent two ends of a spectrum. Respite asks: "What tools do you need to build lasting habits?" FlowBuddy asks: "What's the minimum intervention that might work?"
-
-Both questions are valid. Some people thrive with data, customization, and progress tracking. Others just need a simple speed bump before opening apps and prefer not to think about it further.
-
-The good news is that both are free, so trying each one costs nothing but a few minutes. Start with whichever approach appeals to you, give it two weeks, and see whether the intervention is still working or whether you've started to tune it out.
-
-[Download Respite for Android, iOS & Chrome](/download/)
-
-Questions or feedback? Reach out at support@liveintently.app.
-
----
-
-## Related Articles
-
-- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives/)
-- [Free Screen Time Apps for Android: Privacy-First Options](/blog/free-screen-time-app-android/)
-- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen/)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
-- [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking/)
-
----
-
-*Disclaimer: This comparison is based on publicly available information as of February 2026. Features and pricing may change. We aim to provide balanced information to help you make the best choice for your needs.*
+*This comparison is based on publicly available information as of November 2026. Features may change. Corrections: support@liveintently.app*

@@ -49,15 +49,15 @@ With those criteria in mind, here are the best options.
 **Privacy:** No account needed, history stays on your device unless you turn on sync
 **Platforms:** Android, iPhone and Chrome
 
-Respite takes a mindful approach to screen time. Instead of blocking apps or setting rigid time limits, it creates a brief pause before you open tracked apps. You see a full-screen message — one you've written yourself — that gives you a moment to decide consciously whether to proceed.
+Respite takes a mindful approach to screen time. Instead of blocking apps or setting rigid time limits, it creates a brief pause before you open tracked apps. You see a short, gentle pause that gives you a moment to decide consciously whether to proceed.
 
 ### What makes it stand out:
 
-- **Custom interventions** — Write your own pause messages for each app. A pointed question for Instagram, a breathing exercise for Reddit, a goal reminder for YouTube.
+- **Per-app pauses** — Choose which apps (and, on Chrome, which sites) get the pause, and set optional daily limits and timers.
 - **Strong privacy** — No account needed, and your usage history stays on your device unless you turn on sync.
 - **Usage analytics** — Daily, weekly, and monthly breakdowns stored entirely on your device. See how often you proceed vs. turn back.
 - **Gamification** — Streaks and milestones keep you motivated over time.
-- **Chrome extension** — Manage distracting websites on desktop too. Same mindful pause, same custom messages.
+- **Chrome extension** — Manage distracting websites on desktop too. Same mindful pause.
 - **Widgets** — Home screen widgets for quick stats without opening the app.
 
 The pause, tracking, streaks and Chrome extension are free. An optional Plus upgrade adds sync across devices and extras such as more schedules and longer focus sessions.
@@ -165,12 +165,11 @@ ActionDash extends the built-in Digital Wellbeing experience with more detailed 
 | Feature | Respite | Digital Wellbeing | StayFree | FlowBuddy | ActionDash |
 |---------|----------|-------------------|----------|-----------|------------|
 | **Price** | Free (optional Plus) | Free (built-in) | Freemium | Free | Freemium |
-| **Mindful pauses** | Yes — custom | No | No | Yes — breathing | No |
+| **Mindful pauses** | Yes | No | No | Yes — breathing | No |
 | **Usage tracking** | Yes — detailed | Basic | Yes — detailed | No | Yes — detailed |
 | **Privacy** | Stays on device unless you sync | Google-tied | Moderate | Open-source | Moderate |
 | **Account required** | Optional (sync only) | Google account | Optional | No | Optional |
 | **Chrome extension** | Yes | No | Yes | No | No |
-| **Custom messages** | Yes | No | No | No | No |
 | **Gamification** | Yes | No | No | No | No |
 | **App blocking** | No — mindful approach | Time limits | Alerts only | No | No |
 

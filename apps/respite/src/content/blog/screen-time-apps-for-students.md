@@ -53,7 +53,7 @@ Free (optional Plus for sync) | iPhone, Android, Chrome
 
 Respite takes a different approach from most screen time tools. Instead of locking you out of apps, it creates a brief mindful pause every time you open a distracting one. You'll see a prompt like: "You wanted to study right now. Do you still want to open Instagram?" You can always tap through and open the app -- but that three-second pause is surprisingly effective at breaking the autopilot loop.
 
-What makes it stand out for students is that it runs all day in the background with zero effort on your part. You don't need to remember to start a session or set a timer. It just catches you in the moment. It's also free with no ads, no account needed (sign in only if you want sync), and your usage history stays on your device unless you turn sync on. You can customize the prompts too (some students set theirs to "Finals are in 2 weeks. Is this what you want to do?"). The Chrome extension covers laptop browsing, which is clutch for those late-night Wikipedia rabbit holes.
+What makes it stand out for students is that it runs all day in the background with zero effort on your part. You don't need to remember to start a session or set a timer. It just catches you in the moment. It's also free with no ads, no account needed (sign in only if you want sync), and your usage history stays on your device unless you turn sync on. The Chrome extension covers laptop browsing, which is clutch for those late-night Wikipedia rabbit holes.
 
 On iPhone, [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) is built on Apple's Screen Time API. See [Respite vs Forest](/blog/respite-vs-forest/) for how the two compare.
 
@@ -73,7 +73,7 @@ Free | iOS, Android
 
 If you want a free, no-fuss pause on iOS or Android, ScreenZen is worth a look. It works similarly to Respite -- adding a delay before distracting apps open -- but takes a plain countdown approach. Setup is straightforward and the core features are free.
 
-The trade-off is that it's less customizable and tracks less, but it gets the job done. If you want to compare, see our [ScreenZen alternatives](/blog/screenzen-alternatives/).
+The trade-off is that it tracks less, but it gets the job done. If you want to compare, see our [ScreenZen alternatives](/blog/screenzen-alternatives/).
 
 ### 4. Freedom -- When You Need to Lock Things Down
 

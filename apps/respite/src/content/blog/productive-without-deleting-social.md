@@ -138,8 +138,8 @@ Presence isn't just about being a better friend or partner (though it helps). It
 
 Respite helps keep social media in its place during work:
 
-- Mindful prompts before each social media open
-- Custom messages you write yourself
+- A mindful pause before each social media open
+- Daily limits and timers
 - Usage tracking to spot patterns
 - Works on Android, iOS, and Chrome
 

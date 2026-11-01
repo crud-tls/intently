@@ -138,7 +138,7 @@ If the built-in tools aren't enough, these apps add stronger friction:
 
 - **Freedom:** Schedule recurring morning sessions that block distracting apps and websites across your phone and laptop simultaneously. The "Locked Mode" prevents you from turning it off once it starts.
 - **ScreenZen:** Adds a countdown delay before any distracting app opens. During groggy morning hours, even a 10-second wait is enough to make you reconsider.
-- **Respite:** Creates a mindful pause with a custom message before apps open. Set a morning-specific prompt like "You wanted to wait until 8 AM. Is this the morning you promised yourself?"
+- **Respite:** Adds a short, gentle pause before the apps you pick open, so you reach for them on purpose rather than out of habit.
 
 ### The First 30-60 Minutes Rule
 

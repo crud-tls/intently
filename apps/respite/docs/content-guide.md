@@ -17,6 +17,8 @@ into installs (conversion). Never trade truth for any of them.
   e.g. "no account needed (sign in only if you want sync)". Never say "works fully offline forever" or
   "never collects any data". Say "usage history stays on your device unless you turn on sync".
 - No ads.
+- You **cannot** write your own pause messages or customize prompts per app. Don't promise custom
+  messages, custom prompts or per-app prompt text.
 - A game layer (acorns, streak freezes, the mascot Biscuit) exists in newer versions. Mention it lightly at
   most; don't promise leagues, friends or social features.
 - Former names: Intently, Pawse. Don't use them in new copy, except "formerly Intently" when a post
@@ -45,6 +47,10 @@ alternatives post says honestly where the competitor is better.
 - Quote YAML strings with single quotes and double any single quote inside ('One Sec''s').
 
 ## Body
+
+- Keep depth. A refresh must not shrink a post: aim for 1,000–1,500 words for comparison and how-to
+  posts. Replace removed filler or invented claims with real substance (who it suits, setup steps,
+  day-to-day scenarios, trade-offs), never with new numbers.
 
 - No `# ` H1 in the body; the layout renders the title.
 - Open with 2–4 sentences that speak to the reader's situation; don't restate the Quick answer.

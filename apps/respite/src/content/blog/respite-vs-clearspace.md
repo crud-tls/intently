@@ -1,144 +1,122 @@
 ---
-title: 'Respite vs Clearspace: Free Mindful Pause vs Physical Exercise Unlock'
-description: 'Detailed comparison of Respite and Clearspace screen time apps. Compare mindful pause prompts vs physical exercise verification, pricing, platform support, and privacy to find the right approach for your digital wellbeing.'
+title: 'Respite vs ClearSpace (2026): Pause or Push-Ups?'
+description: 'Respite vs ClearSpace compared: a free mindful pause versus an iPhone app that makes you exercise to unlock apps. See price, privacy and who fits which.'
 pubDate: 2026-02-28
+updatedDate: 2026-11-01
 author: 'Respite Team'
+answer: 'Pick ClearSpace if you are on iPhone and want friction that is stronger than a pause, such as exercises or other tasks before an app opens; some features are paid. Pick Respite if you want a free, gentler pause before the apps you choose that works anywhere, on iPhone, Android and Chrome. Respite asks you to think; ClearSpace asks for effort.'
+keyTakeaways:
+  - 'ClearSpace is an iPhone app; Respite runs on iPhone, Android and Chrome.'
+  - 'ClearSpace is freemium; Respite is free, with an optional Plus for sync.'
+  - 'ClearSpace adds physical or task-based friction; Respite adds a short pause and you can always continue.'
+  - 'A pause works in any setting, including meetings, transit and bed.'
 section: 'App Comparisons'
 tags: ['respite', 'clearspace', 'screen time app', 'app comparison', 'digital wellbeing', 'clearspace alternatives']
 heroImage: '/blog-app-comparison.jpg'
 faq:
-  - question: "Which is better: Respite or Clearspace?"
-    answer: "It depends on your style. Respite is better if you want a free, customizable mindful pause that works on iPhone, Android and Chrome with strong privacy. Clearspace is better if you're on iOS and respond well to physical exercise as friction — doing pushups or squats before opening apps. Respite is completely free; Clearspace uses a freemium model."
-  - question: "Is Clearspace worth paying for?"
-    answer: "Clearspace's free tier offers basic exercise-based unlocks, but advanced features require a subscription. Whether it's worth it depends on whether physical exercise friction genuinely changes your behavior. Many users find the novelty wears off, especially in situations where exercise isn't practical. Respite offers all features completely free with no premium tier."
-  - question: "How does Clearspace exercise verification work?"
-    answer: "Clearspace uses your phone's camera and motion sensors to verify that you've completed a physical exercise (like pushups or squats) before unlocking an app. The idea is that physical effort creates meaningful friction. However, this requires camera access and can be impractical in public places, meetings, or quiet environments."
-  - question: "Which app is more private: Respite or Clearspace?"
-    answer: "Respite is more private. It works offline with no account; your usage history stays on your phone unless you sign in to sync. Clearspace requires an account, uses camera access for exercise verification, and collects usage data. If privacy is a priority, Respite is the clear choice."
-  - question: "Can I use both Respite and Clearspace together?"
-    answer: "In theory yes, but they serve the same purpose through different mechanisms, so using both would create double friction on every app open. A better approach is to try each one separately for a week or two and see which intervention style — mindful prompts or physical exercise — resonates more with your habits."
-  - question: "Does physical exercise friction actually reduce screen time?"
-    answer: "Physical exercise friction can work well initially because it adds real effort to opening apps. However, many users report that the approach becomes impractical in everyday situations — you can't do pushups in a meeting, on public transit, or while lying in bed. Mindful pause approaches like Respite work in any context because they only require a moment of reflection."
+  - question: 'Which is better: Respite or ClearSpace?'
+    answer: 'It depends on your style. ClearSpace is better if you are on iPhone and want stronger, effort-based friction before apps open. Respite is better if you want a free, gentle pause that works in any setting and across iPhone, Android and Chrome. If you are unsure, start with the free one and see whether a pause is enough.'
+  - question: 'Is ClearSpace free?'
+    answer: 'ClearSpace is freemium: it offers a free tier, with some features behind a paid plan. Check the App Store for current details. Respite is free to use, with an optional Respite Plus upgrade that adds sync across devices and extras.'
+  - question: 'Is there a free alternative to ClearSpace?'
+    answer: 'Yes. Respite is free and puts a pause before the apps you choose on iPhone, Android and Chrome. It also tracks usage and keeps streaks. For more options, see our [One Sec alternatives](/blog/one-sec-alternatives/), which include ClearSpace and other pause apps.'
+  - question: 'Is ClearSpace available on Android?'
+    answer: 'ClearSpace is an iPhone app, so Android users need another option. Respite is available on Android, iPhone and as a Chrome extension, which also covers distracting websites on your computer.'
+  - question: 'Which is more private: Respite or ClearSpace?'
+    answer: 'Respite needs no account for core features, and your usage history stays on your device unless you turn on sync. ClearSpace has its own account and data practices, so read its privacy policy; features that use the camera or motion sensors deserve a closer look.'
+  - question: 'Does friction like exercise actually reduce screen time?'
+    answer: 'Extra effort can work, especially at first, but it has to fit your day: you may not be able to do an exercise in a meeting or on a train. A short pause fits every setting. See [mindful interventions vs blocking](/blog/mindful-tech-interventions-vs-blocking/) for how different kinds of friction compare.'
 ---
 
-Respite and Clearspace both want to help you use your phone more intentionally, but they take radically different approaches. Respite shows you a customizable mindful pause before opening apps — a moment to reflect and decide consciously. Clearspace makes you do physical exercises like pushups or squats before an app unlocks.
+Respite and ClearSpace both put friction between you and a distracting app, but they choose different kinds. Respite adds a short pause so you can decide on purpose. ClearSpace asks you to do something first. One asks you to think; the other asks for effort.
 
-Same goal, very different philosophies. One asks you to think. The other asks you to sweat.
+## Respite vs ClearSpace at a glance
 
-## Quick Verdict
+| | Respite | ClearSpace |
+|---|---|---|
+| Platforms | iPhone, Android, Chrome | iPhone |
+| Price model | Free; optional Plus for sync and extras | Freemium |
+| Approach | A short, gentle pause before chosen apps and sites | Effort-based friction before apps open |
+| Account | Optional; sign in only for sync | See ClearSpace's setup |
+| Privacy | Usage history stays on your device unless you sync | See its policy |
+| Works anywhere | Yes; the pause takes a moment | Depends on the task |
+| Best for | Free, flexible pause plus tracking | iPhone users who want stronger friction |
 
-Respite is a free mindful pause app for iPhone, Android and Chrome ([App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)). Clearspace is a freemium iOS app that requires physical exercise (verified by camera) to unlock apps. Choose Respite if you want customizable prompts, strong privacy, and an app that works anywhere. Choose Clearspace if you're on iOS and find physical effort more motivating than reflection.
+## Which should you pick?
 
-**Bottom line:** Respite works in every context — at your desk, in bed, on the bus. Clearspace's exercise requirement is powerful when practical but becomes a barrier in situations where pushups aren't an option.
+**Choose ClearSpace if** you are on iPhone, you have found pauses too easy to dismiss, and you like friction that takes real effort.
 
-## How Each App Works
+**Choose Respite if** you want to pay nothing, you use Android or Chrome as well, or you need something that works in meetings, on the bus or in bed.
 
-### Respite: A Moment of Awareness
+## How does ClearSpace work?
 
-When you open a tracked app, Respite displays a full-screen intervention with a message you've written yourself. It might be a question ("Do you really need to check this right now?"), a reminder of your goals, or a breathing exercise. You pause, reflect, and then choose whether to proceed.
+ClearSpace intercepts the apps you flag on iPhone and asks for something before they open, with a visual pause and calming prompts. Some of its features are paid. It is polished, and the extra effort suits people who find a bare pause too easy to wave through.
 
-The intervention takes a few seconds. You always have the choice to continue into the app. The point is making each app launch a conscious decision rather than an unconscious habit.
+## How does Respite work?
 
-Everything happens on your device. No account, no internet connection needed. You customize what you see, when you see it, and for how long.
+Respite puts a short, gentle pause before the apps (and on Chrome, the websites) you pick, so you open them on purpose. You can always continue. It also tracks usage, keeps streaks, and has daily limits and timers. On iPhone it is built on Apple's Screen Time API and adds an app lock that refreshes at midnight. No ads.
 
-### Clearspace: Physical Effort as Friction
+## Is ClearSpace free? Pricing compared
 
-Clearspace intercepts app launches and requires you to complete a physical exercise — typically pushups, squats, or jumping jacks — before the app opens. Your phone's camera and motion sensors verify that you've actually done the exercise.
+ClearSpace is freemium, so the basics are free and more is paid. Respite is free, and Respite Plus is optional for sync across devices, more schedules, longer focus sessions and richer insights.
 
-The idea is that requiring physical effort makes mindless scrolling feel costly. If you have to do 10 pushups before opening Instagram, you'll think twice about whether you really want to scroll.
+## Where ClearSpace wins
 
-It's a creative approach. The friction is real and tangible in a way that a screen prompt isn't.
+- Stronger friction than a pause, which some people need.
+- A polished, design-led iPhone experience.
+- Effort-based unlocks can feel more tangible than a message.
 
-## Where They Differ
+## What about privacy?
 
-### Practicality
+Respite needs no account for core features, and your history stays on your device unless you sync. See [privacy-first screen time tracking](/blog/privacy-first-screen-time-tracking/) for what to check in any screen time app.
 
-This is the most important difference in daily use. Respite's mindful pause works everywhere — in a meeting, on public transit, in bed at night, at your desk. It takes a few seconds and requires nothing but a moment of attention.
+## Does the kind of friction matter?
 
-Clearspace's exercise requirement doesn't always fit the context. You probably can't do pushups in a quiet office, on a crowded train, or while lying in bed at midnight. In these situations, the exercise requirement becomes an obstacle to using the app at all, which either means you skip the exercise check (defeating the purpose) or you avoid using your phone entirely (which isn't always realistic).
+Yes, mostly in whether it fits your day. Effort that is fine at home can be impossible in public; a pause works everywhere, though it is easier to dismiss. If you find yourself tuning out, compare it with a harder lock in [Respite vs Opal](/blog/respite-vs-opal/) or read [do app blockers work?](/blog/do-app-blockers-work/).
 
-Many Clearspace users report that the exercise approach works great during certain parts of the day but falls apart in others. The intervention needs to work consistently to build lasting habits.
+## What does each look like day to day?
 
-### Privacy
+With ClearSpace, opening a flagged app means going through its friction first. That can be a satisfying ritual when you are at home and feel like a small effort, and an irritation when you are somewhere awkward.
 
-Respite works offline — no account creation, no internet connection required. Your usage patterns, your custom messages, your statistics all stay on your phone unless you sign in to sync.
+With Respite, opening a chosen app means a short pause. It takes seconds and works in any setting, whether you are on a train, in a meeting break or in bed. Afterwards you either continue or close it.
 
-Clearspace requires an account and uses your phone's camera to verify exercises. This means camera permissions, motion data, and usage information are processed by the app. For users who are privacy-conscious, this is a meaningful difference.
+## How do I set up Respite?
 
-### Pricing
+1. Install Respite on your iPhone (or Android, or add the Chrome extension).
+2. Pick the apps you reach for without thinking.
+3. Turn on the pause and grant the permissions requested. On iPhone this uses Apple's Screen Time API.
+4. Optionally set a daily limit; the iPhone app lock refreshes at midnight.
+5. Review your usage history after a week.
 
-Respite is completely free. Every feature — custom prompts, usage tracking, analytics, Chrome extension, widgets — is available at no cost with no premium tier.
+No account is needed unless you want sync.
 
-Clearspace uses a freemium model. Basic exercise unlocks are free, but advanced features like detailed analytics, custom exercise requirements, and extended tracking require a paid subscription.
+## Who is each app for?
 
-### Platform Support
+- **An iPhone user at home most evenings** who wants a stronger barrier: ClearSpace is worth a try.
+- **Someone who travels or works in shared spaces:** a quiet pause fits better.
+- **A person on Android:** ClearSpace is not an option, so Respite or another pause app is.
+- **Someone who also scrolls on a laptop:** Respite's Chrome extension is the only one of the two that covers it.
 
-Respite covers iPhone ([App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)), Android and Chrome. Clearspace is iOS-only.
+## What are the honest trade-offs?
 
-If you're on Android, Clearspace isn't available to you. If you use Chrome on desktop, Respite's browser extension covers website habits that Clearspace doesn't address at all.
+Stronger friction can change behaviour more, but only if it fits your day. Gentle friction fits everywhere, but it is easier to dismiss. If you find yourself tapping through a pause automatically, change which apps carry it or move toward something firmer. Our post on [the science of friction](/blog/science-of-friction/) explains why friction works at all.
 
-### Customization
+## Switching from ClearSpace to Respite
 
-Respite lets you write different messages for different apps, adjust pause durations, choose between prompts, breathing exercises, and affirmations — the experience adapts to your goals.
+Trying Respite for a week alongside ClearSpace is fine if you put them on different apps. If you decide to move over, recreate your list of apps in Respite and add a daily limit on your worst one, since that fills the role the extra effort played. Remember that either approach needs a few weeks to judge fairly.
 
-Clearspace's customization is more limited. You can choose which exercises to do and how many repetitions, but the core mechanic is always physical exercise verification.
+## How long should I try each?
 
-## Feature Comparison
+Give whichever you choose at least two weeks before judging. The first few days are a novelty; the useful signal is week two or three, when you see whether you still notice the friction or have started to dodge it. Keep a simple note of how many times a day you reach for your top app, and compare it at the end. If the number has barely moved, change something: fewer apps, a daily limit, or a different style of friction. Neither approach is a verdict on your willpower; both are experiments in redesigning your phone.
 
-| Feature | Respite | Clearspace |
-|---------|----------|------------|
-| **Approach** | Mindful pause prompts | Physical exercise unlock |
-| **Price** | Completely free | Freemium |
-| **Platforms** | iPhone, Android and Chrome | iOS only |
-| **Privacy** | Works offline, no account | Account required, camera access |
-| **Works anywhere** | Yes — any context | No — requires space for exercise |
-| **Custom messages** | Yes — fully personalized | No |
-| **Usage tracking** | Yes — local only | Yes — cloud-based |
-| **Camera required** | No | Yes — for exercise verification |
-| **Chrome extension** | Yes | No |
+## Next step
 
-## Who Should Choose What
+[Download Respite](/download/) free and use it for a couple of weeks. Then you will know whether a pause is enough or you need something firmer.
 
-### Choose Respite if:
+## Related articles
 
-- You want a free app with no limitations or premium tiers
-- Privacy matters — you want an app that works offline without an account
-- You need an intervention that works in any context (meetings, transit, bed)
-- You're on Android or want to manage website habits through Chrome
-- You prefer customizable prompts that you can evolve over time
-- You want detailed analytics stored entirely on your device
+- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives/)
+- [Respite vs One Sec](/blog/respite-vs-one-sec/)
+- [Respite vs ScreenZen](/blog/respite-vs-screenzen/)
 
-### Choose Clearspace if:
-
-- You're on iOS and need an app available today
-- Physical effort is genuinely more motivating for you than reflection
-- You primarily use your phone at home or in contexts where exercise is practical
-- You don't mind the freemium model and may want premium features later
-- You've tried mindful prompts before and found they didn't create enough friction
-- Camera permissions and account creation aren't concerns for you
-
-## The Bigger Picture
-
-Both Respite and Clearspace represent a move away from hard blocking toward approaches that give you a choice — just with different types of friction. Respite creates cognitive friction (a moment of reflection), while Clearspace creates physical friction (exercise before access).
-
-The question is which type of friction stays effective over time and works in your actual life. Mindful pauses work anywhere and can be refreshed by changing your messages. Physical exercise creates strong initial friction but can become impractical or start to feel like a chore.
-
-The best approach is the one you'll actually stick with. If you're unsure, try one for two weeks and pay attention to whether the friction is still making you think — or whether you've started to tune it out.
-
-[Download Respite for Android, iOS & Chrome](/download/)
-
-Questions or feedback? Reach out at support@liveintently.app.
-
----
-
-## Related Articles
-
-- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives/)
-- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec/)
-- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen/)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
-
----
-
-*Disclaimer: This comparison is based on publicly available information as of February 2026. Features and pricing may change. We aim to provide balanced information to help you make the best choice for your needs.*
+*This comparison is based on publicly available information as of November 2026. Features and pricing may change. Corrections: support@liveintently.app*

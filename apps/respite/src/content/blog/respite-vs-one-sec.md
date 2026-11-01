@@ -1,134 +1,127 @@
 ---
-title: 'Respite vs One Sec: Mindful Pause Comparison (2026)'
-description: 'Comprehensive comparison of Respite and One Sec screen time apps. Compare features, pricing, privacy, scientific backing, and user reviews to find the best mindful intervention app for your needs.'
+title: 'Respite vs One Sec (2026): Which Pause App Is Right for You?'
+description: 'Respite vs One Sec compared: price, platforms, privacy and approach. Find out which mindful pause app fits you, and where One Sec still wins.'
 pubDate: 2026-02-01
-updatedDate: 2026-02-26
+updatedDate: 2026-11-01
 author: 'Respite Team'
+answer: 'Pick One Sec if you want a research-backed breathing exercise and are happy to pay for it (a Max Planck study found 57% fewer app opens). Pick Respite if you want a free pause before your chosen apps on iPhone, Android and Chrome, plus usage tracking and streaks. Both put a moment of friction between the urge and the scroll.'
+keyTakeaways:
+  - 'One Sec has the strongest evidence: a Max Planck study found 57% fewer social media app opens.'
+  - 'One Sec is a paid subscription or lifetime purchase; Respite is free, with an optional Plus for sync.'
+  - 'Respite runs on iPhone, Android and Chrome; no account is needed unless you want sync.'
+  - 'Both use a pause, not a hard block, so you always keep the final say.'
 section: 'App Comparisons'
 tags: ['respite', 'one sec', 'screen time app', 'app comparison', 'digital wellbeing', 'one sec alternatives', 'one sec app review']
 heroImage: '/blog-app-comparison.jpg'
 faq:
-  - question: "Which is better: Respite or One Sec?"
-    answer: "It depends on what you value most. Respite is a strong option for users who want a free, offline-capable, and customizable mindful pause experience on Android or Chrome. One Sec is well-suited for iOS users who prefer guided breathing exercises and has a peer-reviewed Max Planck study behind it. Both use mindful intervention approaches, so the choice comes down to platform, customization preference, and budget."
-  - question: "Is One Sec worth $50 lifetime?"
-    answer: "One Sec has a peer-reviewed Max Planck study showing a 57% reduction in app opens, which gives it strong credibility. Whether it's worth $50 depends on how much you value that research backing and breathing-based interventions. Respite offers a different style of mindful pause for free using customizable prompts. If you're on iOS and prefer breathing-based interventions, One Sec may be worth it."
-  - question: "Does One Sec actually work?"
-    answer: "Yes, One Sec has a peer-reviewed study from the Max Planck Institute showing a 57% reduction in social media app opens. That is one of the strongest pieces of evidence for any single screen time app. Its breathing-exercise approach works well for many users, though some report it can feel repetitive over time. Respite uses a similar mindful pause concept but with customizable prompts, which some users find maintains engagement better."
-  - question: "Can I use Respite on iPhone?"
-    answer: "Yes. Respite is on the [App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) as well as Google Play and the Chrome Web Store. One Sec also works on iOS and has a Chrome extension, so both are options for iPhone users."
-  - question: "Which app is more private: Respite or One Sec?"
-    answer: "Both apps are privacy-conscious compared to most competitors. Respite works offline with no account, keeps your usage history on your phone, and only syncs if you sign in. One Sec also offers optional cloud sync and requires more permissions. For users where privacy is the top concern, Respite has the edge."
-  - question: "What's the difference between Respite and One Sec's approach?"
-    answer: "Both use a mindful pause before opening distracting apps, but the execution differs. One Sec uses a fixed breathing exercise — a timed inhale/exhale animation — before every app open. Respite uses customizable prompts and reflection questions that you can personalize to your goals. One Sec's approach is simpler and more consistent; Respite's is more flexible."
+  - question: 'Which is better: Respite or One Sec?'
+    answer: 'It depends on what you value. One Sec is the better pick if you want a guided breathing exercise with published research behind it and do not mind paying. Respite is the better pick if you want a free pause, usage tracking and streaks across iPhone, Android and Chrome. Both use the same core idea, a pause before you open a distracting app.'
+  - question: 'Is One Sec free?'
+    answer: 'One Sec has a limited free version, with full features behind a paid subscription or a one-time lifetime purchase (around $50 at the time of writing). Respite is free to use, with an optional Respite Plus upgrade for sync across devices and extras. If price is the deciding factor, Respite costs nothing to try.'
+  - question: 'Does One Sec actually work?'
+    answer: 'There is good evidence that it does. A study with the Max Planck Institute found that One Sec''s breathing pause led to 57% fewer opens of the targeted social media apps. That is a strong result for a single app, although long-term results in everyday use are less documented for any pause app, including Respite.'
+  - question: 'Can I use Respite on iPhone?'
+    answer: 'Yes. Respite is available on iPhone through the [App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), as well as on Android and as a Chrome extension. The iPhone app is built on Apple''s Screen Time API and adds an app lock that refreshes at midnight.'
+  - question: 'Which is more private: Respite or One Sec?'
+    answer: 'Respite needs no account for its core features, and your usage history stays on your device unless you turn on sync by signing in with Google or Apple. One Sec is also privacy-conscious but offers optional cloud sync. Check each app''s privacy policy for the details that matter to you.'
+  - question: 'Is there a free alternative to One Sec?'
+    answer: 'Yes. Respite is a free alternative that puts a pause before the apps you choose, on iPhone, Android and Chrome. ScreenZen is another free option with timed delays. See our [One Sec alternatives guide](/blog/one-sec-alternatives/) for the full list.'
 ---
 
-Of all the screen time apps out there, Respite and One Sec are the most philosophically aligned. While other tools rely on hard blocking, timers, or gamification, these two share a core belief: a moment of awareness before you open an app is more powerful than a locked screen.
+Respite and One Sec are the two apps in this space that share the same philosophy: a moment of awareness before you open an app beats a locked screen. That makes the comparison less about which one works and more about which one fits your phone, your budget and your habits.
 
-That makes this comparison more interesting than most. These aren't opposing philosophies -- they're two variations on the same idea. The question isn't which one "works" (both do), but which variation fits the way your mind operates.
+## Respite vs One Sec at a glance
 
-## Quick Verdict
+| | Respite | One Sec |
+|---|---|---|
+| Platforms | iPhone, Android, Chrome | iPhone, Android, Chrome |
+| Price model | Free; optional Plus for sync and extras | Limited free tier; paid subscription or lifetime purchase |
+| Approach | A short, gentle pause before chosen apps and sites | A guided breathing pause before chosen apps |
+| Account | Optional; sign in only for sync | Not required for core use |
+| Privacy | Usage history stays on your device unless you sync | Privacy-conscious; optional cloud sync |
+| Evidence | Not independently studied | Max Planck study: 57% fewer app opens |
+| Best for | Free, all-in-one tracking plus pauses | Breathwork fans who want research behind the tool |
 
-One Sec is ideal for iOS users who want a research-backed breathing exercise with no setup required -- its Max Planck study showing a 57% reduction in app opens is hard to argue with. Respite is the better fit if you want full customization, strong privacy (works offline, no account), and a free all-in-one toolkit on Android or Chrome.
+## Which should you pick?
 
-**Bottom line:** Choose Respite if you want free, privacy-first mindful pauses with customizable prompts. Choose One Sec if you want iOS-optimized breathing exercises backed by peer-reviewed research.
+**Choose One Sec if** you like the idea of a breathing exercise, you value published research, and you are happy to pay for a focused tool. Its Shortcuts integration on iPhone is also well regarded.
 
-## The Shared Idea: Interrupt the Autopilot
+**Choose Respite if** you want to pay nothing, you want usage tracking and streaks in the same app, or you want the same pause on your phone and in your browser.
 
-Every time you reach for Instagram, TikTok, or Reddit, there's a split-second gap between the impulse and the action. Most of the time, that gap is invisible -- your thumb moves faster than your conscious mind. Both Respite and One Sec widen that gap, inserting a moment of awareness between "I want to scroll" and "I'm scrolling."
+For many people the choice comes down to price and whether the breathing exercise appeals to them.
 
-Where they differ is in what fills that moment.
+## How does One Sec work?
 
-## One Sec: The Breathing Exercise
+One Sec fills the pause with a guided breathing animation lasting a few seconds. Afterwards it asks whether you still want to open the app. It also shows how often you proceed versus turn away.
 
-One Sec fills the pause with a guided breathing exercise -- a timed inhale/exhale animation lasting several seconds. After the breathing, you're asked whether you still want to open the app. The idea is that the breathing activates your parasympathetic nervous system, calming the impulsive urge that triggered the app launch.
+The approach has credible backing. A peer-reviewed study with the Max Planck Institute found 57% fewer opens of the apps people targeted. Few apps in this space can point to anything comparable.
 
-This approach has credible research behind it. A peer-reviewed study from the Max Planck Institute found that One Sec's intervention led to a 57% reduction in social media app opens. That's one of the strongest pieces of evidence for any individual screen time app, and it deserves recognition. Few apps in this space can point to a published, peer-reviewed study with results like that.
+The trade-off, which some users report, is that a fixed exercise can become routine after a few weeks. You go through the motions without really pausing.
 
-One Sec also tracks intentions (marking why you're opening an app) and shows statistics on how often you proceed versus turn away. The experience is consistent -- same breathing exercise every time -- which makes it simple and requires zero setup.
+## How does Respite work?
 
-**Where One Sec is strong**: Research-validated, simple to use, effective calming mechanism, deep iOS Shortcuts integration.
+Respite puts a short, gentle pause before the apps (and on Chrome, the websites) you pick, so you open them on purpose. You can always continue or close the app; the friction is a moment of thought, not a lock.
 
-**The trade-off**: The fixed exercise can become routine. Some users report that after several weeks, they go through the breathing motions on autopilot -- the very pattern the app is designed to interrupt.
+Around that pause it adds usage tracking, daily limits and timers, streaks, and a light game layer with a mascot named Biscuit. The iPhone app uses Apple's Screen Time API and adds an app lock that refreshes at midnight. There are no ads.
 
-## Respite: The Customizable Prompt
+## Is One Sec free? Pricing compared
 
-Respite takes a different path. Instead of a fixed exercise, it shows a full-screen intervention with a message you've written yourself -- a question, a goal reminder, or a reflection prompt:
+One Sec offers a limited free tier and charges for full features, either as a subscription or a lifetime purchase. Respite is free, and the optional Respite Plus adds sync across devices, more schedules, longer focus sessions and richer insights. If you are weighing cost, see our [One Sec alternatives](/blog/one-sec-alternatives/) roundup.
 
-- "Is this what you want to spend your time on right now?"
-- "Remember: you said you'd read more this week."
-- Custom messages tied to whatever matters most to you
+## Where One Sec wins
 
-You always have the choice to proceed or close. There's no forced wait, no animation you have to sit through. The friction is cognitive, not temporal -- it works by making you confront your own intentions rather than following a prescribed exercise.
+- It has real published research, which no other app here can match.
+- It does one thing and does it simply, with almost no setup.
+- Its iPhone Shortcuts integration feels native.
+- A guided breathing exercise is genuinely calming for people who like breathwork.
 
-The reasoning behind this approach draws on behavioral science suggesting that personalized interventions maintain their effectiveness longer than generic ones, because your brain is less likely to tune out a message that connects to your specific goals.
+## What about privacy and data?
 
-**Where Respite is strong**: Fully customizable prompts, free with no limitations, works offline with no account, iPhone, Android and Chrome.
+Respite needs no account for core features; sign in only if you want sync. Your usage history stays on your device unless you turn sync on. We cover the wider picture in [privacy-first screen time tracking](/blog/privacy-first-screen-time-tracking/).
 
-**The trade-off**: The open-ended nature means you need to spend a few minutes crafting prompts that resonate. Without that personalization, the experience is less targeted than One Sec's breathing exercise.
+## Do pauses beat blocking?
 
-## Practical Differences
+Both apps bet that a pause builds awareness while a block only enforces. Our post on [mindful interventions vs blocking](/blog/mindful-tech-interventions-vs-blocking/) looks at that trade-off, and [Respite vs Opal](/blog/respite-vs-opal/) shows the blocking side of the debate.
 
-Beyond the intervention style, there are real-world factors worth weighing.
+## What does each look like day to day?
 
-### Pricing
+With One Sec, you pick the apps that matter, and from then on every launch of those apps starts with the breathing animation. You breathe, answer whether you still want in, and either continue or close. Because the exercise is the same each time, it quickly becomes a rhythm. People who like breathwork tend to enjoy that rhythm; people who do not may find it a speed bump they learn to tune out.
 
-Respite is completely free -- all features, no ads, no premium tier. One Sec has a limited free version (a few tracked apps, basic stats), with full features at $4/month or $50 lifetime. One Sec's lifetime price is fair for what it offers, especially with the research backing. But Respite's zero cost is a real advantage if you want to try a mindful pause approach with no commitment.
+With Respite, the pause appears in the same place, before the apps (and on Chrome, the websites) you chose, but it is one part of a wider set of tools. You might spend a week just watching your usage history, then set a daily limit on the two apps that swallow the most time. The streaks and the small game layer are there if you want a nudge to keep going, and ignorable if you do not.
 
-### Privacy
+## How do I set up Respite?
 
-Respite works offline with no account; your usage history stays on your phone unless you sign in to sync. One Sec is relatively privacy-conscious but offers optional cloud sync and requires more permissions. Both are better than most competitors here. If data privacy is non-negotiable for you, Respite is a strong choice.
+1. Install Respite on your phone (and add the Chrome extension if you scroll on a laptop).
+2. Pick the three or four apps you open most on autopilot. Fewer is better at first.
+3. Turn on the pause for those apps and grant the permissions the app asks for. On iPhone this uses Apple's Screen Time API.
+4. Optionally add a daily limit or timer for your worst offender. On iPhone the app lock refreshes at midnight.
+5. Use it for two weeks before changing anything, then look at your usage history.
 
-### Platform
+No account is needed for any of this. Sign in with Google or Apple only if you want sync.
 
-One Sec has its best experience on iOS, where it integrates deeply with Apple's Shortcuts. It also has an Android version and Chrome extension. Respite is on iPhone ([App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)), Android and Chrome. If you're an iPhone user, both are solid options; on Android, Respite is the more complete choice.
+## Who is each app for?
 
-### Analytics
+- **A student who scrolls TikTok between lectures** and wants zero spend: Respite is the easier first step, and you can see how many opens the pause turns away.
+- **A reader who already meditates** and likes the idea of a breath before every app: One Sec fits that habit naturally.
+- **Someone who uses iPhone Shortcuts heavily:** One Sec's Shortcuts integration may be worth paying for.
+- **A person who wants one tool for phone and browser:** Respite covers both with the same idea.
 
-Respite offers detailed, locally-stored analytics -- daily, weekly, and monthly summaries with category breakdowns, baseline comparisons, and home screen widgets. One Sec tracks app opens and your "turned away" rate with daily and weekly stats. Respite's analytics are more comprehensive; One Sec's are more focused on the intervention itself.
+## What are the honest trade-offs?
 
-### Streaks and Motivation
+One Sec asks you to pay for the full version, but it gives you a focused tool with real research behind it. Respite costs nothing and does more around the pause, but its pause itself has not been studied in the same way, and a gentle pause is still easy to tap through on a bad day. If you know you ignore soft nudges, neither app is a hard lock; read [do app blockers work?](/blog/do-app-blockers-work/) for when something firmer is justified.
 
-Respite includes daily streak tracking, milestone celebrations, achievement badges, and streak recovery. One Sec takes a more minimal approach -- data-driven awareness without gamification. Whether this matters depends on whether streaks motivate you or just add noise.
+## Switching from One Sec to Respite
 
-## The Habituation Question
+You do not have to uninstall One Sec first. Run both for a few days on different apps so you can compare how each pause feels, then settle on one. Running two pauses on the same app tends to feel like a pile-up and is best avoided. If you move over completely, recreate your list of apps in Respite and consider turning on a daily limit, since that is something a breathing pause alone does not give you.
 
-One of the most important factors in any screen time tool is whether your brain tunes out the intervention over time.
+## Next step
 
-One Sec's fixed breathing exercise is effective, but it's the same experience every time. Some users report that after weeks of use, the breathing becomes automatic rather than reflective. You go through the motions without the mental pause that makes the intervention work.
+The fastest way to decide is to try one for two weeks. [Download Respite](/download/) for free, or take the [Phone Habit Quiz](/quiz/) first to see which habits to target.
 
-Respite's customizable prompts approach this differently -- you can update messages, rotate between prompts, and keep the content aligned with your evolving goals. Whether this actually reduces habituation depends on how actively you engage with the customization.
+## Related articles
 
-One Sec's Max Planck study measured results over a defined study period. Long-term habituation in real-world use is less documented for either app.
-
-## Who Should Choose What
-
-**One Sec is a strong choice if** you're on iOS, you like breathwork as a mindfulness practice, you value peer-reviewed research validation, and you prefer a tool that requires no configuration. The Max Planck study is a real differentiator if research credibility matters to you.
-
-**Respite is a strong choice if** you want control over your intervention experience, privacy is a top priority, you're on Android or Chrome, and you want everything for free. Writing your own prompts means the app can grow and change with you.
-
-For many users, this comes down to platform and personal preference. Neither app is categorically better -- they're two thoughtful approaches to the same problem.
-
-[Try Respite Free on Android & Chrome](/download/)
-
-## The Bigger Picture
-
-The fact that both Respite and One Sec exist -- and that both work -- says something encouraging about the mindful intervention approach to screen time. The digital wellbeing space has spent years debating whether to block, restrict, gamify, or track. These two apps suggest that the simplest idea might be the most powerful: just pause.
-
-How that pause is designed matters. Whether it's a breathing exercise or a personal question, the mechanism is less important than the moment of consciousness it creates. Both apps deliver that moment. The rest is preference.
-
-Questions or feedback? Reach out at support@liveintently.app.
-
----
-
-## Related Articles
-
+- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives/)
 - [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
-- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech-interventions-vs-blocking/)
 - [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
-- [Respite vs Opal: Which Screen Time App Is Right for You?](/blog/respite-vs-opal/)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
 
----
-
-*Disclaimer: This comparison is based on publicly available information, user reviews, and research studies as of February 2026. Features and pricing may change. We aim to provide accurate, balanced information to help you make the best choice for your needs.*
+*This comparison is based on publicly available information as of November 2026. Features and pricing may change. Corrections: support@liveintently.app*

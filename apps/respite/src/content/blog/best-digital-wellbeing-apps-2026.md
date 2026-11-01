@@ -60,7 +60,7 @@ What's refreshing is the assumption baked into this design: you're a capable adu
 
 The privacy design is what really sets Respite apart. Your usage history is stored on your device unless you turn on sync, and no account is needed (sign in with Google or Apple only if you want sync). In a category where most apps want you to create an account and hand over your usage data, this is a meaningful differentiator.
 
-Beyond privacy, the interventions are flexible -- you can customize messages, choose between breath pauses, question prompts, or delay timers, and adjust the intensity per app. The analytics are solid too, with clean charts showing usage trends and patterns over time.
+Beyond privacy, you choose which apps get the pause and can add optional daily limits and timers. The analytics are solid too, with clean charts showing usage trends and patterns over time.
 
 On the downside, there's no web dashboard and no parental controls, and it isn't a hard blocker. Cross-device sync is part of the optional Plus upgrade rather than the free app.
 

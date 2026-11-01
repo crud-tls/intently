@@ -1,180 +1,120 @@
 ---
-title: 'Respite vs Brick: Free Software Pause vs $59 Physical Device (2026)'
-description: 'Comprehensive comparison of Respite (free mindful screen time app) and Brick ($59 physical NFC device). Compare approaches, pricing, flexibility, and effectiveness to decide between software-based mindfulness and hardware-based phone blocking.'
+title: 'Respite vs Brick (2026): Free App or Physical Lock?'
+description: 'Respite vs Brick compared: a free mindful pause app versus a physical NFC device that locks your apps. See price, privacy and who should pick which.'
 pubDate: 2026-02-01
+updatedDate: 2026-11-01
 author: 'Respite Team'
+answer: 'Pick Brick if software pauses are too easy for you to tap through and you want a physical barrier: you tap an NFC device to unlock apps (around $59 at the time of writing). Pick Respite if you want a free app that adds a gentle pause before the apps you choose, on iPhone, Android and Chrome, with no hardware to carry.'
+keyTakeaways:
+  - 'Brick is a physical NFC device; Respite is software with nothing extra to buy or carry.'
+  - 'Brick costs around $59 at the time of writing; Respite is free, with an optional Plus for sync.'
+  - 'Brick is a harder barrier; Respite always lets you continue after the pause.'
+  - 'You can combine them: Brick for high-risk hours, Respite for awareness the rest of the day.'
 section: 'App Comparisons'
 tags: ['respite', 'brick', 'brick app alternatives', 'brick phone blocker', 'screen time app', 'digital wellbeing', 'phone addiction']
 heroImage: '/blog-app-comparison.jpg'
 faq:
-  - question: "Which is better: Respite or Brick?"
-    answer: "It depends on your personality and goals. Respite is better for people who want to build mindful habits through customizable prompts -- it's free, flexible, and works anywhere. Brick is better for people who need a physical barrier and don't trust themselves with software-only solutions. Brick costs $59 for the NFC device."
-  - question: "Is Brick worth $59?"
-    answer: "If you have tried every software-based approach and still struggle with phone overuse, Brick's physical NFC requirement creates a uniquely strong barrier. However, many people find that a free mindful intervention app like Respite is enough, because it builds internal motivation rather than relying on a physical object you might lose or leave behind."
-  - question: "How does Brick's NFC device work?"
-    answer: "Brick comes with a physical NFC tag (a small tile). To unlock blocked apps on your phone, you must physically tap your phone against the Brick tile. This creates a real-world barrier -- if the tile is in another room or at home, you simply cannot access your blocked apps until you go tap it."
-  - question: "Can I use Respite without internet?"
-    answer: "Yes, Respite works offline. It needs no internet connection for the pause, tracking or stats, and no account. Your usage history stays on your device. This also means it works anywhere -- on flights, in remote areas, or whenever you're offline."
-  - question: "What happens if I lose my Brick NFC tile?"
-    answer: "If you lose or forget your Brick tile, you cannot unlock your blocked apps through the normal process. Brick does offer emergency override options, but losing the physical device is a real risk. Respite, as a software solution, has no hardware dependency and works anywhere your phone goes."
-  - question: "Which approach is better for long-term habit change?"
-    answer: "Many behavioral scientists favor mindful intervention approaches for lasting change, because they build internal awareness and self-regulation skills. Brick's physical barrier is effective while you have the device, but it does not directly train the decision-making habits needed when the barrier is removed. The best choice depends on where you are in your journey."
+  - question: 'Which is better: Respite or Brick?'
+    answer: 'It depends on your personality. Brick is better if you need a physical barrier and do not trust yourself with software alone. Respite is better if you want a free, flexible pause that works wherever your phone goes and builds awareness over time. Brick is firm; Respite is gentle. Plenty of people start with the free one.'
+  - question: 'Is Brick worth the money?'
+    answer: 'It can be if you have tried software approaches and keep tapping through them. A physical tap to unlock is a strong barrier. If you have not tried a free pause app yet, try that first, since Respite costs nothing and you can always add a device later.'
+  - question: 'Is there a free alternative to Brick?'
+    answer: 'Yes. Respite is free on iPhone, Android and Chrome and adds a pause before the apps you pick. It is gentler than Brick because you can always continue. On iPhone you can also switch on an optional app lock that refreshes at midnight. See our [Brick alternatives](/blog/best-app-blocker/) overview for blockers.'
+  - question: 'How does Brick work?'
+    answer: 'Brick is a small physical NFC device. You choose which apps to block, and to unlock them you tap your phone against the device. If it is in another room, the urge to scroll often passes before you get there. If you lose it, you depend on Brick''s override options.'
+  - question: 'Does Respite need an account or internet?'
+    answer: 'No account is needed for core features; sign in with Google or Apple only if you want sync across devices. Your usage history stays on your device unless you turn sync on. Respite has no hardware dependency, so it works wherever your phone does.'
+  - question: 'Can I use Respite and Brick together?'
+    answer: 'Yes, they work on different layers. Use Brick during your riskiest windows, such as work hours or bedtime, and Respite for awareness the rest of the day. Most people do best starting with one, then adding the other if a specific time of day still defeats them.'
 ---
 
-This is one of the more unusual comparisons in the digital wellbeing space. Respite and Brick aren't really competitors -- they're built on completely different ideas about what makes people change.
+Respite and Brick are barely competitors; they are two theories of behaviour change. Respite asks you to think for a second before you open an app. Brick takes thinking out of it by making you walk to a physical device to unlock your apps.
 
-Respite is a free app that creates mindful pauses before you open distracting apps. Brick is a $59 physical NFC device that locks your apps until you physically tap a tile. One asks you to think. The other removes thinking from the equation by putting a physical obstacle in your way.
+## Respite vs Brick at a glance
 
-They represent two genuinely different theories of behavior change, and the right pick depends more on your personality than on a feature checklist.
+| | Respite | Brick |
+|---|---|---|
+| Type | Software app | Physical NFC device plus app |
+| Platforms | iPhone, Android, Chrome | iOS and Android |
+| Price model | Free; optional Plus for sync and extras | One-off purchase (around $59 at the time of writing) |
+| Approach | A short pause before chosen apps and sites | Tap the device to unlock blocked apps |
+| Account | Optional; sign in only for sync | Check Brick's setup |
+| Privacy | Usage history stays on your device unless you sync | App-based; see its policy |
+| Hardware | None | The device is the mechanism |
+| Best for | Building awareness at no cost | A hard lock when willpower fails |
 
-## Two Different Bets on How Habits Work
+## Which should you pick?
 
-Here's the core tension: should you train yourself to resist the cookie jar, or should you put the cookie jar in the attic? Should you build the discipline to wake up early, or should you put your alarm clock across the room?
+**Choose Brick if** you have tried software pauses and always tap through, your routine lets you place the device sensibly, and you are happy to pay once for a physical barrier.
 
-Respite bets that awareness drives lasting change. Brick bets that environment design does. There's solid evidence behind both approaches -- the interesting part is figuring out which one matches how you actually operate.
+**Choose Respite if** you want to spend nothing, you want coverage on your phone and in Chrome, or you would rather build the habit of asking "do I want this?" than lean on a lock.
 
-## Quick Comparison
+## How does Brick work?
 
-| Feature | Respite | Brick |
-|---------|----------|-------|
-| **Type** | Software app | Physical NFC device + app |
-| **Approach** | Mindful interventions and pauses | Physical NFC tap to unlock apps |
-| **Pricing** | Free -- all features included | $59 one-time (replacement tiles cost extra) |
-| **Privacy** | Works offline, no account, optional sync | Account required, standard data practices |
-| **Platform** | Android, iOS (coming), Chrome extension | iOS and Android |
-| **Friction Type** | Psychological -- makes you pause and reflect | Physical -- makes you get up and walk |
-| **Portability** | Goes wherever your phone goes | Tied to your NFC tile's location |
-| **Customization** | Fully customizable prompts and messages | Block/unblock app lists |
-| **Hardware dependency** | None | Yes -- the tile is the whole mechanism |
-| **Best for** | Building lasting awareness over time | Hard lockout when you need it most |
+You place a small NFC device somewhere deliberate, such as a drawer or another room, and choose which apps to block. To unlock them you tap your phone on the device. It turns a split-second impulse into a small physical task, and by the time you get there the urge has often faded.
 
-## How Each One Actually Works
+## How does Respite work?
 
-### Respite: The Pause Before You Act
+Respite puts a short, gentle pause before the apps (and on Chrome, the websites) you pick, so you open them on purpose. You can always continue. It also tracks usage, keeps streaks, and has daily limits and timers. On iPhone it is built on Apple's Screen Time API and has an optional app lock that refreshes at midnight. No ads.
 
-When you open a tracked app, Respite shows a full-screen intervention -- a customizable message, breathing exercise, or reflection prompt that you've written yourself. You pause. You consider whether you actually want to use the app. Then you decide.
+## Is Brick worth it, and what does Respite cost?
 
-The messages are entirely yours:
+Brick is a one-off purchase for the device. Respite is free, with an optional Respite Plus upgrade for sync and extras. If you are unsure, try the free option first. For other blockers see [the best app blockers](/blog/best-app-blocker/).
 
-- "Do you really need to check Twitter right now?"
-- "Take a breath. What were you about to do before you picked up your phone?"
-- Custom reminders tied to whatever goals matter to you
+## Where Brick wins
 
-You can always choose to proceed. Respite never locks you out of the Android app or the Chrome extension, and it's your choice whether to turn on the optional app lock on iPhone. It makes sure every app launch is a conscious choice instead of a reflex. Over time, you start catching yourself even without the prompt -- you've trained the habit of asking "do I actually want this?"
+- It is a genuinely stronger barrier: no tap, no access.
+- It turns an impulse into effort, which suits people who respond to environment design.
+- It works for crisis-level overuse where a pause is too easy to dismiss.
+- There is no subscription.
 
-### Brick: A Physical Lock You Can't Think Past
+## Which lasts longer?
 
-Brick takes the opposite approach. It ships with a physical NFC tile -- a small, brick-shaped tag you place somewhere intentional: a drawer, another room, your office. You configure which apps to block, and those apps are completely inaccessible until you physically tap your phone against the tile.
+A physical lock works while you use it. A pause aims at the reflex itself, so the habit can outlast the app. That is a reasonable argument rather than a proven result, and it varies by person. Our posts on [why willpower fails](/blog/why-willpower-fails-phone-addiction/) and [mindful interventions vs blocking](/blog/mindful-tech-interventions-vs-blocking/) go deeper.
 
-No tile tap, no app access. Doesn't matter how persuasive your inner voice gets. If the tile's in your kitchen and you're on the couch, Instagram isn't opening until you get up and walk over there.
+## Can you use both?
 
-What's clever about this is that it turns a split-second digital impulse into a multi-step physical task. By the time you've walked to the tile, the urge has usually faded. Brick isn't trying to change your mind -- it's making the mindless path inconvenient enough that you naturally do something else.
+Yes. Use Brick for the windows you know are risky and Respite for the rest. Starting with Respite alone costs nothing, so many people begin there.
 
-## Where the Differences Actually Show Up
+## What does each look like day to day?
 
-### Flexibility vs Force
+With Brick, you decide when your apps are locked, and unlocking involves your device. In practice people put it in a spot that adds effort, such as another room or a desk drawer. When the urge hits, the choice becomes "is this worth getting up for?", and often it is not.
 
-Respite goes wherever your phone goes. No extra hardware, no planning around a physical object. You can tweak your interventions on the fly, toggle them per app, and adapt as your schedule changes. Traveling, commuting, moved apartments -- doesn't matter.
+With Respite, the apps stay open to you, but each chosen app greets you with a short pause. The effort is a moment of thought, not a walk. Over days you see in your usage history how many opens you let go.
 
-Brick's strength is its rigidity, but that cuts both ways. The physical barrier works because you can't just tap through it. But if you leave the tile at home, your blocking strategy either fails entirely (if you need to override) or works too well (if you genuinely need a blocked app). You end up planning your day around the tile's location.
+## How do I set up Respite?
 
-If your routine is predictable and you work from a consistent spot, Brick's approach is smooth. If your life is less structured, Respite's software flexibility matters a lot.
+1. Install Respite on your phone and add the Chrome extension if relevant.
+2. Pick the apps you open on autopilot.
+3. Turn on the pause for them, granting the permissions requested. On iPhone this uses Apple's Screen Time API.
+4. Optionally set a daily limit; the iPhone app lock refreshes at midnight, which gives you a firmer edge without extra hardware.
+5. Review your history after a week.
 
-### Cost
+No account is needed unless you want sync.
 
-Straightforward. Respite is free -- all features, no premium tier, no upsells. Brick is $59 for the NFC tile plus app access, and replacement tiles cost extra if you lose or damage one.
+## Who is each app for?
 
-$59 isn't unreasonable for a well-designed product, and there's no subscription. But Respite's full feature set -- customizable interventions, usage tracking, streaks, analytics -- costs nothing. If budget's a factor, that settles it.
+- **A heavy night scroller** who cannot be trusted at 1 am: the physical barrier of Brick helps.
+- **A commuter who checks everything on the train:** a pause that works anywhere is more practical.
+- **Someone who wants to try before buying anything:** start with Respite.
+- **A family member who keeps losing small gadgets:** Respite has nothing to misplace.
 
-### Privacy
+## What are the honest trade-offs?
 
-Respite works offline with no account. Your usage history stays on your phone unless you sign in to sync it.
+Brick costs money and you carry or place a device, but it makes unlocking harder than a tap. Respite costs nothing and travels with you, but the pause can be waved through. Consider a layered setup if you find a pause is not enough at certain hours. Our post on [why willpower fails](/blog/why-willpower-fails-phone-addiction/) explains why environment design can beat resolve.
 
-Brick requires an account for setup and uses connectivity for NFC authentication and sync. Their data practices aren't hostile, but they're not zero-collection either.
+## Switching from Brick to Respite, or adding it
 
-If privacy matters to you, this is a clear-cut difference.
+If you already own Brick, there is no need to stop using it. Add Respite for the hours when Brick is unlocked and see whether the combination lets you relax the lock. If you do not yet own Brick, start free and decide later whether a physical barrier is something you need.
 
-[Download Respite Free](/download/)
+## Next step
 
-### What Happens When You Stop Using It?
+[Download Respite](/download/) free for two weeks. If specific times of day still beat you, a physical lock like Brick may fill that gap. For another free option, see [Respite vs ScreenZen](/blog/respite-vs-screenzen/).
 
-This is the question that matters most in the long run.
-
-If you stop using Respite after a few months, you keep the habits. The practice of pausing before acting, of questioning whether you actually want to open an app -- that awareness doesn't uninstall with the software. You've spent months training a mental reflex, and mental reflexes tend to stick.
-
-If you stop using Brick, the physical barrier vanishes. The apps are right there again, one tap away, no pause, no friction. If the underlying impulse patterns haven't shifted -- and Brick doesn't directly work on those -- there's a real chance of sliding back.
-
-That's not a knock on Brick. Physical barriers genuinely work while they're active. But it's worth thinking about your endgame. Are you looking for a permanent tool, or are you trying to build habits that eventually stand on their own?
-
-### Platform Availability
-
-Brick covers iOS and Android today. Respite covers iPhone ([App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293)) and Android with the same pause-based approach, plus a Chrome extension for managing distracting websites on your computer. If you want the physical barrier approach, Brick's available. If you want to extend coverage to your browser, Respite's Chrome extension fills that gap.
-
-## On Intervention Strength -- An Honest Take
-
-Let's be direct: Brick provides a stronger immediate barrier. You physically cannot open a blocked app without the tile. Respite's pause is meaningful, but you can choose to tap through it. For someone in genuine crisis-level phone overuse, Brick's hard lock might be what's needed to break the cycle.
-
-But stronger doesn't mean better for everyone. There's a difference between needing an emergency brake and building the driving skills to not need one. Lots of people need the brake first and the skill-building second -- and some only need one or the other.
-
-## Can You Use Both?
-
-Unlike two software apps that would conflict, Respite and Brick operate on completely different layers -- and this is a pairing that actually makes sense together.
-
-Here's how it works:
-
-- Brick handles the hard lockout during your highest-risk windows -- work hours, bedtime, study sessions. The tile goes in a drawer, and social media just doesn't exist for those blocks.
-- Respite provides mindful interventions during unlocked periods, so you're still building awareness even when Brick isn't active.
-
-You get external control when you need it most and internal skill-building the rest of the time. If you've got the budget for Brick and find that software pauses alone aren't enough during certain parts of your day, this layered approach is worth trying.
-
-That said, starting with Respite alone makes sense for most people. It costs nothing, requires no hardware, and builds the foundational awareness habits. If after a few weeks you notice that certain times of day defeat your resolve no matter what, Brick can fill that specific gap.
-
-## Which Approach Fits You
-
-### Respite is probably the better fit if:
-
-- You want to build lasting self-awareness, not just block access
-- Privacy matters -- you want an app that works offline without an account
-- You'd rather not spend money or depend on extra hardware
-- You need something that works everywhere without planning ahead
-- You're on Android or Chrome and want coverage across both
-- You've tried blockers before and found that restriction alone doesn't stick
-- You want to adjust your approach as you go
-
-### Brick is probably the better fit if:
-
-- You've tried software-only approaches and found them too easy to dismiss
-- You're in a period of seriously heavy phone overuse and need a hard reset
-- Your routine is consistent enough to place the tile strategically
-- You're willing to invest $59 in a physical tool
-- You prefer environment design over willpower
-- You need iOS or Android support right now
-- You're okay with the tradeoffs of carrying extra hardware
-
-## Wrapping Up
-
-Respite and Brick sit at opposite ends of the digital wellbeing spectrum. One trusts you to make the right choice when given a moment to think. The other doesn't ask you to think at all -- it just makes the wrong choice physically inconvenient.
-
-Neither philosophy is wrong. The real question is which person you are today and which habits will serve you a year from now.
-
-For sustainable, long-term change, building internal awareness tends to hold up well. But if you need to break a bad cycle first, there's nothing wrong with leaning on physical barriers while you build healthier patterns underneath.
-
-The best approach is the one you'll actually stick with. For most people, that starts with awareness -- and awareness starts with a pause.
-
-[Download Respite for Android, iOS & Chrome](/download/)
-
-Questions or feedback? Reach out at support@liveintently.app.
-
----
-
-## Related Articles
+## Related articles
 
 - [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
 - [How to Reduce Screen Time](/blog/how-to-reduce-screen-time/)
-- [Respite vs ScreenZen: Comparing Free Mindful Screen Time Apps](/blog/respite-vs-screenzen/)
-- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec/)
-- [Why Willpower Fails for Phone Addiction](/blog/why-willpower-fails-phone-addiction/)
+- [Respite vs One Sec](/blog/respite-vs-one-sec/)
 
----
-
-*Disclaimer: This comparison is based on publicly available information as of February 2026. Features and pricing may change. We aim to provide balanced information to help you make the best choice for your needs.*
+*This comparison is based on publicly available information as of November 2026. Features and pricing may change. Corrections: support@liveintently.app*

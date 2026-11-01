@@ -123,11 +123,11 @@ A growing category of apps takes a fundamentally different approach. Instead of 
 **Platforms:** iPhone, Android and Chrome
 **Price:** Free (optional Plus upgrade for sync and extras)
 
-Respite shows a full-screen pause before you open tracked apps. The pause displays a message you've written yourself — tied to your actual goals and reasons for changing. You reflect for a moment and then make a conscious choice.
+Respite shows a full-screen pause before you open tracked apps. The pause gives you a moment to ask whether you really want this. You reflect for a moment and then make a conscious choice.
 
 **Why it works differently:** You never feel restricted. There's no wall to resent, no block to bypass. Instead, you build the internal awareness to make better choices — which eventually makes the tool itself unnecessary. That's the goal: not permanent dependence on an app, but genuine habit change.
 
-**Key features:** Custom messages per app, usage tracking and analytics, gamification with streaks, Chrome extension for websites, no ads, no account needed (sign in only for sync). On iPhone it is built on Apple's Screen Time API and adds an app lock that refreshes at midnight, so it can enforce a daily limit, but it is not a strict blocker like Freedom or Cold Turkey.
+**Key features:** Per-app pauses, daily limits, usage tracking and analytics, gamification with streaks, Chrome extension for websites, no ads, no account needed (sign in only for sync). On iPhone it is built on Apple's Screen Time API and adds an app lock that refreshes at midnight, so it can enforce a daily limit, but it is not a strict blocker like Freedom or Cold Turkey.
 
 [Download Respite free](/download/)
 
@@ -139,7 +139,7 @@ Respite shows a full-screen pause before you open tracked apps. The pause displa
 One Sec shows a breathing exercise before opening selected apps. The pause creates a natural moment to reconsider. Premium adds tracking and analytics.
 
 **Strengths:** Cross-platform, research-backed breathing intervention
-**Weaknesses:** Best features require subscription, less customizable than Respite
+**Weaknesses:** Best features require subscription
 
 ### ScreenZen
 
@@ -149,7 +149,7 @@ One Sec shows a breathing exercise before opening selected apps. The pause creat
 ScreenZen uses a "take a breath" countdown before app launches. Simple, consistent, with streak tracking built in.
 
 **Strengths:** Cross-platform, clean interface, streak motivation
-**Weaknesses:** Less customizable, some features behind premium
+**Weaknesses:** Some features behind premium
 
 ## Comparison: Blockers vs Mindful Apps
 
