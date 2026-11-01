@@ -185,6 +185,18 @@ const effectiveAuthor = author || 'Respite Team';
 						</aside>
 					</div>
 
+					{faq && faq.length > 0 && (
+						<section class="post-faq" id="faq" aria-labelledby="faq-heading">
+							<h2 id="faq-heading">Frequently asked questions</h2>
+							{faq.map((item) => (
+								<div class="post-faq-item">
+									<h3>{item.question}</h3>
+									<p>{item.answer}</p>
+								</div>
+							))}
+						</section>
+					)}
+
 					<AuthorBio author={effectiveAuthor} />
 
 					{relatedPosts.length > 0 && (
@@ -747,6 +759,32 @@ const effectiveAuthor = author || 'Respite Team';
 
 	.reading-note strong {
 		color: var(--ds-text-primary);
+	}
+
+	.post-faq {
+		max-width: 66ch;
+		margin: var(--ds-space-2xl, 3rem) 0 var(--ds-space-xl);
+		padding-top: var(--ds-space-xl);
+		border-top: 1px solid color-mix(in srgb, var(--ds-text-secondary) 20%, transparent);
+	}
+
+	.post-faq h2 {
+		margin: 0 0 var(--ds-space-lg);
+	}
+
+	.post-faq-item + .post-faq-item {
+		margin-top: var(--ds-space-lg);
+	}
+
+	.post-faq-item h3 {
+		margin: 0 0 var(--ds-space-xs);
+		font-size: 1.08rem;
+	}
+
+	.post-faq-item p {
+		margin: 0;
+		line-height: 1.65;
+		color: var(--ds-text-secondary);
 	}
 
 	.quick-answer-label {

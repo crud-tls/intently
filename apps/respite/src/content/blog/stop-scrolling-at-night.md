@@ -1,32 +1,59 @@
 ---
-title: "How to Stop Mindless Scrolling at Night: A Sleep-Saving Guide"
-description: "Stop scrolling at night and protect your sleep. Learn why bedtime scrolling destroys rest and how to break the habit with proven strategies for better sleep and mornings."
+title: 'How to Stop Scrolling at Night: A Sleep-Saving Guide'
+description: 'Stop scrolling at night and protect your sleep: why bedtime scrolling wrecks rest, plus a digital sunset, a charging spot and a pause to break the habit.'
 pubDate: 2026-01-23
-updatedDate: 2026-02-28
-author: "Respite Team"
-section: "Digital Wellbeing"
-tags: ["stop scrolling at night", "phone addiction before bed", "sleep hygiene", "digital wellbeing", "screen time at night"]
-heroImage: "/blog-night-scrolling.jpg"
+updatedDate: 2026-11-01
+author: 'Respite Team'
+answer: 'To stop scrolling at night, charge your phone outside the bedroom (and buy a cheap alarm clock), set a digital sunset 60 to 90 minutes before bed, and have one screen-free wind-down activity ready. If the phone has to stay close, add a pause before your usual apps so the late-night tap becomes a choice, and use Sleep Focus or Bedtime mode to help.'
+keyTakeaways:
+  - 'Distance is the strongest fix: charge the phone outside the bedroom and use a real alarm clock.'
+  - 'A digital sunset 60 to 90 minutes before bed gives your brain time to shift from stimulation to rest.'
+  - 'Night mode reduces blue light but not the stimulation of the content itself.'
+  - 'Have a screen-free replacement ready: a book, journal, stretching or an audiobook.'
+  - 'A pause before your usual apps, plus Sleep Focus or Bedtime mode, helps when the phone must stay close.'
+section: 'Digital Wellbeing'
+tags: ['stop scrolling at night', 'phone addiction before bed', 'sleep hygiene', 'digital wellbeing', 'screen time at night']
+heroImage: '/blog-night-scrolling.jpg'
 faq:
-  - question: "Why is scrolling on my phone before bed so bad for sleep?"
-    answer: "Phone screens emit blue light that suppresses melatonin, the hormone that signals sleep. This delays sleep onset, reduces sleep quality, and disrupts your circadian rhythm. Additionally, engaging content activates your brain when it should be winding down, making it difficult to fall asleep even after you put your phone away."
-  - question: "How long before bed should I stop using my phone?"
-    answer: "Ideally, stop phone use 60-90 minutes before bed. This gives your brain time to transition from stimulation to rest and allows melatonin production to begin naturally. Even 30 minutes makes a meaningful difference in sleep onset and quality."
-  - question: "What can I do instead of scrolling on my phone at night?"
-    answer: "Replace phone scrolling with sleep-promoting activities: read a physical book, listen to a podcast or audiobook, journal about your day, practice gentle yoga or stretching, meditate, or prepare for tomorrow. These activities help your brain wind down rather than revving up with stimulation."
-  - question: "I use my phone as my alarm. What should I do?"
-    answer: "Buy a dedicated alarm clock. Using your phone as an alarm guarantees you'll check it before bed and upon waking. A standalone alarm costs $10-30 and pays daily dividends in sleep quality and reduced screen time. Charge your phone outside the bedroom to eliminate temptation entirely."
-  - question: "Does night mode or blue light filter actually help?"
-    answer: "Night mode helps reduce blue light exposure, but it doesn't solve the full problem. The stimulating content, psychological engagement, and dopamine release still disrupt sleep. Night mode is better than nothing, but the only real solution is putting your phone away well before bedtime."
-  - question: "How long does it take to break the bedtime scrolling habit?"
-    answer: "Most people notice significant improvement within 7-14 days of consistent practice. The habit typically breaks entirely after 3-4 weeks. Using physical separation (charging phone outside bedroom) and mindful interventions dramatically accelerates progress by removing both the psychological trigger and the physical access."
+  - question: 'Why is scrolling on my phone before bed so bad for sleep?'
+    answer: 'Screens emit blue-enriched light that can suppress melatonin, the hormone that signals sleep, and engaging content keeps your mind alert when it should be winding down. Add the absence of a stopping point and it is easy to scroll far longer than you meant to, which pushes bedtime later and can leave you tired the next day.'
+  - question: 'How long before bed should I stop using my phone?'
+    answer: 'A common recommendation is to stop screens 60 to 90 minutes before bed, which gives your brain time to move from stimulation to rest. There is no magic number, though. If that sounds impossible, start with 30 minutes and build from there. Consistency matters more than perfection.'
+  - question: 'What can I do instead of scrolling on my phone at night?'
+    answer: 'Replace scrolling with something that winds you down: read a physical book, listen to a calm podcast or audiobook, journal about your day or tomorrow''s plan, stretch gently, try breathing exercises, or prepare for the morning. Keep one or two options within arm''s reach so you do not have to decide when you are tired.'
+  - question: 'I use my phone as my alarm. What should I do?'
+    answer: 'Buy a simple alarm clock; many are inexpensive. Using your phone as an alarm guarantees it is next to your bed, which invites both a late-night and an early-morning check. Charge the phone in another room, and if you worry about emergency calls, keep the ringer on so you will still hear it.'
+  - question: 'Does night mode or a blue light filter actually help?'
+    answer: 'It can help a little by reducing blue light, and it is better than nothing, but it does not address the main problem: the content and the habit still keep your brain engaged. Treat Night Shift (iPhone) or Night Light (Android) as a small support, and the cutoff time and phone-free bedroom as the main fix.'
+  - question: 'How long does it take to break the bedtime scrolling habit?'
+    answer: 'It varies, and there is no fixed timeline. Many people notice it getting easier within the first couple of weeks of a consistent routine, especially when the phone charges in another room. Expect a few slips; they are normal and useful because they show you which trigger, such as boredom or worry, to plan for.'
+howToSteps:
+  - name: 'Move the phone out of the bedroom'
+    text: 'Buy a simple alarm clock and charge your phone in the hallway, kitchen or living room.'
+  - name: 'Set a digital sunset'
+    text: 'Choose a time 60 to 90 minutes before bed when screens go off, and dim the lights.'
+  - name: 'Prepare a screen-free wind-down'
+    text: 'Pick a book, journal, stretching or an audiobook so you have something to reach for.'
+  - name: 'Add a pause and use sleep features'
+    text: 'Use a pause app like Respite on your usual apps, and turn on Sleep Focus on iPhone or Bedtime mode on Android.'
+  - name: 'Name what you are really looking for'
+    text: 'If it is boredom, worry, loneliness or escapism, plan a different way to meet it.'
 ---
 
 Most of us have been there. You get into bed fully intending to sleep, and then -- almost without thinking -- you pick up your phone. Thirty minutes or an hour later, you're still going, and now you're annoyed at yourself on top of being tired.
 
-It's an incredibly common habit. Surveys consistently show that the majority of adults use their phones in bed, and most of us know we're losing real sleep over it. If you're reading this, you probably already know the habit isn't serving you. The question is what to actually do about it.
+It's an incredibly common habit, and if you're reading this you probably already know it isn't serving you. The question is what to actually do about it.
 
-## Why Bedtime Scrolling Is So Hard on Sleep
+## How do I stop scrolling at night? The short version
+
+1. **Move the phone out of the bedroom** and use a real alarm clock.
+2. **Set a digital sunset** 60 to 90 minutes before bed.
+3. **Have a screen-free wind-down ready**, like a book or a journal.
+4. **Add a pause and the built-in sleep tools** if the phone has to stay close.
+
+The rest of this guide explains why each step works and what to do when it doesn't. If scrolling is also the first thing you do in the morning, pair this with [how to stop checking your phone first thing](/blog/stop-checking-phone-morning/).
+
+## Why is bedtime scrolling so hard on sleep?
 
 It helps to understand what's happening when you scroll in bed, because it's not just about "discipline." There are a few things working against you at once.
 
@@ -40,13 +67,13 @@ Social media, news, short videos -- they're all designed to keep you engaged. Th
 
 ### There's no natural stopping point
 
-Infinite scroll is a design feature, not a bug. There's always another post, another video, another story. People consistently underestimate how long they spend on their phones at night -- often by a wide margin. Five minutes becomes forty-five without you noticing.
+Infinite scroll is a design feature, not a bug. There's always another post, another video, another story. It's easy to underestimate how long you've been at it, and five minutes can become forty-five without you noticing.
 
 ### The effects linger after you put the phone down
 
 Even once you stop scrolling, it takes time for your brain to settle. You might lie awake longer than usual, sleep less deeply, wake up more often, or miss out on restorative REM sleep. And then the next day, you're tired and more likely to reach for your phone for stimulation -- and the cycle continues.
 
-## Keep Your Phone Out of the Bedroom
+## Should I keep my phone out of the bedroom?
 
 This is, honestly, the most effective single change you can make. If your phone isn't within arm's reach, you remove the decision entirely.
 
@@ -55,9 +82,9 @@ What this looks like in practice:
 - Charge your phone in the kitchen, living room, or hallway
 - Accept that the first few nights will feel a bit strange
 
-When your phone is right next to you, willpower alone usually isn't enough. Physical distance creates just enough friction to interrupt the automatic grab-and-scroll behavior. People who try this consistently report noticeably better sleep -- it's one of those changes that sounds small but makes a real difference.
+When your phone is right next to you, willpower alone usually isn't enough. Physical distance creates just enough friction to interrupt the automatic grab-and-scroll behavior. It's one of those changes that sounds small but makes a real difference, and it's the idea behind [the science of friction](/blog/science-of-friction/).
 
-## Set a Digital Sunset
+## What is a digital sunset?
 
 Pick a time 60-90 minutes before bed when screens go off. If you want to be asleep by 10:30, that means screens down by 9:00 or 9:30.
 
@@ -69,7 +96,7 @@ After your digital sunset:
 
 A consistent cutoff time gives your brain a real transition period between stimulation and rest. Melatonin production can kick in naturally, and your nervous system can shift from alert mode to relaxation. It doesn't have to be rigid -- even a rough consistency helps.
 
-## Replace Scrolling with Something Else
+## What can I do instead of scrolling in bed?
 
 Simply removing the habit without putting something in its place usually doesn't stick. You need alternatives ready for when the urge hits.
 
@@ -84,19 +111,13 @@ Some options that actually work:
 
 It can help to keep a short list somewhere visible as a reminder, especially in the early days when the old habit is still strong.
 
-## Use Mindful Interventions
+## What if my phone has to stay in the bedroom?
 
-If keeping your phone in another room isn't realistic for you right now, mindful interventions can bridge the gap. The idea is to create a moment of awareness before you autopilot into scrolling.
+If keeping your phone in another room isn't realistic for you right now, a pause can bridge the gap. The idea is to create a moment of awareness before you autopilot into scrolling.
 
-Respite does this by showing a gentle reminder when you try to use your phone after your set wind-down time:
+Respite puts a short, gentle pause before the apps you pick, so the late-night tap on Instagram, TikTok or YouTube becomes a decision. You can always continue -- it's not a blocker. But that brief pause is often enough to snap you out of the automatic behavior and let you make a conscious choice instead. It's free on iPhone, Android and Chrome; [download Respite](/download/) and add your two or three worst night-time apps.
 
-> *"Take a breath. It's past your digital sunset time. Your sleep is more important than this app. Do you still want to proceed?"*
-
-You can always continue -- it's not a blocker. But that brief pause is often enough to snap you out of the automatic behavior and let you make a conscious choice instead.
-
-[Download Respite](/download/) to add mindful interventions to your nighttime routine.
-
-## Build a Bedtime Routine
+## What should a bedtime routine look like?
 
 Your brain responds well to routine. A consistent sequence of pre-sleep activities signals that it's time to wind down, and over time it becomes almost automatic.
 
@@ -112,7 +133,7 @@ Here's an example of a 60-minute routine -- adapt it to fit your life:
 
 The specific activities matter less than the structure: screens off, prepare, hygiene, relax, sleep. Find what works for you and try to stick with it, weekends included.
 
-## Figure Out What You're Really Looking For
+## What am I really looking for when I scroll in bed?
 
 This one's worth sitting with. Bedtime scrolling often fills a need that isn't about the content at all. If you can identify what you're actually after, you can meet that need in a way that doesn't wreck your sleep.
 
@@ -122,19 +143,19 @@ This one's worth sitting with. Bedtime scrolling often fills a need that isn't a
 - If it's decompression: Try non-screen options like music, tea, or a bath.
 - If it's escapism: That's worth paying attention to. Even small steps to address what you're avoiding during the day can reduce the pull at night.
 
-## Use Your Phone's Built-In Sleep Features
+## Which built-in sleep features should I turn on?
 
 Your phone already has tools designed to help with this. They're not a complete solution on their own, but they're worth turning on.
 
-On iOS, go to Settings > Sleep and set a sleep schedule. This automatically enables Do Not Disturb and dims your screen during your wind-down period.
+On iPhone, set up a sleep schedule in the Health app or under Settings > Focus > Sleep. The Sleep Focus silences notifications and can dim the Lock Screen during your wind-down period. You can also add a Screen Time limit for social apps under Settings > Screen Time > App Limits.
 
-On Android, check Settings > Digital Wellbeing > Bedtime mode. It fades the screen to grayscale and silences notifications on a schedule.
+On Android, check Settings > Digital Wellbeing > Bedtime mode. It can turn the screen to grayscale and silence notifications on a schedule. App timers in Digital Wellbeing add a daily cap on specific apps.
 
 Apps like Forest, Calm, and Headspace also have sleep-specific features that some people find helpful.
 
 These tools work best as part of a bigger plan -- they support the habit change, but they don't replace it.
 
-## When It's Not Working (and That's Normal)
+## What if it's not working?
 
 ### "Scrolling actually relaxes me"
 
@@ -150,17 +171,15 @@ That's actually okay. Boredom at bedtime is your brain experiencing stillness, w
 
 ### "I've tried this before and it didn't stick"
 
-You're not alone on that one. Willpower by itself tends to fail because it doesn't change the environment. Combine a few strategies: charge your phone in another room, use Respite's time-based interventions, keep a written routine visible, and start small. Even 30 minutes phone-free before bed is a real starting point -- you can build from there.
+You're not alone on that one. Willpower by itself tends to fail because it doesn't change the environment. Combine a few strategies: charge your phone in another room, add a pause before your worst apps, keep a written routine visible, and start small. Even 30 minutes phone-free before bed is a real starting point -- you can build from there.
 
-## What to Expect
+## What should I expect?
 
-You probably won't notice dramatic changes overnight. But within the first week or so, most people start falling asleep faster, sleeping more deeply, and waking up feeling more rested.
+You probably won't notice dramatic changes overnight. Many people find that falling asleep gets easier and mornings feel better within a couple of weeks of a consistent routine, though everyone differs. Over time the benefits tend to compound: more consistent sleep, steadier mood and less of that wired-but-tired feeling, until it stops feeling like effort and just becomes how your evenings work.
 
-Over a month, the benefits tend to compound: more consistent sleep, better mood, improved focus during the day, and less of that wired-but-tired feeling.
+If you have persistent trouble sleeping, or it's affecting your health, talk to a doctor; this guide isn't medical advice. Wondering how your overall screen time compares? See [how much screen time is too much](/blog/how-much-screen-time-is-too-much/).
 
-And after a couple of months, it often stops feeling like an effort. It just becomes how your evenings work.
-
-## A Simple Starting Point
+## Next step: start tonight
 
 If you want to start tonight, here are three things that make a real difference:
 
@@ -168,7 +187,7 @@ If you want to start tonight, here are three things that make a real difference:
 2. Charge your phone outside the bedroom.
 3. Pick one alternative activity to have ready (a book, a journal, whatever appeals to you).
 
-You don't have to overhaul your entire evening right away. Small, consistent changes add up, and sleep is one of those things where even modest improvements ripple out into the rest of your day.
+You don't have to overhaul your entire evening right away. Small, consistent changes add up, and sleep is one of those things where even modest improvements ripple out into the rest of your day. When you're ready to add the pause, [download Respite](/download/) and take the [Phone Addiction Quiz](/quiz/) to see where your worst habits are.
 
 ---
 
@@ -181,4 +200,4 @@ Related Reading:
 - [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction/)
 - [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
 
-Take our free [Phone Addiction Quiz](/quiz/) to assess your nighttime habits and get personalized recommendations.
+
