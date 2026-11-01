@@ -1,0 +1,10 @@
+{
+	"name": "gsc-mcp",
+	"private": true,
+	"type": "module",
+	"description": "Local MCP server for Google Search Console (search analytics, URL inspection, sitemaps), using a service-account key.",
+	"bin": { "gsc-mcp": "./server.mjs" },
+	"scripts": { "check": "node server.mjs --check" },
+	"dependencies": { "@modelcontextprotocol/sdk": "1.32.2" },
+	"engines": { "node": ">=20" }
+}
