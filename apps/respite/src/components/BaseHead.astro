@@ -118,6 +118,12 @@ const {
 <!-- Organization Schema -->
 <OrganizationSchema />
 
+<!-- Store-link attribution: UTMs and campaign tokens on store links, store_click events (src/lib/attribution.ts) -->
+<script>
+  import { initAttribution } from '../lib/attribution';
+  initAttribution();
+</script>
+
 <!-- Ahrefs Web Analytics -->
 <script is:inline>
   var ahrefs_analytics_script = document.createElement('script');
