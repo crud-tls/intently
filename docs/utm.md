@@ -54,7 +54,7 @@ URL). Reviewers and automated checks compare those literally.
    |---|---|---|
    | Google Play | `referrer=utm_source=…&utm_medium=…&utm_campaign=…&utm_content=…` | Play Console › Grow › Store performance › Acquisition |
    | Chrome Web Store | `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` | Developer Dashboard › Analytics › Acquisition |
-   | App Store | `pt=<provider token>&ct=<source>.<page>&mt=8` | App Store Connect › App Analytics › Acquisition › Campaigns |
+   | App Store | `pt=128440905&ct=<source>.<page>&mt=8` (ct ≤ 30 chars) | App Store Connect › App Analytics › Acquisition › Campaigns |
 
    With no inbound tags, the values are `utm_source=respite_site`, `utm_medium=web`,
    `utm_campaign=<section>` (`home`, `blog`, `tools`, `download`, …), and
@@ -66,7 +66,6 @@ URL). Reviewers and automated checks compare those literally.
 
 ## Still to do
 
-- **App Store provider token**: set `APPLE_PROVIDER_TOKEN` in `apps/respite/src/lib/attribution.ts`.
-  Find it in App Store Connect › App Analytics › Acquisition › Campaigns › Generate a campaign link;
-  it's the `pt=` number. Until then App Store links stay untagged.
+- App Store campaigns only show in App Store Connect once a campaign has installs from 5 or more
+  Apple Accounts. The provider token (`pt=128440905`) is set in `apps/respite/src/lib/attribution.ts`.
 - Put the ready-made links above into the three store listings and the apps' settings screens.

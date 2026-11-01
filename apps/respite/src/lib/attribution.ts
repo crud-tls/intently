@@ -13,7 +13,7 @@
 // The naming scheme is in docs/utm.md at the repo root. Keep the two in step.
 
 /** App Store Connect provider token ("pt"). App Analytics › Campaigns › Generate a campaign link. */
-export const APPLE_PROVIDER_TOKEN = '';
+export const APPLE_PROVIDER_TOKEN = '128440905';
 
 const SITE_SOURCE = 'respite_site';
 const KEY = 'respite_utm';
@@ -88,8 +88,8 @@ function tag(a: HTMLAnchorElement, store: string, src: Utm, pg: ReturnType<typeo
 	} else if (store === 'app_store') {
 		if (!APPLE_PROVIDER_TOKEN) return { where, utm };
 		url.searchParams.set('pt', APPLE_PROVIDER_TOKEN);
-		// Apple allows 40 characters; source first so it survives the cut.
-		url.searchParams.set('ct', `${utm.utm_source}.${pg.slug}`.slice(0, 40));
+		// App Store Connect's generator caps the campaign at 30 characters; source first so it survives the cut.
+		url.searchParams.set('ct', `${utm.utm_source}.${pg.slug}`.slice(0, 30));
 		url.searchParams.set('mt', '8');
 	}
 	a.href = url.href;
