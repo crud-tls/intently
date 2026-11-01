@@ -38,6 +38,8 @@ const {
 	heroImageAlt,
 	faq,
 	howToSteps,
+	answer,
+	keyTakeaways,
 	tags,
 	author,
 	wordCount = 0,
@@ -152,15 +154,35 @@ const effectiveAuthor = author || 'Respite Team';
 						<p class="toc-empty" id="toc-empty-mobile">Headings appear as you scroll.</p>
 					</nav>
 
-					<div class="reading-note" aria-label="Article context">
-						<p>
-							<strong>Quick context:</strong>
-							This article is designed for practical action. Read it once, then apply one strategy today.
-						</p>
-					</div>
+					{answer ? (
+						<section class="reading-note quick-answer" aria-label="Quick answer">
+							<p class="quick-answer-label">Quick answer</p>
+							<p class="quick-answer-text">{answer}</p>
+							{keyTakeaways && keyTakeaways.length > 0 && (
+								<ul class="quick-answer-points">
+									{keyTakeaways.map((t) => <li>{t}</li>)}
+								</ul>
+							)}
+						</section>
+					) : (
+						<div class="reading-note" aria-label="Article context">
+							<p>
+								<strong>Quick context:</strong>
+								This article is designed for practical action. Read it once, then apply one strategy today.
+							</p>
+						</div>
+					)}
 
 					<div id="article-intro" class="article-body">
 						<slot />
+						<aside class="inline-cta" id="inline-cta" data-placement="inline_cta" aria-label="Try Respite">
+							<p class="inline-cta-title">Want the pause without the willpower?</p>
+							<p>Respite puts a gentle, few-second pause before the apps you pick, so you open them on purpose. Free on iPhone, Android and Chrome.</p>
+							<p class="inline-cta-actions">
+								<a href="/download/" class="inline-cta-button">Get Respite free</a>
+								<a href="/quiz/" class="inline-cta-link">Or take the 2-minute phone habit quiz</a>
+							</p>
+						</aside>
 					</div>
 
 					<AuthorBio author={effectiveAuthor} />
@@ -202,6 +224,14 @@ const effectiveAuthor = author || 'Respite Team';
 		<Footer />
 
 		<script>
+			// The call to action renders after the post; move it before the third section, where readers
+			// getting value from the post still are (before the last one in short posts).
+			{
+				const cta = document.getElementById('inline-cta');
+				const sections = [...document.querySelectorAll('.article-body > h2')];
+				const anchor = sections.length >= 4 ? sections[2] : sections.length >= 2 ? sections.at(-1) : null;
+				if (cta && anchor) anchor.before(cta);
+			}
 			const articleBody = document.querySelector('.article-body');
 			const progressBar = document.getElementById('reading-progress-bar');
 			const tocDesktop = document.getElementById('toc-desktop');
@@ -717,6 +747,70 @@ const effectiveAuthor = author || 'Respite Team';
 
 	.reading-note strong {
 		color: var(--ds-text-primary);
+	}
+
+	.quick-answer-label {
+		font-size: 0.78rem !important;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--ds-text-primary) !important;
+		margin-bottom: var(--ds-space-xs) !important;
+	}
+
+	.quick-answer .quick-answer-text {
+		font-size: 1.02rem;
+		color: var(--ds-text-primary);
+	}
+
+	.quick-answer-points {
+		margin: var(--ds-space-sm) 0 0;
+		padding-left: 1.2rem;
+		color: var(--ds-text-secondary);
+		font-size: 0.95rem;
+		line-height: 1.55;
+	}
+
+	:global(.article-body .inline-cta) {
+		margin: var(--ds-space-xl) 0;
+		padding: var(--ds-space-lg);
+		border-radius: var(--ds-radius-md);
+		background: var(--ds-bg-info);
+		border: 1px solid color-mix(in srgb, var(--ds-primary) 28%, transparent);
+		font-family: inherit;
+	}
+
+	:global(.article-body .inline-cta p) {
+		margin: 0 0 var(--ds-space-sm);
+		font-size: 0.98rem;
+	}
+
+	:global(.article-body .inline-cta .inline-cta-title) {
+		font-weight: 700;
+		font-size: 1.08rem;
+		color: var(--ds-text-primary);
+	}
+
+	:global(.article-body .inline-cta .inline-cta-actions) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: var(--ds-space-md);
+		margin: var(--ds-space-md) 0 0;
+	}
+
+	:global(.article-body .inline-cta .inline-cta-button) {
+		display: inline-block;
+		padding: 0.6rem 1.1rem;
+		border-radius: 999px;
+		background: var(--ds-primary);
+		color: var(--ds-on-primary);
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	:global(.article-body .inline-cta .inline-cta-link) {
+		font-size: 0.92rem;
 	}
 
 	.article-body {

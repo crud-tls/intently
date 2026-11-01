@@ -4,6 +4,12 @@ description: 'Free apps like One Sec that pause you before Instagram, TikTok or 
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
 author: 'Respite Team'
+answer: 'The best free One Sec alternatives are Respite (a mindful pause before the apps you pick, on iPhone, Android and Chrome), ScreenZen (free countdown delays on iOS and Android) and ClearSpace (a pause plus exercises on iOS). All three keep One Sec''s core idea, a moment of friction before you open a distracting app, without its roughly $50 a year price.'
+keyTakeaways:
+  - 'One Sec works: a Max Planck study found 57% fewer app opens with its breathing pause.'
+  - 'Respite is free on iPhone, Android and Chrome; an optional Plus adds sync across devices.'
+  - 'ScreenZen is the simplest free option if you only want a timed delay.'
+  - 'Pick by platform first: not every alternative runs on Android or in your browser.'
 section: 'App Comparisons'
 tags: ['one sec alternatives', 'one sec alternative android', 'one sec alternative free', 'screen time', 'mindful pause', 'digital wellbeing', 'free one sec alternative android']
 heroImage: '/blog-digital-wellbeing-alternatives.jpg'

@@ -15,6 +15,10 @@ const blog = defineCollection({
 		heroImageAlt: z.string().optional(),
 		author: z.string().optional(),
 		tags: z.array(z.string()).optional(),
+		// Answer-first summary shown at the top of the post and given to answer engines (40-70 words).
+		answer: z.string().optional(),
+		// 3-5 one-line takeaways shown under the answer.
+		keyTakeaways: z.array(z.string()).optional(),
 		faq: z.array(z.object({
 			question: z.string(),
 			answer: z.string(),
