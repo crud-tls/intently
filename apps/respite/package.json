@@ -5,13 +5,14 @@
 	"private": true,
 	"scripts": {
 		"astro": "astro",
-		"build": "astro build",
+		"build": "astro build && node scripts/check-links.mjs",
 		"cf-typegen": "wrangler types",
 		"check": "astro build && tsc --noEmit && wrangler deploy --dry-run",
 		"deploy": "wrangler deploy",
 		"dev": "astro dev",
 		"preview": "astro build && wrangler dev",
-		"optimize-images": "node scripts/optimize-images.mjs"
+		"optimize-images": "node scripts/optimize-images.mjs",
+		"check-links": "node scripts/check-links.mjs"
 	},
 	"dependencies": {
 		"@astrojs/cloudflare": "12.6.12",

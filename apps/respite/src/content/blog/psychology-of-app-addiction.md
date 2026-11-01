@@ -29,7 +29,7 @@ The reason you can't stop is that you're not really choosing to scroll in the fi
 
 This automation is the result of thousands of repetitions. Each time you felt a trigger (boredom, a notification, waiting in line) and responded by opening an app, the connection between that trigger and that behavior strengthened. Eventually, the behavior became as automatic as reaching for a light switch when you enter a dark room. You don't decide to flip the switch — your hand just does it.
 
-Breaking this loop requires interrupting the automaticity. Not through willpower (which fights the habit after it's already fired) but through awareness — catching the impulse in the gap between trigger and response. That's exactly what [mindful interventions](/blog/mindful-tech-interventions-vs-blocking) are designed to do.
+Breaking this loop requires interrupting the automaticity. Not through willpower (which fights the habit after it's already fired) but through awareness — catching the impulse in the gap between trigger and response. That's exactly what [mindful interventions](/blog/mindful-tech-interventions-vs-blocking/) are designed to do.
 
 ## The Neuroscience Behind It
 
@@ -139,7 +139,7 @@ Aza Raskin, who invented infinite scroll, later expressed regret: "It's as if th
 
 The design playbook includes: hiring psychologists to optimize engagement loops, A/B testing every notification to maximize return visits, using machine learning to personalize feeds for maximum stickiness, deliberately removing natural stopping cues (pagination, chronological order), and engineering social features (streaks, read receipts, follower counts) to exploit social anxiety.
 
-Understanding this context matters because it shifts the framing from "what's wrong with me?" to "what am I up against?" You're not fighting a character flaw. You're navigating an environment that has been purpose-built to exploit how your brain works. That distinction changes how you approach the solution — away from shame and willpower, toward [tools and strategies](/blog/how-to-stop-phone-addiction) that work with your psychology rather than against it.
+Understanding this context matters because it shifts the framing from "what's wrong with me?" to "what am I up against?" You're not fighting a character flaw. You're navigating an environment that has been purpose-built to exploit how your brain works. That distinction changes how you approach the solution — away from shame and willpower, toward [tools and strategies](/blog/how-to-stop-phone-addiction/) that work with your psychology rather than against it.
 
 ## Why Willpower Alone Fails
 
@@ -162,7 +162,7 @@ Just "trying harder" doesn't cut it.
 
 You can't change behavior you're not aware of. The first step is making the unconscious conscious.
 
-Mindful interventions (used by apps like [Respite](/download)) create a gap between impulse and action. Before opening Instagram, you see: "Take a breath. Do you still want to open this?"
+Mindful interventions (used by apps like [Respite](/download/)) create a gap between impulse and action. Before opening Instagram, you see: "Take a breath. Do you still want to open this?"
 
 That pause activates your prefrontal cortex -- the rational, decision-making part of your brain. You shift from automatic response to conscious choice.
 
@@ -300,7 +300,7 @@ Behavior change is messy. Each time you catch yourself mindlessly scrolling and 
 
 ### Use Tools That Work With You
 
-Apps like [Respite](/download) use mindful interventions rather than shame-based blocking. They respect your autonomy while creating awareness. This approach aligns with motivation research -- autonomy support creates lasting change, while controlling strategies create resistance.
+Apps like [Respite](/download/) use mindful interventions rather than shame-based blocking. They respect your autonomy while creating awareness. This approach aligns with motivation research -- autonomy support creates lasting change, while controlling strategies create resistance.
 
 ## FAQ: App Addiction
 
@@ -328,18 +328,18 @@ App addiction can feel insurmountable because so much of it happens below consci
 
 Pick one strategy from this article and try it this week. Maybe it's turning off notifications, or installing Respite for mindful interventions, or keeping your phone out of your bedroom. Small, concrete changes add up.
 
-Ready to break free from app addiction with psychology-backed, compassionate tools? [Download Respite](/download) and start building healthier digital habits today.
+Ready to break free from app addiction with psychology-backed, compassionate tools? [Download Respite](/download/) and start building healthier digital habits today.
 
 ---
 
-How addicted are you to your apps? Take our free [Phone Addiction Quiz](/quiz) to get a science-backed assessment and discover personalized strategies to break the cycle.
+How addicted are you to your apps? Take our free [Phone Addiction Quiz](/quiz/) to get a science-backed assessment and discover personalized strategies to break the cycle.
 
 ---
 
 **Related Articles:**
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
-- [Stop TikTok Scrolling Without Deleting](/blog/stop-tiktok-scrolling)
-- [Stop YouTube Binge Watching](/blog/stop-youtube-binge)
-- [What Is Digital Wellbeing?](/blog/what-is-digital-wellbeing)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
+- [Stop TikTok Scrolling Without Deleting](/blog/stop-tiktok-scrolling/)
+- [Stop YouTube Binge Watching](/blog/stop-youtube-binge/)
+- [What Is Digital Wellbeing?](/blog/what-is-digital-wellbeing/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)

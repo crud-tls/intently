@@ -21,8 +21,6 @@ faq:
     answer: "Physical exercise friction can work well initially because it adds real effort to opening apps. However, many users report that the approach becomes impractical in everyday situations — you can't do pushups in a meeting, on public transit, or while lying in bed. Mindful pause approaches like Respite work in any context because they only require a moment of reflection."
 ---
 
-# Respite vs Clearspace: Mindful Pause or Physical Exercise Unlock?
-
 Respite and Clearspace both want to help you use your phone more intentionally, but they take radically different approaches. Respite shows you a customizable mindful pause before opening apps — a moment to reflect and decide consciously. Clearspace makes you do physical exercises like pushups or squats before an app unlocks.
 
 Same goal, very different philosophies. One asks you to think. The other asks you to sweat.
@@ -127,7 +125,7 @@ The question is which type of friction stays effective over time and works in yo
 
 The best approach is the one you'll actually stick with. If you're unsure, try one for two weeks and pay attention to whether the friction is still making you think — or whether you've started to tune it out.
 
-[Download Respite for Android, iOS & Chrome](/download)
+[Download Respite for Android, iOS & Chrome](/download/)
 
 Questions or feedback? Reach out at support@liveintently.app.
 
@@ -135,11 +133,11 @@ Questions or feedback? Reach out at support@liveintently.app.
 
 ## Related Articles
 
-- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives)
-- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec)
-- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
+- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives/)
+- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec/)
+- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
 
 ---
 

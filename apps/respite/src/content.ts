@@ -63,8 +63,8 @@ export const content: SiteContent = {
 				"Daily limits and an app lock that covers an app once today's time is used",
 				"Built on Apple's Screen Time, so app names stay on your iPhone",
 			],
-			privacy: '/privacy',
-			terms: '/terms',
+			privacy: '/privacy/',
+			terms: '/terms/',
 		},
 		{
 			id: 'android',
@@ -77,8 +77,8 @@ export const content: SiteContent = {
 				'Optional Reels and Shorts blocking, using the Accessibility service',
 				'Streaks and home screen widgets',
 			],
-			privacy: '/privacy/android',
-			terms: '/terms/android',
+			privacy: '/privacy/android/',
+			terms: '/terms/android/',
 		},
 		{
 			id: 'chrome',
@@ -86,7 +86,7 @@ export const content: SiteContent = {
 			title: 'Chrome extension',
 			summary: 'The same pause for the websites that pull you in on a laptop.',
 			features: ['Website time tracking', 'Focus mode', 'Usage insights', 'Quick settings'],
-			privacy: '/privacy/chrome',
+			privacy: '/privacy/chrome/',
 		},
 	],
 	faq: [

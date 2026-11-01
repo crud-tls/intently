@@ -21,8 +21,6 @@ faq:
     answer: "App blockers stop working because they rely on external restriction rather than internal motivation. Many blocker users find workarounds or return to old habits within weeks. Blocking triggers psychological reactance (wanting what you can't have) and doesn't build the self-regulation skills needed for lasting change."
 ---
 
-# Why Willpower Fails: The Science of Phone Addiction (And What Works Instead)
-
 Most of us have been there. You tell yourself tonight will be different -- no scrolling past 10 PM. You set screen time limits. Maybe you even delete an app or two. And then a few days later, everything's back to normal, and you feel a little worse about it than before.
 
 The usual advice is some version of "just try harder." But the reason willpower keeps failing you isn't that you're weak. It's that willpower was never designed to win this fight.
@@ -83,7 +81,7 @@ You can always proceed. The intervention activates your conscious mind at exactl
 
 This works where willpower doesn't because it's consistent (no depletion at 11 PM), it respects your autonomy (no reactance), and it builds a skill over time. Research on mindful interventions suggests they lead to sustained reductions in screen time because users develop internal awareness rather than depending on external restriction.
 
-[Download Respite Free →](/download)
+[Download Respite Free →](/download/)
 
 ### Environmental Design
 
@@ -107,28 +105,28 @@ This works because you're redirecting the urge rather than fighting it. The crav
 
 ## Putting It Together
 
-**Week 1:** [Download Respite](/download) and set it up for your top 3 distracting apps. Don't try to change anything yet -- just observe the prompts and your choices. Review your usage data at the end of the week.
+**Week 1:** [Download Respite](/download/) and set it up for your top 3 distracting apps. Don't try to change anything yet -- just observe the prompts and your choices. Review your usage data at the end of the week.
 
 **Week 2:** Redesign your environment. Move social media apps to a folder on your second screen. Turn off non-essential notifications. Charge your phone outside your bedroom.
 
 **Week 3:** Identify your top 3 scrolling triggers and choose a specific replacement behavior for each one.
 
-**Week 4:** Review your Respite analytics. Adjust your intervention messages based on what resonates. Take our [Phone Addiction Quiz](/quiz) to measure your progress.
+**Week 4:** Review your Respite analytics. Adjust your intervention messages based on what resonates. Take our [Phone Addiction Quiz](/quiz/) to measure your progress.
 
 The common thread across all of these is that none of them ask you to "try harder." They work with your brain's wiring instead of against it.
 
-[Download Respite Free →](/download) | [Take the Phone Addiction Quiz →](/quiz)
+[Download Respite Free →](/download/) | [Take the Phone Addiction Quiz →](/quiz/)
 
 ---
 
 ## Related Articles
 
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech-interventions-vs-blocking)
-- [Phone Addiction and ADHD: Why Your Brain Can't Stop](/blog/phone-addiction-adhd)
-- [Social Media Addiction Signs: 10 Warning Signs](/blog/social-media-addiction-signs)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech-interventions-vs-blocking/)
+- [Phone Addiction and ADHD: Why Your Brain Can't Stop](/blog/phone-addiction-adhd/)
+- [Social Media Addiction Signs: 10 Warning Signs](/blog/social-media-addiction-signs/)
 
 ---
 

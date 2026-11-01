@@ -21,8 +21,6 @@ faq:
     answer: "Children model what they see, not what they're told. If you're on your phone constantly, screen time rules feel hypocritical. Start by creating phone-free family times (meals, bedtime routines, outings), charge your phone outside the bedroom, and use a mindful pause app like Respite to build awareness of your own habits. Your behavior sets the baseline for the whole family."
 ---
 
-# Screen Time for Parents: A Practical Family Guide
-
 Managing screen time is one of the most common challenges modern parents face. Kids want more screen time. You're trying to set reasonable limits. And in the background, there's a nagging awareness that your own phone habits might not be the example you'd like to set.
 
 This guide covers what the research actually recommends, how to set up controls on both iPhone and Android, family rules that work in practice, and the uncomfortable truth that the most important screen time intervention starts with you.
@@ -173,7 +171,7 @@ Setting screen time rules for your kids while maintaining heavy phone use yourse
 
 **Create phone-free times for yourself.** If your kids can't have phones at dinner, neither can you. If devices charge outside bedrooms, yours does too. Shared rules build family culture.
 
-**Use a mindful pause app.** Tools like [Respite](/download) add a brief pause before you open distracting apps — giving you a moment to decide consciously whether you want to check Instagram or be present with your family. It's a small intervention that makes a real difference, especially during after-school hours and evenings.
+**Use a mindful pause app.** Tools like [Respite](/download/) add a brief pause before you open distracting apps — giving you a moment to decide consciously whether you want to check Instagram or be present with your family. It's a small intervention that makes a real difference, especially during after-school hours and evenings.
 
 **Narrate your choices.** Let your kids see you making deliberate screen decisions. "I'm going to check my email now, and then my phone goes away for dinner." This shows them that intentional use is a skill adults practice too.
 
@@ -215,7 +213,7 @@ If you're in the "Time to Act" category, consider consulting your pediatrician o
 - Focus modes and Do Not Disturb scheduling
 
 ### For Parents: Building Your Own Habits
-- **[Respite](/download)** — Free mindful pause app. Add awareness before opening distracting apps. Custom messages, usage tracking, works offline with no account. Available on [iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Android and Chrome.
+- **[Respite](/download/)** — Free mindful pause app. Add awareness before opening distracting apps. Custom messages, usage tracking, works offline with no account. Available on [iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Android and Chrome.
 - **Phone-free charging station** — A central spot where all family devices charge overnight
 - **Grayscale mode** — Makes your phone less visually stimulating (Settings > Accessibility > Display)
 
@@ -236,14 +234,14 @@ You don't need to overhaul everything at once. Pick one change:
 
 Small, consistent changes compound over time. Your family's relationship with screens won't transform overnight, but it will shift — one phone-free dinner at a time.
 
-[Download Respite free](/download) to start building better screen time habits for yourself — because the best thing you can do for your kids' screen time is manage your own.
+[Download Respite free](/download/) to start building better screen time habits for yourself — because the best thing you can do for your kids' screen time is manage your own.
 
 ---
 
 ## Related Articles
 
-- [How to Block Apps on iPhone: Complete Guide](/blog/how-to-block-apps-iphone)
-- [Screen Time and Mental Health: What Research Shows](/blog/screen-time-and-mental-health)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Stop Checking Your Phone First Thing in the Morning](/blog/stop-checking-phone-morning)
-- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
+- [How to Block Apps on iPhone: Complete Guide](/blog/how-to-block-apps-iphone/)
+- [Screen Time and Mental Health: What Research Shows](/blog/screen-time-and-mental-health/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Stop Checking Your Phone First Thing in the Morning](/blog/stop-checking-phone-morning/)
+- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night/)

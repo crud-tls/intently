@@ -21,8 +21,6 @@ faq:
     answer: "If phone-related anxiety is significantly affecting your daily life, relationships, or work — or if you suspect your phone use is masking deeper anxiety issues — professional support is worthwhile. Cognitive Behavioral Therapy (CBT) is particularly effective for both anxiety and behavioral patterns like compulsive phone use. A therapist can help you distinguish between phone-caused anxiety and pre-existing anxiety that phone use is making worse."
 ---
 
-# Phone Addiction and Anxiety: Understanding the Cycle
-
 If you've ever felt a spike of anxiety when you realize your phone isn't in your pocket, or a creeping unease when you haven't checked it in a while, or a wave of stress after 20 minutes on social media — you're not imagining things. The relationship between phone use and anxiety is one of the most consistently documented findings in digital wellbeing research.
 
 But the relationship isn't simple. Phones don't just cause anxiety — they also become the tool we reach for to soothe it, which often makes it worse. Understanding this cycle is the first step to breaking it.
@@ -80,7 +78,7 @@ This is why being without your phone can feel genuinely distressing. It's not dr
 
 Your brain has a limited capacity for processing information. When you exceed that capacity — which infinite feeds are specifically designed to help you do — the result is cognitive overwhelm. Your brain can't prioritize, can't process, and can't reach conclusions. This overwhelm manifests as anxiety: a vague sense that there's too much to deal with and not enough capacity to handle it.
 
-[Doomscrolling](/blog/what-is-doomscrolling) is the extreme version of this. Reading about disasters, crises, and worst-case scenarios triggers your threat-detection system without ever providing resolution. Your brain stays in alarm mode because the threats keep coming and never resolve.
+[Doomscrolling](/blog/what-is-doomscrolling/) is the extreme version of this. Reading about disasters, crises, and worst-case scenarios triggers your threat-detection system without ever providing resolution. Your brain stays in alarm mode because the threats keep coming and never resolve.
 
 ## What the Research Says
 
@@ -104,7 +102,7 @@ This single change reduces the number of times your nervous system spikes each d
 
 ### 2. Track the Connection
 
-For one week, rate your anxiety on a 1-10 scale three times daily (morning, afternoon, evening) alongside your screen time data from [Respite](/download). Look for patterns. Most people discover clear correlations: anxiety spikes after social media sessions, anxiety decreases on lower-phone days, anxiety is worst when phone use happens close to bedtime.
+For one week, rate your anxiety on a 1-10 scale three times daily (morning, afternoon, evening) alongside your screen time data from [Respite](/download/). Look for patterns. Most people discover clear correlations: anxiety spikes after social media sessions, anxiety decreases on lower-phone days, anxiety is worst when phone use happens close to bedtime.
 
 Seeing the data makes the abstract connection concrete and personal.
 
@@ -118,7 +116,7 @@ Two buffer zones have the biggest impact on anxiety:
 
 ### 4. Use Mindful Interventions
 
-Install [Respite](/download) and set it to trigger on your anxiety-driving apps. When you reach for Instagram or Twitter in an anxious moment, the brief pause creates space to ask: "Am I checking this to feel better, or am I going to feel worse?"
+Install [Respite](/download/) and set it to trigger on your anxiety-driving apps. When you reach for Instagram or Twitter in an anxious moment, the brief pause creates space to ask: "Am I checking this to feel better, or am I going to feel worse?"
 
 That moment of awareness is often enough to break the cycle. You don't need to be blocked — you just need to be conscious of what you're doing and why.
 
@@ -142,7 +140,7 @@ When you feel anxious and reach for your phone, you need a ready alternative tha
 
 If your phone use is primarily a coping mechanism for anxiety that exists independently of your phone, reducing phone use alone won't solve the problem. It might even temporarily increase anxiety as you lose a coping tool without replacing it with something better.
 
-In this case, professional support is valuable. [Cognitive Behavioral Therapy (CBT)](/blog/phone-addiction-help) is effective for both anxiety disorders and compulsive phone use, and a therapist can help you build healthier coping strategies while you reduce your phone dependence.
+In this case, professional support is valuable. [Cognitive Behavioral Therapy (CBT)](/blog/phone-addiction-help/) is effective for both anxiety disorders and compulsive phone use, and a therapist can help you build healthier coping strategies while you reduce your phone dependence.
 
 ## When to Seek Professional Help
 
@@ -173,18 +171,18 @@ Your phone isn't the only source of anxiety in your life, but for many people it
 
 Breaking the cycle doesn't require eliminating your phone. It requires understanding the specific ways your phone affects your anxiety and making targeted changes: turning off notifications, creating buffer zones, curating your feeds, and building awareness around when and why you reach for your phone.
 
-Ready to start? [Download Respite](/download) to build awareness around your phone habits and create mindful pauses before anxiety-driving apps.
+Ready to start? [Download Respite](/download/) to build awareness around your phone habits and create mindful pauses before anxiety-driving apps.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to understand how your phone habits are affecting your mental health.
+Take our free [Phone Addiction Quiz](/quiz/) to understand how your phone habits are affecting your mental health.
 
 ---
 
 **Related Articles:**
-- [Screen Time and Mental Health](/blog/screen-time-and-mental-health)
-- [What Is Doomscrolling?](/blog/what-is-doomscrolling)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
+- [Screen Time and Mental Health](/blog/screen-time-and-mental-health/)
+- [What Is Doomscrolling?](/blog/what-is-doomscrolling/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)

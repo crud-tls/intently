@@ -22,8 +22,6 @@ faq:
     answer: "Most people notice significant improvement within 7-10 days of consistent practice. The habit typically breaks entirely after 3-4 weeks. Using mindful interventions and physical separation (phone in another room) dramatically accelerates progress by removing both the psychological trigger and the physical access."
 ---
 
-# How to Stop Checking Your Phone First Thing in the Morning
-
 If you're reading this, you probably already know the feeling. The alarm goes off, your hand reaches for the phone, and before you've even sat up, you're scrolling through notifications, emails, maybe the news. Twenty minutes vanish. You haven't had a sip of water, but you already know what your coworker posted on Instagram.
 
 Most of us do this. It's almost reflexive at this point. But if you've ever noticed that your mornings feel rushed, scattered, or slightly anxious for no clear reason -- your phone habit might be a bigger factor than you think.
@@ -160,7 +158,7 @@ Respite is designed for exactly this kind of morning habit change, and it works 
 
 **Tracking your progress:** Respite logs how often you open tracked apps and how often the pause made you change your mind. Over time, you'll see your morning app opens trending down -- concrete evidence that the habit is shifting.
 
-[Download Respite free](/download) to start building better mornings.
+[Download Respite free](/download/) to start building better mornings.
 
 ## What You'll Actually Notice
 
@@ -173,12 +171,12 @@ Your morning sets the tone for everything that follows. A reactive start tends t
 ---
 
 **Related Reading:**
-- [Stop Scrolling at Night: Sleep-Saving Guide](/blog/stop-scrolling-at-night)
-- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
-- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
+- [Stop Scrolling at Night: Sleep-Saving Guide](/blog/stop-scrolling-at-night/)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling/)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
 
-Take our free [Phone Addiction Quiz](/quiz) to assess your morning habits and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to assess your morning habits and get personalized recommendations.

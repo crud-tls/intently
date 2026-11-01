@@ -21,8 +21,6 @@ faq:
     answer: "Mindful pause approaches like Respite tend to catch unconscious habits in real-time — every app launch becomes a conscious choice. Time budget approaches like Refocus allow unrestricted use until a limit is hit, which means the first 30-60 minutes of scrolling happen on autopilot. For habitual, mindless phone checking, proactive pauses are generally more effective."
 ---
 
-# Respite vs Refocus: Every-Launch Pause or End-of-Budget Reminder?
-
 Respite and Refocus both help you manage screen time, but they intervene at completely different moments. Respite shows a mindful pause before every app launch — turning each open into a conscious decision. Refocus sets daily time budgets and nudges you when you've used too much.
 
 The difference matters more than it sounds. One approach catches you before the scroll starts. The other lets you scroll freely until a timer runs out.
@@ -129,7 +127,7 @@ The choice between Respite and Refocus often comes down to diagnosing your actua
 
 Many people have both problems. If you're unsure which is primary, try tracking your phone pickups for a day (most phones have this stat in settings). If the number is high (50+), frequency is likely your main issue and Respite is the better fit. If pickups are moderate but total screen time is very high, duration is the issue and Refocus might serve you better.
 
-[Download Respite for Android, iOS & Chrome](/download)
+[Download Respite for Android, iOS & Chrome](/download/)
 
 Questions or feedback? Reach out at support@liveintently.app.
 
@@ -137,11 +135,11 @@ Questions or feedback? Reach out at support@liveintently.app.
 
 ## Related Articles
 
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec)
-- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen)
-- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec/)
+- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen/)
+- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
 
 ---
 

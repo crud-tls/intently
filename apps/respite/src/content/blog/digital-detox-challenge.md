@@ -31,8 +31,6 @@ howToSteps:
     text: "Review your full month of data and identify what worked best. Create a sustainable personal phone use plan with realistic daily limits, scheduled screen-free times, and go-to replacement activities. Set up ongoing tracking with Respite and establish a weekly review habit to maintain your progress long-term."
 ---
 
-# 30-Day Digital Detox Challenge: A Practical Guide to Healthier Phone Use
-
 ## What Is a Digital Detox?
 
 A digital detox is a deliberate period of reduced or eliminated recreational screen time — stepping back from social media, mindless browsing, and habitual phone checking to reset your relationship with technology. Unlike going cold turkey forever, a detox is temporary and structured. The goal isn't to swear off screens permanently. It's to break the autopilot, build awareness of your habits, and create space for intentional use going forward.
@@ -62,7 +60,7 @@ Each week builds on the last, which is what makes this more sustainable than a w
 
 You'll need a few things:
 
-- A tracking app -- [Download Respite](/download) for privacy-first screen time tracking with mindful interventions
+- A tracking app -- [Download Respite](/download/) for privacy-first screen time tracking with mindful interventions
 - Something to jot notes in (a notebook, a notes app, whatever works)
 - An alarm clock, if your phone currently wakes you up
 - Some patience with yourself
@@ -75,7 +73,7 @@ The whole point of this week is observation. Don't try to cut back yet -- just w
 
 This might sound like a waste of time, but it's the most important part. Most people are genuinely surprised by their own data. And the act of paying attention, on its own, tends to shift behavior a bit.
 
-**Day 1:** Download [Respite](/download), set it up for your most-used apps, and screenshot your current daily average as your baseline. That's it.
+**Day 1:** Download [Respite](/download/), set it up for your most-used apps, and screenshot your current daily average as your baseline. That's it.
 
 **Day 2:** Try to notice every time you pick up your phone today. At the end of the day, guess your total pickups and check it against the data. Most people are way off.
 
@@ -93,11 +91,11 @@ This might sound like a waste of time, but it's the most important part. Most pe
 
 Now that you have real data, you can make targeted changes instead of guessing. The goal this week isn't dramatic -- it's about introducing friction and boundaries where they'll matter most.
 
-**Day 8:** Set up [Respite's mindful interventions](/blog/mindful-tech-interventions-vs-blocking) for your top 3 problem apps. These are gentle pauses that ask if you really want to open the app right now. They're surprisingly effective because most phone use is automatic, not deliberate.
+**Day 8:** Set up [Respite's mindful interventions](/blog/mindful-tech-interventions-vs-blocking/) for your top 3 problem apps. These are gentle pauses that ask if you really want to open the app right now. They're surprisingly effective because most phone use is automatic, not deliberate.
 
 **Day 9:** Do a notification purge. Go through every app and turn off anything that isn't truly important. Keep calls, messages from people who matter, and calendar reminders. Kill everything else. You'll be amazed at how much quieter your day gets.
 
-**Day 10:** Try the morning phone-free experiment. Put your phone outside your bedroom tonight and don't touch it for the first 30 minutes after waking. Use your alarm clock. Fill that time with literally anything else -- water, stretching, staring out the window. See how it feels. (Our full guide on [the morning phone check habit](/blog/stop-checking-phone-morning) goes deeper on this.)
+**Day 10:** Try the morning phone-free experiment. Put your phone outside your bedroom tonight and don't touch it for the first 30 minutes after waking. Use your alarm clock. Fill that time with literally anything else -- water, stretching, staring out the window. See how it feels. (Our full guide on [the morning phone check habit](/blog/stop-checking-phone-morning/) goes deeper on this.)
 
 **Day 11:** Pick at least two spots in your home where phones aren't allowed. The dining table and the bedroom are the classics. Charge your phone somewhere else.
 
@@ -111,7 +109,7 @@ What's something you'd do with an extra hour each day? It's worth thinking about
 
 ## Week 3: Replacement (Days 15-21)
 
-Here's the thing about cutting screen time: if you don't replace it with something, you'll just end up back on your phone. Boredom and habit are powerful, and they need somewhere to go. This week is about finding [activities that actually fill that space](/blog/how-to-reduce-screen-time).
+Here's the thing about cutting screen time: if you don't replace it with something, you'll just end up back on your phone. Boredom and habit are powerful, and they need somewhere to go. This week is about finding [activities that actually fill that space](/blog/how-to-reduce-screen-time/).
 
 **Day 15:** Try habit stacking. Pick one screen-free activity and attach it to something you already do. "After I pour my coffee, I'll read five pages." "When I sit down for lunch, the phone stays in my bag for the first 10 minutes." Small and specific works best.
 
@@ -123,7 +121,7 @@ Here's the thing about cutting screen time: if you don't replace it with somethi
 
 **Day 19:** Spend an hour doing something creative. Cook something new, draw, write, play an instrument, build something. Leave your phone in another room.
 
-**Day 20:** Try a screen-free evening. Stop all screens one hour before bed and replace that time with reading, stretching, a bath, or conversation. Pay attention to your sleep quality the next morning. (Our guide on [stopping nighttime scrolling](/blog/stop-scrolling-at-night) has more on this.)
+**Day 20:** Try a screen-free evening. Stop all screens one hour before bed and replace that time with reading, stretching, a bath, or conversation. Pay attention to your sleep quality the next morning. (Our guide on [stopping nighttime scrolling](/blog/stop-scrolling-at-night/) has more on this.)
 
 **Day 21:** Week 3 review. Look at three weeks of data now. Which replacement activities did you actually enjoy? Which ones felt forced? Keep what works and drop what doesn't -- this isn't about perfection, it's about building a life you prefer to scrolling.
 
@@ -145,9 +143,9 @@ The final stretch is less about new experiments and more about figuring out what
 
 **Start on a weekday.** The structure of a workday helps. Starting on a Saturday when you have nothing planned is setting yourself up for a rough first few days.
 
-**You will slip up.** A day of heavy scrolling doesn't undo two weeks of progress. Notice it, figure out what triggered it, and move on. Self-criticism makes this harder, not easier. This is consistent with [how mindful approaches to phone habits work](/blog/phone-addiction-help) -- compassion beats shame every time.
+**You will slip up.** A day of heavy scrolling doesn't undo two weeks of progress. Notice it, figure out what triggered it, and move on. Self-criticism makes this harder, not easier. This is consistent with [how mindful approaches to phone habits work](/blog/phone-addiction-help/) -- compassion beats shame every time.
 
-**Track consistently.** Having objective data removes a lot of the guesswork and self-deception. [Respite's privacy-first tracking](/blog/privacy-first-screen-time-tracking) gives you real numbers without compromising your personal information.
+**Track consistently.** Having objective data removes a lot of the guesswork and self-deception. [Respite's privacy-first tracking](/blog/privacy-first-screen-time-tracking/) gives you real numbers without compromising your personal information.
 
 **Replace, don't just remove.** Every chunk of screen time you cut should be filled with something you actually like. If this whole thing feels like punishment, something's off. The point is a better daily life, not a more spartan one.
 
@@ -168,18 +166,18 @@ After 30 days, the goal isn't some austere, phone-free existence. You'll still u
 
 That sense of choosing -- that's what this whole thing is about.
 
-Ready to start? [Download Respite](/download) and begin Day 1.
+Ready to start? [Download Respite](/download/) and begin Day 1.
 
 ---
 
-Not ready for a full 30-day challenge? Take our free [Phone Addiction Quiz](/quiz) to see where you stand and get personalized recommendations for your starting point.
+Not ready for a full 30-day challenge? Take our free [Phone Addiction Quiz](/quiz/) to see where you stand and get personalized recommendations for your starting point.
 
 ---
 
 **Related Articles:**
-- [How to Reduce Screen Time: 10 Practical Strategies](/blog/how-to-reduce-screen-time)
-- [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much)
-- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
-- [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night)
-- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
-- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
+- [How to Reduce Screen Time: 10 Practical Strategies](/blog/how-to-reduce-screen-time/)
+- [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much/)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning/)
+- [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night/)
+- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social/)
+- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking/)

@@ -4,7 +4,7 @@ updated: 2026-10-19
 ---
 
 Respite: Screen Time Control is the browser extension of Respite, for Chrome and other
-Chromium browsers. The iPhone app has [its own policy](/privacy).
+Chromium browsers. The iPhone app has [its own policy](/privacy/).
 
 **Developer:** MD Sadakat Hussain Fahad, publishing as Intently ·
 **Contact:** [support@liveintently.app](mailto:support@liveintently.app)

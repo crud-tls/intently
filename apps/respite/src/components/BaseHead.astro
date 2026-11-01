@@ -56,12 +56,12 @@ const {
 <link rel="preconnect" href="https://analytics.ahrefs.com" />
 <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
 
-<!-- Canonical URL -->
-<link rel="canonical" href={canonicalURL} />
+<!-- Canonical URL (none on noindex pages: the 404 page is served at every missing path) -->
+{!noindex && <link rel="canonical" href={canonicalURL} />}
 
 <!-- hreflang tags for internationalization (prepared for future multi-language support) -->
-<link rel="alternate" hreflang="en" href={canonicalURL} />
-<link rel="alternate" hreflang="x-default" href={canonicalURL} />
+{!noindex && <link rel="alternate" hreflang="en" href={canonicalURL} />}
+{!noindex && <link rel="alternate" hreflang="x-default" href={canonicalURL} />}
 
 <!-- RSS Feed -->
 <link rel="alternate" type="application/rss+xml" title="Respite Blog" href="/rss.xml" />
@@ -75,7 +75,6 @@ const {
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F7FBFC" />
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0F1B24" />
 <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
-<meta name="keywords" content="screen time decrease app, reduce screen time app, screen time reducer, app to decrease screen time, lower screen time app, cut down screen time app, screen time limiter, screen time control app, digital wellbeing, app usage tracking, mindful tech, privacy-first, phone addiction app, stop scrolling app, digital detox app, focus app, productivity tracker, social media limiter, mindful phone use, habit tracker for phone, break phone addiction, reduce Instagram usage, stop TikTok addiction, phone usage tracker, app blocker alternative, mindful interventions, digital wellbeing Android, screen time app iPhone, screen time app no account, offline screen time tracker, privacy screen time app, free screen time app, phone addiction help, reduce social media usage, digital minimalism app, focus app for students, self control app, behavioral science app, psychology-based screen time, gentle app reminder, offline screen time tracker android, mindful app blocker vs hard blocker, stop scrolling tiktok without deleting, reduce instagram usage without deleting, chrome extension reduce social media, screen time app for students, track screen time without google, privacy focused screen time apps, screen time mental health, screen time anxiety, best screen time app 2026, best app blocker 2026, free screen time app android, screen time for parents, digital wellbeing at work, attention span phone, doomscrolling definition, do app blockers work, screen time chrome extension" />
 {readingTime && <meta name="estimated-reading-time" content={readingTime.toString()} />}
 
 <!-- Article-specific meta tags (for blog posts) -->
@@ -98,13 +97,13 @@ const {
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:url" content={Astro.url} />
+<meta name="twitter:url" content={canonicalURL} />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={new URL(image, Astro.url)} />
 <meta name="twitter:creator" content="@intently_app" />
 <meta name="twitter:site" content="@intently_app" />
-<meta name="twitter:domain" content="liveintently.app" />
+<meta name="twitter:domain" content="respite.liveintently.app" />
 
 <!-- Mobile App Meta Tags -->
 <meta name="apple-mobile-web-app-capable" content="yes" />

@@ -22,8 +22,6 @@ faq:
     answer: "Yes. Some users run Freedom during work hours for strict blocking and use Respite during personal time for mindful habit-building. This can work, though most people find it simpler to commit to one approach."
 ---
 
-# Respite vs Freedom: Two Very Different Approaches to Screen Time
-
 If you've been looking into screen time apps, you've probably noticed that Freedom and Respite keep coming up -- and they couldn't be more different. Freedom is a heavy-duty cross-device blocker that physically prevents you from accessing distracting apps and websites. Respite is a free, privacy-first app that inserts a moment of reflection before you open something mindlessly. Same goal (less wasted screen time), totally different methods.
 
 We built Respite, so we're obviously biased. But we genuinely think Freedom is a strong product for a certain kind of user, and we want to lay out where each app shines and where it doesn't -- so you can figure out which one actually fits your situation.
@@ -120,17 +118,17 @@ But more and more, people are recognizing that the sustainable path for most of 
 
 The good thing is you don't have to take our word for it. Freedom offers a free trial, and Respite is entirely free. Try both and see which one clicks with how your mind actually works.
 
-[Download Respite for iPhone, Android and Chrome](/download)
+[Download Respite for iPhone, Android and Chrome](/download/)
 
 ---
 
 ## Related Articles
 
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Respite vs One Sec: Which Mindful Screen Time App Is Better?](/blog/respite-vs-one-sec)
-- [Respite vs ScreenZen: Detailed Comparison](/blog/respite-vs-screenzen)
-- [Freedom Alternatives: Best Apps for Managing Screen Time](/blog/freedom-alternatives)
-- [How to Reduce Screen Time Without Willpower](/blog/how-to-reduce-screen-time)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [Respite vs One Sec: Which Mindful Screen Time App Is Better?](/blog/respite-vs-one-sec/)
+- [Respite vs ScreenZen: Detailed Comparison](/blog/respite-vs-screenzen/)
+- [Freedom Alternatives: Best Apps for Managing Screen Time](/blog/freedom-alternatives/)
+- [How to Reduce Screen Time Without Willpower](/blog/how-to-reduce-screen-time/)
 
 ---
 

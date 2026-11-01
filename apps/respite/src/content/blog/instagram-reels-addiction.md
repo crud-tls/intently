@@ -32,8 +32,6 @@ howToSteps:
     text: "Install Respite to display a brief pause screen before Instagram opens. This moment of friction prompts the question 'What am I here for?' and interrupts the automatic habit of opening Instagram and drifting into Reels without a purpose."
 ---
 
-# Instagram Reels Addiction: Breaking the Endless Scroll Cycle
-
 There's a specific kind of grogginess that comes from a long Reels session. It's not sleepiness, exactly -- it's more like surfacing from underwater. You look up, realize 40 minutes have gone by, and you can't really account for what you watched. You just know you feel slightly worse than when you started.
 
 If that sounds familiar, you're not alone. And this isn't just about wasted time. Instagram Reels sits at the intersection of short-form video's infinite scroll and Instagram's long-running comparison engine. Together, they don't just eat your schedule -- they can quietly chip away at how you feel about yourself.
@@ -80,7 +78,7 @@ This sounds simple, but it's the most important step. If someone asked you "why 
 
 Reels almost never makes the list.
 
-That gap between why you have Instagram and what you actually do on it is where the problem lives. Once you name it, you'll start catching yourself mid-drift. A tool like [Respite](/download) can help here -- it shows a brief pause screen before Instagram opens, prompting you to check in on your intention before the feed takes over.
+That gap between why you have Instagram and what you actually do on it is where the problem lives. Once you name it, you'll start catching yourself mid-drift. A tool like [Respite](/download/) can help here -- it shows a brief pause screen before Instagram opens, prompting you to check in on your intention before the feed takes over.
 
 ### Train the algorithm (it's more trainable than you think)
 
@@ -136,18 +134,18 @@ Instagram doesn't have to be a source of comparison anxiety and lost hours. It c
 
 The shift starts with an honest look at how you're actually using the app versus how you want to be using it. From there, it's about small, deliberate changes -- curating your feed, sticking to Stories and DMs, skipping the Explore page. And when you catch yourself deep in a Reels session, don't beat yourself up. Just notice what you were feeling before you started scrolling. That's useful information.
 
-Ready to start using Instagram on your terms? [Download Respite](/download) to add a moment of intention before every Instagram session.
+Ready to start using Instagram on your terms? [Download Respite](/download/) to add a moment of intention before every Instagram session.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to understand your Instagram habits and get a personalized plan for healthier use.
+Take our free [Phone Addiction Quiz](/quiz/) to understand your Instagram habits and get a personalized plan for healthier use.
 
 ---
 
 **Related Articles:**
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
-- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [YouTube Shorts Addiction: How to Stop the Vertical Video Loop](/blog/youtube-shorts-addiction)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
+- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [YouTube Shorts Addiction: How to Stop the Vertical Video Loop](/blog/youtube-shorts-addiction/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social/)

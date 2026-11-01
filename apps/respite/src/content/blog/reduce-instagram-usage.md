@@ -1,6 +1,6 @@
 ---
-title: "Reduce Instagram Usage Without Deleting: A Mindful Guide"
-description: "Reduce Instagram usage without deleting the app. Learn mindful strategies to cut down on Instagram, break the scrolling habit, and reclaim hours of your week while staying connected."
+title: 'How to Reduce Instagram Usage Without Deleting It'
+description: 'Cut your Instagram time without deleting the app. Practical, mindful ways to break the scroll habit and get hours of your week back.'
 pubDate: 2026-01-23
 updatedDate: 2026-02-28
 author: "Respite Team"
@@ -22,8 +22,6 @@ faq:
     answer: "Most people notice significant reduction in automatic checking within 2-3 weeks of consistent mindful intervention practice. Measurable behavior change typically occurs after 4-6 weeks. Lasting habit transformation takes 60-90 days of consistent practice with awareness-building strategies."
 ---
 
-# Reduce Instagram Usage Without Deleting: A Mindful Approach That Works
-
 If you've ever looked up from your phone and realized you just lost 45 minutes to Instagram, you're not alone. Most of us don't set out to spend that long scrolling -- it just happens. The good news is that you don't have to delete the app to take back that time. A few deliberate changes can cut your usage dramatically while keeping the parts of Instagram you actually enjoy.
 
 ## Why It's So Hard to Just... Stop
@@ -38,7 +36,7 @@ Most Instagram sessions start on autopilot. Your thumb taps the icon before you'
 
 Respite does this by showing a gentle, full-screen prompt before you enter the app -- something like: *"Take a breath. What are you looking for right now?"* You can always proceed. The point isn't to block you; it's to give your conscious brain a chance to weigh in before the habit takes over.
 
-[Download Respite](/download) for Android, iOS, or Chrome to try this yourself.
+[Download Respite](/download/) for Android, iOS, or Chrome to try this yourself.
 
 ## Make It a Little Harder to Open
 
@@ -118,17 +116,17 @@ Willpower alone is unreliable -- especially against an app that's been optimized
 
 Respite is built specifically for this. It adds mindful check-ins before each session, lets you customize your intervention messages, and tracks your usage without invading your privacy. It works on Android, iOS, and as a Chrome extension.
 
-[Download Respite free](/download) and start building awareness around how you use Instagram.
+[Download Respite free](/download/) and start building awareness around how you use Instagram.
 
 ---
 
 Related Reading:
-- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
-- [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling)
-- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [How to Be More Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling/)
+- [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling/)
+- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [How to Be More Productive Without Deleting Social Media](/blog/productive-without-deleting-social/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
 
-Take our free [Phone Addiction Quiz](/quiz) to assess your Instagram habits and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to assess your Instagram habits and get personalized recommendations.

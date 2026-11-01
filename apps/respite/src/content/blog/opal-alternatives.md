@@ -1,6 +1,6 @@
 ---
-title: 'Best Opal Alternatives 2026: Free & Paid Screen Time Apps Compared'
-description: 'Looking for an Opal alternative? Compare the top screen time apps including Respite, One Sec, ScreenZen, and more. Find the best free and paid options to reduce screen time in 2026.'
+title: 'Best Opal Alternatives 2026: Free & Paid Apps Compared'
+description: 'Looking for an Opal alternative? Respite, One Sec, ScreenZen and more compared on price, privacy and how they cut screen time. Free options included.'
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
 author: 'Respite Team'
@@ -21,8 +21,6 @@ faq:
   - question: "Is there an Opal alternative that keeps my data private?"
     answer: "Respite works offline with no account required; your usage history stays on your phone and only syncs if you sign in. Cold Turkey also works without a cloud account for basic use. Most other alternatives, including Opal, require accounts and collect some usage data."
 ---
-
-# Best Opal Alternatives (2026 Review)
 
 Opal's a well-made screen time app, and it deserves its popularity on iOS. But at $99/year, it's one of the priciest apps in the category -- and it's iPhone-only, with a blocking-first approach that doesn't click for everyone.
 
@@ -53,7 +51,7 @@ The honest trade-off: there's no hard blocking — if you genuinely need "physic
 
 Rating: 4/5
 
-[Try Respite for free](/download)
+[Try Respite for free](/download/)
 
 ---
 
@@ -220,16 +218,16 @@ If you're not sure which approach will stick, start with a free option and give 
 
 Not sure what kind of phone user you are? Take our quick quiz to assess your habits:
 
-[Take the Phone Habit Quiz](/quiz)
+[Take the Phone Habit Quiz](/quiz/)
 
 ---
 
 ## Related Articles
 
-- [Best Freedom Alternatives 2026](/blog/freedom-alternatives)
-- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Best Apple Screen Time Alternatives 2026](/blog/apple-screen-time-alternatives)
+- [Best Freedom Alternatives 2026](/blog/freedom-alternatives/)
+- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [Best Apple Screen Time Alternatives 2026](/blog/apple-screen-time-alternatives/)
 
 ---
 

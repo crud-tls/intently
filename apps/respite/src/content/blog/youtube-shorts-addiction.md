@@ -32,8 +32,6 @@ howToSteps:
     text: "Set up Respite to display a brief pause screen before YouTube opens on your phone. This interrupts the automatic habit loop and prompts the question 'What are you here to watch?' before you ever see the Shorts shelf on the homepage."
 ---
 
-# YouTube Shorts Addiction: How to Stop the Vertical Video Loop
-
 There's a specific feeling that comes with a YouTube Shorts spiral. It's not even enjoyable, exactly. You're swiping on autopilot, half-watching a clip of someone pressure-washing a driveway, then a cat falling off a counter, then a cooking hack you'll never try. Ten minutes pass. Twenty. You put the phone down feeling vaguely worse than before you picked it up, but you couldn't really tell someone what you watched.
 
 That's the thing about Shorts. It doesn't feel like binge-watching. It feels like nothing -- a blank spot in your day that leaves you a little drained and slightly annoyed at yourself.
@@ -94,7 +92,7 @@ If you've got an answer -- "the new video from [creator]" or "a tutorial on cond
 
 If you don't have an answer, that's your signal. The absence of intent is exactly when Shorts takes over. An aimless YouTube open almost always ends up in the Shorts feed, because the homepage is designed to catch wandering attention.
 
-[Respite](/download) can help here. It shows a brief pause screen before YouTube opens on your phone, giving you a moment to check in with yourself before the homepage loads. That half-second of friction catches a surprising number of autopilot opens.
+[Respite](/download/) can help here. It shows a brief pause screen before YouTube opens on your phone, giving you a moment to check in with yourself before the homepage loads. That half-second of friction catches a surprising number of autopilot opens.
 
 ### Rebuild Your Attention Span Gradually
 
@@ -118,24 +116,24 @@ The tradeoff is that your long-form recommendations also get less personalized, 
 
 For most people, the strategies above are enough to get Shorts under control. But if you've tried several of these approaches and you're still losing chunks of your day to the feed -- or if you're noticing it's affecting your work, sleep, or relationships -- it might be worth looking at the bigger picture.
 
-A Shorts habit that resists multiple interventions could be part of a broader pattern of [phone addiction](/blog/how-to-stop-phone-addiction). There's no shame in that. These apps are built by teams of very smart people whose job is to keep you scrolling.
+A Shorts habit that resists multiple interventions could be part of a broader pattern of [phone addiction](/blog/how-to-stop-phone-addiction/). There's no shame in that. These apps are built by teams of very smart people whose job is to keep you scrolling.
 
 ## Getting Started
 
-You don't need to do all of this at once. If you're on desktop, install a browser extension today -- it takes a minute and makes an immediate difference. If your Shorts problem is mostly on your phone, try [Respite](/download) to add a pause before YouTube opens, and start using the Subscriptions tab as your default.
+You don't need to do all of this at once. If you're on desktop, install a browser extension today -- it takes a minute and makes an immediate difference. If your Shorts problem is mostly on your phone, try [Respite](/download/) to add a pause before YouTube opens, and start using the Subscriptions tab as your default.
 
 Small structural changes beat willpower every time. The goal isn't to quit YouTube -- it's to use it on your terms.
 
 ---
 
-Not sure how your YouTube habits compare? Take our free [Phone Addiction Quiz](/quiz) to assess your digital health and get personalized recommendations.
+Not sure how your YouTube habits compare? Take our free [Phone Addiction Quiz](/quiz/) to assess your digital health and get personalized recommendations.
 
 ---
 
 **Related Articles:**
-- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
-- [Instagram Reels Addiction: Breaking the Endless Scroll Cycle](/blog/instagram-reels-addiction)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
+- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge/)
+- [Instagram Reels Addiction: Breaking the Endless Scroll Cycle](/blog/instagram-reels-addiction/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)

@@ -21,8 +21,6 @@ faq:
     answer: "By default, Chrome extensions don't run in incognito mode. Most blocking extensions (StayFocusd, LeechBlock, BlockSite) can be enabled for incognito through Chrome's extension settings. Respite also supports incognito when enabled. Always configure this if you want comprehensive coverage, as incognito is a common bypass route."
 ---
 
-# Best StayFocusd Alternatives (2026 Review)
-
 StayFocusd has been the go-to free Chrome blocking extension since 2011, and its Nuclear Option — an unbypassable block on all distracting sites — remains one of the most powerful enforcement features available. For pure, no-nonsense time limits in Chrome, it still works.
 
 But the extension is showing its age. The interface hasn't had a major refresh in years, the settings can be confusing to configure, and the approach is purely restriction-based — it doesn't build the awareness or self-regulation skills that create lasting change. If you've been using StayFocusd and want something different — whether that's a more modern blocker, a more flexible rule system, or a fundamentally different approach — here are your best options.
@@ -41,7 +39,7 @@ There's no time limit, no scheduling, no Nuclear Option. It's purely about creat
 
 Rating: 4/5 — Best for building lasting habits. Free, lightweight, and privacy-first. Different philosophy than StayFocusd.
 
-[Add Respite to Chrome](/download)
+[Add Respite to Chrome](/download/)
 
 ---
 
@@ -182,19 +180,19 @@ For studying: Cold Turkey or StayFocusd's Nuclear Option during study sessions p
 
 ## Getting Started
 
-If StayFocusd has been working for you, keep it for the Nuclear Option during critical focus periods. Add [Respite's Chrome extension](/download) for daily awareness-building — the mindful pause approach complements StayFocusd's enforcement perfectly.
+If StayFocusd has been working for you, keep it for the Nuclear Option during critical focus periods. Add [Respite's Chrome extension](/download/) for daily awareness-building — the mindful pause approach complements StayFocusd's enforcement perfectly.
 
-[Take the Phone Habit Quiz](/quiz)
+[Take the Phone Habit Quiz](/quiz/)
 
 ---
 
 ## Related Articles
 
-- [Best Chrome Extensions for Focus 2026](/blog/best-chrome-extensions-focus)
-- [Best Screen Time Apps 2026](/blog/best-screen-time-apps-2026)
-- [Do App Blockers Actually Work?](/blog/do-app-blockers-work)
-- [The Science of Friction](/blog/science-of-friction)
-- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking)
+- [Best Chrome Extensions for Focus 2026](/blog/best-chrome-extensions-focus/)
+- [Best Screen Time Apps 2026](/blog/best-screen-time-apps-2026/)
+- [Do App Blockers Actually Work?](/blog/do-app-blockers-work/)
+- [The Science of Friction](/blog/science-of-friction/)
+- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking/)
 
 ---
 

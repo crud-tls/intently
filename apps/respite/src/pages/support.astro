@@ -17,7 +17,7 @@ const faqs = content.faq.map((f) => ({ question: f.q, answer: f.a }));
 		<BreadcrumbSchema
 			items={[
 				{ name: "Home", url: "https://respite.liveintently.app" },
-				{ name: "Support", url: "https://respite.liveintently.app/support" }
+				{ name: "Support", url: "https://respite.liveintently.app/support/" }
 			]}
 		/>
 		<FAQSchema faqs={faqs} />
@@ -26,7 +26,7 @@ const faqs = content.faq.map((f) => ({ question: f.q, answer: f.a }));
 		<Header />
 		<main class="support">
 			<h1>Respite support</h1>
-			<p class="lead">Questions, bug reports or ideas? Email us at <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> or use the <a href="/contact">contact form</a>. We usually reply within two days.</p>
+			<p class="lead">Questions, bug reports or ideas? Email us at <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> or use the <a href="/contact/">contact form</a>. We usually reply within two days.</p>
 			<p class="muted">Please include your phone model and its iOS or Android version (or your Chrome version) if something isn't working.</p>
 
 			<h2>Common questions</h2>
@@ -41,9 +41,9 @@ const faqs = content.faq.map((f) => ({ question: f.q, answer: f.a }));
 
 			<h2>Your data</h2>
 			<ul>
-				<li>Privacy policy: <a href="/privacy">iPhone</a> · <a href="/privacy/android">Android</a> · <a href="/privacy/chrome">Chrome</a></li>
-				<li>Terms: <a href="/terms">iPhone</a> · <a href="/terms/android">Android</a></li>
-				<li>Want to delete your account? <a href="/delete-account">Here's how</a>.</li>
+				<li>Privacy policy: <a href="/privacy/">iPhone</a> · <a href="/privacy/android/">Android</a> · <a href="/privacy/chrome/">Chrome</a></li>
+				<li>Terms: <a href="/terms/">iPhone</a> · <a href="/terms/android/">Android</a></li>
+				<li>Want to delete your account? <a href="/delete-account/">Here's how</a>.</li>
 			</ul>
 		</main>
 		<Footer />

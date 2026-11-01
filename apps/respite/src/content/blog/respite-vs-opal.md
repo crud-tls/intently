@@ -21,8 +21,6 @@ faq:
     answer: "Opal has a limited free plan (2 focus sessions/day, basic features only). Most useful features require the $99/year subscription. Respite is completely free with no limitations or premium tiers."
 ---
 
-# Respite vs Opal: Which Screen Time App Is Right for You?
-
 If you're looking for a screen time app that actually sticks, you've probably come across both Respite and Opal. They're both popular, both well-designed -- and they take almost opposite approaches to helping you use your phone less. We use Respite every day (obviously), but we've spent real time with Opal too, and we think the right pick depends a lot on what you're actually trying to accomplish.
 
 Here's an honest look at how they compare across the things that matter most: approach, features, pricing, privacy, and real-world effectiveness.
@@ -171,7 +169,7 @@ Opal users see an average 45% screen time reduction during active focus sessions
 - You want something free without hidden limitations
 - You've tried blocking apps before and ended up finding workarounds
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ### Go with Opal if:
 - You need strong, immediate blocking for a specific goal (finals week, a big deadline)
@@ -196,11 +194,11 @@ For iOS users facing a specific, time-bound challenge -- cramming for exams, gri
 
 Since Respite is free with no account required, there's nothing to lose. Download it, use it for a month, and see whether mindful interventions click for you. Most people notice a shift within the first week.
 
-[Download Respite for Android, iOS & Chrome](/download)
+[Download Respite for Android, iOS & Chrome](/download/)
 
 Curious about where you stand right now? Our free quiz takes about two minutes:
 
-[Take the Phone Addiction Quiz](/quiz)
+[Take the Phone Addiction Quiz](/quiz/)
 
 ## Wrapping Up
 
@@ -214,12 +212,12 @@ Have questions or want to share your experience? Reach out at support@liveintent
 
 ## Related Articles
 
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
-- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech-interventions-vs-blocking)
-- [Respite vs Google Digital Wellbeing](/blog/respite-vs-google-digital-wellbeing)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
+- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social/)
+- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech-interventions-vs-blocking/)
+- [Respite vs Google Digital Wellbeing](/blog/respite-vs-google-digital-wellbeing/)
 
 ---
 

@@ -22,8 +22,6 @@ faq:
     answer: "Yes, and they complement each other well. Use Forest for dedicated Pomodoro-style focus sessions during work or study. Use Respite as always-on awareness for the rest of your day. They cover different situations without overlapping."
 ---
 
-# Respite vs Forest: Two Different Tools for Two Different Problems
-
 If you're comparing Respite and Forest, you might expect a straightforward "which one is better" answer. But honestly, these two apps are solving different problems. Forest helps you stay focused during dedicated work sessions. Respite catches the impulsive phone checks that happen throughout the rest of your day. They overlap less than you'd think.
 
 Forest is one of the most popular digital wellbeing apps ever made, with over 10 million downloads and more than 2 million real trees planted through its partnership with Trees for the Future. It's beloved for good reason. Respite takes a different approach entirely, and understanding that difference matters more than comparing feature lists.
@@ -76,7 +74,7 @@ Respite isn't trying to replace Forest. It's solving a different problem: the im
 
 **Free and private.** Respite is completely free with no limitations, no account required, and no ads. Your usage history stays on your phone.
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ## What Are You Actually Trying to Fix?
 
@@ -123,7 +121,7 @@ You want always-on awareness throughout the day (Respite) plus structured focus 
 
 Respite is completely free with no account required, so there's nothing to lose by trying it. If you've been using Forest and finding that your screen time outside of focus sessions hasn't changed, Respite might be the missing piece.
 
-[Download Respite for iPhone, Android & Chrome](/download)
+[Download Respite for iPhone, Android & Chrome](/download/)
 
 ---
 

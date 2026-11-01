@@ -43,8 +43,6 @@ howToSteps:
     text: "Schedule phone-free periods weekly. Start with a few hours and work up to a full day. Use this time for real-world activities and relationships."
 ---
 
-# How to Stop Phone Addiction: 15 Strategies That Actually Work
-
 ## What Is Phone Addiction?
 
 Phone addiction — sometimes called problematic smartphone use or nomophobia (the fear of being without your phone) — is a compulsive pattern of phone use that continues despite negative consequences. It's characterized by an inability to control how often or how long you use your phone, withdrawal-like symptoms when separated from it, increasing tolerance (needing more screen time to feel the same satisfaction), and interference with sleep, work, relationships, or mental health.
@@ -70,7 +68,7 @@ None of this is accidental. Once you see these patterns for what they are, it ge
 
 ### 1. Use Mindful Interventions Instead of Blocking
 
-This is our biggest recommendation, and yes, we're biased -- [Respite](/download) is built around this idea. But the research backs it up: app blocking tends to trigger psychological reactance (the more you're told you can't do something, the more you want to). Mindful interventions work differently. They insert a brief pause -- a full-screen reminder that asks something like "Do you really need Instagram right now?" -- and then let you decide.
+This is our biggest recommendation, and yes, we're biased -- [Respite](/download/) is built around this idea. But the research backs it up: app blocking tends to trigger psychological reactance (the more you're told you can't do something, the more you want to). Mindful interventions work differently. They insert a brief pause -- a full-screen reminder that asks something like "Do you really need Instagram right now?" -- and then let you decide.
 
 That moment of reflection is often enough to break the autopilot loop. You can still open the app if you want to. The point isn't restriction; it's awareness.
 
@@ -168,19 +166,19 @@ Set a specific, measurable goal -- "reduce Instagram to 30 minutes a day" is bet
 
 ## How Respite Can Help
 
-[Respite](/download) is built specifically for this. Instead of blocking apps and creating frustration, it uses mindful interventions -- brief, gentle pauses that help you make conscious choices about your phone use. It also tracks your usage automatically and privately (your history stays on your phone, no account required).
+[Respite](/download/) is built specifically for this. Instead of blocking apps and creating frustration, it uses mindful interventions -- brief, gentle pauses that help you make conscious choices about your phone use. It also tracks your usage automatically and privately (your history stays on your phone, no account required).
 
-It's free for Android, iOS, and Chrome. [Give it a try](/download).
+It's free for Android, iOS, and Chrome. [Give it a try](/download/).
 
 ---
 
 ## Related Reading
 
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Mindful Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking)
-- [7-Day Digital Detox Challenge](/blog/digital-detox-challenge)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
+- [Mindful Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking/)
+- [7-Day Digital Detox Challenge](/blog/digital-detox-challenge/)
 
 ---
 

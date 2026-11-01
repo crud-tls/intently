@@ -1,6 +1,6 @@
 ---
-title: 'Best ScreenZen Alternatives 2026: Apps That Add Friction Before Scrolling'
-description: 'Looking for a ScreenZen alternative? Compare the top delay and mindful pause apps including Respite, One Sec, FlowBuddy, Opal, and Freedom. Find the best free and paid options for Android and iOS.'
+title: 'Best ScreenZen Alternatives 2026: Apps That Add Friction'
+description: 'Apps like ScreenZen that slow you down before scrolling. Respite, One Sec, FlowBuddy, Opal and Freedom compared, free and paid, Android and iPhone.'
 pubDate: 2026-02-28
 author: 'Respite Team'
 section: 'App Comparisons'
@@ -20,8 +20,6 @@ faq:
   - question: "Can I use ScreenZen and Respite together?"
     answer: "You could, but running multiple intervention apps simultaneously often creates overlapping pauses and intervention fatigue. We recommend picking one and using it consistently for at least 30 days. If ScreenZen's countdown delay isn't enough, switching to Respite's mindful intervention approach (which engages awareness more actively) is a better strategy than stacking both."
 ---
-
-# Best ScreenZen Alternatives (2026 Review)
 
 ScreenZen's appeal is its simplicity: a countdown delay before distracting apps open. No breathing exercises, no motivational quotes, no complicated setup. You pick your apps, set a delay (5-30 seconds), and that's it. The friction alone reduces impulsive opens, and the free price tag on both iOS and Android makes it accessible to everyone.
 
@@ -49,7 +47,7 @@ The main limitation is that on iPhone, [Respite](https://apps.apple.com/us/app/r
 
 Rating: 4/5 — The most complete free alternative. Mindful interventions engage awareness more actively than a countdown.
 
-[Try Respite for free](/download)
+[Try Respite for free](/download/)
 
 ---
 
@@ -168,19 +166,19 @@ Both reduce impulsive app opens. Breathing exercises add a physiological calming
 
 ## Getting Started
 
-If ScreenZen's simplicity has been working for you, consider whether you need more. If the delays are becoming routine and you want to go deeper, [Respite](/download) is the natural next step — same core philosophy (friction before apps), but with mindful awareness, tracking, and gamification layered on top.
+If ScreenZen's simplicity has been working for you, consider whether you need more. If the delays are becoming routine and you want to go deeper, [Respite](/download/) is the natural next step — same core philosophy (friction before apps), but with mindful awareness, tracking, and gamification layered on top.
 
-[Take the Phone Habit Quiz](/quiz)
+[Take the Phone Habit Quiz](/quiz/)
 
 ---
 
 ## Related Articles
 
-- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives)
-- [Best Screen Time Apps 2026](/blog/best-screen-time-apps-2026)
-- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [The Science of Friction](/blog/science-of-friction)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
+- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives/)
+- [Best Screen Time Apps 2026](/blog/best-screen-time-apps-2026/)
+- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [The Science of Friction](/blog/science-of-friction/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
 
 ---
 

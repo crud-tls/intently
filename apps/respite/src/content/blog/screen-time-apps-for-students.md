@@ -22,8 +22,6 @@ faq:
     answer: "They serve different purposes. Forest is great for Pomodoro-style study sessions (25-50 minute focus blocks). Respite is better for reducing overall phone distractions throughout the day. Many students use both: Forest during study sessions, Respite for all-day awareness."
 ---
 
-# Screen Time Apps for Students: Stay Focused Without Missing Out
-
 If you're a student, your phone is both your best tool and your worst distraction. You need it for group chats, class announcements, and keeping up with campus life. But you also lose hours to it -- hours that could go toward studying, sleeping, or actually hanging out with people in person.
 
 You don't need to go off the grid. You just need a little more control over when and how you reach for your phone. That's where screen time apps come in.
@@ -38,7 +36,7 @@ Then there's the environment problem. Most students study in their bedrooms -- t
 
 On top of that, academic work is often hard, ambiguous, or just tedious. Meanwhile, social media delivers easy, instant dopamine. Your brain is always going to lean toward the easier reward -- that's not a personal failing, it's just how attention works. Knowing that makes it easier to set up systems that actually help.
 
-And if you have ADHD (diagnosed or not), this stuff hits even harder. ADHD brains are wired to seek stimulation, which makes phones especially hard to put down. If that sounds familiar, we've got a deeper guide on [phone addiction and ADHD](/blog/phone-addiction-adhd).
+And if you have ADHD (diagnosed or not), this stuff hits even harder. ADHD brains are wired to seek stimulation, which makes phones especially hard to put down. If that sounds familiar, we've got a deeper guide on [phone addiction and ADHD](/blog/phone-addiction-adhd/).
 
 ## Best Screen Time Apps for Students (2026)
 
@@ -50,7 +48,7 @@ Respite takes a different approach from most screen time tools. Instead of locki
 
 What makes it stand out for students is that it runs all day in the background with zero effort on your part. You don't need to remember to start a session or set a timer. It just catches you in the moment. It's also completely free with no account required, no data collection, and no cloud syncing -- your usage stays on your device. You can customize the prompts too (some students set theirs to "Finals are in 2 weeks. Is this what you want to do?"). The Chrome extension covers laptop browsing, which is clutch for those late-night Wikipedia rabbit holes.
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ### 2. Forest -- Gamified Study Timer
 
@@ -184,7 +182,7 @@ Give yourself a 30-minute phone window after an exam. Set a timer. Then do somet
 
 **The problem:** It's 11 PM. You told yourself you'd be in bed by now. But you're 45 minutes into a TikTok spiral and you have an 8 AM class. Every video, you think "one more." Your sleep has been terrible all semester.
 
-**The fix:** This is a [nighttime scrolling problem](/blog/stop-scrolling-at-night) as much as a student problem. Charge your phone in another room starting at 10:30 PM. Set up Do Not Disturb on a schedule. Put a book and a glass of water on your nightstand instead. If you absolutely need your phone nearby, use ScreenZen or Respite to create a pause before every app open after 10 PM. The friction of a mindful prompt at 11 PM -- when you're tired and your willpower is depleted -- is often enough to make you put it down.
+**The fix:** This is a [nighttime scrolling problem](/blog/stop-scrolling-at-night/) as much as a student problem. Charge your phone in another room starting at 10:30 PM. Set up Do Not Disturb on a schedule. Put a book and a glass of water on your nightstand instead. If you absolutely need your phone nearby, use ScreenZen or Respite to create a pause before every app open after 10 PM. The friction of a mindful prompt at 11 PM -- when you're tired and your willpower is depleted -- is often enough to make you put it down.
 
 ## Balancing Academics and Social Life
 
@@ -206,14 +204,14 @@ If you have ADHD, a lot of standard screen time advice probably hasn't worked fo
 - Study with someone else when possible (body doubling helps a lot)
 - Work in stimulating environments like a library or coffee shop rather than your room
 
-For more on this, check out our full guide on [phone addiction and ADHD](/blog/phone-addiction-adhd).
+For more on this, check out our full guide on [phone addiction and ADHD](/blog/phone-addiction-adhd/).
 
 ## Start Small
 
 You don't need to overhaul everything at once. Pick one thing:
 
-1. [Download Respite](/download) -- it's free, takes 30 seconds to set up, and starts working right away
-2. [Take our Phone Addiction Quiz](/quiz) to get a sense of where you stand
+1. [Download Respite](/download/) -- it's free, takes 30 seconds to set up, and starts working right away
+2. [Take our Phone Addiction Quiz](/quiz/) to get a sense of where you stand
 3. Try the 50/10 study block for one week and see what happens
 
 Small shifts add up. One mindful pause before opening Instagram today. A few fewer scroll sessions this week. A couple more hours of real focus time. By the end of the semester, the difference will be obvious.
@@ -222,12 +220,12 @@ Small shifts add up. One mindful pause before opening Instagram today. A few few
 
 ## Related Articles
 
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Phone Addiction and ADHD: Why Your Brain Can't Stop](/blog/phone-addiction-adhd)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Stop TikTok Scrolling Without Deleting](/blog/stop-tiktok-scrolling)
-- [Respite vs Forest: Mindful Pause vs Gamification](/blog/respite-vs-forest)
-- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Phone Addiction and ADHD: Why Your Brain Can't Stop](/blog/phone-addiction-adhd/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [Stop TikTok Scrolling Without Deleting](/blog/stop-tiktok-scrolling/)
+- [Respite vs Forest: Mindful Pause vs Gamification](/blog/respite-vs-forest/)
+- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction/)
 
 ---
 

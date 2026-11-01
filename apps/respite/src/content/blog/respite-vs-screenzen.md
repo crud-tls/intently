@@ -22,8 +22,6 @@ faq:
     answer: "Respite uses fully customizable full-screen prompts with personalized messages, breathing exercises, and reflection questions. ScreenZen uses a 'take a breath' countdown approach with structured pauses. Both create friction before app use, but Respite offers more personalization."
 ---
 
-# Respite vs ScreenZen: Two Free Apps, Two Takes on the Same Idea
-
 If you've decided that hard blockers aren't the answer to your screen time struggles, you've probably come across Respite and ScreenZen. Both apps share a core philosophy -- using pause-based mindful interventions instead of brute-force blocking -- but they execute that vision in meaningfully different ways.
 
 What makes this comparison interesting is that price isn't the deciding factor. Both apps are free (ScreenZen has an optional premium tier, but its core features cost nothing). So the real question isn't "which is cheaper?" but **which style of intervention fits the way you think?**
@@ -92,7 +90,7 @@ ScreenZen puts more emphasis on streaks as a core motivational tool, with daily 
 
 If data privacy around your usage stats matters to you, Respite's local-only approach is worth noting. If streak motivation is what keeps you going, both apps deliver, with ScreenZen making it a slightly more central part of the experience.
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ## How Pause-Based Interventions Work
 
@@ -134,7 +132,7 @@ The difference between these two apps isn't about quality. Both are well-made, b
 
 There's no wrong answer. Pick the one that matches how you think, give it at least a few weeks, and pay attention to whether the pauses are still making you think or whether they've started to feel invisible. If the latter happens, that's your signal to adjust.
 
-[Download Respite for iPhone, Android & Chrome](/download)
+[Download Respite for iPhone, Android & Chrome](/download/)
 
 Questions or feedback? Reach out at support@liveintently.app.
 
@@ -142,11 +140,11 @@ Questions or feedback? Reach out at support@liveintently.app.
 
 ## Related Articles
 
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time)
-- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec)
-- [Respite vs Brick: Free Software Pause vs $59 Physical Device](/blog/respite-vs-brick)
-- [One Sec Alternatives](/blog/one-sec-alternatives)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time/)
+- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec/)
+- [Respite vs Brick: Free Software Pause vs $59 Physical Device](/blog/respite-vs-brick/)
+- [One Sec Alternatives](/blog/one-sec-alternatives/)
 
 ---
 

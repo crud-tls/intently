@@ -29,8 +29,8 @@ const latestPosts = allPosts
 <html lang="en">
 	<head>
 		<BaseHead
-			title="Respite - Take Back Your Time | Free Screen Time App That Respects Your Privacy"
-			description="Stop losing 3+ hours a day to mindless scrolling. Respite creates a gentle pause before distracting apps open—helping you choose what matters. Free, no account needed, no ads."
+			title="Respite: Free Screen Time App for iPhone, Android & Chrome"
+			description="Stop losing hours to mindless scrolling. Respite adds a gentle pause before distracting apps open, so you choose what matters. Free, private, no ads."
 		/>
 		<WebSiteSchema />
 		<ProductSchema
@@ -272,16 +272,16 @@ const latestPosts = allPosts
 						{latestPosts.map((post) => (
 							<article class="blog-card">
 								{post.data.heroImage && (
-									<a href={`/blog/${post.id}`} class="blog-image-link">
+									<a href={`/blog/${post.id}/`} class="blog-image-link">
 										<Picture src={post.data.heroImage} alt={post.data.title} class="blog-image" loading="lazy" width={640} height={360} />
 									</a>
 								)}
 								<div class="blog-content">
 									<h3 class="blog-title">
-										<a href={`/blog/${post.id}`}>{post.data.title}</a>
+										<a href={`/blog/${post.id}/`}>{post.data.title}</a>
 									</h3>
 									<p class="blog-description">{post.data.description}</p>
-									<a href={`/blog/${post.id}`} class="blog-link">
+									<a href={`/blog/${post.id}/`} class="blog-link">
 										Read more about {post.data.title}
 										<Icon name="ArrowRight" size={14} color="currentColor" />
 									</a>
@@ -290,8 +290,8 @@ const latestPosts = allPosts
 						))}
 					</div>
 					<div class="blog-cta">
-						<a href="/blog" class="view-all-button">View All Articles</a>
-						<a href="/quiz" class="quiz-button"><Icon name="Smartphone" size={20} /> Take Our Phone Addiction Quiz</a>
+						<a href="/blog/" class="view-all-button">View All Articles</a>
+						<a href="/quiz/" class="quiz-button"><Icon name="Smartphone" size={20} /> Take Our Phone Addiction Quiz</a>
 					</div>
 				</div>
 			</section>
@@ -313,7 +313,7 @@ const latestPosts = allPosts
 							</h2>
 							<p class="cta-body">Take back your mornings, your evenings, and your weekends. It starts with one free download.</p>
 							<div class="cta-actions">
-								<a href="/download" class="cta-button-primary">
+								<a href="/download/" class="cta-button-primary">
 									Start Reclaiming Your Time
 									<Icon name="ArrowRight" size={18} color="currentColor" />
 								</a>

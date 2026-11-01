@@ -21,8 +21,6 @@ faq:
     answer: "The most effective approach is setting team norms rather than imposing rules: agreed-upon focus blocks, camera-optional meetings, response-time expectations, and after-hours communication boundaries. Providing screen time awareness tools as part of wellness programs helps without feeling punitive. Leading by example matters most — managers who are always on their phones send a clear message."
 ---
 
-# Digital Wellbeing at Work: How to Stay Focused Without Blocking Everything
-
 The average knowledge worker checks their phone 96 times during the workday. Not all of those are mindless scrolls — some are legitimate work tasks, some are quick personal check-ins that are perfectly fine. But a good portion are autopilot reaches that pull you out of focused work and cost far more time than the 30 seconds they seem to take.
 
 Research on task-switching shows it takes an average of 23 minutes to fully regain focus after a distraction. If you check your phone just 5 times during a deep work session, you may never actually reach full focus at all. That's not a productivity hack problem — it's a structural one.
@@ -67,7 +65,7 @@ This single change can cut your daily phone pickups in half. Most things that fe
 
 ### 3. Mindful Interventions for Work Hours
 
-Install [Respite](/download) and set it to trigger on your most distracting apps. When you absent-mindedly tap Instagram during a work break, you'll get a brief pause: "You're at work. Is this what you want to be doing right now?"
+Install [Respite](/download/) and set it to trigger on your most distracting apps. When you absent-mindedly tap Instagram during a work break, you'll get a brief pause: "You're at work. Is this what you want to be doing right now?"
 
 You can always proceed — it's not a block. But that moment of awareness catches the autopilot reach and gives you a genuine choice. Most people find they put the phone down about half the time, not because they're forced to, but because they realize they didn't actually want to scroll.
 
@@ -142,21 +140,21 @@ Whether or not your employer supports it, you can set your own framework:
 2. **Use separate profiles** for work and personal browsing
 3. **Turn off work notifications** outside those hours — Slack, email, all of it
 4. **Take a real lunch break** away from all screens
-5. **Track your personal phone use** during work with [Respite](/download) so "quick breaks" don't silently become 30-minute scrolls
+5. **Track your personal phone use** during work with [Respite](/download/) so "quick breaks" don't silently become 30-minute scrolls
 6. **End your workday** with a clear ritual — close the laptop, put work apps on silent, and be done
 
 The goal isn't zero phone use at work. It's intentional phone use — where every pickup has a reason, and you're choosing to be there rather than being pulled there by habit.
 
 ---
 
-Want to see where your work phone habits stand? Take our free [Phone Addiction Quiz](/quiz) for a personalized assessment.
+Want to see where your work phone habits stand? Take our free [Phone Addiction Quiz](/quiz/) for a personalized assessment.
 
 ---
 
 **Related Articles:**
-- [Be More Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction)
-- [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much)
-- [What Is Digital Wellbeing?](/blog/what-is-digital-wellbeing)
-- [Attention Span and Focus: How to Rebuild What Your Phone Took](/blog/attention-span-rebuild-focus)
+- [Be More Productive Without Deleting Social Media](/blog/productive-without-deleting-social/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction/)
+- [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much/)
+- [What Is Digital Wellbeing?](/blog/what-is-digital-wellbeing/)
+- [Attention Span and Focus: How to Rebuild What Your Phone Took](/blog/attention-span-rebuild-focus/)

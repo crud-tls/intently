@@ -1,6 +1,6 @@
 ---
-title: "Stop Reddit Scrolling: How to Use Reddit Without Losing Hours"
-description: "Learn how to stop mindless Reddit scrolling with 5 proven strategies. Understand why Reddit is uniquely addictive, recognize the signs of Reddit addiction, and regain control of your time while keeping the communities you value."
+title: 'How to Stop Reddit Scrolling (Without Quitting Reddit)'
+description: '5 ways to stop mindless Reddit scrolling: why Reddit is so sticky, the signs it''s taking over, and how to keep the communities you value.'
 pubDate: 2026-02-01
 updatedDate: 2026-02-28
 author: "Respite Team"
@@ -33,8 +33,6 @@ howToSteps:
     text: "Identify when you reach for Reddit (boredom, procrastination, curiosity) and prepare specific alternatives: a book for boredom, a task list for procrastination, or a saved article for curiosity."
 ---
 
-# Stop Reddit Scrolling: How to Use Reddit Without Losing Hours
-
 Reddit has a particular talent for eating your time. You go in to check one thread and somehow end up reading about a stranger's divorce, learning an obscure fact about octopuses, watching three oddly satisfying videos, and arguing with someone about a topic you didn't care about ten minutes ago. An hour gone, and you've completely forgotten what you originally came for.
 
 The tricky part is that Reddit isn't just a time-waster -- it's genuinely useful. There are real answers, helpful communities, and substantive discussions on the platform. That's what makes it harder to walk away from than something like TikTok, where you at least know you're just being entertained. Reddit lets you tell yourself you're "learning."
@@ -51,7 +49,7 @@ And then there's the unpredictability. A post might have 5 upvotes or 5,000. A c
 
 Once you're on the front page, the variable rewards kick in and pulling away gets much harder. The most effective intervention happens before you start scrolling.
 
-**On your phone:** Install [Respite](/download) and add Reddit to your tracked apps. Every time you tap the Reddit icon, you'll see a brief prompt asking if this is an intentional visit.
+**On your phone:** Install [Respite](/download/) and add Reddit to your tracked apps. Every time you tap the Reddit icon, you'll see a brief prompt asking if this is an intentional visit.
 
 **On your computer:** Respite's Chrome extension catches the automatic "bored → type reddit.com → scroll" habit that most desktop users have. A pause screen appears before the page loads, giving you a moment to decide.
 
@@ -91,11 +89,11 @@ The formula is simple: "When I feel [trigger], instead of opening Reddit, I'll [
 
 ## Take Action
 
-1. [Download Respite](/download) -- set up the app and Chrome extension for Reddit
+1. [Download Respite](/download/) -- set up the app and Chrome extension for Reddit
 2. Bookmark 3-5 specific subreddits and delete your front-page bookmark
 3. Decide when you'll use Reddit and for how long
 4. Switch to old.reddit.com
-5. [Take the Phone Addiction Quiz](/quiz) to understand your broader relationship with technology
+5. [Take the Phone Addiction Quiz](/quiz/) to understand your broader relationship with technology
 
 Reddit is a tool. These strategies help you keep its value while reclaiming the hours that currently disappear into the front page.
 
@@ -103,10 +101,10 @@ Reddit is a tool. These strategies help you keep its value while reclaiming the 
 
 ## Related Articles
 
-- [How to Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
-- [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling)
-- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [Stop Twitter Doomscrolling: Practical Strategies](/blog/stop-twitter-doomscrolling)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Social Media Addiction Signs: 10 Warning Signs](/blog/social-media-addiction-signs)
+- [How to Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning/)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
+- [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling/)
+- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [Stop Twitter Doomscrolling: Practical Strategies](/blog/stop-twitter-doomscrolling/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Social Media Addiction Signs: 10 Warning Signs](/blog/social-media-addiction-signs/)

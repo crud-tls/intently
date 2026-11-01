@@ -8,7 +8,7 @@ import Biscuit from '../components/ui/Biscuit.astro';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Page Not Found - Respite" description="The page you're looking for doesn't exist." />
+		<BaseHead title="Page Not Found - Respite" description="The page you're looking for doesn't exist." noindex={true} />
 		<style>
 			body {
 				background: var(--ds-bg-primary);
@@ -58,7 +58,7 @@ import Biscuit from '../components/ui/Biscuit.astro';
 			<p>The page you're looking for doesn't exist or has been moved.</p>
 			<div class="error-links">
 				<a href="/">Go Home</a>
-				<a href="/blog">Read the Blog</a>
+				<a href="/blog/">Read the Blog</a>
 			</div>
 		</main>
 		<Footer />

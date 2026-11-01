@@ -34,8 +34,6 @@ faq:
     answer: "Yes. Apple Screen Time is completely free and built into every iPhone. It offers app limits, Downtime scheduling, Focus modes, and content restrictions. While it's not as strict as paid third-party blockers, it covers the basics without any subscription. Shortcuts automations can add additional free customization."
 ---
 
-# How to Block Apps on iPhone: Complete Guide
-
 Whether you want to limit social media during work hours, keep your kids off certain apps, or just stop reaching for Instagram every five minutes, iPhone has several ways to block or restrict apps. This guide covers everything from built-in options to third-party tools — plus a section on why you might want to consider a different approach entirely.
 
 ## Method 1: Apple Screen Time (Built-In, Free)
@@ -165,7 +163,7 @@ Research shows that pause-based interventions lead to better long-term habit ret
 
 ### Respite on iPhone
 
-[Respite](/download) is a free mindful pause app available on iPhone, Android and Chrome. On iPhone it's [our native iOS app](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293). It lets you write custom intervention messages for each app, tracks your usage privately (history on your phone, no account required), and helps you build awareness rather than dependence on a blocker.
+[Respite](/download/) is a free mindful pause app available on iPhone, Android and Chrome. On iPhone it's [our native iOS app](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293). It lets you write custom intervention messages for each app, tracks your usage privately (history on your phone, no account required), and helps you build awareness rather than dependence on a blocker.
 
 If you're on Android or use Chrome, you can start today. On iPhone, [Respite is free on the App Store](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293).
 
@@ -206,8 +204,8 @@ The goal isn't a phone you can't use. It's a phone you use on purpose.
 
 ## Related Articles
 
-- [Best App Blocker 2026: Blockers vs Mindful Alternatives](/blog/best-app-blocker)
-- [Mindful Tech Interventions vs App Blocking: What Works Better](/blog/mindful-tech-interventions-vs-blocking)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Screen Time for Parents: The Complete Family Guide](/blog/screen-time-for-parents)
-- [Respite vs Opal: Free Mindful Pause vs Premium iOS Blocker](/blog/respite-vs-opal)
+- [Best App Blocker 2026: Blockers vs Mindful Alternatives](/blog/best-app-blocker/)
+- [Mindful Tech Interventions vs App Blocking: What Works Better](/blog/mindful-tech-interventions-vs-blocking/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Screen Time for Parents: The Complete Family Guide](/blog/screen-time-for-parents/)
+- [Respite vs Opal: Free Mindful Pause vs Premium iOS Blocker](/blog/respite-vs-opal/)

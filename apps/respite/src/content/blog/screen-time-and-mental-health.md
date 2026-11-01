@@ -21,8 +21,6 @@ faq:
     answer: "Yes. Multiple studies show that reducing recreational screen time by even 30-60 minutes per day leads to measurable improvements in mood, sleep quality, and anxiety levels within 1-2 weeks. The key is reducing passive, mindless use while maintaining beneficial screen activities. Tools like Respite help by creating awareness around unconscious phone use without requiring complete abstinence."
 ---
 
-# Screen Time and Mental Health: What the Research Actually Shows
-
 The relationship between screen time and mental health is one of the most debated topics in modern psychology. Headlines swing between "phones are destroying a generation" and "screen time fears are overblown." The reality, as usual, is more nuanced than either extreme.
 
 Here's what the research actually tells us — and what you can do about it.
@@ -132,7 +130,7 @@ Create a digital sunset 60 minutes before bed. Charge your phone outside the bed
 
 ### 3. Add Friction to Mindless Use
 
-Apps like [Respite](/download) create a brief pause before opening distracting apps. That moment of awareness is often enough to interrupt the autopilot reflex and let you make a conscious choice. You don't need to block apps entirely — just slow down the unconscious launches.
+Apps like [Respite](/download/) create a brief pause before opening distracting apps. That moment of awareness is often enough to interrupt the autopilot reflex and let you make a conscious choice. You don't need to block apps entirely — just slow down the unconscious launches.
 
 ### 4. Create Phone-Free Windows
 
@@ -148,7 +146,7 @@ Willpower alone isn't enough. When you reduce screen time, fill the space with a
 
 ## How Respite Helps
 
-[Respite](/download) is designed around the insight that most problematic screen time starts with unconscious habits, not deliberate choices. By adding a mindful pause before every app launch, it turns autopilot behavior into conscious decisions.
+[Respite](/download/) is designed around the insight that most problematic screen time starts with unconscious habits, not deliberate choices. By adding a mindful pause before every app launch, it turns autopilot behavior into conscious decisions.
 
 You write your own intervention messages — tied to your specific goals and reasons for changing. Usage tracking shows you patterns over time, so you can see whether your habits are actually shifting. Your usage history stays on your phone.
 
@@ -166,15 +164,15 @@ Screen time isn't inherently bad. It's a tool, and like any tool, its effects de
 
 You don't need to go off the grid. You need to use screens deliberately rather than letting them use you. Start with one change — protecting your sleep, adding a pause before social media, or auditing your passive consumption — and build from there.
 
-[Download Respite free](/download) to start building awareness around your screen time habits.
+[Download Respite free](/download/) to start building awareness around your screen time habits.
 
 ---
 
 ## Related Articles
 
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Phone Addiction and ADHD: Why You Can't Stop & What Helps](/blog/phone-addiction-adhd)
-- [How to Stop Phone Addiction: A Complete Guide](/blog/how-to-stop-phone-addiction)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
-- [What Is Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Phone Addiction and ADHD: Why You Can't Stop & What Helps](/blog/phone-addiction-adhd/)
+- [How to Stop Phone Addiction: A Complete Guide](/blog/how-to-stop-phone-addiction/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night/)
+- [What Is Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing/)

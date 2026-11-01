@@ -21,8 +21,6 @@ faq:
     answer: "While not officially classified as a distinct disorder in the DSM-5, problematic smartphone use is widely recognized by mental health professionals. It shares characteristics with behavioral addictions and can significantly impact mental health, relationships, and daily functioning. If phone use is causing substantial problems in your life, seeking help is appropriate and valid."
 ---
 
-# Phone Addiction Help Without Deleting Apps: A Complete Guide
-
 If you're reading this, you've probably already tried the obvious fixes. Deleted an app or two. Set screen time limits. Told yourself you'd be better starting Monday. And here you are, because none of it stuck.
 
 That's a common experience, and it's worth understanding why: phones are designed to hold your attention. The same behavioral psychology that makes casinos profitable is baked into the apps you use every day -- variable rewards, infinite scroll, social validation loops. Fighting that design with sheer determination is an unfair matchup.
@@ -39,9 +37,9 @@ The better path is building conscious use rather than enforcing abstinence.
 
 ## Start by Understanding Your Patterns
 
-Before changing anything, spend a week just paying attention. Check your built-in screen time data or use [Respite](/download) to track which apps you use most, when your peak usage happens, and what tends to trigger it.
+Before changing anything, spend a week just paying attention. Check your built-in screen time data or use [Respite](/download/) to track which apps you use most, when your peak usage happens, and what tends to trigger it.
 
-Most people find patterns they didn't expect. Maybe you barely touch your phone in the morning but lose an hour every evening. Maybe you always reach for it when a specific emotion hits -- boredom, anxiety, loneliness, procrastination. Take our [Phone Addiction Quiz](/quiz) for a structured way to map these patterns.
+Most people find patterns they didn't expect. Maybe you barely touch your phone in the morning but lose an hour every evening. Maybe you always reach for it when a specific emotion hits -- boredom, anxiety, loneliness, procrastination. Take our [Phone Addiction Quiz](/quiz/) for a structured way to map these patterns.
 
 Once you know your triggers, you can target interventions where they'll actually help instead of applying blanket rules that address the wrong problem.
 
@@ -53,7 +51,7 @@ Respite shows a gentle prompt when you launch a tracked app -- something you've 
 
 That gap matters because most phone sessions start unconsciously. You don't decide to spend 45 minutes on Reddit -- your thumb navigates there on autopilot while your conscious mind is somewhere else. A brief moment of awareness interrupts the autopilot and gives you an actual choice.
 
-[Download Respite](/download) free for Android, iOS, and Chrome.
+[Download Respite](/download/) free for Android, iOS, and Chrome.
 
 ## Set Goals That Don't Set You Up to Fail
 
@@ -109,7 +107,7 @@ Consider talking to a therapist if:
 - You've made multiple serious attempts to change without success
 - You use your phone primarily to escape depression, anxiety, or trauma
 - Phone use is significantly impacting your health or relationships
-- You suspect ADHD or another condition is making impulse control harder (see our guide on [phone addiction and ADHD](/blog/phone-addiction-adhd))
+- You suspect ADHD or another condition is making impulse control harder (see our guide on [phone addiction and ADHD](/blog/phone-addiction-adhd/))
 
 Resources like Psychology Today's therapist finder, BetterHelp, and SMART Recovery can help you find appropriate support.
 
@@ -129,16 +127,16 @@ Setbacks are part of the process, not a sign of failure. If you have a bad day, 
 
 ## Getting Started
 
-[Download Respite](/download) -- it's free, private, and takes about two minutes to set up. You'll get mindful prompts before each app use, usage tracking to see your patterns, and the ability to customize everything to your specific goals.
+[Download Respite](/download/) -- it's free, private, and takes about two minutes to set up. You'll get mindful prompts before each app use, usage tracking to see your patterns, and the ability to customize everything to your specific goals.
 
 Phone addiction isn't a character flaw. It's a natural response to software designed to capture your attention. The path forward isn't about having more discipline -- it's about building enough awareness to make real choices about how you spend your time.
 
 ---
 
 **Related Reading:**
-- [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
+- [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
 
-Take our free [Phone Addiction Quiz](/quiz) to assess your habits and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to assess your habits and get personalized recommendations.

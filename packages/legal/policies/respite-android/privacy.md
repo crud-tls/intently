@@ -5,8 +5,8 @@ updated: 2026-10-26
 
 Respite helps you notice and cut back on compulsive app use by showing a short
 pause before the apps you choose. This policy explains what the Android app collects, why, and
-where it goes. The [Chrome extension](/privacy/chrome) has its own policy, and so does the iPhone and
-iPad app ([Respite for iPhone](/privacy)).
+where it goes. The [Chrome extension](/privacy/chrome/) has its own policy, and so does the iPhone and
+iPad app ([Respite for iPhone](/privacy/)).
 
 **Developer:** MD Sadakat Hussain Fahad, publishing as Intently ·
 **Contact:** [support@liveintently.app](mailto:support@liveintently.app)
@@ -58,7 +58,7 @@ Drive, Contacts, Calendar or any other Google service.
   advertising, or use it to train AI or machine-learning models. No person at Respite reads it
   except when you ask us for help with your account.
 - **Retention and deletion:** it is kept until you delete your account (in the app under
-  Account, or at [respite.liveintently.app/delete-account](/delete-account)), and is then
+  Account, or at [respite.liveintently.app/delete-account](/delete-account/)), and is then
   deleted. You can also remove Respite's access at any time at
   [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
 
@@ -122,7 +122,7 @@ information if the law requires it.
 
 - On the phone: usage sessions after 90 days; everything when you uninstall.
 - Synced data: until you delete your account. You can delete it in the app (Account) or at
-  [respite.liveintently.app/delete-account](/delete-account); we confirm by email and then delete
+  [respite.liveintently.app/delete-account](/delete-account/); we confirm by email and then delete
   your account and all synced data.
 - Firebase keeps analytics and crash data according to Google's retention settings (analytics
   events for up to 14 months).

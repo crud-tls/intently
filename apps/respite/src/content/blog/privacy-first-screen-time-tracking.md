@@ -65,7 +65,7 @@ On the mainstream side, you've got apps like RescueTime (requires an account, us
 
 ### Website Blocking
 
-Freedom and Cold Turkey are well-known but both push you toward cloud accounts. For local-only options, SelfControl (Mac, open-source) and LeechBlock (browser extension, local storage) are solid. The [Respite for Chrome](/download) also handles this with local storage and no account.
+Freedom and Cold Turkey are well-known but both push you toward cloud accounts. For local-only options, SelfControl (Mac, open-source) and LeechBlock (browser extension, local storage) are solid. The [Respite for Chrome](/download/) also handles this with local storage and no account.
 
 ### Habit Tracking
 
@@ -145,18 +145,18 @@ Your screen time habits are personal. They reflect your routines, your worries, 
 
 When you're picking a screen time app, it's worth asking a simple question: who benefits from my data? If the answer is anyone other than you, a privacy-first alternative is worth a look.
 
-Want to track your screen time without being tracked yourself? [Download Respite](/download) -- private, offline, and built to keep your data where it belongs.
+Want to track your screen time without being tracked yourself? [Download Respite](/download/) -- private, offline, and built to keep your data where it belongs.
 
 ---
 
-Struggling with phone habits? Take our free [Phone Addiction Quiz](/quiz) to get a clearer picture of your relationship with your phone and some practical next steps.
+Struggling with phone habits? Take our free [Phone Addiction Quiz](/quiz/) to get a clearer picture of your relationship with your phone and some practical next steps.
 
 ---
 
 **Related Articles:**
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
-- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
-- [Stop Scrolling at Night](/blog/stop-scrolling-at-night)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Understanding Digital Wellbeing](/blog/what-is-digital-wellbeing)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning/)
+- [Stop Scrolling at Night](/blog/stop-scrolling-at-night/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
+- [Understanding Digital Wellbeing](/blog/what-is-digital-wellbeing/)

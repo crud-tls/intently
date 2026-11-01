@@ -1,6 +1,6 @@
 ---
-title: 'Best One Sec Alternatives 2026: Pause Before Scrolling'
-description: 'Looking for a One Sec alternative? Compare the top mindful pause apps including Respite, ScreenZen, and ClearSpace. Find free options for Android and iOS that add a moment of awareness before opening distracting apps.'
+title: 'Best One Sec Alternatives 2026 (Free Apps Like One Sec)'
+description: 'Free apps like One Sec that pause you before Instagram, TikTok or YouTube opens. Respite, ScreenZen and ClearSpace compared for Android and iPhone.'
 pubDate: 2026-02-01
 updatedDate: 2026-02-26
 author: 'Respite Team'
@@ -22,13 +22,11 @@ faq:
     answer: "You can get similar pause-based features for free. Respite provides mindful interventions, usage tracking, and gamification at no cost (iPhone, Android and Chrome). ScreenZen offers free delay-based pauses on iOS and Android. The main trade-off is that these are different implementations of the same core idea — not exact One Sec replicas."
 ---
 
-# Best One Sec Alternatives (2026 Review)
-
 One Sec deserves credit for popularizing the "pause before scrolling" idea, and they backed it with real science — a study with the Max Planck Institute showed their breathing intervention cut social media app opens by 57%. That's a legit, published result.
 
 But One Sec isn't the only game in town anymore. At roughly $50/year, you're paying a premium for what is essentially a single intervention. Some people want more tools, better tracking, or just don't want to pay that much for a breathing timer.
 
-This guide covers the mindful pause category specifically — apps that create a moment of awareness before you open distracting apps, rather than blocking them outright. If you're after hard blockers, check our [Freedom alternatives guide](/blog/freedom-alternatives) instead.
+This guide covers the mindful pause category specifically — apps that create a moment of awareness before you open distracting apps, rather than blocking them outright. If you're after hard blockers, check our [Freedom alternatives guide](/blog/freedom-alternatives/) instead.
 
 ## Why Pause-Based Apps Work
 
@@ -54,7 +52,7 @@ It works offline and keeps your usage history on your device — no account, syn
 
 Rating: 4/5 — The most full-featured free option in this space.
 
-[Try Respite for free](/download)
+[Try Respite for free](/download/)
 
 ---
 
@@ -181,16 +179,16 @@ Respite is the most comprehensive free option for Android, with mindful interven
 
 If you're curious about the pause-based approach, the fastest way to find out is to just try one. Grab Respite (iPhone, Android and Chrome) or ScreenZen (iOS/Android) — both are free — and use it for a couple of weeks. You'll know pretty quickly whether it changes your relationship with your apps.
 
-[Take the Phone Habit Quiz](/quiz)
+[Take the Phone Habit Quiz](/quiz/)
 
 ---
 
 ## Related Articles
 
-- [Best Opal Alternatives 2026](/blog/opal-alternatives)
-- [Best Freedom Alternatives 2026](/blog/freedom-alternatives)
-- [Best Apple Screen Time Alternatives 2026](/blog/apple-screen-time-alternatives)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
+- [Best Opal Alternatives 2026](/blog/opal-alternatives/)
+- [Best Freedom Alternatives 2026](/blog/freedom-alternatives/)
+- [Best Apple Screen Time Alternatives 2026](/blog/apple-screen-time-alternatives/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
 
 ---
 

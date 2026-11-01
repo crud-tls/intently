@@ -22,8 +22,6 @@ faq:
     answer: "Yes. Unlike substance addiction where complete abstinence is often necessary, social media addiction can typically be resolved through mindful use practices, environmental design, and addressing underlying psychological needs. Most people do not need to quit social media entirely—they need to shift from compulsive to intentional use. Tools like Respite and strategies like those in this article support that transition."
 ---
 
-# Social Media Addiction Signs: 10 Warning Signs You Need to Know
-
 Somewhere between "I just like staying connected" and "I can't put this thing down" is a gray area most of us live in. Maybe you've noticed your screen time creeping up, or a friend made a comment about you always being on your phone. Maybe you've tried setting limits and quietly abandoned them a week later. Whatever brought you here, the fact that you're asking the question matters.
 
 This guide walks through 10 warning signs of social media addiction -- grounded in behavioral psychology research -- so you can figure out where you actually stand and what to do about it.
@@ -44,7 +42,7 @@ Your alarm goes off and your thumb is already on Instagram before you've fully o
 
 When this is your pattern, social media has essentially become the thing your brain uses to "boot up." That first hit of notifications and new content triggers a dopamine response that your nervous system has learned to depend on. It sets a reactive, stimulus-seeking tone for the rest of your day.
 
-Try this tomorrow: don't open any social media for the first 30 minutes after waking. If that sounds easy but turns out to be surprisingly hard, pay attention to that gap. We've written a whole guide on [how to stop checking your phone first thing in the morning](/blog/stop-checking-phone-morning) if you want practical strategies.
+Try this tomorrow: don't open any social media for the first 30 minutes after waking. If that sounds easy but turns out to be surprisingly hard, pay attention to that gap. We've written a whole guide on [how to stop checking your phone first thing in the morning](/blog/stop-checking-phone-morning/) if you want practical strategies.
 
 ### Sign 2: You Lose Track of Time While Scrolling
 
@@ -74,7 +72,7 @@ Stressed about work? Open Reddit. Feeling lonely on a Friday night? Scroll Insta
 
 When social media becomes your default response to uncomfortable emotions, it's functioning as a coping mechanism -- not entertainment. The problem is that it's a bad coping mechanism. Scrolling doesn't resolve the stress or loneliness; it just numbs it temporarily. And when you stop, the feeling usually comes back worse, now with a layer of guilt about the time you just wasted.
 
-Next time you feel an uncomfortable emotion, pause and notice what your hands do. If the automatic move is to reach for your phone and open a social app, that reflex is telling you something important. We dig deeper into [the psychology behind this pattern](/blog/psychology-of-app-addiction) if you want to understand what's happening in your brain.
+Next time you feel an uncomfortable emotion, pause and notice what your hands do. If the automatic move is to reach for your phone and open a social app, that reflex is telling you something important. We dig deeper into [the psychology behind this pattern](/blog/psychology-of-app-addiction/) if you want to understand what's happening in your brain.
 
 ### Sign 6: People Around You Have Noticed
 
@@ -98,7 +96,7 @@ You meant to go to bed at 11. It's 12:45 and you're still in a Reels spiral. Or 
 
 Sleep disruption from social media creates a vicious cycle. Poor sleep weakens your prefrontal cortex -- the brain region responsible for self-control and decision-making -- which makes it harder to resist scrolling the next day, which makes your sleep even worse.
 
-Track your intended bedtime versus your actual bedtime for a week. If social media is consistently pushing your sleep back by 30 minutes or more, that's a pattern worth breaking. Our guide on [stopping nighttime scrolling](/blog/stop-scrolling-at-night) has specific strategies that work.
+Track your intended bedtime versus your actual bedtime for a week. If social media is consistently pushing your sleep back by 30 minutes or more, that's a pattern worth breaking. Our guide on [stopping nighttime scrolling](/blog/stop-scrolling-at-night/) has specific strategies that work.
 
 ### Sign 9: You Feel Worse After Using It, But Keep Going
 
@@ -141,10 +139,10 @@ Count how many of those 10 signs ring true for you:
 |-------|-------|---------------|-------------------|
 | **0-2** | Healthy range | Your social media use is probably fine | Keep being intentional; check in periodically |
 | **3-4** | Early warning | Patterns are forming but aren't deeply wired yet | Start with the strategies below -- this is the best time to act |
-| **5-7** | Problem use | Your relationship with social media needs active intervention | Implement several strategies from this article; try a tool like [Respite](/download) |
+| **5-7** | Problem use | Your relationship with social media needs active intervention | Implement several strategies from this article; try a tool like [Respite](/download/) |
 | **8-10** | Addiction-level | Significant behavioral addiction pattern | Use strategies below and seriously consider professional help |
 
-For a more detailed, personalized look at your habits, take our free [Phone Addiction Quiz](/quiz) -- it evaluates your specific patterns and gives you tailored recommendations.
+For a more detailed, personalized look at your habits, take our free [Phone Addiction Quiz](/quiz/) -- it evaluates your specific patterns and gives you tailored recommendations.
 
 ## What to Do If You See Yourself in These Signs
 
@@ -152,7 +150,7 @@ For a more detailed, personalized look at your habits, take our free [Phone Addi
 
 Let's get this out of the way: social media addiction isn't a character flaw. These platforms employ hundreds of engineers and psychologists whose entire job is to make their product as hard to put down as possible. Getting hooked is a predictable response to a product built to hook you.
 
-Self-compassion -- not self-punishment -- is what actually drives change. If you're curious why, our piece on [mindful tech interventions vs. app blocking](/blog/mindful-tech-interventions-vs-blocking) gets into the research.
+Self-compassion -- not self-punishment -- is what actually drives change. If you're curious why, our piece on [mindful tech interventions vs. app blocking](/blog/mindful-tech-interventions-vs-blocking/) gets into the research.
 
 ### Step 2: Measure Your Actual Usage
 
@@ -166,7 +164,7 @@ Seeing your actual numbers is often the thing that turns vague worry into real m
 
 ### Step 3: Set Up Mindful Interventions
 
-[Download Respite](/download) and configure it for whatever apps give you the most trouble. It shows a gentle pause screen before each app opens -- just a moment that asks, "Do you actually want to do this right now?"
+[Download Respite](/download/) and configure it for whatever apps give you the most trouble. It shows a gentle pause screen before each app opens -- just a moment that asks, "Do you actually want to do this right now?"
 
 That single question is surprisingly powerful. Respite doesn't block or restrict anything. It just interrupts the autopilot. And for compulsive behavior that runs on autopilot, that interruption changes the equation.
 
@@ -180,7 +178,7 @@ Small changes to your physical setup can reduce triggers for compulsive use:
 - Pick a few phone-free zones: dining table, bedroom, bathroom
 - Try grayscale mode -- it makes apps significantly less visually appealing
 
-For a more comprehensive approach, check out our guide on [how to reduce screen time](/blog/how-to-reduce-screen-time).
+For a more comprehensive approach, check out our guide on [how to reduce screen time](/blog/how-to-reduce-screen-time/).
 
 ### Step 5: Figure Out What You're Actually Looking For
 
@@ -206,7 +204,7 @@ Vague goals ("I'll scroll less") don't work. Specific swaps do:
 - Bedtime scrolling becomes reading a physical book
 - Idle-moment scrolling becomes a breathing exercise or a podcast episode
 
-The specificity is what makes it stick. "When I feel the urge to scroll during lunch, I'll put on a podcast instead" is a plan. "I'll use my phone less" is a wish. Our guide on [staying productive without deleting social media](/blog/productive-without-deleting-social) has more ideas along these lines.
+The specificity is what makes it stick. "When I feel the urge to scroll during lunch, I'll put on a podcast instead" is a plan. "I'll use my phone less" is a wish. Our guide on [staying productive without deleting social media](/blog/productive-without-deleting-social/) has more ideas along these lines.
 
 ### Step 7: Review Weekly and Be Patient
 
@@ -232,7 +230,7 @@ Respite was built for exactly this kind of behavior change:
 
 Unlike blockers that just trigger frustration (and creative workarounds), Respite builds real self-awareness. Over time, you internalize the pause and don't need the prompt anymore. That's lasting change.
 
-[Download Respite](/download) and start using social media on your terms.
+[Download Respite](/download/) and start using social media on your terms.
 
 ## When to Seek Professional Help
 
@@ -270,20 +268,20 @@ Yes. Unlike substance addiction, you don't usually need to quit entirely. Most p
 
 If you recognized yourself in several of these signs, here's what matters most: you noticed. That awareness is the foundation everything else builds on. You're not broken, and you're not weak. You're dealing with platforms engineered by some of the smartest people in tech to capture exactly this level of engagement.
 
-The way out isn't about punishment or going cold turkey. It's about building awareness, making intentional choices, and being patient with yourself. Start with our [Phone Addiction Quiz](/quiz) for a personalized picture of your habits, then [download Respite](/download) to start building the mindful habits that make real change possible.
+The way out isn't about punishment or going cold turkey. It's about building awareness, making intentional choices, and being patient with yourself. Start with our [Phone Addiction Quiz](/quiz/) for a personalized picture of your habits, then [download Respite](/download/) to start building the mindful habits that make real change possible.
 
 You deserve to use technology on your terms.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to get a complete assessment of your social media habits and a personalized action plan.
+Take our free [Phone Addiction Quiz](/quiz/) to get a complete assessment of your social media habits and a personalized action plan.
 
 ---
 
 **Related Articles:**
-- [How to Stop Phone Addiction: A Complete Guide](/blog/how-to-stop-phone-addiction)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [What Is Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing)
+- [How to Stop Phone Addiction: A Complete Guide](/blog/how-to-stop-phone-addiction/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [How to Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [What Is Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing/)

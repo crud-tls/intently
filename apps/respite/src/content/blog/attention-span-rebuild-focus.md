@@ -21,8 +21,6 @@ faq:
     answer: "Yes. Multiple studies show that even brief meditation practice (10-15 minutes daily) improves sustained attention, reduces mind-wandering, and increases gray matter in attention-related brain regions. You don't need to become a monk — consistent short sessions produce measurable improvements within 2-4 weeks."
 ---
 
-# Is Your Attention Span Shrinking? How to Rebuild Focus in the Age of Phones
-
 You sit down to read an article and three paragraphs in, your hand drifts toward your phone. You start a work task and before you've gotten anywhere, you've checked Slack, glanced at Instagram, and forgotten what you were doing. A book that would have taken you a weekend now takes you a month because you can't get through more than a few pages without your mind — or your hand — wandering.
 
 If this sounds familiar, you're not imagining it. Something has changed about how your brain handles attention. The question is whether it's permanent, and what you can do about it.
@@ -132,7 +130,7 @@ Your environment determines your behavior more than your intentions. For focus s
 
 ### 5. Use Mindful Interventions
 
-Install [Respite](/download) on your phone and Chrome browser. When you reflexively reach for a distracting app during a focus period, the brief pause interrupts the autopilot and gives you a chance to redirect. You're not blocked — you're just given a moment to notice what you're doing.
+Install [Respite](/download/) on your phone and Chrome browser. When you reflexively reach for a distracting app during a focus period, the brief pause interrupts the autopilot and gives you a chance to redirect. You're not blocked — you're just given a moment to notice what you're doing.
 
 Over time, these moments of awareness compound. You start catching the impulse before your hand even reaches your phone.
 
@@ -163,18 +161,18 @@ Your attention span isn't permanently damaged. Your brain adapted to an environm
 
 The key is creating the conditions for that readaptation: reducing digital interruptions, practicing sustained attention daily, and being patient with yourself as your brain relearns a skill it hasn't used much lately.
 
-Ready to start rebuilding? [Download Respite](/download) to reduce the autopilot phone checks that fragment your focus throughout the day.
+Ready to start rebuilding? [Download Respite](/download/) to reduce the autopilot phone checks that fragment your focus throughout the day.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to understand how your phone habits are affecting your focus.
+Take our free [Phone Addiction Quiz](/quiz/) to understand how your phone habits are affecting your focus.
 
 ---
 
 **Related Articles:**
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [The Science of Friction: Why a 3-Second Pause Changes Everything](/blog/science-of-friction)
-- [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much)
-- [Digital Wellbeing at Work](/blog/digital-wellbeing-at-work)
-- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction)
-- [20 Healthy Alternatives to Scrolling](/blog/healthy-alternatives-scrolling)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [The Science of Friction: Why a 3-Second Pause Changes Everything](/blog/science-of-friction/)
+- [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much/)
+- [Digital Wellbeing at Work](/blog/digital-wellbeing-at-work/)
+- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction/)
+- [20 Healthy Alternatives to Scrolling](/blog/healthy-alternatives-scrolling/)

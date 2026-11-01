@@ -22,8 +22,6 @@ faq:
     answer: "Blocking can help in the short term, especially during focused work. But research on habit formation suggests that building internal motivation and awareness tends to produce more durable change than external restriction alone. That is why many newer apps combine blocking with mindful interventions or breathing exercises."
 ---
 
-# Best Apple Screen Time Alternatives (2026 Guide)
-
 Apple Screen Time ships on every iPhone, iPad, and Mac. For most people, it's the first -- and only -- tool they try for managing phone habits. And honestly, it does some things well: it's free, it requires no setup, and it gives you a basic picture of how you're spending time on your devices.
 
 But if you've ever tapped "Ignore Limit" and then spent another hour scrolling, you already know the problem. Screen Time was built primarily as a parental control tool, and it shows. For adults trying to change their own behavior, it often falls short.
@@ -115,7 +113,7 @@ Good news for iPhone users: Respite is on iPhone, Android and Chrome. On iPhone 
 
 Rating: 4/5
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ## Hard Blockers
 
@@ -223,20 +221,20 @@ The best Screen Time alternative depends on what isn't working for you right now
 - Keep tapping "Ignore Limit"? Try One Sec or ClearSpace for mindful pauses.
 - Need focus sessions for work? Try Opal or Freedom for hard blocking.
 - Want free awareness on iPhone? Try ScreenZen for lightweight nudges.
-- Want a free, all-in-one tool? Try [Respite](/download) on Android or Chrome, or [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) on iPhone.
+- Want a free, all-in-one tool? Try [Respite](/download/) on Android or Chrome, or [Respite](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293) on iPhone.
 
 Whatever you choose, the goal is the same: building a relationship with your phone that you actually feel good about.
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ---
 
 ## Related Articles
 
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time)
-- [Respite vs One Sec](/blog/respite-vs-one-sec)
-- [Respite vs Freedom](/blog/respite-vs-freedom)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time/)
+- [Respite vs One Sec](/blog/respite-vs-one-sec/)
+- [Respite vs Freedom](/blog/respite-vs-freedom/)
 
 ---
 

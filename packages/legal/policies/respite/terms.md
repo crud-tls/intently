@@ -111,11 +111,11 @@ The App asks for these permissions on your iPhone or iPad. By granting them, you
 
 - **Notifications (optional):** for daily reminders, your goals summary and the lock-override prompt.
 
-For details, please see our [Privacy Policy](/privacy).
+For details, please see our [Privacy Policy](/privacy/).
 
 ## 8. Privacy and Data Protection
 
-Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our [Privacy Policy](/privacy), which is incorporated into these Terms by reference.
+Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our [Privacy Policy](/privacy/), which is incorporated into these Terms by reference.
 
 Key privacy highlights:
 

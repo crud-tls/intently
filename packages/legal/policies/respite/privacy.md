@@ -81,7 +81,7 @@ and Cloudflare (our server). We may disclose information if the law requires it.
 - Backed-up data: until you delete your account. In the app, go to **You › Account & backup ›
   Delete account**; this immediately deletes your account and everything backed up to it and
   revokes Respite's access to your Apple ID. Data on your device is kept. You can also ask at
-  [respite.liveintently.app/delete-account](/delete-account).
+  [respite.liveintently.app/delete-account](/delete-account/).
 - Signing out stops backing up but keeps your backup until you delete the account.
 
 ## Your rights

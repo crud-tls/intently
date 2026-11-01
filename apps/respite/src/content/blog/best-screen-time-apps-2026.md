@@ -21,8 +21,6 @@ faq:
     answer: "Mindful screen time apps build lasting habits by creating awareness, while blockers provide immediate enforcement but often lead to workarounds. For most people, starting with a mindful approach like Respite is more sustainable. You can always add a blocker for specific high-distraction periods if needed."
 ---
 
-# Best Screen Time Apps 2026: The Complete Roundup
-
 There are now dozens of apps promising to fix your screen time habits, and they take genuinely different approaches. Some block apps outright. Some add friction or pauses. Some just track your usage and hope the data alone motivates change. A few do something more interesting — they use behavioral science to interrupt the autopilot without taking away your choice.
 
 This guide covers the full landscape: mindful pause tools, hard blockers, time-limit apps, and built-in platform options. We've tested each one and scored them on effectiveness, privacy, price, and whether the approach actually holds up past the first week.
@@ -51,7 +49,7 @@ Your usage history stays on your phone. No account required, no ads, and nothing
 
 **Rating: 4.5/5** — The most complete free screen time app available. The mindful approach is backed by research showing up to 67% reduction in impulsive app opens.
 
-[Try Respite for free](/download)
+[Try Respite for free](/download/)
 
 ---
 
@@ -211,20 +209,20 @@ Some can. Many screen time apps require broad permissions and collect usage data
 
 ## Getting Started
 
-The fastest way to find what works is to just try one. Grab [Respite](/download) (free on [iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Android and Chrome) and use it for two weeks. Most people notice a real shift in their phone habits within the first few days — not because anything is blocked, but because the pause makes you realize how often you're reaching for your phone on autopilot.
+The fastest way to find what works is to just try one. Grab [Respite](/download/) (free on [iPhone](https://apps.apple.com/us/app/respite-screen-time-control/id6757760293), Android and Chrome) and use it for two weeks. Most people notice a real shift in their phone habits within the first few days — not because anything is blocked, but because the pause makes you realize how often you're reaching for your phone on autopilot.
 
-[Take the Phone Habit Quiz](/quiz)
+[Take the Phone Habit Quiz](/quiz/)
 
 ---
 
 ## Related Articles
 
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives)
-- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Do App Blockers Actually Work?](/blog/do-app-blockers-work)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Best Chrome Extensions for Focus 2026](/blog/best-chrome-extensions-focus)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
+- [Best One Sec Alternatives 2026](/blog/one-sec-alternatives/)
+- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [Do App Blockers Actually Work?](/blog/do-app-blockers-work/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [Best Chrome Extensions for Focus 2026](/blog/best-chrome-extensions-focus/)
 
 ---
 

@@ -21,8 +21,6 @@ faq:
     answer: "Yes. Friction is used across many domains: placing healthier food at eye level in cafeterias increases healthy eating by 25%, adding a confirmation step before large purchases reduces impulse buying, and opt-out organ donation (where you have to actively choose not to donate) dramatically increases donation rates. The principle is universal — small barriers change behavior at scale."
 ---
 
-# The Science of Friction: Why a 3-Second Pause Changes Everything
-
 Here's something counterintuitive: one of the most powerful forces in behavior change isn't motivation, willpower, or education. It's friction — the tiny obstacles between you and an action. Add a few seconds of friction to a behavior, and you can cut it in half. Remove friction from a better behavior, and adoption skyrockets.
 
 This principle is the foundation of how apps like Respite work. A brief pause before opening Instagram doesn't sound like it should matter. Three seconds? That's nothing. But the research says otherwise — and understanding why changes how you think about your phone habits, your environment, and how change actually happens.
@@ -132,18 +130,18 @@ You're not fighting yourself. You're fighting billions of dollars of friction en
 
 Adding friction back — one small pause at a time — levels the playing field. It doesn't require superhuman willpower. It just requires a 3-second gap between impulse and action. And that gap, as the research consistently shows, changes everything.
 
-Ready to add the right kind of friction to your phone habits? [Download Respite](/download) and discover what a moment of awareness can do.
+Ready to add the right kind of friction to your phone habits? [Download Respite](/download/) and discover what a moment of awareness can do.
 
 ---
 
-Curious about your phone habits? Take our free [Phone Addiction Quiz](/quiz) for a science-backed assessment.
+Curious about your phone habits? Take our free [Phone Addiction Quiz](/quiz/) for a science-backed assessment.
 
 ---
 
 **Related Articles:**
-- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction)
-- [Do App Blockers Actually Work?](/blog/do-app-blockers-work)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Attention Span and Focus: How to Rebuild What Your Phone Took](/blog/attention-span-rebuild-focus)
+- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction/)
+- [Do App Blockers Actually Work?](/blog/do-app-blockers-work/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [Attention Span and Focus: How to Rebuild What Your Phone Took](/blog/attention-span-rebuild-focus/)

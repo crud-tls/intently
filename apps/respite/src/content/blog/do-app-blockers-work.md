@@ -21,8 +21,6 @@ faq:
     answer: "The research points to a combination of approaches: awareness and tracking (understanding your patterns), mindful interventions (interrupting autopilot behavior), environmental design (keeping your phone out of sight during focus time), and habit replacement (filling the gap with better alternatives). No single tool or approach works for everyone, but mindful awareness consistently shows the best long-term outcomes."
 ---
 
-# Do App Blockers Actually Work? What the Research Says
-
 App blockers are the most obvious solution to phone overuse: if Instagram wastes your time, block Instagram. If you can't stop scrolling Twitter, make it inaccessible. The logic is airtight in theory. In practice, the evidence tells a more complicated story.
 
 This isn't an argument against all app blockers — they have their place. But the research suggests that how you reduce screen time matters as much as whether you reduce it, and blocking alone has some significant limitations that are worth understanding before you invest time or money in one.
@@ -127,7 +125,7 @@ The problem isn't blockers themselves — it's treating them as a complete solut
 The evidence points toward a layered strategy:
 
 ### 1. Awareness First
-Track your actual usage with a privacy-first tool like [Respite](/download). Most people underestimate their screen time by 50%. You can't change patterns you can't see.
+Track your actual usage with a privacy-first tool like [Respite](/download/). Most people underestimate their screen time by 50%. You can't change patterns you can't see.
 
 ### 2. Mindful Interventions for Daily Use
 Use pause-based interventions on your most distracting apps. This builds the awareness and self-regulation skills that create lasting change. Respite, One Sec, and ScreenZen all take variations of this approach.
@@ -149,18 +147,18 @@ Mindful interventions take a different path — building awareness and self-regu
 
 The best approach for most people isn't choosing between blocking and mindfulness — it's leading with mindfulness and using blocking strategically for specific situations where you need it.
 
-Ready to try the mindful approach? [Download Respite](/download) and experience the difference a moment of awareness makes.
+Ready to try the mindful approach? [Download Respite](/download/) and experience the difference a moment of awareness makes.
 
 ---
 
-Curious about your phone habits? Take our free [Phone Addiction Quiz](/quiz) for a science-backed assessment.
+Curious about your phone habits? Take our free [Phone Addiction Quiz](/quiz/) for a science-backed assessment.
 
 ---
 
 **Related Articles:**
-- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Best Screen Time Apps 2026](/blog/best-screen-time-apps-2026)
-- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [The Science of Friction: Why a 3-Second Pause Changes Everything](/blog/science-of-friction)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
+- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [Best Screen Time Apps 2026](/blog/best-screen-time-apps-2026/)
+- [Why Willpower Fails: The Science of Phone Addiction](/blog/why-willpower-fails-phone-addiction/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [The Science of Friction: Why a 3-Second Pause Changes Everything](/blog/science-of-friction/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)

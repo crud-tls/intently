@@ -22,8 +22,6 @@ faq:
     answer: "Modern screen time apps use minimal battery (typically <2% daily). Respite specifically optimizes for low battery usage since all tracking happens locally without cloud uploads."
 ---
 
-# Best Google Digital Wellbeing Alternatives (2026 Review)
-
 Google Digital Wellbeing ships on most Android phones, and honestly, it's fine for what it is. But "fine" only gets you so far. The feature set is limited, customization is minimal, and your usage data gets folded into Google's ecosystem. If you want more control — or you'd rather your screen time habits stay between you and your phone — it's worth looking at what else is out there.
 
 We've tested eight alternatives and put together this guide to help you pick the right one.
@@ -79,7 +77,7 @@ The one downside is that iOS isn't available yet, and if you're specifically loo
 
 We think this is the best option for most people. The combination of a science-backed approach, genuine privacy, and a completely free model is hard to beat.
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ---
 
@@ -212,7 +210,7 @@ Cross-platform support is a plus, and the free tier is genuinely useful. The app
 
 It depends on what matters most to you:
 
-**Privacy and lasting change** -- Go with [Respite](/download). It's free, works offline with no account, and is built around helping you actually shift your relationship with your phone rather than just restricting it.
+**Privacy and lasting change** -- Go with [Respite](/download/). It's free, works offline with no account, and is built around helping you actually shift your relationship with your phone rather than just restricting it.
 
 **Detailed analytics** -- ActionDash gives you more data than you'll probably know what to do with, and the $4.99 one-time price is fair.
 
@@ -249,7 +247,7 @@ Respite keeps your usage history on your phone, needs no account, and only syncs
 
 ## Our Top 3 Picks
 
-**Best Overall: Respite** -- Privacy-first, science-backed, completely free, and effective for long-term change. [Download Respite](/download)
+**Best Overall: Respite** -- Privacy-first, science-backed, completely free, and effective for long-term change. [Download Respite](/download/)
 
 **Best for Data Lovers: ActionDash** -- Unmatched analytics and insights for people who want to really understand their usage patterns.
 
@@ -295,20 +293,20 @@ The right Digital Wellbeing alternative depends on what you need most. For the m
 
 Take our free quiz to see where your phone habits stand:
 
-[Take the Phone Addiction Quiz](/quiz)
+[Take the Phone Addiction Quiz](/quiz/)
 
 Then download Respite and start building healthier digital habits:
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ---
 
 ## Related Articles
 
-- [Respite vs Google Digital Wellbeing: Full Comparison](/blog/respite-vs-google-digital-wellbeing)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Respite vs Opal: Which Is Better?](/blog/respite-vs-opal)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
+- [Respite vs Google Digital Wellbeing: Full Comparison](/blog/respite-vs-google-digital-wellbeing/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [Respite vs Opal: Which Is Better?](/blog/respite-vs-opal/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
 
 ---
 

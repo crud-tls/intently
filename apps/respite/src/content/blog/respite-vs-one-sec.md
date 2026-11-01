@@ -22,8 +22,6 @@ faq:
     answer: "Both use a mindful pause before opening distracting apps, but the execution differs. One Sec uses a fixed breathing exercise — a timed inhale/exhale animation — before every app open. Respite uses customizable prompts and reflection questions that you can personalize to your goals. One Sec's approach is simpler and more consistent; Respite's is more flexible."
 ---
 
-# Respite vs One Sec: Two Takes on the Mindful Pause
-
 Of all the screen time apps out there, Respite and One Sec are the most philosophically aligned. While other tools rely on hard blocking, timers, or gamification, these two share a core belief: a moment of awareness before you open an app is more powerful than a locked screen.
 
 That makes this comparison more interesting than most. These aren't opposing philosophies -- they're two variations on the same idea. The question isn't which one "works" (both do), but which variation fits the way your mind operates.
@@ -110,7 +108,7 @@ One Sec's Max Planck study measured results over a defined study period. Long-te
 
 For many users, this comes down to platform and personal preference. Neither app is categorically better -- they're two thoughtful approaches to the same problem.
 
-[Try Respite Free on Android & Chrome](/download)
+[Try Respite Free on Android & Chrome](/download/)
 
 ## The Bigger Picture
 
@@ -124,12 +122,12 @@ Questions or feedback? Reach out at support@liveintently.app.
 
 ## Related Articles
 
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech-interventions-vs-blocking)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Respite vs Opal: Which Screen Time App Is Right for You?](/blog/respite-vs-opal)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [Mindful Interventions vs App Blocking: What Science Says](/blog/mindful-tech-interventions-vs-blocking/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
+- [Respite vs Opal: Which Screen Time App Is Right for You?](/blog/respite-vs-opal/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
 
 ---
 

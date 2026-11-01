@@ -1,6 +1,6 @@
 ---
-title: 'Best Chrome Extensions for Focus 2026: Block Distractions and Stay Productive'
-description: 'Looking for the best Chrome extensions to block social media and stay focused? Compare Respite, StayFocusd, LeechBlock, News Feed Eradicator, Unhook YouTube, and more in our 2026 roundup.'
+title: 'Best Chrome Extensions for Focus in 2026'
+description: 'The best Chrome extensions to block distractions: Respite, StayFocusd, LeechBlock, News Feed Eradicator, Unhook and more, compared.'
 pubDate: 2026-02-28
 author: 'Respite Team'
 section: 'App Comparisons'
@@ -21,8 +21,6 @@ faq:
     answer: "You can, but be selective. A good combination is one awareness tool (like Respite for mindful pauses) plus one or two surgical tools (like News Feed Eradicator for social media feeds and Unhook YouTube for recommendations). Running multiple blocking extensions simultaneously can create conflicts. Start with one and add others only if needed."
 ---
 
-# Best Chrome Extensions for Focus 2026: Stay Productive Without Willpower
-
 Desktop browsing has its own distraction problem. You sit down to work, open Chrome, and somehow end up 20 minutes into a Twitter thread about something you don't care about. Unlike phone habits (where you at least have to pick up a device), desktop distractions are one tab away at all times.
 
 Chrome extensions can help — but they take wildly different approaches. Some block sites outright. Some add friction or pauses. Some surgically remove the addictive parts of websites while keeping the useful features. This guide covers the best options in each category.
@@ -41,7 +39,7 @@ It's lightweight and requires no account. The main limitation is that it's newer
 
 **Rating: 4/5** — Best option for building lasting awareness. Free and privacy-first.
 
-[Add Respite to Chrome](/download)
+[Add Respite to Chrome](/download/)
 
 ---
 
@@ -188,19 +186,19 @@ If your issue is specifically the infinite scroll and algorithmic feed, surgical
 
 ## Getting Started
 
-Pick one extension from this list and try it for two weeks. If you're unsure where to start, [Respite's Chrome extension](/download) is free, lightweight, and privacy-first — and the mindful pause approach builds habits that last.
+Pick one extension from this list and try it for two weeks. If you're unsure where to start, [Respite's Chrome extension](/download/) is free, lightweight, and privacy-first — and the mindful pause approach builds habits that last.
 
-[Take the Phone Habit Quiz](/quiz)
+[Take the Phone Habit Quiz](/quiz/)
 
 ---
 
 ## Related Articles
 
-- [Best Screen Time Apps 2026](/blog/best-screen-time-apps-2026)
-- [StayFocusd Alternatives 2026](/blog/stayfocusd-alternatives)
-- [Do App Blockers Actually Work?](/blog/do-app-blockers-work)
-- [The Science of Friction](/blog/science-of-friction)
-- [Be More Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
+- [Best Screen Time Apps 2026](/blog/best-screen-time-apps-2026/)
+- [StayFocusd Alternatives 2026](/blog/stayfocusd-alternatives/)
+- [Do App Blockers Actually Work?](/blog/do-app-blockers-work/)
+- [The Science of Friction](/blog/science-of-friction/)
+- [Be More Productive Without Deleting Social Media](/blog/productive-without-deleting-social/)
 
 ---
 

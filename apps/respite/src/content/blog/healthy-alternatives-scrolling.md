@@ -1,6 +1,6 @@
 ---
-title: '20 Healthy Alternatives to Scrolling: What to Do Instead of Reaching for Your Phone'
-description: 'Looking for healthy alternatives to social media scrolling? Discover 20 practical things to do instead of phone scrolling, organized by what you actually need — boredom relief, connection, relaxation, stimulation, and information.'
+title: '20 Healthy Alternatives to Scrolling Your Phone'
+description: '20 things to do instead of scrolling, sorted by what you actually need: boredom relief, connection, rest, stimulation or information.'
 pubDate: 2026-02-28
 author: 'Respite Team'
 section: 'Digital Wellbeing'
@@ -20,8 +20,6 @@ faq:
   - question: "What if I scroll because I'm anxious or stressed?"
     answer: "Scrolling as a stress response is common but counterproductive — research shows passive social media use typically increases anxiety rather than relieving it. Better anxiety alternatives include breathing exercises, a short walk, journaling about what's bothering you, or calling someone you trust. Address the anxiety directly rather than numbing it with your phone."
 ---
-
-# 20 Healthy Alternatives to Scrolling Your Phone
 
 Let's be honest about something first: you scroll for a reason. Maybe you're bored, maybe you're anxious, maybe you want connection, or maybe you just need your brain to do something that isn't the thing you're supposed to be doing. There's nothing wrong with any of those needs. The problem isn't that you want stimulation or comfort — it's that your phone has become the default answer to every single one of those needs.
 
@@ -133,7 +131,7 @@ Knowing alternatives isn't enough — you need to make them easier to reach for 
 
 **Redesign your environment.** Keep a book on your nightstand instead of a charger. Put a journal on the coffee table. Leave a guitar out of its case. The easier the alternative is to access, the more likely you are to choose it.
 
-**Use friction on your phone.** Apps like [Respite](/download) create a brief pause before opening distracting apps — a moment where you can choose one of these alternatives instead. That 5-second gap between impulse and action is where the new habit gets built.
+**Use friction on your phone.** Apps like [Respite](/download/) create a brief pause before opening distracting apps — a moment where you can choose one of these alternatives instead. That 5-second gap between impulse and action is where the new habit gets built.
 
 **Don't try to replace all scrolling at once.** Pick one situation — morning scrolling, lunch break scrolling, bedtime scrolling — and introduce one alternative there. Once that feels natural (usually 2-3 weeks), tackle the next one.
 
@@ -145,18 +143,18 @@ None of these alternatives are magic. The point isn't to replace one compulsive 
 
 Over time, the scroll-first reflex weakens. Not because you're forcing it, but because your brain has rediscovered that there are better ways to meet the needs it's been trying to meet through your phone all along.
 
-Ready to build the pause that makes space for better choices? [Download Respite](/download) and start catching the autopilot before it takes over.
+Ready to build the pause that makes space for better choices? [Download Respite](/download/) and start catching the autopilot before it takes over.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to understand your scrolling patterns and get personalized strategies for change.
+Take our free [Phone Addiction Quiz](/quiz/) to understand your scrolling patterns and get personalized strategies for change.
 
 ---
 
 **Related Articles:**
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night)
-- [How to Stop Doomscrolling](/blog/how-to-stop-doomscrolling)
-- [The Science of Friction: Why a 3-Second Pause Changes Everything](/blog/science-of-friction)
-- [Digital Detox Benefits: What Happens When You Unplug](/blog/digital-detox-benefits)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night/)
+- [How to Stop Doomscrolling](/blog/how-to-stop-doomscrolling/)
+- [The Science of Friction: Why a 3-Second Pause Changes Everything](/blog/science-of-friction/)
+- [Digital Detox Benefits: What Happens When You Unplug](/blog/digital-detox-benefits/)

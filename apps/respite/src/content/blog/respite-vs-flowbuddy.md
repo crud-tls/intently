@@ -21,8 +21,6 @@ faq:
     answer: "No, FlowBuddy is Android-only with no iOS or browser version. Respite supports iPhone, Android and Chrome. If you need to manage screen time across devices, Respite covers more ground."
 ---
 
-# Respite vs FlowBuddy: Full-Featured Toolkit or Minimal Breathing Pause?
-
 If you're looking for a free way to add a pause before opening apps on Android, you've probably come across both Respite and FlowBuddy. Both are free, both run on Android, and both create a moment of friction before you open distracting apps.
 
 But that's where the similarities end. Respite is a full-featured mindful screen time toolkit. FlowBuddy is a minimal, open-source app that does exactly one thing: show a breathing animation before an app opens.
@@ -126,7 +124,7 @@ Both questions are valid. Some people thrive with data, customization, and progr
 
 The good news is that both are free, so trying each one costs nothing but a few minutes. Start with whichever approach appeals to you, give it two weeks, and see whether the intervention is still working or whether you've started to tune it out.
 
-[Download Respite for Android, iOS & Chrome](/download)
+[Download Respite for Android, iOS & Chrome](/download/)
 
 Questions or feedback? Reach out at support@liveintently.app.
 
@@ -134,11 +132,11 @@ Questions or feedback? Reach out at support@liveintently.app.
 
 ## Related Articles
 
-- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives)
-- [Free Screen Time Apps for Android: Privacy-First Options](/blog/free-screen-time-app-android)
-- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking)
+- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives/)
+- [Free Screen Time Apps for Android: Privacy-First Options](/blog/free-screen-time-app-android/)
+- [Respite vs ScreenZen: Free Mindful Screen Time Apps](/blog/respite-vs-screenzen/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking/)
 
 ---
 

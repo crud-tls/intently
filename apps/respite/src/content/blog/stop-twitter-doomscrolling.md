@@ -22,8 +22,6 @@ faq:
     answer: "Most people notice significant reduction in automatic checking within 1-2 weeks of turning off notifications and setting time limits. The urge to doomscroll typically fades after 3-4 weeks of consistent practice with intentional use strategies. Full habit transformation takes 60-90 days."
 ---
 
-# How to Break the Twitter/X Doomscrolling Cycle: Strategies That Work
-
 Twitter might be the worst social media platform for doomscrolling -- and that's saying something. Unlike TikTok or Instagram, where the content at least pretends to entertain you, Twitter serves up a raw firehose of bad news, heated arguments, and strangers being awful to each other. And because everything happens in real time, there's always a reason to keep refreshing. Something is always happening. Something is always wrong.
 
 If you've been stuck in that loop -- opening the app with no clear purpose, rage-reading threads you didn't ask for, closing it feeling worse -- this guide is for you. We're not going to tell you to delete your account. Twitter still has genuine value for networking, industry news, and community. But there are concrete ways to use it without letting it wreck your afternoon.
@@ -60,7 +58,7 @@ Most doomscrolling starts without a conscious decision. You're between tasks, a 
 
 Respite puts a brief pause screen between you and the app -- just a moment to notice what you're doing and decide if this is actually what you want right now. You can always continue. But that half-second of awareness is often enough to short-circuit the autopilot.
 
-[Download Respite](/download) to try this on Twitter and any other apps that tend to pull you in.
+[Download Respite](/download/) to try this on Twitter and any other apps that tend to pull you in.
 
 ### 3. Set specific times to check -- and stick to the clock
 
@@ -129,7 +127,7 @@ Respite supports the strategies above by creating a moment of awareness before y
 - Usage tracking so you can see your patterns over time
 - Available on Android, iOS, and Chrome
 
-[Download Respite](/download) and start building a Twitter habit that works for you instead of against you.
+[Download Respite](/download/) and start building a Twitter habit that works for you instead of against you.
 
 ## The Bottom Line
 
@@ -142,11 +140,11 @@ Your feed should work for you. Right now, there's a good chance it's the other w
 ---
 
 **Related Reading:**
-- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
-- [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
-- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling/)
+- [How to Stop Doomscrolling: 7 Science-Backed Strategies](/blog/how-to-stop-doomscrolling/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge/)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
 
-Take our free [Phone Addiction Quiz](/quiz) to assess your Twitter habits and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to assess your Twitter habits and get personalized recommendations.

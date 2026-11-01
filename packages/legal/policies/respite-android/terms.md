@@ -119,11 +119,11 @@ The App requires certain Android permissions to function properly. By using the 
 
 - **Query All Packages:**To display installed apps for selection
 
-For a complete list and detailed explanation of permissions, please see our [Privacy Policy](/privacy).
+For a complete list and detailed explanation of permissions, please see our [Privacy Policy](/privacy/).
 
 ## 8. Privacy and Data Protection
 
-Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our [Privacy Policy](/privacy), which is incorporated into these Terms by reference.
+Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our [Privacy Policy](/privacy/), which is incorporated into these Terms by reference.
 
 Key privacy highlights:
 

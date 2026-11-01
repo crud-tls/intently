@@ -1,5 +1,5 @@
 ---
-title: "How to Stop YouTube Binge Watching: Mindful Strategies That Work"
+title: 'How to Stop YouTube Binge Watching: What Actually Works'
 description: "Stop YouTube binge watching with proven strategies. Learn how to break the autoplay cycle, watch intentionally, and reclaim hours of your week while still enjoying content you love."
 pubDate: 2026-01-23
 updatedDate: 2026-02-28
@@ -21,8 +21,6 @@ faq:
   - question: "How long does it take to break a YouTube binge-watching habit?"
     answer: "Most people notice significant reduction in automatic binge-watching within 2-3 weeks of turning off autoplay and setting time limits. Lasting habit change typically takes 60-90 days of consistent practice with intentional viewing strategies."
 ---
-
-# How to Stop YouTube Binge Watching: Mindful Strategies That Work
 
 There's a specific feeling that comes with a YouTube binge. You started with something you actually wanted to watch -- a tutorial, a review, a video essay. An hour later, you're watching something completely unrelated, you can't remember how you got there, and you feel vaguely guilty about all the things you should have been doing instead.
 
@@ -61,7 +59,7 @@ Respite can show you a brief prompt before YouTube opens:
 
 You can always proceed. But that moment of awareness turns an automatic habit into a deliberate choice. It's the difference between drifting into a three-hour session and deciding to watch for 20 minutes.
 
-[Download Respite](/download) to add this to your YouTube routine.
+[Download Respite](/download/) to add this to your YouTube routine.
 
 ## Use Watch Lists Instead of the Homepage
 
@@ -95,16 +93,16 @@ Respite supports intentional YouTube habits:
 - Usage tracking to see your patterns
 - Works on Android, iOS, and Chrome
 
-[Download Respite free](/download) and take control of your YouTube time.
+[Download Respite free](/download/) and take control of your YouTube time.
 
 ---
 
 **Related Reading:**
-- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [How to Stop Twitter/X Doomscrolling](/blog/stop-twitter-doomscrolling)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling/)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [How to Stop Twitter/X Doomscrolling](/blog/stop-twitter-doomscrolling/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
 
-Take our free [Phone Addiction Quiz](/quiz) to assess your YouTube habits and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to assess your YouTube habits and get personalized recommendations.

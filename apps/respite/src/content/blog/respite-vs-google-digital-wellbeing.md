@@ -131,18 +131,18 @@ Respite is built for people who want more -- more insight, more privacy, and an 
 
 They serve different needs, and neither is wrong. But if Digital Wellbeing hasn't moved the needle for you, there's a good chance Respite's approach will.
 
-Ready to see how it feels? [Download Respite](/download) free and give it two weeks. No credit card required.
+Ready to see how it feels? [Download Respite](/download/) free and give it two weeks. No credit card required.
 
 ---
 
-Still deciding between apps? Take our free [Phone Addiction Quiz](/quiz) to get personalized recommendations based on your usage patterns and goals.
+Still deciding between apps? Take our free [Phone Addiction Quiz](/quiz/) to get personalized recommendations based on your usage patterns and goals.
 
 ---
 
 **Related Articles:**
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
-- [Stop TikTok Scrolling Without Deleting](/blog/stop-tiktok-scrolling)
-- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning/)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
+- [Stop TikTok Scrolling Without Deleting](/blog/stop-tiktok-scrolling/)
+- [Mindful Tech: Why Interventions Beat Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)

@@ -21,8 +21,6 @@ faq:
     answer: "Not exactly. Doomscrolling is a specific pattern of phone use focused on negative content, while phone addiction is a broader compulsive relationship with your device. You can be addicted to your phone without doomscrolling (spending hours on Instagram or games instead), and you can doomscroll occasionally without being phone-addicted. However, they often overlap and reinforce each other."
 ---
 
-# What Is Doomscrolling?
-
 **Doomscrolling is the compulsive habit of continuously scrolling through negative, distressing, or anxiety-inducing content on social media and news sites — even when it makes you feel worse.** It's the experience of lying in bed at midnight, reading about disasters, political crises, and worst-case scenarios, knowing you should stop, and being unable to look away. The term combines "doom" (a sense of impending catastrophe) with "scrolling" (the act of endlessly moving through a digital feed).
 
 ## Where the Term Came From
@@ -83,7 +81,7 @@ Choose 2-3 specific times per day to check news (morning, lunch, evening). Set a
 
 ### 2. Use a Mindful Intervention
 
-Install [Respite](/download) and flag your news and social media apps. The brief pause before opening creates a moment where you can ask: "Am I checking this intentionally, or am I falling into the scroll?" That awareness alone often breaks the cycle.
+Install [Respite](/download/) and flag your news and social media apps. The brief pause before opening creates a moment where you can ask: "Am I checking this intentionally, or am I falling into the scroll?" That awareness alone often breaks the cycle.
 
 ### 3. Curate Ruthlessly
 
@@ -113,18 +111,18 @@ Doomscrolling feels productive, but it's the opposite of productive. It increase
 
 The solution isn't ignorance — it's intentionality. Set boundaries around your information consumption, recognize when scrolling stops being useful, and give yourself permission to disengage from the feed without feeling irresponsible.
 
-Ready to break the doomscrolling cycle? [Download Respite](/download) to create a mindful pause before your news and social media apps.
+Ready to break the doomscrolling cycle? [Download Respite](/download/) to create a mindful pause before your news and social media apps.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to understand your scrolling patterns and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to understand your scrolling patterns and get personalized recommendations.
 
 ---
 
 **Related Articles:**
-- [How to Stop Doomscrolling](/blog/how-to-stop-doomscrolling)
-- [Phone Addiction and Anxiety](/blog/phone-addiction-anxiety)
-- [Screen Time and Mental Health](/blog/screen-time-and-mental-health)
-- [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [20 Healthy Alternatives to Scrolling](/blog/healthy-alternatives-scrolling)
+- [How to Stop Doomscrolling](/blog/how-to-stop-doomscrolling/)
+- [Phone Addiction and Anxiety](/blog/phone-addiction-anxiety/)
+- [Screen Time and Mental Health](/blog/screen-time-and-mental-health/)
+- [Stop Scrolling at Night: Reclaim Your Sleep](/blog/stop-scrolling-at-night/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [20 Healthy Alternatives to Scrolling](/blog/healthy-alternatives-scrolling/)

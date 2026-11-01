@@ -245,20 +245,20 @@ Pick one strategy from this list and try it for a week. If it clicks, add anothe
 
 And give yourself some grace along the way. You're pushing back against systems that entire teams of engineers built to keep you engaged. The fact that you're thinking about it at all puts you ahead of most people.
 
-Ready to take control of your screen time? [Download Respite](/download) today and start building healthier digital habits with privacy-first, mindful interventions that actually work.
+Ready to take control of your screen time? [Download Respite](/download/) today and start building healthier digital habits with privacy-first, mindful interventions that actually work.
 
 ---
 
-Want to know where you stand? Take our free [Phone Addiction Quiz](/quiz) to assess your habits and get a personalized action plan.
+Want to know where you stand? Take our free [Phone Addiction Quiz](/quiz/) to assess your habits and get a personalized action plan.
 
 ---
 
 **Related Articles:**
-- [Understanding Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing)
-- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
-- [Stop Scrolling at Night](/blog/stop-scrolling-at-night)
-- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
-- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [7-Day Digital Detox Challenge](/blog/digital-detox-challenge)
-- [Best Screen Time Apps for Students](/blog/screen-time-apps-for-students)
+- [Understanding Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing/)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning/)
+- [Stop Scrolling at Night](/blog/stop-scrolling-at-night/)
+- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social/)
+- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
+- [7-Day Digital Detox Challenge](/blog/digital-detox-challenge/)
+- [Best Screen Time Apps for Students](/blog/screen-time-apps-for-students/)

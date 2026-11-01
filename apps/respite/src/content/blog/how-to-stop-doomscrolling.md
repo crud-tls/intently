@@ -37,8 +37,6 @@ howToSteps:
     text: "Create a 60-minute pre-sleep routine that excludes all screens. Read a physical book, stretch, journal, or practice breathing exercises. This protects your sleep from the stress activation and blue light exposure that doomscrolling causes."
 ---
 
-# How to Stop Doomscrolling: 7 Science-Backed Strategies That Work
-
 Doomscrolling is one of those habits most of us recognize in ourselves but struggle to explain. You know it's not helping. You know you'll feel worse when you put your phone down. And yet the thumb keeps moving. If that tension sounds familiar, this guide is for you.
 
 We'll break down what's actually happening in your brain when you doomscroll, why it's so hard to stop, and -- most importantly -- seven strategies that work without requiring you to go off the grid.
@@ -67,11 +65,11 @@ This isn't just a time sink. It takes a real toll.
 
 **Anxiety and stress.** Consuming a steady stream of bad news keeps your fight-or-flight system activated. Your body releases cortisol and adrenaline as if you were facing a real threat. Over time, this chronic activation leads to generalized anxiety and a persistent feeling of dread -- even hours after you've stopped scrolling.
 
-**Sleep disruption.** Doomscrolling before bed is especially damaging. The combination of stress-activating content, blue light, and cognitive arousal makes it significantly harder to fall asleep and reduces sleep quality overall. If nighttime scrolling is your main problem, our guide on [how to stop scrolling at night](/blog/stop-scrolling-at-night) goes deeper on this.
+**Sleep disruption.** Doomscrolling before bed is especially damaging. The combination of stress-activating content, blue light, and cognitive arousal makes it significantly harder to fall asleep and reduces sleep quality overall. If nighttime scrolling is your main problem, our guide on [how to stop scrolling at night](/blog/stop-scrolling-at-night/) goes deeper on this.
 
 **A warped sense of reality.** Psychologists call it "mean world syndrome" -- heavy consumption of negative media makes the world seem more dangerous and hopeless than it actually is. That distortion fuels more anxiety, which drives more scrolling. It's a feedback loop.
 
-**Eroded focus.** Constant rapid-fire content trains your brain to expect quick stimulation, making it harder to read books, stay in conversations, or do deep work over time. For more on this pattern, see our piece on [the psychology of app addiction](/blog/psychology-of-app-addiction).
+**Eroded focus.** Constant rapid-fire content trains your brain to expect quick stimulation, making it harder to read books, stay in conversations, or do deep work over time. For more on this pattern, see our piece on [the psychology of app addiction](/blog/psychology-of-app-addiction/).
 
 ## 7 Strategies to Stop Doomscrolling
 
@@ -91,7 +89,7 @@ Respite does exactly this. When you tap a news or social media app, it shows a g
 
 You can always proceed. The point isn't to block anything -- it's to give your rational brain a chance to weigh in before habit takes over. That brief pause is enough to ask yourself: "Am I opening this for a reason, or am I about to spiral?"
 
-[Download Respite](/download) and set it up on your go-to doomscrolling apps: Twitter/X, Reddit, news apps, Facebook.
+[Download Respite](/download/) and set it up on your go-to doomscrolling apps: Twitter/X, Reddit, news apps, Facebook.
 
 ### 3. Schedule Your News
 
@@ -115,7 +113,7 @@ What you consume matters as much as how much. A few moves that make a real diffe
 - Follow solution-focused journalism -- outlets that pair problems with constructive responses
 - Switch to chronological feeds where possible, so the algorithm can't optimize for rage-bait
 
-Think of it like your diet. You wouldn't eat only sugar and expect to feel good. Same goes for information. Our guide on [staying productive without deleting social media](/blog/productive-without-deleting-social) covers this in more detail.
+Think of it like your diet. You wouldn't eat only sugar and expect to feel good. Same goes for information. Our guide on [staying productive without deleting social media](/blog/productive-without-deleting-social/) covers this in more detail.
 
 ### 5. Use the 5-5-5 Grounding Technique
 
@@ -139,7 +137,7 @@ This is the single highest-impact change for most people. Build a wind-down rout
 - Journal three things that went well today
 - Try 4-7-8 breathing: inhale for 4 counts, hold for 7, exhale for 8
 
-Over time, your brain starts associating these cues with calm and sleep, making the routine easier to stick with. For more on this, read our full guide on [how to stop scrolling at night](/blog/stop-scrolling-at-night).
+Over time, your brain starts associating these cues with calm and sleep, making the routine easier to stick with. For more on this, read our full guide on [how to stop scrolling at night](/blog/stop-scrolling-at-night/).
 
 ## How Respite Helps
 
@@ -155,13 +153,13 @@ Here's what it looks like in practice:
 
 It's not a blocker. It doesn't punish you. It builds genuine self-awareness so you learn to catch yourself before the spiral starts.
 
-[Download Respite](/download) and start breaking the cycle today.
+[Download Respite](/download/) and start breaking the cycle today.
 
 ## When to Get Professional Support
 
 For most people, these strategies are enough to take back control. But if you're doomscrolling for 2+ hours daily despite wanting to stop, losing significant sleep, experiencing worsening anxiety or depression, or finding it hard to focus on work and relationships -- it's worth talking to a mental health professional. These strategies can complement therapy, but they're not a substitute for it.
 
-Not sure where you stand? Take our free [Phone Addiction Quiz](/quiz) to assess your habits and get personalized recommendations.
+Not sure where you stand? Take our free [Phone Addiction Quiz](/quiz/) to assess your habits and get personalized recommendations.
 
 ## The Goal Isn't to Unplug -- It's to Be Intentional
 
@@ -169,21 +167,21 @@ You can be well-informed and mentally healthy at the same time. It just requires
 
 Pick one strategy from this list and try it for a week. If it helps, layer in another. Gradual momentum beats a dramatic overhaul every time.
 
-Ready to start? [Download Respite](/download) and build mindful digital habits that actually stick.
+Ready to start? [Download Respite](/download/) and build mindful digital habits that actually stick.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to assess your current digital habits and get a personalized action plan for healthier phone use.
+Take our free [Phone Addiction Quiz](/quiz/) to assess your current digital habits and get a personalized action plan for healthier phone use.
 
 ---
 
 **Related Articles:**
-- [How to Stop Checking Your Phone First Thing in the Morning](/blog/stop-checking-phone-morning)
-- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
-- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [Stop Twitter Doomscrolling](/blog/stop-twitter-doomscrolling)
-- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
+- [How to Stop Checking Your Phone First Thing in the Morning](/blog/stop-checking-phone-morning/)
+- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night/)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge/)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [Stop Twitter Doomscrolling](/blog/stop-twitter-doomscrolling/)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling/)

@@ -1,6 +1,6 @@
 ---
-title: "Best Free Screen Time Apps for Android 2026: Privacy-First Options"
-description: "Compare the best free screen time apps for Android. From privacy-first tools with no account required to built-in options, find the right free app for managing your screen time without subscriptions."
+title: 'Best Free Screen Time Apps for Android (2026)'
+description: 'The best free screen time apps for Android, with no subscription. Privacy-first options with no account, plus Google''s built-in Digital Wellbeing.'
 pubDate: 2026-02-28
 author: "Respite Team"
 section: "App Comparisons"
@@ -20,8 +20,6 @@ faq:
   - question: "Can free screen time apps actually reduce phone usage?"
     answer: "Yes. Research shows that mindful pause apps can reduce unconscious phone pickups by 30-60%. The key is choosing an approach that works for your habits. Blocking apps work through restriction, time-limit apps work through budgeting, and mindful pause apps like Respite work through awareness. Free apps are just as effective as paid ones when they match your needs."
 ---
-
-# Best Free Screen Time Apps for Android: Privacy-First Options
 
 You don't need to pay a subscription to manage your screen time on Android. Several genuinely free apps offer features that match or exceed their paid competitors — and the best ones do it without collecting your data.
 
@@ -59,7 +57,7 @@ Every feature is available for free. No premium tier, no trial period, no featur
 
 **Best for:** Users who want a full-featured, privacy-first screen time toolkit that changes habits through awareness rather than restriction.
 
-[Download Respite free](/download)
+[Download Respite free](/download/)
 
 ## 2. Google Digital Wellbeing — Best Built-In Option
 
@@ -195,14 +193,14 @@ When choosing a free screen time app, check: Does it require an account? Does it
 
 The best screen time app is the one you'll actually use consistently. If you're unsure, start with Respite — it's free, private, and gives you the most tools to work with. Set it up for your two or three most distracting apps, give it a week, and see whether the pauses change your behavior.
 
-[Download Respite for Android, iOS & Chrome](/download)
+[Download Respite for Android, iOS & Chrome](/download/)
 
 ---
 
 ## Related Articles
 
-- [Respite vs FlowBuddy: Full-Featured Free vs Minimal Open-Source](/blog/respite-vs-flowbuddy)
-- [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
-- [Respite vs Google Digital Wellbeing](/blog/respite-vs-google-digital-wellbeing)
-- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives)
+- [Respite vs FlowBuddy: Full-Featured Free vs Minimal Open-Source](/blog/respite-vs-flowbuddy/)
+- [Privacy-First Screen Time Tracking](/blog/privacy-first-screen-time-tracking/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)
+- [Respite vs Google Digital Wellbeing](/blog/respite-vs-google-digital-wellbeing/)
+- [One Sec Alternatives: Best Mindful Pause Apps](/blog/one-sec-alternatives/)

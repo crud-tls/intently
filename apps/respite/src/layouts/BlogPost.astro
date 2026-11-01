@@ -45,8 +45,7 @@ const {
 	categoryLabel = 'Insights',
 	relatedPosts = [],
 } = Astro.props;
-const { currentPath } = Astro.url;
-const postUrl = `https://respite.liveintently.app${currentPath}`;
+const postUrl = new URL(Astro.url.pathname, Astro.site).href;
 
 // Use frontmatter values with fallbacks
 const effectiveTags = tags && tags.length > 0 ? tags : ['digital wellbeing', 'screen time', 'mindful tech'];
@@ -80,8 +79,8 @@ const effectiveAuthor = author || 'Respite Team';
 		/>
 		<BreadcrumbSchema
 			items={[
-				{ name: 'Home', url: 'https://respite.liveintently.app' },
-				{ name: 'Blog', url: 'https://respite.liveintently.app/blog' },
+				{ name: 'Home', url: 'https://respite.liveintently.app/' },
+				{ name: 'Blog', url: 'https://respite.liveintently.app/blog/' },
 				{ name: title, url: postUrl },
 			]}
 		/>
@@ -102,7 +101,7 @@ const effectiveAuthor = author || 'Respite Team';
 		</div>
 		<main class="article-shell">
 			<header class="article-hero">
-				<a href="/blog" class="back-link">&larr; Back to all articles</a>
+				<a href="/blog/" class="back-link">&larr; Back to all articles</a>
 				<p class="hero-category">{categoryLabel}</p>
 				<h1>{title}</h1>
 				<p class="hero-description">{description}</p>
@@ -138,8 +137,8 @@ const effectiveAuthor = author || 'Respite Team';
 						<h2>Take control of your attention</h2>
 						<p>Use mindful prompts to reduce autopilot scrolling without harsh app blocking.</p>
 						<div class="sidebar-cta-actions">
-							<a href="/quiz" class="sidebar-button primary">Take the quiz</a>
-							<a href="/download" class="sidebar-button secondary">Download free</a>
+							<a href="/quiz/" class="sidebar-button primary">Take the quiz</a>
+							<a href="/download/" class="sidebar-button secondary">Download free</a>
 						</div>
 					</div>
 				</aside>

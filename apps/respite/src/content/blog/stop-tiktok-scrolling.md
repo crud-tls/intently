@@ -22,8 +22,6 @@ faq:
     answer: "The most effective approach combines three elements: (1) mindful interventions that create awareness before each use, (2) friction that makes automatic opening difficult, and (3) replacement behaviors for when the urge to scroll strikes. This multi-pronged approach addresses both the habit and the underlying needs it serves."
 ---
 
-# How to Stop Scrolling TikTok Without Deleting: 5 Strategies That Work
-
 TikTok's algorithm is genuinely impressive -- and that's exactly the problem. It learns what keeps you watching faster than any other platform, and it serves up an endless stream of short clips perfectly calibrated to your interests. Deleting the app is one option, but for most people it's not realistic (and the urge usually wins within a week anyway).
 
 Here's what actually works instead.
@@ -49,7 +47,7 @@ Respite shows a gentle, full-screen prompt when you tap TikTok:
 
 You can always proceed. But that brief pause activates the decision-making part of your brain before the habit takes over. Many people find they close the app more often than they expect -- not because they were forced to, but because they realized they didn't actually want to scroll.
 
-[Download Respite](/download) for Android, iOS, or Chrome.
+[Download Respite](/download/) for Android, iOS, or Chrome.
 
 ## Make It Harder to Open
 
@@ -102,19 +100,19 @@ Respite is built for exactly this kind of habit change:
 - Automatic usage tracking so you can see patterns
 - Works on Android, iOS, and Chrome
 
-[Download Respite free](/download) and start building awareness around your TikTok use.
+[Download Respite free](/download/) and start building awareness around your TikTok use.
 
 You don't have to quit TikTok to take back your time. You just have to make every session a conscious choice instead of an automatic one.
 
 ---
 
 **Related Reading:**
-- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night)
-- [Stop Twitter Doomscrolling: Practical Strategies](/blog/stop-twitter-doomscrolling)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge)
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
-- [How to Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
-- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling)
+- [Stop Scrolling at Night: A Complete Guide](/blog/stop-scrolling-at-night/)
+- [Stop Twitter Doomscrolling: Practical Strategies](/blog/stop-twitter-doomscrolling/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [How to Stop YouTube Binge Watching](/blog/stop-youtube-binge/)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
+- [How to Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning/)
+- [How to Stop Reddit Scrolling](/blog/stop-reddit-scrolling/)
 
-Take our free [Phone Addiction Quiz](/quiz) to assess your TikTok habits and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to assess your TikTok habits and get personalized recommendations.

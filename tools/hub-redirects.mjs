@@ -5,6 +5,11 @@ import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const RESPITE = 'https://respite.liveintently.app';
 
+// Respite serves its pages at /page/ and answers /page with a temporary 307, so point straight at
+// the slashed URL: one permanent hop is what lets Google move the old rankings across.
+const slashed = (url) => url.replace(/^(https:\/\/[^/]+(?:\/[^#?]*)?)([#?].*)?$/, (all, path, rest = '') =>
+	/\/$|\.[a-z0-9]+$/i.test(path.split('/').pop() || '/') || path.endsWith('/') ? all : `${path}/${rest}`);
+
 // Paths the hub serves itself.
 const KEEP = new Set(['/', '/about', '/contact', '/api/contact', '/404', '/robots.txt',
 	'/sitemap-index.xml', '/sitemap-0.xml', '/favicon.svg', '/favicon.ico', '/logo.png', '/logo.svg']);
@@ -39,6 +44,7 @@ const lines = [
 ];
 // Pages were also reachable with a trailing slash; files were not.
 const rule = (from, to) => {
+	to = slashed(to);
 	lines.push(`${from}  ${to}  301`);
 	if (!from.includes('.') && from !== '/') lines.push(`${from}/  ${to}  301`);
 };

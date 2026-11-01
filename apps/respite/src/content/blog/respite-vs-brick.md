@@ -21,8 +21,6 @@ faq:
     answer: "Many behavioral scientists favor mindful intervention approaches for lasting change, because they build internal awareness and self-regulation skills. Brick's physical barrier is effective while you have the device, but it does not directly train the decision-making habits needed when the barrier is removed. The best choice depends on where you are in your journey."
 ---
 
-# Respite vs Brick: Mind vs Matter in the Fight Against Phone Addiction
-
 This is one of the more unusual comparisons in the digital wellbeing space. Respite and Brick aren't really competitors -- they're built on completely different ideas about what makes people change.
 
 Respite is a free app that creates mindful pauses before you open distracting apps. Brick is a $59 physical NFC device that locks your apps until you physically tap a tile. One asks you to think. The other removes thinking from the equation by putting a physical obstacle in your way.
@@ -96,7 +94,7 @@ Brick requires an account for setup and uses connectivity for NFC authentication
 
 If privacy matters to you, this is a clear-cut difference.
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ### What Happens When You Stop Using It?
 
@@ -163,7 +161,7 @@ For sustainable, long-term change, building internal awareness tends to hold up 
 
 The best approach is the one you'll actually stick with. For most people, that starts with awareness -- and awareness starts with a pause.
 
-[Download Respite for Android, iOS & Chrome](/download)
+[Download Respite for Android, iOS & Chrome](/download/)
 
 Questions or feedback? Reach out at support@liveintently.app.
 
@@ -171,11 +169,11 @@ Questions or feedback? Reach out at support@liveintently.app.
 
 ## Related Articles
 
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time)
-- [Respite vs ScreenZen: Comparing Free Mindful Screen Time Apps](/blog/respite-vs-screenzen)
-- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec)
-- [Why Willpower Fails for Phone Addiction](/blog/why-willpower-fails-phone-addiction)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time/)
+- [Respite vs ScreenZen: Comparing Free Mindful Screen Time Apps](/blog/respite-vs-screenzen/)
+- [Respite vs One Sec: Which Mindful Screen Time App Is Right for You?](/blog/respite-vs-one-sec/)
+- [Why Willpower Fails for Phone Addiction](/blog/why-willpower-fails-phone-addiction/)
 
 ---
 

@@ -22,8 +22,6 @@ faq:
     answer: "Not necessarily. Social media can provide valuable community, entertainment, and connection for people with ADHD. The goal is shifting from compulsive to intentional use. If you find that certain platforms consistently trigger hours-long hyperfocus sessions despite your best efforts, a temporary break (with a planned return date) can help reset the habit."
 ---
 
-# Phone Addiction and ADHD: Why Your Brain Can't Stop & What Actually Helps
-
 If you have ADHD and struggle with your phone, you've heard all the standard advice. "Just put it down." "Set a timer." "Use an app blocker." "Have more discipline." And you've probably noticed that none of it works the way it apparently works for everyone else.
 
 That's not a willpower problem. It's a neurology problem. ADHD brains interact with smartphones differently than neurotypical brains do, and solving phone addiction with ADHD requires strategies that work with your brain instead of pretending it's wired like everyone else's.
@@ -42,7 +40,7 @@ Then there's the novelty factor. ADHD brains are wired to respond strongly to ne
 
 One of the most misunderstood things about ADHD is hyperfocus. People assume ADHD means you "can't focus," but the real issue is that you can't always control what you focus on.
 
-When your phone triggers hyperfocus, hours disappear. You meant to check one message, and suddenly it's 2 AM. That's not laziness -- it's a neurological state where your brain locks onto a dopamine-rich stimulus and can't easily disengage. If you've ever lost an entire evening to TikTok or Reddit while knowing you had important things to do, that's hyperfocus hijacking. (For more on this, see our guide on [how to stop TikTok scrolling](/blog/stop-tiktok-scrolling).)
+When your phone triggers hyperfocus, hours disappear. You meant to check one message, and suddenly it's 2 AM. That's not laziness -- it's a neurological state where your brain locks onto a dopamine-rich stimulus and can't easily disengage. If you've ever lost an entire evening to TikTok or Reddit while knowing you had important things to do, that's hyperfocus hijacking. (For more on this, see our guide on [how to stop TikTok scrolling](/blog/stop-tiktok-scrolling/).)
 
 Pair this with time blindness -- a real difficulty perceiving how much time has passed -- and you've got a situation where what feels like 10 minutes of scrolling is actually 45 minutes. Time-based strategies like "just set a 15-minute limit" are fundamentally less effective when your brain doesn't register time the same way.
 
@@ -72,14 +70,14 @@ Respite's approach works well for ADHD specifically because it doesn't block any
 
 The core problem isn't that you consciously choose to spend three hours scrolling. It's that the behavior happens automatically, without any conscious involvement. A mindful pause inserts a tiny window of awareness into that automatic loop -- and that's often all the ADHD brain needs to make a different choice.
 
-[Download Respite](/download) and set it up for the apps that capture your hyperfocus most.
+[Download Respite](/download/) and set it up for the apps that capture your hyperfocus most.
 
 ### Design Your Environment So You Don't Need Self-Control
 
 Since executive function is impaired, the most reliable strategy is removing the need for it altogether.
 
 - **During work or study:** Put your phone in another room, not just face-down on your desk. Physical distance matters more for ADHD because out of sight really does mean out of mind.
-- **At night:** Charge your phone outside the bedroom. ADHD brains are especially vulnerable to late-night hyperfocus scrolling. (More on this in our guide on [stopping scrolling at night](/blog/stop-scrolling-at-night).)
+- **At night:** Charge your phone outside the bedroom. ADHD brains are especially vulnerable to late-night hyperfocus scrolling. (More on this in our guide on [stopping scrolling at night](/blog/stop-scrolling-at-night/).)
 - **At home:** Create a phone parking spot near the entrance. Phone stays there when you walk in.
 
 The point is making the default behavior the one you want, so your phone requires deliberate effort to reach rather than being automatically available.
@@ -118,7 +116,7 @@ Many people with ADHD carry deep shame about their phone use. "I wasted another 
 
 That shame isn't just unhelpful -- it actively makes things worse. Shame triggers the emotional dysregulation common in ADHD, which leads to seeking comfort, which leads to more phone use. A vicious cycle.
 
-Try replacing the shame with curiosity. Instead of "I have no self-control," try "My executive function was depleted today. That's ADHD, not a character flaw." Instead of "I'll never fix this," try "What small change can I try tomorrow?" [Mindful tech interventions](/blog/mindful-tech-interventions-vs-blocking) are built on this compassionate philosophy.
+Try replacing the shame with curiosity. Instead of "I have no self-control," try "My executive function was depleted today. That's ADHD, not a character flaw." Instead of "I'll never fix this," try "What small change can I try tomorrow?" [Mindful tech interventions](/blog/mindful-tech-interventions-vs-blocking/) are built on this compassionate philosophy.
 
 ## Practical ADHD Phone Tips
 
@@ -134,7 +132,7 @@ Time blindness is a core ADHD challenge. You can't trust your internal sense of 
 
 ### 3. Rotate Your Friction Strategies (Novelty Matters)
 
-ADHD brains habituate to stimuli faster than neurotypical brains. A screen time intervention that works brilliantly for two weeks may stop working entirely by week three. Plan for this. Rotate between different [mindful intervention](/blog/mindful-tech-interventions-vs-blocking) messages in Respite, switch up your phone's home screen layout, change your wallpaper to something that reminds you of your goals. Novelty keeps the friction effective.
+ADHD brains habituate to stimuli faster than neurotypical brains. A screen time intervention that works brilliantly for two weeks may stop working entirely by week three. Plan for this. Rotate between different [mindful intervention](/blog/mindful-tech-interventions-vs-blocking/) messages in Respite, switch up your phone's home screen layout, change your wallpaper to something that reminds you of your goals. Novelty keeps the friction effective.
 
 ### 4. Replace Phone Stimulation, Don't Just Remove It
 
@@ -156,24 +154,24 @@ Hyperfocus isn't always the enemy. If you can channel it toward a productive or 
 
 Not all phone use is harmful for people with ADHD. Reminders and alarms compensate for working memory gaps. Calendar apps support time management. ADHD community forums provide understanding and connection. Medication trackers support treatment adherence.
 
-The goal isn't eliminating phone use -- it's shifting the balance from compulsive, unintentional use toward deliberate, beneficial use. For more on this philosophy, see our guide on [what digital wellbeing actually means](/blog/what-is-digital-wellbeing).
+The goal isn't eliminating phone use -- it's shifting the balance from compulsive, unintentional use toward deliberate, beneficial use. For more on this philosophy, see our guide on [what digital wellbeing actually means](/blog/what-is-digital-wellbeing/).
 
 ## Getting Started
 
-Start with one strategy. Environmental design -- putting your phone in another room during focus time -- is usually the easiest first step because it doesn't require any willpower. Add mindful interventions with [Respite](/download) as your second step. Then layer in the others as you find what works for your specific brain.
+Start with one strategy. Environmental design -- putting your phone in another room during focus time -- is usually the easiest first step because it doesn't require any willpower. Add mindful interventions with [Respite](/download/) as your second step. Then layer in the others as you find what works for your specific brain.
 
 Progress won't be linear. Some days will be harder than others. That's expected, and that's okay. What matters is the overall trend, not any single day.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to understand your personal phone use patterns and get ADHD-informed recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to understand your personal phone use patterns and get ADHD-informed recommendations.
 
 ---
 
 **Related Articles:**
-- [How to Stop Phone Addiction: A Complete Guide](/blog/how-to-stop-phone-addiction)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [The Psychology of App Addiction](/blog/psychology-of-app-addiction)
-- [Mindful Tech Interventions vs. Blocking: What Works Better](/blog/mindful-tech-interventions-vs-blocking)
-- [What Is Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing)
+- [How to Stop Phone Addiction: A Complete Guide](/blog/how-to-stop-phone-addiction/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [The Psychology of App Addiction](/blog/psychology-of-app-addiction/)
+- [Mindful Tech Interventions vs. Blocking: What Works Better](/blog/mindful-tech-interventions-vs-blocking/)
+- [What Is Digital Wellbeing and Why It Matters](/blog/what-is-digital-wellbeing/)

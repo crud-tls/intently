@@ -1,6 +1,6 @@
 ---
-title: "Best Digital Wellbeing Apps 2026: Top 8 Apps to Reclaim Your Time"
-description: "Compare the best digital wellbeing and screen time apps of 2026. In-depth reviews of privacy-first tools to help you build healthier digital habits. Find your perfect app match."
+title: 'Best Digital Wellbeing Apps 2026: 8 Apps Compared'
+description: 'The best digital wellbeing and screen time apps of 2026, reviewed. Compare 8 apps on features, price and privacy to find the right fit for your habits.'
 pubDate: "Jan 12 2026"
 updatedDate: 2026-02-26
 heroImage: "/blog-placeholder-2.jpg"
@@ -46,7 +46,7 @@ On the downside, there's no web dashboard and no parental controls. Cross-device
 
 **Rating: 4.8/5**
 
-[Download Respite](/download)
+[Download Respite](/download/)
 
 ---
 
@@ -236,7 +236,7 @@ Cross-platform support and a generous free tier make it accessible. The approach
 
 It depends on what's driving your screen time problem -- and what kind of solution fits your personality.
 
-If privacy matters to you and you'd rather build awareness than have apps blocked, **Respite** is the strongest option. It treats you like an adult, keeps your data local, and its intervention approach tends to stick. [Download Respite](/download) to try it out.
+If privacy matters to you and you'd rather build awareness than have apps blocked, **Respite** is the strongest option. It treats you like an adult, keeps your data local, and its intervention approach tends to stick. [Download Respite](/download/) to try it out.
 
 If you need hard boundaries because willpower alone isn't cutting it, **Freedom** gives you the most robust cross-platform blocking available. It's not cheap, but it's thorough.
 
@@ -248,18 +248,18 @@ The honest truth is that no app will fix your screen time on its own. But the ri
 
 ---
 
-Not sure where to start? Take our free [Phone Addiction Quiz](/quiz) for a personalized recommendation on which approach fits you best.
+Not sure where to start? Take our free [Phone Addiction Quiz](/quiz/) for a personalized recommendation on which approach fits you best.
 
 ---
 
 **Related Articles:**
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help)
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
-- [Stop Twitter Doomscrolling](/blog/stop-twitter-doomscrolling)
-- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
-- [Understanding Digital Wellbeing](/blog/what-is-digital-wellbeing)
-- [Best Screen Time Apps for Students](/blog/screen-time-apps-for-students)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Phone Addiction Help Without Deleting Apps](/blog/phone-addiction-help/)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
+- [Stop Twitter Doomscrolling](/blog/stop-twitter-doomscrolling/)
+- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking/)
+- [Understanding Digital Wellbeing](/blog/what-is-digital-wellbeing/)
+- [Best Screen Time Apps for Students](/blog/screen-time-apps-for-students/)
 
 ---
 

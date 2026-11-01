@@ -40,7 +40,7 @@ Rather than a neat framework, think of these as the areas most people need to wo
 
 Most people guess they spend 2-3 hours a day on their phone. Actual average? Over 6 hours. That gap is eye-opening, and it's the reason awareness comes first -- you genuinely can't fix what you can't see.
 
-Install a tracking app (like [Respite](/download)) and just watch your patterns for a week. Don't try to change anything yet. You'll notice things: the stress-scrolling habit after work, the 45-minute "quick check" before bed, the apps that eat time without giving much back.
+Install a tracking app (like [Respite](/download/)) and just watch your patterns for a week. Don't try to change anything yet. You'll notice things: the stress-scrolling habit after work, the 45-minute "quick check" before bed, the apps that eat time without giving much back.
 
 ### Intentionality
 
@@ -95,7 +95,7 @@ Here's the one that hits hardest: at 7+ hours of recreational screen time a day 
 
 **"Social media is how I stay connected."** It can be -- but there's a difference between using it to set up a dinner with a friend and passively watching acquaintances' highlight reels. Identify your 10 closest relationships and make sure you're reaching those people directly, not just liking their posts.
 
-**"I've tried cutting back and it never sticks."** Willpower alone won't cut it because these apps are engineered by teams of psychologists to keep you hooked. You need friction, tools, and replacement habits -- not just determination. Apps like [Respite](/download) help by adding mindful interventions at the moments you're most likely to slide into autopilot.
+**"I've tried cutting back and it never sticks."** Willpower alone won't cut it because these apps are engineered by teams of psychologists to keep you hooked. You need friction, tools, and replacement habits -- not just determination. Apps like [Respite](/download/) help by adding mindful interventions at the moments you're most likely to slide into autopilot.
 
 ## Digital Wellbeing vs. Digital Detox
 
@@ -107,7 +107,7 @@ Digital wellbeing is the opposite approach. It's an ongoing practice where you k
 
 ### Tracking
 
-You need data before you need strategies. Options include Screen Time (iOS), Digital Wellbeing (Android), or privacy-first apps like [Respite](/download) that keep your data local. For blocking distracting sites during work, Freedom and LeechBlock are solid.
+You need data before you need strategies. Options include Screen Time (iOS), Digital Wellbeing (Android), or privacy-first apps like [Respite](/download/) that keep your data local. For blocking distracting sites during work, Freedom and LeechBlock are solid.
 
 ### Quick phone settings that help
 
@@ -143,7 +143,7 @@ Start with shared boundaries: no-phone meals, tech-free family time, and being o
 
 Digital wellbeing has gone from a niche concern to something Apple, Google, and governments are taking seriously. France banned phones in schools. South Korea offers internet addiction treatment programs. The UK is considering "right to disconnect" laws for workers.
 
-On the tools side, there's a growing demand for privacy-first options. Apps like [Respite](/download) that keep data on your device and don't sell it to advertisers represent a real shift in what people expect from wellness technology.
+On the tools side, there's a growing demand for privacy-first options. Apps like [Respite](/download/) that keep data on your device and don't sell it to advertisers represent a real shift in what people expect from wellness technology.
 
 ## Digital Wellbeing in the Workplace
 
@@ -179,7 +179,7 @@ If your employer hasn't caught up yet, you can set your own boundaries:
 - Use separate browser profiles (or devices, if possible) for work and personal use
 - Turn off work notifications after hours -- Slack, email, project tools, all of it
 - Take a real lunch break away from screens, even if it's just 20 minutes
-- Use tools like [Respite](/download) to build awareness around personal phone use during work hours, so "quick breaks" don't quietly become 30-minute scroll sessions
+- Use tools like [Respite](/download/) to build awareness around personal phone use during work hours, so "quick breaks" don't quietly become 30-minute scroll sessions
 
 The goal isn't to eliminate screen time at work -- that's not realistic. It's to make sure the screens you use during work hours are serving your job, and that you have genuine screen-free recovery time when you're off the clock.
 
@@ -189,18 +189,18 @@ Don't overhaul everything at once. Pick one thing this week -- maybe tracking yo
 
 Small changes, consistently applied, add up faster than you'd expect.
 
-Ready to start? [Download Respite](/download) and get a clear, private picture of your relationship with technology.
+Ready to start? [Download Respite](/download/) and get a clear, private picture of your relationship with technology.
 
 ---
 
-Want to assess where you stand? Take our free [Phone Addiction Quiz](/quiz) to understand your current habits and get practical next steps.
+Want to assess where you stand? Take our free [Phone Addiction Quiz](/quiz/) to understand your current habits and get practical next steps.
 
 ---
 
 **Related Articles:**
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning)
-- [How to Stop Scrolling at Night](/blog/stop-scrolling-at-night)
-- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social)
-- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking)
-- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Stop Checking Phone First Thing in Morning](/blog/stop-checking-phone-morning/)
+- [How to Stop Scrolling at Night](/blog/stop-scrolling-at-night/)
+- [Productive Without Deleting Social Media](/blog/productive-without-deleting-social/)
+- [Privacy-First Screen Time Tracking: Why It Matters](/blog/privacy-first-screen-time-tracking/)
+- [Best Digital Wellbeing Apps 2026](/blog/best-digital-wellbeing-apps-2026/)

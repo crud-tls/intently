@@ -22,8 +22,6 @@ faq:
     answer: "Ironically, you'll likely notice more opportunities, not fewer. Mindless scrolling causes you to miss most of what you see anyway. Intentional, focused use means you're present and attentive when you do check—actually seeing and responding to what matters, rather than skimming mindlessly."
 ---
 
-# How to Be More Productive Without Deleting Social Media: A Balanced Approach
-
 Telling a professional to delete social media in 2026 is like telling them to stop checking email. It sounds simple, and in some narrow sense it would "work," but it ignores the reality that social media serves legitimate purposes: networking, industry awareness, keeping up with people you care about, even learning.
 
 The problem isn't that you use social media. It's that social media uses you -- pulling your attention away from focused work a dozen times a day through notifications, habit loops, and the constant low-grade temptation of your phone sitting right there on your desk.
@@ -48,7 +46,7 @@ Respite creates a brief prompt before social media apps open:
 
 You can always proceed. But that moment of awareness is often enough to redirect you. It catches the automatic reach -- the one you weren't even planning to make.
 
-[Download Respite](/download) to add this to your workday.
+[Download Respite](/download/) to add this to your workday.
 
 ## Schedule Your Social Media -- Don't Sprinkle It
 
@@ -145,16 +143,16 @@ Respite helps keep social media in its place during work:
 - Usage tracking to spot patterns
 - Works on Android, iOS, and Chrome
 
-[Download Respite free](/download) and try it for a week.
+[Download Respite free](/download/) and try it for a week.
 
 You don't have to choose between being connected and being productive. You just have to stop letting social media decide when it gets your attention and start deciding for yourself.
 
 ---
 
 **Related Reading:**
-- [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction)
-- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking)
-- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling)
-- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage)
+- [How to Stop Phone Addiction](/blog/how-to-stop-phone-addiction/)
+- [Mindful Tech Interventions vs App Blocking](/blog/mindful-tech-interventions-vs-blocking/)
+- [Stop Scrolling TikTok Without Deleting](/blog/stop-tiktok-scrolling/)
+- [Reduce Instagram Usage Without Deleting](/blog/reduce-instagram-usage/)
 
-Take our free [Phone Addiction Quiz](/quiz) to assess your habits and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to assess your habits and get personalized recommendations.

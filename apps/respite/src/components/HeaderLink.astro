@@ -6,7 +6,9 @@ type Props = HTMLAttributes<'a'>;
 const { href, class: className, ...props } = Astro.props;
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
 const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+// Links end in a slash (the site serves /page/); compare without it so /blog/ is active on posts too.
+const bare = (p: unknown) => String(p ?? '').replace(/\/$/, '') || '/';
+const isActive = bare(href) === bare(pathname) || bare(href) === '/' + (subpath?.[0] || '');
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>

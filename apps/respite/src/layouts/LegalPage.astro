@@ -20,13 +20,13 @@ const { policy, title, description, crumb } = Astro.props;
 const origin = new URL(Astro.url.pathname, Astro.site).toString();
 // The three apps each have a policy; the terms for iPhone and Android differ and Chrome has none.
 const links = [
-	{ label: 'Privacy (iPhone)', href: '/privacy' },
-	{ label: 'Privacy (Android)', href: '/privacy/android' },
-	{ label: 'Privacy (Chrome)', href: '/privacy/chrome' },
-	{ label: 'Terms (iPhone)', href: '/terms' },
-	{ label: 'Terms (Android)', href: '/terms/android' },
-	{ label: 'Delete your account', href: '/delete-account' },
-].filter((l) => l.href !== Astro.url.pathname.replace(/\/$/, ''));
+	{ label: 'Privacy (iPhone)', href: '/privacy/' },
+	{ label: 'Privacy (Android)', href: '/privacy/android/' },
+	{ label: 'Privacy (Chrome)', href: '/privacy/chrome/' },
+	{ label: 'Terms (iPhone)', href: '/terms/' },
+	{ label: 'Terms (Android)', href: '/terms/android/' },
+	{ label: 'Delete your account', href: '/delete-account/' },
+].filter((l) => l.href !== Astro.url.pathname.replace(/\/?$/, '/'));
 ---
 
 <!doctype html>

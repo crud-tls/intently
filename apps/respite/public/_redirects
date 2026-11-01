@@ -1,36 +1,36 @@
 # Redirects for consolidated blog and resources page
-/resources                      /blog                       301
-/guides/screen-time-reduction   /blog#getting-started       301
-/comparisons                    /blog#comparisons           301
+/resources                      /blog/                       301
+/guides/screen-time-reduction   /blog/#getting-started       301
+/comparisons                    /blog/#comparisons           301
 
 # Comparison posts were renamed with the rebrands: intently-vs-* (original), pawse-vs-* (Pawse), now respite-vs-*.
-/blog/intently-vs-brick  /blog/respite-vs-brick  301
-/blog/intently-vs-clearspace  /blog/respite-vs-clearspace  301
-/blog/intently-vs-flowbuddy  /blog/respite-vs-flowbuddy  301
-/blog/intently-vs-forest  /blog/respite-vs-forest  301
-/blog/intently-vs-freedom  /blog/respite-vs-freedom  301
-/blog/intently-vs-google-digital-wellbeing  /blog/respite-vs-google-digital-wellbeing  301
-/blog/intently-vs-one-sec  /blog/respite-vs-one-sec  301
-/blog/intently-vs-opal  /blog/respite-vs-opal  301
-/blog/intently-vs-refocus  /blog/respite-vs-refocus  301
-/blog/intently-vs-screenzen  /blog/respite-vs-screenzen  301
+/blog/intently-vs-brick  /blog/respite-vs-brick/  301
+/blog/intently-vs-clearspace  /blog/respite-vs-clearspace/  301
+/blog/intently-vs-flowbuddy  /blog/respite-vs-flowbuddy/  301
+/blog/intently-vs-forest  /blog/respite-vs-forest/  301
+/blog/intently-vs-freedom  /blog/respite-vs-freedom/  301
+/blog/intently-vs-google-digital-wellbeing  /blog/respite-vs-google-digital-wellbeing/  301
+/blog/intently-vs-one-sec  /blog/respite-vs-one-sec/  301
+/blog/intently-vs-opal  /blog/respite-vs-opal/  301
+/blog/intently-vs-refocus  /blog/respite-vs-refocus/  301
+/blog/intently-vs-screenzen  /blog/respite-vs-screenzen/  301
 
-/blog/pawse-vs-brick  /blog/respite-vs-brick  301
-/blog/pawse-vs-clearspace  /blog/respite-vs-clearspace  301
-/blog/pawse-vs-flowbuddy  /blog/respite-vs-flowbuddy  301
-/blog/pawse-vs-forest  /blog/respite-vs-forest  301
-/blog/pawse-vs-freedom  /blog/respite-vs-freedom  301
-/blog/pawse-vs-google-digital-wellbeing  /blog/respite-vs-google-digital-wellbeing  301
-/blog/pawse-vs-one-sec  /blog/respite-vs-one-sec  301
-/blog/pawse-vs-opal  /blog/respite-vs-opal  301
-/blog/pawse-vs-refocus  /blog/respite-vs-refocus  301
-/blog/pawse-vs-screenzen  /blog/respite-vs-screenzen  301
+/blog/pawse-vs-brick  /blog/respite-vs-brick/  301
+/blog/pawse-vs-clearspace  /blog/respite-vs-clearspace/  301
+/blog/pawse-vs-flowbuddy  /blog/respite-vs-flowbuddy/  301
+/blog/pawse-vs-forest  /blog/respite-vs-forest/  301
+/blog/pawse-vs-freedom  /blog/respite-vs-freedom/  301
+/blog/pawse-vs-google-digital-wellbeing  /blog/respite-vs-google-digital-wellbeing/  301
+/blog/pawse-vs-one-sec  /blog/respite-vs-one-sec/  301
+/blog/pawse-vs-opal  /blog/respite-vs-opal/  301
+/blog/pawse-vs-refocus  /blog/respite-vs-refocus/  301
+/blog/pawse-vs-screenzen  /blog/respite-vs-screenzen/  301
 
 # Chrome extension policy moved under /privacy; the old paths are in store listings.
-/privacy-chrome               /privacy/chrome          301
-/privacy-policy-chrome.html   /privacy/chrome          301
-/privacy-policy-chrome        /privacy/chrome          301
+/privacy-chrome               /privacy/chrome/          301
+/privacy-policy-chrome.html   /privacy/chrome/          301
+/privacy-policy-chrome        /privacy/chrome/          301
 # The deletion email from the API linked here before the page existed.
-/confirm-deletion             /delete-account/confirm  301
+/confirm-deletion             /delete-account/confirm/  301
 # Shipped iOS builds linked pawse.liveintently.app/privacy/ios; that host now forwards the same path here.
-/privacy/ios                  /privacy                 301
+/privacy/ios                  /privacy/                 301

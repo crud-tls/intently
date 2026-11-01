@@ -21,8 +21,6 @@ faq:
     answer: "The key is transitioning from a temporary detox to ongoing digital wellbeing practices: use a mindful intervention app like Respite, keep phone-free zones and routines, maintain the hobbies you picked up during the detox, do weekly check-ins on your screen time data, and address relapses quickly before old patterns fully re-establish."
 ---
 
-# Digital Detox Benefits: What Actually Happens When You Unplug
-
 Everyone talks about digital detox in vague terms — "it's good for you," "you'll feel better," "try going phone-free for a weekend." But what actually happens? What does the research say, and what do people consistently report when they meaningfully reduce their screen time?
 
 This guide walks through the concrete, documented benefits of reducing phone and screen use, organized as a realistic timeline so you know what to expect and when. Spoiler: the first few days are harder than you'd think, and the improvements that follow are bigger than you'd expect.
@@ -71,7 +69,7 @@ Once sleep stabilizes, emotional benefits follow.
 
 ### Reduced Anxiety
 
-The [anxiety-phone connection](/blog/phone-addiction-anxiety) weakens noticeably in weeks 2-3. Without constant notifications triggering hypervigilance, social comparison driving inadequacy, and doomscrolling feeding catastrophic thinking, baseline anxiety drops measurably.
+The [anxiety-phone connection](/blog/phone-addiction-anxiety/) weakens noticeably in weeks 2-3. Without constant notifications triggering hypervigilance, social comparison driving inadequacy, and doomscrolling feeding catastrophic thinking, baseline anxiety drops measurably.
 
 The University of Pennsylvania study found that participants who limited social media to 30 minutes per day showed significant decreases in anxiety and depression within three weeks. The improvement was even more pronounced in participants who started with higher anxiety scores.
 
@@ -149,34 +147,34 @@ The benefits described here don't require giving up your phone entirely. The big
 
 You can keep using your phone for calls, messages, maps, music, and intentional purposes while still experiencing most of these benefits. The goal is intentional use, not elimination.
 
-Tools like [Respite](/download) help by creating a moment of awareness before you open distracting apps — catching the autopilot scrolling while leaving intentional use untouched.
+Tools like [Respite](/download/) help by creating a moment of awareness before you open distracting apps — catching the autopilot scrolling while leaving intentional use untouched.
 
 ## Making Benefits Last
 
 The biggest risk after a digital detox is the slow slide back to old habits. A few practices that protect your gains:
 
-- **Keep tracking**: Weekly screen time check-ins with [Respite](/download) catch drift early.
+- **Keep tracking**: Weekly screen time check-ins with [Respite](/download/) catch drift early.
 - **Maintain your rituals**: The phone-free morning, the screen-free hour before bed, the no-phone meals. These are your foundation.
 - **Keep your replacement activities**: The book on the nightstand, the hobby you picked up, the walking habit. Remove these and the phone fills the gap.
 - **Address relapses quickly**: A bad week happens. A bad month becomes a re-established old habit. If you notice your screen time climbing, course-correct immediately rather than waiting.
 - **Remember how it felt**: The withdrawal, the improvement, the agency. Remembering the contrast is one of the strongest motivators for maintaining change.
 
-For a structured approach to building these habits, check out our [30-Day Digital Detox Challenge](/blog/digital-detox-challenge).
+For a structured approach to building these habits, check out our [30-Day Digital Detox Challenge](/blog/digital-detox-challenge/).
 
 ---
 
-Ready to experience the benefits yourself? [Download Respite](/download) to start with awareness and mindful interventions — the sustainable path to lasting digital wellbeing.
+Ready to experience the benefits yourself? [Download Respite](/download/) to start with awareness and mindful interventions — the sustainable path to lasting digital wellbeing.
 
 ---
 
-Take our free [Phone Addiction Quiz](/quiz) to find out where you stand and get personalized recommendations.
+Take our free [Phone Addiction Quiz](/quiz/) to find out where you stand and get personalized recommendations.
 
 ---
 
 **Related Articles:**
-- [30-Day Digital Detox Challenge](/blog/digital-detox-challenge)
-- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time)
-- [Screen Time and Mental Health](/blog/screen-time-and-mental-health)
-- [Phone Addiction and Anxiety](/blog/phone-addiction-anxiety)
-- [20 Healthy Alternatives to Scrolling](/blog/healthy-alternatives-scrolling)
-- [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much)
+- [30-Day Digital Detox Challenge](/blog/digital-detox-challenge/)
+- [How to Reduce Screen Time: 10 Science-Backed Strategies](/blog/how-to-reduce-screen-time/)
+- [Screen Time and Mental Health](/blog/screen-time-and-mental-health/)
+- [Phone Addiction and Anxiety](/blog/phone-addiction-anxiety/)
+- [20 Healthy Alternatives to Scrolling](/blog/healthy-alternatives-scrolling/)
+- [How Much Screen Time Is Too Much?](/blog/how-much-screen-time-is-too-much/)

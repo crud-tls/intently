@@ -22,8 +22,6 @@ faq:
     answer: "If you only struggle during work or study sessions, a focus timer like Forest may be all you need. But if you find yourself compulsively checking your phone throughout the day, opening apps without thinking, or losing hours to scrolling outside of work, you likely need a tool that works beyond timed sessions."
 ---
 
-# Best Forest App Alternatives (2026 Guide)
-
 Forest is one of the most beloved digital wellness apps out there, and honestly, it deserves the reputation. The concept is dead simple: start a focus timer, a virtual tree grows while you stay off your phone, and if you bail early, the tree dies. Over time you build a little forest that represents your focused hours. With 10 million+ downloads and more than 2 million real trees planted through Trees for the Future, it's done genuine good in the world.
 
 So why would you look elsewhere?
@@ -82,7 +80,7 @@ The honest limitations: iPhone users can get the same idea from [Respite on the 
 
 Rating: 4/5 -- The strongest free option if you want Forest-style motivation applied to your whole day, not just timed sessions.
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ## Opal -- The Hard Blocker for iPhone
 
@@ -196,22 +194,22 @@ If you only struggle during work or study sessions, a focus timer like Forest ma
 
 - Want Forest with social accountability? Try Flora
 - Need to break compulsive app-checking? Try One Sec
-- Want free gamification for all-day habits? Try [Respite](/download) (iPhone, Android and Chrome)
+- Want free gamification for all-day habits? Try [Respite](/download/) (iPhone, Android and Chrome)
 - Need hard blocking on iPhone? Try Opal
 - Prefer the gentlest possible nudge? Try ScreenZen
 
 Forest is a great app. If it's doing the job for you, stick with it. These alternatives are for the gaps it doesn't cover.
 
-[Download Respite Free](/download)
+[Download Respite Free](/download/)
 
 ---
 
 ## Related Articles
 
-- [Best Apple Screen Time Alternatives](/blog/apple-screen-time-alternatives)
-- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction)
-- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time)
-- [Respite vs Forest](/blog/respite-vs-forest)
+- [Best Apple Screen Time Alternatives](/blog/apple-screen-time-alternatives/)
+- [How to Stop Phone Addiction: 15 Expert Strategies](/blog/how-to-stop-phone-addiction/)
+- [How to Reduce Screen Time](/blog/how-to-reduce-screen-time/)
+- [Respite vs Forest](/blog/respite-vs-forest/)
 
 ---
 
